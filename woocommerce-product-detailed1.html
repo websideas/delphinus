@@ -9,7 +9,8 @@
     <title>Delphinus - Creative eCommerce HTML5 Template </title>
 
 
-    <link rel="stylesheet" type='text/css' href='https://fonts.googleapis.com/css?family=Karla:700,400%7cCourgette'>
+    <link rel="stylesheet" type='text/css' href='https://fonts.googleapis.com/css?family=Karla:700,400%7cCourgette' />
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css' />
 
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/multi-columns-row.css" />
@@ -342,19 +343,19 @@
                                 </div>
                             </div>
 
-                            <form enctype="multipart/form-data" method="post" class="cart">
+                            <form enctype="multipart/form-data" method="post" class="cart clearfix">
 
                                 <div class="quantity">
-                                    <input type="number" size="4" class="qty" title="Qty" value="1" name="quantity" min="1" step="1">
+                                    <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
                                 </div>
 
-                                <button class="btn btn-dark-b" type="submit">Add to cart</button>
+                                <button class="btn btn-addtocart" type="submit">Add to cart</button>
 
-                                <div class="cart-tool">
-                                    <a class="add_to_wishlist" data-toggle="tooltip" data-placement="left" title="Add to wishlist">
+                                <div class="cart-tool clearfix">
+                                    <a class="add_to_wishlist" data-toggle="tooltip" data-placement="top" title="Add to wishlist">
                                         <i class="fa fa-heart"></i>
                                     </a>
-                                    <a class="add_to_compare" data-toggle="tooltip" data-placement="left" title="Compare">
+                                    <a class="add_to_compare" data-toggle="tooltip" data-placement="top" title="Compare">
                                         <i class="fa fa-exchange"></i>
                                     </a>
                                 </div>
@@ -363,10 +364,10 @@
 
                             <div class="product-short">
                                 <p>The first Menu chair ever is a three-legged one, and it’s the result of deconstructing an item, piece by piece, with the purpose of obtaining an original design.</p>
-                                <p><strong>Features and materials</strong></p>
+                                <p style="color:#000;"><strong>Features and materials</strong></p>
                                 <p>Black<br/>Wood</p>
 
-                                <p><strong>Dimensions</strong></p>
+                                <p style="color:#000;"><strong>Dimensions</strong></p>
                                 <p>48"x48"x36"</p>
                             </div>
 
@@ -392,152 +393,152 @@
 
         <div class="page-section bg-gray">
             <div class="container">
+                <div class="woocommerce-tabs">
+                    <!-- Nav tabs -->
+                    <ul class="nav clearfix" role="tablist">
+                        <li role="presentation" class="active"><a href="#tab-description_tab" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                        <li role="presentation"><a href="#tab-additional_information" aria-controls="profile" role="tab" data-toggle="tab">Additional INFO</a></li>
+                        <li role="presentation"><a href="#tab-reviews" aria-controls="messages" role="tab" data-toggle="tab">Review</a></li>
+                    </ul>
 
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#tab-description_tab" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-                    <li role="presentation"><a href="#tab-additional_information" aria-controls="profile" role="tab" data-toggle="tab">Additional INFO</a></li>
-                    <li role="presentation"><a href="#tab-reviews" aria-controls="messages" role="tab" data-toggle="tab">Review</a></li>
-                </ul>
-
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div id="tab-description_tab" role="tabpanel" class="tab-pane active">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis neque, imperdiet consectetur nulla a, lacinia tempus arcu. Integer quis maximus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat enim, vulputate id pulvinar molestie, blandit vitae quam. Donec nisi est, tempus eget dignissim vitae.</p>
-                            </div>
-                            <div class="col-md-6">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis neque, imperdiet consectetur nulla a, lacinia tempus arcu. Integer quis maximus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat enim, vulputate id pulvinar molestie, blandit vitae quam. Donec nisi est, tempus eget dignissim vitae.</p>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div id="tab-description_tab" role="tabpanel" class="tab-pane active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis neque, imperdiet consectetur nulla a, lacinia tempus arcu. Integer quis maximus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat enim, vulputate id pulvinar molestie, blandit vitae quam. Donec nisi est, tempus eget dignissim vitae.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis neque, imperdiet consectetur nulla a, lacinia tempus arcu. Integer quis maximus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat enim, vulputate id pulvinar molestie, blandit vitae quam. Donec nisi est, tempus eget dignissim vitae.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="tab-additional_information" role="tabpanel" class="tab-pane">
-                        <table class="shop_attributes">
-                            <tbody>
-                                <tr class="">
-                                    <th>Size</th>
-                                    <td><p>Large, Medium</p></td>
-                                </tr>
-                                <tr>
-                                    <th>Weight</th>
-                                    <td><p>10 Kg, 5 kg</p></td>
-                                </tr>
-                                <tr>
-                                    <th>Color</th>
-                                    <td><p>Black</p></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div id="tab-reviews" role="tabpanel" class="tab-pane">
-                        <div class="row">
-                            <div class="col-md-6">
+                        <div id="tab-additional_information" role="tabpanel" class="tab-pane">
+                            <table class="shop_attributes">
+                                <tbody>
+                                    <tr class="">
+                                        <th>Size</th>
+                                        <td class="text-right">Large, Medium</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Weight</th>
+                                        <td class="text-right">10 Kg, 5 kg</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Color</th>
+                                        <td class="text-right">Black</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="tab-reviews" role="tabpanel" class="tab-pane">
+                            <div class="row">
+                                <div class="col-md-6">
 
 
 
-                                <div class="comments-area" id="comments">
-                                    <h3 class="comments-title">3 reviews</h3>
+                                    <div class="comments-area" id="comments">
+                                        <h3 class="comments-title">3 reviews</h3>
 
 
-                                    <ol class="comment-list">
-                                        <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
-                                            <div class="comment-item clearfix">
-                                                <div class="comment-avatar">
-                                                    <img width="100" height="100" class="avatar avatar-100 photo" srcset="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=200&amp;d=mm&amp;r=g 2x" src="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=100&amp;d=mm&amp;r=g" alt="">
-                                                </div>
-                                                <div class="comment-content">
-                                                    <div class="comment-meta">
-                                                        <h5 itemprop="author" class="author_name">Kenny Minh</h5>
-                                                        <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
-                                                        <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
-                                                            <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                        <ol class="comment-list">
+                                            <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
+                                                <div class="comment-item clearfix">
+                                                    <div class="comment-avatar">
+                                                        <img width="100" height="100" class="avatar avatar-100 photo" srcset="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=200&amp;d=mm&amp;r=g 2x" src="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=100&amp;d=mm&amp;r=g" alt="">
+                                                    </div>
+                                                    <div class="comment-content">
+                                                        <div class="comment-meta">
+                                                            <h5 itemprop="author" class="author_name">Kenny Minh</h5>
+                                                            <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
+                                                            <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+                                                                <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description" itemprop="description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="description" itemprop="description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
+                                                </div>
+                                            </li><!-- #comment-## -->
+                                            <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
+                                                <div class="comment-item clearfix">
+                                                    <div class="comment-avatar">
+                                                        <img width="100" height="100" class="avatar avatar-100 photo" srcset="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=200&amp;d=mm&amp;r=g 2x" src="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=100&amp;d=mm&amp;r=g" alt="">
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </li><!-- #comment-## -->
-                                        <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
-                                            <div class="comment-item clearfix">
-                                                <div class="comment-avatar">
-                                                    <img width="100" height="100" class="avatar avatar-100 photo" srcset="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=200&amp;d=mm&amp;r=g 2x" src="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=100&amp;d=mm&amp;r=g" alt="">
-                                                </div>
-                                                <div class="comment-content">
-                                                    <div class="comment-meta">
-                                                        <h5 itemprop="author" class="author_name">Kenny Minh</h5>
-                                                        <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
-                                                        <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
-                                                            <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                    <div class="comment-content">
+                                                        <div class="comment-meta">
+                                                            <h5 itemprop="author" class="author_name">Kenny Minh</h5>
+                                                            <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
+                                                            <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+                                                                <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description" itemprop="description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="description" itemprop="description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
+                                                </div>
+                                            </li><!-- #comment-## -->
+                                            <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
+                                                <div class="comment-item clearfix">
+                                                    <div class="comment-avatar">
+                                                        <img width="100" height="100" class="avatar avatar-100 photo" srcset="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=200&amp;d=mm&amp;r=g 2x" src="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=100&amp;d=mm&amp;r=g" alt="">
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </li><!-- #comment-## -->
-                                        <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
-                                            <div class="comment-item clearfix">
-                                                <div class="comment-avatar">
-                                                    <img width="100" height="100" class="avatar avatar-100 photo" srcset="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=200&amp;d=mm&amp;r=g 2x" src="http://0.gravatar.com/avatar/f0cde930b42c79145194679d5b6e3b1d?s=100&amp;d=mm&amp;r=g" alt="">
-                                                </div>
-                                                <div class="comment-content">
-                                                    <div class="comment-meta">
-                                                        <h5 itemprop="author" class="author_name">Kenny Minh</h5>
-                                                        <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
-                                                        <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
-                                                            <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                    <div class="comment-content">
+                                                        <div class="comment-meta">
+                                                            <h5 itemprop="author" class="author_name">Kenny Minh</h5>
+                                                            <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
+                                                            <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+                                                                <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="description" itemprop="description">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
                                                         </div>
                                                     </div>
-                                                    <div class="description" itemprop="description">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
-                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li><!-- #comment-## -->
+                                            </li><!-- #comment-## -->
 
-                                    </ol>
+                                        </ol>
 
+
+                                    </div>
 
                                 </div>
+                                <div class="col-md-5 col-md-offset-1">
 
-                            </div>
-                            <div class="col-md-6">
+                                    <div id="review_form">
+                                        <div id="respond" class="comment-respond">
+                                            <h3 class="comment-reply-title">Here you can review this item.</h3>
+                                            <form action="#" method="post" id="commentform" class="comment-form">
 
-                                <div id="review_form">
-                                    <div id="respond" class="comment-respond">
-                                        <h3 class="comment-reply-title">Add a review</h3>
-                                        <form action="#" method="post" id="commentform" class="comment-form">
+                                                <p class="comment-form-author"><input type="text" aria-required="true" size="30" value="" placeholder="Your Name" name="author" id="author"></p>
+                                                <p class="comment-form-email"><input type="text" aria-required="true" size="30" value="" placeholder="Your email" name="email" id="email"></p>
+                                                <p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="Your review"></textarea></p>
 
-                                            <p class="comment-form-author"><input type="text" aria-required="true" size="30" value="" placeholder="Your Name" name="author" id="author"></p>
-                                            <p class="comment-form-email"><input type="text" aria-required="true" size="30" value="" placeholder="Your email" name="email" id="email"></p>
-                                            <p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="Your review"></textarea></p>
+                                                <p class="comment-form-rating">
+                                                    <select name="rating" id="rating">
+                                                        <option value="">Rate&hellip;</option>
+                                                        <option value="5">Perfect</option>
+                                                        <option value="4">Good</option>
+                                                        <option value="3">Average</option>
+                                                        <option value="2">Not that bad</option>
+                                                        <option value="1">Very Poor</option>
+                                                    </select>
+                                                </p>
+                                                <p class="form-submit">
+                                                    <input name="submit" type="submit" id="submit" class="btn btn-addtocart" value="Add Review" />
+                                                </p>
+                                            </form>
+                                        </div><!-- #respond -->
+                                    </div>
 
-                                            <p class="comment-form-rating">
-                                                <select name="rating" id="rating">
-                                                    <option value="">Rate&hellip;</option>
-                                                    <option value="5">Perfect</option>
-                                                    <option value="4">Good</option>
-                                                    <option value="3">Average</option>
-                                                    <option value="2">Not that bad</option>
-                                                    <option value="1">Very Poor</option>
-                                                </select>
-                                            </p>
-                                            <p class="form-submit">
-                                                <input name="submit" type="submit" id="submit" class="btn btn-default-b" value="Submit" />
-                                            </p>
-                                        </form>
-                                    </div><!-- #respond -->
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -723,6 +724,11 @@
 <script type="text/javascript" src="assets/libs/magnificPopup/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="assets/libs/owl-carousel/owl.carousel.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap-select.js"></script>
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+
+<!-- REVOLUTION JS FILES -->
+<script type="text/javascript" src="assets/libs/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="assets/libs/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
 <script type="text/javascript" src="assets/js/main.js"></script>
 

@@ -93,7 +93,9 @@
 
 /* 11. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
-
+  .about-left{
+    margin-left: 0;
+  }
 }
 
 /* 12. Styles for devices(>=481px and <= 767px) */
