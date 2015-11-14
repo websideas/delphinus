@@ -79,7 +79,8 @@
         init_parallax();
         init_shortcodes();
         init_VCGoogleMap();
-        init_popup();
+        //init_popup();
+        init_quickview();
 
 
 
@@ -149,9 +150,6 @@
                 options.itemsMobile = [479,options.mobile];
             }
 
-
-
-
             options.afterInit  = function(elem) {
 
                 if(typeof options.outer !== "undefined"){
@@ -163,32 +161,6 @@
                 }
 
             };
-
-
-            var func_cb =  window[ func_cb ];
-
-            /*
-             afterInit : function(elem){
-             if(owlPagination && owlNavigation){
-             var that = this;
-             that.paginationWrapper.appendTo(objCarousel.closest('.owl-carousel-kt'));
-             }
-
-             if( typeof func_cb === 'function'){
-             func_cb( 'afterInit',   elem );
-             }
-             },
-             afterUpdate: function(elem) {
-             if( typeof func_cb === 'function'){
-             func_cb( 'afterUpdate',   elem );
-             }
-             },
-             afterMove : function ( elem ){
-             if( typeof func_cb === 'function'){
-             func_cb( 'afterUpdate',   elem );
-             }
-             }
-            */
 
             objCarousel.waitForImages(function() {
                 objCarousel.owlCarousel(options);
@@ -215,10 +187,6 @@
                 return false;
             });
     }
-
-
-
-
 
     /* ==============================================
      Add data width to body Script
@@ -500,6 +468,52 @@
         });
     }
 
+
+    /* ---------------------------------------------
+     QickView
+     --------------------------------------------- */
+    function init_quickview(){
+        $('body').on('click', '.quickview', function(e){
+            e.preventDefault();
+            var objProduct = $(this);
+            objProduct.addClass('loading');
+
+            var data = {},
+                ajaxurl  = 'ajax/woocommerce-product-quickview.html';
+
+            $.post(ajaxurl, data, function(response) {
+                objProduct.removeClass('loading');
+
+                $.magnificPopup.open({
+                    mainClass : 'mfp-zoom-in',
+                    fixedContentPos: false,
+                    fixedBgPos: true,
+                    removalDelay: 200,
+                    items: {
+                        src: '<div class="themedev-product-popup mfp-with-anim">' + response + '</div>',
+                        type: 'inline'
+                    },
+                    callbacks: {
+                        open: function() {
+                            var $popup = $('.themedev-product-popup');
+
+                            setTimeout(function(){
+                                $popup.addClass('animate-width');
+                            }, 500);
+                            setTimeout(function(){
+                                $popup.addClass('add-content');
+                            }, 1000);
+
+                        }
+                    }
+                });
+            });
+
+            return false;
+        });
+    }
+
+
     /* ---------------------------------------------
      Popup content 
      --------------------------------------------- */
@@ -510,7 +524,7 @@
             setTimeout(function(){
                 $.magnificPopup.open({
                     items: { src: '#popup-wrap' },
-                    type: 'inline',
+                    type: 'inline'
                 });
             }, time_show*1000);
         }

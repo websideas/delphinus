@@ -1620,6 +1620,39 @@ select:not([multiple]) {
 
 }
 
+.box-colored{
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  .box-colored-image{
+    margin: 0 0 30px;
+    overflow: hidden;
+    img{
+      @include transition('all 1s ease-in-out 0s');
+      @include transform(scale(1));
+    }
+  }
+  &:hover{
+    img{
+      @include transform(scale(1.2));
+    }
+  }
+  .box-colored-title{
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    margin: 0 0 30px;
+    a{
+      padding: 50px 20px;
+      color: #FFFFFF;
+      display: block;
+    }
+  }
+  :last-child{
+    margin-bottom: 0;
+  }
+}
+
 /* ==============================
    Widgets
    ============================== */
@@ -3378,6 +3411,55 @@ table.compare{
       left:0;
       background: url(../images/bg-popup.png) no-repeat center center;
       background-size: cover;
+    }
+  }
+}
+
+
+/* ==============================
+   QuickView
+   ============================== */
+.themedev-product-popup{
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden;
+  .product-main{
+    background: #f7f7f7;
+    .product-detail-images{
+      padding: 30px;
+      max-width: 600px;
+    }
+    .product-detail-thumbarea{
+      padding: 0;
+    }
+    .product-details-info{
+      position: absolute;
+      padding: 30px;
+      visibility: hidden;
+      @include opacity(0);
+      @include transition();
+      @include transform(translate3d(-40px, 0, 0));
+    }
+  }
+  &.animate-width{
+    max-width: 1200px;
+    .product-detail-images{
+    }
+  }
+  &.add-content{
+    max-width: 1200px;
+    .product-detail-images{
+      width: 50%;
+      float: left;
+    }
+    .product-details-info {
+      position: relative;
+      visibility: visible;
+      opacity: 1;
+      float: left;
+      width: 50%;
+      @include transform(translate3d(0, 0, 0));
     }
   }
 }
