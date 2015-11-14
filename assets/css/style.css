@@ -1681,6 +1681,45 @@ select:not([multiple]) {
     .collection-wrapper .collection-content .collection-desc {
       margin-bottom: 10px; }
 
+.box-colored {
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  text-align: center; }
+  .box-colored .box-colored-image {
+    margin: 0 0 30px;
+    overflow: hidden; }
+    .box-colored .box-colored-image img {
+      -webkit-transition: all 1s ease-in-out 0s;
+      -khtml-transition: all 1s ease-in-out 0s;
+      -moz-transition: all 1s ease-in-out 0s;
+      -ms-transition: all 1s ease-in-out 0s;
+      -o-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s;
+      -webkit-transform: scale(1);
+      -khtml-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
+  .box-colored:hover img {
+    -webkit-transform: scale(1.2);
+    -khtml-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
+  .box-colored .box-colored-title {
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    margin: 0 0 30px; }
+    .box-colored .box-colored-title a {
+      padding: 50px 20px;
+      color: #FFFFFF;
+      display: block; }
+  .box-colored :last-child {
+    margin-bottom: 0; }
+
 /* ==============================
    Widgets
    ============================== */
@@ -3248,5 +3287,64 @@ table.compare tr td {
       left: 0;
       background: url(../images/bg-popup.png) no-repeat center center;
       background-size: cover; }
+
+/* ==============================
+   QuickView
+   ============================== */
+.themedev-product-popup {
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden; }
+  .themedev-product-popup .product-main {
+    background: #f7f7f7; }
+    .themedev-product-popup .product-main .product-detail-images {
+      padding: 30px;
+      max-width: 600px; }
+    .themedev-product-popup .product-main .product-detail-thumbarea {
+      padding: 0; }
+    .themedev-product-popup .product-main .product-details-info {
+      position: absolute;
+      padding: 30px;
+      visibility: hidden;
+      filter: alpha(opacity=0);
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      -webkit-opacity: 0;
+      -khtml-opacity: 0;
+      -moz-opacity: 0;
+      -ms-opacity: 0;
+      -o-opacity: 0;
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-in-out 0s;
+      -khtml-transition: all 0.2s ease-in-out 0s;
+      -moz-transition: all 0.2s ease-in-out 0s;
+      -ms-transition: all 0.2s ease-in-out 0s;
+      -o-transition: all 0.2s ease-in-out 0s;
+      transition: all 0.2s ease-in-out 0s;
+      -webkit-transform: translate3d(-40px, 0, 0);
+      -khtml-transform: translate3d(-40px, 0, 0);
+      -moz-transform: translate3d(-40px, 0, 0);
+      -ms-transform: translate3d(-40px, 0, 0);
+      -o-transform: translate3d(-40px, 0, 0);
+      transform: translate3d(-40px, 0, 0); }
+  .themedev-product-popup.animate-width {
+    max-width: 1200px; }
+  .themedev-product-popup.add-content {
+    max-width: 1200px; }
+    .themedev-product-popup.add-content .product-detail-images {
+      width: 50%;
+      float: left; }
+    .themedev-product-popup.add-content .product-details-info {
+      position: relative;
+      visibility: visible;
+      opacity: 1;
+      float: left;
+      width: 50%;
+      -webkit-transform: translate3d(0, 0, 0);
+      -khtml-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
 
 /*# sourceMappingURL=style.css.map */
