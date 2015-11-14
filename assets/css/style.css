@@ -1144,6 +1144,8 @@ select:not([multiple]) {
       margin: 0;
       padding: 0;
       list-style: none; }
+      .navbar-container #nav #main-navigation li.active a {
+        color: #000 !important; }
       .navbar-container #nav #main-navigation > li {
         display: inline-block;
         position: relative; }
