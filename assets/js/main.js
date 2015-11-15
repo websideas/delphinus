@@ -38,6 +38,7 @@
     $(window).resize(function(){
         init_dataWidth();
         init_js_height();
+        init_productsMasonry();
     });
 
     /* ---------------------------------------------
@@ -82,6 +83,7 @@
         init_popup();
         init_quickview();
         init_productcarouselwoo();
+        init_productsMasonry();
 
         $('.products-sortby select').selectpicker({
             styleBase: '',
@@ -117,7 +119,44 @@
             $('#payment .payment_box').hide();
             $('#payment .payment_method_'+val).show(); 
         }).change();
+
+
+
     });
+
+
+    function init_productsMasonry(){
+        $('.products-multi-masonry').each(function(){
+            var $masonry = $(this);
+            $masonry.waitForImages(function() {
+
+                var standardItem = $masonry.find('.product.standard').first(),
+                    standardHeight = standardItem.height(),
+                    largeHeight = (standardHeight * 2) + parseInt(standardItem.css('margin-bottom'), 10);
+
+                if (standardHeight > 0) {
+                    $masonry.find('.product-thumbnail').css('height', 'auto');
+                    $masonry.find('.product.wide .product-thumbnail').css('height', largeHeight);
+                    $masonry.find('.product.portrait .product-thumbnail').css('height', largeHeight);
+                    $masonry.find('.product.big .product-thumbnail').css('height', largeHeight);
+                    $masonry.find('.product.landscape .product-thumbnail').css('height', standardHeight);
+                    $masonry.find('.product.standard .product-thumbnail').css('height', standardHeight);
+                }
+
+                $masonry.isotope({
+                    resizable: false,
+                    itemSelector : '.product',
+                    layoutMode: 'packery',
+                    packery: {
+                        columnWidth: '.grid-sizer'
+                    }
+                });
+
+            });
+
+
+        });
+    }
 
 
     /* ---------------------------------------------
@@ -149,15 +188,12 @@
             }
 
             options.afterInit  = function(elem) {
-
                 if(typeof options.outer !== "undefined"){
-                    console.log('call');
                     if (options.navigation) {
                         var $wrapper = elem.find('.owl-buttons');
                         $wrapper.appendTo(objCarousel.closest('.owl-carousel-kt'));
                     }
                 }
-
             };
 
             objCarousel.waitForImages(function() {
@@ -223,7 +259,6 @@
      --------------------------------------------- */
 
     function init_wow(){
-
         var wow = new WOW({
             mobile: false
         });

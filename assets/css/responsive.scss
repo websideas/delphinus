@@ -96,6 +96,17 @@
   .about-left{
     margin-left: 0;
   }
+  .products {
+    &.products-multi-masonry {
+      .product {
+        width: 100%;
+        .product-thumbnail{
+          height: auto!important;
+        }
+      }
+    }
+  }
+
 }
 
 /* 12. Styles for devices(>=481px and <= 767px) */

@@ -87,7 +87,12 @@
 /* 11. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
   .about-left {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .products.products-multi-masonry .product {
+    width: 100%; }
+    .products.products-multi-masonry .product .product-thumbnail {
+      height: auto !important; } }
 /* 12. Styles for devices(>=481px and <= 767px) */
 /* 13. Styles for devices(<=480px ) */
 /* 14. Styles for devices(<=320px ) */

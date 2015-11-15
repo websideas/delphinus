@@ -2335,8 +2335,11 @@ select.mobile-device {
 
 
 .products{
+
+
+
   .product{
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-align: center;
     .product-thumbnail{
       display: block;
@@ -2429,15 +2432,21 @@ select.mobile-device {
     }
   }
   &.products-multi-masonry{
+
     .product{
-      padding-bottom: 30px;
+      margin-bottom: 30px;
       position: relative;
+      &.grid-sizer{
+        margin: 0;
+        min-height: 0;
+      }
       .product-content{
         margin-bottom: 0;
       }
       .product-details{
         @include translate();
         z-index: 5;
+        width: 100%;
         .product-title,
         .product-price{
           @include transition( all 0.4s ease 0s);
