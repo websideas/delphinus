@@ -248,6 +248,7 @@ p {
 
 .white{ color: #fff !important; }
 .black{ color: #111 !important; }
+.gray{ color: #999!important; }
 
 .letter-spacing{
   letter-spacing: 0.2em;
@@ -428,6 +429,91 @@ blockquote {
   }
 
 }
+/*
+ * 3.3 Hightlight
+ */
+.hightlight {
+    color: #ffffff;
+    padding: 0 4px;
+    border-radius: 3px;
+    &.hightlight1{
+      background: #c7db9c;
+    }
+    &.hightlight2{
+      background: #ed8b5c;
+    }
+    &.hightlight3{
+      background: #f4dc86;
+    }
+    &.hightlight4{
+      background: #bce5d3;
+    }
+}
+/*
+ * 3.4 Dropcap
+ */
+.kt_dropcap{
+  float: left;
+  display: block;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
+  &.dropcap-sm{
+    font-size: 72px;
+    line-height: 72px;
+    height: 72px;
+    &.dropcap-bg{
+      font-size: 30px;
+      line-height: 40px;
+      height: 40px;
+      &.dropcap-circle{
+        width: 40px;
+      }
+    }
+  }  
+  &.dropcap-md{
+    font-size: 100px;
+    line-height: 100px;
+    height: 100px;
+    &.dropcap-bg{
+      font-size: 48px;
+      line-height: 65px;
+      height: 65px;
+      &.dropcap-circle{
+        width: 65px;
+      }
+    }
+  }
+  &.dropcap-light{
+      color: #bce5d3;
+    }
+    &.dropcap-dark{
+      color: #000000;
+    }
+    &.dropcap-accent{
+      color: #ed8b5c;
+    }
+  &.dropcap-bg{
+    padding: 0 10px;
+    margin-top: 10px;
+    &.dropcap-circle{
+      border-radius: 100%;
+    }
+    &.dropcap-light{
+      background: #bce5d3;
+      color: #fff;
+    }
+    &.dropcap-dark{
+      background: #000000;
+      color: #fff;
+    }
+    &.dropcap-accent{
+      background: #ed8b5c;
+      color: #fff;
+    }
+  }
+}
+
 /* ==============================
    4. Forms fields
    ============================== */
@@ -624,7 +710,15 @@ select:not([multiple]) {
       color: #FFFFFF;
       border-color: $primary-color;
     }
-  }
+  }  
+}
+.rev-btn{
+  padding: 18px 48px;
+  border: 2px solid #fff!important;
+  color: #fff!important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: none!important;    
 }
 
 /* ==============================

@@ -502,7 +502,7 @@
             stopAtSlide:-1,
             shuffle:"off",
             autoHeight:"off",
-            disableProgressBar:"on",
+            disableProgressBar:"off",
             hideThumbsOnMobile:"off",
             hideSliderAtLimit:0,
             hideCaptionAtLimit:0,
