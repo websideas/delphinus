@@ -660,14 +660,20 @@
      Popup content 
      --------------------------------------------- */
     function init_popup(){
-        if($('#popup-wrap').length > 0){
+        var cookie_popup = $.cookie('popup_newletter');
+        if($('#popup-wrap').length > 0 && cookie_popup != 1){
             var time_show = $('#popup-wrap').data('timeshow');
 
             setTimeout(function(){
                 $.magnificPopup.open({
                     items: { src: '#popup-wrap' },
                     type: 'inline',
-                    mainClass: 'mfp-zoom-in'
+                    mainClass: 'mfp-zoom-in',
+                    callbacks: {
+                        afterClose: function(){
+                            $.cookie('popup_newletter', 1, { expires: 1 });
+                        }
+                    }
                 });
             }, time_show*1000);
         }
