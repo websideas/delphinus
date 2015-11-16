@@ -84,6 +84,7 @@
         init_quickview();
         init_productcarouselwoo();
         init_productsMasonry();
+        init_productCountdown();
 
         $('.products-sortby select').selectpicker({
             styleBase: '',
@@ -110,9 +111,7 @@
 
 
 
-        /* ---------------------------------------------
-         Payment Checkout
-         --------------------------------------------- */
+
 
         $('#payment .payment_methods li label .input-radio').change(function(){
             var val = $('#payment .payment_methods li label .input-radio:checked').val();
@@ -125,17 +124,52 @@
     });
 
 
+    /* ---------------------------------------------
+     Product Countdown
+     --------------------------------------------- */
+    function init_productCountdown() {
+        var coming_html = '<div class="countdown-wrap">'
+            +'<div class="value-time">%D</div>'
+            +'<div class="title">Days</div>'
+            +'</div>'
+            +'<div class="countdown-wrap">'
+            +'<div class="value-time">%H</div>'
+            +'<div class="title">Hours</div>'
+            +'</div>'
+            +'<div class="countdown-wrap">'
+            +'<div class="value-time">%M</div>'
+            +'<div class="title">Min</div>'
+            +'</div>'
+            +'<div class="countdown-wrap">'
+            +'<div class="value-time">%S</div>'
+            +'<div class="title">Sec</div>'
+            +'</div>';
+
+        $('.coming-soon').each(function () {
+            var date = $(this).data('date');
+            $(this).countdown(date, function (event) {
+                $(this).html( event.strftime(coming_html) );
+            });
+
+        });
+    }
+
+    /* ---------------------------------------------
+     Products Masonry
+     --------------------------------------------- */
+
     function init_productsMasonry(){
         $('.products-multi-masonry').each(function(){
             var $masonry = $(this);
             $masonry.waitForImages(function() {
+
+                $masonry.find('.product-thumbnail').css('height', 'auto');
 
                 var standardItem = $masonry.find('.product.standard').first(),
                     standardHeight = standardItem.height(),
                     largeHeight = (standardHeight * 2) + parseInt(standardItem.css('margin-bottom'), 10);
 
                 if (standardHeight > 0) {
-                    $masonry.find('.product-thumbnail').css('height', 'auto');
                     $masonry.find('.product.wide .product-thumbnail').css('height', largeHeight);
                     $masonry.find('.product.portrait .product-thumbnail').css('height', largeHeight);
                     $masonry.find('.product.big .product-thumbnail').css('height', largeHeight);
@@ -169,6 +203,7 @@
                 options = $(objCarousel).data('options') || {};
             options.theme = 'owl-kttheme';
 
+
             if(typeof options.desktop !== "undefined"){
                 options.itemsDesktop = [1199,options.desktop];
                 options.itemsDesktopSmall = [991,options.desktop];
@@ -188,11 +223,14 @@
             }
 
             options.afterInit  = function(elem) {
-                if(typeof options.outer !== "undefined"){
-                    if (options.navigation) {
-                        var $wrapper = elem.find('.owl-buttons');
-                        $wrapper.appendTo(objCarousel.closest('.owl-carousel-kt'));
-                    }
+                if(typeof options.outer !== "undefined" && options.navigation){
+                    var $buttons = elem.find('.owl-buttons');
+                    $buttons.appendTo(objCarousel.closest('.owl-carousel-kt'));
+                }
+
+                if(typeof options.pagbefore !== "undefined" && options.pagination){
+                    var $pagination = elem.find('.owl-pagination');
+                    $pagination.prependTo(objCarousel.closest('.owl-carousel-kt'));
                 }
             };
 
@@ -445,6 +483,77 @@
             gridwidth:1290,
             gridheight:920,
             lazyType:"none",
+            shadow:0,
+            spinner:"spinner0",
+            stopLoop:"off",
+            stopAfterLoops:-1,
+            stopAtSlide:-1,
+            shuffle:"off",
+            autoHeight:"off",
+            disableProgressBar:"on",
+            hideThumbsOnMobile:"off",
+            hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            startWithSlide:0,
+            debugMode:false,
+            fallbacks: {
+                simplifyAll:"off",
+                nextSlideOnWindowFocus:"off",
+                disableFocusListener:false
+            }
+        });
+
+
+        $("#rev_slider_2_1").show().revolution({
+            sliderType:"standard",
+            jsFileLocation:"assets/libs/revolution/js/",
+            sliderLayout:"auto",
+            dottedOverlay:"none",
+            delay:6000,
+            navigation: {
+                keyboardNavigation:"off",
+                keyboard_direction: "horizontal",
+                mouseScrollNavigation:"off",
+                onHoverStop:"on",
+                touch:{
+                    touchenabled:"on",
+                    swipe_threshold: 75,
+                    swipe_min_touches: 50,
+                    swipe_direction: "horizontal",
+                    drag_block_vertical: false
+                }
+                ,
+                arrows: {
+                    style:"metis",
+                    enable:true,
+                    hide_onmobile:true,
+                    hide_under:600,
+                    hide_onleave:false,
+                    tmp:'',
+                    left: {
+                        h_align:"right",
+                        v_align:"top",
+                        h_offset:-90,
+                        v_offset:30
+                    },
+                    right: {
+                        h_align:"right",
+                        v_align:"top",
+                        h_offset:-90,
+                        v_offset:-30
+                    }
+                }
+            },
+            gridwidth:710,
+            gridheight:440,
+            lazyType:"smart",
+            parallax: {
+                type:"mouse",
+                origo:"slidercenter",
+                speed:2000,
+                levels:[2,3,4,5,6,7,12,16,10,50],
+            },
             shadow:0,
             spinner:"spinner0",
             stopLoop:"off",
