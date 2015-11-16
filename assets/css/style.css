@@ -237,6 +237,9 @@ p {
 .black {
   color: #111 !important; }
 
+.gray {
+  color: #999 !important; }
+
 .text-nomal {
   text-transform: none; }
 
@@ -452,6 +455,72 @@ blockquote {
     font-weight: normal; }
   blockquote *:last-child {
     margin-bottom: 0; }
+
+/*
+ * 3.3 Hightlight
+ */
+.hightlight {
+  color: #ffffff;
+  padding: 0 4px;
+  border-radius: 3px; }
+  .hightlight.hightlight1 {
+    background: #c7db9c; }
+  .hightlight.hightlight2 {
+    background: #ed8b5c; }
+  .hightlight.hightlight3 {
+    background: #f4dc86; }
+  .hightlight.hightlight4 {
+    background: #bce5d3; }
+
+/*
+ * 3.4 Dropcap
+ */
+.kt_dropcap {
+  float: left;
+  display: block;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center; }
+  .kt_dropcap.dropcap-sm {
+    font-size: 72px;
+    line-height: 72px;
+    height: 72px; }
+    .kt_dropcap.dropcap-sm.dropcap-bg {
+      font-size: 30px;
+      line-height: 40px;
+      height: 40px; }
+      .kt_dropcap.dropcap-sm.dropcap-bg.dropcap-circle {
+        width: 40px; }
+  .kt_dropcap.dropcap-md {
+    font-size: 100px;
+    line-height: 100px;
+    height: 100px; }
+    .kt_dropcap.dropcap-md.dropcap-bg {
+      font-size: 48px;
+      line-height: 65px;
+      height: 65px; }
+      .kt_dropcap.dropcap-md.dropcap-bg.dropcap-circle {
+        width: 65px; }
+  .kt_dropcap.dropcap-light {
+    color: #bce5d3; }
+  .kt_dropcap.dropcap-dark {
+    color: #000000; }
+  .kt_dropcap.dropcap-accent {
+    color: #ed8b5c; }
+  .kt_dropcap.dropcap-bg {
+    padding: 0 10px;
+    margin-top: 10px; }
+    .kt_dropcap.dropcap-bg.dropcap-circle {
+      border-radius: 100%; }
+    .kt_dropcap.dropcap-bg.dropcap-light {
+      background: #bce5d3;
+      color: #fff; }
+    .kt_dropcap.dropcap-bg.dropcap-dark {
+      background: #000000;
+      color: #fff; }
+    .kt_dropcap.dropcap-bg.dropcap-accent {
+      background: #ed8b5c;
+      color: #fff; }
 
 /* ==============================
    4. Forms fields
@@ -674,6 +743,14 @@ select:not([multiple]) {
     background: #000000;
     color: #FFFFFF;
     border-color: #000000; }
+
+.rev-btn {
+  padding: 18px 48px;
+  border: 2px solid #fff !important;
+  color: #fff !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: none !important; }
 
 /* ==============================
    5. Search
@@ -998,7 +1075,7 @@ select:not([multiple]) {
       margin: 0;
       padding: 0;
       list-style: none; }
-      .navbar-container #nav #main-navigation li.active a {
+      .navbar-container #nav #main-navigation li.active > a {
         color: #000 !important; }
       .navbar-container #nav #main-navigation > li {
         display: inline-block;
