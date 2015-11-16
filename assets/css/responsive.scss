@@ -1,10 +1,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Table of contents]
 
-1. New Grid System
-2. Styles for devices(>=1700px)
-3. Styles for devices(>=1280px and <=1699px)
-4. Styles for devices(>=1280px and <=1499px)
 5. Styles for devices(>=1280px)
 6. Styles for devices(>=992px and <=1279px)
 7. Styles for devices(<=1279px)
@@ -72,6 +68,17 @@
 /* 8. Styles for devices(<=1199px) */
 @media (max-width: 1199px) {
 
+  .products {
+    &.products-multi-masonry {
+      .product {
+        .product-details{
+          display: none;
+        }
+      }
+    }
+  }
+
+
 }
 
 /* 9. Styles for devices(<=991px ) */
@@ -99,7 +106,7 @@
   .products {
     &.products-multi-masonry {
       .product {
-        width: 100%;
+        width: 50%;
         .product-thumbnail{
           height: auto!important;
         }
@@ -116,7 +123,13 @@
 
 /* 13. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
-
+  .products {
+    &.products-multi-masonry {
+      .product {
+        width: 100%;
+      }
+    }
+  }
 
 }
 

@@ -39,6 +39,16 @@
         init_dataWidth();
         init_js_height();
         init_productsMasonry();
+
+        if ($.fn.ktSticky) {
+            /**==============================
+             ***  Sticky header
+             ===============================**/
+            $('.navbar-container.sticky-header').ktSticky({
+                contentSticky : ''
+            });
+        }
+
     });
 
     /* ---------------------------------------------
@@ -185,6 +195,8 @@
                         columnWidth: '.grid-sizer'
                     }
                 });
+
+
 
             });
 
@@ -645,6 +657,8 @@
                             setTimeout(function(){
                                 $popup.addClass('add-content');
                             }, 1000);
+
+                            init_shortcodes();
 
                         }
                     }
