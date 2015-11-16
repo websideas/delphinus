@@ -963,6 +963,8 @@ select:not([multiple]) {
       content: "";
       font-style: normal;
       font-weight: normal; }
+    .shopping-bag .bag-products .bag-product .remove:hover {
+      color: red; }
 .shopping-bag .bag-buttons {
   padding: 30px 65px; }
   .shopping-bag .bag-buttons a {
@@ -1011,12 +1013,8 @@ select:not([multiple]) {
           font-weight: bold; }
           .navbar-container #nav #main-navigation > li > a:hover {
             color: #000000; }
-        .navbar-container #nav #main-navigation > li.active a {
+        .navbar-container #nav #main-navigation > li.active > a {
           color: #000000; }
-        .navbar-container #nav #main-navigation > li:last-child a {
-          padding-right: 0; }
-        .navbar-container #nav #main-navigation > li:first-child a {
-          padding-left: 0; }
         .navbar-container #nav #main-navigation > li ul.sub-menu-dropdown,
         .navbar-container #nav #main-navigation > li .kt-megamenu-wrapper {
           border-top: 1px solid #f6f6f6;
