@@ -16,6 +16,16 @@
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
   By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
 ------------------------------------------------------------- */
+/* -------------------------------------------------------------
+  Title:   SCSS VARIABLES
+  Author:  Cuongdv
+------------------------------------------------------------- */
+/* 8. Styles for devices(<=1300px) */
+@media (max-width: 1300px) {
+  #footer-area .footer-area-inner {
+    padding: 55px 40px 40px; }
+  #footer-area .footer-area-right {
+    padding: 50px 45px; } }
 /* 5. Styles for devices(>=1200px) */
 @media (min-width: 1200px) {
   .side-bar .widget-container {
@@ -73,15 +83,32 @@
       transform: translateX(70%) scale(0.65); } }
 /* 8. Styles for devices(<=1199px) */
 @media (max-width: 1199px) {
+  .sticky-placeholder,
+  .topbar {
+    display: none; }
+
+  .navbar-container {
+    padding: 0 15px; }
+    .navbar-container .is-sticky {
+      position: static !important; }
+    .navbar-container .navbar-container-inner {
+      height: 80px;
+      line-height: 80px; }
+    .navbar-container .main-nav {
+      display: none; }
+    .navbar-container .branding h1 {
+      line-height: 80px;
+      font-size: 20px; }
+
+  .mobile-tool {
+    display: block; }
+
   .products.products-multi-masonry .product .product-details {
     display: none; } }
 /* 9. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
   .side-bar {
-    margin-top: 50px; }
-
-  .navbar-container {
-    display: none; } }
+    margin-top: 50px; } }
 /* 10. Styles for devices(>=768px and <= 991px) */
 /* 11. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
@@ -96,7 +123,13 @@
 /* 13. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
   .products.products-multi-masonry .product {
-    width: 100%; } }
+    width: 100%; }
+
+  .category-banner .category-banner-content h1 {
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .category-banner:hover ul {
+    margin-bottom: 30px; } }
 /* 14. Styles for devices(<=320px ) */
 
 /*# sourceMappingURL=responsive.css.map */

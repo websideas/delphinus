@@ -40,13 +40,23 @@
         init_js_height();
         init_productsMasonry();
 
+
+        /**==============================
+         ***  Sticky header
+         ===============================**/
         if ($.fn.ktSticky) {
-            /**==============================
-             ***  Sticky header
-             ===============================**/
+
             $('.navbar-container.sticky-header').ktSticky({
-                contentSticky : ''
+                contentSticky : '',
+                offset: 50
             });
+        }
+        /**==============================
+         ***  Disable mobile menu in desktop
+         ===============================**/
+        if ($(window).width() >= 1200) {
+            $('body').removeClass('opened-nav-animate');
+            $('#hamburger-icon').removeClass('active');
         }
 
     });
@@ -56,34 +66,11 @@
      --------------------------------------------- */
     $(document).ready(function(){
 
-
-        $('body')
-            .on('click','.nav-bar-leftbar',function(e){
-                e.preventDefault();
-                $('body').addClass('open-leftbar');
-            })
-            .on('click','#nav-leftbar-close',function(e){
-                e.preventDefault();
-                $('body').removeClass('open-leftbar');
-            })
-            .on('click','#nav-mobile-sidebar',function(e){
-                e.preventDefault();
-                $('body').addClass('open-mobile-sidebar');
-            })
-            .on('click','#nav-mobile-close',function(e){
-                e.preventDefault();
-                $('body').removeClass('open-mobile-sidebar');
-            })
-            .on('click','#nav-nobile-sidebar',function(e){
-                e.preventDefault();
-                $('body').removeClass('open-leftbar');
-            });
-
-
         init_dataWidth();
         //init_scrolling();
         init_SearchFull();
         init_MainMenu();
+        init_MobileMenu();
         init_rating();
         init_carousel();
         init_revolution();
@@ -92,6 +79,7 @@
         init_VCGoogleMap();
         init_popup();
         init_quickview();
+        init_backtotop();
 
         init_productsMasonry();
         init_productCountdown();
@@ -221,17 +209,21 @@
 
             if(typeof options.desktop !== "undefined"){
                 options.itemsDesktop = [1199,options.desktop];
-                options.itemsDesktopSmall = [991,options.desktop];
                 options.items = options.desktop;
             }
 
+            if(typeof options.desktopsmall !== "undefined"){
+                options.itemsDesktopSmall = [991,options.desktopsmall];
+            }
+
             if(typeof options.tablet !== "undefined"){
-                options.itemsTablet = [991,options.tablet];
+                options.itemsTablet = [768,options.tablet];
             }
 
             if(typeof options.navigationText === "undefined"){
                 options.navigationText = ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'];
             }
+
 
             if(typeof options.mobile !== "undefined"){
                 options.itemsMobile = [479,options.mobile];
@@ -362,6 +354,56 @@
         });
     }
 
+
+    /* ---------------------------------------------
+     Mobile Menu
+     --------------------------------------------- */
+    function init_MobileMenu(){
+
+
+        $('body')
+            .on('click','#hamburger-icon',function(e){
+                e.preventDefault();
+                $(this).toggleClass('active');
+                $('body').toggleClass('opened-nav-animate');
+                setTimeout(function(){
+                    $('body').toggleClass('opened-nav');
+                }, 100)
+
+            });
+
+        $('ul.navigation-mobile ul.sub-menu-dropdown, ul.navigation-mobile .kt-megamenu-wrapper').each(function(){
+            $(this).parent().children('a').prepend( '<span class="open-submenu"></span>' );
+        });
+
+        $('.open-submenu').on('click', function(e){
+            e.stopPropagation();
+            e.preventDefault();
+            $( this ).closest('li').toggleClass('active-menu-item');
+            $( this ).closest('li').children( '.sub-menu-dropdown, .kt-megamenu-wrapper' ).slideToggle();
+        });
+
+        $(window).resize(function(){
+            var $navHeight = $(window).height() - $('.navbar-container').height();
+            $('.main-nav-mobile').css({'max-height': $navHeight});
+        });
+
+    }
+
+
+    /* ---------------------------------------------
+     Back to top
+     --------------------------------------------- */
+    function init_backtotop(){
+        var backtotop = $('#backtotop').hide();
+        $(window).scroll(function() {
+            ($(window).scrollTop() != 0) ? backtotop.fadeIn() : backtotop.fadeOut();
+        });
+        backtotop.click(function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0},500);
+        });
+    }
 
     /* -------------------------------------------
     Parallax Effect

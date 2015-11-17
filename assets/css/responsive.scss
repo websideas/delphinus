@@ -14,6 +14,21 @@
 */
 
 @import 'mixin';
+@import 'variables';
+
+
+
+/* 8. Styles for devices(<=1300px) */
+@media (max-width: 1300px) {
+  #footer-area{
+    .footer-area-inner{
+      padding: 55px 40px 40px;
+    }
+    .footer-area-right{
+      padding: 50px 45px;
+    }
+  }
+}
 
 /* 5. Styles for devices(>=1200px) */
 @media (min-width: 1200px) {
@@ -68,6 +83,36 @@
 /* 8. Styles for devices(<=1199px) */
 @media (max-width: 1199px) {
 
+  .sticky-placeholder,
+  .topbar{
+    display: none;
+  }
+
+  .navbar-container{
+    padding: 0 15px;
+    .is-sticky{
+      position: static!important;
+    }
+
+    .navbar-container-inner{
+      height: $navbar-height-mobile;
+      line-height: $navbar-height-mobile;
+    }
+    .main-nav{
+      display: none;
+
+    }
+    .branding h1{
+      line-height: $navbar-height-mobile;
+      font-size: 20px;
+    }
+  }
+
+  .mobile-tool{
+    display: block;
+  }
+
+
   .products {
     &.products-multi-masonry {
       .product {
@@ -86,9 +131,7 @@
   .side-bar {
     margin-top: 50px;
   }
-  .navbar-container{
-    display: none;
-  }
+
 
 
 }
@@ -127,6 +170,21 @@
     &.products-multi-masonry {
       .product {
         width: 100%;
+      }
+    }
+  }
+
+
+  .category-banner{
+    .category-banner-content{
+      h1{
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+    }
+    &:hover {
+      ul{
+        margin-bottom: 30px;
       }
     }
   }

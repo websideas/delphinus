@@ -40,3 +40,16 @@ $mobile-bg: #313131;
 
 $topbar-height: 57px;
 $navbar-height: 102px;
+$navbar-height-mobile: 80px;
+$navbar-height-sticky: 60px;
+
+
+$hamburger-color: #000;
+$hamburger-heighticon: 12px;
+$hamburger-widthline: 20px;
+$hamburger-heightline: 2px;
+
+$hamburger-transition-time: 0.4s;
+$hamburger-rotation: 45deg;
+$hamburger-translateY: ($hamburger-heighticon / 2);
+$hamburger-translateX: 0;
