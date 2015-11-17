@@ -434,7 +434,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "ΓÇ£";
+    content: "“";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -449,7 +449,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "ΓÇ¥"; }
+      content: "”"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote h3 {
@@ -2837,6 +2837,8 @@ select.mobile-device {
     display: block; }
     .product-main .product_meta > span a {
       color: #666; }
+      .product-main .product_meta > span a:hover {
+        color: #000000; }
 .product-main .product-shareit .social_icons {
   margin: 0;
   padding: 0;
@@ -3435,16 +3437,23 @@ table.compare tr td {
   max-width: 600px;
   position: relative;
   overflow: hidden; }
+  .themedev-product-popup .close-quickview {
+    font-size: 18px;
+    line-height: 1.4;
+    position: absolute;
+    right: 30px;
+    top: 35px; }
   .themedev-product-popup .product-main {
-    background: #f7f7f7; }
+    background: #FFF; }
     .themedev-product-popup .product-main .product-detail-images {
       padding: 30px;
       max-width: 600px; }
     .themedev-product-popup .product-main .product-detail-thumbarea {
+      margin: 0;
       padding: 0; }
     .themedev-product-popup .product-main .product-details-info {
       position: absolute;
-      padding: 30px;
+      padding: 35px 30px 30px;
       visibility: hidden;
       filter: alpha(opacity=0);
       -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";

@@ -92,9 +92,12 @@
         init_VCGoogleMap();
         init_popup();
         init_quickview();
-        init_productcarouselwoo();
+
         init_productsMasonry();
         init_productCountdown();
+
+        init_productcarouselwoo($("#sync1"), $("#sync2"));
+
 
         $('.products-sortby select').selectpicker({
             styleBase: '',
@@ -624,54 +627,7 @@
 
 
     /* ---------------------------------------------
-     QickView
-     --------------------------------------------- */
-    function init_quickview(){
-        $('body').on('click', '.quickview', function(e){
-            e.preventDefault();
-            var objProduct = $(this);
-            objProduct.addClass('loading');
-
-            var data = {},
-                ajaxurl  = 'ajax/woocommerce-product-quickview.html';
-
-            $.post(ajaxurl, data, function(response) {
-                objProduct.removeClass('loading');
-
-                $.magnificPopup.open({
-                    mainClass : 'mfp-zoom-in',
-                    fixedContentPos: false,
-                    fixedBgPos: true,
-                    removalDelay: 200,
-                    items: {
-                        src: '<div class="themedev-product-popup mfp-with-anim">' + response + '</div>',
-                        type: 'inline'
-                    },
-                    callbacks: {
-                        open: function() {
-                            var $popup = $('.themedev-product-popup');
-
-                            setTimeout(function(){
-                                $popup.addClass('animate-width');
-                            }, 500);
-                            setTimeout(function(){
-                                $popup.addClass('add-content');
-                            }, 1000);
-
-                            init_shortcodes();
-
-                        }
-                    }
-                });
-            });
-
-            return false;
-        });
-    }
-
-
-    /* ---------------------------------------------
-     Popup content 
+     Popup content
      --------------------------------------------- */
     function init_popup(){
         var cookie_popup = $.cookie('popup_newletter');
@@ -693,13 +649,68 @@
         }
     }
 
+
+    /* ---------------------------------------------
+     QickView
+     --------------------------------------------- */
+    function init_quickview(){
+        $('body').on('click', '.quickview', function(e){
+            e.preventDefault();
+            var objProduct = $(this);
+            objProduct.addClass('loading');
+
+            var data = {},
+                ajaxurl  = 'ajax/woocommerce-product-quickview.html';
+
+            $.post(ajaxurl, data, function(response) {
+                objProduct.removeClass('loading');
+
+                $.magnificPopup.open({
+                    mainClass : 'mfp-zoom-in',
+                    showCloseBtn: false,
+                    removalDelay: 200,
+                    items: {
+                        src: '<div class="themedev-product-popup mfp-with-anim">' + response + '</div>',
+                        type: 'inline'
+                    },
+                    callbacks: {
+                        open: function() {
+                            var $popup = $('.themedev-product-popup');
+                            $popup.waitForImages(function(){
+                                var images = $("#quickview-images"),
+                                    thumbnails = $("#quickview-thumbnails");
+
+                                init_productcarouselwoo(images, thumbnails);
+                                setTimeout(function(){
+                                    $popup.addClass('animate-width');
+                                }, 500);
+                                setTimeout(function(){
+                                    $popup.addClass('add-content');
+                                }, 1000);
+                            });
+
+                            init_shortcodes();
+                        }
+                    }
+                });
+            });
+            return false;
+        });
+
+        $(document).on('click', '.close-quickview', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+
+    }
+
+
     /* ---------------------------------------------
      Single Product
      --------------------------------------------- */
-    var sync1 = $("#sync1");
-    var sync2 = $("#sync2");
 
-    function init_productcarouselwoo(){
+
+    function init_productcarouselwoo(sync1, sync2){
 
         sync1.owlCarousel({
             singleItem : true,
@@ -713,65 +724,69 @@
             navigationText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
         });
 
-        sync2.each(function(){
-            $(this).owlCarousel({
-                theme : 'woocommerce-thumbnails',
-                items : $(this).data('items'),
-                itemsCustom : [[991,$(this).data('items')], [768, $(this).data('items')], [480, $(this).data('items')]],
-                navigation: true,
-                navigationText: false,
-                pagination:false,
-                responsiveRefreshRate : 100,
-                afterInit : function(el){
-                    el.find(".owl-item").eq(0).addClass("synced");
-                }
-            });
+        sync2.owlCarousel({
+            theme : 'woocommerce-thumbnails',
+            items : sync2.data('items'),
+            itemsCustom : [[991,sync2.data('items')], [768, sync2.data('items')], [480, sync2.data('items')]],
+            navigation: true,
+            navigationText: false,
+            pagination:false,
+            responsiveRefreshRate : 100,
+            afterInit : function(el){
+                el.find(".owl-item").eq(0).addClass("synced");
+            }
         });
 
-        $("#sync2").on("click", ".owl-item", function(e){
+        sync2.on("click", ".owl-item", function(e){
             e.preventDefault();
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo", number);
         });
 
-    }
-    function syncPosition(el){
-        var current = this.currentItem;
-        $("#sync2")
-            .find(".owl-item")
-            .removeClass("synced")
-            .eq(current)
-            .addClass("synced")
-        if($("#sync2").data("owlCarousel") !== undefined){
-            center(current)
-        }
-    }
-    function center(number){
-        var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
 
-        var num = number;
-        var found = false;
 
-        for(var i in sync2visible){
-            if(num === sync2visible[i]){
-                var found = true;
+        function syncPosition(el){
+            var current = this.currentItem;
+
+            sync2
+                .find(".owl-item")
+                .removeClass("synced")
+                .eq(current)
+                .addClass("synced");
+            if(sync2.data("owlCarousel") !== undefined){
+                center(current)
             }
         }
+        function center(number){
+            var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
 
-        if(found===false){
-            if(num>sync2visible[sync2visible.length-1]){
-                sync2.trigger("owl.goTo", num - sync2visible.length+2)
-            }else{
-                if(num - 1 === -1){
-                    num = 0;
+            var num = number;
+            var found = false;
+
+            for(var i in sync2visible){
+                if(num === sync2visible[i]){
+                    var found = true;
                 }
-                sync2.trigger("owl.goTo", num);
             }
-        } else if(num === sync2visible[sync2visible.length-1]){
-            sync2.trigger("owl.goTo", sync2visible[1])
-        } else if(num === sync2visible[0]){
-            sync2.trigger("owl.goTo", num-1)
+
+            if(found===false){
+                if(num>sync2visible[sync2visible.length-1]){
+                    sync2.trigger("owl.goTo", num - sync2visible.length+2)
+                }else{
+                    if(num - 1 === -1){
+                        num = 0;
+                    }
+                    sync2.trigger("owl.goTo", num);
+                }
+            } else if(num === sync2visible[sync2visible.length-1]){
+                sync2.trigger("owl.goTo", sync2visible[1])
+            } else if(num === sync2visible[0]){
+                sync2.trigger("owl.goTo", num-1)
+            }
         }
+
+
     }
+
 
 })(jQuery); // End of use strict

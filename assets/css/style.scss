@@ -3076,6 +3076,9 @@ select.mobile-device {
       display: block;
       a{
         color: #666;
+        &:hover{
+          color: #000000;
+        }
       }
     }
   }
@@ -3865,18 +3868,31 @@ table.compare{
   max-width: 600px;
   position: relative;
   overflow: hidden;
+
+  .close-quickview{
+    font-size: 18px;
+    line-height: 1.4;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    &:hover{
+
+    }
+  }
+
   .product-main{
-    background: #f7f7f7;
+    background: #FFF;
     .product-detail-images{
       padding: 30px;
       max-width: 600px;
     }
     .product-detail-thumbarea{
+      margin: 0;
       padding: 0;
     }
     .product-details-info{
       position: absolute;
-      padding: 30px;
+      padding: 35px 30px 30px;
       visibility: hidden;
       @include opacity(0);
       @include transition();
