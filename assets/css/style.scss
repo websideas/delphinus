@@ -513,6 +513,120 @@ blockquote {
     }
   }
 }
+/*
+ * 3.5 Lists
+ */
+ul.special{
+  padding: 0;
+  margin: 0 0 30px;
+  list-style: none;
+  li{
+    padding-left: 52px;
+    margin-bottom: 20px;
+    position: relative;
+    line-height: 30px;
+    &:after{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-align: center;
+    }
+  }
+  &.style1{
+    counter-reset: my-badass-counter;
+    li:after{
+      content: counter(my-badass-counter, decimal);
+      counter-increment: my-badass-counter;
+      border-radius: 100%;
+      border: 1px solid #d8d8d8;
+      font-size: 14px;
+      color: #000;
+      line-height: 28px;
+    }
+  }
+  &.style2{
+    li:after{
+      border-radius: 100%;
+      background: #ed8b5c;
+      color: #fff;
+      font-size: 10px;
+      line-height: 28px;
+      font-family: FontAwesome;
+      content: "\f00c";
+    }
+  }
+  &.style3{
+    li:after{
+      border-radius: 100%;
+      border: 1px solid #d8d8d8;
+      font-size: 14px;
+      color: #000;
+      line-height: 28px;
+      font-family: FontAwesome;
+      content: "\f105";
+    }
+  }
+}
+/*
+ * 3.6 Alert
+ */
+.alert{
+  padding: 40px 40px 40px 100px;
+  border: 1px solid #dce2ed;
+  border-radius: 0;
+  position: relative;
+  &:after{
+    font-family: "FontAwesome";
+    font-variant: normal;
+    font-weight: normal;
+    text-transform: none;
+    left: 0;
+    position: absolute;
+    content: "\f0f3";
+    text-align: center;
+    top: 50%;
+    font-size: 36px;
+    @include transform(translateY(-50%));
+    width: 100px;
+    color:#9fadbd;
+  }
+  &.alert-info:after{
+    content: "\f05a";
+    color: #f95b46;
+  }
+  &.alert-success:after{
+    content: "\f058";
+    color: #84be20;
+  }
+  &.alert-warning:after{
+    content:"\f071";
+    color: #e7ad24;
+  }
+  &.alert-danger:after{
+    content: "\f05a";
+    color: #f56048;
+  }
+  &.style1{
+    &.alert-normal{
+      background: #ececec;
+    }
+    &.alert-info{
+      background: #f9b5aa;
+    }
+    &.alert-success{
+      background: #e7f6cd;
+    }
+    &.alert-warning{
+      background: #faf4d4;
+    }
+    &.alert-danger{
+      background: #252932;
+    }
+  }
+}
+
 
 /* ==============================
    4. Forms fields
