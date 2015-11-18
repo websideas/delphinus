@@ -2,36 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/category/category-01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/category/category-02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/category/category-03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/images/category/category-04.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages-footer-style1.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages-footer-style2.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages-footer-style3.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ajax/woocommerce-product-quickview.html" afterPath="$PROJECT_DIR$/ajax/woocommerce-product-quickview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/slideshows/carousel.php" afterPath="$PROJECT_DIR$/templates/slideshows/carousel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footers/footer.php" afterPath="$PROJECT_DIR$/templates/footers/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage2.php" afterPath="$PROJECT_DIR$/homepage2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage3.php" afterPath="$PROJECT_DIR$/homepage3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage4.php" afterPath="$PROJECT_DIR$/homepage4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage5.php" afterPath="$PROJECT_DIR$/homepage5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage6.php" afterPath="$PROJECT_DIR$/homepage6.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shortcode-button.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/product-preview-slider.js" afterPath="$PROJECT_DIR$/assets/js/product-preview-slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/responsive.css.map" afterPath="$PROJECT_DIR$/assets/css/responsive.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/responsive.css" afterPath="$PROJECT_DIR$/assets/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/responsive.scss" afterPath="$PROJECT_DIR$/assets/css/responsive.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-messagebox.php" afterPath="$PROJECT_DIR$/shortcode-messagebox.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-tabs.php" afterPath="$PROJECT_DIR$/shortcode-tabs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-typography.php" afterPath="$PROJECT_DIR$/shortcode-typography.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.scss" afterPath="$PROJECT_DIR$/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-3column-sidebar.php" afterPath="$PROJECT_DIR$/woocommerce-3column-sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-3column.php" afterPath="$PROJECT_DIR$/woocommerce-3column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-4column.php" afterPath="$PROJECT_DIR$/woocommerce-4column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-masonry.php" afterPath="$PROJECT_DIR$/woocommerce-masonry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-product-detailed1.php" afterPath="$PROJECT_DIR$/woocommerce-product-detailed1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-shop.php" afterPath="$PROJECT_DIR$/woocommerce-shop.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,31 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="responsive.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/css/responsive.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.825731">
-              <caret line="144" column="31" selection-start-line="144" selection-start-column="31" selection-end-line="144" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.176471">
-              <caret line="3481" column="11" selection-start-line="3481" selection-start-column="11" selection-end-line="3481" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="woocommerce-product-detailed1.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/woocommerce-product-detailed1.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.0">
-              <caret line="102" column="106" selection-start-line="102" selection-start-column="106" selection-end-line="102" selection-end-column="106" />
+            <state vertical-scroll-proportion="0.4385965">
+              <caret line="4447" column="25" selection-start-line="4447" selection-start-column="25" selection-end-line="4447" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -140,8 +98,8 @@
         <option value="$PROJECT_DIR$/woocommerce-4column.php" />
         <option value="$PROJECT_DIR$/woocommerce-masonry.php" />
         <option value="$PROJECT_DIR$/woocommerce-product-detailed1.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/assets/css/responsive.scss" />
+        <option value="$PROJECT_DIR$/assets/css/style.scss" />
       </list>
     </option>
   </component>
@@ -769,18 +727,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/assets/css/responsive.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.176471">
-          <caret line="3481" column="11" selection-start-line="3481" selection-start-column="11" selection-end-line="3481" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.73021585">
+          <caret line="124" column="0" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/responsive.scss">
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.825731">
-          <caret line="144" column="31" selection-start-line="144" selection-start-column="31" selection-end-line="144" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.4385965">
+          <caret line="4447" column="25" selection-start-line="4447" selection-start-column="25" selection-end-line="4447" selection-end-column="25" />
           <folding />
         </state>
       </provider>

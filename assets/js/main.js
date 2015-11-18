@@ -121,7 +121,8 @@
         }).change();
 
 
-
+        $('.kt-tab-container').tabs();
+        $('.kt-accordion').accordion({ 'heightStyle': 'content' });
     });
 
 
