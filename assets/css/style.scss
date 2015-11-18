@@ -979,6 +979,11 @@ select:not([multiple]) {
     color: #000;
     font-weight: bold;
     letter-spacing: 0.2em;
+    &:hover{
+      background: #000000;
+      border-color: #000000;
+      color: #fff;
+    }
   }
 
   &.btn-addtocart{
@@ -4114,7 +4119,7 @@ form.checkout{
       border: 1px solid #f0f0f0;
       background: #f6f6f6;
     }    
-    label{
+    label,p{
       font-weight: normal;
       font-size: 14px;
       line-height: normal;
@@ -4276,6 +4281,10 @@ table.cart{
       button{
         margin: 0 15px;
         color: #010101;
+        &:hover,&:focus{
+          background: #000;
+          color: #fff;
+        }
       }
     }
   }

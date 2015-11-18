@@ -1002,6 +1002,10 @@ select:not([multiple]) {
     color: #000;
     font-weight: bold;
     letter-spacing: 0.2em; }
+    .btn.btn-medium:hover {
+      background: #000000;
+      border-color: #000000;
+      color: #fff; }
   .btn.btn-addtocart {
     background: #ffffff;
     color: #000000;
@@ -3795,7 +3799,7 @@ form.checkout .form-group {
   form.checkout .form-group input[type="text"], form.checkout .form-group input[type="email"], form.checkout .form-group input[type="password"], form.checkout .form-group textarea {
     border: 1px solid #f0f0f0;
     background: #f6f6f6; }
-  form.checkout .form-group label {
+  form.checkout .form-group label, form.checkout .form-group p {
     font-weight: normal;
     font-size: 14px;
     line-height: normal;
@@ -3924,6 +3928,9 @@ table.cart {
       table.cart td.actions button {
         margin: 0 15px;
         color: #010101; }
+        table.cart td.actions button:hover, table.cart td.actions button:focus {
+          background: #000;
+          color: #fff; }
 
 .cart-collaterals h5 {
   padding: 12px 0;
