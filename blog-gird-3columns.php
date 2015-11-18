@@ -33,7 +33,7 @@ include_once('templates/headers/header1.php');
 
                 <div class="blog-posts">
                     <div class="row multi-columns-row">
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
@@ -47,7 +47,7 @@ include_once('templates/headers/header1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
@@ -61,7 +61,7 @@ include_once('templates/headers/header1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>
@@ -74,7 +74,7 @@ include_once('templates/headers/header1.php');
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
@@ -88,7 +88,7 @@ include_once('templates/headers/header1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
@@ -102,49 +102,7 @@ include_once('templates/headers/header1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
-                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
-                                <img src="assets/images/blog/blog-03.jpg" alt=""/>
-                            </a>
-                            <h4 class="blog-post-title">
-                                <a href="blog-singlepost-standard.php">The Best Bathrooms of 2014</a>
-                            </h4>
-                            <div class="blog-post-meta">
-                                <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
-                                <span class="comments-link"><a href="#">3 Comments</a></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
-                        </div>
-
-                        <div class="blog-post col-lg-4 col-md-4">
-                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
-                                <img src="assets/images/blog/blog-01.jpg" alt=""/>
-                            </a>
-                            <h4 class="blog-post-title">
-                                <a href="blog-singlepost-standard.php"> The Best Way to Clean Your Pillows</a>
-                            </h4>
-                            <div class="blog-post-meta">
-                                <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
-                                <span class="comments-link"><a href="#">3 Comments</a></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
-                        </div>
-
-                        <div class="blog-post col-lg-4 col-md-4">
-                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
-                                <img src="assets/images/blog/blog-02.jpg" alt=""/>
-                            </a>
-                            <h4 class="blog-post-title">
-                                <a href="blog-singlepost-standard.php">17 Small Space Decorating Tricks ...</a>
-                            </h4>
-                            <div class="blog-post-meta">
-                                <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
-                                <span class="comments-link"><a href="#">3 Comments</a></span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
-                        </div>
-
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>
@@ -158,7 +116,7 @@ include_once('templates/headers/header1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
@@ -172,7 +130,7 @@ include_once('templates/headers/header1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
@@ -186,7 +144,49 @@ include_once('templates/headers/header1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
+                                <img src="assets/images/blog/blog-03.jpg" alt=""/>
+                            </a>
+                            <h4 class="blog-post-title">
+                                <a href="blog-singlepost-standard.php">The Best Bathrooms of 2014</a>
+                            </h4>
+                            <div class="blog-post-meta">
+                                <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
+                                <span class="comments-link"><a href="#">3 Comments</a></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
+                        </div>
+
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
+                                <img src="assets/images/blog/blog-01.jpg" alt=""/>
+                            </a>
+                            <h4 class="blog-post-title">
+                                <a href="blog-singlepost-standard.php"> The Best Way to Clean Your Pillows</a>
+                            </h4>
+                            <div class="blog-post-meta">
+                                <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
+                                <span class="comments-link"><a href="#">3 Comments</a></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
+                        </div>
+
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
+                                <img src="assets/images/blog/blog-02.jpg" alt=""/>
+                            </a>
+                            <h4 class="blog-post-title">
+                                <a href="blog-singlepost-standard.php">17 Small Space Decorating Tricks ...</a>
+                            </h4>
+                            <div class="blog-post-meta">
+                                <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
+                                <span class="comments-link"><a href="#">3 Comments</a></span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
+                        </div>
+
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>

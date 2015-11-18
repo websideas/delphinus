@@ -190,9 +190,7 @@
 
 /* 9. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
-  .side-bar {
-    margin-top: 50px;
-  }
+
 
   .product-main{
     &.style2,
@@ -273,6 +271,7 @@
     } 
    } 
   }
+
   .table-responsive{
     border-color: #f0f0f0;
   }
@@ -298,6 +297,10 @@
     .shop_attributes{
       width: 100%;
     }
+  }
+
+  .side-bar {
+    margin-top: 50px;
   }
 
   .about-left{

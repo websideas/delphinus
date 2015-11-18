@@ -86,7 +86,7 @@ include_once('templates/headers/header1.php');
                                 <tr>
                                     <td class="actions" colspan="6">
                                         <button class="btn btn-dark-b">Update Cart</button>
-                                        <button class="btn">Proceed to Checkout</button>
+                                        <button class="btn btn-gray">Proceed to Checkout</button>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -99,8 +99,8 @@ include_once('templates/headers/header1.php');
                             <div class="cart-collaterals-inner">
                                 <div class="coupon">
                                     <p>Enter your coupon code if you have one</p>
-                                    <input placeholder="Enter coupon code" value="" id="coupon_code" class="input-text" name="coupon_code">
-                                    <button name="apply_coupon" class="btn">apply Coupon</button>
+                                    <input placeholder="Enter coupon code" type="text" name="coupon_code">
+                                    <button name="apply_coupon" class="btn btn-gray">apply Coupon</button>
                                 </div>
                             </div>
                         </form>

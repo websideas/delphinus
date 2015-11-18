@@ -131,9 +131,6 @@
       display: block; } }
 /* 9. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
-  .side-bar {
-    margin-top: 50px; }
-
   .product-main.style2 .product-detail-wrap, .product-main.style3 .product-detail-wrap {
     max-width: none;
     padding: 40px 15px; }
@@ -187,6 +184,9 @@
       border-top: 2px solid #e3e3e3; }
   .woocommerce-tabs .shop_attributes {
     width: 100%; }
+
+  .side-bar {
+    margin-top: 50px; }
 
   .about-left {
     margin-left: 0; } }

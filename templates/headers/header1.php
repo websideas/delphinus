@@ -23,9 +23,11 @@
 
             <div class="mobile-tool">
                 <a id="hamburger-icon" href="#" title="Menu">
-                    <span class="line line-1"></span>
-                    <span class="line line-2"></span>
-                    <span class="line line-3"></span>
+                    <span class="hamburger-icon-inner">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </span>
                 </a>
                 <a href="woocommerce-cart.php" class="mobile-tool-cart">
                     <i class="icon-Shopping-Cart"></i>
