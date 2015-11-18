@@ -1118,6 +1118,9 @@ select:not([multiple]) {
 .branding h1 {
   margin: 0;
   font-size: 24px; }
+.branding img {
+  width: 170px;
+  height: 20px; }
 
 .topbar {
   height: 57px;
@@ -3366,7 +3369,6 @@ select.mobile-device {
 .product-main.style2 .product-detail-thumbarea {
   margin: 0; }
 .product-main.style3 .product-detail-thumbarea {
-  margin-right: 45px;
   margin-bottom: 0;
   padding: 30px;
   background: #ededed; }
