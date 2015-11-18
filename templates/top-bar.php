@@ -61,7 +61,7 @@
                     </div>
                 </li>
                 <li class="wishlist-item">
-                    <a href="#">
+                    <a href="woocommerce-wishlist.php">
                         wishlist <span>1</span>
                     </a>
                     <div class="top-navigation-submenu">
@@ -92,7 +92,7 @@
                     </div>
                 </li>
                 <li class="shopping-bag-item">
-                    <a href="#">my cart <span>2</span></a>
+                    <a href="woocommerce-cart.php">my cart <span>2</span></a>
 
                     <div class="top-navigation-submenu">
                         <div class="shopping-bag">
@@ -130,8 +130,8 @@
                             </div><!-- .bag-products -->
 
                             <div class="bag-buttons">
-                                <a class="btn-block btn btn-gray">View Cart</a>
-                                <a class="btn-block btn btn-dark-b">Checkout</a>
+                                <a class="btn-block btn btn-gray" href="woocommerce-cart.php">View Cart</a>
+                                <a class="btn-block btn btn-dark-b" href="woocommerce-checkout.php">Checkout</a>
                             </div><!-- .bag-buttons -->
 
                         </div><!-- .shopping-bag -->

@@ -80,11 +80,6 @@ include_once('templates/slideshows/slideshow1.php');
         <div class="page-section no-padding">
             <div class="container">
                 <div class="row equal_height equal_height_element ">
-                    <div class="col-md-9 kt_column pull-right">
-                        <div class="single-image">
-                            <a href="#"><img src="assets/images/banner/banner-12.png" alt=""/></a>
-                        </div>
-                    </div>
                     <div class="col-md-3 kt_column">
                         <div class="feature-icon" style="background: #ed8b5c;">
                             <div class="feature-icon-content kt-table">
@@ -95,7 +90,11 @@ include_once('templates/slideshows/slideshow1.php');
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-md-9 kt_column">
+                        <div class="single-image">
+                            <a href="#"><img src="assets/images/banner/banner-12.png" alt=""/></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div><!-- .page-section -->

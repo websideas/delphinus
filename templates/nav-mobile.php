@@ -85,7 +85,7 @@
             <a href="#">login</a>
         </li>
         <li class="wishlist-item">
-            <a href="#">wishlist (<span>3</span>)</a>
+            <a href="woocommerce-wishlist.php">wishlist (<span>3</span>)</a>
         </li>
         <li>
             <form action="#" class="searchform" method="get">

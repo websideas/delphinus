@@ -27,7 +27,7 @@
                     <span class="line line-2"></span>
                     <span class="line line-3"></span>
                 </a>
-                <a href="#" class="mobile-tool-cart">
+                <a href="woocommerce-cart.php" class="mobile-tool-cart">
                     <i class="icon-Shopping-Cart"></i>
                     <span>2</span>
                 </a>
