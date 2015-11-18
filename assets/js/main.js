@@ -122,7 +122,7 @@
 
 
         $('.kt-tab-container').tabs();
-        $('.kt-accordion').accordion();
+        $('.kt-accordion').accordion({ 'heightStyle': 'content' });
     });
 
 
