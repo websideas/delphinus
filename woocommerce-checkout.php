@@ -88,15 +88,13 @@ include_once('templates/headers/header1.php');
                                             <label>Account password <abbr title="required" class="required">*</abbr></label>
                                             <input class="input-text" type="password" />
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="checkout-wrap">
-                                    <div class="woocommerce-shipping-fields box">
-                                        <label>
-                                            <input type="checkbox" checked>Ship to a different address?
-                                        </label>
-                                        <div class="form-group">
-                                            <textarea></textarea>
+                                        <div class="woocommerce-shipping-fields box">
+                                            <label>
+                                                <input type="checkbox" checked>Ship to a different address?
+                                            </label>
+                                            <div class="form-group">
+                                                <textarea></textarea>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

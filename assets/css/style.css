@@ -3778,12 +3778,17 @@ select.mobile-device {
    ============================== */
 .title-checkout {
   letter-spacing: 0.2em;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #f6f6f6;
+  padding: 10px 0;
+  border: 1px solid #f0f0f0;
+  margin: 0;
   text-align: center; }
 
 .checkout-wrap {
-  padding: 0 20px; }
+  padding: 20px;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  margin-bottom: 30px; }
 
 form.checkout .form-group {
   margin-bottom: 20px; }
@@ -3804,9 +3809,10 @@ form.checkout .title-order {
   padding: 12px;
   text-align: center;
   background: #f6f6f6;
-  letter-spacing: 0.2em; }
+  letter-spacing: 0.2em;
+  margin: 0; }
 form.checkout .coupon_wrap {
-  margin-bottom: 70px; }
+  margin-bottom: 7px; }
   form.checkout .coupon_wrap .coupon-form {
     padding-right: 227px;
     position: relative; }
@@ -3845,40 +3851,42 @@ form.checkout .coupon_wrap {
   #order_review .shop_table tfoot .order-total td {
     color: #000; }
 
-#payment .payment_methods {
-  padding: 0;
-  margin: 0;
-  list-style: none; }
-  #payment .payment_methods li {
-    margin: 0 0 30px; }
-    #payment .payment_methods li .payment_box {
-      background: #f6f6f6;
-      padding: 15px;
-      position: relative;
-      font-size: 14px;
-      line-height: 24px; }
-      #payment .payment_methods li .payment_box:after {
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-bottom: 8px solid #f6f6f6;
-        top: -8px;
-        content: "";
-        height: 0;
-        position: absolute;
-        left: 30px;
-        width: 0; }
-      #payment .payment_methods li .payment_box p {
-        margin: 0; }
-    #payment .payment_methods li label {
-      margin: 0 0 20px;
-      font-size: 14px;
-      color: #666;
-      letter-spacing: 0.075em; }
-      #payment .payment_methods li label .input-radio {
-        margin: 0 12px 0 0;
-        position: static; }
-#payment .place-order {
-  text-align: center; }
+#payment {
+  margin-bottom: 10px; }
+  #payment .payment_methods {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    #payment .payment_methods li {
+      margin: 0 0 30px; }
+      #payment .payment_methods li .payment_box {
+        background: #f6f6f6;
+        padding: 15px;
+        position: relative;
+        font-size: 14px;
+        line-height: 24px; }
+        #payment .payment_methods li .payment_box:after {
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-bottom: 8px solid #f6f6f6;
+          top: -8px;
+          content: "";
+          height: 0;
+          position: absolute;
+          left: 30px;
+          width: 0; }
+        #payment .payment_methods li .payment_box p {
+          margin: 0; }
+      #payment .payment_methods li label {
+        margin: 0 0 20px;
+        font-size: 14px;
+        color: #666;
+        letter-spacing: 0.075em; }
+        #payment .payment_methods li label .input-radio {
+          margin: 0 12px 0 0;
+          position: static; }
+  #payment .place-order {
+    text-align: center; }
 
 /* ==============================
    My Cart
@@ -3918,14 +3926,17 @@ table.cart {
         color: #010101; }
 
 .cart-collaterals h5 {
-  padding-bottom: 12px;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 12px 0;
+  border: 1px solid #f0f0f0;
   text-align: center;
-  margin: 0 0 25px;
+  margin: 0;
   letter-spacing: 0.2em; }
 .cart-collaterals .cart-collaterals-inner {
-  padding: 0 20px;
-  margin-bottom: 30px; }
+  padding: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  border-right: 1px solid #f0f0f0; }
   .cart-collaterals .cart-collaterals-inner p {
     margin-bottom: 20px; }
 .cart-collaterals .cart_totals table {
@@ -3942,7 +3953,10 @@ table.cart {
   border-bottom: 1px solid #f0f0f0;
   margin-bottom: 20px; }
 .cart-collaterals .button-checkout {
-  text-align: center; }
+  text-align: center;
+  border: 1px solid #f0f0f0;
+  border-top: none;
+  padding: 20px; }
 .cart-collaterals .coupon-form input {
   padding: 10px 15px;
   line-height: normal;
@@ -3952,8 +3966,7 @@ table.cart {
   width: 100%; }
 .cart-collaterals .shipping_calculator .input-text {
   background: #f6f6f6;
-  border: 1px solid #f0f0f0;
-  margin-bottom: 20px; }
+  border: 1px solid #f0f0f0; }
 .cart-collaterals .shipping_calculator .row {
   margin-left: -10px;
   margin-right: -10px; }
@@ -3963,8 +3976,7 @@ table.cart {
 .cart-collaterals .shipping_calculator button {
   padding: 9px 0;
   text-align: center;
-  width: 100%;
-  margin-bottom: 20px; }
+  width: 100%; }
 
 /* ==============================
    Compare

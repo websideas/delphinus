@@ -116,7 +116,7 @@ include_once('templates/headers/header1.php');
                                 <div class="form-group">
                                     <input type="text" class="input-text" placeholder="State/County">
                                 </div>
-                                <div class="form-group row">
+                                <div class="form-group row remove-mar-bottom">
                                     <div class="col-md-5">
                                         <input type="text" class="input-text" placeholder="Post Code / Zip">
                                     </div>
@@ -129,7 +129,7 @@ include_once('templates/headers/header1.php');
                         </form>
                         <div class="cart_totals col-md-4 col-sm-4">
                             <h5>Cart Totals</h5>
-                            <div class="cart-collaterals-inner">
+                            <div class="cart-collaterals-inner remove-mar-bottom">
                                 <table>
                                     <tbody>
                                     <tr class="cart-subtotal">

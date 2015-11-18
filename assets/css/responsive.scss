@@ -261,10 +261,7 @@
       width: 100%;
     }
   }
-
-  .checkout-wrap{
-    padding: 0;
-  }  
+ 
   form.checkout {
    .coupon_wrap{
     .coupon-form{
@@ -279,9 +276,12 @@
   .table-responsive{
     border-color: #f0f0f0;
   }
+
   .cart-collaterals{
-    .cart-collaterals-inner{
-      padding: 0;
+    .shipping_calculator{
+      button{
+        margin-top: 15px;
+      }
     }
   }
 

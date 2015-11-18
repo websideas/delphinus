@@ -166,9 +166,6 @@
     text-align: center !important;
     width: 100%; }
 
-  .checkout-wrap {
-    padding: 0; }
-
   form.checkout .coupon_wrap .coupon-form {
     padding: 0; }
     form.checkout .coupon_wrap .coupon-form input.submit {
@@ -178,8 +175,8 @@
   .table-responsive {
     border-color: #f0f0f0; }
 
-  .cart-collaterals .cart-collaterals-inner {
-    padding: 0; }
+  .cart-collaterals .shipping_calculator button {
+    margin-top: 15px; }
 
   .woocommerce-tabs .nav {
     padding: 0; }
