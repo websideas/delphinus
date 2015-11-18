@@ -45,7 +45,6 @@
          ***  Sticky header
          ===============================**/
         if ($.fn.ktSticky) {
-
             $('.navbar-container.sticky-header').ktSticky({
                 contentSticky : '',
                 offset: 50
@@ -80,6 +79,7 @@
         init_popup();
         init_quickview();
         init_backtotop();
+        init_matchHeight();
 
         init_productsMasonry();
         init_productCountdown();
@@ -329,18 +329,25 @@
         });
     }
 
-    /**==============================
-     ***  Equal height
-     ===============================**/
-    $('.equal_height').each(function(){
-        var equal_height_element;
-        if($(this).hasClass('equal_height_element')){
-            equal_height_element = $(this).children('.kt_column').children('*');
-        }else{
-            equal_height_element = $(this).children();
-        }
-        equal_height_element.matchHeight({ byRow: true });
-    });
+    /* ---------------------------------------------
+     Match Height
+     --------------------------------------------- */
+    function init_matchHeight(){
+        /**==============================
+         ***  Equal height
+         ===============================**/
+        $('.equal_height').each(function(){
+            var equal_height_element;
+            if($(this).hasClass('equal_height_element')){
+                equal_height_element = $(this).children('.kt_column').children('*');
+            }else{
+                equal_height_element = $(this).children();
+            }
+            equal_height_element.matchHeight({ byRow: true });
+        });
+    }
+
+
 
 
     /* ---------------------------------------------
@@ -785,8 +792,6 @@
             var number = $(this).data("owlItem");
             sync1.trigger("owl.goTo", number);
         });
-
-
 
         function syncPosition(el){
             var current = this.currentItem;

@@ -15,7 +15,7 @@
         <div class="navbar-container-inner clearfix">
             <div class="branding">
                 <h1 class="logo">
-                    <a href="index.php">Delphinus</a>
+                    <a href="index.php"><img src="assets/images/logo.png" title="Delphinus" alt="Delphinus"/></a>
                 </h1>
             </div><!-- .branding -->
 
