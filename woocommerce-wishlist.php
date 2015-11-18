@@ -29,61 +29,63 @@ include_once('templates/headers/header1.php');
             <div class="container">
                 <div class="woocommerce">
                     <form>
-                        <table class="shop_table cart">
-                            <thead>
-                            <tr>
+                        <div class="table-responsive">
+                            <table class="shop_table cart">
+                                <thead>
+                                <tr>
 
-                                <th class="product-thumbnail">Item</th>
-                                <th class="product-name">Description</th>
-                                <th class="product-quantity">Quantity</th>
-                                <th class="product-price">Unit Price</th>
-                                <th class="product-subtotal">Subtotal</th>
-                                <th class="product-remove">&nbsp;</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="cart_item">
-                                <td class="product-thumbnail">
-                                    <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt=""></a>
-                                </td>
-                                <td class="product-name">
-                                    <a href="#">Sample Product 01</a>
-                                </td>
-                                <td class="product-quantity">
-                                    <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
-                                </td>
-                                <td class="product-price">
-                                    <span class="amount">$1000.00</span>
-                                </td>
-                                <td class="product-subtotal">
-                                    <span class="amount">$1000.00</span>
-                                </td>
-                                <td class="product-remove">
-                                    <a href="#"><i class="fa fa-times"></i></a>
-                                </td>
-                            </tr>
-                            <tr class="cart_item">
-                                <td class="product-thumbnail">
-                                    <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt=""></a>
-                                </td>
-                                <td class="product-name">
-                                    <a href="#">Sample Product 02</a>
-                                </td>
-                                <td class="product-quantity">
-                                    <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
-                                </td>
-                                <td class="product-price">
-                                    <span class="amount">$1000.00</span>
-                                </td>
-                                <td class="product-subtotal">
-                                    <span class="amount">$1000.00</span>
-                                </td>
-                                <td class="product-remove">
-                                    <a href="#"><i class="fa fa-times"></i></a>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                                    <th class="product-thumbnail">Item</th>
+                                    <th class="product-name">Description</th>
+                                    <th class="product-quantity">Quantity</th>
+                                    <th class="product-price">Unit Price</th>
+                                    <th class="product-subtotal">Subtotal</th>
+                                    <th class="product-remove">&nbsp;</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="cart_item">
+                                    <td class="product-thumbnail">
+                                        <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt=""></a>
+                                    </td>
+                                    <td class="product-name">
+                                        <a href="#">Sample Product 01</a>
+                                    </td>
+                                    <td class="product-quantity">
+                                        <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
+                                    </td>
+                                    <td class="product-price">
+                                        <span class="amount">$1000.00</span>
+                                    </td>
+                                    <td class="product-subtotal">
+                                        <span class="amount">$1000.00</span>
+                                    </td>
+                                    <td class="product-remove">
+                                        <a href="#"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr class="cart_item">
+                                    <td class="product-thumbnail">
+                                        <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt=""></a>
+                                    </td>
+                                    <td class="product-name">
+                                        <a href="#">Sample Product 02</a>
+                                    </td>
+                                    <td class="product-quantity">
+                                        <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
+                                    </td>
+                                    <td class="product-price">
+                                        <span class="amount">$1000.00</span>
+                                    </td>
+                                    <td class="product-subtotal">
+                                        <span class="amount">$1000.00</span>
+                                    </td>
+                                    <td class="product-remove">
+                                        <a href="#"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </form>
                 </div>
             </div>

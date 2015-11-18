@@ -28,9 +28,9 @@ include_once('templates/headers/header1.php');
 
         <div class="page-section">
             <div class="container">
+                <h3 class="gray mar-bottom-50">Style 1</h3>
                 <div class="row">
                     <div class="col-md-4">
-                        <h3 class="gray mar-bottom-50">Style 1</h3>
                         <div class="kt-accordion style1">
                             <h3 class="kt-accortion-title">Section 1</h3>
                             <div class="kt-accordion-content">
@@ -48,7 +48,6 @@ include_once('templates/headers/header1.php');
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <h3 class="gray mar-bottom-50">Style 2</h3>
                         <div class="kt-accordion style2">
                             <h3 class="kt-accortion-title">Section 1</h3>
                             <div class="kt-accordion-content">
@@ -65,7 +64,6 @@ include_once('templates/headers/header1.php');
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <h3 class="gray mar-bottom-50">Style 3</h3>
                         <div class="kt-accordion style3">
                             <h3 class="kt-accortion-title">Section 1</h3>
                             <div class="kt-accordion-content">
@@ -86,9 +84,9 @@ include_once('templates/headers/header1.php');
         </div>
         <div class="page-section bg-gray">
             <div class="container">
+                <h3 class="gray mar-bottom-50">Style 2</h3>
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="gray mar-bottom-50">Style 4</h3>
                         <div class="kt-accordion style4">
                             <h3 class="kt-accortion-title">Section 1</h3>
                             <div class="kt-accordion-content">
@@ -114,7 +112,6 @@ include_once('templates/headers/header1.php');
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="gray mar-bottom-50">Style 1</h3>
                         <div class="kt-tab-container">
                             <ul class="tabs clearfix">
                                 <li><a href="#tab1-1">Section 1</a></li>
@@ -139,7 +136,7 @@ include_once('templates/headers/header1.php');
     </div><!-- #main -->
 <?php
 
-include_once('templates/footers/footer3.php');
+include_once('templates/footers/footer4.php');
 include_once('templates/footers/footer.php');
 
 

@@ -27,7 +27,7 @@ include_once('templates/headers/header1.php');
     </div>
 
     <div id="main">
-        <div class="page-section">
+        <div class="page-section pad-bottom-60">
             <div class="container">
                 <div class="googlemap" style="height:570px;margin-bottom:90px;" data-scrollwheel="1" data-style="8" data-location="121 King Street, Melbourne Victoria 3000 Australia" data-zoom="17" data-type="roadmap"></div>
                 <div class="row">

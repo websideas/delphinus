@@ -155,8 +155,24 @@
     }
 
   }
-
-
+  
+  .single-post{
+    .share-it{
+      .social_icons{
+        li{
+          a{
+            padding: 15px 25px;
+            span{
+              display: none;
+            }
+            i{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 /* 9. Styles for devices(<=991px ) */
@@ -215,8 +231,37 @@
     }
   }
 
+  .kt_callout{
+    .kt-col{
+      display: block;
+      padding: 0 0 20px;
+      text-align: center!important;
+      width: 100%;
+    }
+  }
 
-
+  .checkout-wrap{
+    padding: 0;
+  }  
+  form.checkout {
+   .coupon_wrap{
+    .coupon-form{
+      padding: 0;
+      input.submit{
+        position: static;
+        margin-top: 10px;
+      }
+    } 
+   } 
+  }
+  .table-responsive{
+    border-color: #f0f0f0;
+  }
+  .cart-collaterals{
+    .cart-collaterals-inner{
+      padding: 0;
+    }
+  }
 }
 
 /* 12. Styles for devices(>=481px and <= 767px) */
@@ -287,6 +332,11 @@
         margin-bottom: 30px;
       }
     }
+  }
+
+  .kt-tab-container .tabs li{
+    width: 100%;
+    margin: 0;
   }
 
 }

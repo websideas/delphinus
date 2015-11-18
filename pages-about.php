@@ -27,10 +27,10 @@ include_once('templates/headers/header1.php');
     </div>
 
     <div id="main">
-        <div class="page-section">
+        <div class="page-section pad-bottom-60">
             <div class="container">
                 <div class="col-md-6 col-sm-6">
-                    <div class="banner no-margin">
+                    <div class="banner">
                         <img src="assets/images/about.png" alt="About" class="img-responsive" />
                     </div>
                 </div>

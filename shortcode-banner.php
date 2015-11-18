@@ -68,7 +68,7 @@ include_once('templates/headers/header1.php');
     </div><!-- #main -->
 <?php
 
-include_once('templates/footers/footer3.php');
+include_once('templates/footers/footer4.php');
 include_once('templates/footers/footer.php');
 
 

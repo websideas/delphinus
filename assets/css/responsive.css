@@ -117,7 +117,14 @@
     .product-main .product-shareit .social_icons li a span {
       display: none; }
     .product-main .product-shareit .social_icons li a i {
-      display: inline; } }
+      display: inline; }
+
+  .single-post .share-it .social_icons li a {
+    padding: 15px 25px; }
+    .single-post .share-it .social_icons li a span {
+      display: none; }
+    .single-post .share-it .social_icons li a i {
+      display: block; } }
 /* 9. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
   .side-bar {
@@ -146,7 +153,28 @@
       height: auto !important; }
 
   .product-list-widget .product-title {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+
+  .kt_callout .kt-col {
+    display: block;
+    padding: 0 0 20px;
+    text-align: center !important;
+    width: 100%; }
+
+  .checkout-wrap {
+    padding: 0; }
+
+  form.checkout .coupon_wrap .coupon-form {
+    padding: 0; }
+    form.checkout .coupon_wrap .coupon-form input.submit {
+      position: static;
+      margin-top: 10px; }
+
+  .table-responsive {
+    border-color: #f0f0f0; }
+
+  .cart-collaterals .cart-collaterals-inner {
+    padding: 0; } }
 /* 12. Styles for devices(>=481px and <= 767px) */
 /* 13. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
@@ -181,7 +209,11 @@
     font-size: 30px;
     margin-bottom: 30px; }
   .category-banner:hover ul {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .kt-tab-container .tabs li {
+    width: 100%;
+    margin: 0; } }
 /* 14. Styles for devices(<=320px ) */
 
 /*# sourceMappingURL=responsive.css.map */

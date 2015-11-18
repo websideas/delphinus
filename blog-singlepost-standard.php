@@ -55,9 +55,9 @@ include_once('templates/headers/header1.php');
                                 <div class="share-it">
                                     <span class="screen-reader-text">Share this</span>
                                     <ul class="social_icons">
-                                        <li><a href="#">facebook</a></li>
-                                        <li><a href="#">twitter</a></li>
-                                        <li><a href="#">pinterest</a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i> <span>Twitter</span></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a></li>
                                     </ul>
                                 </div><!-- .share-it -->
                             </div><!-- .entry-content-outer -->
@@ -66,9 +66,9 @@ include_once('templates/headers/header1.php');
 
                         <div class="related-articles">
                             <h4 class="related-title single-bottom-title">Related Articles</h4>
-                            <div class="blog-posts">
-                                <div class="row multi-columns-row">
-                                    <div class="blog-post col-lg-4 col-md-4">
+                            <div class="blog-posts owl-carousel-kt">
+                                <div class="owl-carousel kt-owl-carousel"  data-options='{"pagination": false, "navigation": false, "desktop": 3, "desktopsmall": 2, "tablet" : 2, "mobile" : 1}'>
+                                    <div class="blog-post">
                                         <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
                                             <img src="assets/images/blog/blog-01.jpg" alt=""/>
                                         </a>
@@ -82,7 +82,7 @@ include_once('templates/headers/header1.php');
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio ...</p>
                                     </div>
 
-                                    <div class="blog-post col-lg-4 col-md-4">
+                                    <div class="blog-post">
                                         <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
                                             <img src="assets/images/blog/blog-02.jpg" alt=""/>
                                         </a>
@@ -96,12 +96,26 @@ include_once('templates/headers/header1.php');
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio ...</p>
                                     </div>
 
-                                    <div class="blog-post col-lg-4 col-md-4">
+                                    <div class="blog-post">
                                         <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
                                             <img src="assets/images/blog/blog-03.jpg" alt=""/>
                                         </a>
                                         <h4 class="blog-post-title">
                                             <a href="blog-singlepost-standard.html">The Best Way to Clean Your...</a>
+                                        </h4>
+                                        <div class="blog-post-meta">
+                                            <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
+                                            <span class="comments-link"><a href="#">3 Comments</a></span>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio ...</p>
+                                    </div>
+
+                                    <div class="blog-post">
+                                        <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
+                                            <img src="assets/images/blog/blog-01.jpg" alt=""/>
+                                        </a>
+                                        <h4 class="blog-post-title">
+                                            <a href="blog-singlepost-standard.html"> The Best Way to Clean Your...</a>
                                         </h4>
                                         <div class="blog-post-meta">
                                             <span class="author vcard">By: <a href="#">Steven Bradley</a></span>

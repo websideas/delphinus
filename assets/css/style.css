@@ -155,6 +155,9 @@ p {
 .bg-gray {
   background: #f6f6f6; }
 
+.bg-orange {
+  background: #ed8b5c; }
+
 .bg-gradient-gray {
   position: relative; }
   .bg-gradient-gray:before {
@@ -434,7 +437,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "“";
+    content: "ΓÇ£";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -449,7 +452,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "”"; }
+      content: "ΓÇ¥"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote h3 {
@@ -755,7 +758,8 @@ ul.special {
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); }
+        transform: translate(-50%, -50%);
+        font-weight: normal; }
     .kt-accordion .kt-accortion-title.ui-accordion-header-active .ui-accordion-header-icon:after {
       content: "\f068"; }
   .kt-accordion.style1 .kt-accortion-title {
@@ -790,6 +794,15 @@ ul.special {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
   .kt-accordion .kt-accordion-content {
     padding: 10px 30px 30px; }
+
+/*
+ * 3.8 Callout
+ */
+.callout-content {
+  font-family: 'Crete Round', serif;
+  font-style: italic;
+  padding-right: 40px;
+  width: 70%; }
 
 /* ==============================
    4. Forms fields
@@ -856,7 +869,14 @@ select {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   border-radius: 0;
-  width: 100%; }
+  width: 100%;
+  height: 40px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  border: 1px solid #f0f0f0;
+  background: #f6f6f6;
+  cursor: pointer;
+  color: #999999; }
 
 select:not([multiple]) {
   -webkit-box-shadow: none;
@@ -870,7 +890,8 @@ select:not([multiple]) {
   -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
-  appearance: none; }
+  appearance: none;
+  background: #f6f6f6 url(../images/selectbox-arrow.png) no-repeat right center; }
 
 .form-control {
   -webkit-border-radius: 0;
@@ -2551,6 +2572,8 @@ body.opened-nav-animate {
         .single-post .share-it .social_icons li a:hover {
           color: #000;
           border-color: #000; }
+        .single-post .share-it .social_icons li a i {
+          display: none; }
 .single-post .single-bottom-title {
   margin-bottom: 30px;
   letter-spacing: 0.2em; }
@@ -3712,7 +3735,8 @@ select.mobile-device {
    About
    ============================== */
 .about-left {
-  margin-left: 30px; }
+  margin-left: 30px;
+  margin-bottom: 30px; }
 
 /* ==============================
    Contact
@@ -3857,9 +3881,11 @@ form.checkout .coupon_wrap {
 /* ==============================
    My Cart
    ============================== */
+.table-cart-form {
+  margin-bottom: 45px; }
+
 table.cart {
   width: 100%;
-  margin-bottom: 45px;
   text-align: center; }
   table.cart thead th {
     border: 1px solid #f0f0f0;
@@ -3924,7 +3950,8 @@ table.cart {
   width: 100%; }
 .cart-collaterals .shipping_calculator .input-text {
   background: #f6f6f6;
-  border: 1px solid #f0f0f0; }
+  border: 1px solid #f0f0f0;
+  margin-bottom: 20px; }
 .cart-collaterals .shipping_calculator .row {
   margin-left: -10px;
   margin-right: -10px; }
@@ -3934,13 +3961,14 @@ table.cart {
 .cart-collaterals .shipping_calculator button {
   padding: 9px 0;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 20px; }
 
 /* ==============================
    Compare
    ============================== */
 table.compare tr td {
-  padding: 28px 25px;
+  padding: 28px 22px;
   border: 1px solid #eee; }
   table.compare tr td.compare-title {
     padding: 28px 20px;
@@ -3960,7 +3988,7 @@ table.compare tr td {
     table.compare tr td.product-thumbnail img {
       margin-right: 20px; }
   table.compare tr td.actions {
-    min-width: 332px; }
+    min-width: 326px; }
   table.compare tr td .amount {
     font-size: 14px; }
   table.compare tr td .availability {
