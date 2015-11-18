@@ -434,7 +434,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "ΓÇ£";
+    content: "“";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -449,7 +449,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "ΓÇ¥"; }
+      content: "”"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote h3 {
@@ -1981,6 +1981,9 @@ body.opened-nav-animate {
   .feature-icon .features-box-icon,
   .feature-icon .features-box-title {
     color: #FFFFFF; }
+    .feature-icon .features-box-icon a,
+    .feature-icon .features-box-title a {
+      color: #FFFFFF; }
   .feature-icon .features-box-icon {
     font-size: 48px;
     margin-bottom: 25px; }

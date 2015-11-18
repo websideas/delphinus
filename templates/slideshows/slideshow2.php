@@ -66,8 +66,8 @@
 
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption rev-btn"
-                         data-x="center" data-hoffset="141"
-                         data-y="center" data-voffset="111"
+                         data-x="center" data-hoffset="144"
+                         data-y="center" data-voffset="113"
                          data-width="['auto']"
                          data-height="['auto']"
                          data-transform_idle="o:1;"
@@ -80,7 +80,7 @@
                          data-splitout="none"
                          data-actions='[{"event":"click","action":"simplelink","target":"_blank","url":"#"}]'
                          data-responsive_offset="on"
-                         style="z-index: 6; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 0.75);padding:12px 35px 12px 35px;border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">Shop Now
+                         style="z-index: 6; white-space: nowrap; outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">Shop Now
                     </div>
                 </li>
                 <!-- SLIDE  -->

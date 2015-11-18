@@ -20,8 +20,12 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon" style="background: #c7db9c;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><i class="icon-Chair"></i></div>
-                                    <h4 class="features-box-title">Chair collection</h4>
+                                    <div class="features-box-icon">
+                                        <a href="#"> <i class="icon-Chair"></i></a>
+                                    </div>
+                                    <h4 class="features-box-title">
+                                        <a href="#">Chair collection</a>
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -38,8 +42,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon bg-green" style="background: #f4dc86;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><i class="icon-Office-Lamp"></i></div>
-                                    <h4 class="features-box-title">Lamp collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Office-Lamp"></i></div>
+                                    <h4 class="features-box-title"><a href="#">Lamp collection</h4>
                                 </div>
                             </div>
                         </div>
@@ -67,8 +71,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon bg-green" style="background: #a7c8eb;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><i class="icon-Coffee"></i></div>
-                                    <h4 class="features-box-title">Cup collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Coffee"></i></div>
+                                    <h4 class="features-box-title"><a href="#">Cup collection</h4>
                                 </div>
                             </div>
                         </div>
@@ -84,8 +88,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon" style="background: #ed8b5c;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><i class="icon-Clock"></i></div>
-                                    <h4 class="features-box-title">Clock collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Clock"></i></div>
+                                    <h4 class="features-box-title"><a href="#">Clock collection</h4>
                                 </div>
                             </div>
                         </div>
@@ -112,8 +116,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon bg-green" style="background: #bce5d3;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><i class="icon-Plates"></i></div>
-                                    <h4 class="features-box-title">plates collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Plates"></i></a></div>
+                                    <h4 class="features-box-title"><a href="#">plates collection</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -129,8 +133,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon" style="background: #d1aece;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><i class="icon-Watch"></i></div>
-                                    <h4 class="features-box-title">watch collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Watch"></i></a></div>
+                                    <h4 class="features-box-title"><a href="#">watch collection</a></h4>
                                 </div>
                             </div>
                         </div>

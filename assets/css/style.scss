@@ -2032,13 +2032,13 @@ body.opened-nav-animate{
   position: relative;
   text-align: center;
 
-  .feature-icon-content{
-
-  }
 
   .features-box-icon,
   .features-box-title{
     color: #FFFFFF;
+    a{
+      color: #FFFFFF;
+    }
   }
 
   .features-box-icon{
