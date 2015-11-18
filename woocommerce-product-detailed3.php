@@ -271,7 +271,7 @@ include_once('templates/headers/header1.php');
                                                     </select>
                                                 </p>
                                                 <p class="form-submit">
-                                                    <input name="submit" type="submit" id="submit" class="btn btn-addtocart" value="Add Review" />
+                                                    <input name="submit" type="submit" id="submit" class="btn btn-addtocart-b" value="Add Review" />
                                                 </p>
                                             </form>
                                         </div><!-- #respond -->
