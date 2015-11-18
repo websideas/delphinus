@@ -94,17 +94,17 @@ include_once('templates/headers/header1.php');
                         </div>
                     </form>
                     <div class="cart-collaterals row">
-                        <form class="coupon-form col-sm-4 col-md-4">
+                        <form class="coupon-form col-md-4">
                             <h5>Promotional Code</h5>
                             <div class="cart-collaterals-inner">
                                 <div class="coupon">
                                     <p>Enter your coupon code if you have one</p>
                                     <input placeholder="Enter coupon code" type="text" name="coupon_code">
-                                    <button name="apply_coupon" class="btn btn-gray">apply Coupon</button>
+                                    <button name="apply_coupon" class="btn btn-gray btn-medium">apply Coupon</button>
                                 </div>
                             </div>
                         </form>
-                        <form class="shipping_calculator col-sm-4 col-md-4">
+                        <form class="shipping_calculator col-md-4">
                             <h5>Calculate Shipping</h5>
                             <div class="cart-collaterals-inner">
                                 <p>Enter your destination to get a shipping estimate</p>
@@ -127,7 +127,7 @@ include_once('templates/headers/header1.php');
                                 </div>
                             </div>
                         </form>
-                        <div class="cart_totals col-md-4 col-sm-4">
+                        <div class="cart_totals col-md-4">
                             <h5>Cart Totals</h5>
                             <div class="cart-collaterals-inner remove-mar-bottom">
                                 <table>
