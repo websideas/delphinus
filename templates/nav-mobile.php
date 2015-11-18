@@ -8,7 +8,6 @@
                 <li><a href="homepage4.php">Homepage 4</a></li>
                 <li><a href="homepage5.php">Homepage 5</a></li>
                 <li><a href="homepage6.php">Homepage 6</a></li>
-                <li><a href="homepage7.php">Homepage 7</a></li>
             </ul>
         </li>
         <li class="kt-megamenu-item megamenu-width-80">
@@ -71,7 +70,7 @@
             <ul class="sub-menu-dropdown">
                 <li><a href="#">English</a></li>
                 <li><a href="#">Frensh</a></li>
-                <li><a href="#">VIET NAM</a></li>
+                <li><a href="#">Viet Nam</a></li>
             </ul>
         </li>
         <li>

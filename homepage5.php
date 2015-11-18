@@ -31,7 +31,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 </div>
                                 <div class="product-details">
                                     <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">Afteroom Chair</a>
+                                        <a href="woocommerce-product-detailed1.php">Afteroom Chair</a>
                                     </h3>
                                     <div class="product-price">$340.00</div>
                                 </div>
@@ -57,7 +57,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 </div>
                                 <div class="product-details">
                                     <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">Afteroom Chair</a>
+                                        <a href="woocommerce-product-detailed1.php">Afteroom Chair</a>
                                     </h3>
                                     <div class="product-price">$340.00</div>
                                 </div>
@@ -83,7 +83,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 </div>
                                 <div class="product-details">
                                     <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">Afteroom Chair</a>
+                                        <a href="woocommerce-product-detailed1.php">Afteroom Chair</a>
                                     </h3>
                                     <div class="product-price">$340.00</div>
                                 </div>
@@ -119,7 +119,7 @@ include_once('templates/slideshows/slideshow2.php');
                         <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4, "desktopsmall" : 3, "tablet" : 2, "mobile" : 1}'>
                             <div class="product">
                                 <div class="product-content">
-                                    <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
                                     </a>
@@ -134,13 +134,13 @@ include_once('templates/slideshows/slideshow2.php');
                                     </div>
                                 </div>
                                 <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                    <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
                             <div class="product">
                                 <div class="product-content">
-                                    <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-3.jpg" alt=""/>
                                     </a>
@@ -154,14 +154,14 @@ include_once('templates/slideshows/slideshow2.php');
                                     </div>
                                 </div>
                                 <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                    <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
 
                             <div class="product">
                                 <div class="product-content">
-                                    <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
                                     </a>
@@ -175,13 +175,13 @@ include_once('templates/slideshows/slideshow2.php');
                                     </div>
                                 </div>
                                 <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                    <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
                             <div class="product">
                                 <div class="product-content">
-                                    <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-1.jpg" alt=""/>
                                     </a>
@@ -195,14 +195,14 @@ include_once('templates/slideshows/slideshow2.php');
                                     </div>
                                 </div>
                                 <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                    <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
 
                             <div class="product">
                                 <div class="product-content">
-                                    <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
                                     </a>
@@ -216,13 +216,13 @@ include_once('templates/slideshows/slideshow2.php');
                                     </div>
                                 </div>
                                 <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                    <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
                             <div class="product">
                                 <div class="product-content">
-                                    <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-3.jpg" alt=""/>
                                     </a>
@@ -236,7 +236,7 @@ include_once('templates/slideshows/slideshow2.php');
                                     </div>
                                 </div>
                                 <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                    <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
@@ -360,11 +360,11 @@ include_once('templates/slideshows/slideshow2.php');
                 <div class="blog-posts">
                     <div class="row multi-columns-row">
                         <div class="blog-post col-lg-4 col-md-4 col-sm-6">
-                            <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
                             <h4 class="blog-post-title">
-                                <a href="blog-singlepost-standard.html"> The Best Way to Clean Your Pillows</a>
+                                <a href="blog-singlepost-standard.php"> The Best Way to Clean Your Pillows</a>
                             </h4>
                             <div class="blog-post-meta">
                                 <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
@@ -374,11 +374,11 @@ include_once('templates/slideshows/slideshow2.php');
                         </div>
 
                         <div class="blog-post col-lg-4 col-md-4 col-sm-6">
-                            <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
                             <h4 class="blog-post-title">
-                                <a href="blog-singlepost-standard.html">17 Small Space Decorating Tricks ...</a>
+                                <a href="blog-singlepost-standard.php">17 Small Space Decorating Tricks ...</a>
                             </h4>
                             <div class="blog-post-meta">
                                 <span class="author vcard">By: <a href="#">Steven Bradley</a></span>
@@ -388,11 +388,11 @@ include_once('templates/slideshows/slideshow2.php');
                         </div>
 
                         <div class="blog-post col-lg-4 col-md-4 col-sm-6">
-                            <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>
                             <h4 class="blog-post-title">
-                                <a href="blog-singlepost-standard.html">The Best Bathrooms of 2014</a>
+                                <a href="blog-singlepost-standard.php">The Best Bathrooms of 2014</a>
                             </h4>
                             <div class="blog-post-meta">
                                 <span class="author vcard">By: <a href="#">Steven Bradley</a></span>

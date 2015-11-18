@@ -95,7 +95,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-1.jpg">
                                     </a>
                                 </div>
@@ -112,7 +112,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.4s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-2.jpg">
                                     </a>
                                 </div>
@@ -129,7 +129,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-3.jpg">
                                     </a>
                                 </div>
@@ -146,7 +146,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-1.jpg">
                                     </a>
                                 </div>
@@ -163,7 +163,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.4s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-2.jpg">
                                     </a>
                                 </div>
@@ -180,7 +180,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-3.jpg">
                                     </a>
                                 </div>
@@ -197,7 +197,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-1.jpg">
                                     </a>
                                 </div>
@@ -214,7 +214,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.4s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-2.jpg">
                                     </a>
                                 </div>
@@ -231,7 +231,7 @@ include_once('templates/slideshows/carousel.php');
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
                                         <img src="assets/images/product/product-3.jpg">
                                     </a>
                                 </div>
@@ -275,14 +275,14 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product product wow fadeIn" data-wow-delay="0.2s">
 
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-1.jpg">
                             </a>
                         </div>
 
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
@@ -290,94 +290,94 @@ include_once('templates/slideshows/carousel.php');
                     </div>
                     <div class="col-sm-3 product wow fadeIn"  data-wow-delay="0.4s">
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-2.jpg">
                             </a>
                         </div>
 
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
                     <div class="col-sm-3 product wow fadeIn"  data-wow-delay="0.6s">
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-3.jpg">
                             </a>
                         </div>
 
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.8s">
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-4.jpg">
                             </a>
                         </div>
 
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.2s">
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-4.jpg">
                             </a>
                         </div>
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.4s">
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-3.jpg">
                             </a>
                         </div>
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.6s">
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-2.jpg">
                             </a>
                         </div>
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.8s">
                         <div class="product-content">
-                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
                                 <img alt="" src="assets/images/product/product-1.jpg">
                             </a>
                         </div>
                         <div class="product-details">
                             <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
