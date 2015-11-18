@@ -827,12 +827,16 @@ select:not([multiple]) {
   }  
 }
 .rev-btn{
-  padding: 18px 48px;
-  border: 2px solid #fff!important;
-  color: #fff!important;
-  letter-spacing: 0.2em;
+  padding: 15px 46px;
+  border: 2px solid #fff;
+  color: #fff;
   text-transform: uppercase;
-  background: none!important;    
+  background: none;    
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Karla;
+  font-weight: 400;
+  letter-spacing: 0.18em;
 }
 
 /* ==============================
