@@ -2039,7 +2039,8 @@ body.opened-nav-animate {
   -moz-background-size: cover;
   -ms-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  margin: 0 0 30px; }
   .about-wrapper .about-title {
     color: #FFFFFF;
     margin: 0 0 30px;
@@ -3116,7 +3117,9 @@ select.mobile-device {
   padding-bottom: 30px; }
 .product-list-widget .product-title {
   font-size: 16px;
-  margin: 0 0 13px; }
+  margin: 0 0 13px;
+  text-transform: capitalize;
+  letter-spacing: 0.075em; }
 
 .product-main .product-detail-thumbarea {
   margin-bottom: 30px; }
@@ -3271,6 +3274,8 @@ select.mobile-device {
       .product-main .product-shareit .social_icons li a:hover, .product-main .product-shareit .social_icons li a:focus {
         color: #000;
         border-color: #000; }
+      .product-main .product-shareit .social_icons li a i {
+        display: none; }
     .product-main .product-shareit .social_icons li:last-child {
       margin-right: 0; }
 

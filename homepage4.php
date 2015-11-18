@@ -11,7 +11,7 @@ include_once('templates/slideshows/slideshow1.php');
 
             <div class="row equal_height">
                 <div class="col-md-4 kt_column kt-column-bg" style="background-image: url('assets/images/background/bg-03.png');">
-
+                    <img src="assets/images/background/bg-03.png" align="" />
                 </div>
                 <div class="col-md-8 kt_column">
                     <div class="page-small-width">
@@ -23,7 +23,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                         <div class="products mar-bottom-20">
                             <div class="row multi-columns-row">
-                                <div data-wow-delay="0.2s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.2s" class="col-lg-4 col-md-4 col-sm-6  product wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
@@ -50,7 +50,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.4s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.4s" class="col-lg-4 col-md-4  col-sm-6 product wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
@@ -77,7 +77,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.6s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.6s" class="col-lg-4 col-md-4 col-sm-6 product wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
@@ -103,7 +103,7 @@ include_once('templates/slideshows/slideshow1.php');
                                     </div>
                                 </div>
 
-                                <div data-wow-delay="0.2s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.2s" class="col-lg-4 col-md-4 col-sm-6 product wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
@@ -130,7 +130,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.4s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.4s" class="col-lg-4 col-md-4 col-sm-6 product wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
@@ -157,7 +157,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.6s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.6s" class="col-lg-4 col-md-4 col-sm-6 product wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.html" class="product-thumbnail">

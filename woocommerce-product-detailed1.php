@@ -1,6 +1,4 @@
 <?php
-global $shadow;
-$shadow = ' ';
 
 include_once('templates/headers/head.php');
 include_once('templates/headers/header1.php');
@@ -11,7 +9,7 @@ include_once('templates/headers/header1.php');
             <div class="product-main style1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
 
                             <div class="product-detail-thumbarea">
                                 <div class="single-product-main-images owl-carousel1" id="sync1">
@@ -45,7 +43,7 @@ include_once('templates/headers/header1.php');
                             </div><!-- .product-detail-thumbarea -->
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <ol class="breadcrumb">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Products</a></li>
@@ -100,9 +98,9 @@ include_once('templates/headers/header1.php');
                             <div class="product-shareit">
                                 <span class="screen-reader-text">Share this</span>
                                 <ul class="social_icons">
-                                    <li><a href="#">facebook</a></li>
-                                    <li><a href="#">twitter</a></li>
-                                    <li><a href="#">pinterest</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i> <span>Twitter</span></a></li>
+                                    <li><a href="#"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a></li>
                                 </ul>
                             </div>
 
@@ -292,7 +290,7 @@ include_once('templates/headers/header1.php');
                 <div class="products">
 
                     <div class="owl-carousel-kt remove-mar-bottom navigation-center">
-                        <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4}'>
+                        <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4, "desktopsmall" : 3, "tablet" : 2, "mobile" : 1}'>
                             <div class="product">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.html" class="product-thumbnail">

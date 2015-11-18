@@ -2091,6 +2091,7 @@ body.opened-nav-animate{
   padding: 50px 43px 30px;
   color: #FFFFFF;
   @include css3-prefix('background-size', 'cover');
+  margin: 0 0 30px;
   .about-title{
     color: #FFFFFF;
     margin: 0 0 30px;
@@ -2509,6 +2510,7 @@ body.opened-nav-animate{
             color: #000;
             border-color: #000;
           }
+
         }
       }
     }
@@ -3271,6 +3273,8 @@ select.mobile-device {
   .product-title{
     font-size: 16px;
     margin: 0 0 13px;
+    text-transform: capitalize;
+    letter-spacing: 0.075em;
   }
 }
 
@@ -3472,6 +3476,9 @@ select.mobile-device {
           &:hover,&:focus{
             color: #000;
             border-color: #000;
+          }
+          i{
+            display: none;
           }
         }
         &:last-child{

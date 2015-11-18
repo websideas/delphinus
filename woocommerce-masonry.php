@@ -30,278 +30,110 @@ include_once('templates/headers/header1.php');
     <div id="main">
         <div class="page-section">
             <div class="container">
-
-
-                <div class="products products-multi-masonry masonry-botom">
-                    <div class="row">
-                        <div class="clearfix product col-sm-3 grid-sizer"></div>
-                        <div class="col-sm-6 product product wide">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-3.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                <div class="row products products-multi-masonry masonry-botom">
+                    <div class="clearfix product col-sm-3 grid-sizer"></div>
+                    <div class="col-sm-6 product product wide">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-3.jpg">
+                                </a>
                             </div>
 
-                        </div>
-
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-1.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-1.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-1.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-1.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
 
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
+                    </div>
 
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-1.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-1.jpg">
+                                </a>
+                            </div>
 
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-1.jpg">
+                                </a>
+                            </div>
 
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-1.jpg">
+                                </a>
+                            </div>
 
-
-
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
+                    </div>
 
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
 
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
+                    </div>
 
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 product wide">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 product wide">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
-
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 product standard">
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                     <img alt="" src="assets/images/product/product-4.jpg">
@@ -315,45 +147,204 @@ include_once('templates/headers/header1.php');
                                 <div class="product-price">$340.00</div>
                             </div>
                         </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
+                    </div>
 
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
-                        <div class="col-sm-3 product standard">
-                            <div class="product-inner">
-                                <div class="product-content">
-                                    <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                        <img alt="" src="assets/images/product/product-4.jpg">
-                                    </a>
-                                </div>
+                    </div>
 
-                                <div class="product-details">
-                                    <h3 class="product-title">
-                                        <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                    </h3>
-                                    <div class="product-price">$340.00</div>
-                                </div>
+
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
                             </div>
                         </div>
+                    </div>
 
 
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
 
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 product wide">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 product wide">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-content">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                <img alt="" src="assets/images/product/product-4.jpg">
+                            </a>
+                        </div>
+
+                        <div class="product-details">
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
 

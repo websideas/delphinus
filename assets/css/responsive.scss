@@ -124,6 +124,39 @@
   }
 
 
+  .product-main{
+    form.cart{
+      .cart-tool{
+        clear: both;
+        float: none;
+        padding-top: 20px;
+        > a{
+          &:first-child{
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .product-shareit{
+      .social_icons{
+        li{
+          a{
+            padding: 15px 25px;
+            span{
+              display: none;
+            }
+            i{
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
 }
 
 /* 9. Styles for devices(<=991px ) */
@@ -131,7 +164,26 @@
   .side-bar {
     margin-top: 50px;
   }
+  .page-header{
+    text-align: center;
+    .text-right{
+      text-align: center;
+    }
+  }
 
+  .products-tools{
+    .products-sortby{
+      .bootstrap-select{
+        margin-right: 15px;
+      }
+    }
+    .result-count{
+      display: none;
+    }
+    .grid-list{
+      margin-right: 0;
+    }
+  }
 
 
 }
@@ -157,6 +209,14 @@
     }
   }
 
+  .product-list-widget{
+    .product-title{
+      margin-top: 30px;
+    }
+  }
+
+
+
 }
 
 /* 12. Styles for devices(>=481px and <= 767px) */
@@ -167,12 +227,52 @@
 /* 13. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
   .products {
-    &.products-multi-masonry {
-      .product {
-        width: 100%;
-      }
+    .product {
+      width: 100%!important;
     }
   }
+
+  .product-list-widget{
+    .product-widget{
+      width: 100%;
+    }
+  }
+
+  .products-tools{
+    .products-sortby{
+      .bootstrap-select{
+        margin-right: 10px;
+        .caret{
+          margin-left: 0;
+        }
+      }
+    }
+    .grid-list{
+      display: none;
+    }
+  }
+
+  .collection-wrapper{
+    margin: 30px 0;
+    .left-collection,
+    .right-collection{
+      margin-bottom: 15px;
+      position: static;
+      width: auto;
+    }
+
+    .front-collection{
+      margin: 0;
+    }
+
+    .collection-image{
+      margin-bottom: 30px;
+    }
+    .collection-content{
+      width: auto;
+    }
+  }
+
 
 
   .category-banner{

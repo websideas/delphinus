@@ -13,7 +13,8 @@
             //check if item is on sale
             updatePrice(container, 0);
 
-            sliderDots.on('click', function(){
+            sliderDots.on('click', function(e){
+                e.preventDefault();
                 var selectedDot = $(this);
                 if(!selectedDot.hasClass('selected')) {
                     var selectedPosition = selectedDot.index(),

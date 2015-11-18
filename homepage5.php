@@ -11,8 +11,8 @@ include_once('templates/slideshows/slideshow2.php');
         <div class="page-section bg-gray">
             <div class="container">
                 <div class="products products-gallery">
-                    <div class="row">
-                        <div class="product col-md-4">
+                    <div class="row multi-columns-row">
+                        <div class="product col-lg-4 col-md-4 col-sm-4 col-xs-6">
                             <div class="product-inner">
                                 <div class="product-content">
                                     <ul class="cd-item-wrapper">
@@ -38,7 +38,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
 
-                        <div class="product col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-4 col-xs-6">
                             <div class="product-inner">
                                 <div class="product-content">
                                     <ul class="cd-item-wrapper">
@@ -64,7 +64,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
 
-                        <div class="product col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-4 col-xs-6">
                             <div class="product-inner">
                                 <div class="product-content">
                                     <ul class="cd-item-wrapper">
@@ -97,15 +97,14 @@ include_once('templates/slideshows/slideshow2.php');
 
         <div class="page-section">
             <div class="container">
-
                 <div class="kt-heading-wrapper">
                     <div class="kt-heading-divider">
                         <svg version="1.1" x="0px" y="0px"
-                         viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
+                             viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
                     <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
                         l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
                         c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
-                    <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
+                            <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
                         l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
                         c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
                     </svg>
@@ -116,14 +115,15 @@ include_once('templates/slideshows/slideshow2.php');
 
                 <div class="products">
 
-                    <div class="owl-carousel-kt remove-mar-bottom visiable-navigation navigation-center">
-                        <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4}'>
+                    <div class="owl-carousel-kt remove-mar-bottom navigation-center">
+                        <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4, "desktopsmall" : 3, "tablet" : 2, "mobile" : 1}'>
                             <div class="product">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
                                     </a>
+
                                     <div class="product-over-tool">
                                         <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
                                         <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
@@ -250,18 +250,14 @@ include_once('templates/slideshows/slideshow2.php');
         </div>
 
         <div class="page-section bg-gray no-padding">
-
-
             <div class="container">
                 <div class="collection-wrapper">
                         <div class="left-collection">
                             <img class="img-responsive" alt="" src="assets/images/collection-1.png">
                         </div>
-
                         <div class="right-collection">
                             <img class="img-responsive" alt="" src="assets/images/collection-3.png">
                         </div>
-
                         <div class="front-collection">
                             <div class="collection-image">
                                 <img class="img-responsive" alt="" src="assets/images/collection-2.png">
@@ -272,7 +268,6 @@ include_once('templates/slideshows/slideshow2.php');
                                 <div class="collection-readmore"><a href="#"><i class="icon-Right-3"></i></a> </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -281,8 +276,8 @@ include_once('templates/slideshows/slideshow2.php');
 
         <div class="page-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row multi-columns-row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-01.jpg">
                             <div class="banner-content">
@@ -290,7 +285,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-02.jpg">
                             <div class="banner-content">
@@ -298,7 +293,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-03.jpg">
                             <div class="banner-content">
@@ -306,9 +301,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-15.jpg">
                             <div class="banner-content">
@@ -316,7 +309,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-16.jpg">
                             <div class="banner-content">
@@ -324,7 +317,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-17.jpg">
                             <div class="banner-content">
@@ -366,7 +359,7 @@ include_once('templates/slideshows/slideshow2.php');
 
                 <div class="blog-posts">
                     <div class="row multi-columns-row">
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
@@ -380,7 +373,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
@@ -394,7 +387,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>
@@ -407,9 +400,6 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
-
-
-
                     </div>
                 </div>
 

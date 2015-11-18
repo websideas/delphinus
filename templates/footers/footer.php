@@ -21,6 +21,7 @@
 <script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
 <script type="text/javascript" src="assets/js/jquery.kt.sticky.js"></script>
 <script type="text/javascript" src="assets/js/gmap3.min.js"></script>
+<script type="text/javascript" src="assets/js/product-preview-slider.js"></script>
 
 
 <!-- REVOLUTION JS FILES -->

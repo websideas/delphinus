@@ -30,8 +30,6 @@ include_once('templates/headers/header1.php');
     <div id="main">
         <div class="page-section">
             <div class="container">
-
-
                 <div class="products-tools clearfix">
                     <form class="products-sortby" method="get" action="#">
                         <select name="showby">
@@ -58,7 +56,7 @@ include_once('templates/headers/header1.php');
 
                 <div class="row multi-columns-row">
                     <div class="products">
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
@@ -80,7 +78,7 @@ include_once('templates/headers/header1.php');
                             <div class="product-price">$340.00</div>
                         </div>
 
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
@@ -102,7 +100,7 @@ include_once('templates/headers/header1.php');
                             <div class="product-price">$340.00</div>
                         </div>
 
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
@@ -124,7 +122,7 @@ include_once('templates/headers/header1.php');
                             <div class="product-price">$340.00</div>
                         </div>
 
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
@@ -145,7 +143,7 @@ include_once('templates/headers/header1.php');
                             </h3>
                             <div class="product-price">$340.00</div>
                         </div>
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-5.jpg" alt=""/>
@@ -167,7 +165,7 @@ include_once('templates/headers/header1.php');
                             <div class="product-price">$340.00</div>
                         </div>
 
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-6.jpg" alt=""/>
@@ -189,7 +187,7 @@ include_once('templates/headers/header1.php');
                             <div class="product-price">$340.00</div>
                         </div>
 
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-7.jpg" alt=""/>
@@ -211,7 +209,7 @@ include_once('templates/headers/header1.php');
                             <div class="product-price">$340.00</div>
                         </div>
 
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
@@ -233,7 +231,7 @@ include_once('templates/headers/header1.php');
                             <div class="product-price">$340.00</div>
                         </div>
 
-                        <div class="product col-lg-4 col-md-4">
+                        <div class="product col-lg-4 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>

@@ -104,11 +104,36 @@
     display: block; }
 
   .products.products-multi-masonry .product .product-details {
-    display: none; } }
+    display: none; }
+
+  .product-main form.cart .cart-tool {
+    clear: both;
+    float: none;
+    padding-top: 20px; }
+    .product-main form.cart .cart-tool > a:first-child {
+      margin-left: 0; }
+  .product-main .product-shareit .social_icons li a {
+    padding: 15px 25px; }
+    .product-main .product-shareit .social_icons li a span {
+      display: none; }
+    .product-main .product-shareit .social_icons li a i {
+      display: inline; } }
 /* 9. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
   .side-bar {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+
+  .page-header {
+    text-align: center; }
+    .page-header .text-right {
+      text-align: center; }
+
+  .products-tools .products-sortby .bootstrap-select {
+    margin-right: 15px; }
+  .products-tools .result-count {
+    display: none; }
+  .products-tools .grid-list {
+    margin-right: 0; } }
 /* 10. Styles for devices(>=768px and <= 991px) */
 /* 11. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
@@ -118,12 +143,39 @@
   .products.products-multi-masonry .product {
     width: 50%; }
     .products.products-multi-masonry .product .product-thumbnail {
-      height: auto !important; } }
+      height: auto !important; }
+
+  .product-list-widget .product-title {
+    margin-top: 30px; } }
 /* 12. Styles for devices(>=481px and <= 767px) */
 /* 13. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
-  .products.products-multi-masonry .product {
+  .products .product {
+    width: 100% !important; }
+
+  .product-list-widget .product-widget {
     width: 100%; }
+
+  .products-tools .products-sortby .bootstrap-select {
+    margin-right: 10px; }
+    .products-tools .products-sortby .bootstrap-select .caret {
+      margin-left: 0; }
+  .products-tools .grid-list {
+    display: none; }
+
+  .collection-wrapper {
+    margin: 30px 0; }
+    .collection-wrapper .left-collection,
+    .collection-wrapper .right-collection {
+      margin-bottom: 15px;
+      position: static;
+      width: auto; }
+    .collection-wrapper .front-collection {
+      margin: 0; }
+    .collection-wrapper .collection-image {
+      margin-bottom: 30px; }
+    .collection-wrapper .collection-content {
+      width: auto; }
 
   .category-banner .category-banner-content h1 {
     font-size: 30px;

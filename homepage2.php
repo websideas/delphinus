@@ -42,8 +42,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon bg-green" style="background: #f4dc86;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><a href="#"><i class="icon-Office-Lamp"></i></div>
-                                    <h4 class="features-box-title"><a href="#">Lamp collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Office-Lamp"></i></a></div>
+                                    <h4 class="features-box-title"><a href="#">Lamp collection</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -71,8 +71,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon bg-green" style="background: #a7c8eb;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><a href="#"><i class="icon-Coffee"></i></div>
-                                    <h4 class="features-box-title"><a href="#">Cup collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Coffee"></i></a></div>
+                                    <h4 class="features-box-title"><a href="#">Cup collection</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -88,8 +88,8 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="feature-icon" style="background: #ed8b5c;">
                             <div class="feature-icon-content kt-table">
                                 <div class="kt-col">
-                                    <div class="features-box-icon"><a href="#"><i class="icon-Clock"></i></div>
-                                    <h4 class="features-box-title"><a href="#">Clock collection</h4>
+                                    <div class="features-box-icon"><a href="#"><i class="icon-Clock"></i></a></div>
+                                    <h4 class="features-box-title"><a href="#">Clock collection</a></h4>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@ include_once('templates/slideshows/slideshow1.php');
         <div class="page-section">
             <div class="container">
                 <div class="owl-carousel-kt remove-mar-bottom">
-                    <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": false, "desktop": 6}'>
+                    <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": false, "desktop": 6, "desktopsmall": 5, "tablet" : 4, "mobile" : 2}'>
                         <div class="client-item">
                             <a href="#"><img src="assets/images/client/client-01.png" class="img-responsive" alt=""/> </a>
                         </div>

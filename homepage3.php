@@ -8,9 +8,8 @@ include_once('templates/slideshows/carousel.php');
     <div id="main">
 
         <div class="page-section no-padding">
-
             <div class="owl-carousel-kt no-gutters navigation-center-inner no-margin">
-                <div class="owl-carousel kt-owl-carousel " data-options='{"pagination": false, "navigation": true, "desktop": 3}'>
+                <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 3, "desktopsmall": 2, "tablet" : 2, "mobile" : 1}'>
                     <div class="category-banner">
                         <img src="assets/images/banner/banner-01.jpg"/>
                         <div class="category-banner-content">
@@ -69,7 +68,6 @@ include_once('templates/slideshows/carousel.php');
                     </div>
                 </div>
             </div>
-
         </div>
 
 
@@ -94,7 +92,7 @@ include_once('templates/slideshows/carousel.php');
                 </div>
                 <div class="row multi-columns-row">
                     <div class="product-list-widget">
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.2s">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
@@ -102,7 +100,7 @@ include_once('templates/slideshows/carousel.php');
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
                                     <div class="amount">$340.00</div>
                                     <div title="Rated 4.50 out of 5" class="star-rating">
                                         <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
@@ -111,7 +109,7 @@ include_once('templates/slideshows/carousel.php');
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.4s">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.4s">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
@@ -119,7 +117,7 @@ include_once('templates/slideshows/carousel.php');
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
                                     <div class="amount">$340.00</div>
                                     <div title="Rated 4.50 out of 5" class="star-rating">
                                         <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
@@ -128,7 +126,7 @@ include_once('templates/slideshows/carousel.php');
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.6s">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
@@ -136,7 +134,7 @@ include_once('templates/slideshows/carousel.php');
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
                                     <div class="amount">$340.00</div>
                                     <div title="Rated 4.50 out of 5" class="star-rating">
                                         <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
@@ -145,7 +143,58 @@ include_once('templates/slideshows/carousel.php');
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.2s">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.2s">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                        <img src="assets/images/product/product-1.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <h4 class="product-title"><a href="#">iPhone 6 Color Case</a></h4>
+                                    <div class="amount">$340.00</div>
+                                    <div title="Rated 4.50 out of 5" class="star-rating">
+                                        <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.4s">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                        <img src="assets/images/product/product-2.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
+                                    <div class="amount">$340.00</div>
+                                    <div title="Rated 4.50 out of 5" class="star-rating">
+                                        <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.6s">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
+                                        <img src="assets/images/product/product-3.jpg">
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
+                                    <div class="amount">$340.00</div>
+                                    <div title="Rated 4.50 out of 5" class="star-rating">
+                                        <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.2s">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
@@ -153,7 +202,7 @@ include_once('templates/slideshows/carousel.php');
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
                                     <div class="amount">$340.00</div>
                                     <div title="Rated 4.50 out of 5" class="star-rating">
                                         <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
@@ -162,7 +211,7 @@ include_once('templates/slideshows/carousel.php');
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.4s">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.4s">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
@@ -170,7 +219,7 @@ include_once('templates/slideshows/carousel.php');
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
                                     <div class="amount">$340.00</div>
                                     <div title="Rated 4.50 out of 5" class="star-rating">
                                         <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
@@ -179,7 +228,7 @@ include_once('templates/slideshows/carousel.php');
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.6s">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 product-widget wow fadeIn" data-wow-delay="0.6s">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
@@ -187,58 +236,7 @@ include_once('templates/slideshows/carousel.php');
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
-                                    <div class="amount">$340.00</div>
-                                    <div title="Rated 4.50 out of 5" class="star-rating">
-                                        <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.2s">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
-                                        <img src="assets/images/product/product-1.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
-                                    <div class="amount">$340.00</div>
-                                    <div title="Rated 4.50 out of 5" class="star-rating">
-                                        <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.4s">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
-                                        <img src="assets/images/product/product-2.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
-                                    <div class="amount">$340.00</div>
-                                    <div title="Rated 4.50 out of 5" class="star-rating">
-                                        <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 product-widget wow fadeIn" data-wow-delay="0.6s">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <a title="Bottle Humidifier" href="woocommerce-product-detailed1.html">
-                                        <img src="assets/images/product/product-3.jpg">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4 class="product-title">Bottle Humidifier</h4>
+                                    <h4 class="product-title"><a href="#"> Bottle Humidifier </a></h4>
                                     <div class="amount">$340.00</div>
                                     <div title="Rated 4.50 out of 5" class="star-rating">
                                         <span style="width:90%"><strong class="rating">4.50</strong> out of 5</span>
@@ -273,7 +271,8 @@ include_once('templates/slideshows/carousel.php');
             </div>
             <div class="products products-multi-masonry">
                 <div class="row no-gutters">
-                    <div class="col-md-3 product product wow fadeIn"  data-wow-delay="0.2s">
+                    <div class="clearfix product col-sm-3 grid-sizer"></div>
+                    <div class="col-sm-3 product product wow fadeIn" data-wow-delay="0.2s">
 
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
@@ -289,7 +288,7 @@ include_once('templates/slideshows/carousel.php');
                         </div>
 
                     </div>
-                    <div class="col-md-3 product wow fadeIn"  data-wow-delay="0.4s">
+                    <div class="col-sm-3 product wow fadeIn"  data-wow-delay="0.4s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                 <img alt="" src="assets/images/product/product-2.jpg">
@@ -303,7 +302,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
-                    <div class="col-md-3 product wow fadeIn"  data-wow-delay="0.6s">
+                    <div class="col-sm-3 product wow fadeIn"  data-wow-delay="0.6s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                 <img alt="" src="assets/images/product/product-3.jpg">
@@ -317,7 +316,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
-                    <div class="col-md-3 product wow fadeIn" data-wow-delay="0.8s">
+                    <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.8s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                 <img alt="" src="assets/images/product/product-4.jpg">
@@ -331,7 +330,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
-                    <div class="col-md-3 product wow fadeIn" data-wow-delay="0.2s">
+                    <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.2s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                 <img alt="" src="assets/images/product/product-4.jpg">
@@ -344,7 +343,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
-                    <div class="col-md-3 product wow fadeIn" data-wow-delay="0.4s">
+                    <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.4s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                 <img alt="" src="assets/images/product/product-3.jpg">
@@ -357,7 +356,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
-                    <div class="col-md-3 product wow fadeIn" data-wow-delay="0.6s">
+                    <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.6s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                 <img alt="" src="assets/images/product/product-2.jpg">
@@ -370,7 +369,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="product-price">$340.00</div>
                         </div>
                     </div>
-                    <div class="col-md-3 product wow fadeIn" data-wow-delay="0.8s">
+                    <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.8s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                 <img alt="" src="assets/images/product/product-1.jpg">
@@ -457,7 +456,7 @@ include_once('templates/slideshows/carousel.php');
         <div class="page-section">
             <div class="container">
                 <div class="owl-carousel-kt remove-mar-bottom">
-                    <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": false, "desktop": 6}'>
+                    <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": false, "desktop": 6, "desktopsmall": 5, "tablet" : 4, "mobile" : 2}'>
                         <div class="client-item">
                             <a href="#"><img src="assets/images/client/client-01.png" class="img-responsive" alt=""/> </a>
                         </div>

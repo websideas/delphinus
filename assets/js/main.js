@@ -702,7 +702,7 @@
             objProduct.addClass('loading');
 
             var data = {},
-                ajaxurl  = 'ajax/woocommerce-product-quickview.html';
+                ajaxurl  = 'ajax/woocommerce-product-quickview.php';
 
             $.post(ajaxurl, data, function(response) {
                 objProduct.removeClass('loading');
