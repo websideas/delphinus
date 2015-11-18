@@ -4,8 +4,7 @@
         <div class="page-section bg-orange">
             <div class="container">
                 <div class="kt_callout kt-table">
-                    <div class="callout-content kt-col white">Every day thousands of customers come to Delphinus to find the solution for their business
-                    What are you waiting for ?</div>
+                    <div class="callout-content kt-col white">Every day thousands of customers come to Delphinus to find the solution for their business<br/>What are you waiting for ?</div>
                     <div class="callout-button kt-col text-right">
                         <a href="#" class="btn btn-light-b btn-lg">Buy It Now</a>
                     </div>

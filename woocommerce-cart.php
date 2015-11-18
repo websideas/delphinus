@@ -85,8 +85,8 @@ include_once('templates/headers/header1.php');
                                 </tr>
                                 <tr>
                                     <td class="actions" colspan="6">
-                                        <button class="btn btn-dark-b">Update Cart</button>
-                                        <button class="btn btn-gray">Proceed to Checkout</button>
+                                        <button class="btn btn-dark-b">Continue shopping</button>
+                                        <button class="btn btn-gray">update shopping cart</button>
                                     </td>
                                 </tr>
                                 </tbody>
@@ -150,7 +150,7 @@ include_once('templates/headers/header1.php');
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="button-checkout"><button class="btn btn-default">proceed to checkout</button></div>
+                            <div class="button-checkout"><a class="btn btn-default" href="woocommerce-checkout.php">proceed to checkout</a></div>
                         </div>
                     </div>
                 </div>

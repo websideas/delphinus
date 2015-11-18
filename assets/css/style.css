@@ -946,14 +946,17 @@ select:not([multiple]) {
     -o-box-shadow: none;
     box-shadow: none; }
   .btn.btn-xs {
-    padding: 1px 10px;
-    font-size: 11px; }
+    padding: 6px 10px;
+    font-size: 8px; }
   .btn.btn-sm {
-    padding: 5px 20px;
-    font-size: 12px; }
+    padding: 8px 20px;
+    font-size: 10px; }
   .btn.btn-lg {
     padding: 10px 60px;
     font-size: 18px; }
+  .btn.btn-xlg {
+    padding: 12px 65px;
+    font-size: 20px; }
   .btn.btn-round {
     border-radius: 3px; }
   .btn.btn-circle {
@@ -1602,7 +1605,9 @@ select:not([multiple]) {
                   .navbar-container #nav #main-navigation > li .kt-megamenu-wrapper > ul > li > ul > li > span {
                     padding: 30px 26px 22px;
                     display: block;
-                    color: #999999; }
+                    color: #999999;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 14px; }
                     .navbar-container #nav #main-navigation > li .kt-megamenu-wrapper > ul > li > ul > li > a:hover,
                     .navbar-container #nav #main-navigation > li .kt-megamenu-wrapper > ul > li > ul > li > span:hover {
                       color: #000000; }
@@ -3727,8 +3732,9 @@ select.mobile-device {
     margin: 0 0 40px; }
 
 .page-small-width {
-  max-width: 870px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 15px; }
 
 .kt-column-bg {
   -webkit-background-size: cover;

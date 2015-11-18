@@ -900,16 +900,20 @@ select:not([multiple]) {
 
   /* Button size */
   &.btn-xs {
-    padding: 1px 10px;
-    font-size: 11px;
+    padding: 6px 10px;
+    font-size: 8px;
   }
   &.btn-sm {
-    padding: 5px 20px;
-    font-size: 12px;
+    padding: 8px 20px;
+    font-size: 10px;
   }
   &.btn-lg {
     padding: 10px 60px;
     font-size: 18px;
+  }
+  &.btn-xlg {
+    padding: 12px 65px;
+    font-size: 20px;
   }
 
   /* Button shapes */
@@ -1632,6 +1636,8 @@ select:not([multiple]) {
                     padding: 30px 26px 22px;
                     display: block;
                     color: $gray-text;
+                    font-family: $second-font;
+                    font-size: 14px;
                     &:hover{
                       color: #000000;
                     }
@@ -4027,8 +4033,9 @@ select.mobile-device {
 }
 
 .page-small-width{
-  max-width: 870px;
   margin: 0 auto;
+  max-width: 900px;
+  padding: 15px;
 }
 .kt-column-bg{
   @include css3-prefix('background-size', 'cover');
