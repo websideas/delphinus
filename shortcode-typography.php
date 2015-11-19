@@ -45,32 +45,32 @@ include_once('templates/headers/header1.php');
                 <h3 class="gray mar-bottom-30">Dropcap</h3>
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-sm dropcap-light">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
+                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-sm dropcap-gray">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
                     </div>
                     <div class="col-md-6">
-                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-sm dropcap-bg dropcap-light">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
+                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-sm dropcap-bg dropcap-gray">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-md dropcap-dark">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
+                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-md dropcap-black">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
                     </div>
                     <div class="col-md-6">
-                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-md dropcap-bg dropcap-dark">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
+                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-md dropcap-bg dropcap-black">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
                     </div>
                 </div>
                 <div class="row mar-bottom-40">
                     <div class="col-md-6">
-                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-md dropcap-accent">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
+                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-md dropcap-orange">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
                     </div>
                     <div class="col-md-6">
-                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-sm dropcap-bg dropcap-accent dropcap-circle">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
+                        <p class="mar-bottom-40"><span class="kt_dropcap dropcap-sm dropcap-bg dropcap-orange dropcap-circle">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam iaculis lobortis commodo. Vestibulum ac lorem id enim viverra estibulum ac. Pellentesque rhoncus vitae lorem vitae iaculis. Mauris sit amet feugiat  lorem id enim viverra posuere estibulum ac lorem id enim viverra posuere. Duis malesuada accumsan metus, et rutrum ex venenatis vel. Vivamus semper orci mi, a laoreet tellus vestibulum gravida. Donec id dui tortor. Ut lobortis maximus lectus, at convallis est ornare in. </p>
                     </div>
                 </div>
                 <h3 class="gray mar-bottom-30">List style</h3>
                 <div class="row mar-bottom-70">
                     <div class="col-md-4">
-                        <ul class="special style1">
+                        <ul class="style-list style1">
                             <li>Sed fringilla lobortis magna </li>
                             <li>Maecenas tincidunt efficitur lacinia</li>
                             <li>Suspendisse consequat </li>
@@ -78,7 +78,7 @@ include_once('templates/headers/header1.php');
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <ul class="special style2">
+                        <ul class="style-list style2">
                             <li>Nam sed lacinia lorem</li>
                             <li>Duis sollicitudin ligula a ligula ultricies</li>
                             <li>Curabitur sit amet dolor ut </li>
@@ -86,7 +86,7 @@ include_once('templates/headers/header1.php');
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        <ul class="special style3">
+                        <ul class="style-list style3">
                             <li>Integer non purus suscipit,</li>
                             <li>Nulla condimentum imperdiet massa</li>
                             <li>Morbi fringilla, velit at fringilla gravida</li>

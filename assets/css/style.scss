@@ -1612,13 +1612,13 @@ body.opened-nav-animate{
       }
     }
   }
-  &.dropcap-light{
+  &.dropcap-gray{
     color: #bce5d3;
   }
-  &.dropcap-dark{
+  &.dropcap-black{
     color: #000000;
   }
-  &.dropcap-accent{
+  &.dropcap-orange{
     color: #ed8b5c;
   }
   &.dropcap-bg{
@@ -1627,15 +1627,15 @@ body.opened-nav-animate{
     &.dropcap-circle{
       border-radius: 100%;
     }
-    &.dropcap-light{
+    &.dropcap-gray{
       background: #bce5d3;
       color: #fff;
     }
-    &.dropcap-dark{
+    &.dropcap-black{
       background: #000000;
       color: #fff;
     }
-    &.dropcap-accent{
+    &.dropcap-orange{
       background: #ed8b5c;
       color: #fff;
     }
@@ -1644,7 +1644,7 @@ body.opened-nav-animate{
 /*
  * 3.5 Lists
  */
-ul.special{
+ul.style-list{
   padding: 0;
   margin: 0 0 30px;
   list-style: none;

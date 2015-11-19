@@ -1608,49 +1608,49 @@ body.opened-nav-animate {
       height: 65px; }
       .kt_dropcap.dropcap-md.dropcap-bg.dropcap-circle {
         width: 65px; }
-  .kt_dropcap.dropcap-light {
+  .kt_dropcap.dropcap-gray {
     color: #bce5d3; }
-  .kt_dropcap.dropcap-dark {
+  .kt_dropcap.dropcap-black {
     color: #000000; }
-  .kt_dropcap.dropcap-accent {
+  .kt_dropcap.dropcap-orange {
     color: #ed8b5c; }
   .kt_dropcap.dropcap-bg {
     padding: 0 10px;
     margin-top: 10px; }
     .kt_dropcap.dropcap-bg.dropcap-circle {
       border-radius: 100%; }
-    .kt_dropcap.dropcap-bg.dropcap-light {
+    .kt_dropcap.dropcap-bg.dropcap-gray {
       background: #bce5d3;
       color: #fff; }
-    .kt_dropcap.dropcap-bg.dropcap-dark {
+    .kt_dropcap.dropcap-bg.dropcap-black {
       background: #000000;
       color: #fff; }
-    .kt_dropcap.dropcap-bg.dropcap-accent {
+    .kt_dropcap.dropcap-bg.dropcap-orange {
       background: #ed8b5c;
       color: #fff; }
 
 /*
  * 3.5 Lists
  */
-ul.special {
+ul.style-list {
   padding: 0;
   margin: 0 0 30px;
   list-style: none; }
-  ul.special li {
+  ul.style-list li {
     padding-left: 52px;
     margin-bottom: 20px;
     position: relative;
     line-height: 30px; }
-    ul.special li:after {
+    ul.style-list li:after {
       width: 30px;
       height: 30px;
       position: absolute;
       left: 0;
       top: 0;
       text-align: center; }
-  ul.special.style1 {
+  ul.style-list.style1 {
     counter-reset: my-badass-counter; }
-    ul.special.style1 li:after {
+    ul.style-list.style1 li:after {
       content: counter(my-badass-counter,decimal);
       counter-increment: my-badass-counter;
       border-radius: 100%;
@@ -1658,7 +1658,7 @@ ul.special {
       font-size: 14px;
       color: #000;
       line-height: 28px; }
-  ul.special.style2 li:after {
+  ul.style-list.style2 li:after {
     border-radius: 100%;
     background: #ed8b5c;
     color: #fff;
@@ -1666,7 +1666,7 @@ ul.special {
     line-height: 28px;
     font-family: FontAwesome;
     content: "\f00c"; }
-  ul.special.style3 li:after {
+  ul.style-list.style3 li:after {
     border-radius: 100%;
     border: 1px solid #d8d8d8;
     font-size: 14px;

@@ -406,7 +406,7 @@ include_once('templates/slideshows/slideshow2.php');
     </div><!-- #main -->
 <?php
 
-include_once('templates/footers/footer3.php');
+include_once('templates/footers/footer1.php');
 include_once('templates/footers/footer.php');
 
 
