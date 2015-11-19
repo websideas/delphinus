@@ -3,7 +3,7 @@ global $shadow;
 $shadow = ' ';
 
 include_once('templates/headers/head.php');
-include_once('templates/headers/header1.php');
+include_once('templates/headers/header2.php');
 
 ?>
     <div class="page-section bg-gray small-section">
