@@ -120,6 +120,23 @@
 
         $('.kt-tab-container').tabs();
         $('.kt-accordion').accordion({ 'heightStyle': 'content' });
+
+
+        /* ---------------------------------------------
+         Back to top
+         --------------------------------------------- */
+        $('body').append('<div id="back-to-top"><i class="fa fa-angle-up"></i></div>');
+        $('#back-to-top').hide();
+        $(window).scroll(function() {
+            if($(window).scrollTop() != 0) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        $('#back-to-top').click(function() {
+            $('html, body').animate({scrollTop:0},500);
+        });
     });
 
 

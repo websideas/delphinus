@@ -502,6 +502,47 @@
     }
   }
 
+  .banner{
+    .banner-content{
+      padding: 30px 35px;
+    }
+  }
+
+  form.checkout {
+   .coupon_wrap{
+    .coupon-form{
+      input.submit{
+        width: 100%;
+      }
+    } 
+   } 
+  }
+  .cart-collaterals{
+    .cart-collaterals-inner{
+      button.btn-medium{
+        width: 100%;
+      }
+    }
+  }
+
+  #review_form{
+    .comment-form-rating,.form-submit{
+      display: block;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .comment-form-rating{
+      .stars{
+        width: 100%;
+      }
+    }
+    .form-submit{
+      input{
+        width: 100%;
+      }
+    }
+  }
+
 }
 
 /* 9. Styles for devices(<=320px ) */
