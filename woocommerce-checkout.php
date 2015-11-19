@@ -43,42 +43,42 @@ include_once('templates/headers/header1.php');
                                         </div>
                                         <div class="form-group">
                                             <label>Frist Name <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" type="text" />
+                                            <input class="input-bg" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>Last Name <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" type="text" />
+                                            <input class="input-bg" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>Company Name</label>
-                                            <input class="input-text full-width" type="text" />
+                                            <input class="input-bg full-width" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>Address <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" placeholder="Street Address" type="text" />
+                                            <input class="input-bg" placeholder="Street Address" type="text" />
                                         </div>
                                         <div class="form-group">
-                                            <input class="input-text" placeholder="Appartment, unit, etc. (optional)" type="text" />
+                                            <input class="input-bg" placeholder="Appartment, unit, etc. (optional)" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>Town / City <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" placeholder="Town / City" type="text" />
+                                            <input class="input-bg" placeholder="Town / City" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>State / County</label>
-                                            <input class="input-text" placeholder="State / County" type="text" />
+                                            <input class="input-bg" placeholder="State / County" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>Postcode <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" placeholder="Postcode / Zip" type="text" />
+                                            <input class="input-bg" placeholder="Postcode / Zip" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>Email Address <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" type="text" />
+                                            <input class="input-bg" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <label>Phone <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" type="text" />
+                                            <input class="input-bg" type="text" />
                                         </div>
                                         <div class="form-group">
                                             <div>
@@ -86,7 +86,7 @@ include_once('templates/headers/header1.php');
                                             </div>
                                             <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
                                             <label>Account password <abbr title="required" class="required">*</abbr></label>
-                                            <input class="input-text" type="password" />
+                                            <input class="input-bg" type="password" />
                                         </div>
                                         <div class="woocommerce-shipping-fields box">
                                             <label>
@@ -94,7 +94,7 @@ include_once('templates/headers/header1.php');
                                             </label>
                                             <label>Order Notes</label>
                                             <div class="form-group">
-                                                <textarea></textarea>
+                                                <textarea class="input-bg"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -106,8 +106,8 @@ include_once('templates/headers/header1.php');
                                     <div class="coupon_wrap">
                                         <p>Enter your coupon code if you have one</p>
                                         <div class="coupon-form">
-                                            <input type="text" placeholder="Coupon Code" />
-                                            <input type="submit" class="submit" value="apply Coupon" />
+                                            <input type="text" class="input-bg" placeholder="Coupon Code" />
+                                            <input type="submit" class="submit btn btn-medium" value="apply Coupon" />
                                         </div>
                                     </div>
                                 </div>

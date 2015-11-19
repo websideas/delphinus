@@ -480,6 +480,17 @@ textarea {
 textarea {
   height: auto; }
 
+input[type=email].input-bg,
+input[type=password].input-bg,
+input[type=phone].input-bg,
+input[type=tel].input-bg,
+input[type=text].input-bg,
+textarea.input-bg {
+  background: #f6f6f6;
+  border: 1px solid #f0f0f0;
+  font-size: 12px;
+  letter-spacing: 0.075em; }
+
 select {
   -webkit-border-radius: 0;
   -khtml-border-radius: 0;
@@ -3802,14 +3813,6 @@ select.mobile-device {
 
 form.checkout .form-group {
   margin-bottom: 20px; }
-  form.checkout .form-group input[type="text"],
-  form.checkout .form-group input[type="email"],
-  form.checkout .form-group input[type="password"],
-  form.checkout .form-group textarea {
-    border: 1px solid #f0f0f0;
-    background: #f6f6f6;
-    font-size: 12px;
-    letter-spacing: 0.075em; }
   form.checkout .form-group label, form.checkout .form-group p {
     font-weight: normal;
     font-size: 14px;
@@ -3846,22 +3849,15 @@ form.checkout .coupon_wrap {
     position: relative; }
     form.checkout .coupon_wrap .coupon-form input {
       width: 100%;
-      background: #f6f6f6;
-      border: 1px solid #f0f0f0;
       padding: 12px;
       line-height: normal;
       height: auto;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 0.075em; }
+      font-weight: bold; }
     form.checkout .coupon_wrap .coupon-form input.submit {
       position: absolute;
       right: 0;
       top: 0;
-      font-size: 14px;
       width: 207px;
-      color: #000;
-      text-transform: uppercase;
       letter-spacing: 0.2em;
       height: 100%; }
 
@@ -3992,19 +3988,7 @@ table.cart {
   border-top: none;
   padding: 20px; }
 .cart-collaterals .coupon-form input {
-  padding: 10px 15px;
-  line-height: normal;
-  background: #f6f6f6;
-  border: 1px solid #f0f0f0;
-  margin-bottom: 20px;
-  width: 100%;
-  font-size: 12px;
-  letter-spacing: 0.075em; }
-.cart-collaterals .shipping_calculator .input-text {
-  background: #f6f6f6;
-  border: 1px solid #f0f0f0;
-  font-size: 12px;
-  letter-spacing: 0.075em; }
+  margin-bottom: 20px; }
 .cart-collaterals .shipping_calculator select {
   font-size: 12px;
   letter-spacing: 0.075em; }
@@ -4099,11 +4083,6 @@ table.compare tr td {
       margin-left: 10px; }
     #customer_login form label .required {
       color: #ff0000; }
-  #customer_login form .input-text {
-    background: #f6f6f6;
-    border: 1px solid #f0f0f0;
-    font-size: 12px;
-    letter-spacing: 0.075em; }
   #customer_login form .form-row {
     margin-bottom: 20px; }
   #customer_login form .lost_password {

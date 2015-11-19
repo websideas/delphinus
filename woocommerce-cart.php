@@ -98,7 +98,7 @@ include_once('templates/headers/header1.php');
                             <div class="cart-collaterals-inner">
                                 <div class="coupon">
                                     <p>Enter your coupon code if you have one</p>
-                                    <input placeholder="Coupon Code" type="text" name="coupon_code">
+                                    <input class="input-bg" placeholder="Coupon Code" type="text" name="coupon_code" />
                                     <button name="apply_coupon" class="btn btn-gray btn-medium">apply Coupon</button>
                                 </div>
                             </div>
@@ -113,11 +113,11 @@ include_once('templates/headers/header1.php');
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="input-text" placeholder="State/County">
+                                    <input type="text" class="input-bg" placeholder="State/County">
                                 </div>
                                 <div class="form-group row remove-mar-bottom">
                                     <div class="col-md-5">
-                                        <input type="text" class="input-text" placeholder="Post Code / Zip">
+                                        <input type="text" class="input-bg" placeholder="Post Code / Zip">
                                     </div>
                                     <div class="col-md-7">
                                         <button type="submit" class="btn btn-medium">Update Total</button>

@@ -391,6 +391,18 @@ textarea {
   height: auto;
 }
 
+input[type=email].input-bg,
+input[type=password].input-bg,
+input[type=phone].input-bg,
+input[type=tel].input-bg,
+input[type=text].input-bg,
+textarea.input-bg{
+  background: #f6f6f6;
+  border: 1px solid #f0f0f0;
+  font-size: 12px;
+  letter-spacing: 0.075em;
+}
+
 select {
   @include border-radius(0);
   width: 100%;
@@ -4088,16 +4100,7 @@ select.mobile-device {
 }
 form.checkout{
   .form-group{
-    margin-bottom: 20px;
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    textarea{
-      border: 1px solid #f0f0f0;
-      background: $gray-bg;
-      font-size: 12px;
-      letter-spacing: 0.075em;
-    }    
+    margin-bottom: 20px; 
     label,p{
       font-weight: normal;
       font-size: 14px;
@@ -4145,23 +4148,16 @@ form.checkout{
       position: relative;
       input{
         width: 100%;
-        background: $gray-bg;
-        border:1px solid #f0f0f0;
         padding: 12px;
         line-height: normal;
         height: auto;
-        font-size: 12px;
         font-weight: bold;
-        letter-spacing: 0.075em;
       }
       input.submit{
         position: absolute;
         right:0;
         top:0;
-        font-size: 14px;
         width: 207px;
-        color: #000;
-        text-transform: uppercase;
         letter-spacing: 0.2em;
         height: 100%;
       }
@@ -4342,23 +4338,10 @@ table.cart{
   }
   .coupon-form{
     input{
-      padding: 10px 15px;
-      line-height: normal;
-      background: $gray-bg;
-      border:1px solid #f0f0f0;
       margin-bottom: 20px;
-      width: 100%;
-      font-size: 12px;
-      letter-spacing: 0.075em;
     }
   }
   .shipping_calculator{
-    .input-text{
-      background: $gray-bg;
-      border:1px solid #f0f0f0; 
-      font-size: 12px;
-      letter-spacing: 0.075em;
-    }
     select{
       font-size: 12px;
       letter-spacing: 0.075em;
@@ -4479,12 +4462,6 @@ table.compare{
       .required{
         color: #ff0000;
       }
-    }
-    .input-text{
-      background: $gray-bg;
-      border: 1px solid #f0f0f0;
-      font-size: 12px;
-      letter-spacing: 0.075em;
     }
     .form-row{
       margin-bottom: 20px;
