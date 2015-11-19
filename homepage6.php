@@ -189,8 +189,7 @@ include_once('templates/slideshows/slideshow2.php');
 
 
 
-                <div class="products products-multi-masonry masonry-botom">
-                    <div class="row">
+                <div class="row products products-multi-masonry masonry-botom">
                         <div class="clearfix product col-sm-3 grid-sizer"></div>
                         <div class="col-sm-6 product product wide">
                             <div class="product-inner">
@@ -357,9 +356,6 @@ include_once('templates/slideshows/slideshow2.php');
                                 </div>
                             </div>
                         </div>
-
-
-                    </div>
                 </div>
 
 
