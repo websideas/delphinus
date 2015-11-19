@@ -4122,12 +4122,30 @@ form.checkout{
     input[type="text"],input[type="email"],input[type="password"],textarea{
       border: 1px solid #f0f0f0;
       background: #f6f6f6;
+      font-size: 12px;
+      letter-spacing: 0.075em;
     }    
     label,p{
       font-weight: normal;
       font-size: 14px;
       line-height: normal;
       margin-bottom: 10px;
+    }
+    label{
+      letter-spacing: 0.05em;
+      display: block;
+      abbr{
+        color: #ff0000;
+        text-decoration: none;
+        border: none;
+      }
+    }
+  }
+  .woocommerce-shipping-fields{
+    label{
+      font-weight: normal;
+      font-size: 14px;
+      display: block;
     }
   }
   input[type="checkbox"]{
@@ -4146,6 +4164,9 @@ form.checkout{
   }
   .coupon_wrap{
     margin-bottom: 7px;
+    p{
+      font-weight: bold;
+    }
     .coupon-form{
       padding-right: 227px;
       position: relative;
@@ -4231,8 +4252,9 @@ form.checkout{
         font-size: 14px;
         color: #666;
         letter-spacing: 0.075em;
+        line-height: normal;
         .input-radio{
-          margin: 0 12px 0 0;
+          margin: 0 10px 0 0;
           position: static;
         }
       }
@@ -4273,6 +4295,9 @@ table.cart{
         letter-spacing: 0.075em;
         font-family: Roboto Slab;
         font-weight: bold;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
     .qty{
@@ -4350,12 +4375,20 @@ table.cart{
       border:1px solid #f0f0f0;
       margin-bottom: 20px;
       width: 100%;
+      font-size: 12px;
+      letter-spacing: 0.075em;
     }
   }
   .shipping_calculator{
     .input-text{
       background: #f6f6f6;
       border:1px solid #f0f0f0; 
+      font-size: 12px;
+      letter-spacing: 0.075em;
+    }
+    select{
+      font-size: 12px;
+      letter-spacing: 0.075em;
     }
     .row{
       margin-left: -10px;
@@ -4369,6 +4402,7 @@ table.cart{
       padding:9px 0;
       text-align: center;
       width: 100%;
+      letter-spacing: 0.18em;
     }
   }
 }
@@ -4396,8 +4430,11 @@ table.compare{
         font-weight: bold;
         letter-spacing: 0.075em;
         color: #000;
+        a:hover{
+          text-decoration: underline;
+        }
         img{
-          margin-right: 20px;
+          margin-right: 24px;
         }
       }
       &.actions{
@@ -4425,6 +4462,12 @@ table.compare{
           color: #999;
           line-height: 44px;
         }
+        &:hover{
+          border-color: #000;
+          i{
+            color: #000;
+          }
+        }
       }
       .add_to_cart_button{
         float: left;
@@ -4433,6 +4476,52 @@ table.compare{
     }
   }
 }
+/* ==============================
+   My Account
+   ============================== */
+#customer_login{
+  h5{
+    border: 1px solid #f0f0f0;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  form{
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-top: none;
+    margin-bottom: 30px;
+    label{
+      font-size: 14px;
+      font-weight: normal;
+      line-height: normal;
+      margin-bottom: 10px;
+      letter-spacing: 0.075em;
+      display: block;
+      &.inline{
+        display: inline-block;
+        margin-left: 10px;
+      }
+      .required{
+        color: #ff0000;
+      }
+    }
+    .input-text{
+      background: #f6f6f6;
+      border: 1px solid #f0f0f0;
+      font-size: 12px;
+      letter-spacing: 0.075em;
+    }
+    .form-row{
+      margin-bottom: 20px;
+    }
+    .lost_password{
+      margin: 0;
+    }
+  }
+}
+
 
 /* ==============================
    Popup Newletter

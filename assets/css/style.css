@@ -436,7 +436,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "“";
+    content: "ΓÇ£";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -451,7 +451,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "”"; }
+      content: "ΓÇ¥"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote h3 {
@@ -3807,12 +3807,25 @@ form.checkout .form-group {
   margin-bottom: 20px; }
   form.checkout .form-group input[type="text"], form.checkout .form-group input[type="email"], form.checkout .form-group input[type="password"], form.checkout .form-group textarea {
     border: 1px solid #f0f0f0;
-    background: #f6f6f6; }
+    background: #f6f6f6;
+    font-size: 12px;
+    letter-spacing: 0.075em; }
   form.checkout .form-group label, form.checkout .form-group p {
     font-weight: normal;
     font-size: 14px;
     line-height: normal;
     margin-bottom: 10px; }
+  form.checkout .form-group label {
+    letter-spacing: 0.05em;
+    display: block; }
+    form.checkout .form-group label abbr {
+      color: #ff0000;
+      text-decoration: none;
+      border: none; }
+form.checkout .woocommerce-shipping-fields label {
+  font-weight: normal;
+  font-size: 14px;
+  display: block; }
 form.checkout input[type="checkbox"] {
   vertical-align: middle;
   margin: 0 10px 0 0; }
@@ -3826,6 +3839,8 @@ form.checkout .title-order {
   margin: 0; }
 form.checkout .coupon_wrap {
   margin-bottom: 7px; }
+  form.checkout .coupon_wrap p {
+    font-weight: bold; }
   form.checkout .coupon_wrap .coupon-form {
     padding-right: 227px;
     position: relative; }
@@ -3894,9 +3909,10 @@ form.checkout .coupon_wrap {
         margin: 0 0 20px;
         font-size: 14px;
         color: #666;
-        letter-spacing: 0.075em; }
+        letter-spacing: 0.075em;
+        line-height: normal; }
         #payment .payment_methods li label .input-radio {
-          margin: 0 12px 0 0;
+          margin: 0 10px 0 0;
           position: static; }
   #payment .place-order {
     text-align: center; }
@@ -3928,6 +3944,8 @@ table.cart {
       letter-spacing: 0.075em;
       font-family: Roboto Slab;
       font-weight: bold; }
+      table.cart td.product-name a:hover {
+        text-decoration: underline; }
     table.cart td .qty {
       width: 60px;
       margin: 0 auto;
@@ -3979,10 +3997,17 @@ table.cart {
   background: #f6f6f6;
   border: 1px solid #f0f0f0;
   margin-bottom: 20px;
-  width: 100%; }
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.075em; }
 .cart-collaterals .shipping_calculator .input-text {
   background: #f6f6f6;
-  border: 1px solid #f0f0f0; }
+  border: 1px solid #f0f0f0;
+  font-size: 12px;
+  letter-spacing: 0.075em; }
+.cart-collaterals .shipping_calculator select {
+  font-size: 12px;
+  letter-spacing: 0.075em; }
 .cart-collaterals .shipping_calculator .row {
   margin-left: -10px;
   margin-right: -10px; }
@@ -3992,7 +4017,8 @@ table.cart {
 .cart-collaterals .shipping_calculator button {
   padding: 9px 0;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  letter-spacing: 0.18em; }
 
 /* ==============================
    Compare
@@ -4015,8 +4041,10 @@ table.compare tr td {
     font-weight: bold;
     letter-spacing: 0.075em;
     color: #000; }
+    table.compare tr td.product-thumbnail a:hover {
+      text-decoration: underline; }
     table.compare tr td.product-thumbnail img {
-      margin-right: 20px; }
+      margin-right: 24px; }
   table.compare tr td.actions {
     min-width: 326px; }
   table.compare tr td .amount {
@@ -4037,9 +4065,49 @@ table.compare tr td {
     table.compare tr td .add_to_wishlist i {
       color: #999;
       line-height: 44px; }
+    table.compare tr td .add_to_wishlist:hover {
+      border-color: #000; }
+      table.compare tr td .add_to_wishlist:hover i {
+        color: #000; }
   table.compare tr td .add_to_cart_button {
     float: left;
     margin-right: 17px; }
+
+/* ==============================
+   My Account
+   ============================== */
+#customer_login h5 {
+  border: 1px solid #f0f0f0;
+  letter-spacing: 0.2em;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center; }
+#customer_login form {
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-top: none;
+  margin-bottom: 30px; }
+  #customer_login form label {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 10px;
+    letter-spacing: 0.075em;
+    display: block; }
+    #customer_login form label.inline {
+      display: inline-block;
+      margin-left: 10px; }
+    #customer_login form label .required {
+      color: #ff0000; }
+  #customer_login form .input-text {
+    background: #f6f6f6;
+    border: 1px solid #f0f0f0;
+    font-size: 12px;
+    letter-spacing: 0.075em; }
+  #customer_login form .form-row {
+    margin-bottom: 20px; }
+  #customer_login form .lost_password {
+    margin: 0; }
 
 /* ==============================
    Popup Newletter
