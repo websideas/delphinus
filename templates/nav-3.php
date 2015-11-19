@@ -1,4 +1,6 @@
 <nav class="main-nav" id="nav">
+
+    <div class="container">
         <div class="main-navigation-outer">
             <ul id="main-navigation">
                 <li class="active">
@@ -67,18 +69,11 @@
                         <li><a href="shortcode-typography.php">Typography</a></li>
                     </ul>
                 </li>
-                <li><a href="#">features</a>
-                    <ul class="sub-menu-dropdown">
-                        <li><a href="shortcode-tabs.php">Tabs</a></li>
-                        <li><a href="shortcode-banner.php">Banner</a></li>
-                        <li><a href="shortcode-button.php">Button</a></li>
-                        <li><a href="shortcode-messagebox.php">Message Box</a></li>
-                        <li><a href="shortcode-typography.php">Typography</a></li>
-                    </ul>
-                </li>
-
+                <li><a href="#">features</a></li>
 
 
             </ul><!-- #main-navigation -->
         </div>
+
+    </div>
 </nav><!-- .main-nav -->

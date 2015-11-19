@@ -88,18 +88,24 @@
   .topbar {
     display: none; }
 
-  .navbar-container {
+  #header.header-full-center.navigation-center .branding {
+    position: static;
+    text-align: center;
+    float: none;
+    display: block; }
+  #header.header-full-center .navbar-container {
     padding: 0 15px; }
-    .navbar-container .is-sticky {
-      position: static !important; }
-    .navbar-container .navbar-container-inner {
-      height: 80px;
-      line-height: 80px; }
-    .navbar-container .main-nav {
-      display: none; }
-    .navbar-container .branding h1 {
-      line-height: 80px;
-      font-size: 20px; }
+
+  .navbar-container .is-sticky {
+    position: static !important; }
+  .navbar-container .navbar-container-inner {
+    height: 80px;
+    line-height: 80px; }
+  .navbar-container .main-nav {
+    display: none; }
+  .navbar-container .branding h1 {
+    line-height: 80px;
+    font-size: 20px; }
 
   .mobile-tool {
     display: block; }

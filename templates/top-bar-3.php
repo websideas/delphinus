@@ -1,3 +1,7 @@
+
+
+
+
 <div class="topbar">
     <div class="row">
         <div class="topbar-left col-sm-6">
@@ -19,8 +23,18 @@
                     </ul>
                 </li><!-- .language-switcher -->
 
+                <li class="search-action">
+                    <a href="#search-fullwidth"><i class="fa fa-search"></i></a>
+                </li>
             </ul><!-- .top-navigation -->
         </div><!-- .topbar-left -->
+
+        <div class="branding">
+            <h1 class="logo">
+                <a href="index.php"><img src="assets/images/logo.png" title="Delphinus" alt="Delphinus"/></a>
+            </h1>
+        </div><!-- .branding -->
+
 
         <div class="topbar-right col-sm-6">
             <ul class="top-navigation">

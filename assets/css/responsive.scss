@@ -94,8 +94,25 @@
     display: none;
   }
 
+
+  #header{
+    &.header-full-center{
+      &.navigation-center {
+        .branding {
+          position: static;
+          text-align: center;
+          float: none;
+          display: block;
+        }
+      }
+      .navbar-container{
+        padding: 0 15px;
+      }
+    }
+
+  }
+
   .navbar-container{
-    padding: 0 15px;
     .is-sticky{
       position: static!important;
     }
@@ -217,7 +234,6 @@
     background-attachment: inherit;
   }
 
-
   .product-main{
     &.style2,
     &.style3{
@@ -291,6 +307,8 @@
       right: 0;
     }
   }
+
+
 
 }
 

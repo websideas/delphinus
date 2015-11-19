@@ -25,12 +25,6 @@
             </ul><!-- .top-navigation -->
         </div><!-- .topbar-left -->
 
-        <!--<div class="branding">
-            <h1 class="logo">
-                <a href="index.php">Delphinus</a>
-            </h1>
-        </div><!-- .branding -->
-
 
         <div class="topbar-right col-sm-6">
             <ul class="top-navigation">

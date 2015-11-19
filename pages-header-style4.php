@@ -1,14 +1,13 @@
 <?php
 
 include_once('templates/headers/head.php');
-include_once('templates/headers/header2.php');
+include_once('templates/headers/header4.php');
 include_once('templates/slideshows/slideshow1.php');
 
 ?>
 
 
     <div id="main">
-
         <div class="page-section">
             <div class="kt-heading-wrapper remove-mar-bottom">
                 <div class="kt-heading-divider">

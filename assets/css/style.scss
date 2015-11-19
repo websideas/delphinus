@@ -1053,7 +1053,6 @@ select:not([multiple]) {
 
 
 .navbar-container{
-  padding: 0 80px;
   position: relative;
   width: 100%;
   background: #FFFFFF;
@@ -1107,9 +1106,6 @@ select:not([multiple]) {
       }
     }
 
-    .main-navigation-outer{
-      position: relative;
-    }
 
     #main-navigation{
       margin: 0;
@@ -1125,12 +1121,26 @@ select:not([multiple]) {
       > li{
         display: inline-block;
         position: relative;
+        margin-left: 20px;
         &.kt-megamenu-item{
           position: static;
         }
+        &:first-child{
+          margin-left: 0;
+          > a{
+            padding-left: 0;
+          }
+        }
+
+        &:last-child{
+          > a{
+            padding-right: 0;
+          }
+        }
+
         > a{
           text-transform: uppercase;
-          padding: 0 33px;
+          padding: 0 24px;
           color: $gray-text;
           letter-spacing: 0.075em;
           font-weight: bold;
@@ -1468,14 +1478,23 @@ body.opened-nav-animate{
 #header{
   position: relative;
   z-index: 100;
+
+
+
   &.header-full-center{
     .navbar-container{
+      padding: 0 80px;
       .branding{
         position: absolute;
         left: 0;
         top: 0;
         z-index: 10;
       }
+
+      .main-navigation-outer{
+        position: relative;
+      }
+
     }
     #nav{
       float: none;
@@ -1493,12 +1512,52 @@ body.opened-nav-animate{
     }
   }
 
+
   &.navigation-right{
+
+    .mobile-tool{
+      left: 0;
+      right: auto;
+      a{
+        float: left;
+        margin-right: 0;
+        margin-left: 15px;
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+
     #nav{
       float: left;
     }
     .branding{
       float: right;
+    }
+  }
+
+  &.navigation-center{
+
+    .navbar-container{
+      .branding{
+        display: none;
+        a{
+          position: relative;
+          z-index: 10;
+        }
+      }
+    }
+    .mobile-tool{
+      width: 100%;
+      a{
+        &#hamburger-icon{
+          float: left;
+          margin: 0;
+        }
+      }
+      .mobile-tool-cart{
+        margin-right: 10px;
+      }
     }
   }
 

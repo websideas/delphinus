@@ -8,7 +8,6 @@ include_once('templates/slideshows/slideshow1.php');
 
 
 <div id="main">
-
     <div class="page-section">
         <div class="kt-heading-wrapper remove-mar-bottom">
             <div class="kt-heading-divider">

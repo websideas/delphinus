@@ -401,7 +401,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "ΓÇ£";
+    content: "“";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -416,7 +416,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "ΓÇ¥"; }
+      content: "”"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote *:last-child {
@@ -1102,7 +1102,6 @@ select:not([multiple]) {
     transform: translateY(-6px) translateX(0) rotate(-45deg); }
 
 .navbar-container {
-  padding: 0 80px;
   position: relative;
   width: 100%;
   background: #FFFFFF; }
@@ -1149,8 +1148,6 @@ select:not([multiple]) {
           margin-left: 30px; }
           .navbar-container #nav > ul#main-nav-tool li:first-child {
             margin-left: 0; }
-    .navbar-container #nav .main-navigation-outer {
-      position: relative; }
     .navbar-container #nav #main-navigation {
       margin: 0;
       padding: 0;
@@ -1159,12 +1156,19 @@ select:not([multiple]) {
         color: #000; }
       .navbar-container #nav #main-navigation > li {
         display: inline-block;
-        position: relative; }
+        position: relative;
+        margin-left: 20px; }
         .navbar-container #nav #main-navigation > li.kt-megamenu-item {
           position: static; }
+        .navbar-container #nav #main-navigation > li:first-child {
+          margin-left: 0; }
+          .navbar-container #nav #main-navigation > li:first-child > a {
+            padding-left: 0; }
+        .navbar-container #nav #main-navigation > li:last-child > a {
+          padding-right: 0; }
         .navbar-container #nav #main-navigation > li > a {
           text-transform: uppercase;
-          padding: 0 33px;
+          padding: 0 24px;
           color: #999999;
           letter-spacing: 0.075em;
           font-weight: bold; }
@@ -1511,11 +1515,15 @@ body.opened-nav-animate {
 #header {
   position: relative;
   z-index: 100; }
-  #header.header-full-center .navbar-container .branding {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 10; }
+  #header.header-full-center .navbar-container {
+    padding: 0 80px; }
+    #header.header-full-center .navbar-container .branding {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 10; }
+    #header.header-full-center .navbar-container .main-navigation-outer {
+      position: relative; }
   #header.header-full-center #nav {
     float: none; }
     #header.header-full-center #nav > ul#main-nav-tool {
@@ -1525,10 +1533,31 @@ body.opened-nav-animate {
     #header.header-full-center #nav #main-navigation {
       float: none;
       text-align: center; }
+  #header.navigation-right .mobile-tool {
+    left: 0;
+    right: auto; }
+    #header.navigation-right .mobile-tool a {
+      float: left;
+      margin-right: 0;
+      margin-left: 15px; }
+      #header.navigation-right .mobile-tool a:first-child {
+        margin-left: 0; }
   #header.navigation-right #nav {
     float: left; }
   #header.navigation-right .branding {
     float: right; }
+  #header.navigation-center .navbar-container .branding {
+    display: none; }
+    #header.navigation-center .navbar-container .branding a {
+      position: relative;
+      z-index: 10; }
+  #header.navigation-center .mobile-tool {
+    width: 100%; }
+    #header.navigation-center .mobile-tool a#hamburger-icon {
+      float: left;
+      margin: 0; }
+    #header.navigation-center .mobile-tool .mobile-tool-cart {
+      margin-right: 10px; }
   #header.header-shadow .navbar-container {
     -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     -khtml-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
