@@ -139,6 +139,9 @@
       max-width: 970px; } }
 /* 4. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
+  .page-section {
+    background-attachment: inherit; }
+
   .product-main.style2 .product-detail-wrap, .product-main.style3 .product-detail-wrap {
     max-width: none;
     padding: 40px 15px; }

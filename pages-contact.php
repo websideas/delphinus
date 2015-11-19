@@ -32,7 +32,7 @@ include_once('templates/headers/header1.php');
                 <div class="googlemap mar-bottom-90" style="height:570px;" data-zoom="17" data-scrollwheel="1" data-style="8" data-location="Queen St/Collins St, Melbourne, Victoria, Australia" data-type="roadmap"></div>
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="contact-details">
+                        <div class="contact-details mar-bottom-90">
                             <p>613 8376 6284 <br />121 King Street, Melbourne<br /> Victoria 3000 Australia</p>
                             <ul class="social-nav">
                                 <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a> </li>

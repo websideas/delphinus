@@ -213,7 +213,9 @@
 /* 4. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
 
-
+  .page-section{
+    background-attachment: inherit;
+  }
 
 
   .product-main{
