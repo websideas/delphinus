@@ -4399,8 +4399,12 @@ table.compare{
       .amount{
         font-size: 14px;
       }
-      .availability{
+      .instock{
         color: #6fd9e9;
+        font-weight: normal;
+      }
+      .outstock{
+        color: #8ec78e;
         font-weight: normal;
       }
       .qty{

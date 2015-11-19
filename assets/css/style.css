@@ -4033,8 +4033,11 @@ table.compare tr td {
     min-width: 326px; }
   table.compare tr td .amount {
     font-size: 14px; }
-  table.compare tr td .availability {
+  table.compare tr td .instock {
     color: #6fd9e9;
+    font-weight: normal; }
+  table.compare tr td .outstock {
+    color: #8ec78e;
     font-weight: normal; }
   table.compare tr td .qty {
     max-width: 60px;

@@ -92,13 +92,13 @@ include_once('templates/headers/header1.php');
                         <tr>
                             <td class="compare-title">Availability</td>
                             <td>
-                                <label class="availability">In Stock</label>
+                                <label class="instock">In Stock</label>
                             </td>
                             <td>
-                                <label class="availability">In Stock</label>
+                                <label class="instock">In Stock</label>
                             </td>
                             <td>
-                                <label class="availability">Out Stock</label>
+                                <label class="outstock">Out Stock</label>
                             </td>
                         </tr>
                         <tr>
