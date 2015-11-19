@@ -51,7 +51,7 @@ include_once('templates/headers/header1.php');
                                         <a href="#">Sample Product 01</a>
                                     </td>
                                     <td class="product-quantity">
-                                        <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
+                                        <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="qty" />
                                     </td>
                                     <td class="product-price">
                                         <span class="amount">$1000.00</span>
@@ -71,7 +71,7 @@ include_once('templates/headers/header1.php');
                                         <a href="#">Sample Product 02</a>
                                     </td>
                                     <td class="product-quantity">
-                                        <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
+                                        <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="qty" />
                                     </td>
                                     <td class="product-price">
                                         <span class="amount">$1000.00</span>

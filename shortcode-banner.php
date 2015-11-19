@@ -45,7 +45,7 @@ include_once('templates/headers/header1.php');
             <div class="row no-gutters">
                 <div class="col-md-6">
                     <div class="banner banner-dark no-margin">
-                        <img src="assets/images/banner/banner-04.jpg">
+                        <img src="assets/images/banner/banner-04.jpg" alt="" />
                         <div class="banner-content">
                             <h3 class="white">20% Sale on all Product</h3>
                         </div>
@@ -54,7 +54,7 @@ include_once('templates/headers/header1.php');
                 </div>
                 <div class="col-md-6">
                     <div class="banner banner-dark no-margin">
-                        <img src="assets/images/banner/banner-05.jpg">
+                        <img src="assets/images/banner/banner-05.jpg" alt="" />
                         <div class="banner-content">
                             <h3 class="white">new collection, new sale</h3>
                         </div>

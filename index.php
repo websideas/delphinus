@@ -87,7 +87,7 @@ include_once('templates/slideshows/slideshow1.php');
         <div class="owl-carousel-kt no-gutters navigation-center-inner no-margin">
             <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 3, "desktopsmall": 2, "tablet" : 2, "mobile" : 1}'>
                 <div class="category-banner">
-                    <img src="assets/images/banner/banner-01.jpg"/>
+                    <img src="assets/images/banner/banner-01.jpg" alt="" />
                     <div class="category-banner-content">
                         <h1 class="white">Living room</h1>
                         <ul class="">
@@ -101,7 +101,7 @@ include_once('templates/slideshows/slideshow1.php');
                     </div>
                 </div>
                 <div class="category-banner">
-                    <img src="assets/images/banner/banner-02.jpg"/>
+                    <img src="assets/images/banner/banner-02.jpg" alt="" />
                     <div class="category-banner-content">
                         <h1 class="white">Bed room</h1>
                         <ul class="">
@@ -115,7 +115,7 @@ include_once('templates/slideshows/slideshow1.php');
                     </div>
                 </div>
                 <div class="category-banner">
-                    <img src="assets/images/banner/banner-03.jpg"/>
+                    <img src="assets/images/banner/banner-03.jpg" alt="" />
                     <div class="category-banner-content">
                         <h1 class="white">Living room</h1>
                         <ul class="">
@@ -129,7 +129,7 @@ include_once('templates/slideshows/slideshow1.php');
                     </div>
                 </div>
                 <div class="category-banner">
-                    <img src="assets/images/banner/banner-01.jpg"/>
+                    <img src="assets/images/banner/banner-01.jpg" alt="" />
                     <div class="category-banner-content">
                         <h1 class="white">dining room</h1>
                         <ul class="">
@@ -387,7 +387,7 @@ include_once('templates/slideshows/slideshow1.php');
         <div class="row no-gutters">
             <div class="col-md-6">
                 <div class="banner banner-dark no-margin">
-                    <img src="assets/images/banner/banner-04.jpg">
+                    <img src="assets/images/banner/banner-04.jpg" alt="" />
                     <div class="banner-content">
                         <h3 class="white">20% Sale on all Product</h3>
                     </div>
@@ -396,7 +396,7 @@ include_once('templates/slideshows/slideshow1.php');
             </div>
             <div class="col-md-6">
                 <div class="banner banner-dark no-margin">
-                    <img src="assets/images/banner/banner-05.jpg">
+                    <img src="assets/images/banner/banner-05.jpg" alt="" />
                     <div class="banner-content">
                         <h3 class="white">new collection, new sale</h3>
                     </div>

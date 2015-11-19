@@ -12,12 +12,12 @@ include_once('templates/slideshows/slideshow2.php');
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="single-image">
-                            <a href="#"><img src="assets/images/product/product-1.jpg" alt="" /></a>
+                            <img src="assets/images/product/product-1.jpg" alt="" />
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="single-image mar-bottom-40">
-                            <img src="assets/images/banner/banner-18.png" alt="" /></a>
+                            <img src="assets/images/banner/banner-18.png" alt="" />
                         </div>
 
                         <div class="newsletters-outer text-center">
@@ -32,7 +32,7 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                     <div class="col-sm-4">
                         <div class="single-image">
-                            <a href="#"><img src="assets/images/product/product-3.jpg" alt="" /></a>
+                            <img src="assets/images/product/product-3.jpg" alt="" />
                         </div>
                     </div>
                 </div>

@@ -32,17 +32,17 @@ include_once('templates/headers/header1.php');
                         <h5>Login</h5>
                         <form class="login" method="post">
                             <p class="form-row form-row-wide">
-                                <label for="username">Username or email address <span class="required">*</span></label>
-                                <input type="text" value="" id="username" name="username" class="input-text">
+                                <label for="username1">Username or email address <span class="required">*</span></label>
+                                <input type="text" value="" id="username1" name="username" class="input-text" />
                             </p>
                             <p class="form-row form-row-wide">
-                                <label for="password">Password <span class="required">*</span></label>
-                                <input type="password" id="password" name="password" class="input-text">
+                                <label for="password1">Password <span class="required">*</span></label>
+                                <input type="password" id="password1" name="password" class="input-text" />
                             </p>
                             <p class="form-row">         
-                                <input type="submit" value="Login" name="login" class="btn btn-dark-b">
-                                <label class="inline" for="rememberme">
-                                    <input type="checkbox" value="forever" id="rememberme" name="rememberme"> Remember me               
+                                <input type="submit" value="Login" name="login" class="btn btn-dark-b" />
+                                <label class="inline" for="rememberme1">
+                                    <input type="checkbox" value="forever" id="rememberme1" name="rememberme" /> Remember me               
                                 </label>
                             </p>
                             <p class="lost_password">
@@ -55,14 +55,14 @@ include_once('templates/headers/header1.php');
                         <form class="register" method="post">
                             <p class="form-row form-row-wide">
                                 <label for="reg_email">Email address <span class="required">*</span></label>
-                                <input type="email" value="" id="reg_email" name="email" class="input-text">
+                                <input type="email" value="" id="reg_email" name="email" class="input-text" />
                             </p>
                             <p class="form-row form-row-wide">
                                 <label for="reg_password">Password <span class="required">*</span></label>
-                                <input type="password" id="reg_password" name="password" class="input-text">
+                                <input type="password" id="reg_password" name="password" class="input-text" />
                             </p>
                             <p class="form-row no-margin">             
-                                <input type="submit" value="Register" name="register" class="btn btn-dark-b">
+                                <input type="submit" value="Register" name="register" class="btn btn-dark-b" />
                             </p>
                         </form>
                     </div>

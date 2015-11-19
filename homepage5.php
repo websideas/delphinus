@@ -6,8 +6,6 @@ include_once('templates/slideshows/slideshow2.php');
 
 ?>
     <div id="main">
-
-
         <div class="page-section bg-gray">
             <div class="container">
                 <div class="products products-gallery">
@@ -17,15 +15,15 @@ include_once('templates/slideshows/slideshow2.php');
                                 <div class="product-content">
                                     <ul class="cd-item-wrapper">
                                         <li class="selected">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-01.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-01.jpg" />
                                         </li>
 
                                         <li class="move-right">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-02.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-02.jpg" />
                                         </li>
 
                                         <li class="">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg" />
                                         </li>
                                     </ul>
                                 </div>
@@ -43,15 +41,15 @@ include_once('templates/slideshows/slideshow2.php');
                                 <div class="product-content">
                                     <ul class="cd-item-wrapper">
                                         <li class="selected">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-02.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-02.jpg" />
                                         </li>
 
                                         <li class="move-right">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-01.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-01.jpg" />
                                         </li>
 
                                         <li class="">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg" />
                                         </li>
                                     </ul>
                                 </div>
@@ -69,15 +67,15 @@ include_once('templates/slideshows/slideshow2.php');
                                 <div class="product-content">
                                     <ul class="cd-item-wrapper">
                                         <li class="selected">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg" />
                                         </li>
 
                                         <li class="move-right">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-04.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-04.jpg" />
                                         </li>
 
                                         <li class="">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-05.jpg">
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-05.jpg" />
                                         </li>
                                     </ul>
                                 </div>
@@ -252,21 +250,20 @@ include_once('templates/slideshows/slideshow2.php');
         <div class="page-section bg-gray no-padding">
             <div class="container">
                 <div class="collection-wrapper">
-                        <div class="left-collection">
-                            <img class="img-responsive" alt="" src="assets/images/collection-1.png">
+                    <div class="left-collection">
+                        <img class="img-responsive" alt="" src="assets/images/collection-1.png" />
+                    </div>
+                    <div class="right-collection">
+                        <img class="img-responsive" alt="" src="assets/images/collection-3.png" />
+                    </div>
+                    <div class="front-collection">
+                        <div class="collection-image">
+                            <img class="img-responsive" alt="" src="assets/images/collection-2.png" />
                         </div>
-                        <div class="right-collection">
-                            <img class="img-responsive" alt="" src="assets/images/collection-3.png">
-                        </div>
-                        <div class="front-collection">
-                            <div class="collection-image">
-                                <img class="img-responsive" alt="" src="assets/images/collection-2.png">
-                            </div>
-                            <div class="collection-content">
-                                <h3>New Collection</h3>
-                                <div class="collection-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur mauris</div>
-                                <div class="collection-readmore"><a href="#"><i class="icon-Right-3"></i></a> </div>
-                            </div>
+                        <div class="collection-content">
+                            <h3>New Collection</h3>
+                            <div class="collection-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur mauris</div>
+                            <div class="collection-readmore"><a href="#"><i class="icon-Right-3"></i></a> </div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +276,7 @@ include_once('templates/slideshows/slideshow2.php');
                 <div class="row multi-columns-row">
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
-                            <img src="assets/images/banner/banner-01.jpg">
+                            <img src="assets/images/banner/banner-01.jpg" alt="" />
                             <div class="banner-content">
                                 <a class="btn btn-light">Living room</a>
                             </div>
@@ -287,7 +284,7 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
-                            <img src="assets/images/banner/banner-02.jpg">
+                            <img src="assets/images/banner/banner-02.jpg" alt="" />
                             <div class="banner-content">
                                 <a class="btn btn-light">bed room</a>
                             </div>
@@ -295,7 +292,7 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
-                            <img src="assets/images/banner/banner-03.jpg">
+                            <img src="assets/images/banner/banner-03.jpg" alt="" />
                             <div class="banner-content">
                                 <a class="btn btn-light">dining room</a>
                             </div>
@@ -303,7 +300,7 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
-                            <img src="assets/images/banner/banner-15.jpg">
+                            <img src="assets/images/banner/banner-15.jpg" alt="" />
                             <div class="banner-content">
                                 <a class="btn btn-light">Work space</a>
                             </div>
@@ -311,7 +308,7 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
-                            <img src="assets/images/banner/banner-16.jpg">
+                            <img src="assets/images/banner/banner-16.jpg" alt="" />
                             <div class="banner-content">
                                 <a class="btn btn-light">Bath room</a>
                             </div>
@@ -319,7 +316,7 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="banner position-bottom">
-                            <img src="assets/images/banner/banner-17.jpg">
+                            <img src="assets/images/banner/banner-17.jpg" alt="" />
                             <div class="banner-content">
                                 <a class="btn btn-light">ACCESSORIES</a>
                             </div>

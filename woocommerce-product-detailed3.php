@@ -5,7 +5,7 @@ include_once('templates/headers/header1.php');
 
 ?>
     <div id="main">
-        <div class="product-main style3">
+        <div class="product-main style3" itemtype="http://schema.org/Product" itemscope="">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="product-detail-thumbarea">
@@ -90,7 +90,7 @@ include_once('templates/headers/header1.php');
                         <form enctype="multipart/form-data" method="post" class="cart clearfix">
 
                             <div class="quantity">
-                                <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="">
+                                <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="qty" />
                             </div>
 
                             <button class="btn btn-addtocart-b" type="submit">Add to cart</button>
@@ -130,14 +130,14 @@ include_once('templates/headers/header1.php');
             </div>
         </div>
 
-        <div class="page-section bg-gray">
+        <div class="page-section bg-gray" itemtype="http://schema.org/Review" itemscope="">
             <div class="container">
                 <div class="woocommerce-tabs">
                     <!-- Nav tabs -->
                     <ul class="nav clearfix" role="tablist">
-                        <li role="presentation" class="active"><a href="#tab-description_tab" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-                        <li role="presentation"><a href="#tab-additional_information" aria-controls="profile" role="tab" data-toggle="tab">Additional INFO</a></li>
-                        <li role="presentation"><a href="#tab-reviews" aria-controls="messages" role="tab" data-toggle="tab">Review</a></li>
+                        <li role="presentation" class="active"><a href="#tab-description_tab" role="tab" data-toggle="tab">Description</a></li>
+                        <li role="presentation"><a href="#tab-additional_information" role="tab" data-toggle="tab">Additional INFO</a></li>
+                        <li role="presentation"><a href="#tab-reviews" role="tab" data-toggle="tab">Review</a></li>
                     </ul>
 
                     <!-- Tab panes -->

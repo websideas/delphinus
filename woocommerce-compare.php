@@ -115,9 +115,9 @@ include_once('templates/headers/header1.php');
                         </tr>
                         <tr>
                             <td class="compare-title">Quantity</td>
-                            <td><input type="text" name="" value="1" title="Qty" class="input-text qty text" size="4"></td>
-                            <td><input type="text" name="" value="1" title="Qty" class="input-text qty text" size="4"></td>
-                            <td><input type="text" name="" value="1" title="Qty" class="input-text qty text" size="4"></td>
+                            <td><input type="text" name="qty" value="1" title="Qty" class="input-text qty text" size="4" /></td>
+                            <td><input type="text" name="qty" value="1" title="Qty" class="input-text qty text" size="4" /></td>
+                            <td><input type="text" name="qty" value="1" title="Qty" class="input-text qty text" size="4" /></td>
                         </tr>
                         <tr>
                             <td class="compare-title">Action</td>

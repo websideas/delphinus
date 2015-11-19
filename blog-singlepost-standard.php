@@ -34,6 +34,7 @@ include_once('templates/headers/header1.php');
                     <div class="col-sm-9">
 
                         <article>
+                            <h3 class="hidden">The Best Way to Clean Your Pillows</h3>
                             <div class="entry-thumb">
                                 <figure>
                                     <img src="http://placehold.it/1200x800/" class="img-responsive" alt="Single post"/>
