@@ -293,7 +293,8 @@
 
         // Tooltips (bootstrap plugin activated)
         $('[data-toggle="tooltip"]').tooltip({
-            container:"body"
+            container:"body",
+            delay: { "show": 100, "hide": 100 }
         });
     }
 

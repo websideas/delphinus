@@ -114,60 +114,12 @@ p {
 .appear-animate .wow {
   visibility: hidden; }
 
-/* ==============================
-   Sections styles
-   ============================== */
-/*
- * Common
- */
-.page-section {
-  display: block;
-  position: relative;
-  padding: 90px 0;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -khtml-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-  .page-section .page-section-inner {
-    position: relative;
-    z-index: 1; }
-  .page-section.small-section {
-    padding: 85px 0; }
-  .page-section.bg-scroll {
-    background-attachment: scroll !important; }
-  .page-section.bg-dark-alfa-40:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4); }
-
-.bg-green {
-  background: #c7db9c; }
-
-.bg-gray {
-  background: #f6f6f6; }
-
-.bg-orange {
-  background: #ed8b5c; }
-
-.bg-gradient-gray {
-  position: relative; }
-  .bg-gradient-gray:before {
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    background: #f6f6f6;
-    top: 0;
-    left: 0; }
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0; }
+  .row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0; }
 
 .breadcrumb {
   margin: 0 0 35px;
@@ -234,6 +186,12 @@ p {
   position: absolute !important;
   width: 1px; }
 
+.letter-spacing {
+  letter-spacing: 0.2em; }
+
+.text-nomal {
+  text-transform: none; }
+
 .white {
   color: #fff !important; }
 
@@ -241,20 +199,27 @@ p {
   color: #111 !important; }
 
 .gray {
-  color: #999 !important; }
+  color: #999999 !important; }
 
-.letter-spacing {
-  letter-spacing: 0.2em; }
+.bg-green {
+  background: #c7db9c; }
 
-.text-nomal {
-  text-transform: none; }
+.bg-gray {
+  background: #f6f6f6; }
 
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-  .row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0; }
+.bg-orange {
+  background: #ed8b5c; }
+
+.bg-gradient-gray {
+  position: relative; }
+  .bg-gradient-gray:before {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: #f6f6f6;
+    top: 0;
+    left: 0; }
 
 /* ==============================
    2. Page loader
@@ -427,7 +392,7 @@ a {
  * 3.2 Blockquote
  */
 blockquote {
-  background: #efefef;
+  background: #f6f6f6;
   padding: 90px 45px 35px;
   margin-bottom: 30px;
   border: none;
@@ -778,7 +743,39 @@ select:not([multiple]) {
   letter-spacing: 0.18em; }
 
 /* ==============================
-   5. Search
+   6. Sections styles
+   ============================== */
+.page-section {
+  display: block;
+  position: relative;
+  padding: 90px 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -khtml-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  .page-section .page-section-inner {
+    position: relative;
+    z-index: 1; }
+  .page-section.small-section {
+    padding: 85px 0; }
+  .page-section.bg-scroll {
+    background-attachment: scroll !important; }
+  .page-section.bg-dark-alfa-40:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); }
+
+/* ==============================
+   7. Search
    ============================== */
 .searchform {
   margin: 0 auto;
@@ -844,7 +841,7 @@ select:not([multiple]) {
     font-size: 14px; }
 
 /* ==============================
-   6. Header
+   8. Header
    ============================== */
 .branding h1 {
   margin: 0;
@@ -1916,11 +1913,13 @@ ul.special {
     -o-border-radius: 0;
     border-radius: 0;
     padding: 10px 15px; }
-  .tooltip.top .tooltip-arrow {
-    border-width: 10px 10px 0;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -7px; }
+  .tooltip.top {
+    margin-top: -10px; }
+    .tooltip.top .tooltip-arrow {
+      border-width: 10px 10px 0;
+      bottom: -5px;
+      left: 50%;
+      margin-left: -7px; }
 
 .social-nav {
   margin: 0;
@@ -3808,7 +3807,10 @@ select.mobile-device {
 
 form.checkout .form-group {
   margin-bottom: 20px; }
-  form.checkout .form-group input[type="text"], form.checkout .form-group input[type="email"], form.checkout .form-group input[type="password"], form.checkout .form-group textarea {
+  form.checkout .form-group input[type="text"],
+  form.checkout .form-group input[type="email"],
+  form.checkout .form-group input[type="password"],
+  form.checkout .form-group textarea {
     border: 1px solid #f0f0f0;
     background: #f6f6f6;
     font-size: 12px;

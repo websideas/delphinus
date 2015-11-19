@@ -115,74 +115,19 @@ p {
   visibility: hidden;
 }
 
-/* ==============================
-   Sections styles
-   ============================== */
 
-/*
- * Common
- */
 
-.page-section{
-  display: block;
-  position: relative;
-  padding: 90px 0;
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  @include css3-prefix(background-size,cover);
-
-  .page-section-inner{
-    position: relative;
-    z-index: 1;
-  }
-
-  &.small-section{
-    padding: 85px 0;
-  }
-
-  &.bg-scroll{
-    background-attachment: scroll !important;
-  }
-
-  &.bg-dark-alfa-40{
-    &:before{
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: rgba(#000000, .4);
-    }
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
-.bg-green{
-  background: #c7db9c;
-}
-
-.bg-gray{
-  background: #f6f6f6;
-}
-
-.bg-orange{
-  background: #ed8b5c;
-}
-
-.bg-gradient-gray{
-  position: relative;
-  &:before{
-    content: '';
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    background: #f6f6f6;
-    top: 0;
-    left: 0;
-  }
-}
 
 .breadcrumb{
   margin: 0 0 35px;
@@ -208,11 +153,6 @@ p {
 }
 
 
-
-
-
-
-
 /*
  * 1.2 Helper CSS
  */
@@ -226,19 +166,9 @@ p {
   }
 }
 
-
-
-.round {
-  @include border-radius(2px);
-}
-
-.circle {
-  @include border-radius(100%);
-}
-
-.square {
-  @include border-radius(0);
-}
+.round {  @include border-radius(2px);  }
+.circle {  @include border-radius(100%);  }
+.square {  @include border-radius(0);  }
 
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
@@ -248,26 +178,32 @@ p {
   width: 1px;
 }
 
-.white{ color: #fff !important; }
-.black{ color: #111 !important; }
-.gray{ color: #999!important; }
-
-.letter-spacing{
-  letter-spacing: 0.2em;
-}
-
+.letter-spacing{  letter-spacing: 0.2em; }
 .text-nomal{ text-transform: none; }
 
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
+.white{ color: #fff !important; }
+.black{ color: #111 !important; }
+.gray{ color: $gray-text!important; }
 
-  & > [class^="col-"],
-  & > [class*=" col-"] {
-    padding-right: 0;
-    padding-left: 0;
+
+
+.bg-green{  background: #c7db9c; }
+.bg-gray{  background: $gray-bg; }
+.bg-orange{  background: #ed8b5c; }
+
+.bg-gradient-gray{
+  position: relative;
+  &:before{
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: $gray-bg;
+    top: 0;
+    left: 0;
   }
 }
+
 
 /* ==============================
    2. Page loader
@@ -555,7 +491,7 @@ select {
   line-height: 1.42857;
   padding: 6px 12px;
   border: 1px solid #f0f0f0;
-  background: #f6f6f6;
+  background: $gray-bg;
   cursor: pointer;
   color: $gray-text;
 }
@@ -563,7 +499,7 @@ select {
 select:not([multiple]) {
   @include css3-prefix('box-shadow', 'none');
   @include css3-prefix('appearance', 'none');
-  background:#f6f6f6 url(../images/selectbox-arrow.png) no-repeat right center;
+  background:$gray-bg url(../images/selectbox-arrow.png) no-repeat right center;
 }
 
 .form-control {
@@ -640,9 +576,9 @@ select:not([multiple]) {
     border-color: #000000;
   }
   &.btn-gray {
-    background: #f6f6f6;
+    background: $gray-bg;
     color: $gray-darker;
-    border-color: #f6f6f6;
+    border-color:$gray-bg;
     &:hover{
       background: #000000;
       color: #FFFFFF;
@@ -678,7 +614,7 @@ select:not([multiple]) {
   }
 
   &.btn-medium{
-    background: #f6f6f6;
+    background: $gray-bg;
     border: 1px solid #f0f0f0;
     color: #000;
     font-weight: bold;
@@ -745,8 +681,48 @@ select:not([multiple]) {
   letter-spacing: 0.18em;
 }
 
+
 /* ==============================
-   5. Search
+   6. Sections styles
+   ============================== */
+.page-section{
+  display: block;
+  position: relative;
+  padding: 90px 0;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  @include css3-prefix(background-size,cover);
+
+  .page-section-inner{
+    position: relative;
+    z-index: 1;
+  }
+
+  &.small-section{
+    padding: 85px 0;
+  }
+
+  &.bg-scroll{
+    background-attachment: scroll !important;
+  }
+
+  &.bg-dark-alfa-40{
+    &:before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(#000000, .4);
+    }
+  }
+}
+
+/* ==============================
+   7. Search
    ============================== */
 .searchform {
   margin: 0 auto;
@@ -806,7 +782,7 @@ select:not([multiple]) {
 }
 
 /* ==============================
-   6. Header
+   8. Header
    ============================== */
 
 .branding{
@@ -877,7 +853,7 @@ select:not([multiple]) {
       > a {
         > span{
           padding: 8px 12px;
-          background: #f6f6f6;
+          background: $gray-bg;
           color: #000000;
           font-size: 14px;
           margin-left: 25px;
@@ -1908,7 +1884,7 @@ ul.special{
   }
   &.style1{
     .kt-accortion-title{
-      background: #f6f6f6;
+      background: $gray-bg;
       &.ui-accordion-header-active{
         background: #000;
         color: #fff;
@@ -1926,7 +1902,7 @@ ul.special{
   }
   &.style3{
     .kt-accortion-title{
-      background: #f6f6f6;
+      background: $gray-bg;
       &.ui-accordion-header-active{
         @include background-horizontal(#a7c8eb,#bce5d3);
         color: #fff;
@@ -1962,7 +1938,9 @@ ul.special{
     @include border-radius(0);
     padding: 10px 15px;
   }
+
   &.top {
+    margin-top: -10px;
     .tooltip-arrow{
       border-width: 10px 10px 0;
       bottom: -5px;
@@ -2513,7 +2491,7 @@ ul.special{
   &.widget_price_filter{
     .ui-slider {
       position: relative;
-      background: #f6f6f6;
+      background: $gray-bg;
       margin-bottom: 40px;
       height: 2px;
       margin-left: 4px;
@@ -2554,7 +2532,7 @@ ul.special{
 
 
 #footer-top{
-  background: #f6f6f6;
+  background: $gray-bg;
   padding: 90px 0 60px;
 }
 #footer-area{
@@ -2586,7 +2564,7 @@ ul.special{
 }
 #footer-bottom{
   padding: 25px 0;
-  background: #f6f6f6;
+  background: $gray-bg;
   .widget-container{
     margin: 0;
     padding: 0;
@@ -2732,7 +2710,7 @@ ul.special{
 /* Author Info */
 
 .author-info {
-  background: #f6f6f6;
+  background: $gray-bg;
   margin-bottom: 85px;
   padding: 25px 25px 15px;
   .author-avatar {
@@ -2815,7 +2793,7 @@ ul.special{
 .comments-area {
   .comment-item {
     padding: 25px;
-    background: #f6f6f6;
+    background: $gray-bg;
     margin-bottom: 30px;
     min-height: 120px;
     .comment-avatar {
@@ -4045,12 +4023,14 @@ select.mobile-device {
 .about-left{
   margin-left: 30px;
   margin-bottom: 30px;
-} 
+}
+
+
 /* ==============================
    Contact
    ============================== */
 .contact-details{
-  background: #f6f6f6;
+  background: $gray-bg;
   padding: 65px 35px;
   margin-bottom: 30px;
   color: $gray-text;
@@ -4116,9 +4096,12 @@ select.mobile-device {
 form.checkout{
   .form-group{
     margin-bottom: 20px;
-    input[type="text"],input[type="email"],input[type="password"],textarea{
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea{
       border: 1px solid #f0f0f0;
-      background: #f6f6f6;
+      background: $gray-bg;
       font-size: 12px;
       letter-spacing: 0.075em;
     }    
@@ -4155,7 +4138,7 @@ form.checkout{
   .title-order{
     padding:12px;
     text-align: center;
-    background: #f6f6f6;
+    background: $gray-bg;
     letter-spacing: 0.2em; 
     margin: 0;
   }
@@ -4169,7 +4152,7 @@ form.checkout{
       position: relative;
       input{
         width: 100%;
-        background: #f6f6f6;
+        background: $gray-bg;
         border:1px solid #f0f0f0;
         padding: 12px;
         line-height: normal;
@@ -4224,7 +4207,7 @@ form.checkout{
     li{
       margin: 0 0 30px;
       .payment_box{
-        background: #f6f6f6;
+        background: $gray-bg;
         padding: 15px;
         position: relative;
         font-size: 14px;
@@ -4368,7 +4351,7 @@ table.cart{
     input{
       padding: 10px 15px;
       line-height: normal;
-      background: #f6f6f6;
+      background: $gray-bg;
       border:1px solid #f0f0f0;
       margin-bottom: 20px;
       width: 100%;
@@ -4378,7 +4361,7 @@ table.cart{
   }
   .shipping_calculator{
     .input-text{
-      background: #f6f6f6;
+      background: $gray-bg;
       border:1px solid #f0f0f0; 
       font-size: 12px;
       letter-spacing: 0.075em;
@@ -4505,7 +4488,7 @@ table.compare{
       }
     }
     .input-text{
-      background: #f6f6f6;
+      background: $gray-bg;
       border: 1px solid #f0f0f0;
       font-size: 12px;
       letter-spacing: 0.075em;
