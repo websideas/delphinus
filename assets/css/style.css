@@ -200,14 +200,26 @@ p {
 .gray {
   color: #999999 !important; }
 
-.bg-green {
-  background: #c7db9c; }
-
 .bg-gray {
   background: #f6f6f6; }
 
-.bg-orange {
+.bg-lightgreen {
+  background: #c7db9c; }
+
+.bg-wheat {
+  background: #f4dc86; }
+
+.bg-sky {
+  background: #a7c8eb; }
+
+.bg-coral {
   background: #ed8b5c; }
+
+.bg-aquamarine {
+  background: #bce5d3; }
+
+.bg-purple {
+  background: #d1aece; }
 
 .bg-gradient-gray {
   position: relative; }
@@ -4239,18 +4251,27 @@ table.compare tr td {
   text-align: center;
   position: fixed;
   right: 37px;
-  bottom: 10px;
+  bottom: 37px;
   z-index: 100;
   cursor: pointer;
+  display: none;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   -khtml-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -khtml-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  color: #000000; }
   #back-to-top i {
-    color: #000;
     font-size: 18px;
     line-height: 50px; }
+  #back-to-top:hover {
+    background: #f6f6f6; }
 
 /*# sourceMappingURL=style.css.map */

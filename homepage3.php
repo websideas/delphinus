@@ -410,14 +410,14 @@ include_once('templates/slideshows/carousel.php');
 
                 <div class="row equal_height equal_height_element">
                     <div class="col-md-8 kt_column">
-                        <div class="about-wrapper" style="background-image: url('assets/images/background/bg-02.jpg');">
+                        <div class="about-wrapper wow bounceInLeft" style="background-image: url('assets/images/background/bg-02.jpg');">
                             <h4 class="about-title">we are delphinus</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam aliquet turpis in cursus. Maecenas suscipit molestie porta. Aliquam et cursus lectus. Vestibulum sit amet nulla nec mauris condimentum porttitor et nec tellus. Morbi fermentum dui quis dolor sollicitudin, vitae sodales sapien molfermsuada fames ac turpis egestas.</p>
                             <p class="no-margin">Monday to Friday, 11 am – 6 pm<br/>Saturday, 11 am – 4 pm</p>
                         </div>
                     </div>
                     <div class="col-md-4 kt_column">
-                        <div class="newsletters-wrapper">
+                        <div class="newsletters-wrapper wow bounceInRight">
                             <h3 class="widget-title">newsletter</h3>
                             <div class="newsletters-before">Sign up to get the latest on sales, new releases and more ...</div>
                             <form class="newsletters-form" method="get" action="#">
@@ -430,18 +430,18 @@ include_once('templates/slideshows/carousel.php');
 
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="banner">
+                        <div class="banner wow fadeInLeft" data-wow-delay="400ms">
                             <img src="assets/images/banner/banner-06.jpg" alt="" />
                             <a class="banner-link" href="#"></a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="400ms">
                         <div class="banner">
                             <img src="assets/images/banner/banner-07.jpg" alt="" />
                             <a class="banner-link" href="#"></a>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInRight" data-wow-delay="400ms">
                         <div class="banner">
                             <img src="assets/images/banner/banner-08.jpg" alt="" />
                             <a class="banner-link" href="#"></a>
@@ -457,28 +457,28 @@ include_once('templates/slideshows/carousel.php');
             <div class="container">
                 <div class="owl-carousel-kt remove-mar-bottom">
                     <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": false, "desktop": 6, "desktopsmall": 5, "tablet" : 4, "mobile" : 2}'>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="150ms">
                             <a href="#"><img src="assets/images/client/client-01.png" class="img-responsive" alt=""/> </a>
                         </div>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="300ms">
                             <a href="#"><img src="assets/images/client/client-02.png" class="img-responsive" alt=""/> </a>
                         </div>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="450ms">
                             <a href="#"><img src="assets/images/client/client-03.png" class="img-responsive" alt=""/> </a>
                         </div>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="600ms">
                             <a href="#"><img src="assets/images/client/client-04.png" class="img-responsive" alt=""/> </a>
                         </div>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="750ms">
                             <a href="#"><img src="assets/images/client/client-05.png" class="img-responsive" alt=""/> </a>
                         </div>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="900ms">
                             <a href="#"><img src="assets/images/client/client-06.png" class="img-responsive" alt=""/> </a>
                         </div>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="150ms">
                             <a href="#"><img src="assets/images/client/client-01.png" class="img-responsive" alt=""/> </a>
                         </div>
-                        <div class="client-item">
+                        <div class="client-item wow fadeIn" data-wow-delay="130ms">
                             <a href="#"><img src="assets/images/client/client-02.png" class="img-responsive" alt=""/> </a>
                         </div>
                     </div>
