@@ -1,16 +1,15 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Table of contents]
 
-5. Styles for devices(>=1280px)
-6. Styles for devices(>=992px and <=1279px)
-7. Styles for devices(<=1279px)
-8. Styles for devices(<=1199px)
-9. Styles for devices(<=991px )
-10. Styles for devices(>=768px and <= 991px)
-11. Styles for devices(<=767px )
-12. Styles for devices(>=481px and <= 767px)
-13. Styles for devices(<=480px )
-14. Styles for devices(<=320px )
+1. Styles for devices(<=1300px)
+2. Styles for devices(>=1200px)
+3. Styles for devices(<=1199px)
+4. Styles for devices(<=991px )
+5. Styles for devices(>=768px and <= 991px)
+6. Styles for devices(<=767px )
+7. Styles for devices(>=481px and <= 767px)
+8. Styles for devices(<=480px )
+9. Styles for devices(<=320px )
 */
 
 @import 'mixin';
@@ -18,7 +17,7 @@
 
 
 
-/* 8. Styles for devices(<=1300px) */
+/* 1. Styles for devices(<=1300px) */
 @media (max-width: 1300px) {
   #footer-area{
     .footer-area-inner{
@@ -211,7 +210,7 @@
   }
 }
 
-/* 9. Styles for devices(<=991px ) */
+/* 4. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
 
 
@@ -293,12 +292,12 @@
 
 }
 
-/* 10. Styles for devices(>=768px and <= 991px) */
+/* 5. Styles for devices(>=768px and <= 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
 
 }
 
-/* 11. Styles for devices(<=767px ) */
+/* 6. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
 
   .products {
@@ -377,12 +376,12 @@
 
 }
 
-/* 12. Styles for devices(>=481px and <= 767px) */
+/* 7. Styles for devices(>=481px and <= 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
 
 }
 
-/* 13. Styles for devices(<=480px ) */
+/* 8. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
   .products {
     .product {
@@ -485,7 +484,7 @@
 
 }
 
-/* 14. Styles for devices(<=320px ) */
+/* 9. Styles for devices(<=320px ) */
 @media (max-width: 320px) {
 
 }
