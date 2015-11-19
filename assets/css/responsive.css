@@ -128,7 +128,16 @@
     .single-post .share-it .social_icons li a span {
       display: none; }
     .single-post .share-it .social_icons li a i {
-      display: block; } }
+      display: block; }
+
+  .themedev-product-popup {
+    max-width: 485px; }
+    .themedev-product-popup .product-main .product-detail-images {
+      max-width: 485px; }
+    .themedev-product-popup.animate-width {
+      max-width: 970px; }
+    .themedev-product-popup.add-content {
+      max-width: 970px; } }
 /* 9. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
   .product-main.style2 .product-detail-wrap, .product-main.style3 .product-detail-wrap {
@@ -146,6 +155,24 @@
     display: none; }
   .products-tools .grid-list {
     margin-right: 0; }
+
+  .themedev-product-popup {
+    max-width: none;
+    margin: 10px; }
+    .themedev-product-popup .product-main .product-details-info,
+    .themedev-product-popup .product-main .product-detail-images {
+      max-width: none;
+      float: none;
+      width: auto;
+      position: static; }
+    .themedev-product-popup.animate-width {
+      max-width: none;
+      float: none;
+      width: auto; }
+    .themedev-product-popup .close-quickview {
+      display: none; }
+      .themedev-product-popup .close-quickview.mobile-version {
+        display: block; }
 
   .cart-collaterals .shipping_calculator button {
     margin-top: 15px; }
@@ -207,6 +234,16 @@
 
   .product-list-widget .product-widget {
     width: 100%; }
+
+  .product-main .product-price-wrap .review-summary {
+    clear: both;
+    display: block;
+    float: none;
+    margin: 0;
+    padding-top: 10px; }
+  .product-main form.cart .quantity input {
+    float: none;
+    margin-bottom: 20px; }
 
   .products-tools .products-sortby .bootstrap-select {
     margin-right: 10px; }

@@ -1,4 +1,5 @@
 <div class="product-main style1 clearfix">
+    <a href="#" class="close-quickview mobile-version"><i class="fa fa-times"></i></a>
     <div class="product-detail-images">
         <div class="product-detail-thumbarea">
             <div class="single-product-main-images owl-carousel1" id="quickview-images">

@@ -847,6 +847,9 @@
                                 setTimeout(function(){
                                     $popup.addClass('add-content');
                                 }, 1000);
+
+
+
                             });
 
                             init_shortcodes();

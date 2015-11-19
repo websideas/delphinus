@@ -10,10 +10,10 @@ include_once('templates/slideshows/slideshow1.php');
         <div class="page-section no-padding">
 
             <div class="row equal_height">
-                <div class="col-md-4 kt_column kt-column-bg" style="background-image: url('assets/images/background/bg-03.png');">
-                    <img src="assets/images/background/bg-03.png" align="" />
+                <div class="col-md-4 hidden-xs hidden-sm kt_column kt-column-bg" style="background-image: url('assets/images/background/bg-03.png');">
+
                 </div>
-                <div class="col-md-8 kt_column">
+                <div class="col-md-8 kt_column col-sm-12">
                     <div class="page-small-width">
                         <div class="kt-heading-wrapper mar-top-80">
                             <h3 class="kt-heading-title">for your livingroom</h3>
@@ -219,7 +219,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                         <div class="products mar-bottom-20">
                             <div class="row multi-columns-row">
-                                <div data-wow-delay="0.2s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.2s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -246,7 +246,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.4s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.4s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -273,7 +273,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.6s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.6s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -299,7 +299,7 @@ include_once('templates/slideshows/slideshow1.php');
                                     </div>
                                 </div>
 
-                                <div data-wow-delay="0.2s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.2s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -326,7 +326,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.4s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.4s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -353,7 +353,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.6s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.6s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -383,17 +383,9 @@ include_once('templates/slideshows/slideshow1.php');
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 kt_column kt-column-bg" style="background-image: url('assets/images/background/bg-04.png');"></div>
+                <div class="col-md-4 kt_column kt-column-bg hidden-xs hidden-sm" style="background-image: url('assets/images/background/bg-04.png');"></div>
             </div>
             <div class="row equal_height">
-                <div class="col-md-4 kt_column pad-top-lg pad-bottom-lg pull-right" style="background-color: #b2d9c8;">
-                    <div class="kt-table">
-                        <div class="kt-col">
-                            <h2 class="white text-center no-margin">special offer</h2>
-                        </div>
-                    </div>
-
-                </div>
                 <div class="col-md-8 kt_column  pad-top-lg pad-bottom-lg" style="background:#bce5d3 url(assets/images/home4-chair-bg.png) no-repeat center right; ">
                     <div class="page-small-width">
                         <h3>Series 7 Chair Coloured</h3>
@@ -401,9 +393,16 @@ include_once('templates/slideshows/slideshow1.php');
                         <p class="remove-mar-bottom"><a href="#">Shop now <i class="icon-Right-3"></i></a> </p>
                     </div>
                 </div>
+                <div class="col-md-4 kt_column pad-top-lg pad-bottom-lg" style="background-color: #b2d9c8;">
+                    <div class="kt-table">
+                        <div class="kt-col">
+                            <h2 class="white text-center no-margin">special offer</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row equal_height">
-                <div class="col-md-4 kt_column kt-column-bg" style="background-image: url('assets/images/background/bg-05.png');"></div>
+                <div class="col-md-4 kt_column kt-column-bg hidden-xs hidden-sm" style="background-image: url('assets/images/background/bg-05.png');"></div>
                 <div class="col-md-8 kt_column">
                     <div class="page-small-width">
                         <div class="kt-heading-wrapper mar-top-80">
@@ -414,7 +413,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                         <div class="products mar-bottom-20">
                             <div class="row multi-columns-row">
-                                <div data-wow-delay="0.2s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.2s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -441,7 +440,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.4s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.4s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -468,7 +467,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.6s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.6s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -494,7 +493,7 @@ include_once('templates/slideshows/slideshow1.php');
                                     </div>
                                 </div>
 
-                                <div data-wow-delay="0.2s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.2s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -521,7 +520,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.4s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.4s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -548,7 +547,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                                 </div>
 
-                                <div data-wow-delay="0.6s" class="col-md-4 product wow fadeIn">
+                                <div data-wow-delay="0.6s" class="product col-lg-4 col-md-6 col-sm-6 col-xs-6 wow fadeIn">
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
@@ -619,9 +618,9 @@ include_once('templates/slideshows/slideshow1.php');
 
                 <div class="blog-posts">
                     <div class="row multi-columns-row">
-                        <div class="blog-post col-lg-4 col-md-4">
-                            <a class="blog-post-thumbnail" href="blog-singlepost-standard.php">
-                                <img alt="" src="assets/images/blog/blog-01.jpg">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
+                                <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
                             <h4 class="blog-post-title">
                                 <a href="blog-singlepost-standard.php"> The Best Way to Clean Your Pillows</a>
@@ -633,9 +632,9 @@ include_once('templates/slideshows/slideshow1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
-                            <a class="blog-post-thumbnail" href="blog-singlepost-standard.php">
-                                <img alt="" src="assets/images/blog/blog-02.jpg">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
+                                <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
                             <h4 class="blog-post-title">
                                 <a href="blog-singlepost-standard.php">17 Small Space Decorating Tricks ...</a>
@@ -647,9 +646,9 @@ include_once('templates/slideshows/slideshow1.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4">
-                            <a class="blog-post-thumbnail" href="blog-singlepost-standard.php">
-                                <img alt="" src="assets/images/blog/blog-03.jpg">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                            <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
+                                <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>
                             <h4 class="blog-post-title">
                                 <a href="blog-singlepost-standard.php">The Best Bathrooms of 2014</a>
@@ -660,8 +659,6 @@ include_once('templates/slideshows/slideshow1.php');
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
-
-
 
                     </div>
                 </div>

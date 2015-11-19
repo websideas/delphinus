@@ -3735,7 +3735,7 @@ select.mobile-device {
 .page-small-width {
   margin: 0 auto;
   max-width: 900px;
-  padding: 15px; }
+  padding: 0 15px; }
 
 .kt-column-bg {
   -webkit-background-size: cover;
@@ -4159,6 +4159,14 @@ table.compare tr td {
     position: absolute;
     right: 30px;
     top: 35px; }
+    .themedev-product-popup .close-quickview.mobile-version {
+      display: none;
+      height: 30px;
+      line-height: 30px;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 30px; }
   .themedev-product-popup .product-main {
     background: #FFF; }
     .themedev-product-popup .product-main .product-detail-images {

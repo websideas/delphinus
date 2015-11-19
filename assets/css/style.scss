@@ -4036,7 +4036,7 @@ select.mobile-device {
 .page-small-width{
   margin: 0 auto;
   max-width: 900px;
-  padding: 15px;
+  padding: 0 15px;
 }
 .kt-column-bg{
   @include css3-prefix('background-size', 'cover');
@@ -4577,6 +4577,15 @@ table.compare{
     &:hover{
 
     }
+    &.mobile-version{
+      display: none;
+      height: 30px;
+      line-height: 30px;
+      right: 0;
+      text-align: center;
+      top: 0;
+      width: 30px;
+    }
   }
 
   .product-main{
@@ -4598,11 +4607,13 @@ table.compare{
       @include transform(translate3d(-40px, 0, 0));
     }
   }
+
   &.animate-width{
     max-width: 1200px;
     .product-detail-images{
     }
   }
+
   &.add-content{
     max-width: 1200px;
     .product-detail-images{
@@ -4618,4 +4629,5 @@ table.compare{
       @include transform(translate3d(0, 0, 0));
     }
   }
+
 }
