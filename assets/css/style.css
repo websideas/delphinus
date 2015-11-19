@@ -3947,9 +3947,9 @@ table.cart {
       margin: 0 auto;
       text-align: center; }
     table.cart td.actions {
-      padding: 31px; }
+      padding: 31px 31px 21px; }
       table.cart td.actions button {
-        margin: 0 15px;
+        margin: 0 15px 10px;
         color: #010101; }
         table.cart td.actions button:hover, table.cart td.actions button:focus {
           background: #000;
