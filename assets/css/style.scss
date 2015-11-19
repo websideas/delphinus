@@ -130,6 +130,7 @@ p {
 
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 
   @include css3-prefix(background-size,cover);
 
@@ -4535,6 +4536,9 @@ table.compare{
     left: 100%;
     background: #fff;
     @include opacity(1);
+    &:active{
+      top: 0;
+    }
   }
   .wrapper-newletter-popup{
     padding: 50px 55px 35px 405px;

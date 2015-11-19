@@ -20,7 +20,7 @@
                          data-transform_out="x:left;s:2500;s:2500;"
                          data-start="500"
                          data-responsive_offset="on"
-                         style="z-index: 5;"><img src="assets/images/slideshow/ghe1.png" alt="" data-ww="430px" data-hh="400px" data-no-retina>
+                         style="z-index: 5;"><img src="assets/images/slideshow/chair1.png" alt="" data-ww="430px" data-hh="400px" data-no-retina>
                     </div>
 
                     <!-- LAYER NR. 2 -->
@@ -34,7 +34,7 @@
                          data-transform_out="x:right;s:2000;s:2000;"
                          data-start="500"
                          data-responsive_offset="on"
-                         style="z-index: 6;"><img src="assets/images/slideshow/ghe2.png" alt="" data-ww="430px" data-hh="400px" data-no-retina>
+                         style="z-index: 6;"><img src="assets/images/slideshow/chair2.png" alt="" data-ww="430px" data-hh="400px" data-no-retina>
                     </div>
 
                     <!-- LAYER NR. 3 -->
@@ -106,7 +106,7 @@
                          data-start="500"
                          data-responsive_offset="on"
                          data-end="4800"
-                         style="z-index: 5;"><img src="assets/images/slideshow/ban1.png" alt="" data-ww="1513px" data-hh="297px" data-no-retina>
+                         style="z-index: 5;"><img src="assets/images/slideshow/furniture1.png" alt="" data-ww="1513px" data-hh="297px" data-no-retina>
                     </div>
 
                     <!-- LAYER NR. 2 -->

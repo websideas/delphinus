@@ -231,6 +231,13 @@
     }
   }
 
+  #popup-wrap{
+    .mfp-close{
+      left: auto;
+      right: 0;
+    }
+  }
+
 }
 
 /* 10. Styles for devices(>=768px and <= 991px) */
@@ -304,6 +311,15 @@
 
   .about-left{
     margin-left: 0;
+  }
+
+  #popup-wrap{
+    .wrapper-newletter-popup{
+      padding-left: 200px;
+      .bg-popup{
+        width: 200px;
+      }
+    }
   }
 
 }
@@ -383,6 +399,15 @@
   .kt-tab-container .tabs li{
     width: 100%;
     margin: 0;
+  }
+
+  #popup-wrap{
+    .wrapper-newletter-popup{
+      padding: 20px;
+      .bg-popup{
+        display: none;
+      }
+    }
   }
 
 }

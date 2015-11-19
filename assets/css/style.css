@@ -126,6 +126,7 @@ p {
   padding: 90px 0;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -khtml-background-size: cover;
   -moz-background-size: cover;
@@ -4128,6 +4129,8 @@ table.compare tr td {
     -ms-opacity: 1;
     -o-opacity: 1;
     opacity: 1; }
+    #popup-wrap .mfp-close:active {
+      top: 0; }
   #popup-wrap .wrapper-newletter-popup {
     padding: 50px 55px 35px 405px;
     text-align: center; }
