@@ -145,7 +145,10 @@
   .products-tools .result-count {
     display: none; }
   .products-tools .grid-list {
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .cart-collaterals .shipping_calculator button {
+    margin-top: 15px; } }
 /* 10. Styles for devices(>=768px and <= 991px) */
 /* 11. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
@@ -171,9 +174,6 @@
 
   .table-responsive {
     border-color: #f0f0f0; }
-
-  .cart-collaterals .shipping_calculator button {
-    margin-top: 15px; }
 
   .woocommerce-tabs .nav {
     padding: 0; }

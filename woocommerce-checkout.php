@@ -92,6 +92,7 @@ include_once('templates/headers/header1.php');
                                             <label>
                                                 <input type="checkbox" checked>Ship to a different address?
                                             </label>
+                                            <label>Order Notes</label>
                                             <div class="form-group">
                                                 <textarea></textarea>
                                             </div>
@@ -117,22 +118,22 @@ include_once('templates/headers/header1.php');
                                             <thead>
                                             <tr>
                                                 <th class="product-name">Product</th>
-                                                <th class="product-total text-right">Total</th>
+                                                <td class="product-total text-right">TOTAL</td>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr class="cart_item">
-                                                <td class="product-name">
+                                                <th class="product-name">
                                                     Toros Armchair <span class="product-quantity">× 1</span>
-                                                </td>
+                                                </th>
                                                 <td class="product-total text-right">
                                                     <span class="amount">$1000.00</span>
                                                 </td>
                                             </tr>
                                             <tr class="cart_item">
-                                                <td class="product-name">
+                                                <th class="product-name">
                                                     Koriander 3 Seater Sofa<span class="product-quantity">× 1</span>
-                                                </td>
+                                                </th>
                                                 <td class="product-total text-right">
                                                     <span class="amount">$1500.00</span>
                                                 </td>

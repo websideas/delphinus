@@ -222,7 +222,14 @@
       margin-right: 0;
     }
   }
-
+  
+  .cart-collaterals{
+    .shipping_calculator{
+      button{
+        margin-top: 15px;
+      }
+    }
+  }
 
 }
 
@@ -274,14 +281,6 @@
 
   .table-responsive{
     border-color: #f0f0f0;
-  }
-
-  .cart-collaterals{
-    .shipping_calculator{
-      button{
-        margin-top: 15px;
-      }
-    }
   }
 
   .woocommerce-tabs{
