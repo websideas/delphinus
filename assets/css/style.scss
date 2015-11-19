@@ -4584,3 +4584,23 @@ table.compare{
   }
 
 }
+/* ==============================
+   Back to Top
+   ============================== */
+#back-to-top{
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  right: 37px;
+  bottom:10px;
+  z-index: 100;
+  cursor: pointer;
+  @include box-shadow(0, 2px, 4px, rgba(0, 0, 0, 0.12));
+  i{
+    color: #000;
+    font-size: 18px;
+    line-height: 50px;
+  }
+}

@@ -4200,4 +4200,28 @@ table.compare tr td {
       -o-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0); }
 
+/* ==============================
+   Back to Top
+   ============================== */
+#back-to-top {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  right: 37px;
+  bottom: 10px;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  -khtml-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); }
+  #back-to-top i {
+    color: #000;
+    font-size: 18px;
+    line-height: 50px; }
+
 /*# sourceMappingURL=style.css.map */
