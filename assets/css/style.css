@@ -401,7 +401,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "“";
+    content: "ΓÇ£";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -416,7 +416,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "”"; }
+      content: "ΓÇ¥"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote *:last-child {
