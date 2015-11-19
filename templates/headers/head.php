@@ -55,6 +55,19 @@
 </head>
 <body class="appear-animate">
 
+<!--<div class="page-loader">
+    <div class="loader">
+        <div class="binding"></div>
+        <div class="pad">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
+        <div class="text">
+            Cephenus is loading...
+        </div>
+    </div>
+</div>--><!-- .page-loader -->
 
 <div id="search-fullwidth" class="mfp-hide mfp-with-anim">
     <form method="get" class="searchform" action="#">
