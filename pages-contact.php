@@ -29,7 +29,7 @@ include_once('templates/headers/header1.php');
     <div id="main">
         <div class="page-section pad-bottom-60">
             <div class="container">
-                <div class="googlemap" style="height:570px;margin-bottom:90px;" data-zoom="16" data-scrollwheel="1" data-style="8" data-location="121 King Street, Melbourne Victoria 3000 Australia" data-type="roadmap"></div>
+                <div class="googlemap mar-bottom-90" style="height:570px;" data-zoom="17" data-scrollwheel="1" data-style="8" data-location="Queen St/Collins St, Melbourne, Victoria, Australia" data-type="roadmap"></div>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="contact-details">
