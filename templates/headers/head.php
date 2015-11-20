@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Delphinus - Creative eCommerce HTML5 Template </title>
+    <title>Delphinus - Creative Multi-Purpose eCommerce HTML5</title>
 
     <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cMontserrat:400,700%7cCrete+Round:400italic%7cVollkorn:400,400italic' rel='stylesheet' type='text/css'>
 
