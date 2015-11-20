@@ -1,0 +1,27 @@
+/* 1. Styles for devices(<=1650px) */
+@media (max-width: 1650px) {
+  .demo-item > a {
+    width: 500px; } }
+@media (max-width: 1200px) {
+  .demo-item {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
+    .demo-item > a {
+      width: 440px; } }
+@media (max-width: 991px) {
+  .demo-item > a {
+    width: 340px; } }
+@media (max-width: 767px) {
+  .cd-intro-content h1 {
+    font-size: 24px; }
+  .cd-intro-content p {
+    font-size: 15px; }
+
+  .demo-item {
+    float: none !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important; }
+    .demo-item > a {
+      width: 100%; } }
+
+/*# sourceMappingURL=responsive.css.map */
