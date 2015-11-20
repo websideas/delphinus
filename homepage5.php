@@ -95,27 +95,29 @@ include_once('templates/slideshows/slideshow2.php');
 
         <div class="page-section">
             <div class="container">
+
                 <div class="kt-heading-wrapper">
-                    <div class="kt-heading-divider">
+                    <div class="kt-heading-divider wow fadeInUp">
                         <svg version="1.1" x="0px" y="0px"
                              viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
-                    <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
-                        l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
-                        c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
+                <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
+                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
+                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
                             <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
-                        l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
-                        c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
-                    </svg>
+                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
+                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
+                </svg>
                     </div>
-                    <h3 class="kt-heading-title">LASTEST PRODUCT</h3>
-                    <div class="kt-heading-subtitle"><a href="#">see all</a></div>
+                    <h3 class="kt-heading-title wow fadeInUp" data-wow-delay="200ms">LASTEST PRODUCT</h3>
+                    <div class="kt-heading-subtitle wow fadeInUp" data-wow-delay="400ms"><a href="#">see all</a></div>
                 </div>
+
 
                 <div class="products">
 
                     <div class="owl-carousel-kt remove-mar-bottom navigation-center">
                         <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4, "desktopsmall" : 3, "tablet" : 2, "mobile" : 1}'>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="100ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
@@ -136,7 +138,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="200ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
@@ -157,7 +159,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 <div class="product-price">$340.00</div>
                             </div>
 
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="300ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
@@ -177,7 +179,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="400ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
@@ -198,7 +200,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 <div class="product-price">$340.00</div>
                             </div>
 
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="500ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
@@ -218,7 +220,7 @@ include_once('templates/slideshows/slideshow2.php');
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="600ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
@@ -242,22 +244,20 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
 
                 </div>
-
-
             </div>
         </div>
 
         <div class="page-section bg-gray no-padding">
             <div class="container">
                 <div class="collection-wrapper">
-                    <div class="left-collection">
+                    <div class="left-collection wow bounceInLeft" data-wow-delay="400ms">
                         <img class="img-responsive" alt="" src="assets/images/collection-1.png" />
                     </div>
-                    <div class="right-collection">
+                    <div class="right-collection wow bounceInRight" data-wow-delay="400ms">
                         <img class="img-responsive" alt="" src="assets/images/collection-3.png" />
                     </div>
                     <div class="front-collection">
-                        <div class="collection-image">
+                        <div class="collection-image wow fadeIn">
                             <img class="img-responsive" alt="" src="assets/images/collection-2.png" />
                         </div>
                         <div class="collection-content">
@@ -268,13 +268,12 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="page-section">
             <div class="container">
                 <div class="row multi-columns-row">
-                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-01.jpg" alt="" />
                             <div class="banner-content">
@@ -282,7 +281,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="400ms">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-02.jpg" alt="" />
                             <div class="banner-content">
@@ -290,7 +289,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="600ms">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-03.jpg" alt="" />
                             <div class="banner-content">
@@ -298,7 +297,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-15.jpg" alt="" />
                             <div class="banner-content">
@@ -306,7 +305,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="400ms">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-16.jpg" alt="" />
                             <div class="banner-content">
@@ -314,7 +313,7 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="col-lg-4 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="600ms">
                         <div class="banner position-bottom">
                             <img src="assets/images/banner/banner-17.jpg" alt="" />
                             <div class="banner-content">
@@ -329,7 +328,7 @@ include_once('templates/slideshows/slideshow2.php');
         <div class="page-section pad-xlg bg-dark-alfa-40 parallax-2" style="background-image: url('assets/images/background/bg-01.jpg') ">
             <div class="page-section-inner">
                 <div class="container">
-                    <h2 class="text-center white">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
+                    <h2 class="text-center white wow bounceInRight">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
                 </div>
             </div>
         </div>
@@ -337,26 +336,25 @@ include_once('templates/slideshows/slideshow2.php');
 
         <div class="page-section">
             <div class="container">
-
                 <div class="kt-heading-wrapper">
-                    <div class="kt-heading-divider">
+                    <div class="kt-heading-divider wow fadeInUp">
                         <svg version="1.1" x="0px" y="0px"
-                         viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
-                    <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
-                        l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
-                        c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
-                    <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
-                        l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
-                        c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
-                    </svg>
+                             viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
+                <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
+                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
+                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
+                            <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
+                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
+                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
+                </svg>
                     </div>
-                    <h3 class="kt-heading-title">LASTEST from blog</h3>
-                    <div class="kt-heading-subtitle"><a href="#">see all</a></div>
+                    <h3 class="kt-heading-title wow fadeInUp" data-wow-delay="200ms">LASTEST from blog</h3>
+                    <div class="kt-heading-subtitle wow fadeInUp" data-wow-delay="400ms"><a href="#">see all</a></div>
                 </div>
 
                 <div class="blog-posts">
                     <div class="row multi-columns-row">
-                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInLeft">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
@@ -370,7 +368,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInUp">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
@@ -384,7 +382,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInRight">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>
@@ -397,9 +395,9 @@ include_once('templates/slideshows/slideshow2.php');
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
+
                     </div>
                 </div>
-
             </div>
         </div>
 
