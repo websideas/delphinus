@@ -187,7 +187,12 @@
 
   #popup-wrap .mfp-close {
     left: auto;
-    right: 0; } }
+    right: 0; }
+
+  .products.lists .product .product-content {
+    margin-right: 30px; }
+  .products.lists .product h3.product-title {
+    margin-top: 0; } }
 /* 5. Styles for devices(>=768px and <= 991px) */
 /* 6. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
@@ -305,7 +310,13 @@
   #review_form .comment-form-rating .stars {
     width: 100%; }
   #review_form .form-submit input {
-    width: 100%; } }
+    width: 100%; }
+
+  .products.lists .product {
+    text-align: center; }
+    .products.lists .product .product-content {
+      max-width: 100%;
+      margin: 0 0 30px; } }
 /* 9. Styles for devices(<=320px ) */
 
 /*# sourceMappingURL=responsive.css.map */

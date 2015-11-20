@@ -83,6 +83,7 @@
 
         init_productsMasonry();
         init_productCountdown();
+        init_gridlistToggle();
 
         init_productcarouselwoo($("#sync1"), $("#sync2"));
 
@@ -845,6 +846,25 @@
             }
         });
 
+    }
+
+    /* ---------------------------------------------
+     Grid list Toggle
+     --------------------------------------------- */
+    function init_gridlistToggle(){
+        $('ul.grid-list a').on('click', function(e){
+            e.preventDefault();
+            var $this = $(this),
+                $gridlist = $this.closest('.grid-list'),
+                $products = $this.closest('#main').find('.products');
+                
+            $gridlist.find('a').removeClass('active');
+            $this.addClass('active');
+            $products
+                .removeClass($this.data('remove'))
+                .addClass($this.data('layout'));
+                
+        });
     }
 
 })(jQuery); // End of use strict

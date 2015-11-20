@@ -50,8 +50,8 @@ include_once('templates/headers/header2.php');
                     </form>
                     <div class="result-count">Items 1 - 15 of 28 total</div>
                     <ul class="grid-list">
-                        <li><a href="#" title="Grid view"><i class="fa fa-th"></i></a></li>
-                        <li><a href="#" title="List view"><i class="fa fa-bars"></i></a></li>
+                        <li><a class="active" href="#" data-layout="grid" data-remove="lists" title="Grid view"><i class="fa fa-th"></i></a></li>
+                        <li><a href="#" data-layout="lists" data-remove="grid" title="List view"><i class="fa fa-bars"></i></a></li>
                     </ul>
 
                 </div>
@@ -78,6 +78,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -100,6 +101,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -122,6 +124,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -144,6 +147,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
@@ -165,6 +169,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -187,6 +192,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -209,6 +215,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -231,6 +238,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -253,6 +261,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
@@ -274,6 +283,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -296,6 +306,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -318,6 +329,7 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
                             </h3>
                             <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
                     </div>
                 </div>

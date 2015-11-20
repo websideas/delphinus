@@ -308,7 +308,18 @@
     }
   }
 
-
+  .products{
+    &.lists{
+      .product{
+        .product-content{
+          margin-right: 30px;
+        }
+        h3.product-title{
+          margin-top: 0;
+        }
+      }
+    }
+  }
 
 }
 
@@ -539,6 +550,18 @@
     .form-submit{
       input{
         width: 100%;
+      }
+    }
+  }
+
+  .products{
+    &.lists{
+      .product{
+        text-align: center;
+        .product-content{
+          max-width: 100%;
+          margin: 0 0 30px;
+        }
       }
     }
   }

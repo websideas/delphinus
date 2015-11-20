@@ -8,7 +8,7 @@
 
     <title>Delphinus - Creative eCommerce HTML5 Template </title>
 
-    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cMontserrat:400,700%7cCrete+Round:400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cMontserrat:400,700%7cCrete+Round:400italic%7cVollkorn:400,400italic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/multi-columns-row.css" />
