@@ -46,21 +46,6 @@ include_once('templates/slideshows/slideshow1.php');
                         </div>
                     </li>
                     <!-- SLIDE  -->
-                    <li data-transition="zoomout" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  >
-                        <!-- MAIN IMAGE -->
-                        <img src="assets/images/slideshow/product-featured-2.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" />
-                        <!-- LAYERS -->
-
-                        <div class="tp-caption product-attr"
-                             data-x="center"
-                             data-y="bottom"
-                             data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
-                             data-transform_out="opacity:10;s:10;s:10;e:Linear.easeNone;">
-                            <h4>Afteroom Chair 2</h4>
-                            <div>$440.00</div>
-                        </div>
-                    </li>
-                    <!-- SLIDE  -->
                     <li data-transition="zoomout" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"   data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" >
                         <!-- MAIN IMAGE -->
                         <img src="assets/images/slideshow/product-featured-3.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" />
@@ -75,6 +60,21 @@ include_once('templates/slideshows/slideshow1.php');
                             <div>$540.00</div>
                         </div>
 
+                    </li>
+                    <!-- SLIDE  -->
+                    <li data-transition="zoomout" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  >
+                        <!-- MAIN IMAGE -->
+                        <img src="assets/images/slideshow/product-featured-2.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" />
+                        <!-- LAYERS -->
+
+                        <div class="tp-caption product-attr"
+                             data-x="center"
+                             data-y="bottom"
+                             data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
+                             data-transform_out="opacity:10;s:10;s:10;e:Linear.easeNone;">
+                            <h4>Afteroom Chair 2</h4>
+                            <div>$440.00</div>
+                        </div>
                     </li>
                 </ul>
             </div>

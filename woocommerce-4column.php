@@ -57,6 +57,28 @@ include_once('templates/headers/header2.php');
                 </div>
                 <div class="products">
                     <div class="row multi-columns-row">
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-16.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-17.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
@@ -109,6 +131,29 @@ include_once('templates/headers/header2.php');
                                 <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
                                     <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-17.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-18.jpg" alt=""/>
                                 </a>
 
                                 <div class="product-over-tool">
@@ -198,6 +243,29 @@ include_once('templates/headers/header2.php');
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-18.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-19.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                     <img class="first-img" src="assets/images/product/product-7.jpg" alt=""/>
                                     <img class="second-img" src="assets/images/product/product-8.jpg" alt=""/>
                                 </a>
@@ -221,8 +289,169 @@ include_once('templates/headers/header2.php');
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                    <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
-                                    <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
+                                    <img class="first-img" src="assets/images/product/product-8.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-9.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-9.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-10.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-19.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-20.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-10.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-11.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-11.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-12.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-12.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-13.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-20.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-1.jpg" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
+                        </div>
+
+                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                    <img class="first-img" src="assets/images/product/product-19.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-20.jpg" alt=""/>
                                 </a>
 
                                 <div class="product-over-tool">
@@ -263,57 +492,12 @@ include_once('templates/headers/header2.php');
                             <div class="product-price">$340.00</div>
                             <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
                         </div>
-                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                            <div class="product-content">
-                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                    <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
-                                    <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
-                                </a>
-
-                                <div class="product-over-tool">
-                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
-                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
-                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
-                                </div>
-                                <div class="product-over-add">
-                                    <a href="#" class="btn btn-addtocart">add to cart</a>
-                                </div>
-                            </div>
-                            <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
-                            </h3>
-                            <div class="product-price">$340.00</div>
-                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
-                        </div>
 
                         <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                    <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
-                                    <img class="second-img" src="assets/images/product/product-5.jpg" alt=""/>
-                                </a>
-
-                                <div class="product-over-tool">
-                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
-                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
-                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
-                                </div>
-                                <div class="product-over-add">
-                                    <a href="#" class="btn btn-addtocart">add to cart</a>
-                                </div>
-                            </div>
-                            <h3 class="product-title">
-                                <a href="woocommerce-product-detailed1.php">JWDA Concrete Lamp</a>
-                            </h3>
-                            <div class="product-price">$340.00</div>
-                            <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam cursus mi luctus fringilla pretium. Duis est justo, pellentesque vitae imperdiet pharetra, varius ut mauris. Cras mauris magna, </div>
-                        </div>
-
-                        <div class="product col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                            <div class="product-content">
-                                <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                    <img class="first-img" src="assets/images/product/product-5.jpg" alt=""/>
-                                    <img class="second-img" src="assets/images/product/product-6.jpg" alt=""/>
+                                    <img class="first-img" src="assets/images/product/product-15.jpg" alt=""/>
+                                    <img class="second-img" src="assets/images/product/product-16.jpg" alt=""/>
                                 </a>
 
                                 <div class="product-over-tool">

@@ -4009,6 +4009,9 @@ table.cart {
       font-weight: bold; }
       table.cart td.product-name a:hover {
         text-decoration: underline; }
+    table.cart td.product-thumbnail img {
+      max-width: 100px;
+      margin: 0 auto; }
     table.cart td .qty {
       width: 60px;
       margin: 0 auto;
@@ -4097,7 +4100,8 @@ table.compare tr td {
     table.compare tr td.product-thumbnail a:hover {
       text-decoration: underline; }
     table.compare tr td.product-thumbnail img {
-      margin-right: 24px; }
+      margin-right: 24px;
+      max-width: 100px; }
   table.compare tr td.actions {
     min-width: 326px; }
   table.compare tr td .amount {

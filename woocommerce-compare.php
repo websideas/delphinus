@@ -32,13 +32,13 @@ include_once('templates/headers/header2.php');
                         <tr>
                             <td class="compare-title">Product Image</td>
                             <td class="product-thumbnail">
-                                <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt="">Sample Product 01</a>
+                                <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="assets/images/product/product-1.jpg" alt="">Sample Product 01</a>
                             </td>
                             <td class="product-thumbnail">
-                                <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt="">Sample Product 02</a>
+                                <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="assets/images/product/product-18.jpg" alt="">Sample Product 02</a>
                             </td>
                             <td class="product-thumbnail">
-                                <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt="">Sample Product 03</a>
+                                <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="assets/images/product/product-3.jpg" alt="">Sample Product 03</a>
                             </td>
                         </tr>
                         <tr>
