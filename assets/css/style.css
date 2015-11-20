@@ -3991,13 +3991,15 @@ table.cart {
   margin: 0;
   letter-spacing: 0.2em; }
 .cart-collaterals .cart-collaterals-inner {
-  padding: 20px;
+  padding: 22px;
   margin-bottom: 30px;
   border-bottom: 1px solid #f0f0f0;
   border-left: 1px solid #f0f0f0;
   border-right: 1px solid #f0f0f0; }
   .cart-collaterals .cart-collaterals-inner p {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px; }
 .cart-collaterals .cart_totals table {
   width: 100%; }
   .cart-collaterals .cart_totals table tr.order-total td {
