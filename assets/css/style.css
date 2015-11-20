@@ -413,7 +413,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "ΓÇ£";
+    content: "“";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -428,7 +428,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "ΓÇ¥"; }
+      content: "”"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote *:last-child {
@@ -4352,61 +4352,5 @@ table.compare tr td {
       font-size: 20px;
       vertical-align: middle;
       margin-left: 15px; }
-
-/* ==============================
-   Intro
-   ============================== */
-.intro-header {
-  margin-bottom: 165px;
-  position: relative;
-  text-align: center;
-  background: url(../images/intro-bg.jpg) no-repeat top center;
-  background-size: cover; }
-  .intro-header .intro-content {
-    padding: 340px 0; }
-    .intro-header .intro-content h1 {
-      letter-spacing: 0.4em;
-      margin-bottom: 35px; }
-    .intro-header .intro-content p {
-      font-size: 18px;
-      font-style: italic;
-      font-family: "Vollkorn", serif;
-      letter-spacing: 0.025em;
-      margin: 0; }
-
-.demo-item-wrapper {
-  margin-left: -45px;
-  margin-right: -45px; }
-
-.demo-item {
-  margin-bottom: 80px;
-  text-align: center;
-  padding-left: 45px;
-  padding-right: 45px; }
-  .demo-item h5 {
-    line-height: 18px;
-    margin-bottom: 0;
-    letter-spacing: 0.2em;
-    margin-top: 70px; }
-  .demo-item img {
-    -webkit-transition: all, 0.3s, ease-in-out;
-    -khtml-transition: all, 0.3s, ease-in-out;
-    -moz-transition: all, 0.3s, ease-in-out;
-    -ms-transition: all, 0.3s, ease-in-out;
-    -o-transition: all, 0.3s, ease-in-out;
-    transition: all, 0.3s, ease-in-out;
-    -webkit-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.05);
-    -khtml-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.05);
-    -ms-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.05);
-    -o-box-shadow: 0 3px 30px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.05); }
-  .demo-item:hover img {
-    -webkit-transform: scale(1.1);
-    -khtml-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */
