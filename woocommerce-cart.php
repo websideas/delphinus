@@ -44,7 +44,7 @@ include_once('templates/headers/header2.php');
                                 <tbody>
                                 <tr class="cart_item">
                                     <td class="product-thumbnail">
-                                        <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt=""></a>
+                                        <a href="#" class="attachment-shop_thumbnail wp-post-image"><img class="img-responsive" src="assets/images/product/product-1.jpg" alt=""></a>
                                     </td>
                                     <td class="product-name">
                                         <a href="#">Sample Product 01</a>
@@ -64,7 +64,7 @@ include_once('templates/headers/header2.php');
                                 </tr>
                                 <tr class="cart_item">
                                     <td class="product-thumbnail">
-                                        <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="http://placehold.it/100x100" alt=""></a>
+                                        <a href="#" class="attachment-shop_thumbnail wp-post-image"><img src="assets/images/product/product-6.jpg" alt=""></a>
                                     </td>
                                     <td class="product-name">
                                         <a href="#">Sample Product 02</a>

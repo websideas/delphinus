@@ -218,8 +218,8 @@ include_once('templates/headers/header2.php');
                                 <div class="product col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-8.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-9.jpg" alt=""/>
                                         </a>
                                         <div class="product-over-tool">
                                             <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
