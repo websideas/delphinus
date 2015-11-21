@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/Home_01.jpg" afterPath="$PROJECT_DIR$/intro/assets/images/Home_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/Home_02.jpg" afterPath="$PROJECT_DIR$/intro/assets/images/Home_02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/Home_03.jpg" afterPath="$PROJECT_DIR$/intro/assets/images/Home_03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/Home_04.jpg" afterPath="$PROJECT_DIR$/intro/assets/images/Home_04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/Home_05.jpg" afterPath="$PROJECT_DIR$/intro/assets/images/Home_05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/Home_06.jpg" afterPath="$PROJECT_DIR$/intro/assets/images/Home_06.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/browser.png" afterPath="$PROJECT_DIR$/intro/assets/images/browser.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/images/intro-bg.jpg" afterPath="$PROJECT_DIR$/intro/assets/images/intro-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footers/footer.php" afterPath="$PROJECT_DIR$/templates/footers/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/headers/head.php" afterPath="$PROJECT_DIR$/templates/headers/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/index.html" afterPath="$PROJECT_DIR$/intro/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/css/responsive.css.map" afterPath="$PROJECT_DIR$/intro/assets/css/responsive.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/css/responsive.css" afterPath="$PROJECT_DIR$/intro/assets/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro/assets/css/responsive.scss" afterPath="$PROJECT_DIR$/intro/assets/css/responsive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.scss" afterPath="$PROJECT_DIR$/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="" />
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -51,11 +32,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/intro/assets/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23890784">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsive.css" pinned="true" current-in-tab="true">
+        <entry file="REMOTE_DEPLOYMENT_FS://&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/assets/css/responsive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.587886">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/woocommerce-shop.php" />
         <option value="$PROJECT_DIR$/templates/nav-mobile.php" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
         <option value="&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/templates/headers/header1.php" />
@@ -122,7 +112,6 @@
         <option value="$PROJECT_DIR$/intro/assets/js/main.js" />
         <option value="$PROJECT_DIR$/intro/index.html" />
         <option value="&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/assets/css/responsive.scss" />
-        <option value="&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/assets/css/responsive.css" />
         <option value="&lt;ad37d075-9547-45ca-8014-f97c35815b0c&gt;/wp-config.php" />
         <option value="&lt;ad37d075-9547-45ca-8014-f97c35815b0c&gt;/wp-content/themes/regency/theme/functions-theme.php" />
         <option value="$PROJECT_DIR$/templates/headers/head.php" />
@@ -130,6 +119,8 @@
         <option value="$PROJECT_DIR$/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/templates/footers/footer.php" />
         <option value="$PROJECT_DIR$/intro/assets/css/responsive.scss" />
+        <option value="$PROJECT_DIR$/intro/assets/css/responsive.css" />
+        <option value="&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/assets/css/responsive.css" />
       </list>
     </option>
   </component>
@@ -348,14 +339,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1916" height="1002" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14457202" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14457202" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22025052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -689,7 +680,7 @@
         <state vertical-scroll-proportion="0.085324235">
           <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,8 +743,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/intro/assets/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23890784">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
