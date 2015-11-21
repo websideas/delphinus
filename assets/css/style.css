@@ -20,6 +20,17 @@
 8. Header
 9. Footer
 10. Shortcodes
+  10.1
+  10.2
+  10.3
+11. Widgets
+12. Blog posts
+13. Single Post
+14. Pagination
+
+
+
+6. WooCommerce Pages
 
 6. Navigation
  6.1 Navigation common styles
@@ -181,6 +192,16 @@ p {
   overflow: hidden;
   position: absolute !important;
   width: 1px; }
+
+.kt-column-bg {
+  -webkit-background-size: cover;
+  -khtml-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .letter-spacing {
   letter-spacing: 0.2em; }
@@ -411,7 +432,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "ΓÇ£";
+    content: "“";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -426,7 +447,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "ΓÇ¥"; }
+      content: "”"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote *:last-child {
@@ -723,6 +744,11 @@ select:not([multiple]) {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4); }
+
+.page-small-width {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 15px; }
 
 /* ==============================
    7. Search
@@ -1654,7 +1680,7 @@ body.opened-nav-animate {
         color: #000000; }
 
 /*
- * 10.2 Heading Section
+ * 10.2 Hightlight
  */
 .hightlight {
   color: #ffffff;
@@ -1670,7 +1696,7 @@ body.opened-nav-animate {
     background: #bce5d3; }
 
 /*
- * 3.4 Dropcap
+ * 10.3 Dropcap
  */
 .kt_dropcap {
   float: left;
@@ -1720,7 +1746,7 @@ body.opened-nav-animate {
       color: #fff; }
 
 /*
- * 3.5 Lists
+ * 10.4 Lists
  */
 ul.style-list {
   padding: 0;
@@ -1755,7 +1781,9 @@ ul.style-list {
     font-size: 10px;
     line-height: 28px;
     font-family: FontAwesome;
-    content: "\f00c"; }
+    content: "";
+    font-style: normal;
+    font-weight: normal; }
   ul.style-list.style3 li:after {
     border-radius: 100%;
     border: 1px solid #d8d8d8;
@@ -1763,10 +1791,12 @@ ul.style-list {
     color: #000;
     line-height: 28px;
     font-family: FontAwesome;
-    content: "\f105"; }
+    content: "";
+    font-style: normal;
+    font-weight: normal; }
 
 /*
- * 3.6 Alert
+ * 10.5 Alert
  */
 .alert {
   padding: 40px 40px 40px 100px;
@@ -1867,7 +1897,7 @@ ul.style-list {
         color: #f56048; }
 
 /*
- * 3.7 Tabs
+ * 10.6 Tabs
  */
 .kt-tab-container {
   margin-bottom: 30px; }
@@ -1908,7 +1938,7 @@ ul.style-list {
       margin: 0; }
 
 /*
- * 3.8 Accordion
+ * 10.7 Accordion
  */
 .kt-accordion {
   margin: 0 0 30px; }
@@ -1989,14 +2019,8 @@ ul.style-list {
     padding: 10px 30px 30px; }
 
 /*
- * 3.8 Callout
+ * 10.8 Tooltip
  */
-.callout-content {
-  font-family: "Crete Round", serif;
-  font-style: italic;
-  padding-right: 40px;
-  width: 70%; }
-
 .tooltip {
   opacity: 1;
   font-size: 14px;
@@ -2017,6 +2041,9 @@ ul.style-list {
       left: 50%;
       margin-left: -7px; }
 
+/*
+ * 10.9 Socials
+ */
 .social-nav {
   margin: 0;
   padding: 0;
@@ -2030,6 +2057,9 @@ ul.style-list {
     .social-nav li:last-child {
       padding-right: 0; }
 
+/*
+ * 10.10 Newsletter
+ */
 .newsletters-form {
   margin: 0 auto;
   position: relative; }
@@ -2084,6 +2114,21 @@ ul.style-list {
   .newsletters-outer .newsletters-form button {
     color: #000000; }
 
+.newsletters-wrapper {
+  border: 2px solid #dddddd;
+  padding: 55px 33px;
+  margin-bottom: 30px;
+  text-align: center; }
+  .newsletters-wrapper h3 {
+    font-size: 18px;
+    margin: 0 0 40px; }
+  .newsletters-wrapper .newsletters-before {
+    margin-bottom: 35px;
+    color: #666666; }
+
+/*
+ * 10.11 banner
+ */
 .banner {
   position: relative;
   text-align: center;
@@ -2148,6 +2193,9 @@ ul.style-list {
   .banner.banner-right {
     text-align: right; }
 
+/*
+ * 10.12 Category banner
+ */
 .category-banner {
   position: relative;
   text-align: center;
@@ -2202,6 +2250,9 @@ ul.style-list {
     margin: 0 0 35px;
     max-height: 600px; }
 
+/*
+ * 10.13 Flip box
+ */
 .flip-box {
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   -khtml-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
@@ -2268,6 +2319,9 @@ ul.style-list {
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%); }
 
+/*
+ * 10.14 Feature icon
+ */
 .feature-icon {
   margin: 0 0 30px;
   padding: 30px;
@@ -2287,6 +2341,9 @@ ul.style-list {
     letter-spacing: 0.2em;
     margin: 0; }
 
+/*
+ * 10.15 Single Image
+ */
 .single-image {
   margin: 0 0 30px;
   overflow: hidden; }
@@ -2311,21 +2368,15 @@ ul.style-list {
     -o-transform: scale(1.2);
     transform: scale(1.2); }
 
+/*
+ * 10.16 Client
+ */
 .client-item img {
   margin: 0 auto; }
 
-.newsletters-wrapper {
-  border: 2px solid #dddddd;
-  padding: 55px 33px;
-  margin-bottom: 30px;
-  text-align: center; }
-  .newsletters-wrapper h3 {
-    font-size: 18px;
-    margin: 0 0 40px; }
-  .newsletters-wrapper .newsletters-before {
-    margin-bottom: 35px;
-    color: #666666; }
-
+/*
+ * 10.17 Client
+ */
 .about-wrapper {
   padding: 50px 43px 30px;
   color: #FFFFFF;
@@ -2342,6 +2393,9 @@ ul.style-list {
     margin: 0 0 30px;
     letter-spacing: 0.2em; }
 
+/*
+ * 10.18 collection
+ */
 .collection-wrapper {
   position: relative;
   overflow: hidden; }
@@ -2368,6 +2422,9 @@ ul.style-list {
     .collection-wrapper .collection-content .collection-desc {
       margin-bottom: 10px; }
 
+/*
+ * 10.19 collection
+ */
 .box-colored {
   margin-bottom: 30px;
   color: #FFFFFF;
@@ -2407,6 +2464,9 @@ ul.style-list {
   .box-colored :last-child {
     margin-bottom: 0; }
 
+/*
+ * 10.20 Testimonials
+ */
 .testimonial-posts.light {
   color: #FFFFFF; }
   .testimonial-posts.light .testimonial-author {
@@ -2429,6 +2489,9 @@ ul.style-list {
     margin-bottom: 10px;
     letter-spacing: 0.075em; }
 
+/*
+ * 10.21 Product countdown
+ */
 .product-countdown {
   background: #fff;
   padding: 30px;
@@ -2454,8 +2517,17 @@ ul.style-list {
       margin: 10px 0 2px;
       line-height: normal; }
 
+/*
+ * 10.22 Callout
+ */
+.callout-content {
+  font-family: "Crete Round", serif;
+  font-style: italic;
+  padding-right: 40px;
+  width: 70%; }
+
 /* ==============================
-   Widgets
+   11. Widgets
    ============================== */
 .widget-container {
   margin-bottom: 40px;
@@ -2540,7 +2612,7 @@ ul.style-list {
     opacity: 1; }
 
 /* ==============================
-   Blog
+   12. Blog posts
    ============================== */
 .blog-posts .blog-post {
   margin-bottom: 25px; }
@@ -2587,7 +2659,7 @@ ul.style-list {
         color: #000000; }
 
 /* ==============================
-   Single Posts
+   13. Single Post
    ============================== */
 .single-post .entry-thumb {
   margin-bottom: 60px; }
@@ -2760,7 +2832,7 @@ ul.style-list {
     padding-top: 15px; }
 
 /* ==============================
-   13. Pagination
+   14. Pagination
    ============================== */
 .pagination {
   text-align: center;
@@ -3804,21 +3876,6 @@ select.mobile-device {
         background: #000000; }
   .owl-carousel-kt.pagination-before .owl-pagination {
     margin: 0 0 40px; }
-
-.page-small-width {
-  margin: 0 auto;
-  max-width: 900px;
-  padding: 0 15px; }
-
-.kt-column-bg {
-  -webkit-background-size: cover;
-  -khtml-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
 
 /* ==============================
    About

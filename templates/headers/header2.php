@@ -1,8 +1,8 @@
 <?php
-    global $shadow;
-    if(empty($shadow)){
-        $shadow = '';
-    }
+global $shadow;
+if(empty($shadow)){
+    $shadow = 'header-shadow';
+}
 ?>
 
 <!-- header-full-center -->

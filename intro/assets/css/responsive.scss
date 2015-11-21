@@ -7,8 +7,9 @@
   }
 }
 
+/* 2. Styles for devices(<=1200px) */
 @media (max-width: 1200px) {
-  .intro-header{
+  .cd-intro{
     background-attachment: scroll;
   }
   .demo-item{
@@ -20,6 +21,7 @@
   }
 }
 
+/* 3. Styles for devices(<=991px) */
 @media (max-width: 991px) {
   .demo-item{
     > a{
@@ -28,6 +30,7 @@
   }
 }
 
+/* 4. Styles for devices(<=767px) */
 @media (max-width: 767px) {
   .demo-item{
     float: none!important;
@@ -39,10 +42,8 @@
   }
 }
 
+/* 4. Styles for devices(<=480px) */
 @media (max-width: 480px) {
-  .cd-intro{
-    background-attachment: scroll;
-  }
   .cd-intro-content {
     h1{
       font-size: 18px;

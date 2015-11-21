@@ -1,7 +1,7 @@
 <?php
 global $shadow;
 if(empty($shadow)){
-    $shadow = '';
+    $shadow = 'header-shadow';
 }
 ?>
 

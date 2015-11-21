@@ -32,33 +32,6 @@ h1, h2, h3, h4, h5, h6 {
   padding: 165px 0;
 }
 
-
-/* ==============================
-   Intro
-   ============================== */
-.intro-header{
-  position: relative;
-  text-align: center;
-  background: url(../images/intro-bg.jpg) no-repeat top center fixed;
-  background-size: cover;
-  .intro-content{
-    @include translate();
-    min-height: 200px;
-    h1{
-      letter-spacing: 0.4em;
-      margin-bottom: 35px;
-    }
-    p{
-      font-size: 18px;
-      font-style: italic;
-      letter-spacing: 0.025em;
-      margin: 0;
-    }
-  }
-}
-
-
-
 /* ==============================
    Demos
    ============================== */

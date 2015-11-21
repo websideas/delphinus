@@ -20,6 +20,17 @@
 8. Header
 9. Footer
 10. Shortcodes
+  10.1
+  10.2
+  10.3
+11. Widgets
+12. Blog posts
+13. Single Post
+14. Pagination
+
+
+
+6. WooCommerce Pages
 
 6. Navigation
  6.1 Navigation common styles
@@ -166,6 +177,12 @@ p {
   overflow: hidden;
   position: absolute !important;
   width: 1px;
+}
+
+.kt-column-bg{
+  @include css3-prefix('background-size', 'cover');
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .letter-spacing{  letter-spacing: 0.2em; }
@@ -662,6 +679,13 @@ select:not([multiple]) {
       background: rgba(#000000, .4);
     }
   }
+}
+
+
+.page-small-width{
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 15px;
 }
 
 /* ==============================
@@ -1701,8 +1725,10 @@ body.opened-nav-animate{
     }
   }
 }
+
+
 /*
- * 10.2 Heading Section
+ * 10.2 Hightlight
  */
 .hightlight {
   color: #ffffff;
@@ -1721,8 +1747,10 @@ body.opened-nav-animate{
     background: #bce5d3;
   }
 }
+
+
 /*
- * 3.4 Dropcap
+ * 10.3 Dropcap
  */
 .kt_dropcap{
   float: left;
@@ -1785,8 +1813,10 @@ body.opened-nav-animate{
     }
   }
 }
+
+
 /*
- * 3.5 Lists
+ * 10.4 Lists
  */
 ul.style-list{
   padding: 0;
@@ -1825,8 +1855,7 @@ ul.style-list{
       color: #fff;
       font-size: 10px;
       line-height: 28px;
-      font-family: FontAwesome;
-      content: "\f00c";
+      @include FontAwesome('\f00c');
     }
   }
   &.style3{
@@ -1836,14 +1865,16 @@ ul.style-list{
       font-size: 14px;
       color: #000;
       line-height: 28px;
-      font-family: FontAwesome;
-      content: "\f105";
+      @include FontAwesome('\f105');
     }
   }
 }
+
+
 /*
- * 3.6 Alert
+ * 10.5 Alert
  */
+
 .alert{
   padding: 40px 40px 40px 100px;
   border: 1px solid #dce2ed;
@@ -1955,8 +1986,10 @@ ul.style-list{
     }
   }
 }
+
+
 /*
- * 3.7 Tabs
+ * 10.6 Tabs
  */
 .kt-tab-container{
   margin-bottom: 30px;
@@ -1994,8 +2027,10 @@ ul.style-list{
     }
   }
 }
+
+
 /*
- * 3.8 Accordion
+ * 10.7 Accordion
  */
 .kt-accordion{
   margin: 0 0 30px;
@@ -2018,7 +2053,6 @@ ul.style-list{
       @include translate('y');
       display: block;
       &:after{
-
         @include FontAwesome('\f067');
         font-size: 10px;
         @include translate();
@@ -2068,17 +2102,12 @@ ul.style-list{
     padding: 10px 30px 30px;
   }
 }
+
+
+
 /*
- * 3.8 Callout
+ * 10.8 Tooltip
  */
-.callout-content{
-  font-family: $three-font;
-  font-style: italic;
-  padding-right: 40px;
-  width: 70%;
-}
-
-
 .tooltip{
   opacity: 1;
   font-size: 14px;
@@ -2097,8 +2126,11 @@ ul.style-list{
       margin-left: -7px;
     }
   }
-
 }
+
+/*
+ * 10.9 Socials
+ */
 
 .social-nav{
   margin: 0;
@@ -2116,7 +2148,9 @@ ul.style-list{
     }
   }
 }
-
+/*
+ * 10.10 Newsletter
+ */
 
 .newsletters-form{
   margin: 0 auto;
@@ -2185,6 +2219,25 @@ ul.style-list{
   }
 }
 
+.newsletters-wrapper{
+  border: 2px solid #dddddd;
+  padding: 55px 33px;
+  margin-bottom: 30px;
+  text-align: center;
+  h3{
+    font-size: 18px;
+    margin: 0 0 40px;
+  }
+  .newsletters-before{
+    margin-bottom: 35px;
+    color: $gray-darker;
+  }
+}
+
+
+/*
+ * 10.11 banner
+ */
 .banner{
   position: relative;
   text-align: center;
@@ -2252,7 +2305,9 @@ ul.style-list{
     text-align: right;
   }
 }
-
+/*
+ * 10.12 Category banner
+ */
 .category-banner{
   position: relative;
   text-align: center;
@@ -2309,7 +2364,9 @@ ul.style-list{
 
 }
 
-
+/*
+ * 10.13 Flip box
+ */
 .flip-box{
   @include box-shadow(0, 2px, 6px, rgba(0,0,0,0.05));
   background: #ffffff none repeat scroll 0 0;
@@ -2356,7 +2413,9 @@ ul.style-list{
     }
   }
 }
-
+/*
+ * 10.14 Feature icon
+ */
 .feature-icon{
   margin: 0 0 30px;
   padding: 30px;
@@ -2371,7 +2430,6 @@ ul.style-list{
       color: #FFFFFF;
     }
   }
-
   .features-box-icon{
     font-size: 48px;
     margin-bottom: 25px;
@@ -2383,6 +2441,9 @@ ul.style-list{
   }
 }
 
+/*
+ * 10.15 Single Image
+ */
 .single-image{
   margin: 0 0 30px;
   overflow: hidden;
@@ -2397,27 +2458,18 @@ ul.style-list{
   }
 }
 
+/*
+ * 10.16 Client
+ */
 .client-item{
   img{
     margin: 0 auto;
   }
 }
 
-.newsletters-wrapper{
-  border: 2px solid #dddddd;
-  padding: 55px 33px;
-  margin-bottom: 30px;
-  text-align: center;
-  h3{
-    font-size: 18px;
-    margin: 0 0 40px;
-  }
-  .newsletters-before{
-    margin-bottom: 35px;
-    color: $gray-darker;
-  }
-}
-
+/*
+ * 10.17 Client
+ */
 .about-wrapper{
   padding: 50px 43px 30px;
   color: #FFFFFF;
@@ -2431,6 +2483,10 @@ ul.style-list{
   }
 }
 
+
+/*
+ * 10.18 collection
+ */
 .collection-wrapper{
   position: relative;
   overflow: hidden;
@@ -2467,11 +2523,11 @@ ul.style-list{
       margin-bottom: 10px;
     }
   }
-
-
-
 }
 
+/*
+ * 10.19 collection
+ */
 .box-colored{
   margin-bottom: 30px;
   color: #FFFFFF;
@@ -2506,7 +2562,9 @@ ul.style-list{
 }
 
 
-
+/*
+ * 10.20 Testimonials
+ */
 .testimonial-posts{
   &.light{
     color: #FFFFFF;
@@ -2526,7 +2584,6 @@ ul.style-list{
   }
 }
 
-
 .testimonial-item{
   text-align: center;
   .testimonial-content{
@@ -2543,7 +2600,9 @@ ul.style-list{
   }
 }
 
-
+/*
+ * 10.21 Product countdown
+ */
 .product-countdown{
   background: #fff;
   padding: 30px;
@@ -2577,8 +2636,18 @@ ul.style-list{
   }
 }
 
+/*
+ * 10.22 Callout
+ */
+.callout-content{
+  font-family: $three-font;
+  font-style: italic;
+  padding-right: 40px;
+  width: 70%;
+}
+
 /* ==============================
-   Widgets
+   11. Widgets
    ============================== */
 
 .widget-container{
@@ -2678,7 +2747,7 @@ ul.style-list{
 }
 
 /* ==============================
-   Blog
+   12. Blog posts
    ============================== */
 .blog-posts{
   .blog-post{
@@ -2728,7 +2797,7 @@ ul.style-list{
 
 }
 /* ==============================
-   Single Posts
+   13. Single Post
    ============================== */
 .single-post{
   .entry-thumb{
@@ -2961,7 +3030,7 @@ ul.style-list{
 
 
 /* ==============================
-   13. Pagination
+   14. Pagination
    ============================== */
 .pagination {
   text-align: center;
@@ -3199,9 +3268,6 @@ select.mobile-device {
 
 
 .products{
-
-
-
   .product{
     margin-bottom: 50px;
     text-align: center;
@@ -4129,16 +4195,7 @@ select.mobile-device {
 
 }
 
-.page-small-width{
-  margin: 0 auto;
-  max-width: 900px;
-  padding: 0 15px;
-}
-.kt-column-bg{
-  @include css3-prefix('background-size', 'cover');
-  background-position: center center;
-  background-repeat: no-repeat;
-}
+
 /* ==============================
    About
    ============================== */
