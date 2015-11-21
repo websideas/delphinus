@@ -8,6 +8,9 @@
 }
 
 @media (max-width: 1200px) {
+  .intro-header{
+    background-attachment: scroll;
+  }
   .demo-item{
     margin-left: 0!important;
     margin-right: 0!important;
@@ -26,16 +29,6 @@
 }
 
 @media (max-width: 767px) {
-
-  .cd-intro-content {
-    h1{
-      font-size: 24px;
-    }
-    p{
-      font-size: 15px;
-    }
-  }
-
   .demo-item{
     float: none!important;
     margin-left: 10px !important;
@@ -44,5 +37,18 @@
       width: 100%;
     }
   }
+}
 
+@media (max-width: 480px) {
+  .cd-intro{
+    background-attachment: scroll;
+  }
+  .cd-intro-content {
+    h1{
+      font-size: 18px;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
 }

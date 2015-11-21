@@ -9,16 +9,17 @@
 1. Base Styles
   1.1. Common styles
   1.2. Helper CSS
-
 2. Page loader
-
 3. Typography
  3.1 Typography common styles
  3.2 Blockquote
-
 4. Forms fields
-
 5. Buttons
+6. Sections styles
+7. Search
+8. Header
+9. Footer
+10. Shortcodes
 
 6. Navigation
  6.1 Navigation common styles
@@ -76,10 +77,6 @@
 ::selection {
   color: #fff;
   background: #000000; }
-
-html {
-  overflow-y: scroll;
-  -ms-overflow-style: scrollbar; }
 
 html, body {
   -webkit-font-smoothing: antialiased;
@@ -235,134 +232,135 @@ p {
 /* ==============================
    2. Page loader
    ============================== */
-.page-loader {
+.pace {
   background: #FFFFFF;
-  display: block;
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
+  visibility: visible;
   width: 100%;
-  z-index: 100000; }
-  .page-loader .loader {
-    width: 150px;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-    -khtml-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%; }
-  .page-loader .binding {
-    content: '';
-    width: 95px;
-    height: 20px;
-    border: 2px solid #000000;
-    margin: 0 auto; }
-  .page-loader .pad {
-    width: 95px;
-    height: 92px;
-    border: 2px solid #000000;
-    border-top: 0;
-    padding: 28px 15px;
-    margin: 0 auto; }
-  .page-loader .line {
-    width: 60px;
-    margin-top: 13px;
-    border-top: 2px solid #000000;
-    opacity: 0;
-    -webkit-animation: writeline 1s infinite ease-in;
-    -khtml-animation: writeline 1s infinite ease-in;
-    -moz-animation: writeline 1s infinite ease-in;
-    -ms-animation: writeline 1s infinite ease-in;
-    -o-animation: writeline 1s infinite ease-in;
-    animation: writeline 1s infinite ease-in; }
-    .page-loader .line:first-child {
-      margin-top: 0; }
-    .page-loader .line.line1 {
-      -webkit-animation-delay: 0s;
-      -khtml-animation-delay: 0s;
-      -moz-animation-delay: 0s;
-      -ms-animation-delay: 0s;
-      -o-animation-delay: 0s;
-      animation-delay: 0s; }
-    .page-loader .line.line2 {
-      -webkit-animation-delay: 0.2s;
-      -khtml-animation-delay: 0.2s;
-      -moz-animation-delay: 0.2s;
-      -ms-animation-delay: 0.2s;
-      -o-animation-delay: 0.2s;
-      animation-delay: 0.2s; }
-    .page-loader .line.line3 {
-      -webkit-animation-delay: 0.4s;
-      -khtml-animation-delay: 0.4s;
-      -moz-animation-delay: 0.4s;
-      -ms-animation-delay: 0.4s;
-      -o-animation-delay: 0.4s;
-      animation-delay: 0.4s; }
-  .page-loader .text {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-    color: #000000; }
+  z-index: 999999;
+  text-align: center;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-opacity: 1;
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
+  -ms-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
+  -webkit-pointer-events: none;
+  -khtml-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  -o-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-background-clip: padding-box;
+  -khtml-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  -o-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -khtml-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
+  .pace.pace-inactive {
+    visibility: hidden;
+    filter: alpha(opacity=0);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-opacity: 0;
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0; }
 
-@-webkit-keyframes writeline {
-  0% {
-    width: 0;
-    opacity: 0; }
-  33% {
-    width: 15px;
-    opacity: 1; }
-  70% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-moz-keyframes writeline {
-  0% {
-    width: 0;
-    opacity: 0; }
-  33% {
-    width: 15px;
-    opacity: 1; }
-  70% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-ms-keyframes writeline {
-  0% {
-    width: 0;
-    opacity: 0; }
-  33% {
-    width: 15px;
-    opacity: 1; }
-  70% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@-o-keyframes writeline {
-  0% {
-    width: 0;
-    opacity: 0; }
-  33% {
-    width: 15px;
-    opacity: 1; }
-  70% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
-@keyframes writeline {
-  0% {
-    width: 0;
-    opacity: 0; }
-  33% {
-    width: 15px;
-    opacity: 1; }
-  70% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
+.pace-activity {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1; }
+  .pace-activity:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .pace-activity .page-loading-wrapper {
+    display: inline-block; }
+
+.page-loading-wrapper {
+  display: none;
+  vertical-align: middle;
+  padding: 0 15px;
+  width: 99%; }
+  .page-loading-wrapper .progress-bar-loading {
+    width: 110px;
+    margin: 0 auto;
+    height: 90px;
+    float: none;
+    -webkit-border-top-left-radius: 13px;
+    -webkit-border-top-right-radius: 13px;
+    -webkit-border-bottom-right-radius: 13px;
+    -webkit-border-bottom-left-radius: 13px;
+    -moz-border-radius-topleft: 13px;
+    -moz-border-radius-topright: 13px;
+    -moz-border-radius-bottomright: 13px;
+    -moz-border-radius-bottomleft: 13px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background: #fff;
+    max-width: 100%;
+    position: relative; }
+    .page-loading-wrapper .progress-bar-loading .progress-bar-inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 110px;
+      overflow: hidden; }
+      .page-loading-wrapper .progress-bar-loading .progress-bar-inner.back-loading path {
+        stroke: #eeeeee; }
+      .page-loading-wrapper .progress-bar-loading .progress-bar-inner.front-loading {
+        width: 1%;
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        -khtml-transition: all 0.2s ease-in-out 0s;
+        -moz-transition: all 0.2s ease-in-out 0s;
+        -ms-transition: all 0.2s ease-in-out 0s;
+        -o-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s; }
+        .page-loading-wrapper .progress-bar-loading .progress-bar-inner.front-loading path {
+          stroke: #000000; }
+    .page-loading-wrapper .progress-bar-loading .progress-bar-number {
+      font-family: "Roboto Slab", serif;
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.075em;
+      padding-left: 20px;
+      padding-top: 8px;
+      text-align: center; }
+    .page-loading-wrapper .progress-bar-loading svg {
+      width: 110px; }
+      .page-loading-wrapper .progress-bar-loading svg path {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10; }
+
 /* ==============================
    3. Typography
    ============================== */
@@ -1579,8 +1577,62 @@ body.opened-nav-animate {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); }
 
 /* ==============================
-   Heading Section
+   9. Footer
    ============================== */
+#footer-top {
+  background: #f6f6f6;
+  padding: 90px 0 60px; }
+
+#footer-area {
+  padding: 80px 0 30px;
+  position: relative; }
+  #footer-area .footer-area-inner {
+    padding: 90px 85px 40px; }
+  #footer-area .footer-area-right {
+    background: url("../images/footer-bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 80px 85px;
+    color: #FFFFFF; }
+    #footer-area .footer-area-right .widget-title {
+      color: #FFFFFF; }
+  #footer-area .widget-container {
+    margin-bottom: 50px;
+    border: none;
+    padding: 0; }
+    #footer-area .widget-container .widget-title {
+      text-transform: uppercase;
+      margin: 0 0 35px;
+      letter-spacing: 0.2em; }
+
+#footer-bottom {
+  padding: 25px 0;
+  background: #f6f6f6; }
+  #footer-bottom .widget-container {
+    margin: 0;
+    padding: 0; }
+    #footer-bottom .widget-container .widget-title {
+      margin: 8px 0;
+      text-transform: uppercase; }
+  #footer-bottom .social-nav {
+    margin-top: 8px; }
+
+#footer-copyright {
+  padding: 35px 0;
+  text-align: center; }
+  #footer-copyright .container .social-nav,
+  #footer-copyright .container .footer-copyright {
+    margin-bottom: 15px; }
+  #footer-copyright .container .footer-copyright {
+    font-size: 14px; }
+  #footer-copyright .container > *:last-child {
+    margin-bottom: 0; }
+
+/* ==============================
+   10. Shortcodes
+   ============================== */
+/*
+ * 10.1 Heading Section
+ */
 .kt-heading-wrapper {
   text-align: center;
   margin-bottom: 50px; }
@@ -1601,11 +1653,8 @@ body.opened-nav-animate {
       .kt-heading-wrapper .kt-heading-subtitle a:hover {
         color: #000000; }
 
-/* ==============================
-   Shortcodes
-   ============================== */
 /*
- * 3.3 Hightlight
+ * 10.2 Heading Section
  */
 .hightlight {
   color: #ffffff;
@@ -2489,57 +2538,6 @@ ul.style-list {
     -ms-opacity: 1;
     -o-opacity: 1;
     opacity: 1; }
-
-/* ==============================
-   Footer
-   ============================== */
-#footer-top {
-  background: #f6f6f6;
-  padding: 90px 0 60px; }
-
-#footer-area {
-  padding: 80px 0 30px;
-  position: relative; }
-  #footer-area .footer-area-inner {
-    padding: 90px 85px 40px; }
-  #footer-area .footer-area-right {
-    background: url("../images/footer-bg.jpg") no-repeat center center;
-    background-size: cover;
-    padding: 80px 85px;
-    color: #FFFFFF; }
-    #footer-area .footer-area-right .widget-title {
-      color: #FFFFFF; }
-  #footer-area .widget-container {
-    margin-bottom: 50px;
-    border: none;
-    padding: 0; }
-    #footer-area .widget-container .widget-title {
-      text-transform: uppercase;
-      margin: 0 0 35px;
-      letter-spacing: 0.2em; }
-
-#footer-bottom {
-  padding: 25px 0;
-  background: #f6f6f6; }
-  #footer-bottom .widget-container {
-    margin: 0;
-    padding: 0; }
-    #footer-bottom .widget-container .widget-title {
-      margin: 8px 0;
-      text-transform: uppercase; }
-  #footer-bottom .social-nav {
-    margin-top: 8px; }
-
-#footer-copyright {
-  padding: 35px 0;
-  text-align: center; }
-  #footer-copyright .container .social-nav,
-  #footer-copyright .container .footer-copyright {
-    margin-bottom: 15px; }
-  #footer-copyright .container .footer-copyright {
-    font-size: 14px; }
-  #footer-copyright .container > *:last-child {
-    margin-bottom: 0; }
 
 /* ==============================
    Blog

@@ -9,16 +9,17 @@
 1. Base Styles
   1.1. Common styles
   1.2. Helper CSS
-
 2. Page loader
-
 3. Typography
  3.1 Typography common styles
  3.2 Blockquote
-
 4. Forms fields
-
 5. Buttons
+6. Sections styles
+7. Search
+8. Header
+9. Footer
+10. Shortcodes
 
 6. Navigation
  6.1 Navigation common styles
@@ -57,7 +58,6 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @import 'mixin';
-
 @import 'variables';
 
 
@@ -75,11 +75,6 @@
 ::selection {
   color: #fff;
   background: $primary-color;
-}
-
-html {
-  overflow-y: scroll;
-  -ms-overflow-style: scrollbar;
 }
 
 html, body {
@@ -114,8 +109,6 @@ p {
   visibility: hidden;
 }
 
-
-
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -126,7 +119,6 @@ p {
     padding-left: 0;
   }
 }
-
 
 .breadcrumb{
   margin: 0 0 35px;
@@ -204,72 +196,103 @@ p {
   }
 }
 
-
 /* ==============================
    2. Page loader
    ============================== */
-.page-loader {
+.pace {
   background: #FFFFFF;
-  display: block;
   height: 100%;
   left: 0;
   position: fixed;
   top: 0;
+  visibility: visible;
   width: 100%;
-  z-index: 100000;
-  .loader {
-    width: 150px;
-    @include translate;
-  }
-  .binding {
-    content: '';
-    width: 95px;
-    height: 20px;
-    border: 2px solid $primary-color;
-    margin: 0 auto;
-  }
-  .pad {
-    width: 95px;
-    height: 92px;
-    border: 2px solid $primary-color;
-    border-top: 0;
-    padding: 28px 15px;
-    margin: 0 auto;
-  }
-  .line {
-    width: 60px;
-    margin-top: 13px;
-    border-top: 2px solid $primary-color;
-    opacity: 0;
-    @include animation(writeline 1s infinite ease-in);
-    &:first-child {
-      margin-top: 0;
-    }
-    &.line1{
-      @include css3-prefix('animation-delay','0s');
-    }
-    &.line2{
-      @include css3-prefix('animation-delay','0.2s');
-    }
-    &.line3{
-      @include css3-prefix('animation-delay','0.4s');
-    }
-  }
-  .text {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-    color: $primary-color;
+  z-index: 999999;
+  text-align: center;
+  @include opacity(1);
+  @include css3-prefix('pointer-events', 'none');
+  @include css3-prefix(user-select, 'none');
+  @include css3-prefix(background-clip, 'padding-box');
+  @include transition();
+  &.pace-inactive {
+    visibility: hidden;
+    @include opacity(0);
   }
 }
 
-@include keyframes('writeline'){
-  0% {  width: 0;  opacity: 0;  }
-  33% {  width: 15px;  opacity: 1;  }
-  70% { opacity: 1; }
-  100% {  opacity: 0;  }
+.pace-activity {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  &:before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .page-loading-wrapper{
+    display: inline-block;
+  }
 }
 
+.page-loading-wrapper {
+  display: none;
+  vertical-align: middle;
+  padding: 0 15px;
+  width: 99%;
+  .progress-bar-loading {
+    width: 110px;
+    margin: 0 auto;
+    height: 90px;
+    float: none;
+    @include border-radius-separate(13px, 13px, 13px, 13px);
+    background: #fff;
+    max-width: 100%;
+    position: relative;
+    .progress-bar-inner{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 110px;
+      overflow: hidden;
+      &.back-loading{
+        path{
+          stroke: #eeeeee;
+        }
+      }
+      &.front-loading{
+        width: 1%;
+        @include transition();
+        path{
+          stroke: #000000;
+        }
+      }
+    }
+    .progress-bar-number{
+      font-family: $heading-font;
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.075em;
+      padding-left: 20px;
+      padding-top: 8px;
+      text-align: center;
+    }
+    svg{
+      width: 110px;
+      path{
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+      }
+    }
+  }
+}
 
 /* ==============================
    3. Typography
@@ -361,8 +384,6 @@ blockquote {
   }
 }
 
-
-
 /* ==============================
    4. Forms fields
    ============================== */
@@ -388,7 +409,6 @@ textarea {
     outline: 0;
     color: $gray-text;
   }
-
 }
 
 textarea {
@@ -1575,15 +1595,85 @@ body.opened-nav-animate{
 
 
 
+/* ==============================
+   9. Footer
+   ============================== */
+
+
+#footer-top{
+  background: $gray-bg;
+  padding: 90px 0 60px;
+}
+#footer-area{
+  padding: 80px 0 30px;
+  position: relative;
+  .footer-area-inner{
+    padding: 90px 85px 40px;
+  }
+
+  .footer-area-right{
+    background: url('../images/footer-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 85px;
+    color: #FFFFFF;
+    .widget-title{
+      color: #FFFFFF;
+    }
+  }
+  .widget-container{
+    margin-bottom: 50px;
+    border: none;
+    padding: 0;
+    .widget-title{
+      text-transform: uppercase;
+      margin: 0 0 35px;
+      letter-spacing: 0.2em;
+    }
+  }
+}
+#footer-bottom{
+  padding: 25px 0;
+  background: $gray-bg;
+  .widget-container{
+    margin: 0;
+    padding: 0;
+    .widget-title{
+      margin: 8px 0;
+      text-transform: uppercase;
+    }
+  }
+  .social-nav{
+    margin-top: 8px;
+  }
+}
+#footer-copyright{
+  padding: 35px 0;
+  text-align: center;
+  .container{
+    .social-nav,
+    .footer-copyright{
+      margin-bottom: 15px;
+    }
+    .footer-copyright{
+      font-size: 14px;
+    }
+    > *:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
 
 
 
 /* ==============================
-   Heading Section
+   10. Shortcodes
    ============================== */
-
-
-
+/*
+ * 10.1 Heading Section
+ */
 .kt-heading-wrapper{
   text-align: center;
   margin-bottom: 50px;
@@ -1611,15 +1701,8 @@ body.opened-nav-animate{
     }
   }
 }
-
-
-/* ==============================
-   Shortcodes
-   ============================== */
-
-
 /*
- * 3.3 Hightlight
+ * 10.2 Heading Section
  */
 .hightlight {
   color: #ffffff;
@@ -1638,8 +1721,6 @@ body.opened-nav-animate{
     background: #bce5d3;
   }
 }
-
-
 /*
  * 3.4 Dropcap
  */
@@ -2594,73 +2675,6 @@ ul.style-list{
     }
   }
 
-}
-/* ==============================
-   Footer
-   ============================== */
-
-
-#footer-top{
-  background: $gray-bg;
-  padding: 90px 0 60px;
-}
-#footer-area{
-  padding: 80px 0 30px;
-  position: relative;
-  .footer-area-inner{
-    padding: 90px 85px 40px;
-  }
-
-  .footer-area-right{
-    background: url('../images/footer-bg.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 80px 85px;
-    color: #FFFFFF;
-    .widget-title{
-      color: #FFFFFF;
-    }
-  }
-  .widget-container{
-    margin-bottom: 50px;
-    border: none;
-    padding: 0;
-    .widget-title{
-      text-transform: uppercase;
-      margin: 0 0 35px;
-      letter-spacing: 0.2em;
-    }
-  }
-}
-#footer-bottom{
-  padding: 25px 0;
-  background: $gray-bg;
-  .widget-container{
-    margin: 0;
-    padding: 0;
-    .widget-title{
-      margin: 8px 0;
-      text-transform: uppercase;
-    }
-  }
-  .social-nav{
-    margin-top: 8px;
-  }
-}
-#footer-copyright{
-  padding: 35px 0;
-  text-align: center;
-  .container{
-    .social-nav,
-    .footer-copyright{
-      margin-bottom: 15px;
-    }
-    .footer-copyright{
-      font-size: 14px;
-    }
-    > *:last-child{
-      margin-bottom: 0;
-    }
-  }
 }
 
 /* ==============================
@@ -4770,3 +4784,7 @@ table.compare{
     }
   }
 }
+
+
+
+
