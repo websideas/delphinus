@@ -3,6 +3,9 @@
   .demo-item > a {
     width: 500px; } }
 @media (max-width: 1200px) {
+  .intro-header {
+    background-attachment: scroll; }
+
   .demo-item {
     margin-left: 0 !important;
     margin-right: 0 !important; }
@@ -12,16 +15,19 @@
   .demo-item > a {
     width: 340px; } }
 @media (max-width: 767px) {
-  .cd-intro-content h1 {
-    font-size: 24px; }
-  .cd-intro-content p {
-    font-size: 15px; }
-
   .demo-item {
     float: none !important;
     margin-left: 10px !important;
     margin-right: 10px !important; }
     .demo-item > a {
       width: 100%; } }
+@media (max-width: 480px) {
+  .cd-intro {
+    background-attachment: scroll; }
+
+  .cd-intro-content h1 {
+    font-size: 18px; }
+  .cd-intro-content p {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=responsive.css.map */

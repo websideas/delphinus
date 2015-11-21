@@ -46,28 +46,39 @@
     <link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
     <![endif]-->
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
 <body class="appear-animate">
 
-<!--<div class="page-loader">
-    <div class="loader">
-        <div class="binding"></div>
-        <div class="pad">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
+
+<div class="page-loading-wrapper">
+    <div class="progress-bar-loading">
+        <div class="back-loading progress-bar-inner">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+                <path d="M22.2,8.3l-2.7,7h-11
+                    l-4.3-11H1.4 M11.1,17.1c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6C12.7,17.8,12,17.1,11.1,17.1z
+                     M16.5,17.1c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6C18,17.8,17.3,17.1,16.5,17.1z"/>
+            </svg>
         </div>
-        <div class="text">
-            Cephenus is loading...
+        <div class="front-loading progress-bar-inner">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25 25" enable-background="new 0 0 25 25" xml:space="preserve">
+                <path d="M22.2,8.3l-2.7,7h-11
+                    l-4.3-11H1.4 M11.1,17.1c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6C12.7,17.8,12,17.1,11.1,17.1z
+                     M16.5,17.1c-0.9,0-1.6,0.7-1.6,1.6c0,0.9,0.7,1.6,1.6,1.6c0.9,0,1.6-0.7,1.6-1.6C18,17.8,17.3,17.1,16.5,17.1z"/>
+            </svg>
         </div>
+        <div class="progress-bar-number">80%</div>
     </div>
-</div>--><!-- .page-loader -->
+</div>
+
 
 <div id="search-fullwidth" class="mfp-hide mfp-with-anim">
     <form method="get" class="searchform" action="#">
