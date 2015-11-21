@@ -36,90 +36,90 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-5.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-2.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                     <img alt="" src="assets/images/product/product-3.jpg">
                                 </a>
                             </div>
 
                             <div class="product-details">
                                 <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
-                                </h3>
-                                <div class="product-price">$340.00</div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-3 product standard">
-                        <div class="product-inner">
-                            <div class="product-content">
-                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-1.jpg">
-                                </a>
-                            </div>
-
-                            <div class="product-details">
-                                <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
-                                </h3>
-                                <div class="product-price">$340.00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 product standard">
-                        <div class="product-inner">
-                            <div class="product-content">
-                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-1.jpg">
-                                </a>
-                            </div>
-
-                            <div class="product-details">
-                                <h3 class="product-title">
                                     <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 product standard">
-                        <div class="product-inner">
-                            <div class="product-content">
-                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-1.jpg">
-                                </a>
-                            </div>
-
-                            <div class="product-details">
-                                <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                </h3>
-                                <div class="product-price">$340.00</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 product standard">
-                        <div class="product-inner">
-                            <div class="product-content">
-                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-1.jpg">
-                                </a>
-                            </div>
-
-                            <div class="product-details">
-                                <h3 class="product-title">
-                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
-                                </h3>
-                                <div class="product-price">$340.00</div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="col-sm-3 product standard">
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
                                     <img alt="" src="assets/images/product/product-4.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-5.jpg">
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img alt="" src="assets/images/product/product-6.jpg">
                                 </a>
                             </div>
 
@@ -136,7 +136,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-7.jpg">
                                 </a>
                             </div>
 
@@ -153,7 +153,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-8.jpg">
                                 </a>
                             </div>
 
@@ -172,7 +172,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-9.jpg">
                                 </a>
                             </div>
 
@@ -190,7 +190,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-10.jpg">
                                 </a>
                             </div>
 
@@ -206,7 +206,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-11.jpg">
                                 </a>
                             </div>
 
@@ -222,7 +222,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-5.jpg">
                                 </a>
                             </div>
 
@@ -238,7 +238,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-12.jpg">
                                 </a>
                             </div>
 
@@ -254,7 +254,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-13.jpg">
                                 </a>
                             </div>
 
@@ -270,7 +270,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-15.jpg">
                                 </a>
                             </div>
 
@@ -286,7 +286,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-16.jpg">
                                 </a>
                             </div>
 
@@ -301,7 +301,7 @@ include_once('templates/headers/header2.php');
                     <div class="col-sm-3 product standard">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                <img alt="" src="assets/images/product/product-4.jpg">
+                                <img alt="" src="assets/images/product/product-1.jpg">
                             </a>
                         </div>
 
@@ -316,7 +316,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-18.jpg">
                                 </a>
                             </div>
 
@@ -332,7 +332,7 @@ include_once('templates/headers/header2.php');
                         <div class="product-inner">
                             <div class="product-content">
                                 <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
-                                    <img alt="" src="assets/images/product/product-4.jpg">
+                                    <img alt="" src="assets/images/product/product-19.jpg">
                                 </a>
                             </div>
 

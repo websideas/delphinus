@@ -11,55 +11,49 @@ include_once('templates/headers/header2.php');
                     <div class="product-detail-thumbarea">
                         <div class="single-product-main-images owl-carousel1" id="sync1">
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product/product-1.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-1.jpg" class="img-responsive" alt="Product 1" title="Product 1" />
+                                <a href="assets/images/product/product-8.jpg" itemprop="image" class="woocommerce-main-image" title="">
+                                    <img src="assets/images/product/product-8.jpg" class="img-responsive" alt="Product 2" title="Product 2" />
                                 </a>
                             </div>
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product/product-2.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-2.jpg" class="img-responsive" alt="Product 2" title="Product 2" />
+                                <a href="assets/images/product/product-12.jpg" itemprop="image" class="woocommerce-main-image" title="">
+                                    <img src="assets/images/product/product-12.jpg" class="img-responsive" alt="Product 3" title="Product 3" />
                                 </a>
                             </div>
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product/product-3.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-3.jpg" class="img-responsive" alt="Product 3" title="Product 3" />
+                                <a href="assets/images/product/product-18.jpg" itemprop="image" class="woocommerce-main-image" title="">
+                                    <img src="assets/images/product/product-18.jpg" class="img-responsive" alt="Product 4" title="Product 4" />
                                 </a>
                             </div>
                             <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product/product-4.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-4.jpg" class="img-responsive" alt="Product 4" title="Product 4" />
-                                </a>
-                            </div>
-                            <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product/product-5.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-5.jpg" class="img-responsive" alt="Product 5" title="Product 5" />
-                                </a>
-                            </div>
-                            <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product/product-6.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-6.jpg" class="img-responsive" alt="Product 6" title="Product 6" />
-                                </a>
-                            </div>
-                            <div class="easyzoom easyzoom--overlay">
-                                <a href="assets/images/product/product-7.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-7.jpg" class="img-responsive" alt="Product 7" title="Product 7" />
+                                <a href="assets/images/product/product-21.jpg" itemprop="image" class="woocommerce-main-image" title="">
+                                    <img src="assets/images/product/product-21.jpg" class="img-responsive" alt="Product 1" title="Product 1" />
                                 </a>
                             </div>
                             <div class="easyzoom easyzoom--overlay">
                                 <a href="assets/images/product/product-8.jpg" itemprop="image" class="woocommerce-main-image" title="">
-                                    <img src="assets/images/product/product-8.jpg" class="img-responsive" alt="Product 8" title="Product 8" />
+                                    <img src="assets/images/product/product-8.jpg" class="img-responsive" alt="Product 2" title="Product 2" />
+                                </a>
+                            </div>
+                            <div class="easyzoom easyzoom--overlay">
+                                <a href="assets/images/product/product-12.jpg" itemprop="image" class="woocommerce-main-image" title="">
+                                    <img src="assets/images/product/product-12.jpg" class="img-responsive" alt="Product 3" title="Product 3" />
+                                </a>
+                            </div>
+                            <div class="easyzoom easyzoom--overlay">
+                                <a href="assets/images/product/product-18.jpg" itemprop="image" class="woocommerce-main-image" title="">
+                                    <img src="assets/images/product/product-18.jpg" class="img-responsive" alt="Product 4" title="Product 4" />
                                 </a>
                             </div>
                         </div><!-- #sync1.single-product-main-images.owl-carousel -->
                         <div class="single-product-main-thumbnails owl-carousel2" id="sync2" data-items="5">
-                            <a href="assets/images/product/product-1.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-1.jpg" class="img-responsive" alt="Product 1" title="Product 1" /></a>
-                            <a href="assets/images/product/product-2.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-2.jpg" class="img-responsive" alt="Product 2" title="Product 2" /></a>
-                            <a href="assets/images/product/product-3.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-3.jpg" class="img-responsive" alt="Product 3" title="Product 3" /></a>
-                            <a href="assets/images/product/product-4.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-4.jpg" class="img-responsive" alt="Product 4" title="Product 4" /></a>
-                            <a href="assets/images/product/product-5.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-5.jpg" class="img-responsive" alt="Product 5" title="Product 5" /></a>
-                            <a href="assets/images/product/product-6.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-6.jpg" class="img-responsive" alt="Product 6" title="Product 6" /></a>
-                            <a href="assets/images/product/product-7.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-7.jpg" class="img-responsive" alt="Product 7" title="Product 7" /></a>
-                            <a href="assets/images/product/product-8.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-8.jpg" class="img-responsive" alt="Product 8" title="Product 8" /></a>
+                            <a href="assets/images/product/product-8.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-8.jpg" class="img-responsive" alt="Product 2" title="Product 2" /></a>
+                            <a href="assets/images/product/product-12.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-12.jpg" class="img-responsive" alt="Product 3" title="Product 3" /></a>
+                            <a href="assets/images/product/product-18.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-18.jpg" class="img-responsive" alt="Product 4" title="Product 4" /></a>
+                            <a href="assets/images/product/product-21.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-21.jpg" class="img-responsive" alt="Product 1" title="Product 1" /></a>
+                            <a href="assets/images/product/product-8.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-8.jpg" class="img-responsive" alt="Product 2" title="Product 2" /></a>
+                            <a href="assets/images/product/product-12.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-12.jpg" class="img-responsive" alt="Product 3" title="Product 3" /></a>
+                            <a href="assets/images/product/product-18.jpg" itemprop="image" class="woocommerce-main-image" title=""><img src="assets/images/product/product-18.jpg" class="img-responsive" alt="Product 4" title="Product 4" /></a>
                         </div><!-- #sync2.single-product-main-thumbnails.owl-carousel -->
                     </div><!-- .product-detail-thumbarea -->
 
@@ -373,7 +367,7 @@ include_once('templates/headers/header2.php');
                             <div class="product">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                        <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                        <img class="first-img" src="assets/images/product/product-21.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-1.jpg" alt=""/>
                                     </a>
                                     <div class="product-over-tool">

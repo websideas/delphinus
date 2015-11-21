@@ -237,7 +237,7 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="product wow fadeInUp" data-wow-delay="400ms">
                             <div class="product-content">
                                 <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                    <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                    <img class="first-img" src="assets/images/product/product-21.jpg" alt=""/>
                                     <img class="second-img" src="assets/images/product/product-1.jpg" alt=""/>
                                 </a>
                                 <div class="product-over-tool">

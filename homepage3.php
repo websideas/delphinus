@@ -96,7 +96,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-1.jpg" alt="" />
+                                        <img src="assets/images/product/product-4.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -113,7 +113,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-2.jpg" alt="" />
+                                        <img src="assets/images/product/product-10.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -130,7 +130,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-3.jpg" alt="" />
+                                        <img src="assets/images/product/product-11.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -147,7 +147,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-1.jpg" alt="" />
+                                        <img src="assets/images/product/product-22.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6 ">
@@ -164,7 +164,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-2.jpg" alt="" />
+                                        <img src="assets/images/product/product-23.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -181,7 +181,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-3.jpg" alt="" />
+                                        <img src="assets/images/product/product-17.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -198,7 +198,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-1.jpg" alt="" />
+                                        <img src="assets/images/product/product-19.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -215,7 +215,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-2.jpg" alt="" />
+                                        <img src="assets/images/product/product-6.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -232,7 +232,7 @@ include_once('templates/slideshows/carousel.php');
                             <div class="row">
                                 <div class="col-sm-6">
                                     <a title="Bottle Humidifier" href="woocommerce-product-detailed1.php">
-                                        <img src="assets/images/product/product-3.jpg" alt="" />
+                                        <img src="assets/images/product/product-7.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="col-sm-6">
@@ -276,7 +276,7 @@ include_once('templates/slideshows/carousel.php');
 
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-1.jpg" />
+                                <img alt="" src="assets/images/product/product-24.png" />
                             </a>
                         </div>
 
@@ -291,7 +291,7 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product wow fadeIn"  data-wow-delay="0.4s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-2.jpg" />
+                                <img alt="" src="assets/images/product/product-18.jpg" />
                             </a>
                         </div>
 
@@ -305,7 +305,7 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product wow fadeIn"  data-wow-delay="0.6s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-3.jpg" />
+                                <img alt="" src="assets/images/product/product-16.jpg" />
                             </a>
                         </div>
 
@@ -319,7 +319,7 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.8s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-4.jpg" />
+                                <img alt="" src="assets/images/product/product-1.jpg" />
                             </a>
                         </div>
 
@@ -333,7 +333,7 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.2s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-4.jpg" />
+                                <img alt="" src="assets/images/product/product-2.jpg" />
                             </a>
                         </div>
                         <div class="product-details">
@@ -346,7 +346,7 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.4s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-3.jpg" />
+                                <img alt="" src="assets/images/product/product-25.jpg" />
                             </a>
                         </div>
                         <div class="product-details">
@@ -359,7 +359,7 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.6s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-2.jpg" />
+                                <img alt="" src="assets/images/product/product-26.jpg" />
                             </a>
                         </div>
                         <div class="product-details">
@@ -372,7 +372,7 @@ include_once('templates/slideshows/carousel.php');
                     <div class="col-sm-3 product wow fadeIn" data-wow-delay="0.8s">
                         <div class="product-content">
                             <a class="product-thumbnail" href="woocommerce-product-detailed1.php">
-                                <img alt="" src="assets/images/product/product-1.jpg" />
+                                <img alt="" src="assets/images/product/product-12.jpg" />
                             </a>
                         </div>
                         <div class="product-details">

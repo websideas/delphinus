@@ -12,7 +12,7 @@ include_once('templates/slideshows/slideshow2.php');
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="single-image">
-                            <img src="assets/images/product/product-1.jpg" alt="" />
+                            <img src="assets/images/product/product-27.jpg" alt="" />
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -32,7 +32,7 @@ include_once('templates/slideshows/slideshow2.php');
                     </div>
                     <div class="col-sm-4">
                         <div class="single-image">
-                            <img src="assets/images/product/product-3.jpg" alt="" />
+                            <img src="assets/images/product/product-28.jpg" alt="" />
                         </div>
                     </div>
                 </div>

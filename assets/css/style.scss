@@ -1682,7 +1682,7 @@ body.opened-nav-animate{
     color: #000000;
   }
   &.dropcap-orange{
-    color: #ed8b5c;
+    color: $orange;
   }
   &.dropcap-bg{
     padding: 0 10px;
@@ -1699,7 +1699,7 @@ body.opened-nav-animate{
       color: #fff;
     }
     &.dropcap-orange{
-      background: #ed8b5c;
+      background: $orange;
       color: #fff;
     }
   }
@@ -1740,7 +1740,7 @@ ul.style-list{
   &.style2{
     li:after{
       border-radius: 100%;
-      background: #ed8b5c;
+      background: $orange;
       color: #fff;
       font-size: 10px;
       line-height: 28px;
@@ -2341,6 +2341,7 @@ ul.style-list{
   padding: 50px 43px 30px;
   color: #FFFFFF;
   @include css3-prefix('background-size', 'cover');
+  background-position: center 550px;
   margin: 0 0 30px;
   .about-title{
     color: #FFFFFF;

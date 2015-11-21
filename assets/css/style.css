@@ -2286,6 +2286,7 @@ ul.style-list {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center 550px;
   margin: 0 0 30px; }
   .about-wrapper .about-title {
     color: #FFFFFF;

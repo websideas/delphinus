@@ -67,11 +67,11 @@ include_once('templates/slideshows/slideshow2.php');
                                 <div class="product-content">
                                     <ul class="cd-item-wrapper">
                                         <li class="selected">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg" />
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-04.jpg" />
                                         </li>
 
                                         <li class="move-right">
-                                            <img alt="Preview image" src="assets/images/product/product-gallery-04.jpg" />
+                                            <img alt="Preview image" src="assets/images/product/product-gallery-03.jpg" />
                                         </li>
 
                                         <li class="">
@@ -182,8 +182,8 @@ include_once('templates/slideshows/slideshow2.php');
                             <div class="product wow fadeInUp" data-wow-delay="400ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                        <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
-                                        <img class="second-img" src="assets/images/product/product-1.jpg" alt=""/>
+                                        <img class="first-img" src="assets/images/product/product-21.jpg" alt=""/>
+                                        <img class="second-img" src="assets/images/product/product-22.jpg" alt=""/>
                                     </a>
                                     <div class="product-over-tool">
                                         <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>

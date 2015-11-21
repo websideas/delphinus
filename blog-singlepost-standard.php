@@ -37,7 +37,7 @@ include_once('templates/headers/header2.php');
                             <h3 class="hidden">The Best Way to Clean Your Pillows</h3>
                             <div class="entry-thumb">
                                 <figure>
-                                    <img src="http://placehold.it/1200x800/" class="img-responsive" alt="Single post"/>
+                                    <img src="assets/images/blog/blog-01.jpg" class="img-responsive" alt="Single post"/>
                                 </figure>
                             </div><!-- .entry-thumb -->
 
@@ -71,7 +71,7 @@ include_once('templates/headers/header2.php');
                                 <div class="owl-carousel kt-owl-carousel"  data-options='{"pagination": false, "navigation": false, "desktop": 3, "desktopsmall": 2, "tablet" : 2, "mobile" : 1}'>
                                     <div class="blog-post">
                                         <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
-                                            <img src="assets/images/blog/blog-01.jpg" alt=""/>
+                                            <img src="assets/images/blog/blog-10.jpg" alt=""/>
                                         </a>
                                         <h4 class="blog-post-title">
                                             <a href="blog-singlepost-standard.html"> The Best Way to Clean Your...</a>
@@ -85,7 +85,7 @@ include_once('templates/headers/header2.php');
 
                                     <div class="blog-post">
                                         <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
-                                            <img src="assets/images/blog/blog-02.jpg" alt=""/>
+                                            <img src="assets/images/blog/blog-11.jpg" alt=""/>
                                         </a>
                                         <h4 class="blog-post-title">
                                             <a href="blog-singlepost-standard.html">The Best Way to Clean Your...</a>
@@ -99,7 +99,7 @@ include_once('templates/headers/header2.php');
 
                                     <div class="blog-post">
                                         <a href="blog-singlepost-standard.html" class="blog-post-thumbnail">
-                                            <img src="assets/images/blog/blog-03.jpg" alt=""/>
+                                            <img src="assets/images/blog/blog-12.jpg" alt=""/>
                                         </a>
                                         <h4 class="blog-post-title">
                                             <a href="blog-singlepost-standard.html">The Best Way to Clean Your...</a>

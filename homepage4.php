@@ -107,8 +107,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-24.png" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-25.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -134,8 +134,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-3.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-18.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-19.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -161,8 +161,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-17.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-18.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -223,8 +223,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-5.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -250,8 +250,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-3.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-5.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-6.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -277,8 +277,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-6.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-7.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -303,8 +303,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-7.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-8.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -330,8 +330,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-3.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-8.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-9.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -357,8 +357,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-9.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-10.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -417,8 +417,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-10.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-11.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -444,8 +444,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-3.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-11.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-12.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -471,8 +471,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-12.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-13.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -497,8 +497,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-2.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-19.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-20.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">
@@ -551,8 +551,8 @@ include_once('templates/slideshows/slideshow1.php');
 
                                     <div class="product-content">
                                         <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                            <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
-                                            <img class="second-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                            <img class="first-img" src="assets/images/product/product-15.jpg" alt=""/>
+                                            <img class="second-img" src="assets/images/product/product-16.jpg" alt=""/>
                                         </a>
 
                                         <div class="product-over-tool">

@@ -1,7 +1,7 @@
 <div id="footer">
 
     <footer id="footer-top" class="no-padding">
-        <div class="page-section bg-orange">
+        <div class="page-section bg-coral">
             <div class="container">
                 <div class="kt_callout kt-table">
                     <div class="callout-content kt-col white">Every day thousands of customers come to Delphinus to find the solution for their business<br/>What are you waiting for ?</div>
