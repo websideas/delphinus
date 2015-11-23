@@ -122,15 +122,17 @@
         $('.kt-tab-container').tabs();
         $('.kt-accordion').accordion({ 'heightStyle': 'content' });
 
-
         /* ---------------------------------------------
          Back to top
          --------------------------------------------- */
         $('body').append('<div id="back-to-top"><i class="fa fa-angle-up"></i></div>');
         $('#back-to-top').hide();
-        var heightbody = $('body').outerHeight();
         $(window).scroll(function() {
-            if($(window).scrollTop() >= heightbody/2) {
+            var heightbody = $('body').outerHeight(),
+                window_height = $(window).outerHeight(),
+                top_pos = heightbody/2-25;
+            console.log($(window).scrollTop());console.log(top_pos);
+            if($(window).scrollTop() + window_height/2 >= top_pos) {
                 $('#back-to-top').fadeIn();
             } else {
                 $('#back-to-top').fadeOut();
@@ -139,7 +141,7 @@
         $('#back-to-top').click(function() {
             $('html, body').animate({scrollTop:0},500);
         });
-
+        
     });
 
 
