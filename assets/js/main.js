@@ -138,6 +138,7 @@
         $('#back-to-top').click(function() {
             $('html, body').animate({scrollTop:0},500);
         });
+
     });
 
 
@@ -519,7 +520,8 @@
                         afterClose: function(){
                             $.cookie('popup_newletter', 1, { expires: 1 });
                         }
-                    }
+                    },
+                    removalDelay: 200
                 });
             }, time_show*1000);
         }

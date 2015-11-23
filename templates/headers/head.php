@@ -98,7 +98,7 @@
     </form>
 </div><!-- #search-fullwidth -->
 
-<div id="popup-wrap" class="mfp-hide mfp-with-anim" data-timeshow="1">
+<div id="popup-wrap" class="mfp-hide mfp-with-anim" data-timeshow="3">
     <div class="wrapper-newletter-popup">
         <div class="bg-popup"></div>
         <h3>NEWSLETTER</h3>
