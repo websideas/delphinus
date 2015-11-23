@@ -53,7 +53,6 @@
             <li><a href="pages-contact.php">Contact us</a></li>
             <li><a href="blog-gird-3columns.php">Blog</a></li>
             <li><a href="blog-singlepost-standard.php">Blog detail</a></li>
-            <li><a href="#">Look book</a></li>
         </ul>
     </li>
     <li><a href="#">elements</a>

@@ -149,7 +149,11 @@ include_once('templates/headers/header2.php');
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="button-checkout"><a class="btn btn-default" href="woocommerce-checkout.php">proceed to checkout</a></div>
+                            <div class="button-checkout">
+                                <a class="btn btn-default btn-animation" href="woocommerce-checkout.php">
+                                    <span>proceed to checkout <i class="fa fa-long-arrow-right"></i></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

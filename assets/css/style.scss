@@ -541,6 +541,30 @@ select:not([multiple]) {
     color: #FFFFFF;
     border-color: #000000;
   }
+  &.btn-animation{
+    span{
+      @include transform(translateX(0));
+      @include transition("all .3s ease-in-out 0s");
+      display: block;
+      position: relative;
+      i{
+        @include opacity(0);
+        @include transition("all .3s ease-in-out 0s");
+        @include transform(translate(30px, -50%));
+        position: absolute;
+        right: 0;
+        top:50%;
+      }
+    }    
+    &:hover{
+      span{
+        @include transform(translateX(-10px));
+        i{
+          @include opacity(1);
+        }
+      }
+    }
+  }
   &.btn-gray {
     background: $gray-bg;
     color: $gray-darker;
@@ -595,7 +619,6 @@ select:not([multiple]) {
   &.btn-addtocart{
     background: #ffffff;
     color: #000000;
-    font-family: $second-font;
     width: 100%;
     height: 48px;
     font-size: 14px;
@@ -611,7 +634,6 @@ select:not([multiple]) {
   &.btn-addtocart-b{
     background: none;
     color: #000000;
-    font-family: $second-font;
     height: 48px;
     font-size: 14px;
     border-color: #000000;
@@ -744,7 +766,6 @@ select:not([multiple]) {
       border-bottom: 2px solid $border-color;
       padding: 10px 0;
       height: auto;
-      font-family: $second-font;
       font-size: 14px;
       letter-spacing: 0.075em;
     }
@@ -880,7 +901,6 @@ select:not([multiple]) {
           }
           label{
             color: $gray-text;
-            font-family: $second-font;
             font-size: 14px;
             font-weight: normal;
             &.inline{
@@ -1006,7 +1026,6 @@ select:not([multiple]) {
           color: $gray-text;
           line-height: 25px;
           font-size: 12px;
-          font-family: $second-font;
         }
       }
       .remove{
@@ -1228,9 +1247,8 @@ select:not([multiple]) {
             a{
               padding: 24px;
               display: block;
-              font-family: $second-font;
               color: $gray-text;
-              font-size: 14px;
+              font-size: 16px;
               &:hover{
                 color: $primary-color;
               }
@@ -1271,8 +1289,7 @@ select:not([multiple]) {
               > a,
               > span{
                 color: #000000;
-                font-size: 16px;
-                font-family: $second-font;
+                font-size: 18px;
                 display: block;
                 padding: 40px 28px 24px;
                 border-bottom: 1px solid #f6f6f6;
@@ -1292,8 +1309,7 @@ select:not([multiple]) {
                     padding: 30px 26px 22px;
                     display: block;
                     color: $gray-text;
-                    font-family: $second-font;
-                    font-size: 14px;
+                    font-size: 16px;
                     &:hover{
                       color: #000000;
                     }
@@ -1470,8 +1486,7 @@ select:not([multiple]) {
             > a,
             > span {
               display: block;
-              font-family: $second-font;
-              font-size: 13px;
+              font-size: 15px;
               color: #000000;
               padding: 3px 10px 3px 25px;
               text-transform: uppercase;
@@ -2134,6 +2149,16 @@ ul.style-list{
     display: inline-block;
     padding: 0 22px;
     font-size: 14px;
+    a{
+      @include transform(translatey(0));
+      @include transition('all 0.2s ease 0s');
+      display: inline-block;
+    }
+    &:hover{
+      a{
+        @include transform(translatey(-6px));
+      }
+    }
     &:first-child{
       padding-left: 0;
     }
@@ -2388,8 +2413,7 @@ ul.style-list{
     @include transform(translate(0px, 0px));
   }
   .flip-box-after{
-    font-family: $second-font;
-    font-size: 14px;
+    font-size: 16px;
     color: $gray-text;
     position: absolute;
     top: 0;
@@ -3385,6 +3409,7 @@ select.mobile-device {
       font-size: 16px;
       margin-bottom: 7px;
       text-transform: none;
+      letter-spacing: 0.075em;
     }
     .product-price{
       color: $gray-text;
@@ -3560,7 +3585,6 @@ select.mobile-device {
             height: 48px;
             width: 60px;
             text-align: center;
-            font-family: $second-font;
             &:focus{
               border-color: #000;
             }
@@ -3803,7 +3827,6 @@ select.mobile-device {
     h3.price{
       float: left;
       margin: 0;
-      font-family: $second-font;
       font-size: 24px;
       font-weight: normal;
       letter-spacing: 0;
@@ -3880,13 +3903,14 @@ select.mobile-device {
   }
   .product-shareit{
     .social_icons{
-      margin: 0;
+      margin: 0 -11px;
       padding: 0;
       list-style: none;
       li{
-        display: inline-block;
+        float: left;
+        width: 33.33%;
         line-height: normal;
-        margin-right: 23px;
+        padding:0 11px;
         a{
           color: #999;
           letter-spacing: 0.15em;
@@ -3895,7 +3919,7 @@ select.mobile-device {
           text-transform: uppercase;
           font-weight: bold;
           font-size: 14px;
-          display: inline-block;
+          display: block;
           &:hover,&:focus{
             color: #000;
             border-color: #000;
@@ -3903,9 +3927,6 @@ select.mobile-device {
           i{
             display: none;
           }
-        }
-        &:last-child{
-          margin-right: 0;
         }
       }
     }
@@ -4003,7 +4024,7 @@ select.mobile-device {
 
 #review_form{
   .comment-reply-title{
-    font-family: $second-font;
+    font-family: $font-stack;
     font-size: 14px;
     color: #666;
     text-transform: none;
@@ -4818,8 +4839,8 @@ table.compare{
   background: #fff;
   text-align: center;
   position: fixed;
-  right: 37px;
-  bottom: 37px;
+  right: 30px;
+  bottom: 30px;
   z-index: 100;
   cursor: pointer;
   display: none;

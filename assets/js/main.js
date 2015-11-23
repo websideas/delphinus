@@ -128,8 +128,9 @@
          --------------------------------------------- */
         $('body').append('<div id="back-to-top"><i class="fa fa-angle-up"></i></div>');
         $('#back-to-top').hide();
+        var heightbody = $('body').outerHeight();
         $(window).scroll(function() {
-            if($(window).scrollTop() != 0) {
+            if($(window).scrollTop() >= heightbody/2) {
                 $('#back-to-top').fadeIn();
             } else {
                 $('#back-to-top').fadeOut();
@@ -754,7 +755,7 @@
                 }
             },
             gridwidth:1290,
-            gridheight:920,
+            gridheight:745,
             lazyType:"none",
             shadow:0,
             spinner:"spinner0",
@@ -837,7 +838,7 @@
                 }
             },
             gridwidth:1290,
-            gridheight:920,
+            gridheight:745,
             lazyType:"none",
             shadow:0,
             spinner:"spinner0",

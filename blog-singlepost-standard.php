@@ -37,7 +37,7 @@ include_once('templates/headers/header2.php');
                             <h3 class="hidden">The Best Way to Clean Your Pillows</h3>
                             <div class="entry-thumb">
                                 <figure>
-                                    <img src="assets/images/blog/blog-01.jpg" class="img-responsive" alt="Single post"/>
+                                    <img src="assets/images/blog/blog-detail.jpg" class="img-responsive" alt="Single post"/>
                                 </figure>
                             </div><!-- .entry-thumb -->
 

@@ -39,6 +39,7 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="tp-caption product-attr"
                              data-x="center"
                              data-y="bottom"
+                             data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"woocommerce-product-detailed1.php"}]'
                              data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
                              data-transform_out="opacity:0;s:10;s:20;e:Linear.easeNone;">
                             <h4>Afteroom Chair 1</h4>
@@ -54,6 +55,7 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="tp-caption product-attr"
                              data-x="center"
                              data-y="bottom"
+                             data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"woocommerce-product-detailed1.php"}]'
                              data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
                              data-transform_out="opacity:0;s:10;s:10;e:Linear.easeNone;" >
                             <h4>Afteroom Chair 3</h4>
@@ -70,6 +72,7 @@ include_once('templates/slideshows/slideshow1.php');
                         <div class="tp-caption product-attr"
                              data-x="center"
                              data-y="bottom"
+                             data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"woocommerce-product-detailed1.php"}]'
                              data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
                              data-transform_out="opacity:10;s:10;s:10;e:Linear.easeNone;">
                             <h4>Afteroom Chair 2</h4>
