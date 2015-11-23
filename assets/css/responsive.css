@@ -123,12 +123,14 @@
     padding-top: 20px; }
     .product-main form.cart .cart-tool > a:first-child {
       margin-left: 0; }
-  .product-main .product-shareit .social_icons li a {
-    padding: 15px 25px; }
-    .product-main .product-shareit .social_icons li a span {
-      display: none; }
-    .product-main .product-shareit .social_icons li a i {
-      display: inline; }
+  .product-main .product-shareit .social_icons li {
+    width: auto; }
+    .product-main .product-shareit .social_icons li a {
+      padding: 15px 25px; }
+      .product-main .product-shareit .social_icons li a span {
+        display: none; }
+      .product-main .product-shareit .social_icons li a i {
+        display: inline; }
   .product-main.style2 .product-detail-wrap {
     padding: 40px 0; }
 

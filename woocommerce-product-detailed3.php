@@ -113,7 +113,7 @@ include_once('templates/headers/header2.php');
 
                         <div class="product-shareit">
                             <span class="screen-reader-text">Share this</span>
-                            <ul class="social_icons">
+                            <ul class="social_icons clearfix">
                                 <li><a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i> <span>Twitter</span></a></li>
                                 <li><a href="#"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a></li>
