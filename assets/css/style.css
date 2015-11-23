@@ -4410,18 +4410,23 @@ table.compare tr td {
   -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  -khtml-transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
-  -ms-transition: all 0.2s ease-in-out 0s;
-  -o-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
   color: #000000; }
   #back-to-top i {
     font-size: 18px;
-    line-height: 50px; }
-  #back-to-top:hover {
-    background: #f6f6f6; }
+    line-height: 50px;
+    -webkit-transition: all 0.4s ease;
+    -khtml-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  #back-to-top:hover i {
+    -webkit-transform: scale(1.5);
+    -khtml-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5); }
 
 /* ==============================
    19. Main content
