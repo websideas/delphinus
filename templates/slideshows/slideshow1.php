@@ -143,7 +143,6 @@
                          style="z-index: 7; min-width: 355px; max-width: 355px; white-space: normal; font-size: 16px; line-height: 30px; font-weight: 400; color: rgba(102, 102, 102, 1.00);font-family:Karla;text-align:center;">Dephinus with a tool that makes design simple for everyone.
                     </div>
                 </li>
-
             </ul>
         </div><!-- .rev_slider -->
     </div><!-- .rev_slider_wrapper -->
