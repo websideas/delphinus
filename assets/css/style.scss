@@ -4579,10 +4579,14 @@ table.compare{
     width: 46px;
     background: none;
     border:2px solid #fff;
+    &:hover:before{
+      @include transform(scale(1.2));
+    }
     &:before{
       font-family: "icomoon";
       font-size: 18px;
       line-height: 36px;
+      @include transition(all 0.4s ease);
     }
     &.tp-rightarrow:before{
       content: "\ebf9"; 
