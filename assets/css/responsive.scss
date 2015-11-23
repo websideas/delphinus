@@ -406,6 +406,26 @@
     }
   }
 
+
+  .products{
+    &.lists{
+      .product{
+        text-align: center;
+        .product-content{
+          max-width: 100%;
+          width: 100%;
+          margin: 0 0 30px;
+          img{
+            width: 100%;
+          }
+        }
+        .product-attribute{
+          margin: 0;
+        }
+      }
+    }
+  }
+
 }
 
 /* 7. Styles for devices(>=481px and <= 767px) */
@@ -551,18 +571,6 @@
     .form-submit{
       input{
         width: 100%;
-      }
-    }
-  }
-
-  .products{
-    &.lists{
-      .product{
-        text-align: center;
-        .product-content{
-          max-width: 100%;
-          margin: 0 0 30px;
-        }
       }
     }
   }

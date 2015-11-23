@@ -242,7 +242,18 @@
   #popup-wrap .wrapper-newletter-popup {
     padding-left: 200px; }
     #popup-wrap .wrapper-newletter-popup .bg-popup {
-      width: 200px; } }
+      width: 200px; }
+
+  .products.lists .product {
+    text-align: center; }
+    .products.lists .product .product-content {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 0 30px; }
+      .products.lists .product .product-content img {
+        width: 100%; }
+    .products.lists .product .product-attribute {
+      margin: 0; } }
 /* 7. Styles for devices(>=481px and <= 767px) */
 /* 8. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
@@ -314,13 +325,7 @@
   #review_form .comment-form-rating .stars {
     width: 100%; }
   #review_form .form-submit input {
-    width: 100%; }
-
-  .products.lists .product {
-    text-align: center; }
-    .products.lists .product .product-content {
-      max-width: 100%;
-      margin: 0 0 30px; } }
+    width: 100%; } }
 /* 9. Styles for devices(<=320px ) */
 
 /*# sourceMappingURL=responsive.css.map */

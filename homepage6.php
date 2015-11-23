@@ -119,7 +119,20 @@ include_once('templates/slideshows/slideshow2.php');
                                     <span style="width:80%"><strong class="rating">4</strong> out of 5</span>
                                 </div>
                             </div>
-
+                            <div class="product wow fadeIn" data-wow-delay="400ms">
+                                <div class="product-content">
+                                    <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
+                                        <img src="assets/images/product/product-carousel-06.png" alt=""/>
+                                    </a>
+                                </div>
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.php">Afteroom Chair</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                                <div class="star-rating" title="Rated 4 out of 5">
+                                    <span style="width:80%"><strong class="rating">4</strong> out of 5</span>
+                                </div>
+                            </div>
                             <div class="product wow fadeIn" data-wow-delay="600ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
