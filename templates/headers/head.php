@@ -32,6 +32,9 @@
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- Intro Style -->
+    <link rel="stylesheet" href="assets/css/intro.css" />
+
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
 

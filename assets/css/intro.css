@@ -1,34 +1,15 @@
+/*
+ * Title:   Intr Style File
+ * Author:  http://themeforest.net/user/Kite-Themes
+ */
 /* -------------------------------------------------------------
   Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
   By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
 ------------------------------------------------------------- */
-body {
-  background: #f6f6f6;
-  font-family: "Vollkorn", serif;
-  color: #666666;
-  font-size: 18px;
-  line-height: 30px; }
-
-a {
-  color: #000000; }
-  a:hover, a:focus {
-    color: #000000;
-    text-decoration: none; }
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
-  margin: 0 0 20px;
-  font-family: "Roboto Slab", serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #000000; }
-
-.page-section {
-  padding: 165px 0; }
-
-/* ==============================
-   Demos
-   ============================== */
+/* -------------------------------------------------------------
+ * Title:   SCSS VARIABLES
+ * Author:  http://themeforest.net/user/Kite-Themes
+------------------------------------------------------------- */
 .demo-item {
   margin-bottom: 80px;
   text-align: center;
@@ -159,9 +140,6 @@ h1, h2, h3, h4, h5, h6 {
   -o-opacity: 1;
   opacity: 1; }
 
-/* --------------------------------
-Mask
--------------------------------- */
 .cd-intro-content h1 {
   font-size: 36px;
   letter-spacing: 0.3em;
@@ -338,5 +316,37 @@ Mask
     -ms-transform: scaleX(1);
     -o-transform: scaleX(1);
     transform: scaleX(1); } }
+/* 1. Styles for devices(<=1650px) */
+@media (max-width: 1650px) {
+  .demo-item > a {
+    width: 500px; } }
+/* 2. Styles for devices(<=1200px) */
+@media (max-width: 1200px) {
+  .cd-intro {
+    background-attachment: scroll; }
 
-/*# sourceMappingURL=style.css.map */
+  .demo-item {
+    margin-left: 0 !important;
+    margin-right: 0 !important; }
+    .demo-item > a {
+      width: 440px; } }
+/* 3. Styles for devices(<=991px) */
+@media (max-width: 991px) {
+  .demo-item > a {
+    width: 340px; } }
+/* 4. Styles for devices(<=767px) */
+@media (max-width: 767px) {
+  .demo-item {
+    float: none !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important; }
+    .demo-item > a {
+      width: 100%; } }
+/* 4. Styles for devices(<=480px) */
+@media (max-width: 480px) {
+  .cd-intro-content h1 {
+    font-size: 18px; }
+  .cd-intro-content p {
+    font-size: 13px; } }
+
+/*# sourceMappingURL=intro.css.map */
