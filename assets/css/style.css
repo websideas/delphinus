@@ -69,7 +69,7 @@
   19.1 About page
   19.2 Contact page
   19.3 404 page
-
+20. Intro
 
 
 
@@ -831,7 +831,7 @@ select:not([multiple]) {
 .branding img {
   width: 170px;
   height: 20px; }
-.topbar .branding .branding {
+.topbar .branding {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
   -khtml-transform: translate(-50%, -50%);
@@ -842,7 +842,7 @@ select:not([multiple]) {
   top: 50%;
   left: 50%;
   z-index: 1; }
-  .topbar .branding .branding h1 {
+  .topbar .branding h1 {
     line-height: 57px; }
 
 .topbar {

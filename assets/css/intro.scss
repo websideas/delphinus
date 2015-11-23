@@ -1,40 +1,13 @@
+/*
+ * Title:   Intro Style File
+ * Author:  http://themeforest.net/user/Kite-Themes
+ */
+
+
 @import 'mixin';
-$font-stack: 'Vollkorn', serif;
-$heading-font: 'Roboto Slab', serif;
+@import 'variables';
 
-body{
-  background: #f6f6f6;
-  font-family: $font-stack;
-  color: #666666;
-  font-size: 18px;
-  line-height: 30px;
-}
 
-a{
-  color: #000000;
-  &:hover,
-  &:focus{
-    color: #000000;
-    text-decoration: none;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
-  margin: 0 0 20px;
-  font-family: $heading-font;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #000000;
-}
-
-.page-section{
-  padding: 165px 0;
-}
-
-/* ==============================
-   Demos
-   ============================== */
 
 .demo-item{
   margin-bottom: 80px;
@@ -150,11 +123,6 @@ h1, h2, h3, h4, h5, h6 {
   @include opacity(1);
 }
 
-
-
-/* --------------------------------
-Mask
--------------------------------- */
 
 .cd-intro-content h1 {
   font-size: 36px;
@@ -358,3 +326,67 @@ Mask
     transform: scaleX(1);
   }
 }
+
+
+
+
+
+
+/* 1. Styles for devices(<=1650px) */
+@media (max-width: 1650px) {
+  .demo-item{
+    > a{
+      width: 500px;
+    }
+  }
+}
+
+/* 2. Styles for devices(<=1200px) */
+@media (max-width: 1200px) {
+  .cd-intro{
+    background-attachment: scroll;
+  }
+  .demo-item{
+    margin-left: 0!important;
+    margin-right: 0!important;
+    > a{
+      width: 440px;
+    }
+  }
+}
+
+/* 3. Styles for devices(<=991px) */
+@media (max-width: 991px) {
+  .demo-item{
+    > a{
+      width: 340px;
+    }
+  }
+}
+
+/* 4. Styles for devices(<=767px) */
+@media (max-width: 767px) {
+  .demo-item{
+    float: none!important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    > a{
+      width: 100%;
+    }
+  }
+}
+
+/* 4. Styles for devices(<=480px) */
+@media (max-width: 480px) {
+  .cd-intro-content {
+    h1{
+      font-size: 18px;
+    }
+    p{
+      font-size: 13px;
+    }
+  }
+}
+
+
+
