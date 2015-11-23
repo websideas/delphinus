@@ -3509,7 +3509,7 @@ select.mobile-device {
     }
   }
 
-  .product-description{
+  .product-description,.produt-tool-list{
     display: none;
   }
 
@@ -3526,17 +3526,64 @@ select.mobile-device {
       &:last-child{
         border-bottom: none;
       }
-      .product-description{
+      .product-description,.produt-tool-list{
         display: block;
+      }
+      .product-attribute{
+        margin-left: 330px;
       }
       .product-content{
         float: left;
         max-width: 270px;
         margin-bottom: 0;
         margin-right: 60px;
+        .product-over-tool,.product-over-add{
+          display: none;
+        }
       }
       h3.product-title{
         margin-top: 20px;
+      }
+      .produt-tool-list{
+        margin-top: 40px;
+        .quantity,.product-over-add{
+          float: left;
+          margin-right: 30px;
+          margin-top: 12px;
+        }
+        .quantity{
+          input{
+            height: 48px;
+            width: 60px;
+            text-align: center;
+            font-family: $second-font;
+            &:focus{
+              border-color: #000;
+            }
+          }
+        }
+        .product-over-tool{
+          float: left;
+          margin-top: 12px;
+          > a{
+            display: inline-block;
+            width: 60px;
+            height: 48px;
+            border: 2px solid #e3e3e3;
+            text-align: center;
+            color: #999;
+            &:hover{
+              color: #000000;
+              border-color: #000000;
+            }
+            &:last-child{
+              margin-left: 26px;
+            }
+            i{
+              line-height: 44px;
+            }
+          }
+        }
       }
     }
   }

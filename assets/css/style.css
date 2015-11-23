@@ -3295,7 +3295,7 @@ select.mobile-device {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); }
 .products.products-gallery .product .product-title {
   letter-spacing: 0; }
-.products .product-description {
+.products .product-description, .products .produt-tool-list {
   display: none; }
 .products.lists .product {
   padding: 40px 15px;
@@ -3307,15 +3307,49 @@ select.mobile-device {
     padding-top: 0; }
   .products.lists .product:last-child {
     border-bottom: none; }
-  .products.lists .product .product-description {
+  .products.lists .product .product-description, .products.lists .product .produt-tool-list {
     display: block; }
+  .products.lists .product .product-attribute {
+    margin-left: 330px; }
   .products.lists .product .product-content {
     float: left;
     max-width: 270px;
     margin-bottom: 0;
     margin-right: 60px; }
+    .products.lists .product .product-content .product-over-tool, .products.lists .product .product-content .product-over-add {
+      display: none; }
   .products.lists .product h3.product-title {
     margin-top: 20px; }
+  .products.lists .product .produt-tool-list {
+    margin-top: 40px; }
+    .products.lists .product .produt-tool-list .quantity, .products.lists .product .produt-tool-list .product-over-add {
+      float: left;
+      margin-right: 30px;
+      margin-top: 12px; }
+    .products.lists .product .produt-tool-list .quantity input {
+      height: 48px;
+      width: 60px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif; }
+      .products.lists .product .produt-tool-list .quantity input:focus {
+        border-color: #000; }
+    .products.lists .product .produt-tool-list .product-over-tool {
+      float: left;
+      margin-top: 12px; }
+      .products.lists .product .produt-tool-list .product-over-tool > a {
+        display: inline-block;
+        width: 60px;
+        height: 48px;
+        border: 2px solid #e3e3e3;
+        text-align: center;
+        color: #999; }
+        .products.lists .product .produt-tool-list .product-over-tool > a:hover {
+          color: #000000;
+          border-color: #000000; }
+        .products.lists .product .produt-tool-list .product-over-tool > a:last-child {
+          margin-left: 26px; }
+        .products.lists .product .produt-tool-list .product-over-tool > a i {
+          line-height: 44px; }
 
 .product-content .cd-item-wrapper {
   position: relative;
