@@ -131,7 +131,6 @@
             var heightbody = $('body').outerHeight(),
                 window_height = $(window).outerHeight(),
                 top_pos = heightbody/2-25;
-            console.log($(window).scrollTop());console.log(top_pos);
             if($(window).scrollTop() + window_height/2 >= top_pos) {
                 $('#back-to-top').fadeIn();
             } else {
@@ -142,6 +141,9 @@
             $('html, body').animate({scrollTop:0},500);
         });
         
+        if ($.fn.easyZoom) {
+            $('.easyzoom').easyZoom();
+        }
     });
 
 

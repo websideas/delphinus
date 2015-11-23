@@ -3931,6 +3931,11 @@ select.mobile-device {
       }
     }
   }
+} 
+
+.easyzoom-flyout img {
+    max-width: none !important;
+    width: auto !important;
 }
 
 .woocommerce-tabs{

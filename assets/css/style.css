@@ -3751,6 +3751,10 @@ select.mobile-device {
       .product-main .product-shareit .social_icons li a i {
         display: none; }
 
+.easyzoom-flyout img {
+  max-width: none !important;
+  width: auto !important; }
+
 .woocommerce-tabs .nav {
   padding-bottom: 30px;
   border-bottom: 2px solid #e3e3e3;

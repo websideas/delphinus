@@ -60,7 +60,7 @@
                     <div class="top-navigation-submenu">
                         <div class="shopping-bag">
                             <div class="shopping-bag-content">
-                                <!--<p class="cart_block_no_products">Your wishlist is empty.</p><!-- .cart_block_no_products-->
+                                <!--<p class="cart_block_no_products">Your wishlist is empty.</p>--><!-- .cart_block_no_products-->
                                 <div class="bag-products">
                                     <div class="bag-product">
                                         <figure>
@@ -89,7 +89,7 @@
 
                     <div class="top-navigation-submenu">
                         <div class="shopping-bag">
-                            <!--<p class="cart_block_no_products">Your cart is currently empty.</p><!-- .cart_block_no_products-->
+                            <!--<p class="cart_block_no_products">Your cart is currently empty.</p>--><!-- .cart_block_no_products-->
                             <div class="bag-products">
                                 <div class="bag-product">
                                     <figure>

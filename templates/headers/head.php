@@ -21,6 +21,8 @@
     <link href="assets/libs/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="assets/libs/owl-carousel/owl.theme.css" rel="stylesheet">
 
+    <link href="assets/css/easyzoom.css" rel="stylesheet">
+
     <!-- REVOLUTION STYLE SHEETS -->
     <link rel="stylesheet" type="text/css" href="assets/libs/revolution/css/settings.css" />
     <!-- REVOLUTION LAYERS STYLES -->
