@@ -4193,6 +4193,30 @@ table.compare tr td {
   background: #d7d7d7; }
   .rev_slider .ares .tp-bullet:hover, .rev_slider .ares .tp-bullet.selected {
     background: #000000; }
+.rev_slider .site-nav {
+  width: 46px;
+  background: none;
+  border: 2px solid #fff; }
+  .rev_slider .site-nav:before {
+    font-family: "icomoon";
+    font-size: 18px;
+    line-height: 36px; }
+  .rev_slider .site-nav.tp-rightarrow:before {
+    content: "\ebf9"; }
+  .rev_slider .site-nav.tp-leftarrow:before {
+    content: "\ea26"; }
+.rev_slider .site-pagination .tp-bullet {
+  width: 7px;
+  height: 7px;
+  background: #999999;
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%; }
+  .rev_slider .site-pagination .tp-bullet:hover, .rev_slider .site-pagination .tp-bullet.selected {
+    background: #ffffff; }
 
 /*
  * 16.2 Owl Carousel

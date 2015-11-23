@@ -4578,6 +4578,36 @@ table.compare{
       }
     }
   }
+
+  .site-nav{
+    width: 46px;
+    background: none;
+    border:2px solid #fff;
+    &:before{
+      font-family: "icomoon";
+      font-size: 18px;
+      line-height: 36px;
+    }
+    &.tp-rightarrow:before{
+      content: "\ebf9"; 
+    }
+    &.tp-leftarrow:before{
+      content: "\ea26"; 
+    }
+  } 
+
+  .site-pagination{
+    .tp-bullet{
+      width: 7px;
+      height: 7px;
+      background: #999999;
+      @include border-radius(50%);
+      &:hover,
+      &.selected{
+        background: #ffffff;
+      }
+    }
+  }
 }
 
 
