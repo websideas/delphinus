@@ -785,8 +785,8 @@ select:not([multiple]) {
     font-size: 24px;
   }
   img{
-    width: 170px;
     height: 20px;
+    
   }
   .topbar &{
     @include translate(v);

@@ -438,7 +438,7 @@ blockquote {
   blockquote:before {
     background: #000000;
     color: #ffffff;
-    content: "ΓÇ£";
+    content: "“";
     font-size: 36px;
     height: 32px;
     left: 45px;
@@ -453,7 +453,7 @@ blockquote {
     blockquote .blockquote-reverse:before {
       left: auto;
       right: 45px;
-      content: "ΓÇ¥"; }
+      content: "”"; }
   blockquote p {
     margin-bottom: 15px; }
   blockquote *:last-child {
@@ -881,7 +881,6 @@ select:not([multiple]) {
   margin: 0;
   font-size: 24px; }
 .branding img {
-  width: 170px;
   height: 20px; }
 .topbar .branding {
   position: absolute;
