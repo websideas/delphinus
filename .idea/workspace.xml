@@ -1,118 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/animate.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/easyzoom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/multi-columns-row.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/instafeed.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/js/packery.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/Supersized/progress.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/Supersized/supersized.3.2.7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/Supersized/supersized.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/font/ytp-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/font/ytp-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/font/ytp-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/images/raster.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/images/raster@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/images/raster_dot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/images/raster_dot@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/css/jquery.mb.YTPlayer.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/jquery.mb.YTPlayer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/libs/YTPlayer/jquery.mb.YTPlayer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/_mixin.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/animate.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/multi-columns-row.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/responsive.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/responsive.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/style.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/css/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/Home_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/Home_02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/Home_03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/Home_04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/Home_05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/Home_06.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/browser.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/images/intro-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/js/html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/js/jquery-1.11.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/js/modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/js/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/js/wow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/assets/libs/bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/intro/intro.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shortcode-testimonials.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/footers/footer.php" afterPath="$PROJECT_DIR$/templates/footers/foot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blank.php" afterPath="$PROJECT_DIR$/blank.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog-gird-3columns.php" afterPath="$PROJECT_DIR$/blog-gird-3columns.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog-singlepost-standard.php" afterPath="$PROJECT_DIR$/blog-singlepost-standard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/headers/head.php" afterPath="$PROJECT_DIR$/templates/headers/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage2.php" afterPath="$PROJECT_DIR$/homepage2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage3.php" afterPath="$PROJECT_DIR$/homepage3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage4.php" afterPath="$PROJECT_DIR$/homepage4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage5.php" afterPath="$PROJECT_DIR$/homepage5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage6.php" afterPath="$PROJECT_DIR$/homepage6.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intro.php" afterPath="$PROJECT_DIR$/intro.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/jquery.superfish.custom.js" afterPath="$PROJECT_DIR$/assets/js/jquery.superfish.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-404.php" afterPath="$PROJECT_DIR$/pages-404.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-about.php" afterPath="$PROJECT_DIR$/pages-about.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-blank.php" afterPath="$PROJECT_DIR$/pages-blank.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-contact.php" afterPath="$PROJECT_DIR$/pages-contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-footer-style1.php" afterPath="$PROJECT_DIR$/pages-footer-style1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-footer-style2.php" afterPath="$PROJECT_DIR$/pages-footer-style2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-footer-style3.php" afterPath="$PROJECT_DIR$/pages-footer-style3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style1.php" afterPath="$PROJECT_DIR$/pages-header-style1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style2.php" afterPath="$PROJECT_DIR$/pages-header-style2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style3.php" afterPath="$PROJECT_DIR$/pages-header-style3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style4.php" afterPath="$PROJECT_DIR$/pages-header-style4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-intro.php" afterPath="$PROJECT_DIR$/pages-intro.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/product-preview-slider.js" afterPath="$PROJECT_DIR$/assets/js/product-preview-slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/responsive.css.map" afterPath="$PROJECT_DIR$/assets/css/responsive.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/responsive.css" afterPath="$PROJECT_DIR$/assets/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/responsive.scss" afterPath="$PROJECT_DIR$/assets/css/responsive.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-banner.php" afterPath="$PROJECT_DIR$/shortcode-banner.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-button.php" afterPath="$PROJECT_DIR$/shortcode-button.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-messagebox.php" afterPath="$PROJECT_DIR$/shortcode-messagebox.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-tabs.php" afterPath="$PROJECT_DIR$/shortcode-tabs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shortcode-typography.php" afterPath="$PROJECT_DIR$/shortcode-typography.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css" afterPath="$PROJECT_DIR$/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.scss" afterPath="$PROJECT_DIR$/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-3column-sidebar.php" afterPath="$PROJECT_DIR$/woocommerce-3column-sidebar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-3column.php" afterPath="$PROJECT_DIR$/woocommerce-3column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-4column.php" afterPath="$PROJECT_DIR$/woocommerce-4column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-cart.php" afterPath="$PROJECT_DIR$/woocommerce-cart.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-checkout.php" afterPath="$PROJECT_DIR$/woocommerce-checkout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-compare.php" afterPath="$PROJECT_DIR$/woocommerce-compare.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-masonry.php" afterPath="$PROJECT_DIR$/woocommerce-masonry.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-myaccount.php" afterPath="$PROJECT_DIR$/woocommerce-myaccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-product-detailed1.php" afterPath="$PROJECT_DIR$/woocommerce-product-detailed1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-product-detailed2.php" afterPath="$PROJECT_DIR$/woocommerce-product-detailed2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-product-detailed3.php" afterPath="$PROJECT_DIR$/woocommerce-product-detailed3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-shop.php" afterPath="$PROJECT_DIR$/woocommerce-shop.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-wishlist.php" afterPath="$PROJECT_DIR$/woocommerce-wishlist.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="" />
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -132,7 +21,18 @@
     <favorites_list name="html" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="homepage6.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/homepage6.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.31578946">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -343,7 +243,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1916" height="1002" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -356,7 +256,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22025052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22025052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -655,14 +555,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/homepage6.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5122807">
-          <caret line="435" column="32" selection-start-line="435" selection-start-column="32" selection-end-line="435" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.5">
@@ -807,6 +699,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4385965">
           <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/homepage6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31578946">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
           <folding />
         </state>
       </provider>
