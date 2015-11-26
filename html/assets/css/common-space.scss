@@ -1,0 +1,39 @@
+/*
+ * Title:   Common Spacing and Padding Style File
+ * Author:  http://themeforest.net/user/Kite-Themes
+ */
+
+.mar-top{  margin-top: 90px;  }
+.mar-bottom{  margin-bottom: 90px;  }
+.mar-xlg{ margin: 360px 0; }
+.mar-top-xlg{  margin-top: 360px;  }
+.mar-bottom-xlg{  margin-bottom: 360px;  }
+.mar-lg{ margin: 150px 0; }
+.mar-top-lg{  margin-top: 150px;  }
+.mar-bottom-lg{  margin-bottom: 150px;  }
+
+
+.pad-top{  padding-top: 190px;  }
+.pad-bottom{  padding-bottom: 190px;  }
+.pad-xlg{ padding: 360px 0; }
+.pad-top-xlg{  padding-top: 360px;  }
+.pad-bottom-xlg{  padding-bottom: 360px;  }
+.pad-lg{ padding: 150px 0; }
+.pad-top-lg{  padding-top: 150px; }
+.pad-bottom-lg{  padding-bottom: 150px; }
+
+
+$numbers: 5, 10, 15, 20, 30, 40, 50, 60, 70, 80, 90;
+@each $number in $numbers {
+  .mar-top-#{$number} {  margin-top: #{$number}px;  }
+  .mar-bottom-#{$number} {  margin-bottom: #{$number}px;  }
+  .pad-top-#{$number} {  padding-top: #{$number}px;  }
+  .pad-bottom-#{$number} {  padding-bottom: #{$number}px;  }
+}
+
+.remove-mar-top {  margin-top: 0!important;  }
+.remove-mar-bottom {  margin-bottom: 0!important;  }
+.no-margin {  margin: 0!important;  }
+.remove-pad-top {  padding-top: 0!important;  }
+.remove-pad-bottom {  padding-bottom: 0!important;  }
+.no-padding {  padding: 0!important; }

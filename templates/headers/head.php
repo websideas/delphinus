@@ -81,7 +81,7 @@
                     C73.9,91.9,77.5,95.4,81.9,95.4z"/>
             </svg>
         </div>
-        <div class="progress-bar-number">80%</div>
+        <div class="progress-bar-number">0%</div>
     </div>
 </div>
 

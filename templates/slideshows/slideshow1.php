@@ -112,7 +112,7 @@
                     <!-- LAYER NR. 2 -->
                     <div class="tp-caption"
                          data-x="center" data-hoffset=""
-                         data-y="center" data-voffset=""
+                         data-y="center" data-voffset="-100"
                          data-width="['auto','auto']"
                          data-height="['auto','auto']"
                          data-transform_idle="o:1;"
@@ -129,7 +129,7 @@
                     <!-- LAYER NR. 3 -->
                     <div class="tp-caption"
                          data-x="center" data-hoffset=""
-                         data-y="center" data-voffset="100"
+                         data-y="center" data-voffset="-20"
                          data-width="['355','355']"
                          data-height="['auto','auto']"
                          data-transform_idle="o:1;"
