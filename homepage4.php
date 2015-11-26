@@ -670,6 +670,6 @@ include_once('templates/slideshows/slideshow2.php');
 <?php
 
 include_once('templates/footers/footer3.php');
-include_once('templates/footers/footer.php');
+include_once('templates/footers/foot.php');
 
 

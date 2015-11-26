@@ -17,6 +17,6 @@ include_once('templates/headers/head.php');
 
 
 <?php
-include_once('templates/footers/footer.php');
+include_once('templates/footers/foot.php');
 
 

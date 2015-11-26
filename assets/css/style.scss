@@ -460,6 +460,9 @@ select {
   background: $gray-bg;
   cursor: pointer;
   color: $gray-text;
+  &:focus {
+    outline: 0;
+  }
 }
 
 select:not([multiple]) {
@@ -473,6 +476,29 @@ select:not([multiple]) {
   @include css3-prefix('box-shadow', 'none');
   :focus {
     @include css3-prefix('box-shadow', 'none');
+  }
+}
+
+.select-icon{
+  display: inline-block;
+  position: relative;
+  &:after{
+    content: "";
+    display: block;
+    pointer-events: none;
+    right: 5px;
+    z-index: 1;
+    @include FontAwesome('\f107');
+    @include translate(y);
+    font-size: 12px;
+
+  }
+  select{
+    border: none;
+    font-size: 14px;
+    background: none;
+    padding: 0 25px 0 0;
+    height: auto;
   }
 }
 
@@ -786,7 +812,7 @@ select:not([multiple]) {
   }
   img{
     height: 20px;
-    
+
   }
   .topbar &{
     @include translate(v);
@@ -3153,99 +3179,6 @@ ul.style-list{
   }
 }
 
-.bootstrap-select {
-  min-width: 120px;
-  text-align: left;
-  > .dropdown-toggle {
-    background: none;
-    border: medium none;
-    height: auto;
-    padding: 0;
-    width: 100%;
-    color: $gray-darker;
-    font-size: 14px;
-  }
-  &.btn-group{
-    .dropdown-toggle{
-      @include box-shadow(0, 0 ,0, transparent);
-    }
-  }
-  .caret{
-    border: none;
-    height: auto;
-    margin-left: 10px;
-    width: auto;
-    &:before{
-      @include FontAwesome('\f107');
-    }
-  }
-}
-
-
-
-.dropdown-menu {
-  min-width: 100%;
-  z-index: 1035;
-  @include border-radius(0);
-
-  &.inner {
-    position: static;
-    float: none;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-
-  li {
-    position: relative;
-
-    &.active small {
-      color: #fff;
-    }
-
-    &.disabled a {
-      cursor: not-allowed;
-    }
-
-    a {
-      cursor: pointer;
-
-      &.opt {
-        position: relative;
-        padding-left: 2.25em;
-      }
-
-      span.check-mark {
-        display: none;
-      }
-
-      span.text {
-        display: inline-block;
-      }
-    }
-
-    small {
-      padding-left: 0.5em;
-    }
-  }
-}
-
-select.bs-select-hidden,
-select.selectpicker {
-  display: none !important;
-}
-
-select.mobile-device {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  display: block !important;
-  width: 100%;
-  height: 100% !important;
-  opacity: 0;
-}
 
 
 
@@ -3256,8 +3189,8 @@ select.mobile-device {
 
   .products-sortby{
     float: left;
-    .bootstrap-select{
-      margin-right: 68px;
+    .select-icon{
+      margin-right: 65px;
       &:last-child{
         margin-right: 0;
       }
@@ -4654,6 +4587,7 @@ table.compare{
   margin-right: -15px;
   margin-bottom: 50px;
   position: relative;
+  cursor: url(../images/drag.png) 16 9, ew-resize !important;
 
   &.no-gutters{
     margin-left: 0;

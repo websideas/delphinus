@@ -69,6 +69,6 @@ include_once('templates/headers/header1.php');
 <?php
 
 include_once('templates/footers/footer4.php');
-include_once('templates/footers/footer.php');
+include_once('templates/footers/foot.php');
 
 

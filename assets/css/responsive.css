@@ -163,8 +163,10 @@
     .page-header .text-right {
       text-align: center; }
 
-  .products-tools .products-sortby .bootstrap-select {
+  .products-tools .products-sortby .select-icon {
     margin-right: 15px; }
+    .products-tools .products-sortby .select-icon:last-child {
+      margin-right: 0; }
   .products-tools .result-count {
     display: none; }
   .products-tools .grid-list {
@@ -275,10 +277,10 @@
     float: none;
     margin-bottom: 20px; }
 
-  .products-tools .products-sortby .bootstrap-select {
+  .products-tools .products-sortby .select-icon {
     margin-right: 10px; }
-    .products-tools .products-sortby .bootstrap-select .caret {
-      margin-left: 0; }
+    .products-tools .products-sortby .select-icon:last-child {
+      margin-right: 0; }
   .products-tools .grid-list {
     display: none; }
 

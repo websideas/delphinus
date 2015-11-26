@@ -22,9 +22,7 @@
 
         // Page loader
         $("body").imagesLoaded(function(){
-            //$(".page-loader").fadeOut("slow",function(){
-                init_wow();
-            //});
+            init_wow();
         });
 
         $(window).trigger("scroll");
@@ -36,7 +34,6 @@
      Scripts resize
      --------------------------------------------- */
     $(window).resize(function(){
-        init_dataWidth();
         init_js_height();
         init_productsMasonry();
 
@@ -60,120 +57,64 @@
 
     });
 
+
+
     /* ---------------------------------------------
      Scripts ready
      --------------------------------------------- */
-    $(document).ready(function(){
+    init_SearchFull();
+    init_SearchFull();
+    init_MainMenu();
+    init_MobileMenu();
+    init_rating();
+    init_carousel();
+    init_revolution();
+    init_parallax();
+    init_shortcodes();
+    init_VCGoogleMap();
+    init_popup();
+    init_quickview();
+    init_backtotop();
+    init_matchHeight();
+    init_productsMasonry();
+    init_productCountdown();
+    init_gridlistToggle();
+    init_backtotop();
 
-        init_dataWidth();
-        //init_scrolling();
-        init_SearchFull();
-        init_MainMenu();
-        init_MobileMenu();
-        init_rating();
-        init_carousel();
-        init_revolution();
-        init_parallax();
-        init_shortcodes();
-        init_VCGoogleMap();
-        init_popup();
-        init_quickview();
-        init_backtotop();
-        init_matchHeight();
-
-        init_productsMasonry();
-        init_productCountdown();
-        init_gridlistToggle();
-
-        init_productcarouselwoo($("#sync1"), $("#sync2"));
+    init_productcarouselwoo($("#sync1"), $("#sync2"));
+    init_ecommerce();
 
 
-        $('.products-sortby select').selectpicker({
-            styleBase: '',
-            style: ''
-        });
-
-        var current_min_price = 0,
-            current_max_price = 500;
-
-        $( '.price_slider' ).slider({
-            range: true,
-            min: 0,
-            max: 700,
-            values: [ current_min_price, current_max_price ],
-            create: function() {
-                $( '.price_label span.from' ).html( '$' + current_min_price );
-                $( '.price_label span.to' ).html( '$' + current_max_price );
-            },
-            slide: function( event, ui ) {
-                $( '.price_label span.from' ).html( '$' + ui.values[ 0 ] );
-                $( '.price_label span.to' ).html( '$' + ui.values[ 1 ] );
-            }
-        });
 
 
-        $('#payment .payment_methods li label .input-radio').change(function(){
-            var val = $('#payment .payment_methods li label .input-radio:checked').val();
-            $('#payment .payment_box').hide();
-            $('#payment .payment_method_'+val).show(); 
-        }).change();
 
 
-        $('.kt-tab-container').tabs();
-        $('.kt-accordion').accordion({ 'heightStyle': 'content' });
 
-        /* ---------------------------------------------
-         Back to top
-         --------------------------------------------- */
+    /* ---------------------------------------------
+     Back to top
+     --------------------------------------------- */
+    function init_backtotop(){
+
         $('body').append('<div id="back-to-top"><i class="fa fa-angle-up"></i></div>');
-        $('#back-to-top').hide();
+        var $backtotop = $('#back-to-top');
+
+        $backtotop.hide();
+
+
         $(window).scroll(function() {
             var heightbody = $('body').outerHeight(),
                 window_height = $(window).outerHeight(),
                 top_pos = heightbody/2-25;
             if($(window).scrollTop() + window_height/2 >= top_pos) {
-                $('#back-to-top').fadeIn();
+                $backtotop.fadeIn();
             } else {
-                $('#back-to-top').fadeOut();
+                $backtotop.fadeOut();
             }
         });
-        $('#back-to-top').click(function() {
+
+        $backtotop.on('click', function(e) {
+            e.preventDefault();
             $('html, body').animate({scrollTop:0},500);
-        });
-        
-        if ($.fn.easyZoom) {
-            $('.easyzoom').easyZoom();
-        }
-    });
-
-
-    /* ---------------------------------------------
-     Product Countdown
-     --------------------------------------------- */
-    function init_productCountdown() {
-        var coming_html = '<div class="countdown-wrap">'
-            +'<div class="value-time">%D</div>'
-            +'<div class="title">Days</div>'
-            +'</div>'
-            +'<div class="countdown-wrap">'
-            +'<div class="value-time">%H</div>'
-            +'<div class="title">Hours</div>'
-            +'</div>'
-            +'<div class="countdown-wrap">'
-            +'<div class="value-time">%M</div>'
-            +'<div class="title">Min</div>'
-            +'</div>'
-            +'<div class="countdown-wrap">'
-            +'<div class="value-time">%S</div>'
-            +'<div class="title">Sec</div>'
-            +'</div>';
-
-        $('.coming-soon').each(function () {
-            var date = $(this).data('date');
-            $(this).countdown(date, function (event) {
-                $(this).html( event.strftime(coming_html) );
-            });
-
         });
     }
 
@@ -289,53 +230,42 @@
             });
     }
 
-    /* ==============================================
-     Add data width to body Script
-     =============================================== */
-    function init_dataWidth(){
-        var InitStr = $(window).width();
-        $('body').attr('data-width',InitStr);
-    }
-
-
     /* ---------------------------------------------
      Height 100%
      --------------------------------------------- */
     function init_js_height(){
-
         $(".item-height-window").css('height', $(window).height());
         $(".item-height-parent").each(function(){
             $(this).height($(this).parent().first().height());
         });
-
     }
 
     /* ---------------------------------------------
      Shortcodes
      --------------------------------------------- */
     function init_shortcodes() {
-
         // Tooltips (bootstrap plugin activated)
         $('[data-toggle="tooltip"]').tooltip({
             container:"body",
             delay: { "show": 100, "hide": 100 }
         });
+
+        $('.kt-tab-container').tabs();
+        $('.kt-accordion').accordion({ 'heightStyle': 'content' });
+
     }
 
     /* ---------------------------------------------
      WOW animations
      --------------------------------------------- */
-
     function init_wow(){
         var wow = new WOW({
             mobile: false
         });
-
         if ($("body").hasClass("appear-animate")){
             wow.init();
         }
     }
-
 
 
     /* ---------------------------------------------
@@ -390,7 +320,6 @@
      --------------------------------------------- */
     function init_MobileMenu(){
 
-
         $('body')
             .on('click','#hamburger-icon',function(e){
                 e.preventDefault();
@@ -421,20 +350,6 @@
     }
 
 
-    /* ---------------------------------------------
-     Back to top
-     --------------------------------------------- */
-    function init_backtotop(){
-        var backtotop = $('#backtotop').hide();
-        $(window).scroll(function() {
-            ($(window).scrollTop() != 0) ? backtotop.fadeIn() : backtotop.fadeOut();
-        });
-        backtotop.click(function(e) {
-            e.preventDefault();
-            $('html, body').animate({scrollTop:0},500);
-        });
-    }
-
     /* -------------------------------------------
     Parallax Effect
     --------------------------------------------- */
@@ -452,35 +367,6 @@
             $(".parallax-7").parallax("50%", 0.7);
         }
 
-    }
-
-    /* ---------------------------------------------
-     Smooth Scrolling
-     --------------------------------------------- */
-    function init_scrolling() {
-
-        $('body')
-            .on('click', 'a[href*=#]:not([href=#])', function (e) {
-                if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 2000);
-                        return false;
-                    }
-                }
-            }).on('click', 'a:not([href*=mailto],[href*=tel],[href*=#])', function (e) {
-                if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') || location.hostname === this.hostname) {
-                    $(".page-loader").fadeIn("slow");
-                    var href = $(this).attr("href");
-                    $("#page").fadeOut("slow", function () {
-                        window.location = href;
-                    });
-                    return false;
-                }
-            });
     }
 
     
@@ -513,8 +399,9 @@
      --------------------------------------------- */
     function init_popup(){
         var cookie_popup = $.cookie('popup_newletter');
-        if($('#popup-wrap').length > 0 && cookie_popup != 1){
-            var time_show = $('#popup-wrap').data('timeshow');
+        var $popup = $('#popup-wrap');
+        if($popup.length > 0 && cookie_popup != 1){
+            var time_show = $popup.data('timeshow');
 
             setTimeout(function(){
                 $.magnificPopup.open({
@@ -532,6 +419,77 @@
         }
     }
 
+
+    /* ---------------------------------------------
+     All function for ecommerce
+     --------------------------------------------- */
+
+    function init_ecommerce(){
+
+        /*$('.products-sortby select').selectpicker({
+            styleBase: '',
+            style: ''
+        });*/
+
+        var current_min_price = 0,
+            current_max_price = 500;
+
+        $( '.price_slider' ).slider({
+            range: true,
+            min: 0,
+            max: 700,
+            values: [ current_min_price, current_max_price ],
+            create: function() {
+                $( '.price_label span.from' ).html( '$' + current_min_price );
+                $( '.price_label span.to' ).html( '$' + current_max_price );
+            },
+            slide: function( event, ui ) {
+                $( '.price_label span.from' ).html( '$' + ui.values[ 0 ] );
+                $( '.price_label span.to' ).html( '$' + ui.values[ 1 ] );
+            }
+        });
+
+
+        $('#payment .payment_methods li label .input-radio').change(function(){
+            var val = $('#payment .payment_methods li label .input-radio:checked').val();
+            $('#payment .payment_box').hide();
+            $('#payment .payment_method_'+val).show();
+        });
+
+        if (typeof $.fn.easyZoom !== "undefined") {
+            $('.easyzoom').easyZoom();
+        }
+
+    }
+
+    /* ---------------------------------------------
+     Product Countdown
+     --------------------------------------------- */
+    function init_productCountdown() {
+        var coming_html = '<div class="countdown-wrap">'
+            +'<div class="value-time">%D</div>'
+            +'<div class="title">Days</div>'
+            +'</div>'
+            +'<div class="countdown-wrap">'
+            +'<div class="value-time">%H</div>'
+            +'<div class="title">Hours</div>'
+            +'</div>'
+            +'<div class="countdown-wrap">'
+            +'<div class="value-time">%M</div>'
+            +'<div class="title">Min</div>'
+            +'</div>'
+            +'<div class="countdown-wrap">'
+            +'<div class="value-time">%S</div>'
+            +'<div class="title">Sec</div>'
+            +'</div>';
+
+        $('.coming-soon').each(function () {
+            var date = $(this).data('date');
+            $(this).countdown(date, function (event) {
+                $(this).html( event.strftime(coming_html) );
+            });
+        });
+    }
 
     /* ---------------------------------------------
      QickView

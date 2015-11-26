@@ -132,7 +132,6 @@
                         }
                         
                     }else{
-                        console.log('call');
                         $li_position = $ul.offset().left - $parentOffset.offset().left + $ul_width;
                         if( $li_position > $parentOffset_width){
                             $ul.addClass('right-overflow');

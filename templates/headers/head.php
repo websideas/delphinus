@@ -11,17 +11,10 @@
     <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cMontserrat:400,700%7cCrete+Round:400italic%7cVollkorn:400,400italic' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/multi-columns-row.css" />
-    <link rel="stylesheet" href="assets/css/animate.min.css" />
-    <link rel="stylesheet" href="assets/libs/magnificPopup/magnific-popup.css" />
-    <link rel="stylesheet" href="assets/libs/magnificPopup/magnific-effect.css" />
-
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/fonts/Lineicons/style.css" />
-    <link href="assets/libs/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="assets/libs/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugins.css" />
 
-    <link href="assets/css/easyzoom.css" rel="stylesheet">
 
     <!-- REVOLUTION STYLE SHEETS -->
     <link rel="stylesheet" type="text/css" href="assets/libs/revolution/css/settings.css" />

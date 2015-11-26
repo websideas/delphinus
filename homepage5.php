@@ -96,22 +96,21 @@ include_once('templates/slideshows/slideshow2.php');
         <div class="page-section">
             <div class="container">
 
-                <div class="kt-heading-wrapper">
-                    <div class="kt-heading-divider wow fadeInUp">
+                <div class="kt-heading-wrapper wow fadeInUp">
+                    <div class="kt-heading-divider ">
                         <svg version="1.1" x="0px" y="0px"
                              viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
-                <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
-                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
-                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
-                            <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
-                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
-                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
-                </svg>
+                            <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
+                                l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
+                                c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
+                                        <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
+                                l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
+                                c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
+                            </svg>
                     </div>
-                    <h3 class="kt-heading-title wow fadeInUp" data-wow-delay="200ms">LASTEST PRODUCT</h3>
-                    <div class="kt-heading-subtitle wow fadeInUp" data-wow-delay="400ms"><a href="#">see all</a></div>
+                    <h3 class="kt-heading-title">LASTEST PRODUCT</h3>
+                    <div class="kt-heading-subtitle"><a href="#">see all</a></div>
                 </div>
-
 
                 <div class="products">
 
@@ -250,14 +249,14 @@ include_once('templates/slideshows/slideshow2.php');
         <div class="page-section bg-gray no-padding">
             <div class="container">
                 <div class="collection-wrapper">
-                    <div class="left-collection wow bounceInLeft" data-wow-delay="400ms">
+                    <div class="left-collection" >
                         <img class="img-responsive" alt="" src="assets/images/collection-1.png" />
                     </div>
-                    <div class="right-collection wow bounceInRight" data-wow-delay="400ms">
+                    <div class="right-collection" data-wow-delay="400ms">
                         <img class="img-responsive" alt="" src="assets/images/collection-3.png" />
                     </div>
                     <div class="front-collection">
-                        <div class="collection-image wow fadeIn">
+                        <div class="collection-image">
                             <img class="img-responsive" alt="" src="assets/images/collection-2.png" />
                         </div>
                         <div class="collection-content">
@@ -328,7 +327,7 @@ include_once('templates/slideshows/slideshow2.php');
         <div class="page-section pad-xlg bg-dark-alfa-40 parallax-2" style="background-image: url('assets/images/background/bg-01.jpg') ">
             <div class="page-section-inner">
                 <div class="container">
-                    <h2 class="text-center white wow bounceInRight">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
+                    <h2 class="text-center white">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
                 </div>
             </div>
         </div>
@@ -337,7 +336,7 @@ include_once('templates/slideshows/slideshow2.php');
         <div class="page-section">
             <div class="container">
                 <div class="kt-heading-wrapper">
-                    <div class="kt-heading-divider wow fadeInUp">
+                    <div class="kt-heading-divider">
                         <svg version="1.1" x="0px" y="0px"
                              viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
                 <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
@@ -348,8 +347,8 @@ include_once('templates/slideshows/slideshow2.php');
                     c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
                 </svg>
                     </div>
-                    <h3 class="kt-heading-title wow fadeInUp" data-wow-delay="200ms">LASTEST from blog</h3>
-                    <div class="kt-heading-subtitle wow fadeInUp" data-wow-delay="400ms"><a href="#">see all</a></div>
+                    <h3 class="kt-heading-title">LASTEST from blog</h3>
+                    <div class="kt-heading-subtitle"><a href="#">see all</a></div>
                 </div>
 
                 <div class="blog-posts">
@@ -405,6 +404,6 @@ include_once('templates/slideshows/slideshow2.php');
 <?php
 
 include_once('templates/footers/footer1.php');
-include_once('templates/footers/footer.php');
+include_once('templates/footers/foot.php');
 
 

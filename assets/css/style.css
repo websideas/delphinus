@@ -543,6 +543,8 @@ select {
   background: #f6f6f6;
   cursor: pointer;
   color: #999999; }
+  select:focus {
+    outline: 0; }
 
 select:not([multiple]) {
   -webkit-box-shadow: none;
@@ -579,6 +581,35 @@ select:not([multiple]) {
     -ms-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none; }
+
+.select-icon {
+  display: inline-block;
+  position: relative; }
+  .select-icon:after {
+    content: "";
+    display: block;
+    pointer-events: none;
+    right: 5px;
+    z-index: 1;
+    font-family: FontAwesome;
+    content: "";
+    font-style: normal;
+    font-weight: normal;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -khtml-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 12px; }
+  .select-icon select {
+    border: none;
+    font-size: 14px;
+    background: none;
+    padding: 0 25px 0 0;
+    height: auto; }
 
 /* ==============================
    5. Buttons
@@ -2991,92 +3022,15 @@ ul.style-list {
   .stars a.active {
     color: #6fd9e9; }
 
-.bootstrap-select {
-  min-width: 120px;
-  text-align: left; }
-  .bootstrap-select > .dropdown-toggle {
-    background: none;
-    border: medium none;
-    height: auto;
-    padding: 0;
-    width: 100%;
-    color: #666666;
-    font-size: 14px; }
-  .bootstrap-select.btn-group .dropdown-toggle {
-    -webkit-box-shadow: 0 0 0 transparent;
-    -khtml-box-shadow: 0 0 0 transparent;
-    -moz-box-shadow: 0 0 0 transparent;
-    -ms-box-shadow: 0 0 0 transparent;
-    -o-box-shadow: 0 0 0 transparent;
-    box-shadow: 0 0 0 transparent; }
-  .bootstrap-select .caret {
-    border: none;
-    height: auto;
-    margin-left: 10px;
-    width: auto; }
-    .bootstrap-select .caret:before {
-      font-family: FontAwesome;
-      content: "";
-      font-style: normal;
-      font-weight: normal; }
-
-.dropdown-menu {
-  min-width: 100%;
-  z-index: 1035;
-  -webkit-border-radius: 0;
-  -khtml-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0; }
-  .dropdown-menu.inner {
-    position: static;
-    float: none;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none; }
-  .dropdown-menu li {
-    position: relative; }
-    .dropdown-menu li.active small {
-      color: #fff; }
-    .dropdown-menu li.disabled a {
-      cursor: not-allowed; }
-    .dropdown-menu li a {
-      cursor: pointer; }
-      .dropdown-menu li a.opt {
-        position: relative;
-        padding-left: 2.25em; }
-      .dropdown-menu li a span.check-mark {
-        display: none; }
-      .dropdown-menu li a span.text {
-        display: inline-block; }
-    .dropdown-menu li small {
-      padding-left: 0.5em; }
-
-select.bs-select-hidden,
-select.selectpicker {
-  display: none !important; }
-
-select.mobile-device {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  display: block !important;
-  width: 100%;
-  height: 100% !important;
-  opacity: 0; }
-
 .products-tools {
   border-bottom: 2px solid #f6f6f6;
   margin-bottom: 50px;
   padding-bottom: 15px; }
   .products-tools .products-sortby {
     float: left; }
-    .products-tools .products-sortby .bootstrap-select {
-      margin-right: 68px; }
-      .products-tools .products-sortby .bootstrap-select:last-child {
+    .products-tools .products-sortby .select-icon {
+      margin-right: 65px; }
+      .products-tools .products-sortby .select-icon:last-child {
         margin-right: 0; }
   .products-tools .grid-list,
   .products-tools .result-count {
@@ -4305,7 +4259,8 @@ table.compare tr td {
   margin-left: -15px;
   margin-right: -15px;
   margin-bottom: 50px;
-  position: relative; }
+  position: relative;
+  cursor: url(../images/drag.png) 16 9, ew-resize !important; }
   .owl-carousel-kt.no-gutters {
     margin-left: 0;
     margin-right: 0; }

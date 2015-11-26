@@ -36,19 +36,22 @@ include_once('templates/headers/header2.php');
 
                         <div class="products-tools clearfix">
                             <form class="products-sortby" method="get" action="#">
-                                <select name="showby">
-                                    <option value="15">Show by : &nbsp; 15</option>
-                                    <option value="30">Show by : &nbsp; 30</option>
-                                    <option value="45">Show by : &nbsp; 45</option>
-                                    <option value="-1">Show by : &nbsp; All</option>
-                                </select>
-
-                                <select name="showby">
-                                    <option value="selling">Sort by : &nbsp; Best selling</option>
-                                    <option value="popularity">Sort by : &nbsp; Popularity</option>
-                                    <option value="rating">Sort by : &nbsp; Average rating</option>
-                                    <option value="date">Sort by : &nbsp; Newness</option>
-                                </select>
+                                <div class="select-icon">
+                                    <select name="showby">
+                                        <option value="15">Show by : &nbsp; 15</option>
+                                        <option value="30">Show by : &nbsp; 30</option>
+                                        <option value="45">Show by : &nbsp; 45</option>
+                                        <option value="-1">Show by : &nbsp; All</option>
+                                    </select>
+                                </div>
+                                <div class="select-icon">
+                                    <select name="shortby">
+                                        <option value="selling">Sort by : &nbsp; Best selling</option>
+                                        <option value="popularity">Sort by : &nbsp; Popularity</option>
+                                        <option value="rating">Sort by : &nbsp; Average rating</option>
+                                        <option value="date">Sort by : &nbsp; Newness</option>
+                                    </select>
+                                </div>
                             </form>
                             <div class="result-count">Items 1 - 15 of 28 total</div>
                             <ul class="grid-list">
@@ -433,6 +436,6 @@ include_once('templates/headers/header2.php');
 <?php
 
 include_once('templates/footers/footer3.php');
-include_once('templates/footers/footer.php');
+include_once('templates/footers/foot.php');
 
 

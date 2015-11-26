@@ -189,6 +189,6 @@ include_once('templates/slideshows/slideshow1.php');
 <?php
 
 include_once('templates/footers/footer2.php');
-include_once('templates/footers/footer.php');
+include_once('templates/footers/foot.php');
 
 
