@@ -1051,7 +1051,7 @@ select:not([multiple]) {
         > div{
           color: $gray-text;
           line-height: 25px;
-          font-size: 12px;
+          font-size: 13px;
         }
       }
       .remove{
@@ -2498,6 +2498,13 @@ ul.style-list{
   &:hover{
     img{
       @include transform(scale(1.2));
+    }
+  }
+  &.no-effect{
+    &:hover{
+      img{
+        @include transform(scale(1));
+      }
     }
   }
 }
@@ -4110,6 +4117,7 @@ form.checkout{
         position: relative;
         font-size: 14px;
         line-height: 24px;
+        display: none;
         &:after{
           border-left: 8px solid transparent;
           border-right: 8px solid transparent;

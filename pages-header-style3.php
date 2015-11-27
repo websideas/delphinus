@@ -1,13 +1,16 @@
 <?php
 
+global $revolution;
+$revolution = 'slideshow3';
+
 include_once('templates/headers/head.php');
 include_once('templates/headers/header3.php');
 include_once('templates/slideshows/slideshow1.php');
 
 ?>
 
-
     <div id="main">
+
         <div class="page-section">
             <div class="kt-heading-wrapper remove-mar-bottom">
                 <div class="kt-heading-divider">
@@ -22,7 +25,7 @@ include_once('templates/slideshows/slideshow1.php');
                 </svg>
                 </div>
                 <h3 class="kt-heading-title">features Product</h3>
-                <div class="kt-heading-subtitle"><a href="#">see all</a></div>
+                <div class="kt-heading-subtitle" ><a href="#">see all</a></div>
             </div>
 
             <div id="rev_slider_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="showcase-carousel">
@@ -38,25 +41,11 @@ include_once('templates/slideshows/slideshow1.php');
                             <div class="tp-caption product-attr"
                                  data-x="center"
                                  data-y="bottom"
+                                 data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"woocommerce-product-detailed1.php"}]'
                                  data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
                                  data-transform_out="opacity:0;s:10;s:20;e:Linear.easeNone;">
                                 <h4>Afteroom Chair 1</h4>
                                 <div>$340.00</div>
-                            </div>
-                        </li>
-                        <!-- SLIDE  -->
-                        <li data-transition="zoomout" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  >
-                            <!-- MAIN IMAGE -->
-                            <img src="assets/images/slideshow/product-featured-2.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" />
-                            <!-- LAYERS -->
-
-                            <div class="tp-caption product-attr"
-                                 data-x="center"
-                                 data-y="bottom"
-                                 data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
-                                 data-transform_out="opacity:10;s:10;s:10;e:Linear.easeNone;">
-                                <h4>Afteroom Chair 2</h4>
-                                <div>$440.00</div>
                             </div>
                         </li>
                         <!-- SLIDE  -->
@@ -68,12 +57,29 @@ include_once('templates/slideshows/slideshow1.php');
                             <div class="tp-caption product-attr"
                                  data-x="center"
                                  data-y="bottom"
+                                 data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"woocommerce-product-detailed1.php"}]'
                                  data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
                                  data-transform_out="opacity:0;s:10;s:10;e:Linear.easeNone;" >
                                 <h4>Afteroom Chair 3</h4>
                                 <div>$540.00</div>
                             </div>
 
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-transition="zoomout" data-slotamount="default"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  >
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/images/slideshow/product-featured-2.jpg" alt="" data-bgposition="center center" data-bgfit="contain" data-bgrepeat="no-repeat" />
+                            <!-- LAYERS -->
+
+                            <div class="tp-caption product-attr"
+                                 data-x="center"
+                                 data-y="bottom"
+                                 data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"woocommerce-product-detailed1.php"}]'
+                                 data-transform_in="opacity:0;s:10;s:10;e:Linear.easeNone;"
+                                 data-transform_out="opacity:10;s:10;s:10;e:Linear.easeNone;">
+                                <h4>Afteroom Chair 2</h4>
+                                <div>$440.00</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -149,6 +155,7 @@ include_once('templates/slideshows/slideshow1.php');
 
         <div class="page-section">
             <div class="container">
+
                 <div class="kt-heading-wrapper">
                     <div class="kt-heading-divider">
                         <svg version="1.1" x="0px" y="0px"
@@ -169,7 +176,7 @@ include_once('templates/slideshows/slideshow1.php');
 
                     <div class="owl-carousel-kt remove-mar-bottom navigation-center">
                         <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4, "desktopsmall" : 3, "tablet" : 2, "mobile" : 1}'>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="100ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
@@ -190,7 +197,7 @@ include_once('templates/slideshows/slideshow1.php');
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="200ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
@@ -211,7 +218,7 @@ include_once('templates/slideshows/slideshow1.php');
                                 <div class="product-price">$340.00</div>
                             </div>
 
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="300ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-3.jpg" alt=""/>
@@ -231,10 +238,10 @@ include_once('templates/slideshows/slideshow1.php');
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="400ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
-                                        <img class="first-img" src="assets/images/product/product-4.jpg" alt=""/>
+                                        <img class="first-img" src="assets/images/product/product-21.jpg" alt=""/>
                                         <img class="second-img" src="assets/images/product/product-1.jpg" alt=""/>
                                     </a>
                                     <div class="product-over-tool">
@@ -252,7 +259,7 @@ include_once('templates/slideshows/slideshow1.php');
                                 <div class="product-price">$340.00</div>
                             </div>
 
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="500ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-1.jpg" alt=""/>
@@ -272,7 +279,7 @@ include_once('templates/slideshows/slideshow1.php');
                                 </h3>
                                 <div class="product-price">$340.00</div>
                             </div>
-                            <div class="product">
+                            <div class="product wow fadeInUp" data-wow-delay="600ms">
                                 <div class="product-content">
                                     <a href="woocommerce-product-detailed1.php" class="product-thumbnail">
                                         <img class="first-img" src="assets/images/product/product-2.jpg" alt=""/>
@@ -306,14 +313,14 @@ include_once('templates/slideshows/slideshow1.php');
         <div class="page-section pad-xlg bg-dark-alfa-40 parallax-1" style="background-image: url('assets/images/background/bg-01.jpg') ">
             <div class="page-section-inner">
                 <div class="container">
-                    <h2 class="text-center white">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
+                    <h2 class="text-center white no-margin">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
                 </div>
             </div>
         </div>
 
 
 
-        <div class="page-section">
+        <div class="page-section pad-bottom-35">
             <div class="container">
                 <div class="kt-heading-wrapper">
                     <div class="kt-heading-divider">
@@ -408,7 +415,6 @@ include_once('templates/slideshows/slideshow1.php');
 
 
     </div><!-- #main -->
-
 
 
 <?php

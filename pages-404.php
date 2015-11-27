@@ -1,4 +1,7 @@
 <?php
+global $disableloading, $page404;
+$disableloading = true;
+$page404 = true;
 
 include_once('templates/headers/head.php');
 

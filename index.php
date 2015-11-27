@@ -1,5 +1,8 @@
 <?php
 
+global $revolution;
+$revolution = 'slideshow3';
+
 include_once('templates/headers/head.php');
 include_once('templates/headers/header1.php');
 include_once('templates/slideshows/slideshow1.php');
@@ -153,7 +156,7 @@ include_once('templates/slideshows/slideshow1.php');
     <div class="page-section">
         <div class="container">
 
-            <div class="kt-heading-wrapper wow fadeInUp">
+            <div class="kt-heading-wrapper">
                 <div class="kt-heading-divider">
                     <svg version="1.1" x="0px" y="0px"
                          viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
@@ -337,7 +340,7 @@ include_once('templates/slideshows/slideshow1.php');
 
             <div class="blog-posts">
                 <div class="row multi-columns-row">
-                    <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInLeft">
+                    <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                         <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                             <img src="assets/images/blog/blog-01.jpg" alt=""/>
                         </a>
@@ -351,7 +354,7 @@ include_once('templates/slideshows/slideshow1.php');
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                     </div>
 
-                    <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInUp">
+                    <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                         <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                             <img src="assets/images/blog/blog-02.jpg" alt=""/>
                         </a>
@@ -365,7 +368,7 @@ include_once('templates/slideshows/slideshow1.php');
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                     </div>
 
-                    <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInRight">
+                    <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                         <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                             <img src="assets/images/blog/blog-03.jpg" alt=""/>
                         </a>
@@ -412,7 +415,6 @@ include_once('templates/slideshows/slideshow1.php');
 
 
 </div><!-- #main -->
-
 
 
 <?php

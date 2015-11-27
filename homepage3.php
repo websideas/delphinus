@@ -411,14 +411,14 @@ include_once('templates/slideshows/carousel.php');
 
                 <div class="row equal_height equal_height_element">
                     <div class="col-md-8 kt_column">
-                        <div class="about-wrapper wow bounceInLeft" style="background-image: url('assets/images/background/bg-02.jpg');">
+                        <div class="about-wrapper" style="background-image: url('assets/images/background/bg-02.jpg');">
                             <h4 class="about-title">we are delphinus</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam aliquet turpis in cursus. Maecenas suscipit molestie porta. Aliquam et cursus lectus. Vestibulum sit amet nulla nec mauris condimentum porttitor et nec tellus. Morbi fermentum dui quis dolor sollicitudin, vitae sodales sapien molfermsuada fames ac turpis egestas.</p>
                             <p class="no-margin">Monday to Friday, 11 am – 6 pm<br/>Saturday, 11 am – 4 pm</p>
                         </div>
                     </div>
                     <div class="col-md-4 kt_column">
-                        <div class="newsletters-wrapper wow bounceInRight">
+                        <div class="newsletters-wrapper">
                             <h3 class="widget-title">newsletter</h3>
                             <div class="newsletters-before">Sign up to get the latest on sales, new releases and more ...</div>
                             <form class="newsletters-form" method="get" action="#">
@@ -431,18 +431,18 @@ include_once('templates/slideshows/carousel.php');
 
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="banner wow fadeInLeft" data-wow-delay="400ms">
+                        <div class="banner">
                             <img src="assets/images/banner/banner-06.jpg" alt="" />
                             <a class="banner-link" href="#"></a>
                         </div>
                     </div>
-                    <div class="col-md-4 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="col-md-4">
                         <div class="banner">
                             <img src="assets/images/banner/banner-07.jpg" alt="" />
                             <a class="banner-link" href="#"></a>
                         </div>
                     </div>
-                    <div class="col-md-4 wow fadeInRight" data-wow-delay="400ms">
+                    <div class="col-md-4">
                         <div class="banner">
                             <img src="assets/images/banner/banner-08.jpg" alt="" />
                             <a class="banner-link" href="#"></a>

@@ -34,5 +34,4 @@ if(empty($shadow)){
         </div>
     </div><!-- .navbar-container -->
     <?php include_once('templates/nav-mobile.php'); ?>
-    </div>
 </header><!-- #header -->

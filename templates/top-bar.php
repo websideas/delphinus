@@ -65,7 +65,7 @@
                                     <div class="bag-product">
                                         <figure>
                                             <a href="#" class="bag-product-img">
-                                                <img src="http://placehold.it/90x90" alt="" class="img-responsive">
+                                                <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
                                             </a>
                                         </figure>
                                         <div class="bag-product-details">
@@ -94,7 +94,7 @@
                                 <div class="bag-product">
                                     <figure>
                                         <a href="#" class="bag-product-img">
-                                            <img src="http://placehold.it/90x90" alt="" class="img-responsive">
+                                            <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
                                         </a>
                                     </figure>
                                     <div class="bag-product-details">
@@ -108,7 +108,7 @@
                                 <div class="bag-product">
                                     <figure>
                                         <a href="#" class="bag-product-img">
-                                            <img src="http://placehold.it/90x90" alt="" class="img-responsive">
+                                            <img src="assets/images/product-cart-2.jpg" alt="" class="img-responsive">
                                         </a>
                                     </figure>
                                     <div class="bag-product-details">

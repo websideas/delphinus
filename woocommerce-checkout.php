@@ -163,7 +163,7 @@ include_once('templates/headers/header2.php');
                                                         <input id="payment_method_bacs" class="input-radio" name="payment_method" value="bacs" checked="checked" data-order_button_text="" type="radio">
                                                         Direct Bank Transfer
                                                     </label>
-                                                    <div class="payment_box payment_method_bacs"><p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                                    <div class="payment_box payment_method_bacs" style="display: block"><p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
                                                     </div>
                                                 </li>
                                                 <li class="payment_method_cheque">

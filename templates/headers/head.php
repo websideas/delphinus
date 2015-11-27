@@ -8,29 +8,36 @@
 
     <title>Delphinus - Creative Multi-Purpose eCommerce HTML5</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cMontserrat:400,700%7cCrete+Round:400italic%7cVollkorn:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cCrete+Round:400italic' rel='stylesheet' type='text/css'>
+    <?php
+    global $page404;
+    if(!empty($page404)){ ?>
+    <link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic' rel='stylesheet' type='text/css'>
+    <?php } ?>
 
     <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/fonts/Lineicons/style.css" />
     <link rel="stylesheet" href="assets/css/plugins.css" />
 
-
+<?php
+    global $revolution;
+    if(!empty($revolution)){ ?>
     <!-- REVOLUTION STYLE SHEETS -->
     <link rel="stylesheet" type="text/css" href="assets/libs/revolution/css/settings.css" />
     <!-- REVOLUTION NAVIGATION STYLES -->
     <link rel="stylesheet" type="text/css" href="assets/libs/revolution/css/navigation.css" />
-
-
+    <?php } ?>
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
+<?php
+    global $intro;
+    if(!empty($intro)){ ?>
     <!-- Intro Style -->
     <link rel="stylesheet" href="assets/css/intro.css" />
-
+    <?php } ?>
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
-
     <!-- Common space -->
     <link rel="stylesheet" href="assets/css/common-space.css">
 
@@ -44,8 +51,6 @@
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
-
 
 </head>
 <body class="appear-animate">
@@ -78,7 +83,6 @@
         <div class="progress-bar-number">0%</div>
     </div>
 </div>
-
 
 <div id="search-fullwidth" class="mfp-hide mfp-with-anim">
     <form method="get" class="searchform" action="#">

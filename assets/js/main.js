@@ -69,7 +69,6 @@
     init_MobileMenu();
     init_rating();
     init_carousel();
-    init_revolution();
     init_parallax();
     init_shortcodes();
     init_VCGoogleMap();
@@ -78,16 +77,10 @@
     init_backtotop();
     init_matchHeight();
     init_productsMasonry();
-    init_productCountdown();
     init_backtotop();
 
     init_productcarouselwoo($("#sync1"), $("#sync2"));
     init_ecommerce();
-
-
-
-
-
 
 
     /* ---------------------------------------------
@@ -99,7 +92,6 @@
         var $backtotop = $('#back-to-top');
 
         $backtotop.hide();
-
 
         $(window).scroll(function() {
             var heightbody = $('body').outerHeight(),
@@ -125,7 +117,7 @@
     function init_productsMasonry(){
         $('.products-multi-masonry').each(function(){
             var $masonry = $(this);
-            $masonry.waitForImages(function() {
+            $masonry.imagesLoaded(function() {
 
                 $masonry.find('.product-thumbnail').css('height', 'auto');
 
@@ -150,14 +142,10 @@
                     }
                 });
 
-
-
             });
-
 
         });
     }
-
 
     /* ---------------------------------------------
      Owl carousel
@@ -169,63 +157,50 @@
                 options = $(objCarousel).data('options') || {};
             options.theme = 'owl-kttheme';
 
-
             if(typeof options.desktop !== "undefined"){
                 options.itemsDesktop = [1199,options.desktop];
                 options.items = options.desktop;
             }
-
             if(typeof options.desktopsmall !== "undefined"){
                 options.itemsDesktopSmall = [991,options.desktopsmall];
             }
-
             if(typeof options.tablet !== "undefined"){
                 options.itemsTablet = [768,options.tablet];
             }
-
             if(typeof options.navigationText === "undefined"){
                 options.navigationText = ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'];
             }
-
-
             if(typeof options.mobile !== "undefined"){
                 options.itemsMobile = [479,options.mobile];
             }
-
             options.afterInit  = function(elem) {
                 if(typeof options.outer !== "undefined" && options.navigation){
                     var $buttons = elem.find('.owl-buttons');
                     $buttons.appendTo(objCarousel.closest('.owl-carousel-kt'));
                 }
-
                 if(typeof options.pagbefore !== "undefined" && options.pagination){
                     var $pagination = elem.find('.owl-pagination');
                     $pagination.prependTo(objCarousel.closest('.owl-carousel-kt'));
                 }
             };
-
-            objCarousel.waitForImages(function() {
+            objCarousel.imagesLoaded(function() {
                 objCarousel.owlCarousel(options);
             });
-
         });
     }
 
     function init_rating(){
         // Star ratings for comments
         $( '#rating' ).before( '<p class="stars"><span><a class="star-1" href="#" data-val="1"></a><a class="star-2" href="#" data-val="2"></a><a class="star-3" href="#" data-val="3"></a><a class="star-4" href="#" data-val="4"></a><a class="star-5" href="#" data-val="5"></a></span></p>' );
-
         $( 'body' )
             .on( 'click', '#respond p.stars a', function() {
                 var $star   = $( this ),
                     $rating = $( this ).closest( '#respond' ).find( '#rating'),
                     $stars = $( this ).closest( 'p.stars'),
                     $val = $star.data('val');
-
                 $rating.val( $val );
                 $star.siblings( 'a' ).removeClass( 'active' );
                 $stars.find('a:lt('+$val+')').addClass( 'active' );
-
                 return false;
             });
     }
@@ -245,11 +220,7 @@
      --------------------------------------------- */
     function init_shortcodes() {
         // Tooltips (bootstrap plugin activated)
-        $('[data-toggle="tooltip"]').tooltip({
-            container:"body",
-            delay: { "show": 100, "hide": 100 }
-        });
-
+        $('[data-toggle="tooltip"]').tooltip({container:"body", delay: { "show": 100, "hide": 100 }});
         $('.kt-tab-container').tabs();
         $('.kt-accordion').accordion({ 'heightStyle': 'content' });
 
@@ -285,9 +256,6 @@
      Match Height
      --------------------------------------------- */
     function init_matchHeight(){
-        /**==============================
-         ***  Equal height
-         ===============================**/
         $('.equal_height').each(function(){
             var equal_height_element;
             if($(this).hasClass('equal_height_element')){
@@ -298,8 +266,6 @@
             equal_height_element.matchHeight({ byRow: true });
         });
     }
-
-
 
 
     /* ---------------------------------------------
@@ -355,7 +321,6 @@
     --------------------------------------------- */
 
     function init_parallax(){
-
         // Parallax
         if (($(window).width() >= 1024) && (ktmobile == false)) {
             $(".parallax-1").parallax("50%", 0.1);
@@ -366,7 +331,6 @@
             $(".parallax-6").parallax("50%", 0.6);
             $(".parallax-7").parallax("50%", 0.7);
         }
-
     }
 
     
@@ -391,7 +355,6 @@
             });
         });
     }
-
 
     /* ---------------------------------------------
      Popup content
@@ -424,7 +387,6 @@
 
     function init_ecommerce(){
 
-
         var current_min_price = 0,
             current_max_price = 500;
 
@@ -443,13 +405,11 @@
             }
         });
 
-
-        $('.input-radio', '').on('change', function(){
+        $('.input-radio', '#payment').on('change', function(){
             var val = $('.input-radio:checked', '#payment').val();
             $('.payment_box', '#payment').hide();
             $('.payment_method_'+val, '#payment ').show();
         });
-
 
         if (typeof $.fn.easyZoom !== "undefined") {
             $('.easyzoom').easyZoom();
@@ -475,35 +435,6 @@
     }
 
     /* ---------------------------------------------
-     Product Countdown
-     --------------------------------------------- */
-    function init_productCountdown() {
-        var coming_html = '<div class="countdown-wrap">'
-            +'<div class="value-time">%D</div>'
-            +'<div class="title">Days</div>'
-            +'</div>'
-            +'<div class="countdown-wrap">'
-            +'<div class="value-time">%H</div>'
-            +'<div class="title">Hours</div>'
-            +'</div>'
-            +'<div class="countdown-wrap">'
-            +'<div class="value-time">%M</div>'
-            +'<div class="title">Min</div>'
-            +'</div>'
-            +'<div class="countdown-wrap">'
-            +'<div class="value-time">%S</div>'
-            +'<div class="title">Sec</div>'
-            +'</div>';
-
-        $('.coming-soon').each(function () {
-            var date = $(this).data('date');
-            $(this).countdown(date, function (event) {
-                $(this).html( event.strftime(coming_html) );
-            });
-        });
-    }
-
-    /* ---------------------------------------------
      QickView
      --------------------------------------------- */
     function init_quickview(){
@@ -517,7 +448,6 @@
 
             $.post(ajaxurl, data, function(response) {
                 objProduct.removeClass('loading');
-
                 $.magnificPopup.open({
                     mainClass : 'mfp-zoom-in',
                     showCloseBtn: false,
@@ -529,7 +459,7 @@
                     callbacks: {
                         open: function() {
                             var $popup = $('.themedev-product-popup');
-                            $popup.waitForImages(function(){
+                            $popup.imagesLoaded(function(){
                                 var images = $("#quickview-images"),
                                     thumbnails = $("#quickview-thumbnails");
 
@@ -540,8 +470,6 @@
                                 setTimeout(function(){
                                     $popup.addClass('add-content');
                                 }, 1000);
-
-
 
                             });
 
@@ -564,7 +492,6 @@
     /* ---------------------------------------------
      Single Product
      --------------------------------------------- */
-
 
     function init_productcarouselwoo(sync1, sync2){
 
@@ -639,272 +566,6 @@
             }
         }
 
-
-    }
-    /* ---------------------------------------------
-     Init Revolution
-     --------------------------------------------- */
-
-    function init_revolution(){
-        $("#rev_slider_1").show().revolution({
-            sliderType:"carousel",
-            jsFileLocation:"assets/libs/revolution/js/",
-            sliderLayout:"fullwidth",
-            dottedOverlay:"none",
-            delay:1000,
-            carousel: {
-                maxRotation: 0,
-                minScale: 65,
-                maxVisibleItems: 3,
-                infinity: "on",
-                space: -50,
-                vary_fade: "on",
-                stretch: "off"
-            },
-            gridwidth:450,
-            gridheight: 540,
-            stopAfterLoops:0,
-            stopAtSlide:1,
-            disableProgressBar:"on"
-        });
-
-
-        $("#rev_slider_2").show().revolution({
-            sliderType:"standard",
-            jsFileLocation:"assets/libs/revolution/js/",
-            sliderLayout:"fullwidth",
-            dottedOverlay:"none",
-            delay:6000,
-            navigation: {
-                keyboardNavigation:"off",
-                keyboard_direction: "horizontal",
-                mouseScrollNavigation:"off",
-                onHoverStop:"off",
-                touch:{
-                    touchenabled:"on",
-                    swipe_threshold: 75,
-                    swipe_min_touches: 50,
-                    swipe_direction: "horizontal",
-                    drag_block_vertical: false
-                }
-                ,
-                arrows: {
-                    style:"metis",
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    tmp:'',
-                    left: {
-                        h_align:"left",
-                        v_align:"center",
-                        h_offset:30,
-                        v_offset:0
-                    },
-                    right: {
-                        h_align:"right",
-                        v_align:"center",
-                        h_offset:30,
-                        v_offset:0
-                    }
-                }
-                ,
-                bullets: {
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    style:"ares",
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    direction:"horizontal",
-                    h_align:"center",
-                    v_align:"bottom",
-                    h_offset:0,
-                    v_offset:30,
-                    space: 10,
-                    tmp:'<span class="tp-bullet-inner"></span>'
-                }
-            },
-            gridwidth:1290,
-            gridheight: 745,
-            lazyType:"none",
-            shadow:0,
-            spinner:"spinner0",
-            stopLoop:"off",
-            stopAfterLoops:-1,
-            stopAtSlide:-1,
-            shuffle:"off",
-            autoHeight:"off",
-            disableProgressBar:"off",
-            hideThumbsOnMobile:"off",
-            hideSliderAtLimit:0,
-            hideCaptionAtLimit:0,
-            hideAllCaptionAtLilmit:0,
-            startWithSlide:0,
-            debugMode:false,
-            fallbacks: {
-                simplifyAll:"off",
-                nextSlideOnWindowFocus:"off",
-                disableFocusListener:false
-            }
-        });
-
-        $("#rev_slider_3").show().revolution({
-            sliderType:"standard",
-            jsFileLocation:"assets/libs/revolution/js/",
-            sliderLayout:"fullwidth",
-            dottedOverlay:"none",
-            delay:6000,
-            navigation: {
-                keyboardNavigation:"off",
-                keyboard_direction: "horizontal",
-                mouseScrollNavigation:"off",
-                onHoverStop:"off",
-                touch:{
-                    touchenabled:"on",
-                    swipe_threshold: 75,
-                    swipe_min_touches: 50,
-                    swipe_direction: "horizontal",
-                    drag_block_vertical: false
-                }
-                ,
-                arrows: {
-                    style:"site-nav",
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    tmp:'',
-                    left: {
-                        h_align:"left",
-                        v_align:"center",
-                        h_offset:30,
-                        v_offset:0
-                    },
-                    right: {
-                        h_align:"right",
-                        v_align:"center",
-                        h_offset:30,
-                        v_offset:0
-                    }
-                }
-                ,
-                bullets: {
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    style:"site-pagination",
-                    hide_onleave:true,
-                    hide_delay:200,
-                    hide_delay_mobile:1200,
-                    direction:"horizontal",
-                    h_align:"center",
-                    v_align:"bottom",
-                    h_offset:0,
-                    v_offset:30,
-                    space: 10,
-                    tmp:'<span class="tp-bullet-inner"></span>'
-                }
-            },
-            gridwidth:1290,
-            gridheight:745,
-            lazyType:"none",
-            shadow:0,
-            spinner:"spinner0",
-            stopLoop:"off",
-            stopAfterLoops:-1,
-            stopAtSlide:-1,
-            shuffle:"off",
-            autoHeight:"off",
-            disableProgressBar:"off",
-            hideThumbsOnMobile:"off",
-            hideSliderAtLimit:0,
-            hideCaptionAtLimit:0,
-            hideAllCaptionAtLilmit:0,
-            startWithSlide:0,
-            debugMode:false,
-            fallbacks: {
-                simplifyAll:"off",
-                nextSlideOnWindowFocus:"off",
-                disableFocusListener:false
-            }
-        });
-
-
-        $("#rev_slider_2_1").show().revolution({
-            sliderType:"standard",
-            jsFileLocation:"assets/libs/revolution/js/",
-            sliderLayout:"auto",
-            dottedOverlay:"none",
-            delay:6000,
-            navigation: {
-                keyboardNavigation:"off",
-                keyboard_direction: "horizontal",
-                mouseScrollNavigation:"off",
-                onHoverStop:"on",
-                touch:{
-                    touchenabled:"on",
-                    swipe_threshold: 75,
-                    swipe_min_touches: 50,
-                    swipe_direction: "horizontal",
-                    drag_block_vertical: false
-                }
-                ,
-                arrows: {
-                    style:"metis",
-                    enable:true,
-                    hide_onmobile:true,
-                    hide_under:600,
-                    hide_onleave:false,
-                    tmp:'',
-                    left: {
-                        h_align:"right",
-                        v_align:"top",
-                        h_offset:-90,
-                        v_offset:30
-                    },
-                    right: {
-                        h_align:"right",
-                        v_align:"top",
-                        h_offset:-90,
-                        v_offset:-30
-                    }
-                }
-            },
-            gridwidth:710,
-            gridheight:440,
-            lazyType:"smart",
-            parallax: {
-                type:"mouse",
-                origo:"slidercenter",
-                speed:2000,
-                levels:[2,3,4,5,6,7,12,16,10,50],
-            },
-            shadow:0,
-            spinner:"spinner0",
-            stopLoop:"off",
-            stopAfterLoops:-1,
-            stopAtSlide:-1,
-            shuffle:"off",
-            autoHeight:"off",
-            disableProgressBar:"on",
-            hideThumbsOnMobile:"off",
-            hideSliderAtLimit:0,
-            hideCaptionAtLimit:0,
-            hideAllCaptionAtLilmit:0,
-            startWithSlide:0,
-            debugMode:false,
-            fallbacks: {
-                simplifyAll:"off",
-                nextSlideOnWindowFocus:"off",
-                disableFocusListener:false,
-            }
-        });
 
     }
 

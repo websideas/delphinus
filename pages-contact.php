@@ -1,6 +1,7 @@
 <?php
-global $shadow;
+global $shadow, $googlemap;
 $shadow = ' ';
+$googlemap = true;
 
 
 include_once('templates/headers/head.php');

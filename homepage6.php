@@ -1,5 +1,8 @@
 <?php
 
+global $revolution;
+$revolution = 'slideshow2';
+
 include_once('templates/headers/head.php');
 include_once('templates/headers/header1.php');
 include_once('templates/slideshows/slideshow2.php');
@@ -17,7 +20,7 @@ include_once('templates/slideshows/slideshow2.php');
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="single-image mar-bottom-40">
+                        <div class="single-image no-effect mar-bottom-40">
                             <img src="assets/images/banner/banner-18.png" alt="" />
                         </div>
 
@@ -53,14 +56,14 @@ include_once('templates/slideshows/slideshow2.php');
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
-                        <div class="box-colored wow fadeInUp" data-wow-delay="200ms">
+                        <div class="box-colored">
                             <div class="box-colored-image">
                                 <a href="#"><img src="assets/images/category/category-01.jpg" alt=""/></a>
                             </div>
                             <h4 class="box-colored-title" style="background-color: #c7db9c"><a href="#"> Chair collection </a></h4>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="col-md-3 col-sm-6">
                         <div class="box-colored">
                             <div class="box-colored-image">
                                 <a href="#"><img src="assets/images/category/category-02.jpg" alt=""/></a>
@@ -68,7 +71,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <h4 class="box-colored-title" style="background-color: #f4dc86"><a href="#">Lamp collection</a></h4>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="600ms">
+                    <div class="col-md-3 col-sm-6">
                         <div class="box-colored">
                             <div class="box-colored-image">
                                 <a href="#"><img src="assets/images/category/category-03.jpg" alt=""/></a>
@@ -76,7 +79,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <h4 class="box-colored-title" style="background-color: #a7c8eb"><a href="#">Cup collection</a></h4>
                         </div>
                     </div>
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-delay="800ms">
+                    <div class="col-md-3 col-sm-6">
                         <div class="box-colored">
                             <div class="box-colored-image">
                                 <a href="#"><img src="assets/images/category/category-04.jpg" alt=""/></a>
@@ -431,7 +434,7 @@ include_once('templates/slideshows/slideshow2.php');
 
                 <div class="blog-posts">
                     <div class="row multi-columns-row">
-                        <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInLeft">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-01.jpg" alt=""/>
                             </a>
@@ -445,7 +448,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInUp">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-02.jpg" alt=""/>
                             </a>
@@ -459,7 +462,7 @@ include_once('templates/slideshows/slideshow2.php');
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscinp ...</p>
                         </div>
 
-                        <div class="blog-post col-lg-4 col-md-4 col-sm-6 wow fadeInRight">
+                        <div class="blog-post col-lg-4 col-md-4 col-sm-6">
                             <a href="blog-singlepost-standard.php" class="blog-post-thumbnail">
                                 <img src="assets/images/blog/blog-03.jpg" alt=""/>
                             </a>

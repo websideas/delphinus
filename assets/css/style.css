@@ -1117,7 +1117,7 @@ select:not([multiple]) {
     .shopping-bag .bag-products .bag-product .bag-product-details > div {
       color: #999999;
       line-height: 25px;
-      font-size: 12px; }
+      font-size: 13px; }
   .shopping-bag .bag-products .bag-product .remove {
     color: #000000;
     font-size: 12px;
@@ -2469,6 +2469,13 @@ ul.style-list {
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
     transform: scale(1.2); }
+  .single-image.no-effect:hover img {
+    -webkit-transform: scale(1);
+    -khtml-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
 
 /*
  * 10.16 Client
@@ -3888,7 +3895,8 @@ form.checkout .coupon_wrap {
         padding: 15px;
         position: relative;
         font-size: 14px;
-        line-height: 24px; }
+        line-height: 24px;
+        display: none; }
         #payment .payment_methods li .payment_box:after {
           border-left: 8px solid transparent;
           border-right: 8px solid transparent;

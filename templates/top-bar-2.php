@@ -64,12 +64,12 @@
                     <div class="top-navigation-submenu">
                         <div class="shopping-bag">
                             <div class="shopping-bag-content">
-                                <!--<p class="cart_block_no_products">Your wishlist is empty.</p><!-- .cart_block_no_products-->
+                                <!--<p class="cart_block_no_products">Your wishlist is empty.</p>--><!-- .cart_block_no_products-->
                                 <div class="bag-products">
                                     <div class="bag-product">
                                         <figure>
                                             <a href="#" class="bag-product-img">
-                                                <img src="http://placehold.it/90x90" alt="" class="img-responsive">
+                                                <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
                                             </a>
                                         </figure>
                                         <div class="bag-product-details">
@@ -93,12 +93,12 @@
 
                     <div class="top-navigation-submenu">
                         <div class="shopping-bag">
-                            <!--<p class="cart_block_no_products">Your cart is currently empty.</p><!-- .cart_block_no_products-->
+                            <!--<p class="cart_block_no_products">Your cart is currently empty.</p>--><!-- .cart_block_no_products-->
                             <div class="bag-products">
                                 <div class="bag-product">
                                     <figure>
                                         <a href="#" class="bag-product-img">
-                                            <img src="http://placehold.it/90x90" alt="" class="img-responsive">
+                                            <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
                                         </a>
                                     </figure>
                                     <div class="bag-product-details">
@@ -112,7 +112,7 @@
                                 <div class="bag-product">
                                     <figure>
                                         <a href="#" class="bag-product-img">
-                                            <img src="http://placehold.it/90x90" alt="" class="img-responsive">
+                                            <img src="assets/images/product-cart-2.jpg" alt="" class="img-responsive">
                                         </a>
                                     </figure>
                                     <div class="bag-product-details">
