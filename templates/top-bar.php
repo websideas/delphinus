@@ -55,7 +55,7 @@
                 </li>
                 <li class="wishlist-item">
                     <a href="woocommerce-wishlist.php">
-                        wishlist <span>1</span>
+                        wishlist <span>3</span>
                     </a>
                     <div class="top-navigation-submenu">
                         <div class="shopping-bag">
@@ -85,7 +85,7 @@
                     </div>
                 </li>
                 <li class="shopping-bag-item">
-                    <a href="woocommerce-cart.php">my cart <span>2</span></a>
+                    <a href="woocommerce-cart.php">my cart <span>4</span></a>
 
                     <div class="top-navigation-submenu">
                         <div class="shopping-bag">

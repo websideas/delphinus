@@ -10,7 +10,6 @@
 <script type="text/javascript" src="assets/js/page-loading.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/plugins.js"></script>
 

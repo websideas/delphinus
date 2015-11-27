@@ -1,10 +1,11 @@
 <?php
 
 include_once('templates/headers/head.php');
-include_once('templates/headers/header1.php');
+include_once('templates/headers/header2.php');
 include_once('templates/slideshows/carousel.php');
 
 ?>
+
     <div id="main">
 
         <div class="page-section no-padding">
@@ -72,7 +73,7 @@ include_once('templates/slideshows/carousel.php');
 
 
 
-        <div class="page-section">
+        <div class="page-section pad-bottom-60">
             <div class="container">
 
                 <div class="kt-heading-wrapper">
@@ -453,7 +454,7 @@ include_once('templates/slideshows/carousel.php');
             </div>
         </div>
 
-        <div class="page-section">
+        <div class="page-section pad-top-70">
             <div class="container">
                 <div class="owl-carousel-kt remove-mar-bottom">
                     <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": false, "desktop": 6, "desktopsmall": 5, "tablet" : 4, "mobile" : 2}'>

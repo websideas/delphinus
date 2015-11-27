@@ -1,10 +1,11 @@
 <?php
 
 include_once('templates/headers/head.php');
-include_once('templates/headers/header1.php');
+include_once('templates/headers/header2.php');
 include_once('templates/slideshows/slideshow2.php');
 
 ?>
+
     <div id="main">
 
         <div class="page-section no-padding">
@@ -211,7 +212,7 @@ include_once('templates/slideshows/slideshow2.php');
 
                 <div class="col-md-8 kt_column">
                     <div class="page-small-width">
-                        <div class="kt-heading-wrapper mar-top-80">
+                        <div class="kt-heading-wrapper mar-top-90">
                             <h3 class="kt-heading-title">for your Diningroom</h3>
                             <div class="kt-heading-subtitle"><a href="#">see all</a></div>
                         </div>
@@ -405,7 +406,7 @@ include_once('templates/slideshows/slideshow2.php');
                 <div class="col-md-4 kt_column kt-column-bg hidden-xs hidden-sm" style="background-image: url('assets/images/background/bg-05.png');"></div>
                 <div class="col-md-8 kt_column">
                     <div class="page-small-width">
-                        <div class="kt-heading-wrapper mar-top-80">
+                        <div class="kt-heading-wrapper mar-top-90">
                             <h3 class="kt-heading-title">for your bedroom</h3>
                             <div class="kt-heading-subtitle"><a href="#">see all</a></div>
                         </div>
@@ -598,7 +599,7 @@ include_once('templates/slideshows/slideshow2.php');
         </div>
 
 
-        <div class="page-section">
+        <div class="page-section pad-bottom-40">
             <div class="container">
 
                 <div class="kt-heading-wrapper">

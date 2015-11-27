@@ -52,15 +52,14 @@
                         </div>
 
                         <div class="col-md-5 col-sm-5 col-xs-12">
-                            <div class="widget-container widget_nav_menu mar-bottom-60">
+                            <div class="widget-container widget_nav_menu">
                                 <h3 class="widget-title">newletters</h3>
                                 <form action="#" method="get" class="newsletters-form style2">
                                     <input type="email" placeholder="Enter your email address"/>
                                     <button class="submit"><i class="icon-Right-3"></i></button>
                                 </form>
                             </div><!-- .widget-container -->
-
-                            <div class="widget-container">
+                            <div class="widget-container mar-top-60">
                                 <ul class="social-nav">
                                     <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a> </li>
                                     <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a> </li>
@@ -75,10 +74,10 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-12 footer-area-right">
-                <div class="widget-container widget-hover-content">
+                <div class="widget-container widget-hover-content no-margin">
                     <h3 class="widget-title">The Story</h3>
                     <div class="widget-hover-element">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lectus a lorem efficitur dapibus. Integer ac pretium ipsum. Quisque viverra, magna in convallis consequat, ante enim finibus dolor, vitae fermentum mi nisi non libero. In id leo ut purus laoreet venenatis nec maximus sapien. Suspendisse in nunc aliquam, sagittis nisi sit amet, ultricies ante. Phasellus gravida mi at iaculis condimentum.</p>
+                        <p class="no-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lectus a lorem efficitur dapibus. Integer ac pretium ipsum. Quisque viverra, magna in convallis consequat, ante enim finibus dolor, vitae fermentum mi nisi non libero. In id leo ut purus laoreet venenatis nec maximus sapien.</p>
                     </div>
                 </div>
             </div><!-- .footer-area-right -->

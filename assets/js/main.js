@@ -1,6 +1,7 @@
 (function($){
     "use strict"; // Start of use strict
 
+
     /* --------------------------------------------
      Mobile detect
      --------------------------------------------- */
@@ -78,7 +79,6 @@
     init_matchHeight();
     init_productsMasonry();
     init_productCountdown();
-    init_gridlistToggle();
     init_backtotop();
 
     init_productcarouselwoo($("#sync1"), $("#sync2"));
@@ -375,7 +375,6 @@
      --------------------------------------------- */
     function init_VCGoogleMap() {
         var styleMap =  [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
-
         $(".googlemap").each(function () {
             var mapObj = $(this),
                 scrollwheel = (mapObj.data('scrollwheel') == '1') ? false : true;
@@ -402,7 +401,6 @@
         var $popup = $('#popup-wrap');
         if($popup.length > 0 && cookie_popup != 1){
             var time_show = $popup.data('timeshow');
-
             setTimeout(function(){
                 $.magnificPopup.open({
                     items: { src: '#popup-wrap' },
@@ -426,10 +424,6 @@
 
     function init_ecommerce(){
 
-        /*$('.products-sortby select').selectpicker({
-            styleBase: '',
-            style: ''
-        });*/
 
         var current_min_price = 0,
             current_max_price = 500;
@@ -450,14 +444,32 @@
         });
 
 
-        $('#payment .payment_methods li label .input-radio').change(function(){
-            var val = $('#payment .payment_methods li label .input-radio:checked').val();
-            $('#payment .payment_box').hide();
-            $('#payment .payment_method_'+val).show();
+        $('.input-radio', '').on('change', function(){
+            var val = $('.input-radio:checked', '#payment').val();
+            $('.payment_box', '#payment').hide();
+            $('.payment_method_'+val, '#payment ').show();
         });
+
 
         if (typeof $.fn.easyZoom !== "undefined") {
             $('.easyzoom').easyZoom();
+        }
+
+        var $tools = $('ul.grid-list');
+        if($tools.length){
+            $('a', $tools).on('click', function(e){
+                e.preventDefault();
+                var $this = $(this),
+                    $gridlist = $this.closest('.grid-list'),
+                    $products = $this.closest('#main').find('.products');
+
+                $gridlist.find('a').removeClass('active');
+                $this.addClass('active');
+                $products
+                    .removeClass($this.data('remove'))
+                    .addClass($this.data('layout'));
+
+            });
         }
 
     }
@@ -642,7 +654,7 @@
             delay:1000,
             carousel: {
                 maxRotation: 0,
-                minScale: 70,
+                minScale: 65,
                 maxVisibleItems: 3,
                 infinity: "on",
                 space: -50,
@@ -650,7 +662,7 @@
                 stretch: "off"
             },
             gridwidth:450,
-            gridheight: 650,
+            gridheight: 540,
             stopAfterLoops:0,
             stopAtSlide:1,
             disableProgressBar:"on"
@@ -717,7 +729,7 @@
                 }
             },
             gridwidth:1290,
-            gridheight:745,
+            gridheight: 745,
             lazyType:"none",
             shadow:0,
             spinner:"spinner0",
@@ -894,25 +906,6 @@
             }
         });
 
-    }
-
-    /* ---------------------------------------------
-     Grid list Toggle
-     --------------------------------------------- */
-    function init_gridlistToggle(){
-        $('ul.grid-list a').on('click', function(e){
-            e.preventDefault();
-            var $this = $(this),
-                $gridlist = $this.closest('.grid-list'),
-                $products = $this.closest('#main').find('.products');
-                
-            $gridlist.find('a').removeClass('active');
-            $this.addClass('active');
-            $products
-                .removeClass($this.data('remove'))
-                .addClass($this.data('layout'));
-                
-        });
     }
 
 })(jQuery); // End of use strict

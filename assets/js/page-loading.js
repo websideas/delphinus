@@ -7,7 +7,6 @@
 (function($){
     "use strict"; // Start of use strict
 
-
     /* ---------------------------------------------
      Scripts initialization
      --------------------------------------------- */
@@ -30,7 +29,6 @@
                         $('.progress-bar-number').html(percent);
                         return;
                     }
-
                 } catch (e) { }
             }, 50);
         }

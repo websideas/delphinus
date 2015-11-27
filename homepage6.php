@@ -5,6 +5,7 @@ include_once('templates/headers/header1.php');
 include_once('templates/slideshows/slideshow2.php');
 
 ?>
+
     <div id="main">
 
         <div class="page-section">
@@ -42,13 +43,13 @@ include_once('templates/slideshows/slideshow2.php');
         <div style="background-image: url(assets/images/background/bg-01.jpg);" class="page-section pad-xlg bg-dark-alfa-40 parallax-1">
             <div class="page-section-inner">
                 <div class="container">
-                    <h2 class="text-center white">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
+                    <h2 class="text-center white no-margin">BY US, BY HANDS AT OUR Delphinus STUDIO.</h2>
                 </div>
             </div>
         </div>
 
 
-        <div class="page-section">
+        <div class="page-section pad-top-lg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">

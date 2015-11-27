@@ -18,8 +18,6 @@
 
     <!-- REVOLUTION STYLE SHEETS -->
     <link rel="stylesheet" type="text/css" href="assets/libs/revolution/css/settings.css" />
-    <!-- REVOLUTION LAYERS STYLES -->
-    <link rel="stylesheet" type="text/css" href="assets/libs/revolution/css/layers.css" />
     <!-- REVOLUTION NAVIGATION STYLES -->
     <link rel="stylesheet" type="text/css" href="assets/libs/revolution/css/navigation.css" />
 
@@ -33,9 +31,6 @@
     <!-- Responsive Styles -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/custom.css">
-
     <!-- Common space -->
     <link rel="stylesheet" href="assets/css/common-space.css">
 
@@ -43,7 +38,6 @@
     <!--[if lte IE 9]>
     <link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
     <![endif]-->
-
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
