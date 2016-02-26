@@ -106,7 +106,6 @@
 
   .main-nav-outer{
     position: relative;
-    text-align: center;
   }
 
   #main-nav-tool,
@@ -148,7 +147,10 @@
     > li{
       display: inline-block;
       position: relative;
-      margin-left: 20px;
+
+      + li{
+        margin-left: 20px;
+      }
 
       &.kt-megamenu-item{
         position: static;

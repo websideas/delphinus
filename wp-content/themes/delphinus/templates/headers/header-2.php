@@ -30,8 +30,9 @@ if ( !defined('ABSPATH')) exit;
 </div>
 
 
-<div class="navbar-container sticky-header">
+<div class="navbar-container sticky-header sticky-header-down">
     <div class="apply-sticky">
+        <div class="header-sticky-background"></div>
         <div class="container">
             <div class="navbar-container-inner clearfix">
                 <?php get_template_part( 'templates/headers/header',  'branding'); ?>

@@ -128,7 +128,8 @@
                     }
 
                     _window.scroll(function () {
-                        
+
+
                         var $offset = $placeholder.offset(),
                             _scrolltop = _window.scrollTop();
 
@@ -144,6 +145,8 @@
                         }
                         
                     });
+
+                    $(window).trigger("scroll");
                     
                     o.onInit.call(this);
                     

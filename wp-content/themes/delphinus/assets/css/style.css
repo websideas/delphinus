@@ -430,21 +430,29 @@ blockquote {
 .navbar-container-inner {
   position: relative; }
 
-.header-layout1 .navbar-container-inner {
-  padding: 0 40px; }
-.header-layout1 .navbar-container-content {
+.header-layout1 .navbar-container-content,
+.header-layout4 .navbar-container-content {
   position: relative; }
-.header-layout1 .branding {
+.header-layout1 .navbar-container-inner,
+.header-layout4 .navbar-container-inner {
+  padding: 0 40px; }
+.header-layout1 .branding,
+.header-layout4 .branding {
   position: absolute;
   left: 0;
   top: 0; }
-.header-layout1 #nav #main-navigation {
+.header-layout1 #nav #main-navigation,
+.header-layout4 #nav #main-navigation {
   float: none; }
-.header-layout1 #nav #main-nav-tool {
+.header-layout1 #nav #main-nav-tool,
+.header-layout4 #nav #main-nav-tool {
   position: absolute;
   right: 0;
   top: 0;
   margin: 0; }
+
+.header-layout1 .main-nav-outer {
+  text-align: center; }
 
 .header-layout3 #nav #main-navigation {
   float: none;
@@ -484,7 +492,13 @@ blockquote {
   position: fixed !important;
   width: 100%;
   top: 0;
-  z-index: 1001; }
+  z-index: 1001;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -khtml-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s; }
   .is-sticky .apply-sticky #nav #main-nav-tool > li > a,
   .is-sticky .apply-sticky #nav #main-navigation > li > a {
     line-height: 60px; }
@@ -496,6 +510,9 @@ blockquote {
   border-color: transparent; }
 .is-sticky.sticky .apply-sticky {
   top: 0 !important; }
+
+.sticky-header-down .apply-sticky {
+  top: -60px; }
 
 .admin-bar .is-sticky .apply-sticky {
   top: 32px; }
@@ -1131,8 +1148,7 @@ select:not([multiple]) {
       margin-left: 15px; }
 
 #nav .main-nav-outer {
-  position: relative;
-  text-align: center; }
+  position: relative; }
 #nav #main-nav-tool > li > a,
 #nav #main-navigation > li > a {
   line-height: 102px; }
@@ -1169,8 +1185,9 @@ select:not([multiple]) {
   float: right; }
   #nav #main-navigation > li {
     display: inline-block;
-    position: relative;
-    margin-left: 20px; }
+    position: relative; }
+    #nav #main-navigation > li + li {
+      margin-left: 20px; }
     #nav #main-navigation > li.kt-megamenu-item {
       position: static; }
     #nav #main-navigation > li > a {

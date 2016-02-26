@@ -75,13 +75,13 @@
 .navbar-container-inner{
   position: relative;
 }
-
-.header-layout1{
-  .navbar-container-inner{
-    padding: 0 40px;
-  }
+.header-layout1,
+.header-layout4{
   .navbar-container-content{
     position: relative;
+  }
+  .navbar-container-inner{
+    padding: 0 40px;
   }
   .branding{
     position: absolute;
@@ -99,6 +99,14 @@
       margin: 0;
     }
   }
+}
+.header-layout1{
+  .main-nav-outer{
+    text-align: center;
+  }
+}
+.header-layout4{
+
 }
 
 
@@ -123,6 +131,9 @@
 
 
 
+
+
+
 .header-sticky-background{
   width: 100%;
   height: 100%;
@@ -135,12 +146,14 @@
   background: #FFF;
 }
 
+
 .is-sticky{
   .apply-sticky{
     position: fixed!important;
     width: 100%;
     top: 0;
     z-index: 1001;
+    @include transition();
 
     #nav {
       #main-nav-tool,
@@ -171,6 +184,13 @@
     }
   }
 }
+
+.sticky-header-down{
+  .apply-sticky{
+    top: -$navbar-height-sticky;
+  }
+}
+
 
 .admin-bar{
   .is-sticky{
