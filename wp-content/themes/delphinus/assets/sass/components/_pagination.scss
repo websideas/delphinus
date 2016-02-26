@@ -1,0 +1,86 @@
+
+/* ==============================
+   14. Pagination
+   ============================== */
+.pagination {
+  text-align: center;
+  display: block;
+  margin: 0;
+
+  border-bottom: 2px solid $text;
+  @include border-radius(0);
+  font-size: 14px;
+  line-height: 30px;
+
+  .page-numbers {
+    color: $text;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0 5px 20px;
+    position: relative;
+
+    &.current{
+      color: $primary-color;
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        display: block;
+        @include transition();
+        @include opacity(0);
+      }
+
+      &:before{
+        content: '';
+        width: 20px;
+        background: $white;
+        height: 2px;
+        bottom: -2px;
+        margin-left: -10px;
+      }
+      &:after{
+        width: 6px;
+        height: 6px;
+        background: $primary-color;
+        left: 50%;
+        margin-left: -3px;
+        bottom: -4px;
+        @include transform(rotate(45deg));
+      }
+    }
+    &.disable{
+      @include opacity(.5);
+      cursor: not-allowed;
+    }
+    &:first-child{
+      margin-left: 0;
+      padding-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+  a{
+    &:hover{
+      color: $primary-color;
+    }
+  }
+}
+
+.pagination-button{
+  @include clearfix();
+  .nav-previous{
+    float: left;
+  }
+  .nav-next{
+    float: right;
+  }
+
+}
+
+
+.pagination-loadmore{
+  text-align: center;
+}

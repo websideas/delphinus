@@ -1,0 +1,20 @@
+<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?> itemscope="" itemtype="http://schema.org/BlogPosting">
+    <?php kt_post_thumbnail_image('kt_list'); ?>
+    <?php kt_entry_date(); ?>
+    <div class="blog-post-content">
+        <div class="blog-post-inner">
+            <?php the_title( sprintf( '<h2 class="entry-title" itemprop="name headline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+            <?php kt_entry_excerpt(); ?>
+            <?php kt_entry_meta(); ?>
+            <p class="entry-more">
+                <?php
+                printf( '<a href="%1$s" class="%2$s">%3$s</a>',
+                    esc_url( get_permalink( get_the_ID() ) ),
+                    'btn btn-default',
+                    sprintf( esc_html__( 'Read more %s', 'mondova' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+                );
+                ?>
+            </p>
+        </div>
+    </div>
+</article><!-- #post-## -->

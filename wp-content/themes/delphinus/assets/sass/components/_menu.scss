@@ -1,0 +1,380 @@
+.top-navigation{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  z-index: 10;
+
+  > li{
+    display: inline-block;
+    position: relative;
+    + li{
+      margin-left: 47px;
+    }
+    > a{
+      text-transform: uppercase;
+      color: $text;
+      display: inline-block;
+      font-size: 14px;
+      i{
+        margin-right: 8px;
+      }
+    }
+
+    &:hover > a{
+      color: $primary-color;
+    }
+
+    > ul{
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 100px;
+      margin: 0 0 0 -50px;
+      padding: 5px 0;
+      list-style: none;
+      background: #FFFFFF;
+      visibility: hidden;
+      @include opacity(0);
+      @include transform(translate(0, 40px));
+      @include transition();
+      border: 1px solid #eaeaea;
+      @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.05));
+
+      &:before{
+        top: -4px;
+        content: "";
+        display: block;
+        height: 8px;
+        width: 8px;
+        background: $white;
+        position: absolute;
+        @include transform(rotate(45deg));
+        left: 50%;
+        margin-left: -4px;
+        border-top: 1px solid #eaeaea;
+        border-left: 1px solid #eaeaea;
+      }
+
+      li{
+        > span,
+        > a{
+          color: $text;
+          display: block;
+          font-size: 12px;
+          line-height: 17px;
+          padding: 8px 0 8px 10px;
+          text-transform: uppercase;
+          img{
+            float: left;
+            margin-right: 5px;
+            margin-top: 3px;
+          }
+        }
+        a:hover{
+          background: #eaeaea;
+        }
+      }
+
+    }
+
+    &:hover{
+      > ul{
+        @include opacity(1);
+        @include transform(translate(0, 0));
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+
+#nav{
+  border-top: 2px solid $text;
+  .main-nav-inner{
+    position: relative;
+  }
+
+  #main-navigation{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: $navbar-height;
+    text-align: center;
+    position: relative;
+    li{
+      &.active{
+        > a{
+          color: $primary-color;
+        }
+      }
+    }
+    > li{
+      display: inline-block;
+      position: relative;
+      margin: 0 8px;
+      &.kt-megamenu-item{
+        position: static;
+      }
+      > a{
+        text-transform: uppercase;
+        padding: 0 15px;
+        color: $text;
+        position: relative;
+        display: inline-block;
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          display: block;
+          @include opacity(0);
+          @include transition();
+        }
+        &:before{
+          content: '';
+          width: 0;
+          background: $white;
+          height: 2px;
+          top: -2px;
+          margin-left: -10px;
+        }
+
+        &:after{
+          width: 6px;
+          height: 6px;
+          background: $primary-color;
+          left: 50%;
+          margin-left: -3px;
+          top: -4px;
+          @include transform(rotate(45deg));
+        }
+      }
+      &.current-menu-item > a,
+      > a:hover,
+      &:hover > a{
+        color: $primary-color;
+        &:before,
+        &:after{
+          @include opacity(1);
+        }
+        &:before{
+          width: 20px;
+        }
+      }
+
+      ul.sub-menu-dropdown,
+      .kt-megamenu-wrapper{
+        border-top: 2px solid $primary-color;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        background: #FFFFFF;
+        line-height: normal;
+        text-align: left;
+        padding: 40px 30px 30px;
+        @include opacity(0);
+        @include transform(translate(0, 40px));
+        @include transition('opacity 0.2s ease-in-out, transform 0.3s ease-in-out');
+        @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.05));
+
+
+      }
+
+      ul.sub-menu-dropdown{
+        list-style: none;
+        padding: 20px 0;
+        margin: 0;
+        width: 308px;
+
+        li{
+          position: relative;
+          a{
+            padding: 9px 30px;
+            display: block;
+            color: $text;
+            font-size: 14px;
+            position: relative;
+            &:before{
+              height: 0;
+              width: 2px;
+              content: '';
+              left: 0;
+              background: $primary-color;
+              @include transition();
+              @include translate(y);
+            }
+          }
+
+
+          &.current-menu-item > a,
+          &:hover > a{
+            color: $primary-color;
+            &:before{
+              height: 100%;
+            }
+          }
+
+          ul.sub-menu-dropdown {
+            left: 100%;
+            top: -1px;
+          }
+
+        }
+        &.right-overflow {
+          right: 0;
+          left: auto;
+          top: 100%;
+        }
+
+
+      }
+      .kt-megamenu-wrapper{
+        width: 100%;
+      }
+
+      .kt-megamenu-inner{
+        width: 100%;
+
+        .kt-megamenu-images{
+          padding-top: 30px;
+        }
+
+
+        ul.kt-megamenu-ul{
+          @include css3-prefix-value(display, flex);
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          @include clearfix();
+          border-bottom: 2px solid $border-color2;
+
+          > li{
+            border-left: 2px solid $border-color2;
+            float: left;
+            vertical-align: top;
+            padding: 0 30px 20px;
+
+            &:first-child{
+              border-left-color: transparent;
+              padding-left: 0;
+            }
+
+            > a,
+            > span{
+              color: #000000;
+              font-size: 14px;
+              display: block;
+              padding: 0 0 10px;
+              margin-bottom: 40px;
+              position: relative;
+              text-transform: uppercase;
+
+              &:before{
+                content: '';
+                width: 25px;
+                height: 2px;
+                position: absolute;
+                display: block;
+                background: $primary-color;
+                bottom: 0;
+                left: 0;
+              }
+
+            }
+            > ul{
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              > li{
+                display: block;
+
+                > a{
+                  padding: 9px 0;
+                  display: block;
+                  color: $text;
+                  font-size: 14px;
+                  position: relative;
+                  &:before{
+                    height: 0;
+                    width: 2px;
+                    content: '';
+                    left: -32px;
+                    background: $primary-color;
+                    @include transition();
+                    @include translate(y);
+                  }
+                  &:hover{
+                    color: #000000;
+                  }
+                }
+
+                &.active > a,
+                &:hover > a,
+                > a:hover{
+                  color: $primary-color;
+                  &:before{
+                    height: 100%;
+                  }
+                }
+
+              }
+            }
+
+          }
+        }
+
+        &.megamenu-columns-4{
+          ul.kt-megamenu-ul > li{  width: 25%; }
+        }
+        &.megamenu-columns-3{
+          ul.kt-megamenu-ul > li{  width: 33.33%; }
+        }
+        &.megamenu-columns-2{
+          ul.kt-megamenu-ul > li{  width: 50%; }
+        }
+
+      }
+
+      &.megamenu-width-50{
+        .kt-megamenu-inner{  width: 50%;  }
+      }
+      &.megamenu-width-75{
+        .kt-megamenu-inner{  width: 75%;  }
+      }
+      &.megamenu-width-80{
+        .kt-megamenu-inner{  width: 80%;  }
+      }
+      &.megamenu-width-90{
+        .kt-megamenu-inner{  width: 90%;  }
+      }
+
+    }
+
+    li{
+      &:hover{
+        > ul.sub-menu-dropdown,
+        .kt-megamenu-wrapper{
+          @include opacity(1);
+          @include transform(translate(0, 0));
+          visibility: visible;
+        }
+      }
+      ul.sub-menu-dropdown{
+        li {
+          > ul.sub-menu-dropdown {
+            &.right-overflow{
+              right: 100%;
+              left: auto;
+            }
+          }
+        }
+      }
+    }
+
+  }
+}
+

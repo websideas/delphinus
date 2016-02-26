@@ -1,0 +1,262 @@
+/**
+ * Forms fields
+ */
+input[type=email],
+input[type=password],
+input[type=phone],
+input[type=tel],
+input[type=text],
+textarea {
+  border: 2px solid $border-color;
+  color: $text;
+  padding: 6px 17px;
+  height: 42px;
+  background: none;
+  @include border-radius(0);
+  @include css3-prefix('box-shadow', 'none');
+  @include css3-prefix('appearance', 'none');
+  @include css3-prefix('transition', 'none');
+  width: 100%;
+  &:focus {
+    @include css3-prefix('box-shadow', 'none');
+    outline: 0;
+    border-color: $primary-color;
+  }
+}
+
+textarea {
+  height: auto;
+}
+
+select {
+  @include border-radius(0);
+  width: 100%;
+  height: 40px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  border: 2px solid $border-color;
+  background: none;
+  cursor: pointer;
+  color: $text;
+}
+
+select:not([multiple]) {
+  @include css3-prefix('box-shadow', 'none');
+  @include css3-prefix('appearance', 'none');
+  background: url(../images/selectbox-arrow.png) no-repeat right center;
+}
+
+.form-control {
+  @include border-radius(0);
+  @include css3-prefix('box-shadow', 'none');
+  :focus {
+    @include css3-prefix('box-shadow', 'none');
+  }
+}
+
+.select-icon{
+  display: inline-block;
+  position: relative;
+  color: $gray-text2;
+  &:after{
+    content: "";
+    display: block;
+    pointer-events: none;
+    right: 0;
+    z-index: 1;
+    @include FontIcon('\f107');
+    @include translate(y);
+    font-size: 12px;
+
+  }
+  select{
+    border: none;
+    font-size: 12px;
+    background: none;
+    padding: 0 10px 0 0;
+    height: auto;
+    color: $gray-text2;
+    text-transform: uppercase;
+  }
+}
+
+
+/**
+ * Buttons
+ */
+
+.btn {
+  position: relative;
+  text-align: center;
+  line-height: 1.42857;
+  padding: 10px 35px;
+  display: inline-block;
+  font-family: $button-text;
+  text-transform: uppercase;
+  color: $text;
+  font-size: 14px;
+  @include border-radius(0);
+
+  &:focus,
+  &:active:focus,
+  &.active:focus {
+    outline: none;
+  }
+  &.active,
+  &:active {
+    @include css3-prefix('box-shadow', 'none');
+  }
+
+  /* Button size */
+  &-xs {
+    padding: 6px 10px;
+    font-size: 8px;
+  }
+  &-sm {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
+  &-lg {
+    padding: 14px 50px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &-xlg {
+    padding: 12px 65px;
+    font-size: 18px;
+  }
+
+
+  /* Button shapes */
+  &-round {
+    border-radius: 3px;
+  }
+  &-circle {
+    border-radius: 30px;
+  }
+
+  /* Button icon */
+  &.button-icon-left {
+    margin-right: 5px;
+  }
+  &.button-icon-right {
+    margin-left: 5px;
+  }
+
+  /* Button style */
+  &-default {
+    border-color: transparent;
+    background: none;
+    color: $text;
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 10px;
+      @include transition('all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s');
+    }
+    &:before{
+      left: 0;
+      bottom: -1px;
+      border-left: 2px solid $primary-color;
+      border-bottom: 2px solid $primary-color;
+    }
+    &:after{
+      top: -1px;
+      right: 0;
+      border-right: 2px solid $primary-color;
+      border-top: 2px solid $primary-color;
+    }
+    &:active,
+    &:focus,
+    &:hover{
+      background: none;
+      border-color: transparent;
+      color: $text;
+      &:before,
+      &:after{
+        height: 50%;
+      }
+    }
+    &:active{
+      &:focus,
+      &:hover{
+        background: none;
+        border-color: transparent;
+      }
+    }
+  }
+  &-animation{
+    span{
+      @include transform(translateX(0));
+      @include transition("all .3s ease-in-out 0s");
+      display: inline-block;
+      position: relative;
+      i{
+        @include opacity(0);
+        @include transition("all .3s ease-in-out 0s");
+        @include transform(translate(30px, -50%));
+        position: absolute;
+        right: 0;
+        top:50%;
+      }
+    }
+    &:hover{
+      span{
+        @include transform(translateX(-10px));
+        i{
+          @include opacity(1);
+        }
+      }
+    }
+  }
+
+  &-accent{
+    background: $primary-color;
+    border: 2px solid $primary-color;
+    color: $white;
+    &[required]:after{
+      content: "";
+      background: red;
+    }
+    &:hover{
+      background: $text;
+      border-color: $text;
+      color: $white;
+    }
+  }
+
+  &-dark{
+    background: $text;
+    color: $white;
+    border-color: $text;
+    &:hover,
+    &:focus{
+      background: $primary-color;
+      color: $white;
+      border-color: $primary-color;
+    }
+  }
+
+  &-light{
+    color: $white;
+    &:hover{
+      color: $white;
+    }
+  }
+}
+
+.pushbutton-wide{
+  @extend .btn;
+  @extend .btn-dark;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.more-link{
+  @extend .btn;
+  @extend .btn-default;
+}
+
