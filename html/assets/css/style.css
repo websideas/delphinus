@@ -4417,7 +4417,7 @@ table.compare tr td {
       position: absolute;
       top: 0;
       left: 0;
-      background: url(../images/bg-popup.png) no-repeat center center;
+      background: url(http://placehold.it/640x640) no-repeat center center;
       background-size: cover; }
 
 /* ==============================

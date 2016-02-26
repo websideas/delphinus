@@ -1,0 +1,881 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Delphinus - Creative Multi-Purpose eCommerce HTML5</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cCrete+Round:400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/Lineicons/style.css" />
+    <link rel="stylesheet" href="assets/css/plugins.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Common space -->
+    <link rel="stylesheet" href="assets/css/common-space.css">
+
+    <!-- CSS for IE -->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
+    <![endif]-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="appear-animate">
+
+
+<div class="page-loading-wrapper">
+    <div class="progress-bar-loading">
+        <div class="back-loading progress-bar-inner">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path d="M3.7,12h10.6l15.1,54.6c0.4,1.6,1.9,2.7,3.6,2.7h46.4c1.5,0,2.8-0.9,3.4-2.2l16.9-38.8c0.5-1.2,0.4-2.5-0.3-3.5
+                    c-0.7-1-1.8-1.7-3.1-1.7H45c-2,0-3.7,1.7-3.7,3.7s1.7,3.7,3.7,3.7h45.6L76.9,62H35.8L20.7,7.3c-0.4-1.6-1.9-2.7-3.6-2.7H3.7
+                    C1.7,4.6,0,6.3,0,8.3S1.7,12,3.7,12z"/>
+                <path d="M29.5,95.4c4.6,0,8.4-3.8,8.4-8.4s-3.8-8.4-8.4-8.4s-8.4,3.8-8.4,8.4C21.1,91.6,24.8,95.4,29.5,95.4z"/>
+                <path d="M81.9,95.4c0.2,0,0.4,0,0.6,0c2.2-0.2,4.3-1.2,5.7-2.9c1.5-1.7,2.2-3.8,2-6.1c-0.3-4.6-4.3-8.1-8.9-7.8s-8.1,4.4-7.8,8.9
+                    C73.9,91.9,77.5,95.4,81.9,95.4z"/>
+            </svg>
+        </div>
+        <div class="front-loading progress-bar-inner">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path d="M3.7,12h10.6l15.1,54.6c0.4,1.6,1.9,2.7,3.6,2.7h46.4c1.5,0,2.8-0.9,3.4-2.2l16.9-38.8c0.5-1.2,0.4-2.5-0.3-3.5
+                    c-0.7-1-1.8-1.7-3.1-1.7H45c-2,0-3.7,1.7-3.7,3.7s1.7,3.7,3.7,3.7h45.6L76.9,62H35.8L20.7,7.3c-0.4-1.6-1.9-2.7-3.6-2.7H3.7
+                    C1.7,4.6,0,6.3,0,8.3S1.7,12,3.7,12z"/>
+                <path d="M29.5,95.4c4.6,0,8.4-3.8,8.4-8.4s-3.8-8.4-8.4-8.4s-8.4,3.8-8.4,8.4C21.1,91.6,24.8,95.4,29.5,95.4z"/>
+                <path d="M81.9,95.4c0.2,0,0.4,0,0.6,0c2.2-0.2,4.3-1.2,5.7-2.9c1.5-1.7,2.2-3.8,2-6.1c-0.3-4.6-4.3-8.1-8.9-7.8s-8.1,4.4-7.8,8.9
+                    C73.9,91.9,77.5,95.4,81.9,95.4z"/>
+            </svg>
+        </div>
+        <div class="progress-bar-number">0%</div>
+    </div>
+</div>
+
+<div id="search-fullwidth" class="mfp-hide mfp-with-anim">
+    <form method="get" class="searchform" action="#">
+        <input type="text" placeholder="Search and hit enter" value="" name="s" />
+        <button class="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div><!-- #search-fullwidth -->
+
+<div id="popup-wrap" class="mfp-hide mfp-with-anim" data-timeshow="3">
+    <div class="wrapper-newletter-popup">
+        <div class="bg-popup"></div>
+        <h3>NEWSLETTER</h3>
+        <p>Subscribe to the Universal mailing list to receive updates on new arrivals, offers and other discount information.</p>
+        <form class="newsletters-form style2" method="get" action="#">
+            <input type="email" placeholder="Enter your email address">
+            <button class="submit"><i class="icon-Right-3"></i></button>
+        </form>
+    </div>
+</div><!-- #search-fullwidth -->
+
+<div id="page">
+    <!-- header-full-center -->
+    <header id="header" class=" ">
+        <div class="topbar">
+            <div class="row">
+                <div class="topbar-left col-sm-6">
+                    <ul class="top-navigation">
+                        <li class="language-switcher">
+                            <a href="#">EN</a>
+                            <ul class="top-navigation-submenu">
+                                <li><a href="#">FR</a></li>
+                                <li class="active"><a href="#">EN</a></li>
+                                <li><a href="#">DE</a></li>
+                            </ul>
+                        </li><!-- .language-switcher -->
+
+                        <li class="currency-switcher">
+                            <a href="#">USD</a>
+                            <ul class="top-navigation-submenu">
+                                <li><a href="#">EUR</a></li>
+                                <li class="active"><a href="#">USD</a></li>
+                            </ul>
+                        </li><!-- .language-switcher -->
+
+                        <li class="search-action">
+                            <a href="#search-fullwidth"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul><!-- .top-navigation -->
+                </div><!-- .topbar-left -->
+
+
+                <div class="topbar-right col-sm-6">
+                    <ul class="top-navigation">
+                        <li class="myaccount-item">
+                            <a href="#">login</a>
+                            <div class="top-navigation-submenu">
+                                <h3 class="submenu-heading">Login</h3>
+                                <form class="login" method="post">
+                                    <div class="myaccount-form">
+                                        <p>
+                                            <label for="username">Username or email address</label>
+                                            <input type="text" value="" id="username" name="username" class="input-text">
+                                        </p>
+                                        <p>
+                                            <label for="password">Password</label>
+                                            <input type="password" id="password" name="password" class="input-text">
+                                        </p>
+                                        <p>
+                                            <input type="submit" value="Login" name="login" class="btn btn-dark-b">
+                                            <label class="inline" for="rememberme">
+                                                <input type="checkbox" value="forever" id="rememberme" name="rememberme">Remember me
+                                            </label>
+                                            <a href="#" class="forget-password">Lost your password?</a>
+                                        </p>
+                                    </div>
+                                    <div class="myaccount-create">
+                                        Not registered? No problem
+                                        <input type="submit" value="create account" name="create" class="btn btn-gray pull-right">
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="wishlist-item">
+                            <a href="woocommerce-wishlist.html">
+                                wishlist <span>1</span>
+                            </a>
+                            <div class="top-navigation-submenu">
+                                <div class="shopping-bag">
+                                    <div class="shopping-bag-content">
+                                        <!--<p class="cart_block_no_products">Your wishlist is empty.</p>--><!-- .cart_block_no_products-->
+                                        <div class="bag-products">
+                                            <div class="bag-product">
+                                                <figure>
+                                                    <a href="#" class="bag-product-img">
+                                                        <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
+                                                    </a>
+                                                </figure>
+                                                <div class="bag-product-details">
+                                                    <h4 class="bag-product-title"><a href="#">Le grand cartable</a></h4>
+                                                    <div class="bag-product-price">Price: <span class="amount">$1000.00</span></div>
+                                                </div>
+                                                <a title="Remove this item" class="remove" href="#"></a>
+                                            </div><!-- .bag-product -->
+                                        </div><!-- .bag-products -->
+
+                                        <div class="bag-buttons">
+                                            <a class="btn btn-block btn-gray" href="#">View Wishlist</a>
+                                        </div><!-- .bag-buttons -->
+
+                                    </div><!-- .shopping-bag-content -->
+                                </div><!-- .shopping-bag -->
+                            </div>
+                        </li>
+                        <li class="shopping-bag-item">
+                            <a href="woocommerce-cart.html">my cart <span>2</span></a>
+
+                            <div class="top-navigation-submenu">
+                                <div class="shopping-bag">
+                                    <!--<p class="cart_block_no_products">Your cart is currently empty.</p>--><!-- .cart_block_no_products-->
+                                    <div class="bag-products">
+                                        <div class="bag-product">
+                                            <figure>
+                                                <a href="#" class="bag-product-img">
+                                                    <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
+                                                </a>
+                                            </figure>
+                                            <div class="bag-product-details">
+                                                <h4 class="bag-product-title"><a href="#">Le grand cartable</a></h4>
+                                                <div class="bag-product-price">Price: <span class="amount">$1000.00</span></div>
+                                                <div class="bag-product-qty">Quantity: 1</div>
+                                            </div>
+                                            <a title="Remove this item" class="remove" href="#"></a>
+                                        </div><!-- .bag-product -->
+
+                                        <div class="bag-product">
+                                            <figure>
+                                                <a href="#" class="bag-product-img">
+                                                    <img src="assets/images/product-cart-2.jpg" alt="" class="img-responsive">
+                                                </a>
+                                            </figure>
+                                            <div class="bag-product-details">
+                                                <h4 class="bag-product-title"><a href="#">Le grand cartable</a></h4>
+                                                <div class="bag-product-price">Price: <span class="amount">$1000.00</span></div>
+                                                <div class="bag-product-qty">Quantity: 1</div>
+                                            </div>
+                                            <a title="Remove this item" class="remove" href="#"></a>
+                                        </div><!-- .bag-product -->
+
+
+                                    </div><!-- .bag-products -->
+
+                                    <div class="bag-buttons">
+                                        <a class="btn-block btn btn-gray" href="woocommerce-cart.html">View Cart</a>
+                                        <a class="btn-block btn btn-dark-b" href="woocommerce-checkout.html">Checkout</a>
+                                    </div><!-- .bag-buttons -->
+
+                                </div><!-- .shopping-bag -->
+                            </div>
+
+                        </li>
+                    </ul><!-- .top-navigation -->
+                </div><!-- .topbar-right -->
+
+            </div>
+        </div><!-- .topbar -->    <div class="navbar-container sticky-header">
+        <div class="container">
+            <div class="navbar-container-inner clearfix">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" title="Delphinus" alt="Delphinus"/></a>
+                    </h1>
+                </div><!-- .branding -->
+                <div class="mobile-tool">
+                    <a id="hamburger-icon" href="#" title="Menu">
+                        <span class="hamburger-icon-inner">
+                            <span class="line line-1"></span>
+                            <span class="line line-2"></span>
+                            <span class="line line-3"></span>
+                        </span>
+                    </a>
+                    <a href="woocommerce-cart.html" class="mobile-tool-cart">
+                        <i class="icon-Shopping-Cart"></i>
+                        <span>2</span>
+                    </a>
+                </div>
+                <nav class="main-nav" id="nav">
+                    <div class="main-navigation-outer">
+                        <ul id="main-navigation">
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                                <ul class="sub-menu-dropdown">
+                                    <li><a href="homepage2.html">Homepage 2</a></li>
+                                    <li><a href="homepage3.html">Homepage 3</a></li>
+                                    <li><a href="homepage4.html">Homepage 4</a></li>
+                                    <li><a href="homepage5.html">Homepage 5</a></li>
+                                    <li><a href="homepage6.html">Homepage 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="kt-megamenu-item megamenu-width-80">
+                                <a href="woocommerce-shop.html">shop styles</a>
+                                <div class="kt-megamenu-wrapper megamenu-columns-3 megamenu-position-center">
+                                    <ul class="kt-megamenu-ul clearfix">
+                                        <li>
+                                            <span>Shop Style</span>
+                                            <ul class="sub-menu-megamenu">
+                                                <li><a href="woocommerce-shop.html">2 Column with sidebar</a></li>
+                                                <li><a href="woocommerce-3column-sidebar.html">3 Column with sidebar</a></li>
+                                                <li><a href="woocommerce-3column.html">3 Column</a></li>
+                                                <li><a href="woocommerce-4column.html">4 Column</a></li>
+                                                <li><a href="woocommerce-masonry.html">Masonry Style</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Product Detail</span>
+                                            <ul class="sub-menu-megamenu">
+                                                <li><a href="woocommerce-product-detailed1.html">Product detail Style 1</a></li>
+                                                <li><a href="woocommerce-product-detailed2.html">Product detail Style 2</a></li>
+                                                <li><a href="woocommerce-product-detailed3.html">Product detail Style 3</a></li>
+                                                <li><span>&nbsp;</span></li>
+                                                <li><span>&nbsp;</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Name It</span>
+                                            <ul class="sub-menu-megamenu">
+                                                <li><a href="woocommerce-checkout.html">Checkout</a></li>
+                                                <li><a href="woocommerce-compare.html">Compare</a></li>
+                                                <li><a href="woocommerce-myaccount.html">My account</a></li>
+                                                <li><a href="woocommerce-cart.html">My cart</a></li>
+                                                <li><a href="woocommerce-wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">pages</a>
+                                <ul class="sub-menu-dropdown">
+                                    <li><a href="pages-about.html">About us</a></li>
+                                    <li><a href="pages-contact.html">Contact us</a></li>
+                                    <li><a href="blog-gird-3columns.html">Blog</a></li>
+                                    <li><a href="blog-singlepost-standard.html">Blog detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">elements</a>
+                                <ul class="sub-menu-dropdown">
+                                    <li><a href="shortcode-tabs.html">Tabs</a></li>
+                                    <li><a href="shortcode-banner.html">Banner</a></li>
+                                    <li><a href="shortcode-messagebox.html">Message Box</a></li>
+                                    <li><a href="shortcode-typography.html">Typography</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">features</a></li>
+
+
+                        </ul><!-- #main-navigation -->        </div>
+                </nav><!-- .main-nav -->            </div>
+        </div>
+    </div><!-- .navbar-container -->
+        <nav class="main-nav-mobile" id="nav-mobile">
+            <ul class="navigation-mobile">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="homepage2.html">Homepage 2</a></li>
+                        <li><a href="homepage3.html">Homepage 3</a></li>
+                        <li><a href="homepage4.html">Homepage 4</a></li>
+                        <li><a href="homepage5.html">Homepage 5</a></li>
+                        <li><a href="homepage6.html">Homepage 6</a></li>
+                    </ul>
+                </li>
+                <li class="kt-megamenu-item megamenu-width-80">
+                    <a href="woocommerce-shop.html">shop styles</a>
+                    <div class="kt-megamenu-wrapper megamenu-columns-3 megamenu-position-center">
+                        <ul class="kt-megamenu-ul clearfix">
+                            <li>
+                                <span>Shop Style</span>
+                                <ul class="sub-menu-megamenu">
+                                    <li><a href="woocommerce-shop.html">2 Column with sidebar</a></li>
+                                    <li><a href="woocommerce-3column-sidebar.html">3 Column with sidebar</a></li>
+                                    <li><a href="woocommerce-3column.html">3 Column</a></li>
+                                    <li><a href="woocommerce-4column.html">4 Column</a></li>
+                                    <li><a href="woocommerce-masonry.html">Masonry Style</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Product Detail</span>
+                                <ul class="sub-menu-megamenu">
+                                    <li><a href="woocommerce-product-detailed1.html">Product detail Style 1</a></li>
+                                    <li><a href="woocommerce-product-detailed2.html">Product detail Style 2</a></li>
+                                    <li><a href="woocommerce-product-detailed3.html">Product detail Style 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Name It</span>
+                                <ul class="sub-menu-megamenu">
+                                    <li><a href="woocommerce-checkout.html">Checkout</a></li>
+                                    <li><a href="woocommerce-compare.html">Compare</a></li>
+                                    <li><a href="woocommerce-myaccount.html">My account</a></li>
+                                    <li><a href="woocommerce-cart.html">My cart</a></li>
+                                    <li><a href="woocommerce-wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">pages</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="pages-about.html">About us</a></li>
+                        <li><a href="pages-contact.html">Contact us</a></li>
+                        <li><a href="blog-gird-3columns.html">Blog</a></li>
+                        <li><a href="blog-singlepost-standard.html">Blog detail</a></li>
+                        <li><a href="#">Look book</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">elements</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="shortcode-tabs.html">Tabs</a></li>
+                        <li><a href="shortcode-banner.html">Banner</a></li>
+                        <li><a href="shortcode-button.html">Button</a></li>
+                        <li><a href="shortcode-messagebox.html">Message Box</a></li>
+                        <li><a href="shortcode-typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">features</a></li>
+                <li>
+                    <a href="#">Language: EN</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Frensh</a></li>
+                        <li><a href="#">Viet Nam</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Currency: USD</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">USD</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">login</a>
+                </li>
+                <li class="wishlist-item">
+                    <a href="woocommerce-wishlist.html">wishlist (<span>3</span>)</a>
+                </li>
+                <li>
+                    <form action="#" class="searchform" method="get">
+                        <input type="text" name="s" value="" placeholder="Search and hit enter">
+                        <button class="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+
+            </ul><!-- #main-navigation -->
+        </nav><!-- .main-nav-mobile --></header><!-- #header -->
+
+    <div class="page-section bg-gray small-section">
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <ol class="breadcrumb">
+                            <li><a href="#">Home</a></li>
+                            <li class="active">All Products</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        <h1>All products</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="page-section">
+            <div class="container">
+                <div class="row products products-multi-masonry masonry-botom">
+                    <div class="clearfix product col-sm-3 grid-sizer"></div>
+                    <div class="col-sm-6 product product wide">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 product wide">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 product wide">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-content">
+                            <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                <img src="http://placehold.it/600x600" alt=""/>
+                            </a>
+                        </div>
+
+                        <div class="product-details">
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 product standard">
+                        <div class="product-inner">
+                            <div class="product-content">
+                                <a class="product-thumbnail" href="woocommerce-product-detailed1.html">
+                                    <img src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                            </div>
+
+                            <div class="product-details">
+                                <h3 class="product-title">
+                                    <a href="woocommerce-product-detailed1.html">JWDA Lamp</a>
+                                </h3>
+                                <div class="product-price">$340.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div><!-- #main -->
+
+
+
+    <div id="footer">
+
+        <footer id="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="flip-box">
+                            <div class="flip-box-before">free shipping</div>
+                            <div class="flip-box-after">on all orders over $100</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="flip-box">
+                            <div class="flip-box-before">free return</div>
+                            <div class="flip-box-after">free 90 days return</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .container -->
+        </footer>
+
+
+        <footer id="footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">infomation</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Store</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">collections</h3>
+                            <ul>
+                                <li><a href="#">Living Room</a></li>
+                                <li><a href="#">Bathroom</a></li>
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Bed Room</a></li>
+                                <li><a href="#">Garden</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">EXTRAS</h3>
+                            <ul>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Gift Vouchers</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">MY ACCOUNT</h3>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                </div>
+            </div>
+        </footer><!-- #footer-area -->
+
+
+        <footer id="footer-copyright" class="bg-gray">
+            <div class="container">
+                <ul class="social-nav">
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a> </li>
+                    <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+                    <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+                </ul>
+                <div class="footer-copyright">&copy; 2015 Delphinus</div>
+            </div><!-- .container -->
+        </footer><!-- #footer-copyright -->
+
+
+
+    </div><!-- #footer -->
+
+</div><!-- #page -->
+
+<!-- JS -->
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<!-- Javascript Page Loader-->
+<script type="text/javascript" src="assets/js/pace.min.js" data-pace-options='{ "ajax": false }'></script>
+<script type="text/javascript" src="assets/js/page-loading.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+
+<!-- Javascript Main File -->
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

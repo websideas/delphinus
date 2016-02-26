@@ -2,332 +2,292 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/blank.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/css/custom.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/css/custom.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/blank.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/Home_01.jpg" afterPath="$PROJECT_DIR$/html/assets/images/Home_01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/Home_02.jpg" afterPath="$PROJECT_DIR$/html/assets/images/Home_02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/Home_03.jpg" afterPath="$PROJECT_DIR$/html/assets/images/Home_03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/Home_04.jpg" afterPath="$PROJECT_DIR$/html/assets/images/Home_04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/Home_05.jpg" afterPath="$PROJECT_DIR$/html/assets/images/Home_05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/Home_06.jpg" afterPath="$PROJECT_DIR$/html/assets/images/Home_06.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/about.png" afterPath="$PROJECT_DIR$/html/assets/images/about.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/background/bg-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images/background/bg-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/background/bg-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images/background/bg-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/background/bg-03.png" afterPath="$PROJECT_DIR$/html/assets/images/background/bg-03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/background/bg-04.png" afterPath="$PROJECT_DIR$/html/assets/images/background/bg-04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/background/bg-05.png" afterPath="$PROJECT_DIR$/html/assets/images/background/bg-05.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/background/bg-06.png" afterPath="$PROJECT_DIR$/html/assets/images/background/bg-06.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner.png" afterPath="$PROJECT_DIR$/html/assets/images/banner.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-04.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-05.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-06.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-06.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-07.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-07.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-08.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-08.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-09.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-09.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-10.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-11.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-11.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-12.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-12.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-13.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-13.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-14.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-14.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-15.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-16.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-17.jpg" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-18.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-18.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-19.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-19.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-20.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-20.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/banner/banner-21.png" afterPath="$PROJECT_DIR$/html/assets/images/banner/banner-21.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/bg-popup.png" afterPath="$PROJECT_DIR$/html/assets/images/bg-popup.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-10.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-11.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-12.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-4.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-5.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-6.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-7.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-8.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-9.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/blog/blog-detail.jpg" afterPath="$PROJECT_DIR$/html/assets/images/blog/blog-detail.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/browser.png" afterPath="$PROJECT_DIR$/html/assets/images/browser.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/category/category-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images/category/category-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/category/category-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images/category/category-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/category/category-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images/category/category-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/category/category-04.jpg" afterPath="$PROJECT_DIR$/html/assets/images/category/category-04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/client/client-01.png" afterPath="$PROJECT_DIR$/html/assets/images/client/client-01.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/client/client-02.png" afterPath="$PROJECT_DIR$/html/assets/images/client/client-02.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/client/client-03.png" afterPath="$PROJECT_DIR$/html/assets/images/client/client-03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/client/client-04.png" afterPath="$PROJECT_DIR$/html/assets/images/client/client-04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/client/client-05.png" afterPath="$PROJECT_DIR$/html/assets/images/client/client-05.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/client/client-06.png" afterPath="$PROJECT_DIR$/html/assets/images/client/client-06.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/collection-1.png" afterPath="$PROJECT_DIR$/html/assets/images/collection-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/collection-2.png" afterPath="$PROJECT_DIR$/html/assets/images/collection-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/collection-3.png" afterPath="$PROJECT_DIR$/html/assets/images/collection-3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/drag.png" afterPath="$PROJECT_DIR$/html/assets/images/drag.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/footer-bg.jpg" afterPath="$PROJECT_DIR$/html/assets/images/footer-bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/home1.jpg" afterPath="$PROJECT_DIR$/html/assets/images/home1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/home2.jpg" afterPath="$PROJECT_DIR$/html/assets/images/home2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/home3.jpg" afterPath="$PROJECT_DIR$/html/assets/images/home3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/home4-chair-bg.png" afterPath="$PROJECT_DIR$/html/assets/images/home4-chair-bg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/home4.jpg" afterPath="$PROJECT_DIR$/html/assets/images/home4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/home5.jpg" afterPath="$PROJECT_DIR$/html/assets/images/home5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/home6.jpg" afterPath="$PROJECT_DIR$/html/assets/images/home6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/intro-bg.jpg" afterPath="$PROJECT_DIR$/html/assets/images/intro-bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/logo.png" afterPath="$PROJECT_DIR$/html/assets/images-/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-1.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-10.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-11.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-12.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-13.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-14.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-15.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-16.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-17.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-18.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-19.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-19.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-2.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-20.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-20.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-21.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-22.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-23.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-24.png" afterPath="$PROJECT_DIR$/html/assets/images/product/product-24.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-25.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-25.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-26.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-26.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-27.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-27.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-28.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-28.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-3.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-4.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-5.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-6.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-7.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-8.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-9.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-carousel-01.png" afterPath="$PROJECT_DIR$/html/assets/images/product/product-carousel-01.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-carousel-02.png" afterPath="$PROJECT_DIR$/html/assets/images/product/product-carousel-02.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-carousel-03.png" afterPath="$PROJECT_DIR$/html/assets/images/product/product-carousel-03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-carousel-04.png" afterPath="$PROJECT_DIR$/html/assets/images/product/product-carousel-04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-carousel-05.png" afterPath="$PROJECT_DIR$/html/assets/images/product/product-carousel-05.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-carousel-06.png" afterPath="$PROJECT_DIR$/html/assets/images/product/product-carousel-06.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-gallery-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-gallery-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-gallery-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-gallery-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-gallery-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-gallery-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-gallery-04.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-gallery-04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-gallery-05.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-gallery-05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-1.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-10.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-2.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-3.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-4.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-5.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-6.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-7.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-8.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/product/product-grid-9.jpg" afterPath="$PROJECT_DIR$/html/assets/images/product/product-grid-9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/sale-off.png" afterPath="$PROJECT_DIR$/html/assets/images/sale-off.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/selectbox-arrow.png" afterPath="$PROJECT_DIR$/html/assets/images-/selectbox-arrow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/chair1.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/chair1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/chair2.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/chair2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/collection.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/collection.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/furniture1.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/furniture1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/img-box.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/img-box.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/product-featured-1.jpg" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/product-featured-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/product-featured-2.jpg" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/product-featured-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/product-featured-3.jpg" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/product-featured-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/sale-box1.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/sale-box1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/sale-up.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/sale-up.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/slide2.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/slide2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/slide3.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/slide3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/slide4.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/slide4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images---/slideshow/transparent.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/transparent.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/Home_01.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/Home_01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/Home_02.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/Home_02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/Home_03.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/Home_03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/Home_04.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/Home_04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/Home_05.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/Home_05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/Home_06.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/Home_06.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/about.png" afterPath="$PROJECT_DIR$/html/assets/images-/about.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/background/bg-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/background/bg-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-03.png" afterPath="$PROJECT_DIR$/html/assets/images-/background/bg-03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-04.png" afterPath="$PROJECT_DIR$/html/assets/images-/background/bg-04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-05.png" afterPath="$PROJECT_DIR$/html/assets/images-/background/bg-05.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-06.png" afterPath="$PROJECT_DIR$/html/assets/images-/background/bg-06.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-04.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-05.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-06.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-06.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-07.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-07.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-08.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-08.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-09.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-09.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-10.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-10.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-11.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-11.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-12.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-12.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-13.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-13.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-14.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-14.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-15.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-16.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-17.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-18.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-18.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-19.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-19.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-20.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-20.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-21.png" afterPath="$PROJECT_DIR$/html/assets/images-/banner/banner-21.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/bg-popup.png" afterPath="$PROJECT_DIR$/html/assets/images-/bg-popup.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-10.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-11.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-12.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-4.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-5.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-6.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-7.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-8.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-9.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-detail.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/blog/blog-detail.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/browser.png" afterPath="$PROJECT_DIR$/html/assets/images-/browser.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/category/category-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/category/category-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/category/category-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-04.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/category/category-04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-01.png" afterPath="$PROJECT_DIR$/html/assets/images-/client/client-01.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-02.png" afterPath="$PROJECT_DIR$/html/assets/images-/client/client-02.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-03.png" afterPath="$PROJECT_DIR$/html/assets/images-/client/client-03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-04.png" afterPath="$PROJECT_DIR$/html/assets/images-/client/client-04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-05.png" afterPath="$PROJECT_DIR$/html/assets/images-/client/client-05.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-06.png" afterPath="$PROJECT_DIR$/html/assets/images-/client/client-06.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/collection-1.png" afterPath="$PROJECT_DIR$/html/assets/images-/collection-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/collection-2.png" afterPath="$PROJECT_DIR$/html/assets/images-/collection-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/collection-3.png" afterPath="$PROJECT_DIR$/html/assets/images-/collection-3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/drag.png" afterPath="$PROJECT_DIR$/html/assets/images-/drag.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/footer-bg.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/footer-bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/home1.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/home1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/home2.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/home2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/home3.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/home3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/home4-chair-bg.png" afterPath="$PROJECT_DIR$/html/assets/images-/home4-chair-bg.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/home4.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/home4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/home5.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/home5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/home6.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/home6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/intro-bg.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/intro-bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-1.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-10.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-11.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-12.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-13.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-13.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-14.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-14.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-15.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-15.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-16.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-16.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-17.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-17.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-18.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-18.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-19.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-19.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-2.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-20.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-20.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-21.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-21.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-22.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-22.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-23.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-23.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-24.png" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-24.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-25.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-25.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-26.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-26.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-27.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-27.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-28.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-28.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-3.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-4.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-5.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-6.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-7.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-8.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-9.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-01.png" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-01.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-02.png" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-02.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-03.png" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-03.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-04.png" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-04.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-05.png" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-05.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-06.png" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-06.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-01.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-01.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-02.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-02.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-03.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-03.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-04.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-04.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-05.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-05.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-1.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-10.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-2.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-3.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-4.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-5.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-6.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-7.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-8.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-9.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/product/product-grid-9.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/sale-off.png" afterPath="$PROJECT_DIR$/html/assets/images-/sale-off.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/chair1.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/chair1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/chair2.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/chair2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/furniture1.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/furniture1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/product-featured-1.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/product-featured-1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/product-featured-2.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/product-featured-2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/product-featured-3.jpg" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/product-featured-3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/sale-up.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/sale-up.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/slide2.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/slide2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/slide3.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/slide3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/slide4.png" afterPath="$PROJECT_DIR$/html/assets/images-/slideshow/slide4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/collection.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/collection.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/images/slideshow/sale-box1.png" afterPath="$PROJECT_DIR$/html/assets/images/slideshow/sale-box1.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/Home_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/Home_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/Home_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/Home_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/Home_05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/Home_06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/background/bg-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/background/bg-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/background/bg-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/background/bg-04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/background/bg-05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/background/bg-06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/banner/banner-21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/bg-popup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/blog/blog-detail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/category/category-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/category/category-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/category/category-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/category/category-04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/client/client-01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/client/client-02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/client/client-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/client/client-04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/client/client-05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/client/client-06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/collection-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/collection-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/collection-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/drag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/home1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/home2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/home3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/home4-chair-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/home4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/home5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/home6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/intro-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product-cart-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product-cart-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-carousel-06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-gallery-05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/product/product-grid-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/sale-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/selectbox-arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/chair1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/chair2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/collection.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/furniture1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/img-box.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/product-featured-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/product-featured-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/product-featured-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/sale-box1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/sale-up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/slide2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/slide3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/slide4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images-/slideshow/transparent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/Home_01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/Home_02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/Home_03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/Home_04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/Home_05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/Home_06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/about.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/background/bg-06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-06.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-07.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-08.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-09.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-18.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-19.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/banner/banner-21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/bg-popup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/blog/blog-detail.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/browser.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/category/category-04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/client/client-06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/collection-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/collection-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/collection-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/footer-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/home1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/home2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/home3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/home4-chair-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/home4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/home5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/home6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/intro-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product-cart-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product-cart-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-24.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-carousel-06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-01.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-02.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-04.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-gallery-05.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/product/product-grid-9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/html/assets/images/sale-off.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/previews/01_Preview.jpg" afterPath="$PROJECT_DIR$/previews/01_Preview.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/blog-gird-3columns.html" afterPath="$PROJECT_DIR$/html/blog-gird-3columns.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/blog-singlepost-standard.html" afterPath="$PROJECT_DIR$/html/blog-singlepost-standard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/css/common-space.css.map" afterPath="$PROJECT_DIR$/html/assets/css/common-space.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/css/common-space.css" afterPath="$PROJECT_DIR$/html/assets/css/common-space.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/css/common-space.scss" afterPath="$PROJECT_DIR$/html/assets/css/common-space.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/footers/foot.php" afterPath="$PROJECT_DIR$/templates/footers/foot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/headers/head.php" afterPath="$PROJECT_DIR$/templates/headers/head.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/headers/header2.php" afterPath="$PROJECT_DIR$/templates/headers/header2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/headers/header4.php" afterPath="$PROJECT_DIR$/templates/headers/header4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/homepage2.html" afterPath="$PROJECT_DIR$/html/homepage2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage2.php" afterPath="$PROJECT_DIR$/homepage2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/homepage3.html" afterPath="$PROJECT_DIR$/html/homepage3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage3.php" afterPath="$PROJECT_DIR$/homepage3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/homepage4.html" afterPath="$PROJECT_DIR$/html/homepage4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage4.php" afterPath="$PROJECT_DIR$/homepage4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/homepage5.html" afterPath="$PROJECT_DIR$/html/homepage5.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage5.php" afterPath="$PROJECT_DIR$/homepage5.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/homepage6.html" afterPath="$PROJECT_DIR$/html/homepage6.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage6.php" afterPath="$PROJECT_DIR$/homepage6.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/js/main.js" afterPath="$PROJECT_DIR$/html/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/js/page-loading.js" afterPath="$PROJECT_DIR$/html/assets/js/page-loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-404.html" afterPath="$PROJECT_DIR$/html/pages-404.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-404.php" afterPath="$PROJECT_DIR$/pages-404.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-about.html" afterPath="$PROJECT_DIR$/html/pages-about.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-blank.html" afterPath="$PROJECT_DIR$/html/pages-blank.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-contact.html" afterPath="$PROJECT_DIR$/html/pages-contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-contact.php" afterPath="$PROJECT_DIR$/pages-contact.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-footer-style1.html" afterPath="$PROJECT_DIR$/html/pages-footer-style1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-footer-style1.php" afterPath="$PROJECT_DIR$/pages-footer-style1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-footer-style2.html" afterPath="$PROJECT_DIR$/html/pages-footer-style2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-footer-style2.php" afterPath="$PROJECT_DIR$/pages-footer-style2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-footer-style3.html" afterPath="$PROJECT_DIR$/html/pages-footer-style3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-footer-style3.php" afterPath="$PROJECT_DIR$/pages-footer-style3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-header-style1.html" afterPath="$PROJECT_DIR$/html/pages-header-style1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style1.php" afterPath="$PROJECT_DIR$/pages-header-style1.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-header-style2.html" afterPath="$PROJECT_DIR$/html/pages-header-style2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style2.php" afterPath="$PROJECT_DIR$/pages-header-style2.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-header-style3.html" afterPath="$PROJECT_DIR$/html/pages-header-style3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style3.php" afterPath="$PROJECT_DIR$/pages-header-style3.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-header-style4.html" afterPath="$PROJECT_DIR$/html/pages-header-style4.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-header-style4.php" afterPath="$PROJECT_DIR$/pages-header-style4.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/pages-intro.html" afterPath="$PROJECT_DIR$/html/pages-intro.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages-intro.php" afterPath="$PROJECT_DIR$/pages-intro.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/plugins.js" afterPath="$PROJECT_DIR$/assets/js/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/js/plugins.js" afterPath="$PROJECT_DIR$/html/assets/js/plugins.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/css/plugins.css" afterPath="$PROJECT_DIR$/html/assets/css/plugins.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/shortcode-banner.html" afterPath="$PROJECT_DIR$/html/shortcode-banner.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/shortcode-messagebox.html" afterPath="$PROJECT_DIR$/html/shortcode-messagebox.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/shortcode-tabs.html" afterPath="$PROJECT_DIR$/html/shortcode-tabs.html" />
@@ -338,21 +298,18 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/css/style.css" afterPath="$PROJECT_DIR$/html/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.scss" afterPath="$PROJECT_DIR$/assets/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/assets/css/style.scss" afterPath="$PROJECT_DIR$/html/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/top-bar-2.php" afterPath="$PROJECT_DIR$/templates/top-bar-2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/top-bar-3.php" afterPath="$PROJECT_DIR$/templates/top-bar-3.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/top-bar.php" afterPath="$PROJECT_DIR$/templates/top-bar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-3column-sidebar.html" afterPath="$PROJECT_DIR$/html/woocommerce-3column-sidebar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-3column.html" afterPath="$PROJECT_DIR$/html/woocommerce-3column.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-4column.html" afterPath="$PROJECT_DIR$/html/woocommerce-4column.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-cart.html" afterPath="$PROJECT_DIR$/html/woocommerce-cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-checkout.html" afterPath="$PROJECT_DIR$/html/woocommerce-checkout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/woocommerce-checkout.php" afterPath="$PROJECT_DIR$/woocommerce-checkout.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-compare.html" afterPath="$PROJECT_DIR$/html/woocommerce-compare.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-masonry.html" afterPath="$PROJECT_DIR$/html/woocommerce-masonry.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-myaccount.html" afterPath="$PROJECT_DIR$/html/woocommerce-myaccount.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-product-detailed1.html" afterPath="$PROJECT_DIR$/html/woocommerce-product-detailed1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-product-detailed2.html" afterPath="$PROJECT_DIR$/html/woocommerce-product-detailed2.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-product-detailed3.html" afterPath="$PROJECT_DIR$/html/woocommerce-product-detailed3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/ajax/woocommerce-product-quickview.html" afterPath="$PROJECT_DIR$/html/ajax/woocommerce-product-quickview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-shop.html" afterPath="$PROJECT_DIR$/html/woocommerce-shop.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/woocommerce-wishlist.html" afterPath="$PROJECT_DIR$/html/woocommerce-wishlist.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -377,21 +334,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="foot.php" pinned="true" current-in-tab="false">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus----/templates/footers/foot.php">
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.655738">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="32" selection-end-column="9" />
+            <state vertical-scroll-proportion="-125.625">
+              <caret line="4770" column="25" selection-start-line="4770" selection-start-column="25" selection-end-line="4770" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="foot.php" pinned="true" current-in-tab="true">
-        <entry file="REMOTE_DEPLOYMENT_FS://&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/templates/footers/foot.php">
+      <file leaf-file-name="intro.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/intro.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78850853">
-              <caret line="43" column="9" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.24561404">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -405,57 +362,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/top-bar-2.php" />
-        <option value="$PROJECT_DIR$/templates/top-bar-3.php" />
-        <option value="$PROJECT_DIR$/assets/css/style.scss" />
-        <option value="$PROJECT_DIR$/html/blank.html" />
+        <option value="$PROJECT_DIR$/html/pages-404.html" />
+        <option value="$PROJECT_DIR$/pages-footer-style2.php" />
+        <option value="$PROJECT_DIR$/pages-footer-style3.php" />
+        <option value="$PROJECT_DIR$/pages-footer-style1.php" />
+        <option value="$PROJECT_DIR$/pages-header-style1.php" />
+        <option value="$PROJECT_DIR$/pages-header-style2.php" />
+        <option value="$PROJECT_DIR$/pages-header-style3.php" />
+        <option value="$PROJECT_DIR$/pages-header-style4.php" />
+        <option value="$PROJECT_DIR$/html/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/templates/footers/foot.php" />
+        <option value="$PROJECT_DIR$/html/woocommerce-shop.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-3column.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-3column-sidebar.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-4column.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-masonry.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-product-detailed1.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-product-detailed2.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-product-detailed3.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-compare.html" />
+        <option value="$PROJECT_DIR$/html/woocommerce-wishlist.html" />
+        <option value="$PROJECT_DIR$/html/assets/css/plugins.css" />
         <option value="$PROJECT_DIR$/html/blog-singlepost-standard.html" />
+        <option value="$PROJECT_DIR$/html/blog-gird-3columns.html" />
         <option value="$PROJECT_DIR$/html/homepage2.html" />
         <option value="$PROJECT_DIR$/html/homepage3.html" />
         <option value="$PROJECT_DIR$/html/homepage4.html" />
         <option value="$PROJECT_DIR$/html/homepage5.html" />
         <option value="$PROJECT_DIR$/html/homepage6.html" />
-        <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/html/pages-404.html" />
         <option value="$PROJECT_DIR$/html/pages-about.html" />
         <option value="$PROJECT_DIR$/html/pages-blank.html" />
         <option value="$PROJECT_DIR$/html/pages-contact.html" />
-        <option value="$PROJECT_DIR$/pages-footer-style2.php" />
-        <option value="$PROJECT_DIR$/pages-footer-style3.php" />
-        <option value="$PROJECT_DIR$/pages-footer-style1.php" />
-        <option value="$PROJECT_DIR$/html/pages-footer-style1.html" />
-        <option value="$PROJECT_DIR$/html/pages-footer-style2.html" />
-        <option value="$PROJECT_DIR$/html/pages-footer-style3.html" />
-        <option value="$PROJECT_DIR$/pages-header-style1.php" />
-        <option value="$PROJECT_DIR$/pages-header-style2.php" />
-        <option value="$PROJECT_DIR$/pages-header-style3.php" />
-        <option value="$PROJECT_DIR$/pages-header-style4.php" />
-        <option value="$PROJECT_DIR$/html/pages-header-style1.html" />
-        <option value="$PROJECT_DIR$/html/pages-header-style2.html" />
-        <option value="$PROJECT_DIR$/html/pages-header-style4.html" />
-        <option value="$PROJECT_DIR$/html/pages-header-style3.html" />
         <option value="$PROJECT_DIR$/html/pages-intro.html" />
         <option value="$PROJECT_DIR$/html/shortcode-banner.html" />
         <option value="$PROJECT_DIR$/html/shortcode-messagebox.html" />
         <option value="$PROJECT_DIR$/html/shortcode-tabs.html" />
         <option value="$PROJECT_DIR$/html/shortcode-typography.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-3column.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-3column-sidebar.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-4column.html" />
         <option value="$PROJECT_DIR$/html/woocommerce-cart.html" />
         <option value="$PROJECT_DIR$/html/woocommerce-checkout.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-compare.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-masonry.html" />
         <option value="$PROJECT_DIR$/html/woocommerce-myaccount.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-product-detailed1.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-product-detailed2.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-product-detailed3.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-shop.html" />
-        <option value="$PROJECT_DIR$/html/woocommerce-wishlist.html" />
-        <option value="$PROJECT_DIR$/html/blog-gird-3columns.html" />
-        <option value="$PROJECT_DIR$/html/assets/js/main.js" />
-        <option value="$PROJECT_DIR$/assets/js/main.js" />
-        <option value="&lt;2c89c9bd-0ab6-4323-a130-eed885493f6f&gt;/kitethemes.com/delphinus/templates/footers/foot.php" />
+        <option value="$PROJECT_DIR$/html/pages-footer-style1.html" />
+        <option value="$PROJECT_DIR$/html/pages-footer-style2.html" />
+        <option value="$PROJECT_DIR$/html/pages-footer-style3.html" />
+        <option value="$PROJECT_DIR$/html/pages-header-style1.html" />
+        <option value="$PROJECT_DIR$/html/pages-header-style2.html" />
+        <option value="$PROJECT_DIR$/html/pages-header-style3.html" />
+        <option value="$PROJECT_DIR$/html/pages-header-style4.html" />
+        <option value="$PROJECT_DIR$/html/ajax/woocommerce-product-quickview.html" />
+        <option value="$PROJECT_DIR$/html/assets/css/style.scss" />
+        <option value="$PROJECT_DIR$/html/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.scss" />
       </list>
     </option>
   </component>
@@ -499,8 +456,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -529,12 +484,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -611,24 +586,24 @@
     <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14457202" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14457202" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22025052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -647,202 +622,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/top-bar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/top-bar-2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.125">
-          <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/top-bar-3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.125">
-          <caret line="80" column="46" selection-start-line="80" selection-start-column="46" selection-end-line="80" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="1038" column="27" selection-start-line="1038" selection-start-column="27" selection-end-line="1038" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/blog-singlepost-standard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9649123">
-          <caret line="852" column="7" selection-start-line="852" selection-start-column="7" selection-end-line="852" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/homepage2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="988" column="7" selection-start-line="988" selection-start-column="7" selection-end-line="988" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/homepage3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.875">
-          <caret line="1113" column="7" selection-start-line="1113" selection-start-column="7" selection-end-line="1113" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#5;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#4;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#5;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#6;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#7;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#8;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/homepage4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="1423" column="7" selection-start-line="1423" selection-start-column="7" selection-end-line="1423" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/homepage5.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75">
-          <caret line="1125" column="31" selection-start-line="1125" selection-start-column="31" selection-end-line="1125" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/homepage6.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="1235" column="7" selection-start-line="1235" selection-start-column="7" selection-end-line="1235" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8947368">
-          <caret line="115" column="7" selection-start-line="115" selection-start-column="7" selection-end-line="115" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4385965">
-          <caret line="546" column="92" selection-start-line="546" selection-start-column="92" selection-end-line="546" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31578946">
-          <caret line="524" column="0" selection-start-line="524" selection-start-column="0" selection-end-line="524" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.25">
-          <caret line="577" column="20" selection-start-line="577" selection-start-column="20" selection-end-line="577" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.875">
-          <caret line="1212" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="1212" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages-footer-style2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8245614">
-          <caret line="421" column="39" selection-start-line="421" selection-start-column="39" selection-end-line="421" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages-footer-style3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8947368">
           <caret line="421" column="39" selection-start-line="421" selection-start-column="39" selection-end-line="421" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,63 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19298245">
           <caret line="381" column="86" selection-start-line="381" selection-start-column="86" selection-end-line="381" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-footer-style1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5">
-          <caret line="1185" column="35" selection-start-line="1185" selection-start-column="35" selection-end-line="1185" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-footer-style2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="1245" column="7" selection-start-line="1245" selection-start-column="7" selection-end-line="1245" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-footer-style3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="21.40351">
-          <caret line="1220" column="7" selection-start-line="1220" selection-start-column="7" selection-end-line="1220" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9649123">
           <caret line="425" column="0" selection-start-line="425" selection-start-column="0" selection-end-line="425" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -922,7 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3263158">
           <caret line="391" column="41" selection-start-line="0" selection-start-column="0" selection-end-line="425" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,7 +654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.75">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -946,288 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14035088">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-header-style1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50877196">
-          <caret line="1186" column="31" selection-start-line="1186" selection-start-column="31" selection-end-line="1186" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-header-style4.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="1211" column="7" selection-start-line="1211" selection-start-column="7" selection-end-line="1211" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-header-style3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40350878">
-          <caret line="1192" column="32" selection-start-line="1192" selection-start-column="32" selection-end-line="1192" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-intro.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.875">
-          <caret line="522" column="7" selection-start-line="522" selection-start-column="7" selection-end-line="522" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/shortcode-banner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9649123">
-          <caret line="588" column="7" selection-start-line="588" selection-start-column="7" selection-end-line="588" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/shortcode-messagebox.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
-          <caret line="682" column="0" selection-start-line="682" selection-start-column="0" selection-end-line="682" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/shortcode-tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.875">
-          <caret line="656" column="7" selection-start-line="656" selection-start-column="7" selection-end-line="656" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/shortcode-typography.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5263158">
-          <caret line="673" column="21" selection-start-line="673" selection-start-column="21" selection-end-line="673" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-3column.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="1027" column="39" selection-start-line="1027" selection-start-column="39" selection-end-line="1027" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-3column-sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9649123">
-          <caret line="1212" column="7" selection-start-line="1212" selection-start-column="7" selection-end-line="1212" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-4column.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="1355" column="7" selection-start-line="1355" selection-start-column="7" selection-end-line="1355" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="687" column="7" selection-start-line="687" selection-start-column="7" selection-end-line="687" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125">
-          <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-compare.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="666" column="7" selection-start-line="666" selection-start-column="7" selection-end-line="666" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#td#2;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#td#3;n#tr#1;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-masonry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="848" column="54" selection-start-line="848" selection-start-column="54" selection-end-line="848" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-myaccount.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="599" column="7" selection-start-line="599" selection-start-column="7" selection-end-line="599" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-product-detailed1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="953" column="7" selection-start-line="953" selection-start-column="7" selection-end-line="953" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#1;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#2;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-product-detailed2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="968" column="7" selection-start-line="968" selection-start-column="7" selection-end-line="968" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#1;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#2;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-product-detailed3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="963" column="7" selection-start-line="963" selection-start-column="7" selection-end-line="963" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#1;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#1;n#div#0;n#li#2;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-shop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-34.375">
-          <caret line="959" column="7" selection-start-line="959" selection-start-column="7" selection-end-line="959" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/woocommerce-wishlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.596491">
-          <caret line="589" column="53" selection-start-line="589" selection-start-column="53" selection-end-line="589" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/blog-gird-3columns.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.958334">
-          <caret line="175" column="58" selection-start-line="175" selection-start-column="58" selection-end-line="175" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/pages-header-style2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-106.0">
-          <caret line="1211" column="7" selection-start-line="1211" selection-start-column="7" selection-end-line="1211" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#li#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#svg#0;n#div#0;n#div#0;n#div#0;n#div#4;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1235,7 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,6 +682,302 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.29692832">
           <caret line="483" column="52" selection-start-line="483" selection-start-column="52" selection-end-line="483" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-shop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.25">
+          <caret line="760" column="46" selection-start-line="760" selection-start-column="46" selection-end-line="760" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-4column.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5017544">
+          <caret line="1192" column="59" selection-start-line="1192" selection-start-column="59" selection-end-line="1192" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-masonry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45614034">
+          <caret line="739" column="34" selection-start-line="739" selection-start-column="34" selection-end-line="739" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-product-detailed2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.875">
+          <caret line="983" column="7" selection-start-line="557" selection-start-column="4" selection-end-line="983" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-product-detailed3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4385965">
+          <caret line="951" column="39" selection-start-line="951" selection-start-column="39" selection-end-line="951" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-3column-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3614035">
+          <caret line="956" column="44" selection-start-line="956" selection-start-column="44" selection-end-line="956" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-compare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.375">
+          <caret line="453" column="139" selection-start-line="453" selection-start-column="139" selection-end-line="453" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-wishlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45614034">
+          <caret line="461" column="41" selection-start-line="461" selection-start-column="41" selection-end-line="461" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-3column.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57894737">
+          <caret line="882" column="64" selection-start-line="882" selection-start-column="64" selection-end-line="882" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/assets/css/plugins.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4190141">
+          <caret line="22" column="487" selection-start-line="22" selection-start-column="487" selection-end-line="22" selection-end-column="487" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/blog-singlepost-standard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9649123">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/blog-gird-3columns.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7017544">
+          <caret line="385" column="75" selection-start-line="385" selection-start-column="75" selection-end-line="385" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/homepage2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-59.375">
+          <caret line="229" column="29" selection-start-line="229" selection-start-column="29" selection-end-line="229" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/homepage3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9649123">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/homepage4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="229" column="29" selection-start-line="229" selection-start-column="29" selection-end-line="229" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/homepage5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/homepage6.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9649123">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9649123">
+          <caret line="221" column="29" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9649123">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-intro.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="237" column="29" selection-start-line="237" selection-start-column="29" selection-end-line="237" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/shortcode-banner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7368421">
+          <caret line="221" column="29" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/shortcode-messagebox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="221" column="29" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/shortcode-tabs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="221" column="29" selection-start-line="221" selection-start-column="29" selection-end-line="221" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/shortcode-typography.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21052632">
+          <caret line="178" column="61" selection-start-line="178" selection-start-column="61" selection-end-line="178" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.375">
+          <caret line="385" column="75" selection-start-line="385" selection-start-column="75" selection-end-line="385" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-checkout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="225" column="29" selection-start-line="225" selection-start-column="29" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-myaccount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.375">
+          <caret line="201" column="39" selection-start-line="201" selection-start-column="39" selection-end-line="201" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-404.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.94736844">
+          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-footer-style2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="111.875">
+          <caret line="1014" column="50" selection-start-line="1014" selection-start-column="50" selection-end-line="1014" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-footer-style3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45614034">
+          <caret line="1047" column="68" selection-start-line="1047" selection-start-column="68" selection-end-line="1047" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-footer-style1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5017544">
+          <caret line="597" column="39" selection-start-line="597" selection-start-column="39" selection-end-line="597" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-header-style1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="148" column="24" selection-start-line="148" selection-start-column="24" selection-end-line="225" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-header-style2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.291666">
+          <caret line="229" column="29" selection-start-line="229" selection-start-column="29" selection-end-line="229" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-header-style3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.375">
+          <caret line="239" column="29" selection-start-line="239" selection-start-column="29" selection-end-line="239" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/pages-header-style4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5263158">
+          <caret line="204" column="65" selection-start-line="204" selection-start-column="65" selection-end-line="204" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/woocommerce-product-detailed1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5614035">
+          <caret line="441" column="57" selection-start-line="441" selection-start-column="57" selection-end-line="441" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/ajax/woocommerce-product-quickview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1578947">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.6470585">
+          <caret line="1091" column="0" selection-start-line="1091" selection-start-column="0" selection-end-line="1091" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1764708">
+          <caret line="4773" column="22" selection-start-line="4773" selection-start-column="22" selection-end-line="4773" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-125.625">
+          <caret line="4770" column="25" selection-start-line="4770" selection-start-column="25" selection-end-line="4770" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/intro.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24561404">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding />
         </state>
       </provider>

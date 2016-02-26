@@ -1,0 +1,982 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Delphinus - Creative Multi-Purpose eCommerce HTML5</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cCrete+Round:400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/Lineicons/style.css" />
+    <link rel="stylesheet" href="assets/css/plugins.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Responsive Styles -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Common space -->
+    <link rel="stylesheet" href="assets/css/common-space.css">
+
+    <!-- CSS for IE -->
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" type="text/css" href="assets/css/ie.css" />
+    <![endif]-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="appear-animate">
+
+
+<div class="page-loading-wrapper">
+    <div class="progress-bar-loading">
+        <div class="back-loading progress-bar-inner">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path d="M3.7,12h10.6l15.1,54.6c0.4,1.6,1.9,2.7,3.6,2.7h46.4c1.5,0,2.8-0.9,3.4-2.2l16.9-38.8c0.5-1.2,0.4-2.5-0.3-3.5
+                    c-0.7-1-1.8-1.7-3.1-1.7H45c-2,0-3.7,1.7-3.7,3.7s1.7,3.7,3.7,3.7h45.6L76.9,62H35.8L20.7,7.3c-0.4-1.6-1.9-2.7-3.6-2.7H3.7
+                    C1.7,4.6,0,6.3,0,8.3S1.7,12,3.7,12z"/>
+                <path d="M29.5,95.4c4.6,0,8.4-3.8,8.4-8.4s-3.8-8.4-8.4-8.4s-8.4,3.8-8.4,8.4C21.1,91.6,24.8,95.4,29.5,95.4z"/>
+                <path d="M81.9,95.4c0.2,0,0.4,0,0.6,0c2.2-0.2,4.3-1.2,5.7-2.9c1.5-1.7,2.2-3.8,2-6.1c-0.3-4.6-4.3-8.1-8.9-7.8s-8.1,4.4-7.8,8.9
+                    C73.9,91.9,77.5,95.4,81.9,95.4z"/>
+            </svg>
+        </div>
+        <div class="front-loading progress-bar-inner">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                <path d="M3.7,12h10.6l15.1,54.6c0.4,1.6,1.9,2.7,3.6,2.7h46.4c1.5,0,2.8-0.9,3.4-2.2l16.9-38.8c0.5-1.2,0.4-2.5-0.3-3.5
+                    c-0.7-1-1.8-1.7-3.1-1.7H45c-2,0-3.7,1.7-3.7,3.7s1.7,3.7,3.7,3.7h45.6L76.9,62H35.8L20.7,7.3c-0.4-1.6-1.9-2.7-3.6-2.7H3.7
+                    C1.7,4.6,0,6.3,0,8.3S1.7,12,3.7,12z"/>
+                <path d="M29.5,95.4c4.6,0,8.4-3.8,8.4-8.4s-3.8-8.4-8.4-8.4s-8.4,3.8-8.4,8.4C21.1,91.6,24.8,95.4,29.5,95.4z"/>
+                <path d="M81.9,95.4c0.2,0,0.4,0,0.6,0c2.2-0.2,4.3-1.2,5.7-2.9c1.5-1.7,2.2-3.8,2-6.1c-0.3-4.6-4.3-8.1-8.9-7.8s-8.1,4.4-7.8,8.9
+                    C73.9,91.9,77.5,95.4,81.9,95.4z"/>
+            </svg>
+        </div>
+        <div class="progress-bar-number">0%</div>
+    </div>
+</div>
+
+<div id="search-fullwidth" class="mfp-hide mfp-with-anim">
+    <form method="get" class="searchform" action="#">
+        <input type="text" placeholder="Search and hit enter" value="" name="s" />
+        <button class="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div><!-- #search-fullwidth -->
+
+<div id="popup-wrap" class="mfp-hide mfp-with-anim" data-timeshow="3">
+    <div class="wrapper-newletter-popup">
+        <div class="bg-popup"></div>
+        <h3>NEWSLETTER</h3>
+        <p>Subscribe to the Universal mailing list to receive updates on new arrivals, offers and other discount information.</p>
+        <form class="newsletters-form style2" method="get" action="#">
+            <input type="email" placeholder="Enter your email address">
+            <button class="submit"><i class="icon-Right-3"></i></button>
+        </form>
+    </div>
+</div><!-- #search-fullwidth -->
+
+<div id="page">
+    <!-- header-full-center -->
+    <header id="header" class="header-shadow">
+        <div class="topbar">
+            <div class="row">
+                <div class="topbar-left col-sm-6">
+                    <ul class="top-navigation">
+                        <li class="language-switcher">
+                            <a href="#">EN</a>
+                            <ul class="top-navigation-submenu">
+                                <li><a href="#">FR</a></li>
+                                <li class="active"><a href="#">EN</a></li>
+                                <li><a href="#">DE</a></li>
+                            </ul>
+                        </li><!-- .language-switcher -->
+
+                        <li class="currency-switcher">
+                            <a href="#">USD</a>
+                            <ul class="top-navigation-submenu">
+                                <li><a href="#">EUR</a></li>
+                                <li class="active"><a href="#">USD</a></li>
+                            </ul>
+                        </li><!-- .language-switcher -->
+
+                        <li class="search-action">
+                            <a href="#search-fullwidth"><i class="fa fa-search"></i></a>
+                        </li>
+                    </ul><!-- .top-navigation -->
+                </div><!-- .topbar-left -->
+
+
+                <div class="topbar-right col-sm-6">
+                    <ul class="top-navigation">
+                        <li class="myaccount-item">
+                            <a href="#">login</a>
+                            <div class="top-navigation-submenu">
+                                <h3 class="submenu-heading">Login</h3>
+                                <form class="login" method="post">
+                                    <div class="myaccount-form">
+                                        <p>
+                                            <label for="username">Username or email address</label>
+                                            <input type="text" value="" id="username" name="username" class="input-text">
+                                        </p>
+                                        <p>
+                                            <label for="password">Password</label>
+                                            <input type="password" id="password" name="password" class="input-text">
+                                        </p>
+                                        <p>
+                                            <input type="submit" value="Login" name="login" class="btn btn-dark-b">
+                                            <label class="inline" for="rememberme">
+                                                <input type="checkbox" value="forever" id="rememberme" name="rememberme">Remember me
+                                            </label>
+                                            <a href="#" class="forget-password">Lost your password?</a>
+                                        </p>
+                                    </div>
+                                    <div class="myaccount-create">
+                                        Not registered? No problem
+                                        <input type="submit" value="create account" name="create" class="btn btn-gray pull-right">
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="wishlist-item">
+                            <a href="woocommerce-wishlist.html">
+                                wishlist <span>1</span>
+                            </a>
+                            <div class="top-navigation-submenu">
+                                <div class="shopping-bag">
+                                    <div class="shopping-bag-content">
+                                        <!--<p class="cart_block_no_products">Your wishlist is empty.</p>--><!-- .cart_block_no_products-->
+                                        <div class="bag-products">
+                                            <div class="bag-product">
+                                                <figure>
+                                                    <a href="#" class="bag-product-img">
+                                                        <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
+                                                    </a>
+                                                </figure>
+                                                <div class="bag-product-details">
+                                                    <h4 class="bag-product-title"><a href="#">Le grand cartable</a></h4>
+                                                    <div class="bag-product-price">Price: <span class="amount">$1000.00</span></div>
+                                                </div>
+                                                <a title="Remove this item" class="remove" href="#"></a>
+                                            </div><!-- .bag-product -->
+                                        </div><!-- .bag-products -->
+
+                                        <div class="bag-buttons">
+                                            <a class="btn btn-block btn-gray" href="#">View Wishlist</a>
+                                        </div><!-- .bag-buttons -->
+
+                                    </div><!-- .shopping-bag-content -->
+                                </div><!-- .shopping-bag -->
+                            </div>
+                        </li>
+                        <li class="shopping-bag-item">
+                            <a href="woocommerce-cart.html">my cart <span>2</span></a>
+
+                            <div class="top-navigation-submenu">
+                                <div class="shopping-bag">
+                                    <!--<p class="cart_block_no_products">Your cart is currently empty.</p>--><!-- .cart_block_no_products-->
+                                    <div class="bag-products">
+                                        <div class="bag-product">
+                                            <figure>
+                                                <a href="#" class="bag-product-img">
+                                                    <img src="assets/images/product-cart-1.jpg" alt="" class="img-responsive">
+                                                </a>
+                                            </figure>
+                                            <div class="bag-product-details">
+                                                <h4 class="bag-product-title"><a href="#">Le grand cartable</a></h4>
+                                                <div class="bag-product-price">Price: <span class="amount">$1000.00</span></div>
+                                                <div class="bag-product-qty">Quantity: 1</div>
+                                            </div>
+                                            <a title="Remove this item" class="remove" href="#"></a>
+                                        </div><!-- .bag-product -->
+
+                                        <div class="bag-product">
+                                            <figure>
+                                                <a href="#" class="bag-product-img">
+                                                    <img src="assets/images/product-cart-2.jpg" alt="" class="img-responsive">
+                                                </a>
+                                            </figure>
+                                            <div class="bag-product-details">
+                                                <h4 class="bag-product-title"><a href="#">Le grand cartable</a></h4>
+                                                <div class="bag-product-price">Price: <span class="amount">$1000.00</span></div>
+                                                <div class="bag-product-qty">Quantity: 1</div>
+                                            </div>
+                                            <a title="Remove this item" class="remove" href="#"></a>
+                                        </div><!-- .bag-product -->
+
+
+                                    </div><!-- .bag-products -->
+
+                                    <div class="bag-buttons">
+                                        <a class="btn-block btn btn-gray" href="woocommerce-cart.html">View Cart</a>
+                                        <a class="btn-block btn btn-dark-b" href="woocommerce-checkout.html">Checkout</a>
+                                    </div><!-- .bag-buttons -->
+
+                                </div><!-- .shopping-bag -->
+                            </div>
+
+                        </li>
+                    </ul><!-- .top-navigation -->
+                </div><!-- .topbar-right -->
+
+            </div>
+        </div><!-- .topbar -->    <div class="navbar-container sticky-header">
+        <div class="container">
+            <div class="navbar-container-inner clearfix">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" title="Delphinus" alt="Delphinus"/></a>
+                    </h1>
+                </div><!-- .branding -->
+                <div class="mobile-tool">
+                    <a id="hamburger-icon" href="#" title="Menu">
+                        <span class="hamburger-icon-inner">
+                            <span class="line line-1"></span>
+                            <span class="line line-2"></span>
+                            <span class="line line-3"></span>
+                        </span>
+                    </a>
+                    <a href="woocommerce-cart.html" class="mobile-tool-cart">
+                        <i class="icon-Shopping-Cart"></i>
+                        <span>2</span>
+                    </a>
+                </div>
+                <nav class="main-nav" id="nav">
+                    <div class="main-navigation-outer">
+                        <ul id="main-navigation">
+                            <li class="active">
+                                <a href="index.html">Home</a>
+                                <ul class="sub-menu-dropdown">
+                                    <li><a href="homepage2.html">Homepage 2</a></li>
+                                    <li><a href="homepage3.html">Homepage 3</a></li>
+                                    <li><a href="homepage4.html">Homepage 4</a></li>
+                                    <li><a href="homepage5.html">Homepage 5</a></li>
+                                    <li><a href="homepage6.html">Homepage 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="kt-megamenu-item megamenu-width-80">
+                                <a href="woocommerce-shop.html">shop styles</a>
+                                <div class="kt-megamenu-wrapper megamenu-columns-3 megamenu-position-center">
+                                    <ul class="kt-megamenu-ul clearfix">
+                                        <li>
+                                            <span>Shop Style</span>
+                                            <ul class="sub-menu-megamenu">
+                                                <li><a href="woocommerce-shop.html">2 Column with sidebar</a></li>
+                                                <li><a href="woocommerce-3column-sidebar.html">3 Column with sidebar</a></li>
+                                                <li><a href="woocommerce-3column.html">3 Column</a></li>
+                                                <li><a href="woocommerce-4column.html">4 Column</a></li>
+                                                <li><a href="woocommerce-masonry.html">Masonry Style</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Product Detail</span>
+                                            <ul class="sub-menu-megamenu">
+                                                <li><a href="woocommerce-product-detailed1.html">Product detail Style 1</a></li>
+                                                <li><a href="woocommerce-product-detailed2.html">Product detail Style 2</a></li>
+                                                <li><a href="woocommerce-product-detailed3.html">Product detail Style 3</a></li>
+                                                <li><span>&nbsp;</span></li>
+                                                <li><span>&nbsp;</span></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span>Name It</span>
+                                            <ul class="sub-menu-megamenu">
+                                                <li><a href="woocommerce-checkout.html">Checkout</a></li>
+                                                <li><a href="woocommerce-compare.html">Compare</a></li>
+                                                <li><a href="woocommerce-myaccount.html">My account</a></li>
+                                                <li><a href="woocommerce-cart.html">My cart</a></li>
+                                                <li><a href="woocommerce-wishlist.html">Wishlist</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">pages</a>
+                                <ul class="sub-menu-dropdown">
+                                    <li><a href="pages-about.html">About us</a></li>
+                                    <li><a href="pages-contact.html">Contact us</a></li>
+                                    <li><a href="blog-gird-3columns.html">Blog</a></li>
+                                    <li><a href="blog-singlepost-standard.html">Blog detail</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">elements</a>
+                                <ul class="sub-menu-dropdown">
+                                    <li><a href="shortcode-tabs.html">Tabs</a></li>
+                                    <li><a href="shortcode-banner.html">Banner</a></li>
+                                    <li><a href="shortcode-messagebox.html">Message Box</a></li>
+                                    <li><a href="shortcode-typography.html">Typography</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">features</a></li>
+
+
+                        </ul><!-- #main-navigation -->        </div>
+                </nav><!-- .main-nav -->            </div>
+        </div>
+    </div><!-- .navbar-container -->
+        <nav class="main-nav-mobile" id="nav-mobile">
+            <ul class="navigation-mobile">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="homepage2.html">Homepage 2</a></li>
+                        <li><a href="homepage3.html">Homepage 3</a></li>
+                        <li><a href="homepage4.html">Homepage 4</a></li>
+                        <li><a href="homepage5.html">Homepage 5</a></li>
+                        <li><a href="homepage6.html">Homepage 6</a></li>
+                    </ul>
+                </li>
+                <li class="kt-megamenu-item megamenu-width-80">
+                    <a href="woocommerce-shop.html">shop styles</a>
+                    <div class="kt-megamenu-wrapper megamenu-columns-3 megamenu-position-center">
+                        <ul class="kt-megamenu-ul clearfix">
+                            <li>
+                                <span>Shop Style</span>
+                                <ul class="sub-menu-megamenu">
+                                    <li><a href="woocommerce-shop.html">2 Column with sidebar</a></li>
+                                    <li><a href="woocommerce-3column-sidebar.html">3 Column with sidebar</a></li>
+                                    <li><a href="woocommerce-3column.html">3 Column</a></li>
+                                    <li><a href="woocommerce-4column.html">4 Column</a></li>
+                                    <li><a href="woocommerce-masonry.html">Masonry Style</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Product Detail</span>
+                                <ul class="sub-menu-megamenu">
+                                    <li><a href="woocommerce-product-detailed1.html">Product detail Style 1</a></li>
+                                    <li><a href="woocommerce-product-detailed2.html">Product detail Style 2</a></li>
+                                    <li><a href="woocommerce-product-detailed3.html">Product detail Style 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Name It</span>
+                                <ul class="sub-menu-megamenu">
+                                    <li><a href="woocommerce-checkout.html">Checkout</a></li>
+                                    <li><a href="woocommerce-compare.html">Compare</a></li>
+                                    <li><a href="woocommerce-myaccount.html">My account</a></li>
+                                    <li><a href="woocommerce-cart.html">My cart</a></li>
+                                    <li><a href="woocommerce-wishlist.html">Wishlist</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">pages</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="pages-about.html">About us</a></li>
+                        <li><a href="pages-contact.html">Contact us</a></li>
+                        <li><a href="blog-gird-3columns.html">Blog</a></li>
+                        <li><a href="blog-singlepost-standard.html">Blog detail</a></li>
+                        <li><a href="#">Look book</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">elements</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="shortcode-tabs.html">Tabs</a></li>
+                        <li><a href="shortcode-banner.html">Banner</a></li>
+                        <li><a href="shortcode-button.html">Button</a></li>
+                        <li><a href="shortcode-messagebox.html">Message Box</a></li>
+                        <li><a href="shortcode-typography.html">Typography</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">features</a></li>
+                <li>
+                    <a href="#">Language: EN</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Frensh</a></li>
+                        <li><a href="#">Viet Nam</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Currency: USD</a>
+                    <ul class="sub-menu-dropdown">
+                        <li><a href="#">EUR</a></li>
+                        <li><a href="#">USD</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">login</a>
+                </li>
+                <li class="wishlist-item">
+                    <a href="woocommerce-wishlist.html">wishlist (<span>3</span>)</a>
+                </li>
+                <li>
+                    <form action="#" class="searchform" method="get">
+                        <input type="text" name="s" value="" placeholder="Search and hit enter">
+                        <button class="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+
+            </ul><!-- #main-navigation -->
+        </nav><!-- .main-nav-mobile --></header><!-- #header -->    <div id="main">
+    <div class="product-main style3" itemtype="http://schema.org/Product" itemscope="">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="product-detail-thumbarea">
+                    <div class="single-product-main-images owl-carousel1" id="sync1">
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                                <img alt="" src="http://placehold.it/1000x1000" >
+                            </a>
+                        </div>
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                                <img alt="" src="http://placehold.it/1000x1000" >
+                            </a>
+                        </div>
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                                <img alt="" src="http://placehold.it/1000x1000" >
+                            </a>
+                        </div>
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                                <img alt="" src="http://placehold.it/1000x1000" >
+                            </a>
+                        </div>
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                                <img alt="" src="http://placehold.it/1000x1000" >
+                            </a>
+                        </div>
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                                <img alt="" src="http://placehold.it/1000x1000" >
+                            </a>
+                        </div>
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                                <img alt="" src="http://placehold.it/1000x1000" >
+                            </a>
+                        </div>
+                    </div><!-- #sync1.single-product-main-images.owl-carousel -->
+                    <div class="single-product-main-thumbnails owl-carousel2" id="sync2" data-items="5">
+                        <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                            <img alt="" src="http://placehold.it/1000x1000" >
+                        </a>
+                        <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                            <img alt="" src="http://placehold.it/1000x1000" >
+                        </a>
+                        <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                            <img alt="" src="http://placehold.it/1000x1000" >
+                        </a>
+                        <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                            <img alt="" src="http://placehold.it/1000x1000" >
+                        </a>
+                        <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                            <img alt="" src="http://placehold.it/1000x1000" >
+                        </a>
+                        <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                            <img alt="" src="http://placehold.it/1000x1000" >
+                        </a>
+                        <a href="http://placehold.it/1500x1500" itemprop="image" class="woocommerce-main-image" title="">
+                            <img alt="" src="http://placehold.it/1000x1000" >
+                        </a>
+                    </div><!-- #sync2.single-product-main-thumbnails.owl-carousel -->
+                </div><!-- .product-detail-thumbarea -->
+
+            </div>
+            <div class="col-sm-6">
+                <div class="product-detail-wrap">
+                    <ol class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li class="active">Afteroom Chair</li>
+                    </ol>
+                    <h1 class="product-title">Afteroom chair</h1>
+                    <div class="product-price-wrap clearfix">
+                        <div itemtype="http://schema.org/Offer" itemscope="" itemprop="offers">
+                            <h3 class="price"><span class="amount">$340</span></h3>
+                            <meta content="340" itemprop="price">
+                            <meta content="$" itemprop="priceCurrency">
+                            <link href="http://schema.org/InStock" itemprop="availability">
+                        </div>
+                        <div class="review-summary">
+                            <div title="Rated 4 out of 5" class="star-rating">
+                                <span style="width:80%"><span class="rating">4</span> out of 5</span>
+                            </div>
+                            <div class="reviews-text">3 Reviews</div>
+                        </div>
+                    </div>
+
+                    <form enctype="multipart/form-data" method="post" class="cart clearfix">
+
+                        <div class="quantity">
+                            <input type="text" size="4" class="input-text qty text" title="Qty" value="1" name="qty" />
+                        </div>
+
+                        <button class="btn btn-addtocart-b" type="submit">Add to cart</button>
+
+                        <div class="cart-tool clearfix">
+                            <a class="add_to_wishlist" data-toggle="tooltip" data-placement="top" title="Add to wishlist">
+                                <i class="fa fa-heart"></i>
+                            </a>
+                            <a class="add_to_compare" data-toggle="tooltip" data-placement="top" title="Compare">
+                                <i class="fa fa-exchange"></i>
+                            </a>
+                        </div>
+
+                    </form>
+
+                    <div class="product-short">
+                        <p>The first Menu chair ever is a three-legged one, and it’s the result of deconstructing an item, piece by piece, with the purpose of obtaining an original design.</p>
+                        <p><strong class="black">Features and materials</strong><br/>Black<br/>Wood</p>
+                        <p><strong class="black">Dimensions</strong><br/>48"x48"x36"</p>
+                    </div>
+
+                    <div class="product_meta">
+                        <span class="sku_wrapper">SKU: <span itemprop="sku" class="sku">675684</span></span>
+                        <span class="posted_in">Category: <a rel="tag" href="#">Accessories</a>, <a rel="tag" href="#">Chair</a></span>
+                    </div>
+
+                    <div class="product-shareit">
+                        <span class="screen-reader-text">Share this</span>
+                        <ul class="social_icons clearfix">
+                            <li><a href="#"><i class="fa fa-facebook"></i> <span>Facebook</span></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i> <span>Twitter</span></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i> <span>Pinterest</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-section bg-gray" itemtype="http://schema.org/Review" itemscope="">
+        <div class="container">
+            <div class="woocommerce-tabs">
+                <!-- Nav tabs -->
+                <ul class="nav clearfix" role="tablist">
+                    <li role="presentation" class="active"><a href="#tab-description_tab" role="tab" data-toggle="tab">Description</a></li>
+                    <li role="presentation"><a href="#tab-additional_information" role="tab" data-toggle="tab">Additional INFO</a></li>
+                    <li role="presentation"><a href="#tab-reviews" role="tab" data-toggle="tab">Review</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div id="tab-description_tab" role="tabpanel" class="tab-pane active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis neque, imperdiet consectetur nulla a, lacinia tempus arcu. Integer quis maximus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat enim, vulputate id pulvinar molestie, blandit vitae quam. Donec nisi est, tempus eget dignissim vitae.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam felis neque, imperdiet consectetur nulla a, lacinia tempus arcu. Integer quis maximus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat enim, vulputate id pulvinar molestie, blandit vitae quam. Donec nisi est, tempus eget dignissim vitae.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-additional_information" role="tabpanel" class="tab-pane">
+                        <table class="shop_attributes">
+                            <tbody>
+                            <tr>
+                                <th>Weight</th>
+                                <td class="text-right">5 kg</td>
+                            </tr>
+                            <tr class="">
+                                <th>Size</th>
+                                <td class="text-right">Medium</td>
+                            </tr>
+                            <tr>
+                                <th>Color</th>
+                                <td class="text-right">Black</td>
+                            </tr>
+                            <tr>
+                                <th>Materials</th>
+                                <td class="text-right">Wood</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tab-reviews" role="tabpanel" class="tab-pane">
+                        <div class="row">
+                            <div class="col-md-6">
+
+
+
+                                <div class="comments-area" id="comments">
+                                    <h3 class="comments-title">3 reviews</h3>
+
+
+                                    <ol class="comment-list">
+                                        <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
+                                            <div class="comment-item clearfix">
+                                                <div class="comment-avatar">
+                                                    <img class="avatar" src="http://placehold.it/100x100" alt="">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <div class="comment-meta">
+                                                        <h5 itemprop="author" class="author_name">Kenny Minh</h5>
+                                                        <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
+                                                        <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+                                                            <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description" itemprop="description">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!-- #comment-## -->
+                                        <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
+                                            <div class="comment-item clearfix">
+                                                <div class="comment-avatar">
+                                                    <img class="avatar" src="http://placehold.it/100x100" alt="">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <div class="comment-meta">
+                                                        <h5 itemprop="author" class="author_name">Kenny Minh</h5>
+                                                        <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
+                                                        <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+                                                            <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description" itemprop="description">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!-- #comment-## -->
+                                        <li class="comment" itemtype="http://schema.org/Review" itemscope="" itemprop="review">
+                                            <div class="comment-item clearfix">
+                                                <div class="comment-avatar">
+                                                    <img class="avatar" src="http://placehold.it/100x100" alt="">
+                                                </div>
+                                                <div class="comment-content">
+                                                    <div class="comment-meta">
+                                                        <h5 itemprop="author" class="author_name">Kenny Minh</h5>
+                                                        <span class="comment-date"><time datetime="2013-06-07T11:54:32+00:00" itemprop="datePublished">January 06, 2015</time></span>
+                                                        <div title="Rated 5 out of 5" class="star-rating" itemtype="http://schema.org/Rating" itemscope="" itemprop="reviewRating">
+                                                            <span style="width:80%"><strong itemprop="ratingValue">4</strong> out of 5</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="description" itemprop="description">
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante turpis, aliquet et vestibulum dictum, commodo vel tortor.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li><!-- #comment-## -->
+
+                                    </ol>
+
+
+                                </div>
+
+                            </div>
+                            <div class="col-md-5 col-md-offset-1">
+
+                                <div id="review_form">
+                                    <div id="respond" class="comment-respond">
+                                        <h3 class="comment-reply-title">Here you can review this item.</h3>
+                                        <form action="#" method="post" id="commentform" class="comment-form">
+
+                                            <p class="comment-form-author"><input type="text" aria-required="true" size="30" value="" placeholder="Your Name" name="author" id="author"></p>
+                                            <p class="comment-form-email"><input type="text" aria-required="true" size="30" value="" placeholder="Your email" name="email" id="email"></p>
+                                            <p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" placeholder="Your review"></textarea></p>
+
+                                            <p class="comment-form-rating">
+                                                <select name="rating" id="rating">
+                                                    <option value="">Rate&hellip;</option>
+                                                    <option value="5">Perfect</option>
+                                                    <option value="4">Good</option>
+                                                    <option value="3">Average</option>
+                                                    <option value="2">Not that bad</option>
+                                                    <option value="1">Very Poor</option>
+                                                </select>
+                                            </p>
+                                            <p class="form-submit">
+                                                <input name="submit" type="submit" id="submit" class="btn btn-addtocart-b" value="Add Review" />
+                                            </p>
+                                        </form>
+                                    </div><!-- #respond -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="page-section">
+        <div class="container">
+
+            <div class="kt-heading-wrapper">
+                <div class="kt-heading-divider">
+                    <svg version="1.1" x="0px" y="0px"
+                             viewBox="349 274.7 1310.8 245.3" style="enable-background:new 349 274.7 1310.8 245.3;" xml:space="preserve">
+                        <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
+                            l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
+                            c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
+                            <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
+                            l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
+                            c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
+                        </svg>
+                </div>
+                <h3 class="kt-heading-title">LASTEST PRODUCT</h3>
+                <div class="kt-heading-subtitle"><a href="#">see all</a></div>
+            </div>
+
+            <div class="products">
+
+                <div class="owl-carousel-kt remove-mar-bottom navigation-center">
+                    <div class="owl-carousel kt-owl-carousel" data-options='{"pagination": false, "navigation": true, "desktop": 4, "desktopsmall" : 3, "tablet" : 2, "mobile" : 1}'>
+                        <div class="product">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <img class="first-img" src="http://placehold.it/600x600" alt=""/>
+                                    <img class="second-img" src="http://placehold.it/600x600" alt=""/>
+                                </a>
+
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+                        <div class="product">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <img class="first-img" src="http://placehold.it/600x600" alt=""/>
+                                    <img class="second-img" src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <img class="first-img" src="http://placehold.it/600x600" alt=""/>
+                                    <img class="second-img" src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+                        <div class="product">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <img class="first-img" src="http://placehold.it/600x600" alt=""/>
+                                    <img class="second-img" src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+
+                        <div class="product">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <img class="first-img" src="http://placehold.it/600x600" alt=""/>
+                                    <img class="second-img" src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+                        <div class="product">
+                            <div class="product-content">
+                                <a href="woocommerce-product-detailed1.html" class="product-thumbnail">
+                                    <img class="first-img" src="http://placehold.it/600x600" alt=""/>
+                                    <img class="second-img" src="http://placehold.it/600x600" alt=""/>
+                                </a>
+                                <div class="product-over-tool">
+                                    <a href="#" class="add_to_wishlist" data-toggle="tooltip"  data-placement="top" title="Add to wishlist"><i class="fa fa-heart"></i></a>
+                                    <a href="#" class="add_to_compare" data-toggle="tooltip"  data-placement="top" title="Add to compare"><i class="fa fa-exchange"></i></a>
+                                    <a href="#" class="quickview" data-toggle="tooltip"  data-placement="top" title="Quick view"><i class="fa fa-search"></i></a>
+                                </div>
+                                <div class="product-over-add">
+                                    <a href="#" class="btn btn-addtocart">add to cart</a>
+                                </div>
+                            </div>
+                            <h3 class="product-title">
+                                <a href="woocommerce-product-detailed1.html">JWDA Concrete Lamp</a>
+                            </h3>
+                            <div class="product-price">$340.00</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</div><!-- #main -->
+    <div id="footer">
+
+        <footer id="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="flip-box">
+                            <div class="flip-box-before">free shipping</div>
+                            <div class="flip-box-after">on all orders over $100</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="flip-box">
+                            <div class="flip-box-before">free return</div>
+                            <div class="flip-box-after">free 90 days return</div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .container -->
+        </footer>
+
+
+        <footer id="footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">infomation</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Store</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">collections</h3>
+                            <ul>
+                                <li><a href="#">Living Room</a></li>
+                                <li><a href="#">Bathroom</a></li>
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Bed Room</a></li>
+                                <li><a href="#">Garden</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">EXTRAS</h3>
+                            <ul>
+                                <li><a href="#">Brands</a></li>
+                                <li><a href="#">Gift Vouchers</a></li>
+                                <li><a href="#">Affiliates</a></li>
+                                <li><a href="#">Specials</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="widget-container widget_nav_menu">
+                            <h3 class="widget-title">MY ACCOUNT</h3>
+                            <ul>
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Order History</a></li>
+                                <li><a href="#">Wish List</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                            </ul>
+                        </div><!-- .widget-container -->
+                    </div>
+
+                </div>
+            </div>
+        </footer><!-- #footer-area -->
+
+
+        <footer id="footer-copyright" class="bg-gray">
+            <div class="container">
+                <ul class="social-nav">
+                    <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a> </li>
+                    <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a> </li>
+                    <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a> </li>
+                </ul>
+                <div class="footer-copyright">&copy; 2015 Delphinus</div>
+            </div><!-- .container -->
+        </footer><!-- #footer-copyright -->
+
+
+
+    </div><!-- #footer -->
+
+</div><!-- #page -->
+
+<!-- JS -->
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
+<!-- Javascript Page Loader-->
+<script type="text/javascript" src="assets/js/pace.min.js" data-pace-options='{ "ajax": false }'></script>
+<script type="text/javascript" src="assets/js/page-loading.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+
+<!-- Javascript Main File -->
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
