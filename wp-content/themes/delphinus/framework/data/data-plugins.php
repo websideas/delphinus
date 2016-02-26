@@ -23,9 +23,9 @@ function kt_register_plugins() {
      */
     $plugins = array(
         array(
-            'name'          => 'Mondova Custom Post', // The plugin name
-            'slug'          => 'mondova_cp', // The plugin slug (typically the folder name)
-            'source'            => KT_THEME_DIR.'recommend-plugins/mondova_cp.zip', // The plugin source
+            'name'          => 'Delphinus Custom Post', // The plugin name
+            'slug'          => 'delphinus_cp', // The plugin slug (typically the folder name)
+            'source'            => KT_THEME_DIR.'recommend-plugins/delphinus_cp.zip', // The plugin source
             'required'          => true, // If false, the plugin is only 'recommended' instead of required
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
