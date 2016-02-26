@@ -83,12 +83,12 @@ if ( ! function_exists( 'kt_cart_wishlist' ) ) {
             '<a href="%s" class="%s" title="%s">%s<span class="amount">%s</span></a>',
             esc_url( $yith_wcwl->get_wishlist_url() ),
             'wishlist-contents',
-            __( 'View your wishlist', 'storefront' ),
-            '<i class="icon_heart_alt"></i>',
-            sprintf('%02s', $yith_wcwl->count_products())
+            esc_html__( 'View your wishlist', 'delphinus' ),
+            esc_html__('wishlist', 'delphinus'),
+            $yith_wcwl->count_products()
         );
         ?>
-        <div class="shopping-bag-content woocommerce widget_shopping_cart">
+        <div class="top-navigation-submenu shopping-bag-content woocommerce widget_shopping_cart">
             <ul class="cart_list product_list_widget ">
             <?php
                 $args = array( 'is_default' => 1 );
@@ -164,7 +164,7 @@ function kt_woocommerce_get_cart( ){
         kt_cart_link();
         if ( !is_cart() ) {
             ?>
-            <div class="shopping-bag-content woocommerce widget_shopping_cart">
+            <div class="top-navigation-submenu shopping-bag-content woocommerce widget_shopping_cart">
                 <?php the_widget('WC_Widget_Cart', 'title='); ?>
             </div><!-- .shopping-bag-content -->
             <?php
@@ -184,11 +184,11 @@ if ( ! function_exists( 'kt_cart_link' ) ) {
     function kt_cart_link() {
         printf(
             '<a href="%s" class="%s" title="%s">%s<span class="amount">%s</span></a>',
-            esc_url( WC()->cart->get_cart_url() ),
+            esc_url( wc_get_page_permalink( 'cart' ) ),
             'cart-contents',
-            __( 'View your shopping cart', 'storefront' ),
-            '<i class="icon_bag_alt"></i>',
-            sprintf('%02s', WC()->cart->get_cart_contents_count())
+            esc_html__( 'View your shopping cart', 'delphinus' ),
+            esc_html__('My cart', 'delphinus'),
+            WC()->cart->get_cart_contents_count()
         );
     }
 }

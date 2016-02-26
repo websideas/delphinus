@@ -27,7 +27,7 @@ h6 {
   margin: 0 0 20px;
   font-family: $heading-font;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
   color: $black;
   clear: both;
 }
@@ -49,39 +49,46 @@ a {
   font-weight: 900;
 }
 
-/* Blockquote */
+
+
 blockquote {
-  background: $gray-bg2;
-  padding: 70px 124px 70px 134px;
+  background: $gray-bg;
+  padding: 90px 45px 35px;
   margin-bottom: 30px;
   border: none;
   position: relative;
-  font-size: 18px;
-  line-height: 36px;
-  color: $text;
+  font-size: 14px;
+  color: $gray-text;
+
   &:before{
-    width: 2px;
-    position: absolute;
-    content: "";
     background: $primary-color;
-    top: 52px;
-    bottom: 52px;
-    left: 104px;
+    color: #ffffff;
+    content: "“";
+    font-size: 36px;
+    height: 32px;
+    left: 45px;
+    line-height: 55px;
+    padding-left: 2px;
+    position: absolute;
+    top: 35px;
+    width: 28px;
+    text-align: left;
+  }
+
+  .blockquote-reverse {
+    padding: 90px 45px 35px;
+    &:before {
+      left: auto;
+      right: 45px;
+      content: "”";
+    }
+  }
+
+  p {
+    margin-bottom: 15px;
   }
 
   *:last-child {
     margin-bottom: 0;
-  }
-
-  &.small{
-    margin-left: 25px;
-    padding: 0 0 0 20px;
-    border-left: 2px solid $primary-color;
-    background: none;
-    font-size: 14px;
-    line-height: 30px;
-    &:before{
-      display: none;;
-    }
   }
 }

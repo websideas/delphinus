@@ -41,13 +41,7 @@
             start = function (_sticky,_placeholder, o) {
 
                 var _body = $('body');
-                /*
-                if(_body.hasClass('tablets') == true && o.tablets == false)
-                    return false;
 
-                if( _window.outerWidth() <= o.widthDisable )
-                    return false;
-                 */
                 o.start.call(this);
                 var $classContainer = $('.'+o.classContainer);
 

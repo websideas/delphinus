@@ -18,15 +18,14 @@
       <script src="<?php echo KT_THEME_JS; ?>html5shiv.min.js"></script>
       <script src="<?php echo KT_THEME_JS; ?>respond.min.js"></script>
     <![endif]-->
-
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-
+    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cCrete+Round:400italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class( ); ?>>
     <?php
-        $header_layout = kt_get_header_layout();
-        $header_position = kt_get_header_position();
+    $header_layout = kt_get_header_layout();
+    $header_position = kt_get_header_position();
+    $header_layout = 2;
     ?>
     <?php
     do_action( 'kt_body_top' ); ?>
@@ -43,7 +42,8 @@
                     <?php
                     if($header_position == 'below'){
                         do_action( 'kt_slideshows_position' );
-                    } ?>
+                    }
+                    ?>
 
                     <header id="header" class="<?php echo apply_filters('theme_header_content_class', 'header-content', $header_layout) ?>">
                         <?php get_template_part( 'templates/headers/header', $header_layout); ?>

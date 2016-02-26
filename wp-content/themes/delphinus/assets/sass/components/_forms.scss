@@ -57,7 +57,7 @@ select:not([multiple]) {
 .select-icon{
   display: inline-block;
   position: relative;
-  color: $gray-text2;
+  color: $gray-text;
   &:after{
     content: "";
     display: block;
@@ -75,7 +75,7 @@ select:not([multiple]) {
     background: none;
     padding: 0 10px 0 0;
     height: auto;
-    color: $gray-text2;
+    color: $gray-text;
     text-transform: uppercase;
   }
 }

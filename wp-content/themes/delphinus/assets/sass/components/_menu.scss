@@ -4,91 +4,319 @@
   list-style: none;
   position: relative;
   z-index: 10;
+  @include clearfix();
 
   > li{
     display: inline-block;
+    border-left: 1px solid $border-color;
     position: relative;
-    + li{
-      margin-left: 47px;
-    }
-    > a{
-      text-transform: uppercase;
-      color: $text;
-      display: inline-block;
-      font-size: 14px;
-      i{
-        margin-right: 8px;
-      }
+    float: left;
+    &:last-child{
+      border-right: 1px solid $border-color;
     }
 
-    &:hover > a{
+    > a{
+      text-transform: uppercase;
+      color: $gray-text;
+      letter-spacing: 0.12em;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: $topbar-height;
+      padding: 0 35px;
+      display: inline-block;
+
+    }
+
+    &:hover > a,
+    > a:hover{
       color: $primary-color;
     }
 
-    > ul{
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      width: 100px;
-      margin: 0 0 0 -50px;
-      padding: 5px 0;
-      list-style: none;
+    .top-navigation-submenu{
       background: #FFFFFF;
-      visibility: hidden;
+      position: absolute;
+      left: 0;
+      top: 57px;
+      width: 200px;
+      text-align: left;
+      @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.12));
+      border-top: 1px solid #f6f6f6;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
       @include opacity(0);
       @include transform(translate(0, 40px));
-      @include transition();
-      border: 1px solid #eaeaea;
-      @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.05));
+      @include transition('opacity 0.5s ease-in-out, transform 0.5s ease-in-out');
+      visibility: hidden;
 
-      &:before{
-        top: -4px;
-        content: "";
-        display: block;
-        height: 8px;
-        width: 8px;
-        background: $white;
-        position: absolute;
-        @include transform(rotate(45deg));
-        left: 50%;
-        margin-left: -4px;
-        border-top: 1px solid #eaeaea;
-        border-left: 1px solid #eaeaea;
-      }
-
-      li{
-        > span,
-        > a{
-          color: $text;
-          display: block;
-          font-size: 12px;
-          line-height: 17px;
-          padding: 8px 0 8px 10px;
-          text-transform: uppercase;
-          img{
-            float: left;
-            margin-right: 5px;
-            margin-top: 3px;
-          }
+      > li{
+        border-bottom: 1px solid #f6f6f6;
+        &:last-child{
+          border: none;
         }
-        a:hover{
-          background: #eaeaea;
+        a{
+          display: block;
+          padding: 5px 35px 5px 20px;
+          color: $gray-text;
+          &:hover{
+            color: #000000;
+          }
         }
       }
 
     }
 
     &:hover{
-      > ul{
+      .top-navigation-submenu{
         @include opacity(1);
         @include transform(translate(0, 0));
         visibility: visible;
       }
     }
+
+    &.shopping-bag-wishlist{
+      > a {
+        > span.amount{
+          background: $gray-bg;
+          color: #000000;
+          font-size: 14px;
+          margin-left: 13px;
+          padding: 3px 12px;
+        }
+      }
+    }
+
+    &.shopping-bag-cart{
+      a{
+        > span.amount{
+          padding: 2px 9px;
+          border: 2px solid #000000;
+          color: #000000;
+          font-size: 14px;
+          margin-left: 15px;
+        }
+      }
+    }
+
+
   }
+}
+#nav{
+
+  .main-nav-outer{
+    position: relative;
+    text-align: center;
+  }
+
+  #main-nav-tool,
+  #main-navigation {
+    > li{
+      > a{
+        line-height: $navbar-height;
+      }
+    }
+  }
+
+
+
+  #main-nav-tool{
+    margin: 0 0 0 40px;
+    padding: 0;
+    list-style: none;
+    float: right;
+    > li{
+      display: inline-block;
+      + li{
+        margin-left: 20px;
+      }
+      a{
+        color: #000;
+        @include transition('color 0.3s ease 0s, background 0.3s ease 0s, opacity 0.3s ease 0s');
+        &:hover{
+          @include opacity(.7);
+        }
+      }
+    }
+  }
+
+  #main-navigation{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    > li{
+      display: inline-block;
+      position: relative;
+      margin-left: 20px;
+
+      &.kt-megamenu-item{
+        position: static;
+      }
+
+      > a{
+        text-transform: uppercase;
+        padding: 0 10px;
+        color: $gray-text;
+        letter-spacing: 0.04em;
+        font-weight: bold;
+        display: block;
+        @include transition('color 0.3s ease 0s, background 0.3s ease 0s');
+      }
+
+      &.current-menu-item > a,
+      > a:hover{
+        color: $primary-color;
+      }
+
+      ul.sub-menu-dropdown,
+      .kt-megamenu-wrapper{
+        border-top: 1px solid #f6f6f6;
+        background: #FFFFFF;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        visibility: hidden;
+        line-height: normal;
+        width: 308px;
+        @include opacity(0);
+        @include transform(translate(0, 40px));
+        @include transition('opacity 0.5s ease-in-out, transform 0.5s ease-in-out');
+        @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.12));
+        text-align: left;
+      }
+
+      ul.sub-menu-dropdown{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li{
+          border-bottom: 1px solid $border-color;
+          a{
+            padding: 24px;
+            display: block;
+            color: $gray-text;
+            font-size: 16px;
+            &:hover{
+              color: $primary-color;
+            }
+          }
+          ul.sub-menu-dropdown {
+            left: 100%;
+            top: -1px;
+          }
+        }
+        &.right-overflow {
+          right: 0;
+          left: auto;
+          top: 100%;
+        }
+      }
+
+      .kt-megamenu-wrapper{
+        width: 100%;
+
+        > ul{
+          display: table;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          table-layout: fixed;
+          width: 100%;
+          > li{
+            border-right: 1px solid $border-color;
+            display: table-cell;
+            float: none;
+            vertical-align: top;
+            &:last-child{
+              border: none;
+            }
+            > a,
+            > span{
+              color: $primary-color;
+              font-size: 18px;
+              display: block;
+              padding: 40px 28px 24px;
+              border-bottom: 1px solid $border-color;
+            }
+            > ul{
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              > li{
+                display: block;
+                border-bottom: 1px solid $border-color;
+                :last-child{
+                  border-bottom: none;
+                }
+                > a,
+                > span{
+                  padding: 30px 26px 22px;
+                  display: block;
+                  color: $gray-text;
+                  font-size: 16px;
+                  &:hover{
+                    color: #000000;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+
+        &.megamenu-columns-4{
+          > ul > li{  width: 25%; }
+        }
+        &.megamenu-columns-3{
+          > ul > li{  width: 33.33%; }
+        }
+        &.megamenu-columns-2{
+          > ul > li{  width: 50%; }
+        }
+        &.megamenu-position-left-menubar{
+          right: auto;
+          left: 0;
+        }
+        &.megamenu-position-right-menubar{
+          right: 0;
+          left: auto;
+        }
+
+      }
+
+    }
+
+    li{
+      &:hover{
+        > ul.sub-menu-dropdown,
+        .kt-megamenu-wrapper{
+          @include opacity(1);
+          @include transform(translate(0, 0));
+          visibility: visible;
+        }
+      }
+      ul.sub-menu-dropdown{
+        li {
+          > ul.sub-menu-dropdown {
+            &.right-overflow{
+              right: 100%;
+              left: auto;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+
 }
 
 
+
+/*
 
 #nav{
   border-top: 2px solid $text;
@@ -242,7 +470,6 @@
           padding-top: 30px;
         }
 
-
         ul.kt-megamenu-ul{
           @include css3-prefix-value(display, flex);
           list-style: none;
@@ -250,10 +477,10 @@
           padding: 0;
           width: 100%;
           @include clearfix();
-          border-bottom: 2px solid $border-color2;
+          border-bottom: 2px solid $border-color;
 
           > li{
-            border-left: 2px solid $border-color2;
+            border-left: 2px solid $border-color;
             float: left;
             vertical-align: top;
             padding: 0 30px 20px;
@@ -378,3 +605,5 @@
   }
 }
 
+
+*/

@@ -2,274 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/Archive.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/ajax/woocommerce-product-quickview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/_mixin.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/common-space.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/common-space.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/common-space.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/ie.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/ie.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/ie.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/intro.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/intro.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/intro.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/plugins.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/responsive.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/responsive.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/style.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/css/style.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/demo-files/demo.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/demo-files/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/fonts/icomoon.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/fonts/icomoon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/fonts/icomoon.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/fonts/icomoon.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/selection.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/Lineicons/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/font-awesome.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/fonts/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/drag.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/selectbox-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/chair1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/chair2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/collection.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/furniture1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/img-box.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/product-featured-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/product-featured-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/product-featured-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/sale-box1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/sale-up.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/slide2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/slide3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/slide4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/images/slideshow/transparent.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/bootstrap-select.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/easyzoom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/gmap3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/html5shiv.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/imagesloaded.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/isotope.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery-1.11.3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery-ui.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery.countdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery.kt.sticky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery.matchHeight-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery.parallax-1.1.3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/jquery.superfish.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/pace.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/packery-mode.pkgd.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/page-loading.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/plugins.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/product-preview-slider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/js/wow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/css/bootstrap.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/css/bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/bootstrap/js/npm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/magnificPopup/jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/magnificPopup/magnific-effect.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/magnificPopup/magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/owl-carousel/AjaxLoader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/owl-carousel/grabbing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/owl-carousel/owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/owl-carousel/owl.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/owl-carousel/owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/owl-carousel/owl.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/owl-carousel/owl.transitions.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/coloredbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/gridtile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/gridtile_3x3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/gridtile_3x3_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/gridtile_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/fr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/ig.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/post.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/revolution_slide1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/revolution_slide2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/tw.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/vm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/wc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/assets/sources/yt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/closedhand.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/layers.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/ares.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/custom.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/dione.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/erinyen.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/gyges.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/hades.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/hebe.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/hephaistos.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/hermes.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/hesperiden.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/metis.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/persephone.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/uranus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation-skins/zeus.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/navigation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/openhand.cur" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/css/settings.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/css/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/fonts/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/font-awesome/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/css/helper.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/css/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/fonts/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/pe-icon-7-stroke/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/revicons/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/revicons/revicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/revicons/revicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/revicons/revicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/fonts/revicons/revicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.actions.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.kenburn.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.layeranimation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.migration.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.navigation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.parallax.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.slideanims.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/revolution.extension.video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.actions.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.kenburn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.layeranimation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.migration.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.parallax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.slideanims.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/extensions/source/revolution.extension.video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/jquery.themepunch.enablelog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/jquery.themepunch.revolution.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/jquery.themepunch.tools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/source/index.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/source/jquery.themepunch.enablelog.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/source/jquery.themepunch.revolution.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/js/source/jquery.themepunch.tools.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/facebook/class-facebook.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/flickr/class-flickr.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/instagram/class-instagram.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/twitter/RestApi.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/twitter/class-twitter.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/twitter/connection/Application.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/twitter/connection/ConnectionAbstract.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/twitter/connection/User.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/vimeo/class-vimeo.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/assets/libs/revolution/php/youtube/class-youtube.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/blog-gird-3columns.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/blog-singlepost-standard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/homepage2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/homepage3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/homepage4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/homepage5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/homepage6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-blank.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-footer-style1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-footer-style2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-footer-style3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-header-style1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-header-style2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-header-style3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-header-style4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/pages-intro.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/shortcode-banner.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/shortcode-messagebox.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/shortcode-tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/shortcode-typography.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-3column-sidebar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-3column.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-4column.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-cart.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-checkout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-compare.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-masonry.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-myaccount.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-product-detailed1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-product-detailed2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-product-detailed3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-shop.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/html-/woocommerce-wishlist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML/previews.zip" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/hello.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/backup.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/backup.css.map" afterPath="" />
@@ -283,7 +15,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_typography.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_typography.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/assets/css/_variables.scss" afterPath="$PROJECT_DIR$/HTML/assets/css/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-plugins.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-plugins.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
@@ -294,6 +25,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/assets/css/intro.css" afterPath="$PROJECT_DIR$/HTML/assets/css/intro.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/jquery.kt.sticky.js" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/jquery.kt.sticky.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/extensions/nav/nav_custom_walker.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/extensions/nav/nav_custom_walker.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/assets/css/responsive.css.map" afterPath="$PROJECT_DIR$/HTML/assets/css/responsive.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/assets/css/style.css.map" afterPath="$PROJECT_DIR$/HTML/assets/css/style.css.map" />
@@ -329,8 +61,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.5">
-              <caret line="46" column="117" selection-start-line="46" selection-start-column="117" selection-end-line="46" selection-end-column="117" />
+            <state vertical-scroll-proportion="-10.625">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -346,11 +78,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.518116">
-              <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+            <state vertical-scroll-proportion="-3.8235295">
+              <caret line="147" column="11" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.kt.sticky.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/jquery.kt.sticky.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-23.125">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_menu.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.291666">
+              <caret line="136" column="31" selection-start-line="136" selection-start-column="31" selection-end-line="136" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -359,8 +123,18 @@
       <file leaf-file-name="header-1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.764706">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="48" />
+            <state vertical-scroll-proportion="-7.7058825">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-2.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.19298245">
+              <caret line="11" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -374,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/homepage5.html" />
         <option value="$PROJECT_DIR$/html/homepage6.html" />
         <option value="$PROJECT_DIR$/html/pages-about.html" />
         <option value="$PROJECT_DIR$/html/pages-blank.html" />
@@ -401,7 +174,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-plugins.php" />
         <option value="$PROJECT_DIR$/HTML/assets/css/_variables.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_forms.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-cart.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-wishlist.php" />
@@ -413,18 +185,20 @@
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_typography.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pageheader.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-currency.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-topnav.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-language.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-2.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-3.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-1.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/jquery.kt.sticky.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-1.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" />
       </list>
     </option>
   </component>
@@ -687,6 +461,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1204,14 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.102923974">
-          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.01754386">
@@ -1244,14 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HTML/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.235294">
@@ -1272,14 +1064,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.0">
           <caret line="124" column="33" selection-start-line="124" selection-start-column="27" selection-end-line="124" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6666667">
-          <caret line="39" column="14" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1310,26 +1094,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.5">
-          <caret line="46" column="117" selection-start-line="46" selection-start-column="117" selection-end-line="46" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.764706">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="48" />
+        <state vertical-scroll-proportion="-23.125">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.518116">
-          <caret line="139" column="16" selection-start-line="139" selection-start-column="16" selection-end-line="139" selection-end-column="16" />
+        <state vertical-scroll-proportion="-3.8235295">
+          <caret line="147" column="11" selection-start-line="147" selection-start-column="11" selection-end-line="147" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/jquery.kt.sticky.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.291666">
+          <caret line="136" column="31" selection-start-line="136" selection-start-column="31" selection-end-line="136" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7058825">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19298245">
+          <caret line="11" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding />
         </state>
       </provider>

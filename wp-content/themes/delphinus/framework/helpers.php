@@ -416,35 +416,33 @@ if (!function_exists('kt_custom_wpml')){
      *
      */
 
-    function kt_custom_wpml($before = '', $after = '', $title = '', $icon = '<i class="icon_ribbon_alt"></i>'){
+    function kt_custom_wpml($before = '', $after = '', $icon = ''){
 
         if(kt_is_wpml()){
 
             $output = $language_html = '';
 
-            if($title){
-                $output .= '<a href="#">'.$icon.$title.'</a>';
-            }
 
             $languages = icl_get_languages();
 
             if(!empty($languages)) {
                 foreach ($languages as $l) {
-                    $active = ($l['active']) ? 'current' : '';
-
-                    $language_html .= '<li class="'.$active.'">';
-                    $language_html .= '<a href="' . esc_url($l['url']) . '">';
-                    if ($l['country_flag_url']) {
-                        $language_html .= '<img src="' . esc_url($l['country_flag_url']) . '" height="12" alt="' . esc_attr($l['language_code']) . '" width="18" />';
+                    if($l['active']){
+                        $selected = 'current';
+                        $currency_lang = $l['language_code'];
+                    }else{
+                        $selected = '';
                     }
-                    $language_html .= "<span>" . $l['native_name'] . "</span>";
-                    $language_html .= '</a>';
 
+                    $language_html .= '<li class="'.$selected.'">';
+                    $language_html .= '<a href="' . esc_url($l['url']) . '">';
+                    $language_html .= "<span>" . strtoupper($l['language_code']) . "</span>";
+                    $language_html .= '</a>';
                     $language_html .= '</li>';
                 }
 
                 if ($language_html != '') {
-                    $language_html = '<ul class="list-lang">' . $language_html . '</ul>';
+                    $language_html = '<a href="#">'.$currency_lang.'</a><ul class="list-lang top-navigation-submenu">' . $language_html . '</ul>';
                 }
 
                 $output .= $language_html;

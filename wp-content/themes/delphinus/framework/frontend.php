@@ -119,7 +119,10 @@ function kt_add_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
+
     wp_enqueue_script( 'bootstrap', KT_THEME_LIBS . 'bootstrap/js/bootstrap.min.js', array( 'jquery' ), null, true );
+
+    wp_enqueue_script( 'kt-sticky', KT_THEME_JS . 'jquery.kt.sticky.js', array( 'jquery' ), null, true );
     wp_enqueue_script( 'kt-plugins', KT_THEME_JS . 'plugins.js', array( 'jquery' ), null, true );
     wp_enqueue_script( 'kt-main-script', KT_THEME_JS . 'functions.js', array( 'jquery', 'mediaelement', 'wp-mediaelement', 'jquery-ui-tabs' ), null, true );
 

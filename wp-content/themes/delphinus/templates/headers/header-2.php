@@ -2,47 +2,43 @@
 
 // Exit if accessed directly
 if ( !defined('ABSPATH')) exit;
-
-$position = kt_get_header();
-
 ?>
-<div id="header-outer" class="clearfix">
-    <?php
-    if($position == 'below'){
-        /**
-         * @hooked kt_slideshows_position_callback 10
-         */
-        do_action( 'kt_slideshows_position' );
-    }
-    ?>
 
-    <div class="nav-container-inner">
-        <div id="header-content" class="clearfix apply-sticky">
-            <div class="header-sticky-background"></div>
-            <div class="site-branding">
-                <?php get_template_part( 'templates/headers/header',  'branding'); ?>
-            </div><!-- .site-branding -->
-
-            <div class="header-actions">
-                <?php get_template_part( 'templates/headers/header',  'bars'); ?>
-                <?php get_template_part( 'templates/headers/header',  'tool'); ?>
-            </div>
-
-            <div class="nav-container">
-                <div class="container">
-                    <nav id="nav" class="nav-main">
-                        <?php get_template_part( 'templates/headers/header',  'menu'); ?>
-                    </nav><!-- #main-nav -->
-                </div><!-- .container -->
-            </div><!-- .nav-container -->
+<div class="topbar">
+    <div class="row">
+        <div class="topbar-left col-sm-6">
+            <ul class="top-navigation">
+                <?php
+                get_template_part( 'templates/headers/header',  'language');
+                get_template_part( 'templates/headers/header',  'currency');
+                get_template_part( 'templates/headers/header',  'search');
+                ?>
+            </ul>
         </div>
-        <?php
-        if($position != 'below'){
-            /**
-             * @hooked kt_slideshows_position_callback 10
-             */
-            do_action( 'kt_slideshows_position' );
-        }
-        ?>
+        <div class="topbar-right col-sm-6">
+            <?php if(kt_is_wc()){ ?>
+                <div class="top-navigation">
+                    <?php
+                    get_template_part( 'templates/headers/header',  'myaccount');
+                    get_template_part( 'templates/headers/header',  'wishlist');
+                    get_template_part( 'templates/headers/header',  'cart');
+                    ?>
+                </div>
+            <?php } ?>
+        </div>
+    </div>
+</div>
+
+
+<div class="navbar-container sticky-header">
+    <div class="apply-sticky">
+        <div class="container">
+            <div class="navbar-container-inner clearfix">
+                <?php get_template_part( 'templates/headers/header',  'branding'); ?>
+                <nav class="main-nav" id="nav">
+                    <?php get_template_part( 'templates/headers/header',  'menu'); ?>
+                </nav><!-- #nav -->
+            </div>
+        </div>
     </div>
 </div>

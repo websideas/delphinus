@@ -13,7 +13,7 @@
 
 //// 1. Fonts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-$font-stack: 'Karla',arial,sans-serif;
+$font-stack: 'Karla', arial, sans-serif;
 $heading-font: 'Roboto Slab', serif;
 $button-text: 'Karla', sans-serif;
 $second-font: 'Montserrat', sans-serif;
@@ -25,6 +25,8 @@ $four-font: 'Vollkorn', serif;
 
 $primary-color: #000000;
 $primary-light-color: lighten($primary-color, 20%);
+
+$text: #3b3e43;
 
 $gray-bg: #f6f6f6;
 $gray-text: #999999;

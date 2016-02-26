@@ -36,6 +36,9 @@
          ***  Sticky header
          ===============================**/
 
+
+
+
         if ($.fn.ktSticky) {
             $('.sticky-header').ktSticky({
                 contentSticky : ''

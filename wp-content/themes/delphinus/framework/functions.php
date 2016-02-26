@@ -165,22 +165,19 @@ function kt_page_header( ){
             $subtitle = '<div class="page-header-subtitle">'.$subtitle.'</div>';
         }
 
-        $divider = '<div class="page-header-divider"><i class="icon_pens"></i></div>';
-
         $style = 'fancy-tabbed';
         //standard, fancy-tabbed
 
         if($style == 'fancy-tabbed'){
-            $layout = '<div class="page-header %4$s"><div class="page-header-overlay"></div><div class="container">%3$s<div class="page-header-content"><div class="page-header-inner">%1$s %2$s</div></div></div></div>';
+            $layout = '<div class="page-header %3$s"><div class="container"><div class="page-header-content">%1$s %2$s</div></div></div>';
         }else{
-            $layout = '<div class="page-header %4$s"><div class="page-header-overlay"></div><div class="container"><div class="page-header-content">%1$s %2$s %3$s</div></div></div>';
+            $layout = '<div class="page-header %4$s"><div class="container"><div class="page-header-content">%1$s %2$s</div></div></div>';
         }
 
         printf(
             $layout,
             $title,
             $subtitle,
-            $divider,
             $style.'-heading'
         );
     }

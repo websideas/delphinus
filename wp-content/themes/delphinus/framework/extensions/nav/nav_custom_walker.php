@@ -68,7 +68,7 @@ class KTMegaWalker extends Walker_Nav_Menu{
 
     public function end_el( &$output, $item, $depth = 0, $args = array() ) {
         if( $depth === 0  && $this->megamenu_enable == "enabled" ) {
-            $output .= "\n</div></div>\n";
+            $output .= "</div>\n";
         }
         $output .= "</li>\n";
     }
@@ -98,9 +98,6 @@ class KTMegaWalker extends Walker_Nav_Menu{
         if($depth == 1 && $endrow){
             $classes[] = 'kt-megamenu-item-endrow';
         }
-
-
-
 
         /**
          * Filter the CSS class(es) applied to a menu item's <li>.
@@ -223,7 +220,7 @@ class KTMegaWalker extends Walker_Nav_Menu{
             $position = ($this->megamenu_width != 'full') ? ' megamenu-position-'.$this->megamenu_position : '';
             $layout = ' megamenu-layout-'.$this->megamenu_layout;
 
-            $item_output .= "\n$indent<div class=\"kt-megamenu-wrapper $position $layout megamenu-columns-$colums \">\n<div class=\"container\">\n";
+            $item_output .= "\n$indent<div class=\"kt-megamenu-wrapper $position $layout megamenu-columns-$colums \">\n";
 
             if ( $depth == 0 && $item->object == 'category' ) {
 
@@ -243,11 +240,6 @@ class KTMegaWalker extends Walker_Nav_Menu{
 
                 $item_output .= sprintf('<div class="blog-posts-menu"><div class="row">%s</div></div>', ob_get_clean());
 
-                $item_output .= sprintf(
-                    '<a href="%s">%s</a>',
-                    get_category_link( $item->object_id ),
-                    __('See all', 'adroit')
-                );
                 $item_output .= '</div>';
 
             }
