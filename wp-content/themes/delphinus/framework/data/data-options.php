@@ -451,6 +451,275 @@ if ( ! class_exists( 'KT_config' ) ) {
             );
 
             /**
+             *	Styling
+             **/
+            $this->sections[] = array(
+                'id'			=> 'styling',
+                'title'			=> esc_html__( 'Styling', 'wingman' ),
+                'desc'			=> '',
+                'icon'	=> 'icon-Palette',
+            );
+
+
+            /**
+             *	Styling Footer
+             **/
+            $this->sections[] = array(
+                'id'			=> 'styling_footer',
+                'title'			=> esc_html__( 'Footer', 'wingman' ),
+                'subsection' => true,
+                'fields'		=> array(
+                    array(
+                        'id'       => 'footer_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Footer settings', 'wingman' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'footer_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Footer Background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Footer Background with image, color, etc.', 'wingman' ),
+                        'default'   => array( ),
+                        'output'      => array( '#footer' ),
+                    ),
+
+                    array(
+                        'id'       => 'footer_padding',
+                        'type'     => 'spacing',
+                        'mode'     => 'padding',
+                        'left'     => false,
+                        'right'    => false,
+                        'output'   => array( '#footer' ),
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Footer padding', 'wingman' ),
+                        'default'  => array( )
+                    ),
+
+                    array(
+                        'id'       => 'footer_border',
+                        'type'     => 'border',
+                        'title'    => esc_html__( 'Footer Border', 'wingman' ),
+                        'output'   => array( '#footer' ),
+                        'all'      => false,
+                        'left'     => false,
+                        'right'    => false,
+                        'bottom'      => false,
+                        'default'  => array( )
+                    ),
+
+                    // Footer top settings
+                    array(
+                        'id'       => 'footer_top_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Footer top settings', 'wingman' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'footer_top_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Footer top Background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Footer top Background with image, color, etc.', 'wingman' ),
+                        'default'   => array( ),
+                        'output'      => array( '#footer-top' ),
+                    ),
+                    array(
+                        'id'       => 'footer_top_padding',
+                        'type'     => 'spacing',
+                        'mode'     => 'padding',
+                        'left'     => false,
+                        'right'    => false,
+                        'output'   => array( '#footer-top' ),
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Footer top padding', 'wingman' ),
+                        'default'  => array( )
+                    ),
+                    array(
+                        'id'       => 'footer_top_border',
+                        'type'     => 'border',
+                        'title'    => esc_html__( 'Footer top Border', 'wingman' ),
+                        'output'   => array( '#footer-top' ),
+                        'all'      => false,
+                        'left'     => false,
+                        'right'    => false,
+                        'top'      => false,
+                        'default'  => array(
+
+                        )
+                    ),
+                    // Footer widgets settings
+                    array(
+                        'id'       => 'footer_widgets_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Footer widgets settings', 'wingman' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'footer_widgets_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Footer widgets Background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Footer widgets Background with image, color, etc.', 'wingman' ),
+                        'default'   => array(  ),
+                        'output'      => array( '#footer-area' ),
+                    ),
+
+                    array(
+                        'id'       => 'footer_widgets_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Footer Box widgets Background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Footer Box widgets Background with image, color, etc.', 'wingman' ),
+                        'default'   => array( ),
+                        'output'      => array( '.footer-area-right' ),
+                    ),
+
+
+                    array(
+                        'id'       => 'footer_widgets_padding',
+                        'type'     => 'spacing',
+                        'mode'     => 'padding',
+                        'left'     => false,
+                        'right'    => false,
+                        'output'   => array( '#footer-area' ),
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Footer widgets padding', 'wingman' ),
+                        'default'  => array( )
+                    ),
+
+                    //Footer bottom settings
+                    array(
+                        'id'       => 'footer_bottom_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Footer bottom settings', 'wingman' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'footer_bottom_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Footer Background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Footer Background with image, color, etc.', 'wingman' ),
+                        'default'   => array( ),
+                        'output'      => array( '#footer-bottom' ),
+                    ),
+
+                    array(
+                        'id'       => 'footer_bottom_padding',
+                        'type'     => 'spacing',
+                        'mode'     => 'padding',
+                        'left'     => false,
+                        'right'    => false,
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Footer bottom padding', 'wingman' ),
+                        'default'  => array( ),
+                        'subtitle' => 'Disable if you use instagram background',
+                    ),
+
+                    //Footer copyright settings
+                    array(
+                        'id'       => 'footer_copyright_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Footer copyright settings', 'wingman' ).'</div>',
+                        'full_width' => true
+                    ),
+
+                    array(
+                        'id'       => 'footer_copyright_border',
+                        'type'     => 'border',
+                        'title'    => esc_html__( 'Footer Copyright Border', 'wingman' ),
+                        'output'   => array( '#footer-copyright' ),
+                        'all'      => false,
+                        'left'     => false,
+                        'right'    => false,
+                        'bottom'      => false,
+                        'default'  => array( )
+                    ),
+
+                    array(
+                        'id'       => 'footer_copyright_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Footer Background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Footer Background with image, color, etc.', 'wingman' ),
+                        'default'   => array( ),
+                        'output'      => array( '#footer-copyright' ),
+                    ),
+                    array(
+                        'id'       => 'footer_copyright_padding',
+                        'type'     => 'spacing',
+                        'mode'     => 'padding',
+                        'left'     => false,
+                        'right'    => false,
+                        'output'   => array( '#footer-copyright' ),
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Footer copyright padding', 'wingman' ),
+                        'default'  => array( )
+                    ),
+                    array(
+                        'type' => 'divide',
+                        'id' => 'divide_fake',
+                    ),
+                    array(
+                        'id'       => 'footer_socials_style',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Footer socials style', 'wingman' ),
+                        'options'  => array(
+                            'accent' => esc_html__('Accent', 'wingman' ),
+                            'dark'   => esc_html__('Dark', 'wingman' ),
+                            'light'  => esc_html__('Light', 'wingman' ),
+                            'color'  => esc_html__('Color', 'wingman' ),
+                            'custom'  => esc_html__('Custom Color', 'wingman' ),
+                        ),
+                        'default'  => 'custom'
+                    ),
+                    array(
+                        'id'       => 'custom_color_social',
+                        'type'     => 'color',
+                        'title'    => esc_html__( 'Footer socials Color', 'wingman' ),
+                        'default'  => '#707070',
+                        'transparent' => false,
+                        'required' => array('footer_socials_style','equals', array( 'custom' ) ),
+                    ),
+                    array(
+                        'id'       => 'footer_socials_background',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Footer socials background', 'wingman' ),
+                        'options'  => array(
+                            'empty'       => esc_html__('None', 'wingman' ),
+                            'rounded'   => esc_html__('Circle', 'wingman' ),
+                            'boxed'  => esc_html__('Square', 'wingman' ),
+                            'rounded-less'  => esc_html__('Rounded', 'wingman' ),
+                            'diamond-square'  => esc_html__('Diamond Square', 'wingman' ),
+                            'rounded-outline'  => esc_html__('Outline Circle', 'wingman' ),
+                            'boxed-outline'  => esc_html__('Outline Square', 'wingman' ),
+                            'rounded-less-outline'  => esc_html__('Outline Rounded', 'wingman' ),
+                            'diamond-square-outline'  => esc_html__('Outline Diamond Square', 'wingman' ),
+                        ),
+                        'subtitle'     => esc_html__( 'Select background shape and style for social.', 'wingman' ),
+                        'default'  => 'empty'
+                    ),
+                    array(
+                        'id'       => 'footer_socials_size',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Footer socials size', 'wingman' ),
+                        'options'  => array(
+                            'small'       => esc_html__('Small', 'wingman' ),
+                            'standard'   => esc_html__('Standard', 'wingman' ),
+                        ),
+                        'default'  => 'small'
+                    ),
+                    array(
+                        'id'       => 'footer_socials_space_between_item',
+                        'type'     => 'text',
+                        'title'    => esc_html__( 'Footer socials space between item', 'wingman' ),
+                        'default'  => '10'
+                    ),
+                )
+            );
+
+            /**
              *	Woocommerce
              **/
             $this->sections[] = array(

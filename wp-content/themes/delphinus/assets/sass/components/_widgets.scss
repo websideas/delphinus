@@ -38,7 +38,8 @@
   &.widget_recent_comments,
   &.widget_recent_entries,
   &.widget_meta,
-  &.widget_rss{
+  &.widget_rss,
+  &.widget_layered_nav{
     ul{
       margin: 0;
       padding: 0;
@@ -191,13 +192,12 @@
     }
   }
 
-
 }
 
 .side-bar{
   .widget{
     border-bottom: 2px solid #f6f6f6;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     margin-bottom: 40px;
     &:last-child{
       border: none;

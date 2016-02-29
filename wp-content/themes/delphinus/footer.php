@@ -14,6 +14,15 @@
         <?php if(kt_option('footer', true)){ ?>
             <?php do_action( 'kt_before_footer' ); ?>
             <div id="footer" class="site-footer">
+
+                <?php if(is_active_sidebar( 'footer-top' ) && kt_option('footer_top', true)){ ?>
+                    <footer id="footer-top">
+                        <div class="container">
+                            <?php dynamic_sidebar('footer-top') ?>
+                        </div><!-- .container -->
+                    </footer><!-- #footer-top -->
+                <?php } ?>
+
                 <?php
 
                 if(kt_option('footer_widgets', true)){
@@ -31,7 +40,9 @@
                 <?php if(kt_option('footer_copyright', true)){ ?>
                     <footer id="footer-copyright">
                         <div class="container">
-                            <?php get_template_part( 'templates/footers/footer', kt_option('footer_copyright_layout', 'centered') ); ?>
+                            <?php
+                            get_template_part( 'templates/footers/footer', kt_option('footer_copyright_layout', 'centered') );
+                            ?>
                         </div><!-- .container -->
                     </footer><!-- #footer-copyright -->
                 <?php } ?>

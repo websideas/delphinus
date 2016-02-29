@@ -104,24 +104,25 @@
    */
 
   .star-rating{
-    font-family: ElegantIcons;
-    font-size: 14px;
-    letter-spacing: .2em;
+    font-family: FontAwesome;
+    font-size: 12px;
+    letter-spacing: 5px;
     width: 84px;
-    height: 18px;
-
+    height: 12px;
     &:before {
-      color: $gray-darker;
-      content: "\e033\e033\e033\e033\e033";
+      color: #c6c6c6;
+      content: "\f006\f006\f006\f006\f006";
     }
     span{
       &:before {
-        content: "\e033\e033\e033\e033\e033";
-        color: $primary-color;
+        content: "\f006\f006\f006\f006\f006";
+        color: $extra-color;
         text-indent: 0;
       }
     }
   }
+
+
 
   ul.cart_list,
   ul.product_list_widget {
@@ -129,21 +130,24 @@
     padding: 0;
     list-style: none;
     li {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       padding: 0;
 
       &:last-child {
         margin-bottom: 0;
       }
+
       a {
         color: $text;
         display: block;
-        font-size: 14px;
-        font-weight: normal;
-        margin-bottom: 6px;
+        margin-bottom: 12px;
+        line-height: 1;
         &:hover{
           color: $primary-color;
         }
+      }
+      ins{
+        text-decoration: none;
       }
       img {
         float: left;
@@ -151,16 +155,13 @@
         margin: 0 20px 0 0;
         width: 100px;
       }
-      > .amount,
-      .quantity{
+      > .amount{
         margin-bottom: 5px;
       }
 
       .quantity,
       .amount {
         color: $text;
-        font-size: 18px;
-        font-weight: bold;
       }
 
       .star-rating {
@@ -176,6 +177,10 @@
         display: block;
         padding: 0;
         margin-bottom: 5px;
+        dt,
+        dd{
+          padding: 0;
+        }
         dd{
           margin-bottom: 0;
         }
@@ -191,6 +196,7 @@
   .widget_shopping_cart,
   &.widget_shopping_cart{
     .cart-desc{
+      display: none;
       span{
         color: $primary-color;
       }
@@ -200,18 +206,19 @@
         padding: 0;
         a.remove {
           position: absolute;
-          top: 6px;
+          top: 0;
           left: auto;
-          right: 15px;
+          right: 0;
           margin: 0;
           font-size: 0;
           &:before{
-            @include FontIcon('\4d', 'ElegantIcons');
+            @include FontIcon('\f00d');
             font-size: 14px;
           }
         }
       }
     }
+
     .buttons{
       margin: 30px -6px 0;
       > span{
@@ -230,75 +237,15 @@
 
     .total{
       border: medium none;
-      margin: 30px 0 0;
+      margin: 20px 0 0;
       padding: 0;
       .amount{
         float: right;
-        font-size: 24px;
-        margin-top: -5px;
+        font-size: 18px;
       }
     }
   }
 
-  .widget_layered_nav {
-    ul {
-      @include clearfix;
-      margin: 0;
-      padding: 0;
-
-      li {
-        padding-bottom: 10px;
-        list-style: none;
-        a {
-          padding-left: 20px;
-          position: relative;
-          color: $text;
-          &:before {
-            content: '';
-            width: 4px;
-            height: 4px;
-            @include transform(rotate(45deg));
-            display: block;
-            background: $text;
-            position: absolute;
-            top: 50%;
-            margin-top: -2px;
-            left: 0;
-          }
-          &:hover{
-            text-decoration: underline;
-          }
-        }
-        &.chosen{
-          a{
-            &:before{
-              background: 0;
-              height: auto;
-              margin-top: 0;
-              top: 4px;
-              @include transform(none);
-              width: auto;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .widget_layered_nav_filters{
-    ul {
-      li{
-        padding-left: 2px;
-        margin-right: 10px;
-        a{
-          color: $text;
-          &:hover{
-            color: $primary-color;
-          }
-        }
-      }
-    }
-  }
 
   .yith-woocompare-widget{
     ul {
@@ -339,7 +286,7 @@
       }
     }
     .price_label {
-      font-size: 18px;
+      font-size: 14px;
       text-align: left;
     }
     .price_slider_wrapper .ui-widget-content {
@@ -349,20 +296,26 @@
       height: 3px;
       background: $border-color;
     }
-    .ui-slider{
-      .ui-slider-handle {
-        border: none;
-        @include border-radius(0);
-        height: 7px;
-        width: 7px;
-        background: $black;
-        top: -2px;
-        @include transform(rotate(45deg));
-        outline: none;
-        margin-left: -4px;
-      }
-      .ui-slider-range {
+    .ui-slider {
+      position: relative;
+      background: $gray-bg;
+      margin-bottom: 40px;
+      height: 2px;
+      margin-left: 4px;
+      .ui-slider-range{
         background: $primary-color;
+        height: 100%;
+        position: absolute;
+      }
+      .ui-slider-handle{
+        height: 14px;
+        width: 4px;
+        background: $primary-color;
+        position: absolute;
+        top: -6px;
+        cursor: ew-resize;
+        margin-left: -4px;
+        @include border-radius(0);
       }
     }
   }
@@ -702,7 +655,7 @@
           }
         }
         .product-actions{
-          background: $gray-bg2;
+          background: $gray-bg;
           padding: 20px;
           @include clearfix();
           > div{
@@ -946,7 +899,7 @@
         }
         .product-actions{
           @include clearfix;
-          background: $gray-bg2;
+          background: $gray-bg;
           font-size: 14px;
           text-align: center;
           z-index: 7;
@@ -1137,6 +1090,8 @@
 
   }
 
+
+  /*
   .quantity {
     background: $white;
     text-align: center;
@@ -1170,6 +1125,7 @@
       }
     }
   }
+  */
 
 
   #reviews{
