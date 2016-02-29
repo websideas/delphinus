@@ -36,61 +36,28 @@
   .blog-post-sizer{
     min-height: 0;
   }
+
   .blog-post{
 
     .entry-thumbnail{
+      margin-bottom: 33px;
       display: block;
       overflow: hidden;
-      position: relative;
       img{
+        @include transition('all 1s ease-in-out 0s');
+        @include transform(scale(1));
         width: 100%;
       }
-      &:before{
-        position: absolute;
-        left:0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        @include opacity(0);
-        content: '';
-        display: block;
-        background: $text;
-        @include transition();
-      }
-    }
-    .post-date{
-      position: absolute;
-      border: 2px solid $white;
-      padding: 2px;
-      text-align: center;
-      width: 60px;
-      opacity: 0;
-      @include transition();
-      left: 30px;
-      top: 30px;
-
-      &-number{
-        background: $white;
-        display: block;
-        height: 52px;
-        line-height: 52px;
-        font-size: 36px;
-        font-weight: bold;
-      }
-      &-text{
-        font-size: 10px;
-        font-weight: 300;
-        color: $white;
-        line-height: 17px;
-        display: block;
-        text-transform: uppercase;
-        letter-spacing: .1em;
+      &:hover{
+        img{
+          @include transform(scale(1.2));
+        }
       }
     }
     .entry-post-meta{
-      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: $gray-text;
       > span{
-        color: #c9cacb;
         &:after{
           content: '/';
           padding-left: 8px;
@@ -103,15 +70,18 @@
         }
       }
       a{
-        color: #c9cacb;
+        color: $gray-text;
         &:hover{
-          color: #000000;
+          color: $primary-color;
         }
       }
     }
 
     .entry-title{
-      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-size: 16px;
+      text-transform: none;
+      letter-spacing: 0;
       a{
         color: $black;
         &:hover{
@@ -128,232 +98,22 @@
   &.blog-posts-grid,
   &.blog-posts-masonry{
     .blog-post{
-      margin-bottom: 50px;
-      &-content{
-        position: relative;
-        overflow: hidden;
-        &:hover{
-          .post-date{
-            @include opacity(1);
-          }
-          .blog-post-thumbnail{
-            &:before{
-              @include opacity(.35);
-            }
-          }
-        }
-      }
-      .entry-title{
-        margin-bottom: 15px;
-        font-size: 26px;
-      }
 
-      .entry-post-meta{
-        position: absolute;
-        top:0;
-        @include transform-origin(left top 0);
-        @include transform(rotate(90deg));
-        left: 100%;
-        z-index: 99;
-        width: auto;
-        padding-top: 20px;
-        padding-left: 60px;
-
-
-        &:before{
-          content: '';
-          width: 100px;
-          height: 2px;
-          background: $text;
-          display: block;
-          position: absolute;
-          left: -70px;
-          bottom: 10px;
-        }
-      }
-      &-inner{
-        background: $white;
-        margin-left: 28px;
-        padding: 33px 85px 0 30px;
-        font-size: 14px;
-        line-height: 23px;
-        margin-top: -80px;
-        position: relative;
-        min-height: 210px;
-      }
     }
   }
   &.blog-posts-grid,
   &.blog-posts-masonry,
   &.blog-posts-classic{
-    .entry-post-meta {
-      white-space: nowrap;
-    }
+
   }
 
 
   &.blog-posts-list{
     .blog-post{
-      @include clearfix;
-      margin-bottom: 60px;
-      position: relative;
 
-      &:hover{
-        .post-date{
-          @include opacity(1);
-        }
-        .entry-thumbnail{
-          &:before{
-            @include opacity(.35);
-          }
-        }
-        .entry-title{
-          &:before{
-            width: 180px;
-            left: -210px;
-          }
-        }
-        &:nth-child(2n){
-          .entry-title{
-            &:before{
-              right: -210px;
-              left: auto;
-            }
-          }
-        }
-      }
-
-      .entry-title{
-        margin-bottom: 40px;
-        font-size: 24px;
-        line-height: 32px;
-        position: relative;
-        &:before{
-          position: absolute;
-          top: 15px;
-          content: '';
-          left: -180px;
-          background: $text;
-          display: block;
-          width: 150px;
-          height: 2px;
-          @include transition('all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s');
-        }
-      }
-      .entry-thumbnail{
-        float: left;
-        width: 70%;
-      }
-
-      &-content{
-        float: left;
-        position: relative;
-        width: 30%;
-      }
-
-      &-inner{
-        margin-left: -80px;
-        padding: 40px 0 40px 43px;
-        background: $white;
-      }
-
-      .entry-post-meta{
-        margin-bottom: 50px;
-      }
-
-      .entry-more{
-        margin: 0;
-      }
-
-      &:nth-child(2n){
-        .entry-thumbnail{
-          float: right;
-        }
-        .entry-title{
-          text-align: right;
-          &:before{
-            right: -180px;
-            left: auto;
-          }
-        }
-        .blog-post-inner{
-          margin-left: 0;
-          margin-right: -80px;
-          padding: 40px 43px 40px 0;
-        }
-
-        .post-date{
-          right: 30px;
-          left: auto;
-        }
-      }
     }
   }
 
-
-  &.blog-posts-zigzag{
-    .blog-post{
-      .entry-title{
-        font-size: 36px;
-        margin-bottom: 35px;
-      }
-      &-content{
-        max-width: 70%;
-        margin: 0 auto;
-        text-align: center;
-      }
-      .entry-more{
-        margin: 0;
-        padding-top: 10px;
-      }
-      &-infos{
-        position: relative;
-        &:hover{
-          .entry-thumbnail{
-            &:before{
-              @include opacity(.95);
-            }
-            &:after{
-              @include opacity(1);
-            }
-          }
-          .entry-post-meta{
-            @include opacity(1);
-          }
-        }
-      }
-      .entry-thumbnail{
-        position: relative;
-        &:after{
-          @include translate();
-          @include FontIcon('\24', 'ElegantIcons');
-          color: $white;
-          font-size: 50px;
-          z-index: 2;
-          @include opacity(0);
-          @include transition();
-        }
-      }
-
-      .entry-post-meta{
-        position: absolute;
-        left: 30px;
-        top: 30px;
-        color: $white;
-        z-index: 2;
-        @include opacity(0);
-        > span{
-          color: $white;
-        }
-        a{
-          color: $white;
-          &:hover{
-            color: $primary-color;
-          }
-        }
-      }
-    }
-  }
 }
 
 

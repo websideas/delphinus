@@ -2,166 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/vc/vc-welcome/01_49.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/vc/vc-welcome/02_49.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/vc/vc-welcome/03_49.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/shortcode-vc-btn.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/shortcode-vc-icon-element.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/shortcode-vc-media-grid.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/vc-grids-common.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/FontAwesome.otf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/btnNext.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/btnNext.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/btnNext.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/btnNext.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/btnNext.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/btnPrevious.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/btnPrevious.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/btnPrevious.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/btnPrevious.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/btnPrevious.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/contentPattern.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/contentPattern.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/contentPattern.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/contentPattern.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternBottom.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternBottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternLeft.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternLeft.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternRight.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternRight.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternTop.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/contentPatternTop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/default.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/default.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/default_thumb.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/default_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/default_thumbnail.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/default_thumbnail.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/default_thumbnail.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/default_thumbnail.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/default_thumbnail.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/default_thumbnail.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/default_thumbnail.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/default_thumbnail.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/default_thumbnail.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/default_thumbnail.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/vc/elements_icons_sprite.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/vc/elements_icons_sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-fa_IR.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-fa_IR.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-pt_BR.mo" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-pt_BR.mo" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/loader.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/loader.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/loader.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/loader.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/loader.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/loader.gif" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/vc/fe/social/tw/none.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/vc/fe/social/tw/none.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/sprite.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_rounded/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/sprite.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/dark_square/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/sprite.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/facebook/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/sprite.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_rounded/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/sprite.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/light_square/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_next.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_next.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_prev.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_prev.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_x.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_y.png" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/images/prettyPhoto/default/sprite_y.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.eot" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.ttf" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.woff" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/README" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/prettyphoto/README" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/zigzag/content-even.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/zigzag/content.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/attributes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/attributes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/dist/backend-actions.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/dist/backend-actions.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/dist/backend.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/dist/backend.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/changes.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/changes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/editors/class-vc-backend-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/editors/class-vc-backend-editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/core/class-vc-base.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/core/class-vc-base.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/editors/class-vc-frontend-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/editors/class-vc-frontend-editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/editor/class-vc-grid-item-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/editor/class-vc-grid-item-editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/editor/class-vc-grid-item-preview.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/editor/class-vc-grid-item-preview.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/settings/class-vc-license.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/settings/class-vc-license.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/core/class-vc-post-admin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/core/class-vc-post-admin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/settings/class-vc-settings.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/settings/class-vc-settings.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/editor/popups/class-vc-templates-editor-grid-item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/editors/popups/class-vc-templates-panel-editor.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/editors/popups/class-vc-templates-panel-editor.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updater.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updater.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/updaters/class-vc-updating-manager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/vendors/plugins/class-vc-vendor-advanced-custom-fields.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/vendors/plugins/class-vc-vendor-advanced-custom-fields.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/comments.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/controls.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/controls.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/default.po" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/default.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/elements_icons.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/elements_icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/params/vc_grid_item/attributes/featured_image.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/params/vc_grid_item/attributes/featured_image.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/vc_basic_grid/filter_styles/filter_default.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/vc_basic_grid/filter_styles/filter_default.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/vc_basic_grid/filter_styles/filter_filled.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/vc_basic_grid/filter_styles/filter_filled.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/dist/frontend-editor.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/dist/frontend-editor.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/frontend_vc_row.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/frontend_vc_row.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/vendors/plugins/acf/grid-item-attributes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/vendors/plugins/acf/grid-item-attributes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-4.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-currency.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-currency.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/helpers/helpers_api.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/helpers/helpers_api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/autoload/hook-vc-iconpicker-param.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/autoload/hook-vc-iconpicker-param.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/iconpicker/iconpicker.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/iconpicker/iconpicker.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/pages/vc-welcome/index.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/pages/vc-welcome/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/vcIconPicker/jquery.fonticonpicker.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/vcIconPicker/jquery.fonticonpicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/zoom/jquery.zoom.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/zoom/jquery.zoom.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-fa_IR.po" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-fa_IR.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-pt_BR.po" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/locale/js_composer-pt_BR.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/js_composer.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/js_composer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_backend_editor.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_backend_editor.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_frontend_editor.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_frontend_editor.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_frontend_editor_iframe.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_frontend_editor_iframe.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_settings.min.css" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/css/js_composer_settings.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/lean-map.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/lean-map.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/page.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/zoom/readme.md" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/bower/zoom/readme.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/containers/shortcode-vc-row.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/containers/shortcode-vc-row.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/social/shortcode-vc-tweetmeme.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/social/shortcode-vc-tweetmeme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/content/shortcode-vc-video.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/content/shortcode-vc-video.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/shortcodes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/shortcodes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/params/vc_grid_item/shortcodes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/single.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/classic/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/classic/content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/grid/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/grid/content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/list/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/list/content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/masonry/content.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/masonry/content.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-accordion-tab.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-accordion-tab.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/vc_accordion/vc-accordion.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/lib/vc_accordion/vc-accordion.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-accordion.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-accordion.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-basic-grid.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-basic-grid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-column.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-column.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-gitem.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-gitem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/grids/vc-grids-common.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/config/grids/vc-grids-common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-row.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-row.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-tabs.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/shortcodes/vc-tabs.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/pages/vc-welcome/vc-welcome.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/pages/vc-welcome/vc-welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_basic_grid.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_basic_grid.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/vc_classmap.json.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/vc_classmap.json.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_gallery.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_gallery.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_gitem_zone.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_gitem_zone.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/params/vc_grid_item/vc_grid_item.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/params/vc_grid_item/vc_grid_item.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/autoload/params/vc_grid_item.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/autoload/params/vc_grid_item.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/params/vc_grid_item/editor/partials/vc_grid_item_editor_footer.tpl.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/params/vc_grid_item/editor/partials/vc_grid_item_editor_footer.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.svg" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/fonts/vc_grid/vc_grid_v1.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/vc_row.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/lib/vc_row.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_row.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_row.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/editors/partials/vc_settings-image-block.tpl.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/editors/partials/vc_settings-image-block.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/tta/vc_tta-options.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/tta/vc_tta-options.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_tweetmeme.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_tweetmeme.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_video.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_video.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/vc_video_widget.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/shortcodes/vc_video_widget.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/modules/vc_welcome.less" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/less/modules/vc_welcome.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/autoload/vc-pages/welcome-screen.php" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/include/autoload/vc-pages/welcome-screen.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/vendors/yoast.js" afterPath="$PROJECT_DIR$/wp-content/plugins/js_composer/assets/js/vendors/yoast.js" />
     </list>
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -182,7 +37,88 @@
     <favorites_list name="html" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.47368422">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-centered.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-centered.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-widgets-featured.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets-featured.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer-widgets.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_layout.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_widgets.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.875">
+              <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data-options.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.529411">
+              <caret line="356" column="46" selection-start-line="356" selection-start-column="46" selection-end-line="356" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HTML/assets/css/style.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.2941175">
+              <caret line="1728" column="0" selection-start-line="1665" selection-start-column="0" selection-end-line="1728" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,15 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/html/pages-header-style3.html" />
-        <option value="$PROJECT_DIR$/html/pages-header-style4.html" />
-        <option value="$PROJECT_DIR$/html/ajax/woocommerce-product-quickview.html" />
-        <option value="$PROJECT_DIR$/html/assets/css/style.scss" />
-        <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/assets/css/style.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-plugins.php" />
-        <option value="$PROJECT_DIR$/HTML/assets/css/_variables.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_forms.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-cart.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-wishlist.php" />
@@ -224,10 +151,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-8.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss" />
         <option value="$PROJECT_DIR$/HTML/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss" />
@@ -239,8 +164,19 @@
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/comments.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/twentytwelve/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/loop.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/grid/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/classic/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/list/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/masonry/content.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets-featured.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" />
       </list>
     </option>
   </component>
@@ -328,6 +264,128 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="footers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="HTML" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -391,11 +449,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers" />
       <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/assets" />
       <recent name="$PROJECT_DIR$/intro/assets/css" />
       <recent name="$PROJECT_DIR$/intro/assets/js" />
       <recent name="$PROJECT_DIR$/intro/assets" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs" />
@@ -448,7 +506,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1916" height="1002" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -456,7 +514,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14457202" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22025052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22025052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -464,11 +524,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -487,98 +545,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/extensions/nav/nav_custom_walker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24561404">
-          <caret line="220" column="65" selection-start-line="220" selection-start-column="65" selection-end-line="220" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-menu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31578946">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61403507">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/templates/headers/header1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31578946">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/templates/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01754386">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.01754386">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35381114">
-          <caret line="42" column="28581" selection-start-line="42" selection-start-column="28581" selection-end-line="42" selection-end-column="28581" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.125">
-          <caret line="45" column="19" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.125">
-          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/jquery.kt.sticky.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13651878">
-          <caret line="109" column="0" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22769953">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-myaccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="98" selection-start-line="2" selection-start-column="98" selection-end-line="2" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_mixin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40350878">
-          <caret line="416" column="16" selection-start-line="416" selection-start-column="7" selection-end-line="416" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-currency.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5263158">
@@ -660,6 +626,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5263158">
           <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2982456">
           <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15789473">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -699,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pageheader.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24561404">
@@ -717,6 +670,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5614035">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -741,13 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45614034">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -766,13 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-25.0">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3084" column="1" selection-start-line="2918" selection-start-column="0" selection-end-line="3084" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -848,18 +788,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="363" column="21" selection-start-line="363" selection-start-column="21" selection-end-line="363" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/twentytwelve/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2877193">
           <caret line="537" column="67" selection-start-line="537" selection-start-column="67" selection-end-line="537" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/loop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5964912">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1754386">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/grid/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/list/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/classic/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12280702">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/masonry/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0877193">
+          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentytwelve/sidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentytwelve/sidebar-front.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2941175">
+          <caret line="1728" column="0" selection-start-line="1665" selection-start-column="0" selection-end-line="1728" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.875">
+          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.529411">
+          <caret line="356" column="46" selection-start-line="356" selection-start-column="46" selection-end-line="356" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets-featured.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-centered.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47368422">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
           <folding />
         </state>
       </provider>

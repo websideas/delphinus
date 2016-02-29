@@ -219,6 +219,238 @@ if ( ! class_exists( 'KT_config' ) ) {
             );
 
             /**
+             *  Header
+             **/
+            $this->sections[] = array(
+                'id'            => 'Header',
+                'title'         => esc_html__( 'Header', 'adroit' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+
+                    array(
+                        'id'       => 'header',
+                        'type'     => 'image_select',
+                        'compiler' => true,
+                        'title'    => esc_html__( 'Header layout', 'adroit' ),
+                        'subtitle' => esc_html__( 'Please choose header layout', 'adroit' ),
+                        'options'  => array(
+                            1 => array( 'alt' => esc_html__( 'Layout 1', 'adroit' ), 'img' => KT_FW_IMG . 'header/header-v1.jpg' ),
+                            2 => array( 'alt' => esc_html__( 'Layout 2', 'adroit' ), 'img' => KT_FW_IMG . 'header/header-v2.jpg' ),
+                        ),
+                        'default'  => 1
+                    ),
+                    array(
+                        'id'   => 'divide_id',
+                        'type' => 'divide'
+                    ),
+                    array(
+                        'id' => 'header_shadow',
+                        'type' => 'switch',
+                        'title' => esc_html__('Header shadow', 'adroit'),
+                        "default" => 1,
+                        'on'        => esc_html__( 'Enabled', 'adroit' ),
+                        'off'       => esc_html__( 'Disabled', 'adroit' ),
+                    ),
+                    array(
+                        'id' => 'header_search',
+                        'type' => 'switch',
+                        'title' => esc_html__('Search Icon', 'adroit'),
+                        'desc' => esc_html__('Enable the search Icon in the header.', 'adroit'),
+                        "default" => 1,
+                        'on'        => esc_html__( 'Enabled', 'adroit' ),
+                        'off'       => esc_html__( 'Disabled', 'adroit' ),
+                    ),
+
+
+                    array(
+                        'id'   => 'footer_socials',
+                        'type' => 'kt_socials',
+                        'title'    => __( 'Select your socials', 'adroit' ),
+                    ),
+                )
+            );
+            /**
+             *    Footer
+             **/
+            $this->sections[] = array(
+                'id' => 'footer',
+                'title' => esc_html__('Footer', 'adroit'),
+                'desc' => '',
+                'subsection' => true,
+                'fields' => array(
+                    // Footer settings
+
+                    array(
+                        'id' => 'backtotop',
+                        'type' => 'switch',
+                        'title' => esc_html__('Back to top', 'adroit'),
+                        'default' => true,
+                        'on' => esc_html__('Enabled', 'adroit'),
+                        'off' => esc_html__('Disabled', 'adroit'),
+                    ),
+
+                    array(
+                        'id' => 'footer_heading',
+                        'type' => 'raw',
+                        'content' => '<div class="section-heading">' . esc_html__('Footer settings', 'adroit') . '</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id' => 'footer',
+                        'type' => 'switch',
+                        'title' => esc_html__('Footer enable', 'adroit'),
+                        'default' => true,
+                        'on' => esc_html__('Enabled', 'adroit'),
+                        'off' => esc_html__('Disabled', 'adroit'),
+                    ),
+
+                    // Footer Top settings
+                    array(
+                        'id' => 'footer_top_heading',
+                        'type' => 'raw',
+                        'content' => '<div class="section-heading">' . esc_html__('Footer top settings', 'adroit') . '</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id' => 'footer_top',
+                        'type' => 'switch',
+                        'title' => esc_html__('Footer top enable', 'adroit'),
+                        'default' => true,
+                        'on' => esc_html__('Enabled', 'adroit'),
+                        'off' => esc_html__('Disabled', 'adroit'),
+                    ),
+
+                    // Footer widgets settings
+                    array(
+                        'id' => 'footer_widgets_heading',
+                        'type' => 'raw',
+                        'content' => '<div class="section-heading">' . esc_html__('Footer widgets settings', 'adroit') . '</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id' => 'footer_widgets',
+                        'type' => 'switch',
+                        'title' => esc_html__('Footer widgets enable', 'adroit'),
+                        'default' => true,
+                        'on' => esc_html__('Enabled', 'adroit'),
+                        'off' => esc_html__('Disabled', 'adroit'),
+                    ),
+                    array(
+                        'id' => 'footer_widgets_layout',
+                        'type' => 'image_select',
+                        'compiler' => true,
+                        'title' => esc_html__('Footer widgets layout', 'adroit'),
+                        'subtitle' => esc_html__('Select your footer widgets layout', 'adroit'),
+                        'options' => array(
+                            'featured' => array('alt' => esc_html__('Layout 1', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-0.jpg'),
+                            '3-3-3-3' => array('alt' => esc_html__('Layout 2', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-1.jpg'),
+                            '6-3-3' => array('alt' => esc_html__('Layout 3', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-2.jpg'),
+                            '3-3-6' => array('alt' => esc_html__('Layout 4', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-3.jpg'),
+                            '6-6' => array('alt' => esc_html__('Layout 5', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-4.jpg'),
+                            '4-4-4' => array('alt' => esc_html__('Layout 6', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-5.jpg'),
+                            '8-4' => array('alt' => esc_html__('Layout 7', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-6.jpg'),
+                            '4-8' => array('alt' => esc_html__('Layout 8', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-7.jpg'),
+                            '3-6-3' => array('alt' => esc_html__('Layout 9', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-8.jpg'),
+                            '12' => array('alt' => esc_html__('Layout 10', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-9.jpg'),
+                        ),
+                        'default' => 'featured'
+                    ),
+
+                    /* Footer Bottom */
+                    array(
+                        'id' => 'footer_bottom_heading',
+                        'type' => 'raw',
+                        'content' => '<div class="section-heading">' . esc_html__('Footer bottom settings', 'adroit') . '</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id' => 'footer_bottom',
+                        'type' => 'switch',
+                        'title' => esc_html__('Footer bottom enable', 'adroit'),
+                        'default' => false,
+                        'on' => esc_html__('Enabled', 'adroit'),
+                        'off' => esc_html__('Disabled', 'adroit'),
+                    ),
+                    array(
+                        'id' => 'footer_bottom_layout',
+                        'type' => 'image_select',
+                        'compiler' => true,
+                        'title' => esc_html__('Footer bottom layout', 'adroit'),
+                        'subtitle' => esc_html__('Select your footer bottom layout', 'adroit'),
+                        'options' => array(
+                            '1' => array('alt' => esc_html__('Layout 1', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-bottom-1.png'),
+                            '2' => array('alt' => esc_html__('Layout 2', 'adroit'), 'img' => KT_FW_IMG . 'footer/footer-bottom-2.png'),
+                        ),
+                        'default' => '1'
+                    ),
+
+                    /* Footer copyright */
+                    array(
+                        'id' => 'footer_copyright_heading',
+                        'type' => 'raw',
+                        'content' => '<div class="section-heading">' . esc_html__('Footer copyright settings', 'adroit') . '</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id' => 'footer_copyright',
+                        'type' => 'switch',
+                        'title' => esc_html__('Footer copyright enable', 'adroit'),
+                        'default' => true,
+                        'on' => esc_html__('Enabled', 'adroit'),
+                        'off' => esc_html__('Disabled', 'adroit'),
+                    ),
+                    array(
+                        'id'       => 'footer_copyright_layout',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Footer copyright layout', 'wingman' ),
+                        'subtitle'     => esc_html__( 'Select your preferred footer layout.', 'wingman' ),
+                        'options'  => array(
+                            'centered' => esc_html__('Centered', 'wingman'),
+                            'sides' => esc_html__('Sides', 'wingman' )
+                        ),
+                        'default'  => 'centered',
+                        'clear' => false
+                    ),
+                    array(
+                        'id'       => 'footer_copyright_left',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Footer copyright left', 'wingman' ),
+                        'options'  => array(
+                            '' => esc_html__('Empty', 'wingman' ),
+                            'navigation' => esc_html__('Navigation', 'wingman' ),
+                            'socials' => esc_html__('Socials', 'wingman' ),
+                            'copyright' => esc_html__('Copyright', 'wingman' ),
+                        ),
+                        'default'  => 'navigation'
+                    ),
+                    array(
+                        'id'       => 'footer_copyright_right',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Footer copyright right', 'wingman' ),
+                        'options'  => array(
+                            '' => esc_html__('Empty', 'wingman' ),
+                            'navigation' => esc_html__('Navigation', 'wingman' ),
+                            'socials' => esc_html__('Socials', 'wingman' ),
+                            'copyright' => esc_html__('Copyright', 'wingman' ),
+                        ),
+                        'default'  => 'copyright'
+                    ),
+                    array(
+                        'id'   => 'footer_socials',
+                        'type' => 'kt_socials',
+                        'title'    => esc_html__( 'Select your socials', 'wingman' ),
+                    ),
+                    array(
+                        'id' => 'footer_copyright_text',
+                        'type' => 'editor',
+                        'title' => esc_html__('Footer Copyright Text', 'adroit'),
+                        'default' => '&copy; 2015 Delphinus'
+                    ),
+                )
+            );
+
+            /**
              *	Woocommerce
              **/
             $this->sections[] = array(
@@ -676,7 +908,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                             'list' => esc_html__( 'List', 'adroit' ),
                             'grid' => esc_html__( 'Grid', 'adroit' ),
                             'masonry' => esc_html__( 'Masonry', 'adroit' ),
-                            'zigzag' => esc_html__( 'ZigZag', 'adroit' ),
                         ),
                         'default' => 'grid'
                     ),
