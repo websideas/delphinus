@@ -28,7 +28,7 @@ if(class_exists('WOOCS') && kt_is_wc()){
 
 
     printf(
-        '<li class="currency-switcher"><a href="#">%s<ul class="top-navigation-submenu currency-switcher-content">%s</ul></a></li>',
+        '<li class="currency-switcher"><a href="#">%s<ul class="navigation-submenu currency-switcher-content">%s</ul></a></li>',
         $currency_active,
         $currency_html
     );

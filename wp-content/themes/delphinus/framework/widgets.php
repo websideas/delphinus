@@ -162,6 +162,7 @@ function kt_archive_count_span($links) {
     return $links;
 }
 
+
 /**
  * Include widgets.
  *

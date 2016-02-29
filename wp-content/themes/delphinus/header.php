@@ -25,7 +25,7 @@
     <?php
     $header_layout = kt_get_header_layout();
     $header_position = kt_get_header_position();
-    $header_layout = 4;
+    $header_layout = 8;
     ?>
     <?php
     do_action( 'kt_body_top' ); ?>

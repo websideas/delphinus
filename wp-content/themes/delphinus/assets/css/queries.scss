@@ -21,27 +21,7 @@
 
 /* 1. Styles for devices(>1300px) */
 @media (min-width: 1400px) {
-  .container-fluid{
-    padding-left: 140px;
-    padding-right: 140px;
-  }
 
-  .featured-box{
-    .featured-content{
-      padding: 10px 10px 10px 120px;
-    }
-    &.align-right{
-      .featured-content{
-        padding: 10px 120px 10px 10px;
-      }
-    }
-  }
-
-  .woocommerce{
-    div.images{
-      margin-right: 30px;
-    }
-  }
 
 
 }
@@ -50,14 +30,6 @@
 @media (min-width: 1300px) {
   .container {
     width: 1200px;
-  }
-  .single-post{
-    .single-post-content{
-      margin-left: -70px;
-    }
-    .single-left-content{
-      margin-right: 60px;
-    }
   }
 }
 
@@ -76,9 +48,7 @@
 
 /* 4. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
-  .page-section{
-    background-attachment: inherit;
-  }
+
 }
 
 /* 5. Styles for devices(>=768px and <= 991px) */

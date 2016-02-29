@@ -408,6 +408,47 @@ if (!function_exists('kt_get_page_sidebar')) {
 }
 
 
+if (!function_exists('kt_get_post_sidebar')) {
+    /**
+     * Get post sidebar
+     *
+     * @param null $post_id
+     * @return mixed|void
+     */
+    function kt_get_post_sidebar( $post_id = null )
+    {
+        global $post;
+        if(!$post_id) $post_id = $post->ID;
+
+        $sidebar = array(
+            'sidebar' => rwmb_meta('_kt_sidebar', array(), $post_id),
+            'sidebar_area' => '',
+        );
+
+        if(isset($_REQUEST['sidebar'])){
+            $sidebar['sidebar'] = $_REQUEST['sidebar'];
+        }
+
+        if($sidebar['sidebar'] == '' || $sidebar['sidebar'] == 'default' || $sidebar['sidebar'] == '0' ){
+            $sidebar['sidebar'] = kt_option('single_sidebar');
+            if($sidebar['sidebar'] == 'left' ){
+                $sidebar['sidebar_area'] = kt_option('single_sidebar_left', 'primary-widget-area');
+            }elseif($sidebar['sidebar'] == 'right'){
+                $sidebar['sidebar_area'] = kt_option('single_sidebar_right', 'primary-widget-area');
+            }
+        }elseif($sidebar['sidebar'] == 'left'){
+            $sidebar['sidebar_area'] = rwmb_meta('_kt_left_sidebar', array(), $post_id);
+        }elseif($sidebar['sidebar'] == 'right'){
+            $sidebar['sidebar_area'] = rwmb_meta('_kt_right_sidebar', array(), $post_id);
+        }elseif($sidebar['sidebar'] == 'full'){
+            $sidebar['sidebar'] = '';
+        }
+
+        return apply_filters('kt_single_sidebar', $sidebar);
+    }
+}
+
+
 
 
 if (!function_exists('kt_custom_wpml')){
@@ -442,7 +483,7 @@ if (!function_exists('kt_custom_wpml')){
                 }
 
                 if ($language_html != '') {
-                    $language_html = '<a href="#">'.$currency_lang.'</a><ul class="list-lang top-navigation-submenu">' . $language_html . '</ul>';
+                    $language_html = '<a href="#">'.$currency_lang.'</a><ul class="list-lang navigation-submenu">' . $language_html . '</ul>';
                 }
 
                 $output .= $language_html;

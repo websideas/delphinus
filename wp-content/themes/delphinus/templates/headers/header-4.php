@@ -13,10 +13,9 @@ if ( !defined('ABSPATH')) exit;
                     <div class="container">
                         <div class="main-nav-outer">
                             <?php get_template_part( 'templates/headers/header',  'menu'); ?>
-                            <ul>
+                            <ul id="main-nav-wc">
                                 <?php
                                 get_template_part( 'templates/headers/header',  'myaccount');
-                                get_template_part( 'templates/headers/header',  'wishlist');
                                 get_template_part( 'templates/headers/header',  'cart');
                                 ?>
                             </ul>

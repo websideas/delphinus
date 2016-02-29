@@ -18,17 +18,12 @@
   > *:last-child{
     margin-right: 0;
   }
-
-}
-
-.sticky{
-
 }
 
 
-/* ==============================
-   12. Blog posts
-   ============================== */
+
+
+
 .blog-posts{
   margin-bottom: $vspacing;
 
@@ -364,36 +359,20 @@
 
 
 
-/* ==============================
-   13. Single Post
-   ============================== */
 
 .single-post{
+  margin-bottom: 65px;
   .entry-content{
     @include clearfix();
-  }
-  .single-post-content{
-    padding: 55px 60px;
-    background: #fff;
-    margin-top: -170px;
-    position: relative;
-    z-index: 2;
-  }
-  .entry-header{
-    min-height: 115px;
-  }
-  h1.entry-title{
-    font-size: 24px;
-    margin-bottom: 5px;
   }
   .entry-thumbnail{
     margin-bottom: 60px;
   }
+  .entry-header{
+    margin-bottom: 30px;
+  }
   .entry-meta{
-    margin-bottom: 43px;
-    font-size: 14px;
     color: #c9cacb;
-    text-transform: uppercase;
     > span{
       &:after{
         content: "/";
@@ -410,176 +389,8 @@
       }
     }
   }
-  .single-left-content{
-    margin-left: 7px;
-    border-left:2px solid $border-color2;
-    padding: 110px 0 150px;
-    margin-top: -55px;
-  }
-  .content-single-left{
-    padding: 50px 0 50px 50px;
-    position: relative;
-    h3.title{
-      margin: 0;
-      font-size: 18px;
-      @include transform(translatey(-50%) translatex(-50%) rotate(90deg) );
-      padding: 30px;
-      background: #fff;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      z-index: 10;
-      white-space: nowrap;
-      &:after,
-      &:before{
-        content: "";
-        width: 30px;
-      }
-    }
-    .category-desciption{
-      position: relative;
-      font-style: italic;
-      font-weight: 300;
-      margin-bottom: 5px;
-      &:after{
-        position: absolute;
-        @include FontIcon('\7c', 'ElegantIcons');
-        font-size: 100px;
-        color: $text;
-        @include opacity(0.05);
-        @include translate();
-        z-index: 1;
-      }
-      p{
-        z-index: 2;
-        position: relative;
-        margin: 0;
-      }
-    }
-    .author-info{
-      text-align: center;
-      .author-content{
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 30px;
-        &:hover{
-          .author-social{
-            a{
-              right: 0;
-            }
-          }
-          img{
-            @include transform(scale(1.2));
-          }
-        }
-      }
-      .author-avatar{
-        img{
-          @include transition('all 0.5s ease 0s');
-        }
-      }
-      .author-social{
-        margin: 0;
-        a{
-          width: 40px;
-          height: 40px;
-          background: $primary-color;
-          text-align: center;
-          line-height: 40px;
-          color: $white;
-          display: block;
-          position: absolute;
-          right: -40px;
-          bottom: 0;
-          @include transition();
-          @for $i from 1 through 10 {
-            &:nth-child(#{$i}) {
-              $r:$i*0.1;
-              $b:($i - 1)*45;
-              @include transition(right 0.2s ease-out #{$r}s, background 0.2s ease-out);
-              bottom: #{$b}px;
-            }
-          }
-          &:hover{
-            background: $text;
-          }
-        }
-      }
-      .author-title{
-        font-size: 24px;
-        margin-bottom: 5px;
-        color: $author;
-      }
-      .author-agency{
-        color: $gray-agency;
-        text-transform: uppercase;
-        line-height: normal;
-      }
-      .author-info{
-        margin-top: 10px;
-      }
-    }
-  }
+  .entry-content{
 
-  .share-it{
-    .social_icons{
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      li{
-        margin:0 0 9px;
-        &:last-child{
-          margin: 0;
-        }
-        a{
-          display: block;
-          padding: 14px 40px;
-          border: 2px solid $border-color;
-          font-size: 12px;
-          color:$text;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          line-height: normal;
-          @include transition();
-          position: relative;
-          &:before,
-          &:after{
-            content: '';
-            position: absolute;
-            display: block;
-            width: 0;
-            height: 0;
-            @include transition();
-            @include opacity(0);
-          }
-          &:before{
-            left: -2px;
-            bottom: -2px;
-            border-left: 2px solid $primary-color;
-            border-bottom: 2px solid $primary-color;
-          }
-          &:after{
-            top: -2px;
-            right: -2px;
-            border-right: 2px solid $primary-color;
-            border-top: 2px solid $primary-color;
-          }
-          &:hover{
-            border-color: $text;
-            &:before,
-            &:after{
-              width: 20px;
-              height: 20px;
-              @include opacity(1);
-            }
-          }
-          i{
-            font-size: 14px;
-            margin-right: 20px;
-          }
-        }
-      }
-    }
   }
 
   .tags-links{
@@ -600,143 +411,233 @@
     }
   }
 
-}
+  .single-bottom-title {
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
 
-
-.post-navigation-wrap{
-  padding: 15px 0 90px;
-}
-
-.post-navigation{
-  padding: 40px 0;
-  border-top: 2px solid $gray-text;
-  border-bottom: 2px solid $gray-text;
-  @include clearfix();
-  position: relative;
-
-  .meta-image{
-    position: relative;
-    float: left;
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-size: cover;
-    background: url('../images/placeholder-small.jpg') no-repeat center center;
-
-    &:before,
-    &:after{
-      @include transition();
-      @include opacity(0);
+  .share-it{
+    margin: 65px 0 95px;
+    .social_icons{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li{
+        display: inline-block;
+        margin-right: 30px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          display: inline-block;
+          padding: 17px 40px;
+          border: 2px solid #e3e3e3;
+          font-size: 14px;
+          color:#999;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          line-height: normal;
+          &:hover{
+            color: #000;
+            border-color: #000;
+          }
+          i{
+            display: none;
+          }
+        }
+      }
     }
-    &:before{
+  }
+
+}
+
+.author-info {
+  background: $gray-bg;
+  margin-bottom: 85px;
+  padding: 25px 25px 15px;
+  .author-avatar {
+    float: left;
+    max-width: 70px;
+  }
+  .author-description {
+    padding-left: 93px;
+  }
+  .author-title {
+    font-size: 14px;
+    margin: 0 0 10px;
+    padding: 0;
+    color: #000000;
+    text-transform: none;
+    letter-spacing: 0.075em;
+    a {
+      color: #000000;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+  .author-bio {
+    margin-bottom: 0;
+  }
+  .author-socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-right: 40px;
+    }
+    a {
+      color: $gray-text;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.comments-area {
+  margin-bottom: 55px;
+  .comment-list {
+    list-style: none;
+    margin: 0 0 85px;
+    padding: 0;
+
+    .comment-respond{
+      padding-left: 25px;
+    }
+  }
+  .children {
+    list-style: outside none none;
+    margin: 0;
+    padding-left: 25px;
+    position: relative;
+    &:before {
       content: '';
       position: absolute;
       left: 0;
-      height: 100%;
-      width: 100%;
-      background: rgba($text, .75);
-      display: block;
       top: 0;
+      height: 100%;
+      width: 1px;
+      background: #e1e1e1;
     }
-    &:after{
-      @include FontIcon('\55', 'ElegantIcons');
-      @include translate();
-      z-index: 2;
-      color: $white;
-    }
-  }
-
-  .meta-nav,
-  .meta-title{
-    display: block;
-    position: relative;
-  }
-  .meta-nav{
-    font-size: 14px;
-    color: #c9cacb;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    @include transition();
-    &:before{
-      color: $text;
-      display: block;
-      font-size: 24px;
-      line-height: 1;
-      margin-top: -4px;
-    }
-  }
-  .meta-title{
-    line-height: 22px;
-    text-transform: none;
-    font-size: 14px;
-    color: $text;
-    margin: 0 0 -5px;
-  }
-
-  .nav-previous,
-  .nav-next{
-    width: 50%;
-    position: relative;
-  }
-
-  .nav-previous{
-    float: left;
-    padding-right: 120px;
-    .meta-image{
-      margin-right: 30px;
-    }
-    .meta-nav{
-      &:before{
-        @include FontIcon('\23', 'ElegantIcons');
-      }
-    }
-  }
-  .nav-next{
-    float: right;
-    padding-left: 120px;
-    text-align: right;
-    .meta-image{
-      float: right;
-      margin-left: 30px;
-    }
-    .meta-nav{
-      &:before{
-        @include FontIcon('\24', 'ElegantIcons');
+    > li {
+      position: relative;
+      &:before {
+        background: #e1e1e1;
+        content: "";
+        height: 1px;
+        left: -25px;
+        position: absolute;
+        top: 25px;
+        width: 12px;
       }
     }
   }
 
-  a{
-    display: block;
-    @include clearfix();
+  .comment-notes,
+  .form-allowed-tags {
+    display: none;
+  }
 
-    &:hover{
-      .meta-nav{
+  .comment-respond {
+    margin-bottom: 30px;
+    .comment-form{
+      textarea,
+      input[type=text] {
+        border: none;
+        border-bottom: 2px solid $border-color;
+        padding: 10px 0;
+        height: auto;
+        &:focus {
+          border-color: $gray-text;
+          color: $gray-text;
+        }
+      }
+      textarea{
+        height: 55px;
+        width: 100% !important;
+      }
+      .form-submit {
+        padding-top: 15px;
+      }
+    }
+  }
+
+
+  .comment-item {
+    padding: 25px;
+    background: $gray-bg;
+    margin-bottom: 30px;
+    min-height: 120px;
+    .comment-avatar {
+      float: left;
+      margin-right: 20px;
+      max-width: 70px;
+    }
+    .comment-body {
+      padding-left: 90px;
+      position: relative;
+      .comment-meta {
+        margin: 0 0 12px;
+        line-height: 15px;
+        .comment-author {
+          color: #000000;
+          font-size: 14px;
+          font-weight: 700;
+          text-transform: none;
+          display: inline-block;
+          padding: 0;
+          margin: 0 10px 0 0;
+          line-height: 15px;
+        }
+        .comment-metadata {
+          color: $gray-text;
+          font-size: 12px;
+          font-weight: bold;
+          display: inline-block;
+        }
+      }
+      .comment-entry{
+        blockquote{
+          background: #FFF;
+        }
+        p:last-child{
+          margin: 0;
+        }
+      }
+      .comment-actions {
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 0.075em;
+        line-height: 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        a{
+          color: #4ad1e5;
+          display: inline-block;
+          + a{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #comment-nav-above{
+    margin: -55px 0 85px
+  }
+  .comment-navigation{
+    a{
+      color: $gray-text;
+      &:hover{
         color: $primary-color;
       }
-      .meta-image{
-        &:before,
-        &:after{
-          @include opacity(1);
-        }
-      }
     }
   }
 
-  .nav-links{
-    >div{
-      &:nth-child(2){
-        &:after{
-          position: absolute;
-          width: 2px;
-          top: 0;
-          height: 100%;
-          background: $gray-text;
-          left: 0;
-          content: "";
-        }
-      }
-    }
-  }
+
 }
-

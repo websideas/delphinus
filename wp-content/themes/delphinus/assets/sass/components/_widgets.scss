@@ -21,171 +21,20 @@
   }
 }
 
+
 .widget{
-  margin-bottom: 55px;
+  margin-bottom: 40px;
   .widget-title{
-    font-size: 24px;
-    margin: 0 0 40px;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 30px;
+    text-transform: none;
   }
 
   &.widget_categories,
   &.widget_archive,
   &.widget_product_categories,
-  &.widget_manufacturer,
-  &.widget_pages{
-    > ul{
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      >li{
-        font-size: 14px;
-        line-height: 25px;
-        padding-bottom: 25px;
-        padding-left: 22px;
-        position: relative;
-
-        &:before{
-          width: 2px;
-          @include calc('height', '100% - 20px');
-          background: $gray-text;
-          bottom: -2px;
-          left: 1px;
-          content: '';
-          display: block;
-          position: absolute;
-        }
-
-        span{
-          float: right;
-          color: #afb0b1;
-        }
-
-        > a{
-          color: $text;
-          display: block;
-          &:before{
-            width: 4px;
-            height: 4px;
-            @include transform(rotate(45deg));
-            top: 10px;
-            left: 0;
-            background: $text;
-            content: '';
-            display: block;
-            position: absolute;
-          }
-        }
-
-        &.current-cat{
-          &:before{
-            background: $text;
-          }
-        }
-
-        &.current-cat > a,
-        > a:hover{
-          color: $primary-color;
-          &:before{
-            background: $primary-color;
-          }
-          span{
-            color: $text;
-          }
-        }
-
-        &:last-child{
-          padding-bottom: 0;
-          &:before{
-            display: none;
-          }
-        }
-
-        ul{
-          margin: 20px 0 -20px;
-          padding: 0;
-          list-style: none;
-          li{
-            padding-bottom: 25px;
-            a{
-              color: #afb0b1;
-              display: block;
-              &:before{
-                @include FontIcon("\35", 'ElegantIcons');
-                padding-right: 14px;
-              }
-              &:hover,
-              &:hover span{
-                color: $text;
-              }
-            }
-          }
-          ul{
-            margin-left: 15px;
-          }
-        }
-      }
-    }
-  }
-
-  &.widget_nav_menu{
-    ul.menu {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      > li{
-        > a{
-          color: $text;
-          position: relative;
-          display: block;
-          @include transition();
-
-          &:before{
-            position: absolute;
-            left:0;
-            top: 0;
-            @include FontIcon('\f105');
-            @include opacity(0);
-            @include transition();
-          }
-
-          &:hover{
-            color: $primary-color;
-            padding-left: 17px;
-            &:before{
-              @include opacity(1);
-            }
-          }
-        }
-        + li{
-          margin-top: 20px;
-        }
-
-        ul{
-          padding-left: 15px;
-          margin: 15px 0 0;
-          list-style: none;
-          li {
-            a{
-              color: $text;
-              display: block;
-              &:before{
-                @include FontIcon("\35", 'ElegantIcons');
-                padding-right: 10px;
-              }
-              &:hover{
-                color: $primary-color;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
+  &.widget_pages,
+  &.widget_nav_menu,
   &.widget_recent_comments,
   &.widget_recent_entries,
   &.widget_meta,
@@ -194,30 +43,18 @@
       margin: 0;
       padding: 0;
       list-style: none;
-      line-height: 24px;
       li{
-        padding: 0 0 20px 20px;
-        position: relative;
-        color: #afb0b1;
-        &:before{
-          width: 4px;
-          height: 4px;
-          @include transform(rotate(45deg));
-          top: 10px;
-          left: 0;
-          background: $text;
-          content: '';
-          display: block;
-          position: absolute;
-        }
+        padding-bottom: 6px;
         a{
-          color: $text;
+          color: $gray-darker;
           &:hover{
-            color: $primary-color;
+            color: #000000;
           }
         }
-        &:last-child{
-          padding-bottom: 0;
+        .count{
+          padding-left: 17px;
+          font-size: 12px;
+          color: #cacaca;
         }
       }
     }
@@ -337,23 +174,16 @@
   &.widget_tag_cloud,
   &.widget_product_tag_cloud{
     a{
-      font-size: 12px !important;
-      line-height: 26px !important;
-      border: 2px solid $border-color;
+      font-size: 14px !important;
+      line-height: normal !important;
       display: inline-block;
-      margin: 0 9px 9px 0;
-      padding:0 17px ;
-      text-transform: uppercase;
-      color: $text;
+      margin: 0 20px 20px 0;
+      color: #666;
       &:hover{
         color: $primary-color;
-        border-color: $primary-color;
       }
     }
   }
-
-
-
 
   &.widget_contact_info{
     .contact-info{
@@ -366,41 +196,14 @@
 }
 
 .side-bar{
-  .widget-title{
-    display: inline-block;
-    padding-right: 70px;
-    position: relative;
-    font-size: 18px;
-    margin: 0 0 30px;
-    &:before,
-    &:after{
-      content: '';
-      position: absolute;
-      height: 2px;
-      background: $primary-color;
+  .widget{
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 15px;
+    &:last-child{
+      border: none;
     }
-    &:before{
-      top: 8px;
-      right: 35px;
-      width: 15px;
-    }
-    &:after{
-      top: 15px;
-      right: 0;
-      width: 50px;
-    }
-  }
-
-  .widget_social{
-    .social-nav{
-      &.style2{
-        margin: 0 0 -14px;
-        li{
-          &:nth-child(3n+1){
-            margin-left: 0;
-          }
-        }
-      }
+    .widget-title {
+      letter-spacing: 0.075em;
     }
   }
 }

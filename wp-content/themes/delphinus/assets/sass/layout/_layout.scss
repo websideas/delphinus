@@ -7,10 +7,13 @@
   }
 }
 
+.content-area-inner{
+  padding: 90px 0;
+}
+
 /* ==============================
    Header
    ============================== */
-
 
 
 .topbar{
@@ -36,7 +39,6 @@
         right: 0;
       }
       li:last-child{
-        border-right: none;
         .top-navigation-submenu{
           right: 9px;
         }
@@ -76,7 +78,8 @@
   position: relative;
 }
 .header-layout1,
-.header-layout4{
+.header-layout4,
+.header-layout6{
   .navbar-container-content{
     position: relative;
   }
@@ -104,9 +107,11 @@
   .main-nav-outer{
     text-align: center;
   }
-}
-.header-layout4{
-
+  #nav{
+    #main-navigation{
+      float: none;
+    }
+  }
 }
 
 
@@ -128,9 +133,41 @@
   }
 }
 
+.header-layout4{
+  #nav{
+    #main-navigation{
+      float: left;
+    }
+  }
+}
+
+.header-layout6{
+  #nav{
+    #main-navigation{
+      float: left;
+    }
+  }
+}
 
 
-
+.header-layout7{
+  .navbar-container-inner{
+    padding: 0 40px;
+  }
+  .navbar-container-content{
+    position: relative;
+  }
+  #nav{
+    #main-nav-tool{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    #main-navigation{
+      float: right;
+    }
+  }
+}
 
 
 
@@ -156,6 +193,8 @@
     @include transition();
 
     #nav {
+      #main-nav-socials,
+      #main-nav-wc,
       #main-nav-tool,
       #main-navigation {
         > li {

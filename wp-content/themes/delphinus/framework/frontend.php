@@ -103,7 +103,7 @@ function kt_add_scripts() {
     wp_enqueue_style( 'kt-wp-style', get_stylesheet_uri(), array('mediaelement', 'wp-mediaelement') );
     wp_enqueue_style( 'bootstrap', KT_THEME_LIBS . 'bootstrap/css/bootstrap.css', array());
     wp_enqueue_style( 'font-awesome', KT_THEME_LIBS . 'font-awesome/css/font-awesome.min.css', array());
-    wp_enqueue_style( 'elegant_font', KT_THEME_LIBS . 'elegant_font/style.css', array());
+    wp_enqueue_style( 'kt-delphinus', KT_THEME_LIBS . 'delphinus/style.css', array());
 
     wp_enqueue_style( 'kt-plugins', KT_THEME_CSS . 'plugins.css', array());
 
@@ -224,14 +224,14 @@ function kt_comments($comment, $args, $depth) {
 
 	if ( 'pingback' == $comment->comment_type || 'trackback' == $comment->comment_type ) : ?>
 
-        <li id="comment-<?php comment_ID(); ?>" <?php comment_class( '' ); ?>>
+        <div id="comment-<?php comment_ID(); ?>" <?php comment_class( '' ); ?>>
             <div class="comment-item">
                 <?php _e( 'Pingback:', '_tk' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
             </div>
 
 	<?php else : ?>
 
-        <li <?php comment_class('comment'); ?> id="li-comment-<?php comment_ID() ?>" itemprop="review" itemscope itemtype="http://schema.org/Review">
+        <div <?php comment_class('comment'); ?> id="li-comment-<?php comment_ID() ?>" itemprop="review" itemscope itemtype="http://schema.org/Review">
             <div  id="comment-<?php comment_ID(); ?>" class="comment-item">
 
                 <div class="comment-avatar">

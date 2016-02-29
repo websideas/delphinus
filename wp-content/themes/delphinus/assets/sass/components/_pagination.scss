@@ -1,73 +1,63 @@
-
-/* ==============================
-   14. Pagination
-   ============================== */
 .pagination {
   text-align: center;
   display: block;
   margin: 0;
-
-  border-bottom: 2px solid $text;
-  @include border-radius(0);
-  font-size: 14px;
-  line-height: 30px;
-
+  padding-top: 35px;
+  border-top: 2px solid #f6f6f6;
+  position: relative;
   .page-numbers {
-    color: $text;
+    border: 2px solid transparent;
+    color: $gray-darker;
     display: inline-block;
-    margin: 0 15px;
-    padding: 0 5px 20px;
-    position: relative;
+    font-size: 14px;
+    line-height: 36px;
+    margin: 0 2px;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    &.next,
+    &.prev {
+      font-size: 18px;
+      margin: 0;
+      text-indent: -999px;
+      overflow: hidden;
+      position: relative;
 
-    &.current{
-      color: $primary-color;
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        display: block;
-        @include transition();
-        @include opacity(0);
+      &:hover{
+        border-color: transparent;
+        color: #000000;
       }
-
       &:before{
-        content: '';
-        width: 20px;
-        background: $white;
-        height: 2px;
-        bottom: -2px;
-        margin-left: -10px;
-      }
-      &:after{
-        width: 6px;
-        height: 6px;
-        background: $primary-color;
-        left: 50%;
-        margin-left: -3px;
-        bottom: -4px;
-        @include transform(rotate(45deg));
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 100%;
+        text-indent: 0;
       }
     }
-    &.disable{
-      @include opacity(.5);
-      cursor: not-allowed;
+    &.next{
+      float: right;
+      &:before{
+        @include FontIcon('\ebf9', 'delphinus');
+        right: 0;
+        text-align: right;
+      }
     }
-    &:first-child{
-      margin-left: 0;
-      padding-left: 0;
-    }
-    &:last-child{
-      margin-right: 0;
-      padding-right: 0;
+    &.prev{
+      float: left;
+      &:before{
+        @include FontIcon('\ea26', 'delphinus');
+        left: 0;
+      }
     }
   }
-  a{
-    &:hover{
-      color: $primary-color;
-    }
+
+  a.page-numbers:hover,
+  .page-numbers.current{
+    border-color: #f0f0f0;
   }
 }
+
 
 .pagination-button{
   @include clearfix();
@@ -77,9 +67,7 @@
   .nav-next{
     float: right;
   }
-
 }
-
 
 .pagination-loadmore{
   text-align: center;

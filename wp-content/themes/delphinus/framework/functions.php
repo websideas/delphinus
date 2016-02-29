@@ -17,6 +17,9 @@ function kt_sanitize_boolean_callback( $input = '' ) {
 add_filter( 'kt_sanitize_boolean', 'kt_sanitize_boolean_callback', 15 );
 
 
+
+
+
 /**
  * Add class to next button
  *
@@ -118,6 +121,21 @@ function kt_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'kt_body_classes' );
 
+
+/**
+ * Modifies tag cloud widget arguments to have all tags in the widget same font size.
+ *
+ * @param array $args Arguments for tag cloud widget.
+ * @return array A new modified arguments.
+ */
+function kt_widget_tag_cloud_args( $args ) {
+    $args['largest'] = 1;
+    $args['smallest'] = 1;
+    $args['number']   = 15;
+    $args['unit'] = 'em';
+    return $args;
+}
+add_filter( 'widget_tag_cloud_args', 'kt_widget_tag_cloud_args' );
 
 
 /**
@@ -289,3 +307,18 @@ function kt_slideshows_position_callback(){
         kt_show_slideshow();
     }
 }
+
+
+
+
+function kt_comment_form_before_fields(){
+    echo '<div class="comment-form-fields row clearfix">';
+}
+add_action( 'comment_form_before_fields', 'kt_comment_form_before_fields', 1 );
+
+
+
+function kt_comment_form_after_fields(){
+    echo '</div>';
+}
+add_action( 'comment_form_after_fields', 'kt_comment_form_after_fields', 9999 );
