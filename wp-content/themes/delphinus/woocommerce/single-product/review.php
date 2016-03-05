@@ -47,17 +47,15 @@ $verified = wc_review_is_from_verified_owner( $comment->comment_ID );
                     <time class="comment-date" itemprop="datePublished" datetime="<?php echo get_comment_date( 'c' ); ?>">
                         <?php printf( _x( '%s ago', '%s = human-readable time difference', 'adroit' ), human_time_diff( get_comment_time( 'U' ), current_time( 'timestamp' ) ) ); ?>
                     </time>
+                    <?php if ( $rating && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) : ?>
+                        <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" class="star-rating" title="<?php echo sprintf( __( 'Rated %d out of 5', 'woocommerce' ), $rating ) ?>">
+                            <span style="width:<?php echo ( $rating / 5 ) * 100; ?>%"><strong itemprop="ratingValue"><?php echo $rating; ?></strong> <?php _e( 'out of 5', 'woocommerce' ); ?></span>
+                        </div>
+                    <?php endif; ?>
 				</div>
 
 			<?php endif; ?>
 
-            <?php if ( $rating && get_option( 'woocommerce_enable_review_rating' ) === 'yes' ) : ?>
-
-                <div itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating" class="star-rating" title="<?php echo sprintf( __( 'Rated %d out of 5', 'woocommerce' ), $rating ) ?>">
-                    <span style="width:<?php echo ( $rating / 5 ) * 100; ?>%"><strong itemprop="ratingValue"><?php echo $rating; ?></strong> <?php _e( 'out of 5', 'woocommerce' ); ?></span>
-                </div>
-
-            <?php endif; ?>
 
 			<?php do_action( 'woocommerce_review_before_comment_text', $comment ); ?>
 

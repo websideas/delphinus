@@ -1,40 +1,703 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/about-thumb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/adv.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/author.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/coming-soon-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/coming-soon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/drag.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/home6-mondova.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/icon-map.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/payment-american-express.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/payment-mastercard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/payment-paypal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/payment-visa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/placeholder-zigzag.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/tab-divider.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/selectbox-arrow.png" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/images/selectbox-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_base.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_base.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_comments.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_comments.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/akismet.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/akismet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/form.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/_inc/img/logo-full-2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/akismet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-admin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet-widget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/class.akismet.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/get.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/notice.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/start.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/stats.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/views/strict.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/akismet/wrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/reset-wp/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/reset-wp/reset-wp.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/reset-wp/screenshot-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/reset-wp/screenshot-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/reset-wp/screenshot-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/ajax.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/docs/slug-translation.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/docs/theme-integration/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/docs/theme-integration/wpml-integration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/absolute-links/absolute-links.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/affiliate-info.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/browser-redirect.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/comments-translation/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/comments-translation/google_languages_map.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/constants.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/functions-debug-information.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/functions-network.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/functions-troubleshooting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/hacks.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/hacks/language-canonical-redirects.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/hacks/misc-constants.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/hacks/missing-php-functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/hacks/php-spl-filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/hacks/supress-warnings-for-xmlrpc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/hacks/vars-php-multisite.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/home-url-functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/icl-admin-notifier.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/import-xml.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/changelog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/includes/installer-api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/includes/installer-upgrader-skins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/includes/installer.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/installer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/loader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/locale/orig/installer.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/repositories.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/img/complete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/img/computer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/img/dn.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/img/dn2.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/img/globe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/img/icon_error.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/img/on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/js/admin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/res/js/iframeResizer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/templates/downloads-list-compact.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/templates/downloads-list.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/templates/products-compact.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/installer/templates/repository-listing.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/lang-data.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/language-switcher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/not-compatible-plugins.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/php-version-check.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/plugin-integration-nextgen.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/plugins-integration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/pointers.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/potx.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/quote.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/quote/quote-get-submit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/quote/quote-get.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/sitepress-schema.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/sitepress-setup.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/taxonomy-term-translation/wpml-term-language-synchronization.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/taxonomy-term-translation/wpml-term-translations.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/taxonomy-term-translation/wpml-translation-tree.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/taxonomy-term-translation/wpml-update-term-action.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/template-constants.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/template-functions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/tools/gen-languages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/tools/sunrise.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/translation-management/pro-translation.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/translation-management/taxonomy-translation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/translation-management/tm-notification.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/translation-management/translation-management.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/2.0.0/stepper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/2.0.0/stepper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.0.0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.0.5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.2.2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.3.0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.3.1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.3.3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.4.0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.5.0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.5.2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.6.0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.6.2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.7.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.9.3.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-2.9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-3.1.5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-3.1.8.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-3.1.9.5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-3.1.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade-functions/upgrade-3.2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/upgrade.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/widgets/icl-language-switcher.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wp-login-filters.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wp-nav-menus/iclNavMenu.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wp-nav-menus/menus-sync.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wpml-api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wpml-config/wpml-config.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wpml-language-resolution.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wpml-post-edit-ajax.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wpml-root-page.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/inc/wpseo-sitemaps-filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/lib/JSON.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/lib/Snoopy.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/lib/http.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/lib/icl_api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/lib/mobile-detect.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/lib/xml2array.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/license.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/orig/sitepress.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-ar.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-de_DE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-el.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-es_ES.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-fr_FR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-he_IL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-it_IT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-ja.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-ko_KR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-nl_NL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-pl_PL.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-pt_BR.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-pt_PT.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-ru_RU.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-sv_SE.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-vi.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-zh_CN.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/locale/sitepress-zh_TW.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/_custom_types_translation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/_posts_sync_options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/admin-language-switcher.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/affiliate-info.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/comments-translation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/compatibility-packages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/dashboard-widget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/debug-information.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/edit-languages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/icl_reminders.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/language-selector-mobile.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/language-selector.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/languages.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/menus-sync.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/network.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/post-menu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/setup/setup_001.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/support.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/tag-menu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/taxonomy-menu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/taxonomy-translation-display.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/taxonomy-translation.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/theme-localization.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/theme-plugins-compatibility.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/translation-options.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/troubleshooting.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/upgrade_notice.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/menu/wpml-troubleshooting-terms-menu.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/modules/cache-plugins-integration/cache-plugins-integration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/modules/cache-plugins-integration/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/modules/disqus.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/modules/icl-translation/icl-reminder-popup.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/affiliate-info.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/content-translation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector-click.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/language-selector.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/languages.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/menus-sync.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/overview.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/post-edit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/taxonomy-translation.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/theme-localization.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/translation-management.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/translation-options.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/translation-synchronization.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/css/wp-nav-menus.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ad.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ad.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ae.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/af.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ai.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ai.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/al.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/am.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/an.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/aq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ar.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/as.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/at.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/at.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/au.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/aw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ax.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/az.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/be.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bi.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bj.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/br.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bs.bs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/by.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/bz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ca.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/canada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cc.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ci.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ck.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/co.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cr.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/cz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/da.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/de.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/dj.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/dk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/dm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/do.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/dz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ec.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ec.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/eg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/eh.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/eh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/el.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/eo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/er.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/et.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/et.o.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/et.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/eu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/fa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/fi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/fj.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/fk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/fm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/fo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ga.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ge.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gs.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gt.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/gy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/he.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/hi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/hk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/hm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/hn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/hr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ht.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ht.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/hu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/hy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/id.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/il.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/im.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/in.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/io.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/iq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ir.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/is.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/it.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ja.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/je.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/jm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/jo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/jp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ke.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/kg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/kh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ki.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/km.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/kn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ko.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/kp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/kr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ku.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/kw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ky.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/kz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/la.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/lb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/lc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/li.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/lk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/lr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/lt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/lu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/lv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ly.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/md.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/me.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ml.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mp.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ms.bak.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ms.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mx.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/mz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/na.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ne.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ng.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ni.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ni.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nil.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/no.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/np.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/nz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/om.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pe.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pf.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ph.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ps.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-br.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-pt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/pw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/py.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/qa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/qu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/re.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ru.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/rw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sa.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sb.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sj.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sl-wrong.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/so.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sq.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/st.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/sz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ta.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/td.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/th.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tj.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tl.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/to.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tr.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/tz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ug.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/uk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/uk_.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/um.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ur.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/us.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/uy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/uz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/va.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/vc.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ve.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/vg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/vi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/vn.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/vu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/wf.alt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/wf.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ws.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/ye.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/yi.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/yt.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/yu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/za.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/zh-hans.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/zh-hant.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/zh.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/zm.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/zu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/zw.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/flags/zz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/RO-Mx1-16_tool-wrench.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/add_translation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/add_translation_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/add_translators.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/alert.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/close2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/close_grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/complete.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/copy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/documents.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/dollar1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/dollar2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/edit_translation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/edit_translation_disabled.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/fav-arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/ico-close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon-cms-navigation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon-wpml-media.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon-wpml-sticky-links.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon-wpml-string-translation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon-wpml-translation-analytics.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon-wpml-translation-management.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon16-sprite.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon_adv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/icon_color_picker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/in-progress.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/info.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/maximize.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/maximize_grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/minimize.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/minimize_grey.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/nav-arrow-down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/needs-update.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/not-translated.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/notes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/ok.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/question-green.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/question1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/question2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/sun-solid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/verification-required.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/web_logo_large.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/web_logo_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/wpml-xliff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/img/yes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/affiliate-info.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/browser-redirect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/categories.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/comments-translation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/content-translation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/icl-admin-notifier.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/icl_reminders.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/icl_sidebar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/jquery.cookie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/language-selector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/languages.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/menus-sync.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/overview.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/post-edit-terms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/post-edit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/post-list-quickedit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/scripts.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/tags.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/collections/term-rows.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/models/taxonomy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/models/term-row.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/models/term.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/templates.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/filter-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/label-popup-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/label-row-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/nav-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/table-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/taxonomy-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-popup-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-row-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-rows-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/taxonomy-translation/views/term-view.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/theme-localization.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/translation-options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/translation-synchronization.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/troubleshooting.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/js/wp-nav-menus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/languages.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/languages.csv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/res/table-icl_languages_translation.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/sitepress.class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/sitepress.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/plugins/sitepress-multilingual-cms/wpml-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/demo-files/demo.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/demo-files/demo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/demo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/selection.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/elegant_font/ElegantIcons.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/elegant_font/ElegantIcons.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/elegant_font/ElegantIcons.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/elegant_font/ElegantIcons.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/elegant_font/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/elegant_font/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/assets/js/kt_showhide_metabox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/vc_templates/vc_custom_heading.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/global/breadcrumb.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product-reviews.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/price.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_forms.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_other.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_other.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_shortcodes.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_shortcodes.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_typography.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_typography.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-navigation.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-navigation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets-featured.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets-featured.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-order.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-shipping-method.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-shipping-method.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/add-to-cart.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/add-to-cart.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/add-to-wishlist-button.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/add-to-wishlist-button.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/add-to-wishlist.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/add-to-wishlist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/admin.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/walkers/class-product-cat-dropdown-walker.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/walkers/class-product-cat-dropdown-walker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/walkers/class-product-cat-list-walker.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/walkers/class-product-cat-list-walker.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-assets.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-assets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-duplicate-product.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-duplicate-product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-help.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-help.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-menus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-meta-boxes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-permalink-settings.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-permalink-settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-pointers.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-pointers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-post-types.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-post-types.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/class-wc-admin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-ajax.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-ajax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/api/class-wc-api-products.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/api/class-wc-api-products.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-cache-helper.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-cache-helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/cli/class-wc-cli-product.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/cli/class-wc-cli-product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-comments.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-comments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-emails.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-emails.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-product-variable.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-product-variable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-session-handler.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-tax.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-tax.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-webhook.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-webhook.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-product.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-single-product.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-single-product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/core.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/core.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/country-select.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/country-select.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/country-select.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/country-select.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/emails/plain/email-addresses.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/emails/plain/email-addresses.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/external.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/external.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/assets/js/framework-core.js" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/assets/js/framework-core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/grouped.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/grouped.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/heading.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/heading.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/views/html-admin-page-status-report.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/admin/views/html-admin-page-status-report.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_bridge.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_bridge.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_update.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_update.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/order/order-details.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/order/order-details.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-image.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-thumbnails.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-thumbnails.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/rating.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/rating.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/readme.txt" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/readme.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/related.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/related.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/result-count.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/result-count.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/review.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/review.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/select2/select2.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/select2/select2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/select2/select2.min.js" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/assets/js/select2/select2.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/simple.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/simple.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/assets/css/style.css.map" afterPath="$PROJECT_DIR$/HTML/assets/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/assets/css/style.css" afterPath="$PROJECT_DIR$/HTML/assets/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML/assets/css/style.scss" afterPath="$PROJECT_DIR$/HTML/assets/css/style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/tabs/tabs.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/tabs/tabs.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/up-sells.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/up-sells.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/variable.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/variable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-product-functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-product-functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/woocommerce.js" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/woocommerce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/woocommerce.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/i18n/languages/woocommerce.pot" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/i18n/languages/woocommerce.pot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
     </list>
     <ignored path="html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,58 +718,7 @@
     <favorites_list name="html" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375">
-              <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_woocommerce.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HTML/assets/css/style.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.588235">
-              <caret line="2781" column="5" selection-start-line="2761" selection-start-column="4" selection-end-line="2781" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_content.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.875">
-              <caret line="203" column="31" selection-start-line="203" selection-start-column="31" selection-end-line="203" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comments.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_comments.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45652175">
-              <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,57 +726,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pageheader.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-search.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-topnav.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-language.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-1.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-2.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-3.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-myaccount.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/jquery.kt.sticky.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-4.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-currency.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-5.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-6.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-social.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-8.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php" />
-        <option value="$PROJECT_DIR$/HTML/assets/css/style.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/comments.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/twentytwelve/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/loop.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/grid/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/classic/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/list/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/masonry/content.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets-featured.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-navigation.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_base.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_comments.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_typography.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/result-count.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-product--.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/add-to-wishlist-button.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/add-to-wishlist.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/add-to-cart.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/rating-.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/rating.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_forms.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/grouped.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/simple.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/variable.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/external.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/tabs/tabs.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/review.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product-reviews.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-single-product.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/up-sells.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/related.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-image.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-thumbnails.php" />
+        <option value="$PROJECT_DIR$/HTML/assets/css/style.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/heading.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/core.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/admin.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/assets/js/framework-core.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-icons.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_update.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/vc_templates/vc_icon.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/icon_box.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_shortcodes.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_bridge.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/products_carousel.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/woocommerce.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_other.scss" />
+        <option value="$PROJECT_DIR$/wp-config.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/header.php" />
       </list>
     </option>
   </component>
@@ -208,8 +820,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,7 +914,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,41 +940,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="loop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
+              <option name="myItemId" value="vc_templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,75 +970,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="woocommerce" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cart" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="framework" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -528,52 +1040,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
+              <option name="myItemId" value="wp-content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HTML" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="plugins" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -591,11 +1069,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/templates/vc_templates" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data" />
+      <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce" />
       <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers" />
-      <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/assets" />
-      <recent name="$PROJECT_DIR$/intro/assets/css" />
-      <recent name="$PROJECT_DIR$/intro/assets/js" />
-      <recent name="$PROJECT_DIR$/intro/assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs" />
@@ -648,7 +1126,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1916" height="1002" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -657,8 +1135,6 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14457202" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22025052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -666,9 +1142,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -687,175 +1165,290 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/simple.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.0">
-          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.7368421">
+          <caret line="56" column="15" selection-start-line="44" selection-start-column="8" selection-end-line="56" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-wishlist.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/add-to-cart/grouped.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03508772">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.64912283">
+          <caret line="89" column="0" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_forms.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42105263">
+          <caret line="63" column="1" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7017544">
+          <caret line="54" column="43" selection-start-line="54" selection-start-column="43" selection-end-line="54" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57894737">
+          <caret line="47" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28070176">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/tabs/tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/comments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40350878">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/comment-template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-30.333334">
+          <caret line="2180" column="8" selection-start-line="2180" selection-start-column="8" selection-end-line="2180" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product-reviews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5833333">
+          <caret line="71" column="113" selection-start-line="71" selection-start-column="113" selection-end-line="71" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.375">
+          <caret line="107" column="32" selection-start-line="107" selection-start-column="32" selection-end-line="107" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4385965">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80701756">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36842105">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5263158">
-          <caret line="90" column="20" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="-19.375">
+          <caret line="634" column="0" selection-start-line="634" selection-start-column="0" selection-end-line="634" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/headers/header-8.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/up-sells.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47368422">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state vertical-scroll-proportion="-22.5">
+          <caret line="50" column="4" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/related.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2982456">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.45614034">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentyfifteen/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/global/quantity-input.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="175.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentysixteen/functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-image.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6315789">
-          <caret line="392" column="0" selection-start-line="392" selection-start-column="0" selection-end-line="406" selection-end-column="77" />
+        <state vertical-scroll-proportion="-31.875">
+          <caret line="78" column="59" selection-start-line="78" selection-start-column="59" selection-end-line="78" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pageheader.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/single-product/product-thumbnails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24561404">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51086956">
+          <caret line="957" column="26" selection-start-line="957" selection-start-column="26" selection-end-line="957" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/team.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7017543">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/advanced_banner.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3859649">
+          <caret line="35" column="9" selection-start-line="28" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/js_composer/include/templates/shortcodes/vc_custom_heading.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49122807">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="16.875">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_parrams.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/assets/js/framework-core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3529413">
+          <caret line="1728" column="0" selection-start-line="1728" selection-start-column="0" selection-end-line="1728" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/delphinus/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="27" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="27" />
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_pagination.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54385966">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-icons.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6315789">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
+        <state vertical-scroll-proportion="-1.1988304">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-page.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/core.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15789473">
+          <caret line="117" column="9" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/page.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/heading.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.5964912">
+          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="0.49122807">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/single.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/vc_templates/vc_icon.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="79" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
-          <folding />
+        <state vertical-scroll-proportion="0.68421054">
+          <caret line="127" column="186" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="186" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/js_composer/include/classes/core/class-vc-shared-library.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="434" column="32" selection-start-line="434" selection-start-column="32" selection-end-line="434" selection-end-column="32" />
-          <folding>
-            <element signature="e#7#42#0#PHP" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.3508772">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/icon_box.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24561404">
+          <caret line="247" column="43" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_shortcodes.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49122807">
+          <caret line="275" column="3" selection-start-line="275" selection-start-column="3" selection-end-line="275" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7368421">
-          <caret line="314" column="45" selection-start-line="314" selection-start-column="45" selection-end-line="314" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/comment-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1753" column="29" selection-start-line="1753" selection-start-column="29" selection-end-line="1753" selection-end-column="29" />
-          <folding>
-            <marker date="1453253548000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/comments.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="54" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-includes/link-template.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2697" column="133" selection-start-line="2697" selection-start-column="100" selection-end-line="2697" selection-end-column="133" />
-          <folding>
-            <marker date="1451157144000" expanded="true" signature="-1:-1" placeholder="SELECT p.ID ..." />
-            <marker date="1451157144000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentytwelve/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2877193">
-          <caret line="537" column="67" selection-start-line="537" selection-start-column="67" selection-end-line="537" selection-end-column="67" />
-          <folding />
+        <state vertical-scroll-proportion="0.49122807">
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -867,226 +1460,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/loop.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5964912">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.61403507">
+          <caret line="35" column="35" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/index.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_bridge.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1754386">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.7894737">
+          <caret line="77" column="30" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/grid/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/list/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/classic/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12280702">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/blog/masonry/content.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0877193">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentytwelve/sidebar.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/products_carousel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="269" column="75" selection-start-line="269" selection-start-column="61" selection-end-line="269" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/twentytwelve/sidebar-front.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="553" column="20" selection-start-line="553" selection-start-column="20" selection-end-line="553" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/woocommerce.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0877193">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/redux-framework/ReduxCore/inc/fields/background/field_background.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.625">
-          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-navigation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0877193">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35438597">
-          <caret line="606" column="26" selection-start-line="606" selection-start-column="26" selection-end-line="606" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49122807">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-widgets-featured.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45614034">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45614034">
-          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/footers/footer-centered.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15789473">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.84782606">
-          <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/base/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5614035">
-          <caret line="102" column="8" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07017544">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="299" column="58" selection-start-line="299" selection-start-column="58" selection-end-line="299" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_other.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.245614">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="18" selection-start-line="110" selection-start-column="18" selection-end-line="110" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_media.scss">
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.01754386">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2982456">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.3508772">
+          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/assets/css/style.scss">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.588235">
-          <caret line="2781" column="5" selection-start-line="2761" selection-start-column="4" selection-end-line="2781" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_widgets.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42028984">
-          <caret line="41" column="22" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="190" column="0" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.875">
-          <caret line="203" column="31" selection-start-line="203" selection-start-column="31" selection-end-line="203" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_comments.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45652175">
-          <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="131" selection-end-column="132" />
           <folding />
         </state>
       </provider>

@@ -22,7 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post, $woocommerce, $product;
 
 ?>
-<div class="images">
+<div class="images product-detail-thumbarea">
     <div class="product-images-wrap">
         <?php do_action( 'woocommerce_product_images' ); ?>
         <div class="product-main-images" id="sync1">

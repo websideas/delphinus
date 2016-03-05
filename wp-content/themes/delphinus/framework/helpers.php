@@ -497,3 +497,138 @@ if (!function_exists('kt_custom_wpml')){
 }
 
 
+/**
+ * Render Carousel
+ *
+ * @param $data array, All option for carousel
+ * @param $class string, Default class for carousel
+ *
+ * @return void
+ */
+
+function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-carousel'){
+    $data = shortcode_atts( array(
+        'gutters' => true,
+        'autoheight' => true,
+        'autoplay' => false,
+        'mousedrag' => true,
+        'autoplayspeed' => 5000,
+        'slidespeed' => 200,
+        'desktop' => 4,
+        'desktopsmall' => '',
+        'tablet' => 2,
+        'mobile' => 1,
+
+        'navigation' => true,
+        'navigation_always_on' => false,
+        'navigation_position' => 'center_outside',
+        'navigation_style' => 'circle_border',
+        'navigation_icon' => 'fa fa-angle-left|fa fa-angle-right',
+
+        'pagination' => false,
+        'pagination_position' => 'outside',
+
+        'carousel_skin' => 'dark',
+        'callback' => ''
+
+    ), $data );
+
+    if(!$data['desktopsmall']){
+        $data['desktopsmall'] = $data['desktop'];
+    }
+
+    extract( $data );
+
+
+    $autoheight = apply_filters('sanitize_boolean', $autoheight);
+    $autoplay = apply_filters('sanitize_boolean', $autoplay);
+    $mousedrag = apply_filters('sanitize_boolean', $mousedrag);
+    $navigation = apply_filters('sanitize_boolean', $navigation);
+    $navigation_always_on = apply_filters('sanitize_boolean', $navigation_always_on);
+    $pagination = apply_filters('sanitize_boolean', $pagination);
+
+    $output = '';
+
+    $owl_carousel_class = array(
+        'owl-carousel-kt',
+        'navigation-'.$navigation_position,
+        'carousel-'.$carousel_skin,
+        $extra
+    );
+
+    if($gutters){
+        $owl_carousel_class[] = 'carousel-gutters';
+    }
+
+    if(!$navigation_always_on && $navigation_position != 'bottom'){
+        $owl_carousel_class[] = 'visiable-navigation';
+    }
+    if($navigation_style){
+        $owl_carousel_class[] = 'carousel-navigation-'.$navigation_style;
+        $owl_carousel_class[] = 'carousel-navigation-hasstyle';
+        if(strpos($navigation_style, 'border') !== false){
+            $owl_carousel_class[] = 'carousel-navigation-border';
+        }elseif(strpos($navigation_style, 'background') !== false){
+            $owl_carousel_class[] = 'carousel-navigation-background';
+        }
+    }
+    if($pagination){
+        $owl_carousel_class[] = 'carousel-pagination-dots';
+    }
+
+
+    $autoplay = ($autoplay) ? $autoplayspeed : $autoplay;
+
+    $data_carousel = array(
+        'mouseDrag' => $mousedrag,
+        "autoHeight" => $autoheight,
+        "autoPlay" => $autoplay,
+        'navigation_icon' => $navigation_icon,
+        "navigation" => $navigation,
+        'navigation_pos' => $navigation_position,
+        "slidespeed" => $slidespeed,
+        'desktop' => $desktop,
+        'desktopsmall' => $desktopsmall,
+        'tablet' => $tablet,
+        'mobile' => $mobile,
+        'pagination' => $pagination,
+        'callback' => $callback
+
+    );
+
+
+    $output .= '<div class="'.esc_attr(implode(' ', $owl_carousel_class)).'">';
+    $output .= '<div class=" '.$class.'" '.render_data_carousel($data_carousel).'>%carousel_html%</div>';
+    $output .= '</div>';
+
+    return $output;
+}
+
+
+if (!function_exists('render_data_carousel')) {
+
+    /*
+     * Render data option for carousel
+     * @param $data
+     * @return string
+     */
+    function render_data_carousel($data)
+    {
+        $output = "";
+        $array = array();
+        foreach ($data as $key => $val) {
+            if (is_bool($val) === true) {
+                $val = ($val) ? 'true': 'false';
+                $array[$key]= '"'.$key.'": '.$val;
+            }else{
+                $array[$key]= '"'.$key.'": "'.$val.'"';
+            }
+        }
+
+        if(count($array)){
+            $output = " data-options='{".implode(',', $array)."}'";
+        }
+
+        return $output;
+    }
+}

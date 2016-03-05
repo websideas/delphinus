@@ -32,13 +32,13 @@ $title = ( $exists && ! $available_multi_wishlist ) ? apply_filters( 'yith-wcwl-
 
         <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
             <a href="<?php echo esc_url( $wishlist_url )?>" rel="nofollow">
-                <i class="icon_heart"></i>
+                <i class="fa fa-heart"></i>
             </a>
         </div>
 
         <div class="yith-wcwl-wishlistexistsbrowse <?php echo ( $exists && ! $available_multi_wishlist ) ? 'show' : 'hide' ?>" style="display:<?php echo ( $exists && ! $available_multi_wishlist ) ? 'block' : 'none' ?>">
             <a href="<?php echo esc_url( $wishlist_url ) ?>" rel="nofollow">
-                <i class="icon_heart"></i>
+                <i class="fa fa-heart"></i>
             </a>
         </div>
     <?php else: ?>

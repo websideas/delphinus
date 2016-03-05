@@ -73,23 +73,7 @@ $classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s', $bootstrapColumn, 6)
 
     <div class="product-content">
 
-
-
         <?php
-
-        if($woocommerce_loop['type'] == 'standard'){
-            $cat_count = sizeof( get_the_terms( $product->ID, 'product_cat' ) );
-            echo $product->get_categories( ' / ', '<span class="posted_in">', '</span>' );
-        }
-
-        if($woocommerce_loop['effect'] == 3){
-             ?>
-            <div title="Rated 4 out of 5" class="star-rating">
-                <span style="width:80%"><span class="rating">4</span> out of 5</span>
-            </div>
-            <a href="woocommerce-product-detailed1.php" class="title-link">Spada Enforcer WP Glove</a>
-        <?php
-        }
 
         /**
          * woocommerce_before_shop_loop_item hook.
@@ -113,8 +97,13 @@ $classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s', $bootstrapColumn, 6)
          * @hooked woocommerce_template_loop_add_to_cart - 10
          */
         do_action( 'woocommerce_after_shop_loop_item' );
-        ?>
 
+
+        if($woocommerce_loop['type'] == 'standard'){
+            do_action( 'woocommerce_shop_loop_item_content' );
+        }
+
+        ?>
     </div>
     <div class="product-details">
         <?php
@@ -132,6 +121,14 @@ $classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s', $bootstrapColumn, 6)
          * @hooked woocommerce_template_loop_price - 10
          */
         do_action( 'woocommerce_after_shop_loop_item_title' );
+
+
+        if($woocommerce_loop['type'] == 'standard'){
+            echo '<div class="product-details-action">';
+            do_action( 'woocommerce_shop_loop_item_details' );
+            echo '</div>';
+        }
+
         ?>
     </div>
 

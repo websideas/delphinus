@@ -28,7 +28,7 @@ $attachment_count = count( $attachment_ids );
 if(!$attachment_count) return;
 
 ?>
-<div class="product-main-thumbnails" id="sync2" data-items="4">
+<div class="product-main-thumbnails" id="sync2" data-items="3">
     <?php
     if ( has_post_thumbnail() ) {
         $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;

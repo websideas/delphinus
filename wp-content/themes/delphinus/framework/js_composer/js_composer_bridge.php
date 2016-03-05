@@ -6,6 +6,15 @@ if ( !defined('ABSPATH')) exit;
 //  1 - Appended to top)
 
 
+vc_add_params("vc_icon", array(
+    array('type' => 'hidden',  'param_name' => 'icon_class'),
+    array('type' => 'hidden',  'param_name' => 'color_hover'),
+    array('type' => 'hidden',  'param_name' => 'hover_div'),
+    array('type' => 'hidden',  'param_name' => 'background_color_hover'),
+    array('type' => 'hidden',  'param_name' => 'iconbox_image'),
+    array('type' => 'hidden',  'param_name' => 'icon_type')
+));
+
 $visibilities_arr = array('vc_empty_space', 'kt_heading');
 
 foreach($visibilities_arr as $item){
@@ -58,16 +67,15 @@ $composer_addons = array(
 */
 $composer_addons = array(
     'heading.php',
-    'banner.php',
-    'advanced_banner.php',
-    'coming_soon.php',
+    'icon_box.php',
     'blog_posts.php',
 );
 
 if(kt_is_wc()){
     $composer_wc_addons = array(
         'products_tab.php',
-        'products_widget_carousel.php'
+        'products_widget_carousel.php',
+        'products_carousel.php'
     );
     $composer_addons = array_merge($composer_wc_addons, $composer_addons);
 }

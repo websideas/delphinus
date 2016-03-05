@@ -8,23 +8,50 @@ require_once vc_path_dir( 'SHORTCODES_DIR', 'vc-custom-heading.php' );
 class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
     protected function content($atts, $content = null) {
         $atts = shortcode_atts( array(
-            'text' => __( 'This is custom heading', 'js_composer' ),
-            'subtitle' => '',
-            'backend' => '',
+            'title' => esc_html__( 'This is custom heading', 'js_composer' ),
+            'link' => '',
             'align' => 'center',
-            'layout' => '1',
             'font_container' => '',
             'use_theme_fonts' => 'yes',
             'google_fonts' => '',
-            'font_container_subtitle' => '',
-            'font_container_backend' => '',
-
-
             'css_animation' => '',
+
             'el_class' => '',
             'css' => '',
         ), $atts );
-        extract($atts);
+
+
+        // This is needed to extract $font_container_data and $google_fonts_data
+        extract( $this->getAttributes( $atts ) );
+        unset($font_container_data['values']['text_align']);
+
+
+        $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
+        extract( $atts );
+
+        extract( $this->getStyles( $el_class, $css, $google_fonts_data, $font_container_data, $atts ) );
+
+        $settings = get_option( 'wpb_js_google_fonts_subsets' );
+        if ( is_array( $settings ) && ! empty( $settings ) ) {
+            $subsets = '&subset=' . implode( ',', $settings );
+        } else {
+            $subsets = '';
+        }
+
+        if ( isset( $google_fonts_data['values']['font_family'] ) ) {
+            wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
+        }
+
+        if ( ! empty( $styles ) ) {
+            $style = 'style="' . esc_attr( implode( ';', $styles ) ) . '"';
+        } else {
+            $style = '';
+        }
+
+        $output = $style_title_css = '';
+
+
+
 
         $elementClass = array(
             'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'kt-heading ', $this->settings['base'], $atts ),
@@ -32,43 +59,39 @@ class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
             'css_animation' => $this->getCSSAnimation( $css_animation ),
             'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
             'align' => 'text-'.$align,
-            'layout' => 'style'.$layout,
         );
 
-        $output = $style_title_css = $style_backend_css = $style_subtitle_css = '';
-
-
-
-
-        $style_title = $this->getCustomStyle($atts);
-        if ( ! empty( $style_title['style'] ) ) {
-            $style_title_css = 'style="' . esc_attr( implode( ';', $style_title['style'] ) ) . '"';
-        }
-        $output_title = '<' . $style_title['data']['values']['tag'] . ' class="kt-heading-title" ' . $style_title_css . ' >'.$text.'</' . $style_title['data']['values']['tag'] . '>';
-
-        $output_subtitle = '';
-        if($subtitle){
-            $atts['font_container'] = $atts['font_container_subtitle'];
-            $atts['google_fonts'] = '';
-            $style_subtitle = $this->getCustomStyle($atts);
-            if ( ! empty( $style_subtitle['style'] ) ) {
-                $style_subtitle_css = 'style="' . esc_attr( implode( ';', $style_subtitle['style'] ) ) . '"';
-            }
-            $output_subtitle = '<div class="kt-heading-subtitle" ' . $style_subtitle_css . '>'.$subtitle.'</div>';
+        if ( ! empty( $link ) ) {
+            $link = vc_build_link( $link );
+            $title = '<a href="' . esc_attr( $link['url'] ) . '"'
+                . ( $link['target'] ? ' target="' . esc_attr( $link['target'] ) . '"' : '' )
+                . ( $link['title'] ? ' title="' . esc_attr( $link['title'] ) . '"' : '' )
+                . '>' . $title . '</a>';
         }
 
-        $output_backend = '';
-        if($backend){
-            $atts['font_container'] = $atts['font_container_backend'];
-            $atts['google_fonts'] = '';
-            $style_backend = $this->getCustomStyle($atts);
-            if ( ! empty( $style_backend['style'] ) ) {
-                $style_backend_css = 'style="' . esc_attr( implode( ';', $style_backend['style'] ) ) . '"';
-            }
-            $output_backend = '<div class="kt-heading-backend" ' . $style_backend_css . '>'.$backend.'</div>';
+
+
+        $title = sprintf('<%1$s class="kt-heading-title" %2$s>%3$s</%1$s>', $font_container_data['values']['tag'], $style, $title );
+
+
+        if($content){
+            $content = sprintf('<div class="kt-heading-content">%s</div>', $content);
         }
 
-        $output .= $output_backend.$output_title.$output_subtitle;
+        $divider = '<div class="kt-heading-divider"><span>
+                <svg xml:space="preserve" style="enable-background:new 349 274.7 1310.8 245.3;" viewBox="349 274.7 1310.8 245.3" y="0px" x="0px" version="1.1">
+                <path d="M1222,438.9c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,436.2c-5.4,2.7-10.8,2.7-13.5,0L573.3,306.5L365.2,436.2L349,411.9
+                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l208.1,127l210.8-129.7c5.4-2.7,10.8-2.7,13.5,0L1222,409.2l208.1-129.7
+                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.7l-208.1-129.7l-208.1,129.7C1227.4,436.2,1224.7,438.9,1222,438.9L1222,438.9z"/>
+                    <path d="M1222,520c-2.7,0-5.4,0-8.1-2.7l-210.8-129.7L792.3,517.3c-5.4,2.7-10.8,2.7-13.5,0L573.3,387.6L362.5,517.3L349,493
+                    l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
+                    c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/>
+                </svg></span>
+            </div>';
+
+        $output .= $divider.$title.$content;
+
+
 
         $elementClass = preg_replace( array( '/\s+/', '/^\s|\s$/' ), array( ' ', '' ), implode( ' ', $elementClass ) );
         return '<div class="'.esc_attr( $elementClass ).'">'.$output.'</div>';
@@ -76,31 +99,6 @@ class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
     }
 
 
-    function getCustomStyle($atts){
-        $styles = array();
-
-        $google_fonts_data = $font_container_data = $style = '';
-        extract( $this->getAttributes( $atts ) );
-
-        unset($font_container_data['values']['text_align']);
-        extract( $this->getStyles( $el_class, $css, $google_fonts_data, $font_container_data, $atts ) );
-        $settings = get_option( 'wpb_js_google_fonts_subsets' );
-        $subsets = '';
-        if ( is_array( $settings ) && ! empty( $settings ) ) {
-            $subsets = '&subset=' . implode( ',', $settings );
-        }
-        if ( ! empty( $google_fonts_data ) && isset( $google_fonts_data['values']['font_family'] ) ) {
-            wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
-        }
-
-        $output = array(
-            'style' => $styles,
-            'data' => $font_container_data
-        );
-
-        return $output;
-
-    }
 }
 
 
@@ -118,33 +116,26 @@ vc_map( array(
     "category" => esc_html__('by Kite-Themes', 'wingman' ),
     'params' => array(
         array(
-            'type' => 'textarea',
-            'heading' => esc_html__( 'Text', 'js_composer' ),
-            'param_name' => 'text',
-            'admin_label' => true,
-            'value' => esc_html__( 'This is custom heading', 'mondova' ),
-            'description' => esc_html__( 'Note: If you are using non-latin characters be sure to activate them under Settings/Visual Composer/General Settings.', 'js_composer' ),
+            "type" => "textfield",
+            'heading' => __( 'This is custom heading', 'js_composer' ),
+            'param_name' => 'title',
+            'value' => esc_html__( 'Title', 'js_composer' ),
+            "admin_label" => true,
         ),
+
         array(
-            'type' => 'hidden',
-            'heading' => esc_html__( 'URL (Link)', 'js_composer' ),
+            'type' => 'vc_link',
+            'heading' => __( 'URL (Link)', 'js_composer' ),
             'param_name' => 'link',
+            'description' => __( 'Add link to title.', 'js_composer' )
         ),
+
         array(
-            "type" => "textfield",
-            "heading" => esc_html__("Subtitle", 'wingman'),
-            "param_name" => "subtitle",
-            "value" => '',
+            "type" => "textarea_html",
+            "heading" => esc_html__("Content", 'wingman'),
+            "param_name" => "content",
             "description" => esc_html__("", 'wingman'),
-            'admin_label' => true,
-        ),
-        array(
-            "type" => "textfield",
-            "heading" => esc_html__("Backend", 'wingman'),
-            "param_name" => "backend",
-            "value" => '',
-            "description" => esc_html__("", 'wingman'),
-            'admin_label' => true,
+            'holder' => 'div',
         ),
 
         array(
@@ -157,18 +148,6 @@ vc_map( array(
                 esc_html__( 'Right', 'js_composer' ) => "right"
             ),
             'description' => esc_html__( 'Select separator alignment.', 'js_composer' )
-        ),
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'layout', 'js_composer' ),
-            'param_name' => 'layout',
-            'value' => array(
-                esc_html__( 'Layout 1', 'js_composer' ) => "1",
-                esc_html__( 'Layout 2', 'js_composer' ) => "2",
-                esc_html__( 'Layout 3', 'js_composer' ) => "3",
-            ),
-            'admin_label' => true,
-            'description' => esc_html__( 'Select your layout.', 'wingman' )
         ),
 
         array(
@@ -244,53 +223,6 @@ vc_map( array(
                 'value_not_equal_to' => 'yes',
             ),
         ),
-
-        array(
-            "type" => "kt_heading",
-            "heading" => esc_html__("Typography Sub title", 'wingman'),
-            "param_name" => "typography_subtitle",
-            'group' => esc_html__( 'Typography', 'wingman' ),
-        ),
-        array(
-            'type' => 'font_container',
-            'param_name' => 'font_container_subtitle',
-            'value' => '',
-            'settings' => array(
-                'fields' => array(
-                    'color',
-                    'font_size',
-                    'color_description' => esc_html__( 'Select heading color.', 'js_composer' ),
-                    'font_size_description' => esc_html__( 'Enter font size.', 'js_composer' ),
-                ),
-            ),
-            'group' => esc_html__( 'Typography', 'wingman' ),
-        ),
-
-
-        array(
-            "type" => "kt_heading",
-            "heading" => esc_html__("Typography Backend", 'wingman'),
-            "param_name" => "typography_backend",
-            'group' => esc_html__( 'Typography', 'wingman' ),
-        ),
-        array(
-            'type' => 'font_container',
-            'param_name' => 'font_container_backend',
-            'value' => '',
-            'settings' => array(
-                'fields' => array(
-                    'color',
-                    'font_size',
-                    'color_description' => esc_html__( 'Select heading color.', 'js_composer' ),
-                    'font_size_description' => esc_html__( 'Enter font size.', 'js_composer' ),
-                ),
-            ),
-            'group' => esc_html__( 'Typography', 'wingman' ),
-        ),
-
-
-
-
 
 
         array(

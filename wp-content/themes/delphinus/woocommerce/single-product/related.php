@@ -45,14 +45,16 @@ $products = new WP_Query( $args );
 $woocommerce_loop['columns'] = $columns;
 
 if ( $products->have_posts() ) : ?>
-    <h3>Related</h3>
-    <div class="owl-carousel-kt">
-        <div class="wc-carousel-wrapper" data-options='<?php echo esc_attr(apply_filters('kt_wc_product_carousel', '{"desktop": "4","desktopsmall": "3","tablet": "2","mobile": "1","pagination": false}')) ?>'>
-            <?php woocommerce_product_loop_start(); ?>
-            <?php while ( $products->have_posts() ) : $products->the_post(); ?>
-                <?php wc_get_template_part( 'content', 'product' ); ?>
-            <?php endwhile; // end of the loop. ?>
-            <?php woocommerce_product_loop_end(); ?>
+    <div class="container">
+        <h3>Related</h3>
+        <div class="owl-carousel-kt">
+            <div class="wc-carousel-wrapper" data-options='<?php echo esc_attr(apply_filters('kt_wc_product_carousel', '{"desktop": "4","desktopsmall": "3","tablet": "2","mobile": "1","pagination": false}')) ?>'>
+                <?php woocommerce_product_loop_start(); ?>
+                <?php while ( $products->have_posts() ) : $products->the_post(); ?>
+                    <?php wc_get_template_part( 'content', 'product' ); ?>
+                <?php endwhile; // end of the loop. ?>
+                <?php woocommerce_product_loop_end(); ?>
+            </div>
         </div>
     </div>
 <?php endif;

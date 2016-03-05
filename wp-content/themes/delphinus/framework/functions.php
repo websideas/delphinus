@@ -4,18 +4,50 @@
 if ( !defined('ABSPATH')) exit;
 
 
+
+/**
+ * Add custom favicon
+ *
+ * @since 1.0
+ */
+function kt_add_site_icon(){
+    if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) {
+        $custom_favicon = kt_option( 'custom_favicon' );
+        $custom_favicon_iphone = kt_option( 'custom_favicon_iphone' );
+        $custom_favicon_iphone_retina = kt_option( 'custom_favicon_iphone_retina' );
+        $custom_favicon_ipad = kt_option( 'custom_favicon_ipad' );
+        $custom_favicon_ipad_retina = kt_option( 'custom_favicon_ipad_retina' );
+        if($custom_favicon['url']){
+            printf( '<link rel="shortcut icon" href="%s"/>', esc_url($custom_favicon['url']) );
+        }
+        if($custom_favicon_iphone['url']) {
+            printf('<link rel="apple-touch-icon" href="%s"/>', esc_url($custom_favicon_iphone['url']));
+        }
+        if($custom_favicon_ipad['url']) {
+            printf('<link rel="apple-touch-icon" sizes="72x72" href="%s"/>', esc_url($custom_favicon_ipad['url']));
+        }
+        if($custom_favicon_iphone_retina['url']) {
+            printf('<link rel="apple-touch-icon" sizes="114x114" href="%s"/>', esc_url($custom_favicon_iphone_retina['url']));
+        }
+        if($custom_favicon_ipad_retina['url']) {
+            printf('<link rel="apple-touch-icon" sizes="144x144" href="%s"/>', esc_url($custom_favicon_ipad_retina['url']));
+        }
+    }
+}
+add_action( 'wp_head', 'kt_add_site_icon');
+
+
 /**
  * Flag boolean.
  *
  * @param $input string
  * @return boolean
  */
-function kt_sanitize_boolean_callback( $input = '' ) {
+function kt_sanitize_boolean( $input = '' ) {
     $input = (string)$input;
     return in_array($input, array('1', 'true', 'y', 'on'));
 }
-add_filter( 'kt_sanitize_boolean', 'kt_sanitize_boolean_callback', 15 );
-
+add_filter( 'sanitize_boolean', 'kt_sanitize_boolean', 15 );
 
 
 

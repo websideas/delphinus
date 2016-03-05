@@ -51,7 +51,7 @@ $last     = min( $total, $wp_query->get( 'posts_per_page' ) * $paged );
 </p>
 
 <form class="woocommerce-per-page" method="get">
-    <label for="products_per_page"><?php _e( "View:", "mondova" ); ?> </label>
+    <label for="products_per_page"><?php _e( "Show by :", "mondova" ); ?> </label>
     <div class="select-icon">
         <select name="per_page" class="per_page" id="products_per_page" onchange="this.form.submit()">
             <option <?php selected( $products_per_page, $per_page); ?> value="<?php echo esc_attr($products_per_page); ?>"><?php esc_html_e($products_per_page); ?></option>

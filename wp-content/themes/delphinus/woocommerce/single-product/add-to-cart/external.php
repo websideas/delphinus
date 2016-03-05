@@ -24,10 +24,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
 <form class="cart" method="post" enctype='multipart/form-data'>
-    <div class="cart-inner">
-        <a href="<?php echo esc_url( $product_url ); ?>" rel="nofollow" class="single_add_to_cart_button btn btn-addtocart"><i class="icon_bag_alt"></i><?php echo esc_html( $button_text ); ?></a>
-        <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
-    </div>
+    <a href="<?php echo esc_url( $product_url ); ?>" rel="nofollow" class="single_add_to_cart_button btn btn-addtocart"><i class="icon_bag_alt"></i><?php echo esc_html( $button_text ); ?></a>
+    <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 </form>
 
 

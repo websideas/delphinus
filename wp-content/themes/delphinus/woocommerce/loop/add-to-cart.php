@@ -24,13 +24,6 @@ global $product;
 
 $add_to_cart_handler = apply_filters( 'woocommerce_add_to_cart_handler', $product->product_type, $product );
 
-// Variable product handling
-if ( 'variable' === $add_to_cart_handler || 'grouped' === $add_to_cart_handler) {
-    $icon = 'icon_cart_alt';
-    // Grouped Products
-} else {
-    $icon = 'icon_bag_alt';
-}
 
 echo '<div class="wc-addtocart-wrap" title="'.esc_attr($product->add_to_cart_text()).'" data-toggle="tooltip" data-added="'.esc_attr(esc_html__('Added to cart', 'mondova')).'" data-addbutton="'.esc_attr($product->add_to_cart_text()).'">';
 echo apply_filters( 'woocommerce_loop_add_to_cart_link',
@@ -40,7 +33,7 @@ echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 		esc_attr( $product->id ),
 		esc_attr( $product->get_sku() ),
 		esc_attr( isset( $class ) ? $class : 'button' ),
-		'<i class="'.$icon.'"></i><span>'.esc_html( $product->add_to_cart_text() ).'</span>'
+		'<i class=""></i><span>'.esc_html( $product->add_to_cart_text() ).'</span>'
 	),
 $product );
 echo "</div>";

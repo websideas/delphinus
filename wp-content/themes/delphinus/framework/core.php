@@ -167,6 +167,10 @@ if (is_admin() ) {
 
 
 }
+
+/* Insert icon to parrams icons */
+require KT_FW_DATA . '/data-icons.php';
+
   
 /**
  * Force Visual Composer to initialize as "built into the theme". 

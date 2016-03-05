@@ -3367,7 +3367,8 @@ ul.style-list {
     margin-top: 20px; }
   .products.lists .product .produt-tool-list {
     margin-top: 40px; }
-    .products.lists .product .produt-tool-list .quantity, .products.lists .product .produt-tool-list .product-over-add {
+    .products.lists .product .produt-tool-list .quantity,
+    .products.lists .product .produt-tool-list .product-over-add {
       float: left;
       margin-right: 30px;
       margin-top: 12px; }

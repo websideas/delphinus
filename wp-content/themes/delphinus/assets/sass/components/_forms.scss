@@ -6,11 +6,12 @@ input[type=password],
 input[type=phone],
 input[type=tel],
 input[type=text],
+input[type=number],
 textarea {
   border: 2px solid $border-color;
-  color: $text;
-  padding: 6px 17px;
-  height: 42px;
+  color: $gray-text;
+  padding: 6px 12px;
+  height: 40px;
   background: none;
   @include border-radius(0);
   @include css3-prefix('box-shadow', 'none');
@@ -19,8 +20,16 @@ textarea {
   width: 100%;
   &:focus {
     @include css3-prefix('box-shadow', 'none');
+    border-color: $gray-text;
     outline: 0;
-    border-color: $primary-color;
+    color: $gray-text;
+  }
+
+  &.input-bg{
+    background: $gray-bg;
+    border: 1px solid $border-color-light;
+    font-size: 12px;
+    letter-spacing: 0.075em;
   }
 }
 
@@ -38,13 +47,13 @@ select {
   background: none;
   cursor: pointer;
   color: $text;
+  &:not([multiple]) {
+    @include css3-prefix('box-shadow', 'none');
+    @include css3-prefix('appearance', 'none');
+    background: url(../images/selectbox-arrow.png) no-repeat right center;
+  }
 }
 
-select:not([multiple]) {
-  @include css3-prefix('box-shadow', 'none');
-  @include css3-prefix('appearance', 'none');
-  background: url(../images/selectbox-arrow.png) no-repeat right center;
-}
 
 .form-control {
   @include border-radius(0);
@@ -58,6 +67,7 @@ select:not([multiple]) {
   display: inline-block;
   position: relative;
   color: $gray-text;
+  line-height: 1;
   &:after{
     content: "";
     display: block;
@@ -71,12 +81,10 @@ select:not([multiple]) {
   }
   select{
     border: none;
-    font-size: 12px;
     background: none;
     padding: 0 10px 0 0;
     height: auto;
     color: $gray-text;
-    text-transform: uppercase;
   }
 }
 
@@ -86,17 +94,16 @@ select:not([multiple]) {
  */
 
 .btn {
-  position: relative;
-  text-align: center;
-  line-height: 1.42857;
-  padding: 10px 35px;
-  display: inline-block;
-  font-family: $button-text;
-  text-transform: uppercase;
-  color: $text;
-  font-size: 14px;
   @include border-radius(0);
-
+  border: 2px solid transparent;
+  display: inline-block;
+  line-height: 1.42857;
+  padding: 8px 26px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-family: $button-text;
   &:focus,
   &:active:focus,
   &.active:focus {
@@ -117,15 +124,13 @@ select:not([multiple]) {
     font-size: 10px;
   }
   &-lg {
-    padding: 14px 50px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 10px 60px;
+    font-size: 18px;
   }
   &-xlg {
     padding: 12px 65px;
-    font-size: 18px;
+    font-size: 20px;
   }
-
 
   /* Button shapes */
   &-round {
@@ -136,63 +141,24 @@ select:not([multiple]) {
   }
 
   /* Button icon */
-  &.button-icon-left {
+  &-icon-left {
     margin-right: 5px;
   }
-  &.button-icon-right {
+  &-icon-right {
     margin-left: 5px;
   }
 
   /* Button style */
   &-default {
-    border-color: transparent;
-    background: none;
-    color: $text;
-    &:before,
-    &:after{
-      content: '';
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 10px;
-      @include transition('all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s');
-    }
-    &:before{
-      left: 0;
-      bottom: -1px;
-      border-left: 2px solid $primary-color;
-      border-bottom: 2px solid $primary-color;
-    }
-    &:after{
-      top: -1px;
-      right: 0;
-      border-right: 2px solid $primary-color;
-      border-top: 2px solid $primary-color;
-    }
-    &:active,
-    &:focus,
-    &:hover{
-      background: none;
-      border-color: transparent;
-      color: $text;
-      &:before,
-      &:after{
-        height: 50%;
-      }
-    }
-    &:active{
-      &:focus,
-      &:hover{
-        background: none;
-        border-color: transparent;
-      }
-    }
+    background: #000000;
+    color: #FFFFFF;
+    border-color: #000000;
   }
   &-animation{
     span{
       @include transform(translateX(0));
       @include transition("all .3s ease-in-out 0s");
-      display: inline-block;
+      display: block;
       position: relative;
       i{
         @include opacity(0);
@@ -212,51 +178,64 @@ select:not([multiple]) {
       }
     }
   }
-
-  &-accent{
-    background: $primary-color;
-    border: 2px solid $primary-color;
-    color: $white;
-    &[required]:after{
-      content: "";
-      background: red;
-    }
+  &-gray {
+    background: $gray-bg;
+    color: $gray-darker;
+    border-color:$gray-bg;
     &:hover{
-      background: $text;
-      border-color: $text;
-      color: $white;
+      background: #000000;
+      color: #FFFFFF;
+      border-color: #000000;
+    }
+  }
+  &-light{
+    border-color: #FFFFFF;
+    background: #FFFFFF;
+    color: #000000;
+    &:hover{
+      background: #000000;
+      color: #FFFFFF;
+      border-color: #000000;
     }
   }
 
-  &-dark{
-    background: $text;
-    color: $white;
-    border-color: $text;
-    &:hover,
-    &:focus{
+  &-dark-b {
+    background: none;
+    color: #000000;
+    border-color: #000000;
+  }
+  &-light-b{
+    border: 2px solid #FFFFFF;
+    background: none;
+    font-family: $font-stack;
+    font-weight: normal;
+    color: #FFFFFF;
+    &:hover{
+      background: #FFFFFF;
+      color: #000000;
+    }
+  }
+
+  &-medium{
+    background: $gray-bg;
+    border: 1px solid #f0f0f0;
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    &:hover{
+      background: #000000;
+      border-color: #000000;
+      color: #fff;
+    }
+  }
+
+  &-default,
+  &-dark-b{
+    &:hover{
       background: $primary-color;
-      color: $white;
+      color: #FFFFFF;
       border-color: $primary-color;
     }
   }
-
-  &-light{
-    color: $white;
-    &:hover{
-      color: $white;
-    }
-  }
-}
-
-.pushbutton-wide{
-  @extend .btn;
-  @extend .btn-dark;
-  border-style: solid;
-  border-width: 1px;
-}
-
-.more-link{
-  @extend .btn;
-  @extend .btn-default;
 }
 
