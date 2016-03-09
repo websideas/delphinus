@@ -1301,6 +1301,7 @@
 /* ==============================
    15. ShortCodes
    ============================== */
+/*
 .wc-products-tab{
   .wc-products-tab-heading{
     @include clearfix();
@@ -1380,4 +1381,68 @@
       margin: 0 5px;
     }
   }
+}
+*/
+
+
+/*
+ * Category banner carousel
+ */
+.category-banner{
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000000,.4);
+    z-index: 5;
+  }
+  img{
+    width: 100%;
+  }
+
+  .category-banner-content{
+    width: 100%;
+    @include translate(c);
+    z-index: 10;
+    > *:last-child{
+      margin-bottom: 0;
+    }
+    h3{
+      margin-bottom: 35px;
+      color: $white;
+      letter-spacing: 0.2em;
+      font-size: 36px;
+    }
+    ul{
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      @include transition(all 0.5s ease-in-out 0s);
+      li{
+        font-size: 14px;
+        line-height: 36px;
+        a{
+          color: #cdcdcd;
+          &:hover{
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+  &:hover{
+    ul{
+      margin: 0 0 35px;
+      max-height: 600px;
+    }
+  }
+
 }

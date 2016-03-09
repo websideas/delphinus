@@ -3,19 +3,15 @@
 // Exit if accessed directly
 if ( !defined('ABSPATH')) exit;
 
-require_once (KT_FW_DIR . 'js_composer/vc_addons/heading.php');
 
-class WPBakeryShortCode_Products_Widget_Carousel extends WPBakeryShortCode_KT_Heading {
+class WPBakeryShortCode_Products_Widget_Carousel extends WPBakeryShortCode {
     protected function content($atts, $content = null) {
         $atts = shortcode_atts( array(
-            'title' => esc_html__( 'Title', 'js_composer' ),
             'font_container' => '',
             'use_theme_fonts' => 'yes',
             'google_fonts' => '',
 
-
-
-            'source' => 'featured',
+            'source' => 'recent',
             'per_page' => 9,
             'carousel_item' => 3,
             'orderby' => 'date',
@@ -35,7 +31,7 @@ class WPBakeryShortCode_Products_Widget_Carousel extends WPBakeryShortCode_KT_He
             'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
         );
 
-        $output = $style_title_css = '';
+        $output = '';
 
 
 
@@ -82,17 +78,7 @@ class WPBakeryShortCode_Products_Widget_Carousel extends WPBakeryShortCode_KT_He
 
             echo '<div class="owl-carousel-kt">';
 
-            $style_title = $this->getCustomStyle($atts);
-            if ( ! empty( $style_title['style'] ) ) {
-                $style_title_css = 'style="' . esc_attr( implode( ';', $style_title['style'] ) ) . '"';
-            }
-
-
-            echo '<div class="products-widget-wrap"><' . $style_title['data']['values']['tag'] . ' class="products-widget-heading" ' . $style_title_css . ' >'.$title.'</' . $style_title['data']['values']['tag'] . '></div>';
-
-
-
-            echo '<div class="owl-carousel kt-owl-carousel" data-options=\'{"pagination": false, "navigation": true, "desktop": 1, "tablet" : 1, "mobile" : 1, "callback": "wc_widget_carousel"}\'>';
+            echo '<div class="owl-carousel kt-owl-carousel" data-options=\'{"pagination": false, "navigation": true, "desktop": 1, "tablet" : 1, "mobile" : 1}\'>';
 
             $i = 0;
 
@@ -136,18 +122,7 @@ vc_map( array(
     "base" => "products_widget_carousel",
     "category" => esc_html__('by Kite-Themes', 'wingman' ),
     "params" => array(
-        array(
-            "type" => "textfield",
-            'heading' => esc_html__( 'Title', 'js_composer' ),
-            'param_name' => 'title',
-            'value' => esc_html__( 'Title', 'js_composer' ),
-            "admin_label" => true,
-        ),
-        array(
-            'type' => 'hidden',
-            'heading' => esc_html__( 'URL (Link)', 'js_composer' ),
-            'param_name' => 'link',
-        ),
+
         // Data setting
         array(
             "type" => "kt_heading",
@@ -160,12 +135,13 @@ vc_map( array(
             "heading" => esc_html__("Data source", 'wingman'),
             "param_name" => "source",
             "value" => array(
+                esc_html__('Recent products', 'wingman') => 'recent',
                 esc_html__('Featured Products', 'wingman') => 'featured',
                 esc_html__('On-sale Products', 'wingman') => 'sale',
                 esc_html__('Best Selling Products', 'wingman') => 'bestselling',
-                esc_html__('Recent products', 'wingman') => 'recent',
+
             ),
-            'std' => 'featured',
+            'std' => 'recent',
             "admin_label" => true,
         ),
 
@@ -254,58 +230,6 @@ vc_map( array(
             'group' => esc_html__( 'Carousel', 'wingman' ),
             'description' => esc_html__( 'The number product in each carousel item', 'js_composer' ),
         ),
-        // Heading setting
-        array(
-            "type" => "kt_heading",
-            "heading" => esc_html__("Typography heading", 'wingman'),
-            "param_name" => "typography_heading",
-            'group' => esc_html__( 'Typography', 'wingman' ),
-        ),
-        array(
-            'type' => 'font_container',
-            'param_name' => 'font_container',
-            'value' => '',
-            'settings' => array(
-                'fields' => array(
-                    'tag' => 'h3',
-                    'color',
-                    'font_size',
-                    'line_height',
-                    'tag_description' => esc_html__( 'Select element tag.', 'js_composer' ),
-                    'text_align_description' => esc_html__( 'Select text alignment.', 'js_composer' ),
-                    'font_size_description' => esc_html__( 'Enter font size.', 'js_composer' ),
-                    'line_height_description' => esc_html__( 'Enter line height.', 'js_composer' ),
-                    'color_description' => esc_html__( 'Select heading color.', 'js_composer' ),
-                ),
-            ),
-            'group' => esc_html__( 'Typography', 'wingman' ),
-        ),
-        array(
-            'type' => 'checkbox',
-            'heading' => esc_html__( 'Use theme default font family?', 'js_composer' ),
-            'param_name' => 'use_theme_fonts',
-            'value' => array( esc_html__( 'Yes', 'js_composer' ) => 'yes' ),
-            'description' => esc_html__( 'Use font family from the theme.', 'js_composer' ),
-            'group' => esc_html__( 'Typography', 'wingman' ),
-            'std' => 'yes'
-        ),
-        array(
-            'type' => 'google_fonts',
-            'param_name' => 'google_fonts',
-            'value' => 'font_family:Oswald|font_style:700%20regular%3A400%3Anormal',
-            'settings' => array(
-                'fields' => array(
-                    'font_family_description' => esc_html__( 'Select font family.', 'js_composer' ),
-                    'font_style_description' => esc_html__( 'Select font styling.', 'js_composer' )
-                )
-            ),
-            'group' => esc_html__( 'Typography', 'wingman' ),
-            'dependency' => array(
-                'element' => 'use_theme_fonts',
-                'value_not_equal_to' => 'yes',
-            ),
-        ),
-
 
         array(
             'type' => 'css_editor',

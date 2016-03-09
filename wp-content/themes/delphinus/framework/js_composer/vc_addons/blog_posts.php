@@ -157,7 +157,7 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
 
 // Add your Visual Composer logic here
 vc_map( array(
-    "name" => esc_html__( "Blog Posts", 'wingman'),
+    "name" => esc_html__( "KT: Blog Posts", 'wingman'),
     "base" => "list_blog_posts",
     "category" => esc_html__('by Kite-Themes', 'wingman' ),
     "description" => esc_html__( "Display blog posts", 'wingman'),

@@ -41,17 +41,14 @@ function kt_woocommerce_set_option() {
         return;
     }
 
-    $catalog = array('width' => '600','height' => '800', 'crop' => 1 );
-    $thumbnail = array('width' => '100', 'height' => '133', 'crop' => 1 );
-    //$single = array( 'width' => '1200','height' => '1600', 'crop' => 1);
-    $single = array( 'width' => '750','height' => '1000', 'crop' => 1);
-    $swatches = array( 'width' => '30','height' => '30', 'crop' => 1);
+    $catalog = array('width' => '600','height' => '600', 'crop' => 1 );
+    $thumbnail = array('width' => '100', 'height' => '100', 'crop' => 1 );
+    $single = array( 'width' => '1000','height' => '1000', 'crop' => 1);
 
     // Image sizes
     update_option( 'shop_catalog_image_size', $catalog ); 		// Product category thumbs
     update_option( 'shop_single_image_size', $single ); 		// Single product image
     update_option( 'shop_thumbnail_image_size', $thumbnail ); 	// Image gallery thumbs
-    update_option( 'swatches_image_size', $swatches ); 	        // Image swatches thumbs
 
 }
 add_action( 'after_switch_theme', 'kt_woocommerce_set_option', 1 );
@@ -206,6 +203,30 @@ if ( ! function_exists( 'kt_cart_link_fragment' ) ) {
         kt_cart_link();
         $fragments['a.cart-contents'] = ob_get_clean();
         return $fragments;
+    }
+}
+if (!function_exists('kt_template_loop_category_title')) {
+    /**
+     * Show the subcategory title in the product loop.
+     */
+    function kt_template_loop_category_title( $category )
+    {
+        ?>
+        <h3 class="product-title">
+            <?php
+            echo '<a href="' . get_term_link( $category->slug, 'product_cat' ) . '">';
+            echo $category->name;
+            if ( $category->count > 0 )
+                echo apply_filters( 'woocommerce_subcategory_count_html', ' <span class="count">(' . $category->count . ')</span>', $category );
+            echo '</a>';
+            ?>
+        </h3>
+
+        <a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>" class="shop-now-link">
+            <?php echo esc_html__('Shop now', 'delphinus') ?>
+        </a>
+
+        <?php
     }
 }
 
@@ -587,6 +608,7 @@ add_filter('woocommerce_loop_add_to_cart_args', 'kt_loop_add_to_cart_args', 10, 
 
 remove_action('woocommerce_before_shop_loop', 'woocommerce_result_count', 20);
 remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+remove_action('woocommerce_shop_loop_subcategory_title', 'woocommerce_template_loop_category_title', 10);
 
 remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
@@ -601,6 +623,8 @@ remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_pro
 
 
 add_action( 'woocommerce_before_shop_loop', 'kt_woocommerce_shop_loop');
+
+add_action('woocommerce_shop_loop_subcategory_title', 'kt_template_loop_category_title', 10);
 
 add_action('woocommerce_shop_loop_item_title', 'kt_template_loop_product_title', 20);
 add_action('woocommerce_before_shop_loop_item', 'kt_template_loop_product_link_open');

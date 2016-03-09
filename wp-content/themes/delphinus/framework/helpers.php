@@ -521,14 +521,13 @@ function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-ca
 
         'navigation' => true,
         'navigation_always_on' => false,
-        'navigation_position' => 'center_outside',
-        'navigation_style' => 'circle_border',
-        'navigation_icon' => 'fa fa-angle-left|fa fa-angle-right',
+        'navigation_position' => 'center-outside',
+        'navigation_style' => 'normal',
 
         'pagination' => false,
-        'pagination_position' => 'outside',
+        'pagination_position' => 'center-bottom',
+        'pagination_style' => 'dot-stroke',
 
-        'carousel_skin' => 'dark',
         'callback' => ''
 
     ), $data );
@@ -552,7 +551,6 @@ function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-ca
     $owl_carousel_class = array(
         'owl-carousel-kt',
         'navigation-'.$navigation_position,
-        'carousel-'.$carousel_skin,
         $extra
     );
 
@@ -560,20 +558,16 @@ function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-ca
         $owl_carousel_class[] = 'carousel-gutters';
     }
 
-    if(!$navigation_always_on && $navigation_position != 'bottom'){
-        $owl_carousel_class[] = 'visiable-navigation';
-    }
-    if($navigation_style){
-        $owl_carousel_class[] = 'carousel-navigation-'.$navigation_style;
-        $owl_carousel_class[] = 'carousel-navigation-hasstyle';
-        if(strpos($navigation_style, 'border') !== false){
-            $owl_carousel_class[] = 'carousel-navigation-border';
-        }elseif(strpos($navigation_style, 'background') !== false){
-            $owl_carousel_class[] = 'carousel-navigation-background';
+    if($navigation){
+        if($navigation_always_on){
+            $owl_carousel_class[] = 'visiable-navigation';
         }
+        $owl_carousel_class[] = 'navigation-'.$navigation_style;
     }
+
     if($pagination){
-        $owl_carousel_class[] = 'carousel-pagination-dots';
+        $owl_carousel_class[] = 'pagination-'.$pagination_position;
+        $owl_carousel_class[] = 'pagination-'.$pagination_style;
     }
 
 
@@ -583,15 +577,15 @@ function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-ca
         'mouseDrag' => $mousedrag,
         "autoHeight" => $autoheight,
         "autoPlay" => $autoplay,
-        'navigation_icon' => $navigation_icon,
         "navigation" => $navigation,
         'navigation_pos' => $navigation_position,
+        'pagination' => $pagination,
+        'pagination_pos' => $pagination_position,
         "slidespeed" => $slidespeed,
         'desktop' => $desktop,
         'desktopsmall' => $desktopsmall,
         'tablet' => $tablet,
         'mobile' => $mobile,
-        'pagination' => $pagination,
         'callback' => $callback
 
     );
@@ -630,5 +624,35 @@ if (!function_exists('render_data_carousel')) {
         }
 
         return $output;
+    }
+}
+
+
+if(!function_exists('kt_color2hecxa')){
+    /**
+     * Convert color to hex
+     *
+     * @param $color
+     * @return string
+     */
+    function kt_color2Hex($color){
+        switch ($color) {
+            case 'mulled_wine': $color = '#50485b'; break;
+            case 'vista_blue': $color = '#75d69c'; break;
+            case 'juicy_pink': $color = '#f4524d'; break;
+            case 'sandy_brown': $color = '#f79468'; break;
+            case 'purple': $color = '#b97ebb'; break;
+            case 'pink': $color = '#fe6c61'; break;
+            case 'violet': $color = '#8d6dc4'; break;
+            case 'peacoc': $color = '#4cadc9'; break;
+            case 'chino': $color = '#cec2ab'; break;
+            case 'grey': $color = '#ebebeb'; break;
+            case 'orange': $color = '#f7be68'; break;
+            case 'sky': $color = '#5aa1e3'; break;
+            case 'green': $color = '#6dab3c'; break;
+            case 'accent': $color = kt_option('styling_accent', '#82c14f'); break;
+
+        }
+        return $color;
     }
 }

@@ -23,14 +23,15 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
             'tablet' => 1,
             'mobile' => 1,
             'gutters' => false,
-
             'navigation' => true,
             'navigation_always_on' => true,
-            'navigation_position' => 'top',
-            'navigation_style' => 'square_border',
-            'carousel_skin' => 'black',
-            'navigation_icon' => 'fa fa-angle-left|fa fa-angle-right',
-            
+            'navigation_position' => 'center-outside',
+            'navigation_style' => 'normal',
+
+            'pagination' => false,
+            'pagination_position' => 'center-bottom',
+            'pagination_style' => 'dot-stroke',
+
             'css_animation' => '',
             'el_class' => '',
             'css' => '',   
@@ -107,9 +108,9 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
 
 
 vc_map( array(
-    "name" => esc_html__( "Products Carousel", 'wingman'),
+    "name" => esc_html__( "KT: Products Carousel", 'wingman'),
     "base" => "products_carousel",
-    "category" => esc_html__('by Theme', 'wingman' ),
+    "category" => esc_html__('by Kite-Themes', 'wingman' ),
     "params" => array(
         array(
 			'type' => 'textfield',
@@ -173,7 +174,7 @@ vc_map( array(
                 esc_html__( 'Descending', 'js_composer' ) => 'DESC',
                 esc_html__( 'Ascending', 'js_composer' ) => 'ASC',
             ),
-            "dependency" => array( "element" => "show","value" => '' ),
+            "dependency" => array( "element" => "show","value" => 'all' ),
             'param_holder_class' => 'vc_grid-data-type-not-ids',
             'description' => esc_html__( 'Select sorting order.', 'js_composer' ),
             "admin_label" => true,
@@ -217,7 +218,6 @@ vc_map( array(
             'heading' => esc_html__( 'Mouse Drag', 'wingman' ),
             'param_name' => 'mousedrag',
             'value' => 'true',
-            "edit_field_class" => "vc_col-sm-4 kt_margin_bottom",
             "description" => esc_html__("Mouse drag enabled.", 'wingman'),
             'group' => esc_html__( 'Carousel', 'wingman' )
         ),
@@ -235,6 +235,7 @@ vc_map( array(
             "heading" => esc_html__("AutoPlay Speed", 'wingman'),
             "param_name" => "autoplayspeed",
             "value" => "5000",
+            "edit_field_class" => "vc_col-sm-4 kt_margin_bottom",
             "suffix" => esc_html__("milliseconds", 'wingman'),
             'group' => esc_html__( 'Carousel', 'wingman' ),
             "dependency" => array("element" => "autoplay","value" => array('true')),
@@ -261,15 +262,16 @@ vc_map( array(
             "description" => esc_html__("Show navigation in carousel", 'wingman'),
             'group' => esc_html__( 'Carousel', 'wingman' )
         ),
+
         array(
             'type' => 'dropdown',
             'heading' => esc_html__( 'Navigation position', 'wingman' ),
             'param_name' => 'navigation_position',
             'group' => esc_html__( 'Carousel', 'wingman' ),
             'value' => array(
-                esc_html__( 'Center outside', 'wingman') => 'center_outside',
+                esc_html__( 'Center outside', 'wingman') => 'center-outside',
                 esc_html__( 'Center inside', 'wingman') => 'center',
-                esc_html__( 'Top', 'wingman') => 'top',
+                //esc_html__( 'Top', 'wingman') => 'top',
                 esc_html__( 'Bottom', 'wingman') => 'bottom',
             ),
             "dependency" => array("element" => "navigation","value" => array('true')),
@@ -281,7 +283,7 @@ vc_map( array(
             'value' => 'false',
             "description" => esc_html__("Always show the navigation.", 'wingman'),
             'group' => esc_html__( 'Carousel', 'wingman' ),
-            "dependency" => array("element" => "navigation_position","value" => array('center', 'center_outside')),
+            "dependency" => array("element" => "navigation_position","value" => array('center', 'center-outside')),
         ),
         array(
             'type' => 'dropdown',
@@ -289,49 +291,57 @@ vc_map( array(
             'param_name' => 'navigation_style',
             'group' => esc_html__( 'Carousel', 'wingman' ),
             'value' => array(
-                esc_html__( 'Normal', 'wingman' ) => '',
-                esc_html__( 'Circle Background', 'wingman' ) => 'circle_background',
-                esc_html__( 'Square Background', 'wingman' ) => 'square_background',
-                esc_html__( 'Round Background', 'wingman' ) => 'round_background',
-                esc_html__( 'Circle Border', 'wingman' ) => 'circle_border',
-                esc_html__( 'Square Border', 'wingman' ) => 'square_border',
-                esc_html__( 'Round Border', 'wingman' ) => 'round_border',
+                esc_html__( 'Normal', 'wingman' ) => 'normal',
+                esc_html__( 'Circle Background', 'wingman' ) => 'circle-background',
+                esc_html__( 'Square Background', 'wingman' ) => 'square-background',
+                esc_html__( 'Round Background', 'wingman' ) => 'round-background',
+                esc_html__( 'Circle Border', 'wingman' ) => 'circle-border',
+                esc_html__( 'Square Border', 'wingman' ) => 'square-border',
+                esc_html__( 'Round Border', 'wingman' ) => 'round-border',
             ),
-            'std' => 'square_border',
+            'std' => 'normal',
             "dependency" => array("element" => "navigation","value" => array('true')),
         ),
-
         array(
-            'type' => 'kt_radio',
-            'heading' => esc_html__( 'Navigation Icon', 'js_composer' ),
-            'param_name' => 'navigation_icon',
-            'class_input' => "radio-wrapper-group",
-            'value' => array(
-                '<span><i class="fa fa-angle-left"></i><i class="fa fa-angle-right"></i></span>' => 'fa fa-angle-left|fa fa-angle-right',
-                '<span><i class="fa fa-chevron-left"></i><i class="fa fa-chevron-right"></i></span>' => 'fa fa-chevron-left|fa fa-chevron-right',
-                '<span><i class="fa fa-angle-double-left"></i><i class="fa fa-angle-double-right"></i></span>' => 'fa fa-angle-double-left|fa fa-angle-double-right',
-                '<span><i class="fa fa-long-arrow-left"></i><i class="fa fa-long-arrow-right"></i></span>' => 'fa fa-long-arrow-left|fa fa-long-arrow-right',
-                '<span><i class="fa fa-chevron-circle-left"></i><i class="fa fa-chevron-circle-right"></i></span>' =>'fa fa-chevron-circle-left|fa fa-chevron-circle-right',
-                '<span><i class="fa fa-arrow-circle-o-left"></i><i class="fa fa-arrow-circle-o-right"></i></span>' => 'fa fa-arrow-circle-o-left|fa fa-arrow-circle-o-right',
-            ),
-            'description' => esc_html__( 'Select your style for navigation.', 'wingman' ),
-            "dependency" => array("element" => "navigation","value" => array('true')),
+            "type" => "kt_heading",
+            "heading" => esc_html__("Pagination settings", 'wingman'),
+            "param_name" => "pagination_settings",
             'group' => esc_html__( 'Carousel', 'wingman' )
         ),
-
+        array(
+            'type' => 'kt_switch',
+            'heading' => esc_html__( 'Pagination', 'wingman' ),
+            'param_name' => 'pagination',
+            'value' => 'false',
+            "description" => esc_html__("Show pagination in carousel", 'wingman'),
+            'group' => esc_html__( 'Carousel', 'wingman' )
+        ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Carousel Skin', 'js_composer' ),
-            'param_name' => 'carousel_skin',
+            'heading' => esc_html__( 'Pagination position', 'wingman' ),
+            'param_name' => 'pagination_position',
             'group' => esc_html__( 'Carousel', 'wingman' ),
             'value' => array(
-                esc_html__( 'Black', 'wingman' ) => 'black',
-                esc_html__( 'White', 'wingman' ) => 'white',
-                esc_html__( 'Accent', 'wingman' ) => 'accent'
+                esc_html__( 'Center Top', 'wingman') => 'center-top',
+                esc_html__( 'Center Bottom', 'wingman') => 'center-bottom',
+                esc_html__( 'Bottom Left', 'wingman') => 'bottom-left',
             ),
-            'std' => 'black',
+            'std' => 'center_bottom',
+            "dependency" => array("element" => "pagination","value" => array('true')),
         ),
-
+        array(
+            'type' => 'dropdown',
+            'heading' => esc_html__( 'Pagination style', 'js_composer' ),
+            'param_name' => 'pagination_style',
+            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'value' => array(
+                esc_html__( 'Dot stroke', 'wingman' ) => 'dot-stroke',
+                esc_html__( 'Fill pp', 'wingman' ) => 'fill-up',
+                esc_html__( 'Circle grow', 'wingman' ) => 'circle-grow',
+            ),
+            'std' => 'dot_stroke',
+            "dependency" => array("element" => "pagination","value" => array('true')),
+        ),
         array(
 			'type' => 'css_editor',
 			'heading' => esc_html__( 'Css', 'js_composer' ),

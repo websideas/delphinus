@@ -125,11 +125,7 @@
                 options.itemsTablet = [768,options.tablet];
             }
 
-            if(typeof options.navigation_icon === "undefined"){
-                options.navigation_icon = 'fa fa-angle-left|fa fa-angle-right';
-            }
-            var owlNavigationIconArr = options.navigation_icon.split('|', 2);
-            options.navigationText = ["<i class='"+owlNavigationIconArr[0]+"'></i>", "<i class='"+owlNavigationIconArr[1]+"'></i>"];
+            options.navigationText = ["", ""];
 
 
             if(typeof options.mobile !== "undefined"){

@@ -11,6 +11,7 @@
     cursor: url(../images/drag.png) 16 9, ew-resize !important;
   }
 
+  /*
   &.gutters{
     margin-left: -15px;
     margin-right: -15px;
@@ -21,76 +22,135 @@
       }
     }
   }
-
-
-
-  &.hidden-navigation{
-    .owl-buttons {
-      @include opacity(0);
-    }
-    &:hover{
-      .owl-buttons{
-        @include opacity(1);
-      }
-    }
-  }
-
-  .owl-controls{
-    margin: 85px 0 0;
-  }
-
+  */
 
   .owl-pagination{
     text-align: center;
     .owl-page{
-      background: #d7d7d7;
       cursor: pointer;
-      height: 8px;
+      height: 14px;
       display: inline-block;
-      width: 8px;
-      margin: 0 7px;
-      @include border-radius(50%);
-      @include transition();
-      &:hover,
-      &.active{
-        background: #000000;
+      width: 14px;
+      position: relative;
+      span{
+        @include transition();
+        @include border-radius(50%);
+        @include transition();
+        overflow: hidden;
+        cursor: pointer;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+      + .owl-page{
+        margin-left: 14px;
+      }
+    }
+  }
+
+  &.pagination-dot-stroke{
+    .owl-page{
+      span{
+        background-color: rgba($black, 0.3);
+        @include box-shadow(0, 0, 0, rgba($black, .5), inset, 8px);
+      }
+      &.active span,
+      &:hover span{
+        @include box-shadow(0, 0, 0, $black, inset, 1px);
+      }
+    }
+  }
+  &.pagination-fill-up,
+  &.pagination-circle-grow{
+    .owl-page{
+      span{
+        @include box-shadow(0, 0, 0, $black, inset, 2px);
+        &:after {
+          background-color: $black;
+          @include border-radius(50%);
+          bottom: 0;
+          content: "";
+          left: 0;
+          position: absolute;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &.pagination-fill-up {
+    .owl-page{
+      span{
+
+        &:after {
+          height: 0;
+          @include transition('height 0.3s ease 0s');
+        }
+      }
+      &.active span,
+      &:hover span{
+        &:after {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  &.pagination-circle-grow{
+    .owl-page{
+      span{
+        &:after{
+          height: 100%;
+          @include transform(scale(0));
+          @include css3-prefix('transform-origin', '50% 50% 0');
+          @include transition('transform 0.3s ease 0s');
+        }
+      }
+      &.active span,
+      &:hover span{
+        &:after {
+          @include transform(scale(1));
+        }
       }
     }
   }
 
   .owl-buttons {
-    /*@include opacity(0);*/
     @include transition(all 1s ease);
     position: relative;
     text-align: center;
-
-    &:before{
-      content: '';
-      height: 100%;
-      width: 2px;
-      @include translate();
-      background: #e9eaeb;
-    }
-
+    @include opacity(0);
+    line-height: 30px;
     > div{
-      cursor: pointer;
+      font-weight: normal;
+      color: #000000;
+      font-size: 30px;
+      height: 30px;
+      width: 30px;
       display: inline-block;
-      height: 40px;
-      width: 40px;
-      line-height: 40px;
-      font-size: 24px;
-      color: $text;
-      margin: 0 10px;
-      @include transition();
-      &:hover{
-        color: $primary-color;
+      text-align: center;
+      + div{
+        margin-left: 10px;
       }
+    }
+  }
 
+  &:hover{
+    .owl-buttons{
+      @include opacity(1);
     }
   }
 
 
-  &.navigation-center_outside,
+  &.visiable-navigation{
+    .owl-buttons {
+      @include opacity(1);
+    }
+  }
+
+  &.navigation-center-outside,
   &.navigation-center{
     .owl-controls{
       margin-top: 0;
@@ -133,25 +193,52 @@
 
   &.navigation-top{
     .owl-buttons{
-      margin-bottom: 100px;
-      &:after,
-      &:before{
-        width: 75px;
-        height: 2px;
-        background: $gray-text;
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        @include transform(translate(-50%, -50%) rotate(45deg));
-      }
-      &:after{
-        @include transform(translate(-50%, -50%) rotate(-45deg));
-      }
-      > div{
-        margin: 0 50px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.navigation-normal{
+    .owl-buttons{
+      div{
+        &:before{
+          font-family: FontAwesome;
+        }
+        &.owl-prev{
+          &:before{
+            content:"\f104";
+          }
+        }
+        &.owl-next{
+          &:before{
+            content:"\f105";
+          }
+        }
       }
     }
   }
+
+
+  &.pagination-center-top{
+    .owl-pagination{
+      margin-bottom: 20px;
+    }
+  }
+
+  &.pagination-bottom-left,
+  &.pagination-center-bottom{
+    .owl-pagination{
+      margin-top: 20px;
+    }
+  }
+
+  &.pagination-bottom-left{
+    .owl-pagination{
+      text-align: left;
+      padding-left: 15px;
+    }
+  }
+
+
+
 
 }

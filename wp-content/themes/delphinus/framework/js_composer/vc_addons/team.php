@@ -146,5 +146,5 @@ vc_map( array(
             // 'description' => esc_html__( 'Style particular content element differently - add a class name and refer to it in custom CSS.', 'js_composer' ),
             'group' => esc_html__( 'Design Options', 'js_composer' )
         )
-    ),
+    )
 ));

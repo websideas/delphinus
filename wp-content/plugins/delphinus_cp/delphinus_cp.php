@@ -96,3 +96,18 @@ function register_kt_testimonial_init(){
         'show_admin_column'             => true
     ));
 }
+
+
+
+/**
+ * Remove Rev Slider Metabox
+ */
+if ( is_admin() ) {
+
+    function remove_revolution_slider_meta_boxes() {
+        remove_meta_box( 'mymetabox_revslider_0', 'kt_testimonial', 'normal' );
+        remove_meta_box( 'mymetabox_revslider_0', 'kt_client', 'normal' );
+    }
+    add_action( 'do_meta_boxes', 'remove_revolution_slider_meta_boxes' );
+
+}

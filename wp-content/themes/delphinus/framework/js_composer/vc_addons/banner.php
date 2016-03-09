@@ -8,9 +8,6 @@ class WPBakeryShortCode_Banner extends WPBakeryShortCode {
     protected function content($atts, $content = null) {
 
         extract(shortcode_atts(array(
-            'title' => '',
-            'suffix' => '',
-            'prefix' => '',
             'image' => '',
             'link' => '',
             'img_size' => 'thumbnail',
@@ -46,10 +43,7 @@ class WPBakeryShortCode_Banner extends WPBakeryShortCode {
 
         $output = $img['thumbnail'];
 
-        $suffix = ($suffix) ? '<p class="banner-suffix">'.$suffix.'</p>' : '';
-        $prefix = ($prefix) ? '<p class="banner-prefix">'.$prefix.'</p>' : '';
-
-        $output .= sprintf('<div class="banner-content">%s<h3 class="banner-title">%s</h3>%s</div>', $suffix, $title, $prefix);
+        $output .= sprintf('<div class="banner-content">%s</div>', $content);
 
         if($link){
             $link = vc_build_link( $link );
@@ -77,29 +71,15 @@ vc_map( array(
     "base" => "banner",
     "category" => esc_html__('by Kite-Themes', 'wingman' ),
     "description" => esc_html__( "", 'wingman'),
-    "wrapper_class" => "clearfix",
+
     "params" => array(
         array(
-            "type" => "textfield",
-            'heading' => esc_html__( 'Title', 'js_composer' ),
-            'param_name' => 'title',
-            'value' => esc_html__( 'Title', 'js_composer' ),
-            "admin_label" => true,
+            "type" => "textarea_html",
+            "heading" => esc_html__("Content", 'wingman'),
+            "param_name" => "content",
+            "description" => esc_html__("", 'wingman'),
+            'holder' => 'div',
         ),
-
-        array(
-            "type" => "textfield",
-            'heading' => __( 'Title suffix', '' ),
-            'param_name' => 'suffix',
-            "description" => __( "Enter suffix for title" , 'mondova'),
-        ),
-        array(
-            "type" => "textfield",
-            'heading' => __( 'Title prefix', 'mondova' ),
-            'param_name' => 'prefix',
-            "description" => __( "Enter prefix for title" , 'mondova'),
-        ),
-
         array(
             'type' => 'vc_link',
             'heading' => esc_html__( 'Link Url', 'js_composer' ),
@@ -128,18 +108,8 @@ vc_map( array(
             'value' => array(
                 esc_html__( 'Default', 'wingman' ) => '',
                 esc_html__( 'Dark (15%)', 'wingman' ) => 'dark',
-                esc_html__( 'Dark (35%)', 'wingman' ) => 'dark2',
-                esc_html__( 'Darker (50%)', 'wingman' ) => 'dark3',
-            ),
-        ),
-
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'Banner Style', 'wingman' ),
-            'param_name' => 'style',
-            'value' => array(
-                esc_html__( 'Style 1', 'wingman' ) => '1',
-                esc_html__( 'Style 2', 'wingman' ) => '2',
+                esc_html__( 'Dark (40%)', 'wingman' ) => 'dark2',
+                esc_html__( 'Darker (60%)', 'wingman' ) => 'dark3',
             ),
         ),
 

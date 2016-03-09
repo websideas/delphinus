@@ -48,7 +48,13 @@ class RevSliderTinyBox {
 
 		if(!function_exists('vc_map')) return false;
 		
-		add_action( 'init', array('RevSliderTinyBox', 'add_to_VC' ));
+		
+		Vc_Manager()->init();
+		$mode = Vc_Manager()->mode();
+		
+		if ( in_array($mode, array('admin_page', 'admin_frontend_editor')) ) {
+			add_action( 'init', array('RevSliderTinyBox', 'add_to_VC' ));
+		}
 	}
 	
 	

@@ -111,7 +111,7 @@ class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
 /* Custom Heading element
 ----------------------------------------------------------- */
 vc_map( array(
-    'name' => esc_html__( 'KT Heading', 'wingman' ),
+    'name' => esc_html__( 'KT: Heading', 'wingman' ),
     'base' => 'kt_heading',
     "category" => esc_html__('by Kite-Themes', 'wingman' ),
     'params' => array(

@@ -126,7 +126,7 @@ function kt_taxonomy_settings_field( $settings, $value ) {
         }
         $terms = get_terms( $settings['taxonomy'] , array('hide_empty' => false));
         foreach( $terms as $term ) {
-            $term_val = ($select == 'slug') ? $term->term_id : $term->slug;
+            $term_val = ($select == 'slug') ? $term->slug : $term->term_id;
             $selected = (in_array( $term_val, $value_arr )) ? ' selected="selected"' : '';
             $output .= "<option class='" . $term_val . "' value='".$term_val."' ".$selected.">".htmlspecialchars($term->name)."</option>";
         }

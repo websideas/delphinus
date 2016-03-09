@@ -56,26 +56,28 @@ vc_add_params("vc_custom_heading", array(
 
 /*
 $composer_addons = array(
-    //'dropcap.php',
     'blockquote.php',
     'googlemap.php',
     'socials.php',
-    'gallery-grid.php',
-    'gallery_fullwidth.php',
-    'gallery-justified.php'
 );
 */
+
+
 $composer_addons = array(
     'heading.php',
     'icon_box.php',
     'blog_posts.php',
+    'banner.php',
+    'clients_carousel.php'
 );
 
 if(kt_is_wc()){
     $composer_wc_addons = array(
         'products_tab.php',
         'products_widget_carousel.php',
-        'products_carousel.php'
+        'products_carousel.php',
+        'product_categories_carousel.php',
+        'products.php'
     );
     $composer_addons = array_merge($composer_wc_addons, $composer_addons);
 }

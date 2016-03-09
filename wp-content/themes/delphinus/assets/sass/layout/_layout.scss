@@ -65,13 +65,14 @@
   }
 }
 
-
-
-
 .header-container{
   position: relative;
   z-index: 100;
-  border-bottom: 1px solid $border-color;
+}
+
+.header-content{
+  position: relative;
+  z-index: 10;
 }
 
 .navbar-container-inner{
@@ -103,6 +104,8 @@
     }
   }
 }
+
+
 .header-layout1{
   .main-nav-outer{
     text-align: center;

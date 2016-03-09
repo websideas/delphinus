@@ -221,6 +221,29 @@ function kt_register_meta_boxes( $meta_boxes )
     );
 
     /**
+     * For Client
+     *
+     */
+
+    $meta_boxes[] = array(
+        'id' => 'client_meta_boxes',
+        'title' => 'Client Options',
+        'pages' => array( 'kt_client' ),
+        'context' => 'normal',
+        'priority' => 'default',
+        'fields' => array(
+
+            array(
+                'name' => esc_html__( 'Link Client', 'wingman' ),
+                'id' => $prefix . 'link_client',
+                'desc' => esc_html__( "Link Client.", 'wingman' ),
+                'type'  => 'text',
+            ),
+
+        )
+    );
+
+    /**
      * For Page Options
      *
      */

@@ -66,7 +66,7 @@ function kt_theme_setup() {
 	add_theme_support( 'post-thumbnails' );
 
     if (function_exists( 'add_image_size' ) ) {
-        add_image_size( 'kt_grid', 570, 650, true);
+        add_image_size( 'kt_grid', 570, 380, true);
         add_image_size( 'kt_masonry', 570);
         add_image_size( 'kt_list', 700, 570, true);
         add_image_size( 'kt_classic', 1140, 600, true );
@@ -167,6 +167,19 @@ function kt_setting_script() {
 }
 add_action('wp_enqueue_scripts', 'kt_setting_script');
 
+
+if ( ! function_exists( 'kt_excerpt_more' ) ) :
+    /**
+     * Replaces "[...]" (appended to automatically generated excerpts) with ...
+     *
+     * @param string $more Default Read More excerpt link.
+     * @return string Filtered Read More excerpt link.
+     */
+    function kt_excerpt_more( $more ) {
+        return ' &hellip; ';
+    }
+    add_filter( 'excerpt_more', 'kt_excerpt_more' );
+endif;
 
 /**
  * Control the number of  excerpt length

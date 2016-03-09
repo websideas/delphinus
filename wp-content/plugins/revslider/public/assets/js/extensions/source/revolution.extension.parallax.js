@@ -1,6 +1,6 @@
 /********************************************
  * REVOLUTION 5.1.6 EXTENSION - PARALLAX
- * @version: 1.2 (04.01.2016)
+ * @version: 1.3 (14.01.2016)
  * @requires jquery.themepunch.revolution.js
  * @author ThemePunch
 *********************************************/
@@ -317,7 +317,7 @@ jQuery.extend(true,_R, {
 		b.h = opt.conh==0 ? opt.c.height() : opt.conh;		
 		b.bottom = (t-st) + b.h;
 
-		var proc = b.top<0 ? b.top / b.h : b.bottom>opt.lastwindowheight ? (b.bottom-opt.lastwindowheight) / b.h : 0;
+		var proc = b.top<0 || b.h>opt.lastwindowheight ? b.top / b.h : b.bottom>opt.lastwindowheight ? (b.bottom-opt.lastwindowheight) / b.h : 0;
 		opt.scrollproc = proc;
 
 		if (_R.callBackHandling)
@@ -360,11 +360,13 @@ jQuery.extend(true,_R, {
 					var pc = jQuery(this),
 						pl = parseInt(pc.data('parallaxlevel'),0)/100,
 						offsv =	proc * -(pl*opt.conh) || 0;
+					
 					pc.data('parallaxoffset',offsv);					
 					pt.add(punchgs.TweenLite.set(pc,{force3D:"auto",y:offsv}),0);
 				});		
 
-			opt.c.find('.tp-revslider-slidesli .slotholder, .tp-revslider-slidesli .rs-background-video-layer').each(function() {			
+			opt.c.find('.tp-revslider-slidesli .slotholder, .tp-revslider-slidesli .rs-background-video-layer').each(function() {	
+			console.log("hey")		
 				var t = jQuery(this),
 					l = t.data('bgparallax') || opt.parallax.bgparallax;				
 					l = l == "on" ? 1 : l;						
@@ -372,6 +374,8 @@ jQuery.extend(true,_R, {
 
 						var pl = opt.parallax.levels[parseInt(l,0)-1]/100,
 						offsv =	proc * -(pl*opt.conh) || 0;		
+
+
 						if (jQuery.isNumeric(offsv))																					
 							pt.add(punchgs.TweenLite.set(t,{position:"absolute",top:"0px",left:"0px",backfaceVisibility:"hidden",force3D:"true",y:offsv+"px"}),0);								
 					}

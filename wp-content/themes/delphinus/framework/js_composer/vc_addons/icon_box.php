@@ -4,9 +4,9 @@
 if ( !defined('ABSPATH')) exit;
 
 require_once vc_path_dir( 'SHORTCODES_DIR', 'vc-custom-heading.php' );
-
 class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
     protected function content($atts, $content = null) {
+
         $atts = shortcode_atts( array(
             'title' => __( 'Title', 'js_composer' ),
             'link' => '',
@@ -21,9 +21,9 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
             'iconbox_image' => '',
 
             'color' => '',
-            'color_hover' => '',
             'custom_color' => '',
             'size' => 'md',
+
             'align' => 'center',
             'icon_box_layout' => '1',
 
@@ -35,10 +35,9 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
 
         $custom_css = $output = $style_title = '';
         $uniqid = 'features-box-'.uniqid();
-        $link_icon = $link;
 
         $elementClass = array(
-            'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'features-box', $this->settings['base'], $atts ),
+            'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'feature-box', $this->settings['base'], $atts ),
             'extra' => $this->getExtraClass( $el_class ),
             'css_animation' => $this->getCSSAnimation( $css_animation ),
             'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
@@ -88,8 +87,8 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
         }
 
 
-        $icon_box_title = ($title) ? '<' . $font_container_data['values']['tag'] . ' class="features-box-title" '.$style_title.'>'.$title.'</' . $font_container_data['values']['tag'] . '>' : '';
-        $icon_box_content = ($content) ? '<div class="features-box-content">'.$content.'</div>' : '';
+        $icon_box_title = ($title) ? '<' . $font_container_data['values']['tag'] . ' class="feature-box-title" '.$style_title.'>'.$title.'</' . $font_container_data['values']['tag'] . '>' : '';
+        $icon_box_content = ($content) ? '<div class="feature-box-content">'.$content.'</div>' : '';
 
 
         $icon_box_icon = '';
@@ -102,11 +101,20 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
                 $icon_box_icon = sprintf('<img src="%s" class="img-responsive" alt="" />', $img_lightbox['0']);
             }
         }else{
-            $icon_box_icon = sprintf('<span class="%s %s"></span>', $iconbox_icon, 'vc_icon_box size-'.$size);
+
+            $icon_box_class = array('vc_icon_box size-'.$size);
+            if($color != 'custom'){
+                $icon_box_class[] = 'color-'.$color;
+                $custom_color = kt_color2Hex($color);
+            }
+
+            $icon_box_style = 'style="color: '.$custom_color.'"';
+            $icon_box_icon = sprintf('<span class="%s %s" %s></span>', $iconbox_icon, implode( ' ' , $icon_box_class), $icon_box_style);
+
         }
 
         if($icon_box_icon){
-            $icon_box_icon = '<div class="features-box-icon">'.$icon_box_icon.'</div>';
+            $icon_box_icon = '<div class="feature-box-icon">'.$icon_box_icon.'</div>';
         }
 
         $output .= $icon_box_icon . $icon_box_title . $icon_box_content;
@@ -116,6 +124,7 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
 
         return '<div id="'.$uniqid.'" class="'.esc_attr( $elementClass ).'">'.$output.$custom_css.'</div>';
 
+
     }
 }
 
@@ -123,16 +132,16 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
 
 // Add your Visual Composer logic here
 vc_map( array(
-    "name" => esc_html__( "Icon box", 'wingman'),
+    "name" => esc_html__( "KT: Icon Box", 'wingman'),
     "base" => "icon_box",
-    "category" => esc_html__('by Theme', 'wingman' ),
-    "description" => esc_html__( "Icon box description", 'wingman'),
+    "category" => esc_html__('by Kite-Themes', 'wingman' ),
+    "description" => esc_html__( "", 'wingman'),
+    "wrapper_class" => "clearfix",
     "params" => array(
         array(
             "type" => "textfield",
             'heading' => esc_html__( 'Title', 'js_composer' ),
             'param_name' => 'title',
-            'value' => esc_html__( 'Title', 'js_composer' ),
             "admin_label" => true,
         ),
 
@@ -184,9 +193,6 @@ vc_map( array(
             "param_name" => "el_class",
             "description" => esc_html__( "If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file.", "js_composer" ),
         ),
-
-
-
         //Icon settings
         array(
             'type' => 'dropdown',
@@ -310,17 +316,13 @@ vc_map( array(
         ),
 
 
-        //Design options
         array(
             'type' => 'css_editor',
-            'heading' => esc_html__( 'Css', 'js_composer' ),
+            'heading' => esc_html__( 'CSS box', 'js_composer' ),
             'param_name' => 'css',
-            // 'description' => esc_html__( 'If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file.', 'js_composer' ),
-            'group' => esc_html__( 'Design options', 'js_composer' )
-        ),
+            // 'description' => esc_html__( 'Style particular content element differently - add a class name and refer to it in custom CSS.', 'js_composer' ),
+            'group' => esc_html__( 'Design Options', 'js_composer' )
+        )
 
-
-
-
-    ),
+    )
 ));
