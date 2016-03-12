@@ -20,7 +20,8 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
             'autoplayspeed' => 5000,
             'slidespeed' => 200,
             'desktop' => 4,
-            'tablet' => 1,
+            'desktopsmall' => 3,
+            'tablet' => 2,
             'mobile' => 1,
             'gutters' => false,
             'navigation' => true,
@@ -219,6 +220,7 @@ vc_map( array(
             'param_name' => 'mousedrag',
             'value' => 'true',
             "description" => esc_html__("Mouse drag enabled.", 'wingman'),
+            "edit_field_class" => "vc_col-sm-4 kt_margin_bottom",
             'group' => esc_html__( 'Carousel', 'wingman' )
         ),
         array(
@@ -235,7 +237,6 @@ vc_map( array(
             "heading" => esc_html__("AutoPlay Speed", 'wingman'),
             "param_name" => "autoplayspeed",
             "value" => "5000",
-            "edit_field_class" => "vc_col-sm-4 kt_margin_bottom",
             "suffix" => esc_html__("milliseconds", 'wingman'),
             'group' => esc_html__( 'Carousel', 'wingman' ),
             "dependency" => array("element" => "autoplay","value" => array('true')),
@@ -246,6 +247,60 @@ vc_map( array(
             "param_name" => "slidespeed",
             "value" => "200",
             "suffix" => esc_html__("milliseconds", 'wingman'),
+            'group' => esc_html__( 'Carousel', 'wingman' )
+        ),
+        array(
+            "type" => "kt_heading",
+            "heading" => esc_html__("Items to Show?", 'wingman'),
+            "param_name" => "items_show",
+            'group' => esc_html__( 'Carousel', 'wingman' )
+        ),
+        array(
+            "type" => "kt_number",
+            "class" => "",
+            "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
+            "heading" => esc_html__("On Desktop", 'wingman'),
+            "param_name" => "desktop",
+            "value" => 4,
+            "min" => "1",
+            "max" => "5",
+            "step" => "1",
+            'group' => esc_html__( 'Carousel', 'wingman' )
+        ),
+
+        array(
+            'type' => 'kt_number',
+            'heading' => esc_html__( 'on Tablets Landscape', 'wingman' ),
+            'param_name' => 'desktopsmall',
+            "value" => 3,
+            "min" => "1",
+            "max" => "5",
+            "step" => "1",
+            "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
+            'group' => esc_html__( 'Carousel', 'wingman' )
+        ),
+        array(
+            "type" => "kt_number",
+            "class" => "",
+            "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
+            "heading" => esc_html__("On Tablet", 'wingman'),
+            "param_name" => "tablet",
+            "value" => 2,
+            "min" => "1",
+            "max" => "5",
+            "step" => "1",
+            'group' => esc_html__( 'Carousel', 'wingman' )
+        ),
+        array(
+            "type" => "kt_number",
+            "class" => "",
+            "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
+            "heading" => esc_html__("On Mobile", 'wingman'),
+            "param_name" => "mobile",
+            "value" => 1,
+            "min" => "1",
+            "max" => "5",
+            "step" => "1",
             'group' => esc_html__( 'Carousel', 'wingman' )
         ),
         array(

@@ -57,8 +57,6 @@ if ( ! defined( 'ABSPATH' ) ) {
             echo '<ul>'.$terms_html.'</ul>';
         }
 
-
-
         printf(
             '<a href="%s" class="%s">%s</a>',
             get_term_link( $category->slug, 'product_cat' ),

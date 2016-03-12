@@ -16,6 +16,27 @@
     init_wc_currency();
     init_wc_quantily();
     init_wc_carousel();
+    init_wc_masonry();
+
+
+    function init_wc_masonry(){
+        $('.kt-products-masonry').each(function(){
+            var $masonry = $(this);
+            $masonry.imagesLoaded(function() {
+
+                $('.shop-products', $masonry).isotope({
+                    resizable: false,
+                    itemSelector : '.product',
+                    layoutMode: 'packery',
+                    packery: {
+                        columnWidth: '.grid-sizer'
+                    }
+                });
+
+            });
+
+        });
+    }
 
 
     /* ---------------------------------------------

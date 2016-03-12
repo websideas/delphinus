@@ -354,6 +354,62 @@ function kt_register_meta_boxes( $meta_boxes )
         'fields'    => array_merge( $fields_post, $fields),
     );
 
+
+    /**
+     * Product Settings
+     *
+     */
+    $meta_boxes[] = array(
+        'title'  => __('Product Settings','delphinus'),
+        'pages'  => array( 'product' ),
+        'fields' => array(
+            //General
+            array(
+                'name' => esc_html__('Product layout', 'adroit'),
+                'id' => $prefix . 'slideshow_type',
+                'desc' => esc_html__("Choose the layout for the product detail display.", 'adroit'),
+                'type' => 'select',
+                'options' => array(
+                    'standard' => esc_html__('Standard', 'adroit'),
+                    'layout2' => esc_html__('Layout 2', 'adroit'),
+                    'layout3' => esc_html__('Layout 3', 'adroit'),
+                )
+            ),
+            array(
+                'id'               => 'image_advanced',
+                'name'             => __( 'Image Advanced', 'your-prefix' ),
+                'type'             => 'image_advanced',
+                // Maximum image uploads
+                'max_file_uploads' => 1,
+            ),
+            array(
+                'name' => __('Disposition', 'delphinus'),
+                'id' => $prefix . 'box_size',
+                'desc' => __('Select disposition for Packery display', 'delphinus'),
+                'type'     => 'select',
+                'options'  => array(
+                    'normal' => __('Normal (1x1)', 'delphinus'),
+                    'landscape' => __('Landscape (2x1)', 'delphinus'),
+                    'portrait' => __('Portrait (1x2)', 'delphinus'),
+                    'wide' => __('Wide (2x2)', 'delphinus'),
+                    'big' => __('Big (3x2)', 'delphinus'),
+                ),
+                'tab'  => 'product_general',
+                'std'  => 'normal'
+            ),
+
+            array(
+                'name'        => __( 'Short Description in List view', 'your-prefix' ),
+                'id'          => 'textarea',
+                'desc'        => __( 'You can optionally write a short description here, which shows in List view (Product Archive).', 'your-prefix' ),
+                'type'        => 'textarea',
+                'placeholder' => __( 'Empty if you want use Product Short Description', 'your-prefix' ),
+                'rows'        => 5,
+            ),
+        ),
+    );
+    
+    
     return $meta_boxes;
 }
 

@@ -39,18 +39,16 @@ if ( ! $product || ! $product->is_visible() ) {
 // Increase loop count
 $woocommerce_loop['loop']++;
 
-if ( empty( $woocommerce_loop['effect'] ) ) {
-    $woocommerce_loop['effect'] = 1;
-}
+
+
 if ( empty( $woocommerce_loop['type'] ) ) {
-    $woocommerce_loop['type'] = 'standard';
+    $woocommerce_loop['type'] = 'classic';
 }
 
 
 // Extra post classes
 $classes = array(
     'product',
-    'product-effect-'.$woocommerce_loop['effect'],
     'product-type-'.$woocommerce_loop['type']
 );
 if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 === $woocommerce_loop['columns'] ) {
@@ -60,76 +58,83 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
     $classes[] = 'last';
 }
 
-$bootstrapColumn = round( 12 / $woocommerce_loop['columns'] );
+if($woocommerce_loop['type'] == 'masonry'){
+    $box_size = get_post_meta($product->id, '_kt_box_size', true);
+    if($box_size == 'wide' || $box_size == 'landscape'){
+        $bootstrapColumn = '6';
+    }elseif($box_size == 'big'){
+        $bootstrapColumn = '9';
+    }else{
+        $bootstrapColumn = '3';
+    }
+}else{
+    $bootstrapColumn = round( 12 / $woocommerce_loop['columns'] );
+}
 
-$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s', $bootstrapColumn, 6);
-
-
-
+$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-12', $bootstrapColumn, 6);
 
 ?>
 <li <?php post_class( $classes ); ?>>
+    <div class="product-inner">
+        <div class="product-content">
+            <?php
+
+            /**
+             * woocommerce_before_shop_loop_item hook.
+             *
+             * @hooked woocommerce_template_loop_product_link_open - 10
+             */
+            do_action( 'woocommerce_before_shop_loop_item' );
+
+            /**
+             * woocommerce_before_shop_loop_item_title hook.
+             *
+             * @hooked woocommerce_show_product_loop_sale_flash - 10
+             * @hooked woocommerce_template_loop_product_thumbnail - 10
+             */
+            do_action( 'woocommerce_before_shop_loop_item_title' );
+
+            /**
+             * woocommerce_after_shop_loop_item hook.
+             *
+             * @hooked woocommerce_template_loop_product_link_close - 5
+             * @hooked woocommerce_template_loop_add_to_cart - 10
+             */
+            do_action( 'woocommerce_after_shop_loop_item' );
 
 
-    <div class="product-content">
+            if($woocommerce_loop['type'] == 'classic'){
+                do_action( 'woocommerce_shop_loop_item_content' );
+            }
 
-        <?php
+            ?>
+        </div>
+        <div class="product-details">
+            <?php
+            /**
+             * woocommerce_shop_loop_item_title hook.
+             *
+             * @hooked woocommerce_template_loop_product_title - 10
+             */
+            do_action( 'woocommerce_shop_loop_item_title' );
 
-        /**
-         * woocommerce_before_shop_loop_item hook.
-         *
-         * @hooked woocommerce_template_loop_product_link_open - 10
-         */
-        do_action( 'woocommerce_before_shop_loop_item' );
-
-        /**
-         * woocommerce_before_shop_loop_item_title hook.
-         *
-         * @hooked woocommerce_show_product_loop_sale_flash - 10
-         * @hooked woocommerce_template_loop_product_thumbnail - 10
-         */
-        do_action( 'woocommerce_before_shop_loop_item_title' );
-
-        /**
-         * woocommerce_after_shop_loop_item hook.
-         *
-         * @hooked woocommerce_template_loop_product_link_close - 5
-         * @hooked woocommerce_template_loop_add_to_cart - 10
-         */
-        do_action( 'woocommerce_after_shop_loop_item' );
+            /**
+             * woocommerce_after_shop_loop_item_title hook.
+             *
+             * @hooked woocommerce_template_loop_rating - 5
+             * @hooked woocommerce_template_loop_price - 10
+             */
+            do_action( 'woocommerce_after_shop_loop_item_title' );
 
 
-        if($woocommerce_loop['type'] == 'standard'){
-            do_action( 'woocommerce_shop_loop_item_content' );
-        }
+            if($woocommerce_loop['type'] == 'classic'){
+                echo '<div class="product-details-action">';
+                do_action( 'woocommerce_shop_loop_item_details' );
+                echo '</div>';
+            }
 
-        ?>
-    </div>
-    <div class="product-details">
-        <?php
-        /**
-         * woocommerce_shop_loop_item_title hook.
-         *
-         * @hooked woocommerce_template_loop_product_title - 10
-         */
-        do_action( 'woocommerce_shop_loop_item_title' );
-
-        /**
-         * woocommerce_after_shop_loop_item_title hook.
-         *
-         * @hooked woocommerce_template_loop_rating - 5
-         * @hooked woocommerce_template_loop_price - 10
-         */
-        do_action( 'woocommerce_after_shop_loop_item_title' );
-
-
-        if($woocommerce_loop['type'] == 'standard'){
-            echo '<div class="product-details-action">';
-            do_action( 'woocommerce_shop_loop_item_details' );
-            echo '</div>';
-        }
-
-        ?>
+            ?>
+        </div>
     </div>
 
 </li>

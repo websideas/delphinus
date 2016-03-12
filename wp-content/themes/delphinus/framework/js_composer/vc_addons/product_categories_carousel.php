@@ -129,7 +129,7 @@ class WPBakeryShortCode_Categories_Carousel extends WPBakeryShortCode {
 
 
 vc_map( array(
-    "name" => esc_html__( "KT: Categories Carousel", 'wingman'),
+    "name" => esc_html__( "KT: Product Categories Carousel", 'wingman'),
     "base" => "categories_carousel",
     "category" => esc_html__('by Kite-Themes', 'wingman' ),
     "params" => array(

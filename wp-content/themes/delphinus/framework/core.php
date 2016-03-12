@@ -67,10 +67,7 @@ require KT_FW_EXT_DIR .'nav/nav_custom_walker.php';
  *
  */
 
-define( 'RWMB_URL', trailingslashit( KT_FW_EXT_URL . 'meta-box' ) );
-define( 'RWMB_DIR', trailingslashit( KT_FW_EXT_DIR . 'meta-box' ) );
-
-require RWMB_DIR . 'meta-box.php';
+require KT_FW_EXT_DIR . 'meta-box/meta-box.php';
 
 if ( class_exists( 'RW_Meta_Box' ) && is_admin() ) {
 

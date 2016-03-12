@@ -2664,6 +2664,12 @@ video {
   opacity: 1; }
 
 /*
+ * 10.16 Client
+ */
+.kt-wrapper {
+  margin: 0 auto 30px auto; }
+
+/*
  * Owl Carousel
  */
 .owl-carousel-kt {

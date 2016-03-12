@@ -70,7 +70,6 @@ function kt_theme_setup() {
         add_image_size( 'kt_masonry', 570);
         add_image_size( 'kt_list', 700, 570, true);
         add_image_size( 'kt_classic', 1140, 600, true );
-        add_image_size( 'kt_zigzag', 960, 600, true);
         add_image_size( 'kt_small', 170, 170, true );
     }
     

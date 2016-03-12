@@ -9,7 +9,7 @@ class WPBakeryShortCode_KT_Products extends WPBakeryShortCode {
     protected function content($atts, $content = null) {
         $atts = shortcode_atts( array(
 
-            'product_stype' => 'classic',
+            'product_type' => 'classic',
             'desktop' => 4,
 
             'per_page' => 10,
@@ -19,7 +19,8 @@ class WPBakeryShortCode_KT_Products extends WPBakeryShortCode {
 
             'source' => 'all',
             'categories' => '',
-            'posts' => '',
+            'products' => '',
+            'operator' => 'IN',
 
 
             'css_animation' => '',
@@ -29,8 +30,9 @@ class WPBakeryShortCode_KT_Products extends WPBakeryShortCode {
         extract($atts);
 
         $elementClass = array(
-            'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'products-carousel ', $this->settings['base'], $atts ),
+            'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'kt-products', $this->settings['base'], $atts ),
             'extra' => $this->getExtraClass( $el_class ),
+            'product_stype' => 'kt-products-'.$product_type,
             'css_animation' => $this->getCSSAnimation( $css_animation ),
             'woocommerce' => 'woocommerce columns-' . $desktop ,
             'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' )
@@ -54,7 +56,6 @@ class WPBakeryShortCode_KT_Products extends WPBakeryShortCode {
             'meta_key'              => $meta_key
         );
 
-
         if( $source == 'onsale' ){
             $product_ids_on_sale = wc_get_product_ids_on_sale();
             $args['post__in'] = array_merge( array( 0 ), $product_ids_on_sale );
@@ -63,28 +64,77 @@ class WPBakeryShortCode_KT_Products extends WPBakeryShortCode {
                 'key'   => '_featured',
                 'value' => 'yes'
             );
+        }elseif($source == 'top-rated'){
+            add_filter( 'posts_clauses', array( __CLASS__, 'order_by_rating_post_clauses' ) );
+        }elseif($source == 'categories'){
+            if ( ! empty( $categories ) ) {
+                $args['tax_query'] = array(
+                    array(
+                        'taxonomy' => 'product_cat',
+                        'terms'    => array_map( 'sanitize_title', explode( ',', $categories ) ),
+                        'field'    => 'slug',
+                        'operator' => $operator
+                    )
+                );
+            }
+        }elseif($source == 'products'){
+            if ( ! empty( $atts['products'] ) ) {
+                $args['post__in'] = array_map( 'trim', explode( ',', $atts['products'] ) );
+            }
         }
+
 
         $output = '';
 
         ob_start();
         global $woocommerce_loop;
         $products = new WP_Query( apply_filters( 'woocommerce_shortcode_products_query', $args, $atts ) );
+
         $woocommerce_loop['columns'] = $desktop;
+        $woocommerce_loop['type'] = $product_type;
+
+
         if ( $products->have_posts() ) :
             woocommerce_product_loop_start();
+
+            if($product_type == 'masonry'){
+                echo '<div class="clearfix product col-sm-3 grid-sizer"></div>';
+            }
+
             while ( $products->have_posts() ) : $products->the_post();
                 wc_get_template_part( 'content', 'product' );
             endwhile; // end of the loop.
             woocommerce_product_loop_end();
         endif;
         wp_reset_postdata();
+
+        if($source == 'top-rated'){
+            remove_filter( 'posts_clauses', array( __CLASS__, 'order_by_rating_post_clauses' ) );
+        }
+
         $output .= ob_get_clean();
 
         $elementClass = preg_replace( array( '/\s+/', '/^\s|\s$/' ), array( ' ', '' ), implode( ' ', $elementClass ) );
 
         return '<div class="'.esc_attr( $elementClass ).'">'.$output.'</div>';
 
+    }
+
+    /**
+     * woocommerce_order_by_rating_post_clauses function.
+     *
+     * @param array $args
+     * @return array
+     */
+    public static function order_by_rating_post_clauses( $args ) {
+        global $wpdb;
+
+        $args['where']   .= " AND $wpdb->commentmeta.meta_key = 'rating' ";
+        $args['join']    .= "LEFT JOIN $wpdb->comments ON($wpdb->posts.ID               = $wpdb->comments.comment_post_ID) LEFT JOIN $wpdb->commentmeta ON($wpdb->comments.comment_ID = $wpdb->commentmeta.comment_id)";
+        $args['orderby'] = "$wpdb->commentmeta.meta_value DESC";
+        $args['groupby'] = "$wpdb->posts.ID";
+
+        return $args;
     }
 }
 
@@ -106,9 +156,10 @@ vc_map( array(
         array(
             'type' => 'dropdown',
             'heading' => esc_html__( 'Product display type', 'wingman' ),
-            'param_name' => 'product_stype',
+            'param_name' => 'product_type',
             'value' => array(
                 esc_html__( 'Standard', 'js_composer' ) => 'classic',
+                esc_html__( 'Gallery', 'js_composer' ) => 'gallery',
                 esc_html__( 'Masonry', 'js_composer' ) => 'masonry',
                 esc_html__( 'Preview Slider', 'js_composer' ) => 'slider',
             ),
@@ -200,8 +251,8 @@ vc_map( array(
         array(
             "type" => "kt_posts",
             'args' => array('post_type' => 'product', 'posts_per_page' => -1),
-            'heading' => esc_html__( 'Specific Posts', 'js_composer' ),
-            'param_name' => 'posts',
+            'heading' => esc_html__( 'Specific Products', 'js_composer' ),
+            'param_name' => 'products',
             'size' => '5',
             'placeholder' => esc_html__( 'Select your posts', 'js_composer' ),
             "dependency" => array( "element" => "source","value" => array( 'products' ) ),

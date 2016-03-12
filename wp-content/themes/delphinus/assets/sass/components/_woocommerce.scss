@@ -530,8 +530,9 @@
       text-align: center;
       @include transition();
 
-
-
+      .product-inner{
+        position: relative;
+      }
 
       .add_to_cart_button{
         &.loading,
@@ -617,6 +618,13 @@
           }
         }
 
+        .product-thumbnail{
+          display: block;
+          img{
+            width: 100%;
+          }
+        }
+
         &:hover{
           .product-thumbnail-effect{
             img {
@@ -644,7 +652,6 @@
       &-thumbnail-effect{
         img {
           @include transition('all 0.4s ease-in-out');
-          width: 100%;
           &.first-img {
             @include opacity(1);
           }
@@ -656,6 +663,7 @@
           }
         }
       }
+
       &-title {
         font-size: 16px;
         letter-spacing: 0.12em;
@@ -1446,3 +1454,242 @@
   }
 
 }
+
+/*
+ * KT Products
+ */
+.woocommerce.kt-products{
+  margin-bottom: $vspacing;
+  &.kt-products-gallery,
+  &.kt-products-masonry{
+
+    ul.shop-products{
+     .product{
+       .product-content{
+         margin-bottom: 0;
+         .product-actions,
+         .wc-addtocart-wrap{
+           display: none;
+         }
+       }
+       .product-details{
+         z-index: 5;
+       }
+
+       .product-title,
+       .price{
+         @include transition( all 0.4s ease 0s);
+         @include opacity(0);
+         @include transform(translate3d(0, 30px, 0));
+         color: $white;
+         display: block;
+       }
+       .product-title a{
+         color: $white;
+       }
+
+       .product-thumbnail{
+         &:after{
+           content: '';
+           position: absolute;
+           left: 0;
+           top: 0;
+           width: 100%;
+           height: 100%;
+           background: rgba($black,.5);
+           z-index: 1;
+           @include transition( all 0.4s ease);
+           @include opacity(0);
+         }
+       }
+
+       &:hover{
+         .product-details{
+           .product-title,
+           .price{
+             @include transform(translate3d(0, 0, 0));
+             @include opacity(1);
+           }
+           .price{
+             @include css3-prefix('transition-delay', '.3s');
+           }
+         }
+         .product-thumbnail{
+           &:after {
+             @include opacity(1);
+           }
+         }
+       }
+
+     }
+    }
+  }
+
+  &.kt-products-gallery{
+    .woocommerce-row{
+      margin: 0;
+    }
+    ul.shop-products{
+      .product{
+        padding: 0;
+        margin: 0;
+        .product-details{
+          @include translate();
+          width: 100%;
+        }
+
+      }
+    }
+  }
+
+  &.kt-products-masonry{
+    ul.shop-products{
+      .product{
+        margin-bottom: 30px;
+        &.grid-sizer{
+          margin: 0;
+          min-height: 0;
+        }
+        .product-details{
+          position: absolute;
+          bottom: 25px;
+          left: 25px;
+          text-align: left;
+        }
+      }
+    }
+  }
+  &.kt-products-slider{
+    ul.shop-products{
+      .product{
+        .product-inner{
+          background: #FFFFFF;
+          padding: 0 0 20px;
+          @include box-shadow(0, 2px, 6px, rgba(#000000, 0.05));
+        }
+      }
+    }
+  }
+}
+
+
+
+.product-content{
+  .cd-item-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      position: absolute;
+      top: 0;
+      left: 17%;
+      height: 100%;
+      width: 66%;
+      @include opacity(0);
+      @include transform(translateZ(0));
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      will-change: transform, opacity;
+      @include transform(translateX(200%) scale(0.5));
+      @include transition('transform 0.4s, opacity 0.4s');
+      &.selected {
+        position: relative;
+        opacity: 1;
+        @include transform(translateX(0) scale(1));
+      }
+      &.move-right {
+        @include transform(translateX(70%) scale(0.5));
+        @include opacity(0);
+      }
+      &.move-left {
+        @include transform(translateX(-70%) scale(0.5));
+        @include opacity(0);
+      }
+      &.hide-left {
+        @include transform(translateX(-140%) scale(0.5));
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  &:hover{
+    li{
+      &.move-right,
+      &.move-left{
+        @include opacity(0.3);
+      }
+      &.hover{
+        &.move-right,
+        &.move-left{
+          @include opacity(1);
+        }
+      }
+    }
+  }
+}
+
+.cd-dots{
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  right: auto;
+  @include transform(translateX(-50%));
+  margin: 0;
+  padding: 0;
+  li{
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+    a{
+      display: block;
+      height: 7px;
+      width: 7px;
+      @include border-radius(50%);
+      border: 1px solid #9688a0;
+      overflow: hidden;
+      text-indent: 100%;
+      white-space: nowrap;
+      @include transition(border-color 0.2s, background-color 0.2s);
+    }
+    &.selected{
+      a{
+        background: #2f2933 none repeat scroll 0 0;
+        border-color: #2f2933;
+      }
+
+    }
+  }
+}
+
+/*
+ * KT Product Categories Grid
+ */
+.products-categories-grid{
+  margin-bottom: $vspacing;
+}
+.category-grid{
+  position: relative;
+  text-align: center;
+  margin-bottom: $vspacing;
+  .category-grid-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+
+
+
+
+
+
+

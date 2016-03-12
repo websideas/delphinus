@@ -6,17 +6,7 @@ if ( !defined('ABSPATH')) exit;
 //  1 - Appended to top)
 
 
-vc_add_params("vc_icon", array(
-    array('type' => 'hidden',  'param_name' => 'icon_class'),
-    array('type' => 'hidden',  'param_name' => 'color_hover'),
-    array('type' => 'hidden',  'param_name' => 'hover_div'),
-    array('type' => 'hidden',  'param_name' => 'background_color_hover'),
-    array('type' => 'hidden',  'param_name' => 'iconbox_image'),
-    array('type' => 'hidden',  'param_name' => 'icon_type')
-));
-
 $visibilities_arr = array('vc_empty_space', 'kt_heading');
-
 foreach($visibilities_arr as $item){
     vc_add_param($item, array(
         "type" => "dropdown",
@@ -38,21 +28,23 @@ foreach($visibilities_arr as $item){
     ));
 }
 
-
-vc_add_params("vc_custom_heading", array(
-    array(
+$background_arr = array('vc_row', 'vc_column');
+foreach($background_arr as $item) {
+    vc_add_param($item, array(
         "type" => "dropdown",
-        "heading" => __("Custom Style", 'wingman'),
-        "param_name" => "custom_style",
+        "class" => "",
+        "heading" => "Background position",
+        "param_name" => "background_position",
         "value" => array(
-            esc_html__('Default', 'mondova') => '',
-            esc_html__('Style 1', 'mondova') => '1',
-            esc_html__('Style 2', 'mondova') => '2',
+            '' => 'None',
+            "center center" => "center center",
+            "center top" => "center top",
+            "center bottom" => "center bottom",
+            "center right" => "center right",
+            "center left" => "center left",
         ),
-        'group' => __( 'Extra', 'js_composer' )
-    )
-));
-
+    ));
+}
 
 /*
 $composer_addons = array(
@@ -68,7 +60,8 @@ $composer_addons = array(
     'icon_box.php',
     'blog_posts.php',
     'banner.php',
-    'clients_carousel.php'
+    'clients_carousel.php',
+    'wrapper.php'
 );
 
 if(kt_is_wc()){
@@ -77,6 +70,7 @@ if(kt_is_wc()){
         'products_widget_carousel.php',
         'products_carousel.php',
         'product_categories_carousel.php',
+        'product_categories_grid.php',
         'products.php'
     );
     $composer_addons = array_merge($composer_wc_addons, $composer_addons);

@@ -14,6 +14,17 @@ if ( ! function_exists( 'kt_woocommerce_theme_setup' ) ):
          * Enable support for woocommerce
          */
         add_theme_support( 'woocommerce' );
+
+        if (function_exists( 'add_image_size' ) ) {
+            add_image_size( 'kt_product', 270, 200, true);
+            add_image_size( 'kt_landscape', 570, 200, true);
+            add_image_size( 'kt_portrait', 200, 570, true);
+            add_image_size( 'kt_wide', 570, 430, true);
+            add_image_size( 'kt_big', 870, 430, true);
+
+            add_image_size( 'kt_product_slider', 265, 375, true);
+        }
+
     }
 endif;
 
@@ -403,20 +414,56 @@ function kt_woo_shop_columns( $columns ) {
 
 
 function kt_template_loop_product_thumbnail(){
-    global $post, $product;
-    if ( has_post_thumbnail() ) {
-        echo get_the_post_thumbnail( $post->ID, 'shop_catalog', array('class'=>"first-img product-img"));
-    } elseif ( wc_placeholder_img_src() ) {
-        echo wc_placeholder_img( 'shop_catalog' );
+    global $product, $woocommerce_loop;
+
+    $image_size = 'shop_catalog';
+    $type = $woocommerce_loop['type'];
+
+    if($type == 'masonry'){
+        $box_size = get_post_meta($product->id, '_kt_box_size', true);
+        if($box_size == 'wide'){
+            $image_size = 'kt_wide';
+        }elseif($box_size == 'landscape'){
+            $image_size = 'kt_landscape';
+        }elseif($box_size == 'big'){
+            $image_size = 'kt_big';
+        }elseif( $box_size == 'portrait'){
+            $image_size = 'kt_portrait';
+        }else{
+            $image_size = 'kt_product';
+        }
+    }elseif($type == 'slider'){
+        $image_size = 'kt_product_slider';
+        echo '<ul class="cd-item-wrapper">';
     }
 
-    $attachment_ids = $product->get_gallery_attachment_ids();
-    if($attachment_ids){
-        foreach ( $attachment_ids as $attachment_id ) {
-            $image_link = wp_get_attachment_url( $attachment_id );
-            if ( $image_link ){
-                echo wp_get_attachment_image( $attachment_id, 'shop_catalog', false, array('class'=>"second-img product-img"));
-                break;
+    if ( has_post_thumbnail() ) {
+        $thumbnail = get_the_post_thumbnail( $product->id, $image_size, array('class'=>"first-img product-img"));
+    } elseif ( wc_placeholder_img_src() ) {
+        $thumbnail = wc_placeholder_img( $image_size );
+    }
+
+    if($type == 'slider'){
+        $thumbnail = '<li class="selected">'.$thumbnail.'</li>';
+    }
+
+    echo $thumbnail;
+
+    if($type == 'classic' || $type == 'slider'){
+        $attachment_ids = $product->get_gallery_attachment_ids();
+        if($attachment_ids){
+            $i = 1;
+            foreach ( $attachment_ids as $attachment_id ) {
+                //$image_link = wp_get_attachment_url( $attachment_id );
+
+                if ( $type == 'classic' ){
+                    echo wp_get_attachment_image( $attachment_id, $image_size, false, array('class'=>"second-img product-img"));
+                    break;
+                }elseif( $type == 'slider'){
+                    $class = ($i == 1) ? 'move-right' : '';
+                    echo '<li class="'.$class.'">'.wp_get_attachment_image( $attachment_id, $image_size, false, array('class'=>"product-img")).'</li>';
+                }
+                $i++;
             }
         }
     }
@@ -426,13 +473,19 @@ function kt_template_loop_product_thumbnail(){
  * Insert the opening anchor tag for products in the loop.
  */
 function kt_template_loop_product_link_open() {
-    global $product;
+    global $product, $woocommerce_loop;
     $classes = array('product-thumbnail' );
 
-    $attachment_ids = $product->get_gallery_attachment_ids();
 
-    if($attachment_ids){
-        $classes[] = 'product-thumbnail-effect';
+    if($woocommerce_loop['type'] == 'classic') {
+        $attachment_ids = $product->get_gallery_attachment_ids();
+        if ($attachment_ids) {
+            $classes[] = 'product-thumbnail-effect';
+        }
+    }
+
+    if($woocommerce_loop['type'] == 'slider'){
+        return;
     }
 
     printf(
@@ -443,6 +496,14 @@ function kt_template_loop_product_link_open() {
 }
 
 
+function kt_template_loop_product_link_close(){
+    global $product, $woocommerce_loop;
+    if($woocommerce_loop['type'] != 'slider'){
+        echo '</a>';
+    }
+}
+
+
 function kt_woocommerce_show_product_badge(){
     global $product, $post;
 
@@ -450,16 +511,19 @@ function kt_woocommerce_show_product_badge(){
     $now = strtotime( date("Y-m-d H:i:s") );
     $post_date = strtotime( $post->post_date );
     $num_day = (int)(($now - $post_date)/(3600*24));
+    $badge = '';
 
-    echo '<div class="product-badge">';
     if ( ! $product->is_in_stock() ) {
-        printf('<span class="wc-out-of-stock">%s</span>', esc_html__( 'Out of stock', 'mondova' ));
+        $badge = sprintf('<span class="wc-out-of-stock">%s</span>', esc_html__( 'Out of stock', 'mondova' ));
     }elseif ( $product->is_on_sale() ){
-	    echo apply_filters( 'woocommerce_sale_flash', '<span class="wc-onsale-badge">' . __( 'Sale!', 'mondova' ) . '</span>', $post, $product );
+        $badge =  apply_filters( 'woocommerce_sale_flash', '<span class="wc-onsale-badge">' . __( 'Sale!', 'mondova' ) . '</span>', $post, $product );
     }elseif( $num_day < $time_new ) {
-        echo "<span class='wc-new-badge'>".esc_html__( 'New','wingman' )."</span>";
+        $badge =  "<span class='wc-new-badge'>".esc_html__( 'New','wingman' )."</span>";
     }
-    echo '</div>';
+
+    if($badge){
+        echo '<div class="product-badge">'.$badge.'</div>';
+    }
 
 }
 
@@ -611,6 +675,7 @@ remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30
 remove_action('woocommerce_shop_loop_subcategory_title', 'woocommerce_template_loop_category_title', 10);
 
 remove_action('woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10);
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5);
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
 
 remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10);
@@ -633,6 +698,8 @@ add_action('woocommerce_shop_loop_item_content', 'woocommerce_template_loop_add_
 
 add_action('woocommerce_before_shop_loop_item_title', 'kt_template_loop_product_thumbnail');
 add_action('woocommerce_before_shop_loop_item', 'kt_woocommerce_show_product_badge', 5);
+
+add_action('woocommerce_after_shop_loop_item', 'kt_template_loop_product_link_close');
 
 add_action('woocommerce_shop_loop_item_details', 'woocommerce_template_single_excerpt', 5);
 add_action('woocommerce_shop_loop_item_details', 'woocommerce_template_loop_add_to_cart', 10);
