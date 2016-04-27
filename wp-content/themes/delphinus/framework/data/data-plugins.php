@@ -99,7 +99,7 @@ function kt_register_plugins() {
     );
   
     // Change this to your theme text domain, used for internationalising strings
-    $theme_text_domain = 'mondova';
+    $theme_text_domain = 'delphinus';
   
     /**
      * Array of configuration settings. Amend each line as needed.

@@ -62,12 +62,18 @@ p {
 
   // enable flex
   &.row-flex {
-    @include css3-prefix-value(display, flex);
-    @include css3-prefix(flex-wrap, wrap);
+    @include css3-prefix-value('display', 'flex');
+    @include css3-prefix('flex-wrap', 'wrap');
+    @include css3-prefix('align-items', 'stretch');
+
+    &:before,
+    &:after {
+      display: none;
+    }
     & > [class^="col-"],
     & > [class*=" col-"] {
       @include css3-prefix-value(display, flex);
-      float: none;
+
       > .col-inner{
         max-width: 100%;
         -webkit-box-orient: vertical;
@@ -142,26 +148,20 @@ p {
 .black{ color: #111 !important; }
 .gray{ color: $gray-text!important; }
 
-.bg-white{  background: $white; }
-.bg-gray{  background: #f7f8fa; }
-.bg-gray2{ background: #efefef; }
-.bg-gray3{ background: #f7f8fa; }
 
-
-.bg-text{background: $text;}
-.bg-lightgreen{  background: #c7db9c; }
-.bg-wheat{  background: #f4dc86; }
-.bg-sky{  background: #a7c8eb; }
-.bg-coral{  background: #ed8b5c; }
-.bg-aquamarine{  background: #bce5d3; }
-.bg-purple{background: #d1aece;}
-
-
-.box-shadow{
-  @include box-shadow(1px, 0, 3px, rgba($black, 0.05));
+.bg-gradient-gray{
+  position: relative;
+  &:before{
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background: $gray-bg;
+    top: 0;
+    left: 0;
+    display: block!important;
+  }
 }
-
-
 
 /**
  * Alignment
@@ -182,15 +182,9 @@ p {
   margin: 0 auto;
 }
 
-
 /**
  * Accessibility
  */
-.screen-reader-text {
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  position: absolute !important;
-}
 
 .screen-reader-text:hover,
 .screen-reader-text:active,
@@ -211,7 +205,6 @@ p {
   z-index: 100000; /* Above WP toolbar */
   outline: none;
 }
-
 
 /**
  * Tables

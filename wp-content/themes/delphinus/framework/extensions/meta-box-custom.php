@@ -15,7 +15,7 @@ require_once RWMB_FIELDS_DIR . 'input.php';
 add_filter('rwmb_image_advanced_select_string', 'kt_rwmb_image_advanced_select_string', 10, 2);
 function kt_rwmb_image_advanced_select_string($string, $field){
 	if($field['max_file_uploads'] == 1){
-		$string = __('Select your image', 'adroit');
+		$string = __('Select your image', 'delphinus');
 	}
 	return $string;
 }
@@ -65,7 +65,7 @@ if ( ! class_exists( 'RWMB_Image_Radio_Field' ) )
          */
         static function normalize_field( $field )
         {
-            $field = parent::normalize_field( $field );
+            $field = parent::normalize( $field );
 
             $field['attributes']['list'] = false;
             $field['attributes']['id']   = false;
@@ -94,101 +94,6 @@ if ( ! class_exists( 'RWMB_Image_Radio_Field' ) )
         }
     }
 }
-
-
-if ( ! class_exists( 'RWMB_RevSlider_Field' )){
-	class RWMB_RevSlider_Field extends RWMB_Select_Field{
-
-		/**
-		 * Get field HTML
-		 *
-		 * @param mixed $meta
-		 * @param array $field
-		 *
-		 * @return string
-		 */
-		static function html( $meta, $field )
-		{
-			$field['options'] = self::get_options( $field );
-			return RWMB_Select_Field::html( $meta, $field );
-		}
-        
-        /**
-		 * Get options
-		 *
-		 * @param array $field
-		 *
-		 * @return array
-		 */
-		static function get_options( $field )
-		{
-			$options = array();
-            $options[''] = esc_html__('Select Option', 'adroit');
-            
-            if ( class_exists( 'RevSlider' ) ) {
-                $revSlider = new RevSlider();
-                $arrSliders = $revSlider->getArrSliders();
-                
-                if(!empty($arrSliders)){
-					foreach($arrSliders as $slider){
-					   $options[$slider->getParam("alias")] = $slider->getParam("title");
-					}
-                }
-            }
-
-			return $options;
-		}
-        
-	}
-} // end RWMB_RevSlider_Field
-
-
-
-if ( ! class_exists( 'RWMB_Layerslider_Field' )){
-	class RWMB_Layerslider_Field extends RWMB_Select_Field{
-
-		/**
-		 * Get field HTML
-		 *
-		 * @param mixed $meta
-		 * @param array $field
-		 *
-		 * @return string
-		 */
-		static function html( $meta, $field )
-		{
-			$field['options'] = self::get_options( $field );
-			return RWMB_Select_Field::html( $meta, $field );
-		}
-        
-        /**
-		 * Get options
-		 *
-		 * @param array $field
-		 *
-		 * @return array
-		 */
-		static function get_options( $field )
-		{
-			$options = array();
-            $options[''] = esc_html__('Select Option', 'adroit');
-            
-            if ( is_plugin_active( 'LayerSlider/layerslider.php' ) ) {
-            global $wpdb;
-                $table_name = $wpdb->prefix . "layerslider";
-                $sliders = $wpdb->get_results( "SELECT * FROM ".$table_name." WHERE flag_hidden = '0' AND flag_deleted = '0' ORDER BY date_c ASC LIMIT 100" );
-                if ( $sliders != null && !empty( $sliders ) ) {
-                    foreach ( $sliders as $item ) :
-                        $options[$item->id] = $item->name;
-                    endforeach;
-                }
-            }
-
-			return $options;
-		}
-        
-	}
-} // end RWMB_Layerslider_Field
 
 
 
@@ -239,7 +144,7 @@ if ( ! class_exists( 'RWMB_Background_Field' )){
 					'repeat-y'  => 'Repeat Vertically',
 					'inherit'   => 'Inherit',
 				),
-				'placeholder' => esc_html__('Background Repeat', 'adroit')
+				'placeholder' => esc_html__('Background Repeat', 'delphinus')
 			);
 
 			$ouput .= self::select_html($meta['repeat'], $bg_repeat);
@@ -253,7 +158,7 @@ if ( ! class_exists( 'RWMB_Background_Field' )){
 					'cover'   => 'Cover',
 					'contain' => 'Contain',
 				),
-				'placeholder' => esc_html__('Background Size', 'adroit')
+				'placeholder' => esc_html__('Background Size', 'delphinus')
 			);
 
 			$ouput .= self::select_html($meta['size'], $bg_size);
@@ -267,7 +172,7 @@ if ( ! class_exists( 'RWMB_Background_Field' )){
 					'scroll'  => 'Scroll',
 					'inherit' => 'Inherit',
 				),
-				'placeholder' => esc_html__('Background Attachment', 'adroit')
+				'placeholder' => esc_html__('Background Attachment', 'delphinus')
 			);
 
 			$ouput .= self::select_html($meta['attachment'], $bg_attachment);
@@ -288,7 +193,7 @@ if ( ! class_exists( 'RWMB_Background_Field' )){
 					'right center'  => 'Right center',
 					'right bottom'  => 'Right Bottom',
 				),
-				'placeholder' => esc_html__('Background Position', 'adroit')
+				'placeholder' => esc_html__('Background Position', 'delphinus')
 			);
 
 			$ouput .= self::select_html($meta['position'], $bg_position);
@@ -299,16 +204,16 @@ if ( ! class_exists( 'RWMB_Background_Field' )){
 				'<div class="rwmb-field"><input type="text" readonly="" class="kt_image_url" name="%s" value="%s" placeholder="%s"/></div>',
 				$field['field_name'].'[url]',
 				$meta['url'],
-				esc_html__( 'No media selected', 'adroit' )
+				esc_html__( 'No media selected', 'delphinus' )
 			);
 
 			$remove_style = ($meta['media'] != '') ? 'inline-block' : 'none';
 
 			$ouput .= sprintf(
 				'<div class="upload_button_div"><span class="button kt_image_upload">%s</span> <span class="button kt_image_remove" style="display : %s">%s</span></div>',
-				esc_html__('Upload', 'adroit'),
+				esc_html__('Upload', 'delphinus'),
 				$remove_style,
-				esc_html__('Remove', 'adroit')
+				esc_html__('Remove', 'delphinus')
 			);
 
 
@@ -398,7 +303,7 @@ if ( ! class_exists( 'RWMB_Background_Field' )){
 
 			wp_enqueue_script( 'kt_image', KT_FW_JS . 'kt_image.js', array( 'jquery', 'underscore' ), RWMB_VER, true );
 			wp_localize_script( 'rwmb-file-background', 'kt_image_lange', array(
-				'frameTitle' => esc_html__( 'Select Image', 'adroit' ),
+				'frameTitle' => esc_html__( 'Select Image', 'delphinus' ),
 			) );
 		}
 

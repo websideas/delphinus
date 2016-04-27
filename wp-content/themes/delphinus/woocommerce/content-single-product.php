@@ -35,8 +35,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 }
 ?>
 </div>
-<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class('product-single'); ?>>
+
+<?php
+
+$layout = kt_get_product_layout();
+$classes = array('wc-single-product', 'product-'.$layout);
+
+?>
+
+<div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class($classes); ?>>
+
+    <?php if($layout == 'layout1'){ ?>
     <div class="container">
+    <?php } ?>
+
         <div class="row">
             <div class="col-md-6">
                 <?php
@@ -69,7 +81,11 @@ if ( ! defined( 'ABSPATH' ) ) {
                 </div><!-- .summary -->
             </div>
         </div>
+
+    <?php if($layout == 'layout1'){ ?>
     </div>
+    <?php } ?>
+
     <?php
     /**
      * woocommerce_after_single_product_summary hook.
@@ -81,7 +97,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
     do_action( 'woocommerce_after_single_product_summary' );
     ?>
-
 
     <meta itemprop="url" content="<?php the_permalink(); ?>" />
 

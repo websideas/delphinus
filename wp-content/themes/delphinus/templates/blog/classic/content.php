@@ -8,16 +8,16 @@
                 <?php
                 /* translators: %s: Name of current post */
                 the_content( sprintf(
-                    __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'mondova' ),
+                    __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'delphinus' ),
                     get_the_title()
                 ) );
 
                 wp_link_pages( array(
-                    'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'mondova' ) . '</span>',
+                    'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'delphinus' ) . '</span>',
                     'after'       => '</div>',
                     'link_before' => '<span>',
                     'link_after'  => '</span>',
-                    'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'mondova' ) . ' </span>%',
+                    'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'delphinus' ) . ' </span>%',
                     'separator'   => '<span class="screen-reader-text">, </span>',
                 ) );
                 ?>
@@ -27,7 +27,7 @@
                 printf( '<a href="%1$s" class="%2$s">%3$s</a>',
                     esc_url( get_permalink( get_the_ID() ) ),
                     'btn btn-default',
-                    sprintf( esc_html__( 'Read more %s', 'mondova' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+                    sprintf( esc_html__( 'Read more %s', 'delphinus' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
                 );
                 ?>
             </p>-->

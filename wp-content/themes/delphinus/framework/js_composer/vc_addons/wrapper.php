@@ -11,6 +11,7 @@ class WPBakeryShortCode_KT_Wrapper extends WPBakeryShortCodesContainer {
         $atts = shortcode_atts( array(
             'max_width' => 950,
             'css_animation' => '',
+            'align' => 'center',
             'el_class' => '',
             'css' => '',
         ), $atts );
@@ -20,7 +21,8 @@ class WPBakeryShortCode_KT_Wrapper extends WPBakeryShortCodesContainer {
             'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'kt-wrapper', $this->settings['base'], $atts ),
             'extra' => $this->getExtraClass( $el_class ),
             'css_animation' => $this->getCSSAnimation( $css_animation ),
-            'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' )
+            'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
+            'align' => 'kt-wrapper-'.$align
         );
 
 
@@ -34,37 +36,35 @@ class WPBakeryShortCode_KT_Wrapper extends WPBakeryShortCodesContainer {
 
 //Register "container" content element. It will hold all your inner (child) content elements
 vc_map( array(
-    "name" => esc_html__("KT: Wrapper", 'wingman'),
+    "name" => esc_html__("KT: Wrapper", 'delphinus'),
     "base" => "kt_wrapper",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
-    //"as_parent" => array('only' => 'kt_heading'), // Use only|except attributes to limit child shortcodes (separate multiple values with comma)
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
     'is_container' => true,
     "content_element" => true,
-    "show_settings_on_create" => false,
+    "show_settings_on_create" => true,
     "js_view" => 'VcColumnView',
     "params" => array(
         array(
             "type" => "kt_number",
-            "heading" => esc_html__("Max width", 'wingman'),
+            "heading" => esc_html__("Max width", 'delphinus'),
             "param_name" => "max_width",
             "value" => 950,
-            "suffix" => esc_html__("px", 'wingman'),
+            "suffix" => esc_html__("px", 'delphinus'),
+            'description' => esc_html__( 'Select max-width for element.', 'delphinus' )
         ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
+            'heading' => esc_html__( 'Align', 'js_composer' ),
+            'param_name' => 'align',
             'admin_label' => true,
             'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
+                esc_html__( 'Center', 'js_composer' ) => '',
+                esc_html__( 'Left', 'js_composer' ) => 'left',
+                esc_html__( 'Right', 'js_composer' ) => 'right'
             ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
+            'description' => esc_html__( 'Select wrapper alignment.', 'delphinus' )
         ),
+        vc_map_add_css_animation(),
         array(
             "type" => "textfield",
             "heading" => esc_html__("Extra class name", "js_composer"),

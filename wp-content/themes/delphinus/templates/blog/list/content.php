@@ -10,7 +10,7 @@
                 printf( '<a href="%1$s" class="%2$s">%3$s</a>',
                     esc_url( get_permalink( get_the_ID() ) ),
                     'btn btn-default',
-                    sprintf( esc_html__( 'Read more %s', 'mondova' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
+                    sprintf( esc_html__( 'Read more %s', 'delphinus' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
                 );
                 ?>
             </p>

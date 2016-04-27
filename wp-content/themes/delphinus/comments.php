@@ -20,28 +20,25 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
     <?php if ( have_comments() ) : ?>
-        <h3 class="single-bottom-title">
-            <?php printf( _nx( 'One comment', '%1$s comments', get_comments_number(), 'comments title', 'wingman' ), number_format_i18n( get_comments_number() ) ); ?>
-        </h3>
+        <h2 class="comments-title post-single-heading">
+            <?php
+            printf( _nx( 'One comment', '%1$s comments', get_comments_number(), 'comments title', 'delphinus' ),
+                number_format_i18n( get_comments_number() ), get_the_title() );
+            ?>
+        </h2>
 
-        <div class="comment-list">
+        <ol class="comment-list">
             <?php
             wp_list_comments( array(
-                'style'       => 'div',
+                'style'       => 'ul',
                 'short_ping'  => true,
                 'avatar_size' => 60,
                 'callback' => 'kt_comments'
             ) );
             ?>
-        </div><!-- .comment-list -->
+        </ol><!-- .comment-list -->
 
-        <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
-            <nav id="comment-nav-above" class="comment-navigation" role="navigation">
-                <h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'storefront' ); ?></h1>
-                <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'storefront' ) ); ?></div>
-                <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'storefront' ) ); ?></div>
-            </nav><!-- #comment-nav-above -->
-        <?php endif; // check for comment navigation ?>
+        <?php kt_comment_nav(); ?>
 
     <?php endif; // have_comments() ?>
 
@@ -49,7 +46,7 @@ if ( post_password_required() ) {
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
         ?>
-        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wingman' ); ?></p>
+        <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'delphinus' ); ?></p>
     <?php endif; ?>
 
     <?php
@@ -60,28 +57,25 @@ if ( post_password_required() ) {
     $aria_req = ( $req ? " aria-required='true'" : '' );
     $html_req = ( $req ? " required='required'" : '' );
 
-    $required = ' '.esc_html__('(required)', 'wingman');
+    $required = ' '.esc_html__('(required)', 'delphinus');
 
     $new_fields = array(
-        'author' => '<p class="comment-form-author col-sm-4">' .
-            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '"  placeholder="'.esc_html__('Name', 'wingman').'"' . $aria_req . $html_req . ' /></p>',
-        'email'  => '<p class="comment-form-email col-sm-4">' .
-            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" placeholder="'.esc_html__('Email', 'wingman').'"' . $aria_req . $html_req . ' /></p>',
-        'url'    => '<p class="comment-form-url col-sm-4">' .
-            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" placeholder="'.esc_html__('Website', 'wingman').'" /></p>',
+        'author' => '<p class="comment_field-column comment-form-author">' .
+            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '"  placeholder="'.esc_html__('Name', 'delphinus').'"'. $aria_req . $html_req .'/></p>',
+        'email'  => '<p class="comment_field-column comment-form-email">' .
+            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" placeholder="'.esc_html__('Email', 'delphinus').'"'. $aria_req . $html_req.'/></p></div>',
+        'url'    => '<p class="comment-form-url">' .
+            '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" placeholder="'.esc_html__('Website', 'delphinus').'" /></p>',
     );
 
     $comments_args = array(
-        'label_submit'      => esc_html__( 'Send messages', 'wingman' ),
+        'label_submit'      => esc_html__( 'send','delphinus' ),
         'fields' => apply_filters( 'comment_form_default_fields', $new_fields ),
-        'comment_field' => '<p class="comment-form-comment"><textarea id="comment" name="comment" placeholder="'.esc_html__('Your Comment', 'wingman').'"  aria-required="true" rows="6"></textarea></p>',
-        'class_submit'      => 'btn btn-dark-b btn-lg',
-        'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title single-bottom-title">',
-        'title_reply_after'    => '</h3>',
+        'comment_field' => '<p><textarea id="comment" name="comment" placeholder="'.esc_html__('Your Comment', 'delphinus').'"  aria-required="true" rows="6"></textarea></p>',
+        'class_submit'      => 'btn btn-default btn-lg',
+        'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title post-single-heading">',
     );
 
     ?>
-
     <?php comment_form($comments_args); ?>
-
 </div><!-- .comments-area -->

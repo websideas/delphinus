@@ -87,11 +87,11 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 		if ( ! empty( $item->_invalid ) ) {
 			$classes[] = 'menu-item-invalid';
 			/* translators: %s: title of menu item which is invalid */
-			$title = sprintf( __( '%s (Invalid)','adroit' ), $item->title );
+			$title = sprintf( __( '%s (Invalid)','delphinus' ), $item->title );
 		} elseif ( isset( $item->post_status ) && 'draft' == $item->post_status ) {
 			$classes[] = 'pending';
 			/* translators: %s: title of menu item in draft status */
-			$title = sprintf( __('%s (Pending)','adroit'), $item->title );
+			$title = sprintf( __('%s (Pending)','delphinus'), $item->title );
 		}
 
 		$title = ( ! isset( $item->label ) || '' == $item->label ) ? $title : $item->label;
@@ -104,7 +104,7 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 		<li id="menu-item-<?php echo esc_attr($item_id); ?>" class="<?php echo implode(' ', $classes ); ?>">
 			<dl class="menu-item-bar">
 				<dt class="menu-item-handle">
-					<span class="item-title"><span class="menu-item-title"><?php echo esc_html( $title ); ?></span> <span class="is-submenu" <?php echo $submenu_text; ?>><?php esc_html_e( 'sub item','adroit' ); ?></span></span>
+					<span class="item-title"><span class="menu-item-title"><?php echo esc_html( $title ); ?></span> <span class="is-submenu" <?php echo $submenu_text; ?>><?php esc_html_e( 'sub item','delphinus' ); ?></span></span>
 					<span class="item-controls">
 						<span class="item-type"><?php echo esc_html( $item->type_label ); ?></span>
 						<span class="item-order hide-if-js">
@@ -119,7 +119,7 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 									),
 									'move-menu_item'
 								);
-							?>" class="item-move-up"><abbr title="<?php esc_attr_e('Move up','adroit'); ?>">&#8593;</abbr></a>
+							?>" class="item-move-up"><abbr title="<?php esc_attr_e('Move up','delphinus'); ?>">&#8593;</abbr></a>
 							|
 							<a href="<?php
 								echo wp_nonce_url(
@@ -132,11 +132,11 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 									),
 									'move-menu_item'
 								);
-							?>" class="item-move-down"><abbr title="<?php esc_attr_e('Move down','adroit'); ?>">&#8595;</abbr></a>
+							?>" class="item-move-down"><abbr title="<?php esc_attr_e('Move down','delphinus'); ?>">&#8595;</abbr></a>
 						</span>
-						<a class="item-edit" id="edit-<?php echo esc_attr($item_id); ?>" title="<?php esc_attr_e('Edit Menu Item','adroit'); ?>" href="<?php
+						<a class="item-edit" id="edit-<?php echo esc_attr($item_id); ?>" title="<?php esc_attr_e('Edit Menu Item','delphinus'); ?>" href="<?php
 							echo ( isset( $_GET['edit-menu-item'] ) && $item_id == $_GET['edit-menu-item'] ) ? admin_url( 'nav-menus.php' ) : add_query_arg( 'edit-menu-item', $item_id, remove_query_arg( $removed_args, admin_url( 'nav-menus.php#menu-item-settings-' . $item_id ) ) );
-						?>"><?php _e( 'Edit Menu Item','adroit' ); ?></a>
+						?>"><?php _e( 'Edit Menu Item','delphinus' ); ?></a>
 					</span>
 				</dt>
 			</dl>
@@ -145,46 +145,46 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 				<?php if( 'custom' == $item->type ) : ?>
 					<p class="field-url description description-wide">
 						<label for="edit-menu-item-url-<?php echo $item_id; ?>">
-							<?php esc_html_e( 'URL','adroit' ); ?><br />
+							<?php esc_html_e( 'URL','delphinus' ); ?><br />
 							<input type="text" id="edit-menu-item-url-<?php echo $item_id; ?>" class="widefat code edit-menu-item-url" name="menu-item-url[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->url ); ?>" />
 						</label>
 					</p>
 				<?php endif; ?>
 				<p class="description description-thin">
 					<label for="edit-menu-item-title-<?php echo $item_id; ?>">
-						<?php esc_html_e( 'Navigation Label','adroit' ); ?><br />
+						<?php esc_html_e( 'Navigation Label','delphinus' ); ?><br />
 						<input type="text" id="edit-menu-item-title-<?php echo $item_id; ?>" class="widefat edit-menu-item-title" name="menu-item-title[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->title ); ?>" />
 					</label>
 				</p>
 				<p class="description description-thin">
 					<label for="edit-menu-item-attr-title-<?php echo $item_id; ?>">
-						<?php esc_html_e( 'Title Attribute','adroit' ); ?><br />
+						<?php esc_html_e( 'Title Attribute','delphinus' ); ?><br />
 						<input type="text" id="edit-menu-item-attr-title-<?php echo $item_id; ?>" class="widefat edit-menu-item-attr-title" name="menu-item-attr-title[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->post_excerpt ); ?>" />
 					</label>
 				</p>
 				<p class="field-link-target description">
 					<label for="edit-menu-item-target-<?php echo $item_id; ?>">
 						<input type="checkbox" id="edit-menu-item-target-<?php echo $item_id; ?>" value="_blank" name="menu-item-target[<?php echo $item_id; ?>]"<?php checked( $item->target, '_blank' ); ?> />
-						<?php esc_html_e( 'Open link in a new window/tab','adroit' ); ?>
+						<?php esc_html_e( 'Open link in a new window/tab','delphinus' ); ?>
 					</label>
 				</p>
 				<p class="field-css-classes description description-thin">
 					<label for="edit-menu-item-classes-<?php echo $item_id; ?>">
-						<?php esc_html_e( 'CSS Classes (optional)','adroit' ); ?><br />
+						<?php esc_html_e( 'CSS Classes (optional)','delphinus' ); ?><br />
 						<input type="text" id="edit-menu-item-classes-<?php echo $item_id; ?>" class="widefat code edit-menu-item-classes" name="menu-item-classes[<?php echo $item_id; ?>]" value="<?php echo esc_attr( implode(' ', $item->classes ) ); ?>" />
 					</label>
 				</p>
 				<p class="field-xfn description description-thin">
 					<label for="edit-menu-item-xfn-<?php echo $item_id; ?>">
-						<?php esc_html_e( 'Link Relationship (XFN)','adroit' ); ?><br />
+						<?php esc_html_e( 'Link Relationship (XFN)','delphinus' ); ?><br />
 						<input type="text" id="edit-menu-item-xfn-<?php echo $item_id; ?>" class="widefat code edit-menu-item-xfn" name="menu-item-xfn[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->xfn ); ?>" />
 					</label>
 				</p>
 				<p class="field-description description description-wide">
 					<label for="edit-menu-item-description-<?php echo $item_id; ?>">
-						<?php esc_html_e( 'Description','adroit' ); ?><br />
+						<?php esc_html_e( 'Description','delphinus' ); ?><br />
 						<textarea id="edit-menu-item-description-<?php echo $item_id; ?>" class="widefat edit-menu-item-description" rows="3" cols="20" name="menu-item-description[<?php echo $item_id; ?>]"><?php echo esc_html( $item->description ); // textarea_escaped ?></textarea>
-						<span class="description"><?php esc_html_e('The description will be displayed in the menu if the current theme supports it.','adroit'); ?></span>
+						<span class="description"><?php esc_html_e('The description will be displayed in the menu if the current theme supports it.','delphinus'); ?></span>
 					</label>
 				</p>
                 
@@ -192,19 +192,19 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
                 
 				<p class="field-move hide-if-no-js description description-wide">
 					<label>
-						<span><?php esc_html_e( 'Move','adroit' ); ?></span>
-						<a href="#" class="menus-move-up"><?php esc_html_e( 'Up one','adroit' ); ?></a>
-						<a href="#" class="menus-move-down"><?php esc_html_e( 'Down one','adroit' ); ?></a>
+						<span><?php esc_html_e( 'Move','delphinus' ); ?></span>
+						<a href="#" class="menus-move-up"><?php esc_html_e( 'Up one','delphinus' ); ?></a>
+						<a href="#" class="menus-move-down"><?php esc_html_e( 'Down one','delphinus' ); ?></a>
 						<a href="#" class="menus-move-left"></a>
 						<a href="#" class="menus-move-right"></a>
-						<a href="#" class="menus-move-top"><?php esc_html_e( 'To the top','adroit' ); ?></a>
+						<a href="#" class="menus-move-top"><?php esc_html_e( 'To the top','delphinus' ); ?></a>
 					</label>
 				</p>
 
 				<div class="menu-item-actions description-wide submitbox">
 					<?php if( 'custom' != $item->type && $original_title !== false ) : ?>
 						<p class="link-to-original">
-							<?php printf( __('Original: %s','adroit'), '<a href="' . esc_attr( $item->url ) . '">' . esc_html( $original_title ) . '</a>' ); ?>
+							<?php printf( __('Original: %s','delphinus'), '<a href="' . esc_attr( $item->url ) . '">' . esc_html( $original_title ) . '</a>' ); ?>
 						</p>
 					<?php endif; ?>
 					<a class="item-delete submitdelete deletion" id="delete-<?php echo $item_id; ?>" href="<?php
@@ -217,8 +217,8 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 							admin_url( 'nav-menus.php' )
 						),
 						'delete-menu_item_' . $item_id
-					); ?>"><?php esc_html_e( 'Remove','adroit' ); ?></a> <span class="meta-sep hide-if-no-js"> | </span> <a class="item-cancel submitcancel hide-if-no-js" id="cancel-<?php echo $item_id; ?>" href="<?php echo esc_url( add_query_arg( array( 'edit-menu-item' => $item_id, 'cancel' => time() ), admin_url( 'nav-menus.php' ) ) );
-						?>#menu-item-settings-<?php echo $item_id; ?>"><?php esc_html_e('Cancel','adroit'); ?></a>
+					); ?>"><?php esc_html_e( 'Remove','delphinus' ); ?></a> <span class="meta-sep hide-if-no-js"> | </span> <a class="item-cancel submitcancel hide-if-no-js" id="cancel-<?php echo $item_id; ?>" href="<?php echo esc_url( add_query_arg( array( 'edit-menu-item' => $item_id, 'cancel' => time() ), admin_url( 'nav-menus.php' ) ) );
+						?>#menu-item-settings-<?php echo $item_id; ?>"><?php esc_html_e('Cancel','delphinus'); ?></a>
 				</div>
 
 				<input class="menu-item-data-db-id" type="hidden" name="menu-item-db-id[<?php echo $item_id; ?>]" value="<?php echo $item_id; ?>" />

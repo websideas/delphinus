@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Slider Revolution
-Plugin URI: http://www.revolution.themepunch.com/
+Plugin URI: http://revolution.themepunch.com/
 Description: Slider Revolution - Premium responsive slider
 Author: ThemePunch
-Version: 5.2.1
+Version: 5.2.5
 Author URI: http://themepunch.com
 */
 
@@ -17,10 +17,10 @@ if(class_exists('RevSliderFront')) {
 	die('ERROR: It looks like you have more than one instance of Slider Revolution installed. Please remove additional instances for this plugin to work again.');
 }
 
-$revSliderVersion = "5.2.1";
+$revSliderVersion = "5.2.5";
 $revSliderAsTheme = false;
 $revslider_screens = array();
-
+$revslider_fonts = array();
 
 $rs_plugin_url = str_replace('index.php','',plugins_url( 'index.php', __FILE__ ));
 if(strpos($rs_plugin_url, 'http') === false) {

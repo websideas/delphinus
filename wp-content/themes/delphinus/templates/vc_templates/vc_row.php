@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Shortcode class
  * @var $this WPBakeryShortCode_VC_Row
  */
-$el_class = $full_height = $parallax_speed_bg = $parallax_speed_video = $full_width = $equal_height = $flex_row = $columns_placement = $content_placement = $parallax = $parallax_image = $css = $el_id = $video_bg = $video_bg_url = $video_bg_parallax = '';
+$background_position = $el_class = $full_height = $parallax_speed_bg = $parallax_speed_video = $full_width = $equal_height = $flex_row = $columns_placement = $content_placement = $parallax = $parallax_image = $css = $el_id = $video_bg = $video_bg_url = $video_bg_parallax = '';
 $output = $after_output = '';
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
@@ -60,11 +60,28 @@ if ( ! empty( $full_width ) ) {
 	$wrapper_attributes[] = 'data-vc-full-width-init="false"';
 	if ( 'stretch_row_content' === $full_width ) {
 		$wrapper_attributes[] = 'data-vc-stretch-content="true"';
+
+
+        if(is_page_template( 'page-templates/full-width.php' )){
+            $content = '<div class="container">'.$content.'</div>';
+        }
+
 	} elseif ( 'stretch_row_content_no_spaces' === $full_width ) {
 		$wrapper_attributes[] = 'data-vc-stretch-content="true"';
 		$css_classes[] = 'vc_row-no-padding';
+
+
 	}
+
 	$after_output .= '<div class="vc_row-full-width"></div>';
+
+}else{
+    if(is_page_template( 'page-templates/full-width.php' )){
+
+
+
+        $content = '<div class="container">'.$content.'</div>';
+    }
 }
 
 if ( ! empty( $full_height ) ) {
@@ -132,7 +149,7 @@ $wrapper_attributes[] = 'class="' . esc_attr( trim( $css_class ) ) . '"';
 
 
 
-$wrapper_attributes[] =($background_position == '' ) ? '' : 'style="background-position: '.$atts['background_position'].'!important;"';
+$wrapper_attributes[] = ( $background_position == '' ) ? '' : 'style="background-position: '.$atts['background_position'].'!important;"';
 
 
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';

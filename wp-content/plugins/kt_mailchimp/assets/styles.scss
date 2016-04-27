@@ -2,7 +2,7 @@
 .kt-mailchimp-wrapper{
   margin-bottom: 30px;
   .mailchimp-before{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .widget-container &{
@@ -134,8 +134,59 @@
     }
   }
 
+  &.mailchimp-layout-3{
 
+    input[type=text],
+    input[type=email]{
+      border: 2px solid #dddddd;
+      color: #707070;
+      font-size: 14px;
+      height: 44px;
+      padding: 5px 40px 5px 10px;
+    }
 
+    input[type=email]{
+      padding-right: 30px;
+    }
+
+    .mailchimp-input-email{
+      margin-bottom: 0;
+    }
+
+    .mailchimp-input-button {
+      height: 100%;
+      .btn {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border-color: transparent;
+        height: 100%;
+        overflow: hidden;
+        text-indent: -999px;
+        width: 44px;
+        padding: 0;
+        position: relative;
+        color: #666;
+        &:before{
+          font-family: FontAwesome;
+          content: '\f178';
+          font-weight: normal;
+          display: block;
+          font-size: 14px;
+          color: #666;
+          text-indent: 0;
+          left: 13px;
+          position: absolute;
+          top: 11px;
+        }
+        &.loading{
+          &:before{
+            content: '\f110';
+            -webkit-animation: fa-spin 2s infinite linear;
+            animation: fa-spin 2s infinite linear;
+          }
+        }
+      }
+    }
+  }
 
 
 }

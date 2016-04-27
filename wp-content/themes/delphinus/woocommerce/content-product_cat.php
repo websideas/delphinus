@@ -39,7 +39,7 @@ $woocommerce_loop['loop']++;
 $bootstrapColumn = round( 12 / $woocommerce_loop['columns'] );
 
 $classes = array();
-$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s', $bootstrapColumn, 6);
+$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-6', $bootstrapColumn, 6);
 
 
 ?>

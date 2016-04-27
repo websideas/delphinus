@@ -12,6 +12,7 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
             'blog_pagination' => 'none',
             'blog_type' => 'grid',
             'blog_columns' => 3,
+            'blog_columns_tab' => 2,
             'show_excerpt' => 'true',
 
             'source' => 'all',
@@ -22,6 +23,7 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
             'meta_key' => '',
             'order' => 'DESC',
             'max_items' => 10,
+            "excerpt_length" => 20,
 
             'css' => '',
             'css_animation' => '',
@@ -33,6 +35,9 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
 
         $output = '';
 
+        $excerpt_length =  intval( $excerpt_length );
+        $exl_function = create_function('$n', 'return '.$excerpt_length.';');
+        add_filter( 'excerpt_length', $exl_function , 999 );
 
         $args = array(
             'order' => $order,
@@ -75,16 +80,18 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
             }
         }
 
-
-        $layout = array('type' => $blog_type, 'columns'=> $blog_columns, 'columns_tab' => $blog_columns, 'pagination' => $blog_pagination);
-
+        $layout = array('type' => $blog_type, 'columns'=> $blog_columns, 'columns_tab' => $blog_columns_tab, 'pagination' => $blog_pagination);
         ob_start();
 
         query_posts($args);
         if ( have_posts() ) :
 
+            if($blog_type == 'classic'){
+                $readmore = '';
+            }
 
-            $readmore_class = ($readmore || in_array($blog_type, array('classic'))) ? '' : ' no-readmore';
+            $readmore_class = (!$readmore || $readmore == 'none' ) ? ' no-readmore' : '';
+
 
             echo '<div class="blog-posts blog-posts-'.esc_attr($layout['type']).$readmore_class.'">';
 
@@ -94,7 +101,7 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
                 $article_columns_tab = 12/$layout['columns_tab'];
             }
             if($layout['type'] == 'masonry') {
-                printf('<div class="blog-post-sizer col-lg-%1$s col-md-%1$s col-sm-%2$s"></div>', $article_columns, $article_columns_tab);
+                printf('<div class="blog-post-sizer col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-%2$s"></div>', $article_columns, $article_columns_tab);
             }
 
 
@@ -108,7 +115,7 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
                 $format = get_post_format();
 
                 if($layout['type'] == 'grid' || $layout['type'] == 'masonry') {
-                    printf('<div class="blog-post-wrap col-lg-%1$s col-md-%1$s col-sm-%2$s" >', $article_columns, $article_columns_tab);
+                    printf('<div class="blog-post-wrap col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-%2$s">', $article_columns, $article_columns_tab);
                 }
 
                 if($layout['type'] == 'zigzag'){
@@ -138,6 +145,7 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
         endif;
         wp_reset_query();
 
+        remove_filter('excerpt_length', $exl_function, 999 );
 
         $output .= ob_get_clean();
 
@@ -157,20 +165,20 @@ class WPBakeryShortCode_List_Blog_Posts extends WPBakeryShortCode {
 
 // Add your Visual Composer logic here
 vc_map( array(
-    "name" => esc_html__( "KT: Blog Posts", 'wingman'),
+    "name" => esc_html__( "KT: Blog Posts", 'delphinus'),
     "base" => "list_blog_posts",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
-    "description" => esc_html__( "Display blog posts", 'wingman'),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
+    "description" => esc_html__( "Display blog posts", 'delphinus'),
     "params" => array(
         // Layout setting
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Layout setting", 'wingman'),
+            "heading" => esc_html__("Layout setting", 'delphinus'),
             "param_name" => "layout_settings",
         ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Loop Style', 'wingman' ),
+            'heading' => esc_html__( 'Loop Style', 'delphinus' ),
             'param_name' => 'blog_type',
             'value' => array(
                 esc_html__( 'Standard', 'js_composer' ) => 'classic',
@@ -183,9 +191,16 @@ vc_map( array(
             'description' => '',
             'admin_label' => true,
         ),
+
+        array(
+            'type' => 'textfield',
+            'heading' => esc_html__( 'Excerpt length', 'js_composer' ),
+            'value' => 20,
+            'param_name' => 'excerpt_length',
+        ),
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Columns to Show?", 'wingman'),
+            "heading" => esc_html__("Columns to Show?", 'delphinus'),
             "edit_field_class" => "kt_sub_heading vc_column",
             "param_name" => "items_show",
             'dependency' => array(
@@ -195,7 +210,7 @@ vc_map( array(
         ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'on Desktop', 'wingman' ),
+            'heading' => esc_html__( 'on Desktop', 'delphinus' ),
             'param_name' => 'blog_columns',
             'value' => array(
                 esc_html__( '2 columns', 'js_composer' ) => '2',
@@ -208,55 +223,60 @@ vc_map( array(
                 'value' => array( 'grid', 'masonry' )
             ),
         ),
+        array(
+            'type' => 'dropdown',
+            'heading' => esc_html__( 'on Tablet', 'delphinus' ),
+            'param_name' => 'blog_columns_tab',
+            'value' => array(
+                esc_html__( '2 columns', 'js_composer' ) => '2',
+                esc_html__( '3 columns', 'js_composer' ) => '3',
+                esc_html__( '4 columns', 'js_composer' ) => '4',
+            ),
+            'std' => '2',
+            'dependency' => array(
+                'element' => 'blog_type',
+                'value' => array( 'grid', 'masonry' )
+            ),
+        ),
 
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Extra setting", 'wingman'),
+            "heading" => esc_html__("Extra setting", 'delphinus'),
             "param_name" => "extra_settings",
         ),
+
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Readmore button', 'wingman' ),
+            'heading' => esc_html__( 'Readmore button', 'delphinus' ),
             'param_name' => 'readmore',
             'value' => array(
-                esc_html__('None', 'wingman') => '',
-                esc_html__( 'Link', 'wingman' ) => 'link',
+                esc_html__('None', 'delphinus') => '',
+                esc_html__( 'Link', 'delphinus' ) => 'link',
             ),
-            "description" => esc_html__("Show or hide the readmore button.", 'wingman'),
+            "description" => esc_html__("Show or hide the readmore button.", 'delphinus'),
             'dependency' => array(
                 'element' => 'blog_type',
                 'value_not_equal_to' => array( 'classic')
             ),
         ),
+
         array(
             'type' => 'dropdown',
             'heading' => esc_html__( 'Navigation type', 'js_composer' ),
             'param_name' => 'blog_pagination',
             'admin_label' => true,
             'value' => array(
-                esc_html__( 'None', 'wingman' ) => 'none',
-                esc_html__( 'Classic pagination', 'wingman' ) => 'classic',
-                esc_html__( 'Load More button', 'wingman' ) => 'loadmore',
-                esc_html__( 'Normal pagination', 'wingman' ) => 'normal',
+                esc_html__( 'None', 'delphinus' ) => 'none',
+                esc_html__( 'Classic pagination', 'delphinus' ) => 'classic',
+                esc_html__( 'Load More button', 'delphinus' ) => 'loadmore',
+                esc_html__( 'Normal pagination', 'delphinus' ) => 'normal',
 
             ),
             'description' => esc_html__( 'Select the navigation type', 'js_composer' )
         ),
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
-            'admin_label' => true,
-            'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
-            ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
-        ),
+
+        vc_map_add_css_animation(),
+
         array(
             "type" => "textfield",
             "heading" => esc_html__( "Extra class name", "js_composer"),
@@ -264,33 +284,35 @@ vc_map( array(
             "description" => esc_html__( "If you wish to style particular content element differently, then use this field to add a class name and then refer to it in your css file.", "js_composer" ),
         ),
 
-
         // Data settings
         array(
             "type" => "dropdown",
-            "heading" => esc_html__("Data source", 'wingman'),
+            "heading" => esc_html__("Data source", 'delphinus'),
             "param_name" => "source",
             "value" => array(
-                esc_html__('All', 'wingman') => '',
-                esc_html__('Specific Categories', 'wingman') => 'categories',
-                esc_html__('Specific Posts', 'wingman') => 'posts',
-                esc_html__('Specific Authors', 'wingman') => 'authors'
+                esc_html__('All', 'delphinus') => '',
+                esc_html__('Specific Categories', 'delphinus') => 'categories',
+                esc_html__('Specific Posts', 'delphinus') => 'posts',
+                esc_html__('Specific Authors', 'delphinus') => 'authors'
             ),
             "admin_label" => true,
             'std' => '',
-            "description" => esc_html__("Select content type for your posts.", 'wingman'),
+            "description" => esc_html__("Select content type for your posts.", 'delphinus'),
             'group' => esc_html__( 'Data settings', 'js_composer' ),
         ),
+
         array(
             "type" => "kt_taxonomy",
             'taxonomy' => 'category',
-            'heading' => esc_html__( 'Categories', 'wingman' ),
+            'heading' => esc_html__( 'Categories', 'delphinus' ),
             'param_name' => 'categories',
-            'placeholder' => esc_html__( 'Select your categories', 'wingman' ),
+            'placeholder' => esc_html__( 'Select your categories', 'delphinus' ),
             "dependency" => array("element" => "source","value" => array('categories')),
             'multiple' => true,
+            'select' => 'id',
             'group' => esc_html__( 'Data settings', 'js_composer' ),
         ),
+
         array(
             "type" => "kt_posts",
             'args' => array('post_type' => 'post', 'posts_per_page' => -1),

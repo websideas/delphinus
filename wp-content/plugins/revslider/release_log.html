@@ -1,9 +1,107 @@
 <div class="slider-revolution-update-list">
+
+<h3 class="version-number">Version 5.2.5 StarPath (16th April 2016)</h3>
+<div class="newfeature"><strong style="font-weight:700">NEW FEATURES</strong></div>
+<ul>
+	<li>Added option to set the ID for the Slider which will also set dynamical added container ID's based on the preseted ID</li>
+	<li>Delay option added to the Jump To Slide Layer Action</li>
+	<li>Template Slider Packs now available</li>
+</ul>
+
+<div class="change"><strong style="font-weight:700">CHANGES</strong></div>
+<ul>
+	<li>Toggle Content on Click event has been extended. Toggle Content without Actions and also on all actions can be added.</li>
+	<li>Added further improvements for the Slider Template Library download routine.</li>
+</ul>
+
+<div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
+<ul>
+	<li>Fixed minHeight settings where entered suffix broke the Slider output.</li>
+	<li>Fixed duplication of ID on layers in frontend, caused by duplicating layers in Slide Editor</li>
+</ul>
+
+
+
+<h3 class="version-number">Version 5.2.4.1 StarPath (08th April 2016)</h3>
+<div class="change"><strong style="font-weight:700">CHANGES</strong></div>
+<ul>
+	<li>Changed HTML5 example URLs as the old ones are no longer available</li>
+	<li>Reminder on LayerAction added as solid warning in case Vimeo Video Controls are set to hidden</li>
+	<li>Calculation of Wave Loop Effect changed to respect the real X/Y Offsets</li>
+</ul>
+
+<div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
+<ul>
+	<li>Vimeo Arguments no longer reset on a Vimeo Layer</li>
+	<li>Fixed a Bug where 2nd Time Focused Slider with previously played Video started again even if it was not visible currently</li>
+	<li>Fixed an issue with Hungarian Translation.  Hungarian Translation is at 50% currently</li>
+	<li>Issue with HTML5 Video Next Slide at End on Mobile was skipping a slide after 2nd loop has been fixed.</li>
+	<li>Force Rewind available now for YouTube and Vimeo also on Mobile again</li>
+	<li>Shortocde Management on pages was not closing the Modal window in some cases. Added a Workaround which checks the last state of the Window in case the default GUI would not be able to close the window</li>
+	<li>Fixed the Start Angle Calculation of Wave Loop Effect</li>
+	<li>Keyboard Navigation could not be disabled if all other Navigation was disabled</li>
+</ul>
+
+
+<h3 class="version-number">Version 5.2.4 StarPath (01st April 2016)</h3>
+<div class="newfeature"><strong style="font-weight:700">NEW FEATURES</strong></div>
+<ul>
+	<li>French Translation added</li>
+</ul>
+
+<div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
+<ul>
+	<li>Static Layer Container was written even if no Static Layers were exist. This blocked 3D Parallax Slides from Hovering/Clicking on Elements</li>
+	<li>Fixed an issue where layers were disappearing in Google Chrome and other browsers after revisiting the slide</li>
+	<li>Fixed an issue with IE11 not beeing able to handle audio layer in Slide Editor</li>
+	<li>Fixed a bug where duplicated layers could loose their hover settings</li>
+	<li>Fixed a bug with SVG Objects, where styling was only attached if the SVG Object was loading from cache</li>
+</ul>
+
+
+<h3 class="version-number">Version 5.2.3.5 StarPath (18th March 2016)</h3>
+<div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
+<ul>
+	<li>Fixed output of 1 before the slider in rare cases</li>
+	<li>Fixed issue where layers would only show on hover</li>
+</ul>
+
+<h3 class="version-number">Version 5.2.3 StarPath (17th March 2016)</h3>
+<div class="change"><strong style="font-weight:700">Changes</strong></div>
+<ul>
+	<li>Improved google font loading by removing not needed multiple fonts</li>
+</ul>
+<div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
+<ul>
+	<li>Fixed conflicts that could occur in combinations with different third party plugins</li>
+	<li>Fixed a Viusal Composer conflict</li>
+	<li>Fixed Next Slide At End Bug, Loop, and Loop but Keep Slide Progress Bug for Video Backgrounds</li>
+</ul>
+
+
+<h3 class="version-number">Version 5.2.2 StarPath (11th March 2016)</h3>
+<div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
+<ul>
+	<li>Fixed an issue in Slide Editor where Options were not any more selectable. This is also a Fix for all iussues with "Can not read lenght of Null" Faliure</li>
+	<li>Fixed Layer Timing issue where Layer could not start any more at 0ms</li>
+	<li>Fixed Start Value issues in Slide Editor where some Value changed from "0" to a predefined Default value</li>
+	<li>Fixed an Issue where Layers disappearing after a long time period.</li>
+	<li>Fixed Slider / Layer Grid  Based Align options for Navigation Elements</li>
+	<li>Fixed calculation errors of navigation elements</li>
+	<li>Fixed an issue where slidelinks on carousel slides was not working properly</li>
+	<li>Fixed Static Layer container perspective on 3D Parallax Animations. Static Layers and Layers will have now the same View Perspective. To achieve this, Static Layers will always overlay simple Layers in 3D Parallax Mode</li>
+	<li>Scrolling by Scroll Bar will also trigger Parallax and Start Slider functions now</li>
+	<li>Fixed issues that could occur with older Visual Composer versions</li>
+	<li>Fixed a few template store issues where notices and warning occured</li>
+</ul>
+
+
 <h3 class="version-number">Version 5.2.1 StarPath (4th March 2016)</h3>
 <div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
 <ul>
 	<li>Fixed an Issue for PHP 5.2 or older where the Plugin was not loading on Backend any more</li>
 </ul>
+
 
 <h3 class="version-number">Version 5.2.0 StarPath (3th March 2016)</h3>
 <div class="newfeature"><strong style="font-weight:700">NEW FEATURES</strong></div>
@@ -820,7 +918,7 @@ Is there a feature you would like to see?<br>We will go through all your feedbac
 	<div class="bugfix"><strong style="font-weight:700">BUGFIXES</strong></div>
 	<ul>
 		<li>Fixed Vimeo First Auto Play issue</li>
-		<li>Fixed unseletable elements in Locked Mode</li>
+		<li>Fixed unselectable elements in Locked Mode</li>
 		<li>Fixed Output Failure if Rotated and Looped Animation has been selected</li>
 		<li>Various Bug fix in Drag And Drop Editor</li>
 		<li>Fix of Background Image if Screen size less Then Grid Width, postion of Elements and BG backend and frontend looked different</li>

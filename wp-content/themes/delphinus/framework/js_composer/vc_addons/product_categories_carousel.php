@@ -20,6 +20,7 @@ class WPBakeryShortCode_Categories_Carousel extends WPBakeryShortCode {
             'mousedrag' => true,
             'autoplayspeed' => 5000,
             'slidespeed' => 200,
+            'carousel_skin' => '',
 
             'desktop' => 4,
             'desktopsmall' => 3,
@@ -129,9 +130,9 @@ class WPBakeryShortCode_Categories_Carousel extends WPBakeryShortCode {
 
 
 vc_map( array(
-    "name" => esc_html__( "KT: Product Categories Carousel", 'wingman'),
+    "name" => esc_html__( "KT: Product Categories Carousel", 'delphinus'),
     "base" => "categories_carousel",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
     "params" => array(
 
         array(
@@ -186,27 +187,13 @@ vc_map( array(
 
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'Hide empty', 'wingman' ),
+            'heading' => esc_html__( 'Hide empty', 'delphinus' ),
             'param_name' => 'hide_empty',
             'value' => 'true',
-            "description" => esc_html__("Hide category if empty.", 'wingman'),
+            "description" => esc_html__("Hide category if empty.", 'delphinus'),
         ),
 
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
-            'admin_label' => true,
-            'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
-            ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
-        ),
+        vc_map_add_css_animation(),
         array(
             "type" => "textfield",
             "heading" => esc_html__( "Extra class name", "js_composer" ),
@@ -219,179 +206,193 @@ vc_map( array(
         // Carousel
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'Auto Height', 'wingman' ),
+            'heading' => esc_html__( 'Auto Height', 'delphinus' ),
             'param_name' => 'autoheight',
             'value' => 'true',
             "edit_field_class" => "vc_col-sm-4 kt_margin_bottom",
-            "description" => esc_html__("Enable auto height.", 'wingman'),
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            "description" => esc_html__("Enable auto height.", 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
         ),
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'Mouse Drag', 'wingman' ),
+            'heading' => esc_html__( 'Mouse Drag', 'delphinus' ),
             'param_name' => 'mousedrag',
             'value' => 'true',
-            "description" => esc_html__("Mouse drag enabled.", 'wingman'),
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            "description" => esc_html__("Mouse drag enabled.", 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             "edit_field_class" => "vc_col-sm-4 kt_margin_bottom",
         ),
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'AutoPlay', 'wingman' ),
+            'heading' => esc_html__( 'AutoPlay', 'delphinus' ),
             'param_name' => 'autoplay',
             'value' => 'false',
-            "description" => esc_html__("Enable auto play.", 'wingman'),
+            "description" => esc_html__("Enable auto play.", 'delphinus'),
             "edit_field_class" => "vc_col-sm-4 kt_margin_bottom",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             "type" => "kt_number",
-            "heading" => esc_html__("AutoPlay Speed", 'wingman'),
+            "heading" => esc_html__("AutoPlay Speed", 'delphinus'),
             "param_name" => "autoplayspeed",
             "value" => "5000",
-            "suffix" => esc_html__("milliseconds", 'wingman'),
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            "suffix" => esc_html__("milliseconds", 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             "dependency" => array("element" => "autoplay","value" => array('true')),
         ),
         array(
             "type" => "kt_number",
-            "heading" => esc_html__("Slide Speed", 'wingman'),
+            "heading" => esc_html__("Slide Speed", 'delphinus'),
             "param_name" => "slidespeed",
             "value" => "200",
-            "suffix" => esc_html__("milliseconds", 'wingman'),
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            "suffix" => esc_html__("milliseconds", 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' )
+        ),
+        array(
+            'type' => 'dropdown',
+            'heading' => esc_html__( 'Carousel skin', 'delphinus' ),
+            'param_name' => 'carousel_skin',
+            'value' => array(
+                esc_html__( 'Default', 'delphinus') => '',
+                esc_html__( 'White', 'delphinus') => 'white',
+            ),
+            'std' => '',
+            'desc' => esc_html__('Select carousel skin', 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Items to Show?", 'wingman'),
+            "heading" => esc_html__("Items to Show?", 'delphinus'),
             "param_name" => "items_show",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             "type" => "kt_number",
             "class" => "",
             "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
-            "heading" => esc_html__("On Desktop", 'wingman'),
+            "heading" => esc_html__("On Desktop", 'delphinus'),
             "param_name" => "desktop",
             "value" => 4,
             "min" => "1",
             "max" => "5",
             "step" => "1",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
 
         array(
             'type' => 'kt_number',
-            'heading' => esc_html__( 'on Tablets Landscape', 'wingman' ),
+            'heading' => esc_html__( 'on Tablets Landscape', 'delphinus' ),
             'param_name' => 'desktopsmall',
             "value" => 3,
             "min" => "1",
             "max" => "5",
             "step" => "1",
             "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             "type" => "kt_number",
             "class" => "",
             "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
-            "heading" => esc_html__("On Tablet", 'wingman'),
+            "heading" => esc_html__("On Tablet", 'delphinus'),
             "param_name" => "tablet",
             "value" => 2,
             "min" => "1",
             "max" => "5",
             "step" => "1",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             "type" => "kt_number",
             "class" => "",
             "edit_field_class" => "vc_col-sm-6 kt_margin_bottom",
-            "heading" => esc_html__("On Mobile", 'wingman'),
+            "heading" => esc_html__("On Mobile", 'delphinus'),
             "param_name" => "mobile",
             "value" => 1,
             "min" => "1",
             "max" => "5",
             "step" => "1",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Navigation settings", 'wingman'),
+            "heading" => esc_html__("Navigation settings", 'delphinus'),
             "param_name" => "navigation_settings",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'Navigation', 'wingman' ),
+            'heading' => esc_html__( 'Navigation', 'delphinus' ),
             'param_name' => 'navigation',
             'value' => 'true',
-            "description" => esc_html__("Show navigation in carousel", 'wingman'),
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            "description" => esc_html__("Show navigation in carousel", 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
 
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Navigation position', 'wingman' ),
+            'heading' => esc_html__( 'Navigation position', 'delphinus' ),
             'param_name' => 'navigation_position',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'value' => array(
-                esc_html__( 'Center outside', 'wingman') => 'center-outside',
-                esc_html__( 'Center inside', 'wingman') => 'center',
-                //esc_html__( 'Top', 'wingman') => 'top',
-                esc_html__( 'Bottom', 'wingman') => 'bottom',
+                esc_html__( 'Center outside', 'delphinus') => 'center-outside',
+                esc_html__( 'Center inside', 'delphinus') => 'center',
+                //esc_html__( 'Top', 'delphinus') => 'top',
+                esc_html__( 'Bottom', 'delphinus') => 'bottom',
             ),
             "dependency" => array("element" => "navigation","value" => array('true')),
         ),
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'Always Show Navigation', 'wingman' ),
+            'heading' => esc_html__( 'Always Show Navigation', 'delphinus' ),
             'param_name' => 'navigation_always_on',
             'value' => 'false',
-            "description" => esc_html__("Always show the navigation.", 'wingman'),
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            "description" => esc_html__("Always show the navigation.", 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             "dependency" => array("element" => "navigation_position","value" => array('center', 'center-outside')),
         ),
         array(
             'type' => 'dropdown',
             'heading' => esc_html__( 'Navigation style', 'js_composer' ),
             'param_name' => 'navigation_style',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'value' => array(
-                esc_html__( 'Normal', 'wingman' ) => 'normal',
-                esc_html__( 'Circle Background', 'wingman' ) => 'circle-background',
-                esc_html__( 'Square Background', 'wingman' ) => 'square-background',
-                esc_html__( 'Round Background', 'wingman' ) => 'round-background',
-                esc_html__( 'Circle Border', 'wingman' ) => 'circle-border',
-                esc_html__( 'Square Border', 'wingman' ) => 'square-border',
-                esc_html__( 'Round Border', 'wingman' ) => 'round-border',
+                esc_html__( 'Normal', 'delphinus' ) => 'normal',
+                esc_html__( 'Circle Background', 'delphinus' ) => 'circle-background',
+                esc_html__( 'Square Background', 'delphinus' ) => 'square-background',
+                esc_html__( 'Round Background', 'delphinus' ) => 'round-background',
+                esc_html__( 'Circle Border', 'delphinus' ) => 'circle-border',
+                esc_html__( 'Square Border', 'delphinus' ) => 'square-border',
+                esc_html__( 'Round Border', 'delphinus' ) => 'round-border',
             ),
             'std' => 'normal',
             "dependency" => array("element" => "navigation","value" => array('true')),
+            "description" => esc_html__("Select your navigation style.", 'delphinus'),
         ),
+
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Pagination settings", 'wingman'),
+            "heading" => esc_html__("Pagination settings", 'delphinus'),
             "param_name" => "pagination_settings",
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'Pagination', 'wingman' ),
+            'heading' => esc_html__( 'Pagination', 'delphinus' ),
             'param_name' => 'pagination',
             'value' => 'false',
-            "description" => esc_html__("Show pagination in carousel", 'wingman'),
-            'group' => esc_html__( 'Carousel', 'wingman' )
+            "description" => esc_html__("Show pagination in carousel", 'delphinus'),
+            'group' => esc_html__( 'Carousel', 'delphinus' )
         ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Pagination position', 'wingman' ),
+            'heading' => esc_html__( 'Pagination position', 'delphinus' ),
             'param_name' => 'pagination_position',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'value' => array(
-                esc_html__( 'Center Top', 'wingman') => 'center-top',
-                esc_html__( 'Center Bottom', 'wingman') => 'center-bottom',
-                esc_html__( 'Bottom Left', 'wingman') => 'bottom-left',
+                esc_html__( 'Center Top', 'delphinus') => 'center-top',
+                esc_html__( 'Center Bottom', 'delphinus') => 'center-bottom',
+                esc_html__( 'Bottom Left', 'delphinus') => 'bottom-left',
             ),
             'std' => 'center_bottom',
             "dependency" => array("element" => "pagination","value" => array('true')),
@@ -400,11 +401,11 @@ vc_map( array(
             'type' => 'dropdown',
             'heading' => esc_html__( 'Pagination style', 'js_composer' ),
             'param_name' => 'pagination_style',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'value' => array(
-                esc_html__( 'Dot stroke', 'wingman' ) => 'dot-stroke',
-                esc_html__( 'Fill pp', 'wingman' ) => 'fill-up',
-                esc_html__( 'Circle grow', 'wingman' ) => 'circle-grow',
+                esc_html__( 'Dot stroke', 'delphinus' ) => 'dot-stroke',
+                esc_html__( 'Fill pp', 'delphinus' ) => 'fill-up',
+                esc_html__( 'Circle grow', 'delphinus' ) => 'circle-grow',
             ),
             'std' => 'dot_stroke',
             "dependency" => array("element" => "pagination","value" => array('true')),

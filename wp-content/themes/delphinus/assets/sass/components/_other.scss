@@ -11,8 +11,7 @@
     cursor: url(../images/drag.png) 16 9, ew-resize !important;
   }
 
-  /*
-  &.gutters{
+  &.carousel-gutters{
     margin-left: -15px;
     margin-right: -15px;
     .kt-owl-carousel{
@@ -22,7 +21,6 @@
       }
     }
   }
-  */
 
   .owl-pagination{
     text-align: center;
@@ -50,6 +48,29 @@
     }
   }
 
+  &.pagination-fade{
+    .owl-page{
+      span{
+        background: $black;
+      }
+      &.active span,
+      &:hover span{
+        background: rgba($black, .5);
+      }
+    }
+    &.carousel-skin-white{
+      .owl-page{
+        span{
+          background: $white;
+        }
+        &.active span,
+        &:hover span{
+          background: rgba($white, .5);
+        }
+      }
+    }
+  }
+
   &.pagination-dot-stroke{
     .owl-page{
       span{
@@ -61,7 +82,21 @@
         @include box-shadow(0, 0, 0, $black, inset, 1px);
       }
     }
+
+    &.carousel-skin-white{
+      .owl-page{
+        span{
+          background-color: rgba($white, 0.3);
+          @include box-shadow(0, 0, 0, rgba($white, .5), inset, 8px);
+        }
+        &.active span,
+        &:hover span{
+          @include box-shadow(0, 0, 0, $white, inset, 1px);
+        }
+      }
+    }
   }
+
   &.pagination-fill-up,
   &.pagination-circle-grow{
     .owl-page{
@@ -78,12 +113,23 @@
         }
       }
     }
+
+    &.carousel-skin-white{
+      .owl-page{
+        span{
+          @include box-shadow(0, 0, 0, $white, inset, 2px);
+          &:after {
+            background-color: $white;
+          }
+        }
+      }
+    }
+
   }
 
   &.pagination-fill-up {
     .owl-page{
       span{
-
         &:after {
           height: 0;
           @include transition('height 0.3s ease 0s');
@@ -122,17 +168,35 @@
     position: relative;
     text-align: center;
     @include opacity(0);
-    line-height: 30px;
     > div{
       font-weight: normal;
-      color: #000000;
-      font-size: 30px;
-      height: 30px;
-      width: 30px;
+      color: $black;
+      font-size: 20px;
+      height: 40px;
+      width: 40px;
+      line-height: 38px;
       display: inline-block;
       text-align: center;
-      + div{
-        margin-left: 10px;
+      &:before{
+        font-family: FontAwesome;
+      }
+      &.owl-prev{
+        &:before{
+          content:"\f104";
+        }
+      }
+      &.owl-next{
+        &:before{
+          content:"\f105";
+        }
+      }
+    }
+  }
+
+  &.carousel-skin-white{
+    .owl-buttons {
+      > div{
+        color: $white;
       }
     }
   }
@@ -143,12 +207,13 @@
     }
   }
 
-
   &.visiable-navigation{
     .owl-buttons {
       @include opacity(1);
     }
   }
+
+
 
   &.navigation-center-outside,
   &.navigation-center{
@@ -162,11 +227,6 @@
       }
       > div{
         @include translate(y);
-        font-size: 24px;
-        color: #000000;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
         text-align: center;
         margin: 0;
         &.owl-prev{
@@ -178,6 +238,8 @@
       }
     }
   }
+
+
   &.navigation-center{
     .owl-buttons{
       > div{
@@ -198,24 +260,68 @@
   }
 
   &.navigation-normal{
-    .owl-buttons{
+    .owl-buttons {
       div{
-        &:before{
-          font-family: FontAwesome;
-        }
-        &.owl-prev{
-          &:before{
-            content:"\f104";
-          }
-        }
-        &.owl-next{
-          &:before{
-            content:"\f105";
-          }
+        font-size: 30px;
+      }
+    }
+  }
+
+  &.navigation-round-background,
+  &.navigation-circle-background,
+  &.navigation-square-background{
+    .owl-buttons {
+      div{
+        @include box-shadow(0,2px, 6px, rgba(#000, 0.05));
+        background: $black;
+        color: $white;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+
+    &.carousel-skin-white{
+      .owl-buttons {
+        div{
+          color: $gray-text;
+          background: $white;
         }
       }
     }
   }
+
+
+  &.navigation-round-border,
+  &.navigation-circle-border,
+  &.navigation-square-border{
+    .owl-buttons {
+      div{
+        border: 1px solid $black;
+        color: $black;
+      }
+    }
+  }
+
+  &.navigation-round-border,
+  &.navigation-round-background{
+    .owl-buttons {
+      div{
+        @include border-radius(5px);
+      }
+    }
+  }
+
+  &.navigation-circle-background,
+  &.navigation-circle-border{
+    .owl-buttons {
+      div{
+        @include border-radius(50%);
+      }
+    }
+  }
+
+
 
 
   &.pagination-center-top{
@@ -241,4 +347,33 @@
 
 
 
+}
+
+
+.persephone.tparrows{
+  background: #fff;
+  border: none;
+  @include box-shadow(0, 2px, 6px, rgba($white, .05));
+  height: 50px;
+  width: 50px;
+  &:before{
+    color: #999;
+    line-height: 50px;
+    font-size: 12px;
+    @include transition();
+    @include transform(scale(1));
+  }
+  &:hover{
+    background: #fff;
+    &:before{
+      @include transform(scale(1.3));
+    }
+  }
+}
+
+
+.ares.tp-bullets{
+  .tp-bullet-title{
+    display: none;
+  }
 }

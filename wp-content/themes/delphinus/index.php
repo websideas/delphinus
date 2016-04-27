@@ -13,7 +13,7 @@
 
 $sidebar = kt_get_archive_sidebar();
 
-$main_column = ($sidebar['sidebar']) ? '8' : '12';
+$main_column = ($sidebar['sidebar']) ? '9' : '12';
 $sidebar_class = ($sidebar['sidebar']) ? 'sidebar-'.$sidebar['sidebar'] : 'no-sidebar';
 $pull_class = ($sidebar['sidebar'] == 'left') ? 'pull-right' : '';
 
@@ -37,7 +37,7 @@ get_header(); ?>
                 <?php endif; ?>
             </div><!-- .site-main -->
             <?php if($sidebar['sidebar']){ ?>
-                <?php echo '<div class="col-md-4 col-sm-12 col-xs-12 side-bar main-sidebar">'; ?>
+                <?php echo '<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 side-bar main-sidebar">'; ?>
                     <div class="side-bar-inner">
                         <?php dynamic_sidebar($sidebar['sidebar_area']); ?>
                     </div>

@@ -118,27 +118,27 @@ class WPBakeryShortCode_Products_Widget_Carousel extends WPBakeryShortCode {
 
 
 vc_map( array(
-    "name" => esc_html__( "KT: Products Widget Carousel", 'wingman'),
+    "name" => esc_html__( "KT: Products Widget Carousel", 'delphinus'),
     "base" => "products_widget_carousel",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
     "params" => array(
 
         // Data setting
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Data settings", 'wingman'),
+            "heading" => esc_html__("Data settings", 'delphinus'),
             "param_name" => "data_settings",
         ),
 
         array(
             "type" => "dropdown",
-            "heading" => esc_html__("Data source", 'wingman'),
+            "heading" => esc_html__("Data source", 'delphinus'),
             "param_name" => "source",
             "value" => array(
-                esc_html__('Recent products', 'wingman') => 'recent',
-                esc_html__('Featured Products', 'wingman') => 'featured',
-                esc_html__('On-sale Products', 'wingman') => 'sale',
-                esc_html__('Best Selling Products', 'wingman') => 'bestselling',
+                esc_html__('Recent products', 'delphinus') => 'recent',
+                esc_html__('Featured Products', 'delphinus') => 'featured',
+                esc_html__('On-sale Products', 'delphinus') => 'sale',
+                esc_html__('Best Selling Products', 'delphinus') => 'bestselling',
 
             ),
             'std' => 'recent',
@@ -188,24 +188,10 @@ vc_map( array(
         // Others setting
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Others settings", 'wingman'),
+            "heading" => esc_html__("Others settings", 'delphinus'),
             "param_name" => "others_settings",
         ),
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
-            'admin_label' => true,
-            'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
-            ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
-        ),
+        vc_map_add_css_animation(),
         array(
             "type" => "textfield",
             "heading" => esc_html__( "Extra class name", "js_composer" ),
@@ -219,7 +205,7 @@ vc_map( array(
             'heading' => esc_html__( 'Total Products', 'js_composer' ),
             'value' => 9,
             'param_name' => 'per_page',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'description' => esc_html__( 'The "per_page" shortcode determines how many products to show on the page', 'js_composer' ),
         ),
         array(
@@ -227,7 +213,7 @@ vc_map( array(
             'heading' => esc_html__( 'Products in carousel item', 'js_composer' ),
             'value' => 3,
             'param_name' => 'carousel_item',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'description' => esc_html__( 'The number product in each carousel item', 'js_composer' ),
         ),
 

@@ -318,8 +318,8 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 
 								<!-- LAYER SELECTABLE -->
 								<i class="rs-mini-layer-icon eg-icon-lightbulb rs-toolbar-icon tipsy_enabled_top" title="<?php _e("Layer is Selectable",'revslider'); ?>" style="margin-right:10px"></i>
-								<!--input type="checkbox" id="css_layer_selectable" name="css_layer_selectable-style" class="rs-staticcustomstylechange tipsy_enabled_top tp-moderncheckbox" title="<?php _e("Layer is Seletable / Markable on Frontend",'revslider'); ?>"-->
-								<select class="rs-staticcustomstylechange rs-layer-input-field  tipsy_enabled_top" title="<?php _e("Layer is Seletable / Markable on Frontend",'revslider'); ?>" style="width:100px;cursor:pointer" id="css_layer_selectable" name="css_layer_selectable-style">
+								<!--input type="checkbox" id="css_layer_selectable" name="css_layer_selectable-style" class="rs-staticcustomstylechange tipsy_enabled_top tp-moderncheckbox" title="<?php _e("Layer is Selectable / Markable on Frontend",'revslider'); ?>"-->
+								<select class="rs-staticcustomstylechange rs-layer-input-field  tipsy_enabled_top" title="<?php _e("Layer is Selectable / Markable on Frontend",'revslider'); ?>" style="width:100px;cursor:pointer" id="css_layer_selectable" name="css_layer_selectable-style">
 									<option value="default"><?php _e('Default', 'revslider'); ?></option>
 									<option value="off"><?php _e('Off', 'revslider'); ?></option>
 									<option value="on"><?php _e('On', 'revslider'); ?></option>
@@ -2991,7 +2991,9 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 			<span class="rs-layer-toolbar-space"></span>
 			<select name="<# if(data['edit'] == false){ #>no_<# } #>jump_to_slide[]" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>rs-layer-input-field" style="width:150px" data-selectoption="{{ data['jump_to_slide'] }}">
 			</select>
-
+			<span><?php _e("Delay",'revslider'); ?></span>
+			<span class="rs-layer-toolbar-space"></span>
+			<input type="text" style="width:60px;" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>textbox-caption rs-layer-input-field" name="<# if(data['edit'] == false){ #>no_<# } #>layer_action_delay[]" value="{{ data['action_delay'] }}"> <?php _e('ms', 'revslider'); ?>
 		</span>
 
 		<!-- SCROLL OFFSET -->
@@ -3027,7 +3029,7 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 			</select>
 		</span>	
 
-		<!-- CALLBACK FUNCTION-->
+		<!-- TOGGLE CLAS FUNCTION-->
 		<span class="action-toggleclass" style="display:none;">	
 			<span class="rs-layer-toolbar-space"></span>
 			<span><?php _e("Class",'revslider'); ?></span>

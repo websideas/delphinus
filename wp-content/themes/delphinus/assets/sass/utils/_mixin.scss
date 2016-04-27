@@ -437,7 +437,7 @@
   #{$property}: calc(#{$expression});
 }
 
-/// Calc
+/// FontIcon
 @mixin FontIcon($key, $font: 'FontAwesome') {
   font-family: $font;
   content: "#{$key}";

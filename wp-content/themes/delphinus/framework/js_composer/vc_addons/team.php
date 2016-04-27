@@ -77,10 +77,10 @@ class WPBakeryShortCode_Team extends WPBakeryShortCode {
 
 // Add your Visual Composer logic here
 vc_map( array(
-    "name" => esc_html__( "Team", 'wingman'),
+    "name" => esc_html__( "Team", 'delphinus'),
     "base" => "team",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
-    "description" => esc_html__( "", 'wingman'),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
+    "description" => esc_html__( "", 'delphinus'),
     "wrapper_class" => "clearfix",
     "params" => array(
         array(
@@ -92,14 +92,14 @@ vc_map( array(
 
         array(
             'type' => 'attach_image',
-            'heading' => esc_html__( 'Image', 'wingman' ),
+            'heading' => esc_html__( 'Image', 'delphinus' ),
             'param_name' => 'image',
             'description' => esc_html__( 'Select image from media library.', 'js_composer' ),
         ),
 
         array(
             "type" => "kt_image_sizes",
-            "heading" => esc_html__( "Select image sizes", 'wingman' ),
+            "heading" => esc_html__( "Select image sizes", 'delphinus' ),
             "param_name" => "image_size",
             "std" => "full"
         ),

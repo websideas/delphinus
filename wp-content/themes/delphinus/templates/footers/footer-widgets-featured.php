@@ -11,7 +11,7 @@ if ( ! is_active_sidebar( 'footer-column-1' ) && ! is_active_sidebar( 'footer-co
 ?>
 <footer id="footer-area">
     <div class="row no-gutters row-flex">
-        <div class="col-lg-8 col-md-12">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
             <div class="col-inner">
                 <div class="footer-area-inner">
                     <div class="row">
@@ -28,7 +28,7 @@ if ( ! is_active_sidebar( 'footer-column-1' ) && ! is_active_sidebar( 'footer-co
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 footer-area-right">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-area-right">
             <div class="col-inner">
                 <div class="footer-area-inner">
                     <?php dynamic_sidebar('footer-column-4'); ?>

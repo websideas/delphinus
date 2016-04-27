@@ -12,8 +12,8 @@ All rights reserved.
 */
 
 
-add_action( 'init', 'register_kt_client_init' );
-function register_kt_client_init(){
+add_action( 'init', 'kt_register_client_init' );
+function kt_register_client_init(){
     $labels = array( 
         'name' => __( 'Client', 'delphinus_cp'),
         'singular_name' => __( 'Client', 'delphinus_cp'),
@@ -55,8 +55,8 @@ function register_kt_client_init(){
 }
 
 
-add_action( 'init', 'register_kt_testimonial_init' );
-function register_kt_testimonial_init(){
+add_action( 'init', 'kt_register_testimonial_init' );
+function kt_register_testimonial_init(){
     $labels = array(
         'name' => __( 'Testimonial', 'delphinus_cp'),
         'singular_name' => __( 'Testimonial', 'delphinus_cp'),

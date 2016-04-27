@@ -13,9 +13,9 @@ if ( function_exists('register_sidebar')) {
     function kt_register_sidebars(){
 
         register_sidebar( array(
-            'name' => esc_html__( 'Primary Widget Area', 'mondova'),
+            'name' => esc_html__( 'Primary Widget Area', 'delphinus'),
             'id' => 'primary-widget-area',
-            'description' => esc_html__( 'The primary widget area', 'mondova'),
+            'description' => esc_html__( 'The primary widget area', 'delphinus'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
             'before_title' => '<h3 class="widget-title">',
@@ -23,19 +23,29 @@ if ( function_exists('register_sidebar')) {
         ) );
 
         register_sidebar( array(
-            'name' => esc_html__( 'Shop Widget Area', 'wingman'),
+            'name' => esc_html__( 'Shop Widget Area', 'delphinus'),
             'id' => 'shop-widget-area',
-            'description' => esc_html__( 'The shop widget area', 'wingman'),
-            'before_widget' => '<div id="%1$s" class="widget clearfix %2$s">',
+            'description' => esc_html__( 'The shop widget area', 'delphinus'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
         ) );
 
         register_sidebar( array(
-            'name' => esc_html__( 'Blog Widget Area', 'mondova'),
+            'name' => esc_html__( 'Shop filter Area', 'delphinus'),
+            'id' => 'shop-filter-area',
+            'description' => esc_html__( 'The shop filter area', 'delphinus'),
+            'before_widget' => '<div id="%1$s" class="widget col-md-3 %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+
+        register_sidebar( array(
+            'name' => esc_html__( 'Blog Widget Area', 'delphinus'),
             'id' => 'blog-widget-area',
-            'description' => esc_html__( 'The blog widget area', 'mondova'),
+            'description' => esc_html__( 'The blog widget area', 'delphinus'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
             'before_title' => '<h3 class="widget-title">',
@@ -46,9 +56,9 @@ if ( function_exists('register_sidebar')) {
 
         for($i=1; $i<=$count;$i++){
             register_sidebar( array(
-                'name' => sprintf(esc_html__( 'Sidebar %s', 'mondova'), $i) ,
+                'name' => sprintf(esc_html__( 'Sidebar %s', 'delphinus'), $i) ,
                 'id' => 'sidebar-column-'.$i,
-                'description' => sprintf(esc_html__( 'The sidebar column %s widget area', 'mondova'),$i),
+                'description' => sprintf(esc_html__( 'The sidebar column %s widget area', 'delphinus'),$i),
                 'before_widget' => '<section class="widget %2$s">',
                 'after_widget' => '</section>',
                 'before_title' => '<h3 class="widget-title">',
@@ -58,9 +68,9 @@ if ( function_exists('register_sidebar')) {
 
 
         register_sidebar( array(
-            'name' => esc_html__( 'Footer top', 'mondova'),
+            'name' => esc_html__( 'Footer top', 'delphinus'),
             'id' => 'footer-top',
-            'description' => esc_html__( 'The footer top widget area', 'mondova'),
+            'description' => esc_html__( 'The footer top widget area', 'delphinus'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
             'before_title' => '<h4 class="widget-title">',
@@ -72,9 +82,9 @@ if ( function_exists('register_sidebar')) {
 
         for($i=1; $i<=$count;$i++){
             register_sidebar( array(
-                'name' => sprintf(esc_html__( 'Footer column %s', 'mondova'), $i) ,
+                'name' => sprintf(esc_html__( 'Footer column %s', 'delphinus'), $i) ,
                 'id' => 'footer-column-'.$i,
-                'description' => sprintf(esc_html__( 'The footer column %s widget area', 'mondova'),$i),
+                'description' => sprintf(esc_html__( 'The footer column %s widget area', 'delphinus'),$i),
                 'before_widget' => '<section id="%1$s" class="widget %2$s">',
                 'after_widget' => '</section>',
                 'before_title' => '<h3 class="widget-title">',
@@ -83,9 +93,9 @@ if ( function_exists('register_sidebar')) {
         }
 
         register_sidebar( array(
-            'name' => esc_html__( 'Footer bottom column 1', 'mondova'),
+            'name' => esc_html__( 'Footer bottom column 1', 'delphinus'),
             'id' => 'footer-bottom-1',
-            'description' => esc_html__( 'The footer bottom widget area', 'mondova'),
+            'description' => esc_html__( 'The footer bottom widget area', 'delphinus'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
             'before_title' => '<!--',
@@ -93,9 +103,9 @@ if ( function_exists('register_sidebar')) {
         ) );
 
         register_sidebar( array(
-            'name' => esc_html__( 'Footer bottom column 2', 'mondova'),
+            'name' => esc_html__( 'Footer bottom column 2', 'delphinus'),
             'id' => 'footer-bottom-2',
-            'description' => esc_html__( 'The footer bottom widget area', 'mondova'),
+            'description' => esc_html__( 'The footer bottom widget area', 'delphinus'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
             'before_title' => '<!--',
@@ -169,10 +179,19 @@ function kt_archive_count_span($links) {
  */
 
 // Widgets list
-
 $kt_widgets = array(
-    'kt_article.php'
+    'kt_article.php',
+    'kt_socials.php',
+    'kt_fadein.php'
 );
+
+if(kt_is_wc()){
+    $kt_wc_widgets = array(
+        'kt_filter_color.php',
+    );
+    $kt_widgets = array_merge($kt_widgets, $kt_wc_widgets);
+}
+
 
 foreach ( $kt_widgets as $widget ) {
 	require_once( KT_FW_WIDGETS . $widget );

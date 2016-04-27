@@ -12,16 +12,45 @@
             <?php
             if( ! post_password_required( ) ):
                 wp_link_pages( array(
-                    'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'mondova' ) . '</span>',
+                    'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'delphinus' ) . '</span>',
                     'after'       => '</div>',
                     'link_before' => '<span>',
                     'link_after'  => '</span>',
-                    'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'mondova' ) . ' </span>%',
+                    'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'delphinus' ) . ' </span>%',
                     'separator'   => '<span class="screen-reader-text">, </span>',
                 ) );
             endif;
             ?>
         </div><!-- .entry-content -->
     </div>
+    <footer class="entry-footer">
+        <?php
+        kt_post_meta_tags('');
+
+        if(kt_post_option(null, '_kt_social_sharing', 'single_share_box', 1)) {
+            kt_share_box(null, 'square');
+        }
+
+        ?>
+    </footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
+
+<?php
+
+    if(kt_post_option(null, '_kt_related_acticles', 'single_related', 1)){
+        kt_related_article(null, kt_option('single_related_type', 'categories'));
+    }
+
+    if(kt_post_option(null, '_kt_author_info', 'single_author', 1)){
+        // Author bio.
+        get_template_part( 'templates/author-bio' );
+    }
+
+    if(kt_post_option(null, '_kt_prev_next', 'single_next_prev', 0)){
+        //kt_post_nav();
+    }
+
+
+
+?>

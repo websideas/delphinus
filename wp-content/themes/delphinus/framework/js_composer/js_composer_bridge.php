@@ -5,24 +5,74 @@ if ( !defined('ABSPATH')) exit;
 //  0 - unsorted and appended to bottom Default  
 //  1 - Appended to top)
 
+vc_add_params("vc_custom_heading", array(
+    array(
+        "type" => "kt_number",
+        "heading" => __("Letter spacing", 'delphinus'),
+        "param_name" => "letter_spacing",
+        "min" => 0,
+        "suffix" => "px",
+        'group' => __( 'Extra', 'delphinus' )
+    )
+));
+
+vc_remove_element( 'vc_separator' );
+vc_remove_element( 'vc_text_separator' );
+vc_remove_element( 'vc_message' );
+vc_remove_element( 'vc_toggle' );
+vc_remove_element( 'vc_gallery' );
+vc_remove_element( 'vc_posts_slider' );
+vc_remove_element( 'vc_images_carousel' );
+vc_remove_element( 'vc_cta' );
+vc_remove_element( 'vc_button2' );
+vc_remove_element( 'vc_cta_button' );
+vc_remove_element( 'vc_cta_button2' );
+vc_remove_element( 'vc_flickr' );
+vc_remove_element( 'vc_progress_bar' );
+vc_remove_element( 'vc_pie' );
+vc_remove_element( 'vc_basic_grid' );
+vc_remove_element( 'vc_media_grid' );
+vc_remove_element( 'vc_masonry_grid' );
+vc_remove_element( 'vc_masonry_media_grid' );
+vc_remove_element( 'vc_wp_search' );
+vc_remove_element( 'vc_element-description' );
+vc_remove_element( 'vc_wp_recentcomments' );
+vc_remove_element( 'vc_wp_calendar' );
+vc_remove_element( 'vc_wp_pages' );
+vc_remove_element( 'vc_wp_tagcloud' );
+vc_remove_element( 'vc_wp_custommenu' );
+vc_remove_element( 'vc_wp_text' );
+vc_remove_element( 'vc_wp_posts' );
+vc_remove_element( 'vc_wp_categories' );
+vc_remove_element( 'vc_wp_archives' );
+vc_remove_element( 'vc_wp_rss' );
+vc_remove_element( 'vc_wp_meta' );
+vc_remove_element( 'vc_tta_tour' );
+vc_remove_element( 'vc_line_chart' );
+vc_remove_element( 'vc_round_chart' );
+vc_remove_element( 'vc_tta_pageable' );
+
+
 
 $visibilities_arr = array('vc_empty_space', 'kt_heading');
 foreach($visibilities_arr as $item){
     vc_add_param($item, array(
         "type" => "dropdown",
-        "heading" => esc_html__("Visibility",'mondova'),
+        "heading" => esc_html__("Visibility", 'delphinus'),
         "param_name" => "visibility",
         "value" => array(
-            esc_html__('Always Visible', 'mondova') => '',
-            esc_html__('Visible on Phones', 'mondova') => 'visible-xs-block',
-            esc_html__('Visible on Tablets', 'mondova') => 'visible-sm-block',
-            esc_html__('Visible on Desktops', 'mondova') => 'visible-md-block',
-            esc_html__('Visible on Desktops Large', 'mondova') => 'visible-lg-block',
+            esc_html__('Always Visible', 'delphinus') => '',
+            esc_html__('Visible on Phones', 'delphinus') => 'visible-xs-block',
+            esc_html__('Visible on Tablets', 'delphinus') => 'visible-sm-block',
+            esc_html__('Visible on Desktops', 'delphinus') => 'visible-md-block',
+            esc_html__('Visible on Desktops Large', 'delphinus') => 'visible-lg-block',
+            esc_html__('Visible on Desktops and Desktops Large', 'delphinus') => 'visible-md-block visible-lg-block',
 
-            esc_html__('Hidden on Phones', 'mondova') => 'hidden-xs',
-            esc_html__('Hidden on Tablets', 'mondova') => 'hidden-sm',
-            esc_html__('Hidden on Desktops', 'mondova') => 'hidden-md',
-            esc_html__('Hidden on Desktops Large', 'mondova') => 'hidden-lg',
+            esc_html__('Hidden on Phones', 'delphinus') => 'hidden-xs',
+            esc_html__('Hidden on Tablets', 'delphinus') => 'hidden-sm',
+            esc_html__('Hidden on Desktops', 'delphinus') => 'hidden-md',
+            esc_html__('Hidden on Desktops Large', 'delphinus') => 'hidden-lg',
+            esc_html__('Hidden on Desktops and Desktops Large', 'delphinus') => 'hidden-md hidden-lg',
         ),
         "admin_label" => true,
     ));
@@ -36,32 +86,31 @@ foreach($background_arr as $item) {
         "heading" => "Background position",
         "param_name" => "background_position",
         "value" => array(
-            '' => 'None',
-            "center center" => "center center",
-            "center top" => "center top",
-            "center bottom" => "center bottom",
-            "center right" => "center right",
-            "center left" => "center left",
+            'None' => '',
+            "Center Center" => "center center",
+            "Center Top" => "center top",
+            "Center Bottom" => "center bottom",
+            "Center Right" => "center right",
+            "Center Left" => "center left",
         ),
+        'description' => esc_html__('Select background position', 'delphinus')
     ));
 }
-
-/*
-$composer_addons = array(
-    'blockquote.php',
-    'googlemap.php',
-    'socials.php',
-);
-*/
 
 
 $composer_addons = array(
     'heading.php',
     'icon_box.php',
+    'testimonial_carousel.php',
     'blog_posts.php',
     'banner.php',
     'clients_carousel.php',
-    'wrapper.php'
+    'wrapper.php',
+    'box_colored.php',
+    'flip_box.php',
+    'googlemap.php',
+    'socials.php',
+    'contact-form7.php'
 );
 
 if(kt_is_wc()){
@@ -71,11 +120,31 @@ if(kt_is_wc()){
         'products_carousel.php',
         'product_categories_carousel.php',
         'product_categories_grid.php',
-        'products.php'
+        'products.php',
+        'products_mini.php',
+        'products_sale_countdown.php',
+        'vertical_menu.php'
     );
     $composer_addons = array_merge($composer_wc_addons, $composer_addons);
 }
 
+
+
+
+
+$list = array(
+    'page',
+    'product',
+);
+vc_set_default_editor_post_types( $list );
+
+
+$settings = array (
+    'weight' => '98',
+);
+vc_map_update( 'vc_custom_heading', $settings );
+
+
 foreach ( $composer_addons as $addon ) {
-	require_once( KT_FW_DIR . 'js_composer/vc_addons/' . $addon );
+    require_once( KT_FW_DIR . 'js_composer/vc_addons/' . $addon );
 }

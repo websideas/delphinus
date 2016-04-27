@@ -45,15 +45,14 @@ class RevSliderTinyBox {
 	 * Allow for VC to use this plugin
 	 */
 	public static function visual_composer_include(){
-
-		if(!function_exists('vc_map')) return false;
 		
-		
-		Vc_Manager()->init();
-		$mode = Vc_Manager()->mode();
-		
-		if ( in_array($mode, array('admin_page', 'admin_frontend_editor')) ) {
-			add_action( 'init', array('RevSliderTinyBox', 'add_to_VC' ));
+		if(is_user_logged_in()){
+			
+			if(!function_exists('vc_map') || !function_exists('vc_action')) return false;
+			
+			if('vc_inline' === vc_action() || is_admin()){
+				add_action( 'init', array('RevSliderTinyBox', 'add_to_VC' ));
+			}
 		}
 	}
 	

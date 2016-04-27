@@ -132,10 +132,10 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
 
 // Add your Visual Composer logic here
 vc_map( array(
-    "name" => esc_html__( "KT: Icon Box", 'wingman'),
+    "name" => esc_html__( "KT: Icon Box", 'delphinus'),
     "base" => "icon_box",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
-    "description" => esc_html__( "", 'wingman'),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
+    "description" => esc_html__( "", 'delphinus'),
     "wrapper_class" => "clearfix",
     "params" => array(
         array(
@@ -152,41 +152,25 @@ vc_map( array(
         ),
         array(
             "type" => "textarea_html",
-            "heading" => esc_html__("Content", 'wingman'),
+            "heading" => esc_html__("Content", 'delphinus'),
             "param_name" => "content",
             "value" => '',
-            "description" => esc_html__("", 'wingman'),
+            "description" => esc_html__("", 'delphinus'),
             "holder" => "div",
         ),
         //Layout settings
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Layout icon box', 'wingman' ),
+            'heading' => esc_html__( 'Layout icon box', 'delphinus' ),
             'param_name' => 'icon_box_layout',
             'value' => array(
-                esc_html__( 'Icon on Top of Title', 'wingman' ) => '1',
-                esc_html__( 'Icon on Top of Title - Center', 'wingman' ) => '2'
+                esc_html__( 'Icon on Top of Title', 'delphinus' ) => '1',
+                esc_html__( 'Icon on Top of Title - Center', 'delphinus' ) => '2'
             ),
-            'description' => esc_html__( 'Select your layout.', 'wingman' ),
+            'description' => esc_html__( 'Select your layout.', 'delphinus' ),
             "admin_label" => true,
         ),
-
-
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
-            'admin_label' => true,
-            'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
-            ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
-        ),
+        vc_map_add_css_animation(),
         array(
             "type" => "textfield",
             "heading" => esc_html__( "Extra class name", "js_composer" ),
@@ -196,23 +180,23 @@ vc_map( array(
         //Icon settings
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Icon to display', 'wingman' ),
+            'heading' => esc_html__( 'Icon to display', 'delphinus' ),
             'param_name' => 'icon_type',
             'value' => array(
-                esc_html__( 'Font Icon', 'wingman' ) => 'icon',
-                esc_html__( 'Image Icon', 'wingman' ) => 'image',
+                esc_html__( 'Font Icon', 'delphinus' ) => 'icon',
+                esc_html__( 'Image Icon', 'delphinus' ) => 'image',
             ),
-            'description' => esc_html__( 'Select your layout.', 'wingman' ),
-            'group' => esc_html__( 'Icon', 'wingman' )
+            'description' => esc_html__( 'Select your layout.', 'delphinus' ),
+            'group' => esc_html__( 'Icon', 'delphinus' )
         ),
 
         array(
             'type' => 'attach_image',
-            'heading' => esc_html__( 'Image Thumbnail', 'wingman' ),
+            'heading' => esc_html__( 'Image Thumbnail', 'delphinus' ),
             'param_name' => 'iconbox_image',
             'dependency' => array( 'element' => 'icon_type',  'value' => array( 'image' ) ),
             'description' => esc_html__( 'Select image from media library.', 'js_composer' ),
-            'group' => esc_html__( 'Icon', 'wingman' )
+            'group' => esc_html__( 'Icon', 'delphinus' )
         ),
 
         array(
@@ -220,19 +204,19 @@ vc_map( array(
             'heading' => esc_html__( 'Choose your icon', 'js_composer' ),
             'param_name' => 'iconbox_icon',
             "value" => 'fa fa-adjust',
-            'description' => esc_html__( 'Use existing font icon or upload a custom image.', 'wingman' ),
+            'description' => esc_html__( 'Use existing font icon or upload a custom image.', 'delphinus' ),
             'dependency' => array("element" => "icon_type","value" => array('icon')),
-            'group' => esc_html__( 'Icon', 'wingman' )
+            'group' => esc_html__( 'Icon', 'delphinus' )
         ),
 
         array(
             'type' => 'dropdown',
             'heading' => esc_html__( 'Icon color', 'js_composer' ),
             'param_name' => 'color',
-            'value' => array_merge( array( esc_html__( 'Default', 'js_composer' ) => 'default' ),  array( esc_html__( 'Accent color', 'wingman' ) => 'accent' ), getVcShared( 'colors' ), array( esc_html__( 'Custom color', 'js_composer' ) => 'custom' ) ),
+            'value' => array_merge( array( esc_html__( 'Default', 'js_composer' ) => 'default' ),  array( esc_html__( 'Accent color', 'delphinus' ) => 'accent' ), getVcShared( 'colors' ), array( esc_html__( 'Custom color', 'js_composer' ) => 'custom' ) ),
             'description' => esc_html__( 'Select icon color.', 'js_composer' ),
             'param_holder_class' => 'vc_colored-dropdown',
-            'group' => esc_html__( 'Icon', 'wingman' ),
+            'group' => esc_html__( 'Icon', 'delphinus' ),
             'dependency' => array("element" => "icon_type","value" => array('icon')),
         ),
         array(
@@ -244,7 +228,7 @@ vc_map( array(
                 'element' => 'color',
                 'value' => 'custom',
             ),
-            'group' => esc_html__( 'Icon', 'wingman' )
+            'group' => esc_html__( 'Icon', 'delphinus' )
         ),
 
         array(
@@ -254,20 +238,20 @@ vc_map( array(
             'value' => array_merge( getVcShared( 'sizes' ), array( 'Extra Large' => 'xl' ) ),
             'std' => 'md',
             'description' => esc_html__( 'Icon size.', 'js_composer' ),
-            'group' => esc_html__( 'Icon', 'wingman' )
+            'group' => esc_html__( 'Icon', 'delphinus' )
         ),
 
         //Typography settings
         array(
             "type" => "kt_number",
-            "heading" => esc_html__("Letter spacing", 'wingman'),
+            "heading" => esc_html__("Letter spacing", 'delphinus'),
             "param_name" => "letter_spacing",
             "value" => 0,
             "min" => 0,
             "max" => 10,
             "suffix" => "px",
             "description" => "",
-            'group' => esc_html__( 'Typography', 'wingman' ),
+            'group' => esc_html__( 'Typography', 'delphinus' ),
         ),
         array(
             'type' => 'font_container',
@@ -286,7 +270,7 @@ vc_map( array(
                     'color_description' => esc_html__( 'Select heading color.', 'js_composer' ),
                 ),
             ),
-            'group' => esc_html__( 'Typography', 'wingman' )
+            'group' => esc_html__( 'Typography', 'delphinus' )
         ),
         array(
             'type' => 'checkbox',
@@ -307,7 +291,7 @@ vc_map( array(
                     'font_style_description' => esc_html__( 'Select font styling.', 'js_composer' )
                 )
             ),
-            'group' => esc_html__( 'Typography', 'wingman' ),
+            'group' => esc_html__( 'Typography', 'delphinus' ),
             'dependency' => array(
                 'element' => 'use_theme_fonts',
                 'value_not_equal_to' => 'yes',

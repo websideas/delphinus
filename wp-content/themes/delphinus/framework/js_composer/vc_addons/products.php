@@ -141,21 +141,21 @@ class WPBakeryShortCode_KT_Products extends WPBakeryShortCode {
 
 
 vc_map( array(
-    "name" => esc_html__( "KT: Products", 'wingman'),
+    "name" => esc_html__( "KT: Products", 'delphinus'),
     "base" => "kt_products",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
     "params" => array(
         // Layout setting
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Layout setting", 'wingman'),
+            "heading" => esc_html__("Layout setting", 'delphinus'),
             "param_name" => "layout_settings",
         ),
 
 
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Product display type', 'wingman' ),
+            'heading' => esc_html__( 'Product display type', 'delphinus' ),
             'param_name' => 'product_type',
             'value' => array(
                 esc_html__( 'Standard', 'js_composer' ) => 'classic',
@@ -169,7 +169,7 @@ vc_map( array(
         ),
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Columns to Show?", 'wingman'),
+            "heading" => esc_html__("Columns to Show?", 'delphinus'),
             "edit_field_class" => "kt_sub_heading vc_column",
             "param_name" => "items_show",
             'dependency' => array(
@@ -179,7 +179,7 @@ vc_map( array(
         ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'on Desktop', 'wingman' ),
+            'heading' => esc_html__( 'on Desktop', 'delphinus' ),
             'param_name' => 'desktop',
             'value' => array(
                 esc_html__( '4 columns', 'js_composer' ) => '4',
@@ -191,24 +191,10 @@ vc_map( array(
 
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Extra setting", 'wingman'),
+            "heading" => esc_html__("Extra setting", 'delphinus'),
             "param_name" => "extra_settings",
         ),
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
-            'admin_label' => true,
-            'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
-            ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
-        ),
+        vc_map_add_css_animation(),
         array(
             "type" => "textfield",
             "heading" => esc_html__( "Extra class name", "js_composer" ),
@@ -223,7 +209,7 @@ vc_map( array(
 
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Source', 'wingman' ),
+            'heading' => esc_html__( 'Source', 'delphinus' ),
             'param_name' => 'source',
             'value' => array(
                 esc_html__( 'All Product', 'woocommerce' ) => 'all',
@@ -241,9 +227,9 @@ vc_map( array(
         array(
             "type" => "kt_taxonomy",
             'taxonomy' => 'product_cat',
-            'heading' => esc_html__( 'Categories', 'wingman' ),
+            'heading' => esc_html__( 'Categories', 'delphinus' ),
             'param_name' => 'categories',
-            'placeholder' => esc_html__( 'Select your categories', 'wingman' ),
+            'placeholder' => esc_html__( 'Select your categories', 'delphinus' ),
             "dependency" => array("element" => "source","value" => array('categories')),
             'multiple' => true,
             'group' => esc_html__( 'Data settings', 'js_composer' ),

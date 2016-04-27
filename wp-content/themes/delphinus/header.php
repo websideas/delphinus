@@ -25,11 +25,8 @@
     <?php
     $header_layout = kt_get_header_layout();
     $header_position = kt_get_header_position();
-    $header_layout = 1;
+    do_action( 'kt_body_top' );
     ?>
-    <?php
-    do_action( 'kt_body_top' ); ?>
-
     <div id="page_outter">
         <div id="page" class="hfeed site">
             <div id="wrapper-content" class="content-header-<?php echo esc_attr($header_layout); ?>">
@@ -37,7 +34,13 @@
                 <?php
                 do_action( 'kt_before_header' ); ?>
 
-                <div class="header-container header-layout<?php echo esc_attr($header_layout); ?> <?php echo esc_attr(apply_filters('kt_header_class', '', $header_layout)); ?>">
+                <div class="header-container header-layout<?php echo esc_attr($header_layout); ?> <?php echo esc_attr(apply_filters('kt_header_class', '', $header_layout, $header_position)); ?>">
+
+                    <?php
+                        get_template_part( 'templates/headers/header',  'mobile');
+                        get_template_part( 'templates/headers/header',  'mobilenav');
+                    ?>
+
 
                     <?php
                     if($header_position == 'below'){

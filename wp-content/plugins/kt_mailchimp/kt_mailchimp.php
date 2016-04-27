@@ -141,7 +141,8 @@ class KT_MailChimp
                     'admin_label' => true,
                     'value' => array(
                         __( 'Layout 1', 'kt_mailchimp' ) => '1',
-                        __( 'Layout 2', 'kt_mailchimp' ) => "2"
+                        __( 'Layout 2', 'kt_mailchimp' ) => '2',
+                        __( 'Layout 3', 'kt_mailchimp' ) => '3'
                     ),
                     'description' => __( 'Select your layout', 'kt_mailchimp' )
                 ),
@@ -218,23 +219,28 @@ class KT_MailChimp
             'disable_names' => '',
             'text_before' => '',
             'layout' => '1',
+            'el_class' => '',
             'css' => '',
         ), $atts );
 
         extract( $atts );
 
         if ( isset ( $this->options['api_key'] ) && !empty ( $this->options['api_key'] ) ) {
-            $elementClass = '';
-            if(function_exists('vc_shortcode_custom_css_class')){
-                $elementClass = vc_shortcode_custom_css_class( $css, ' ' );
-            }
+
 
             $this->uniqeID  = 'mailchimp-wrapper-'.uniqid();
             $this->atts = $atts;
 
+            $elementClass = array(
+                'base' => 'kt-mailchimp-wrapper ',
+                'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
+                'extra' => $el_class,
+            );
+
             $output = '';
 
-            $output .= '<div class="kt-mailchimp-wrapper '.esc_attr($elementClass).'" id="'.esc_attr($this->uniqeID).'">';
+            $elementClass = preg_replace( array( '/\s+/', '/^\s|\s$/' ), array( ' ', '' ), implode( ' ', $elementClass ) );
+            $output .= '<div class="'.esc_attr($elementClass).'" id="'.esc_attr($this->uniqeID).'">';
 
             $output .= wpb_widget_title( array( 'title' => $title, 'extraclass' => 'kt-mailchimp-heading' ) );
 

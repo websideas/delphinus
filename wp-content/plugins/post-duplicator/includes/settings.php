@@ -9,8 +9,8 @@ add_action( 'admin_menu', 'mtphr_post_duplicator_settings_page' );
 function mtphr_post_duplicator_settings_page() {
 
 	add_management_page(
-		'Post Duplicator',														// The value used to populate the browser's title bar when the menu page is active
-		'Post Duplicator',														// The label of this submenu item displayed in the menu
+		__('Post Duplicator', 'post-duplicator'),														// The value used to populate the browser's title bar when the menu page is active
+		__('Post Duplicator', 'post-duplicator'),														// The label of this submenu item displayed in the menu
 		'administrator',															// What roles are able to access this submenu item
 		'mtphr_post_duplicator_settings_menu',				// The ID used to represent this submenu item
 		'mtphr_post_duplicator_settings_display'			// The callback function used to render the options for this submenu item
@@ -24,7 +24,7 @@ add_action( 'admin_init', 'mtphr_post_duplicator_initialize_settings' );
 /**
  * Initializes the options page.
  *
- * @since 2.14
+ * @since 2.16
  */ 
 function mtphr_post_duplicator_initialize_settings() {
 
@@ -58,12 +58,20 @@ function mtphr_post_duplicator_initialize_settings() {
 		'default' => 'current'
 	);
 	
+	$settings['title'] = array(
+		'title' => __( 'Duplicate Title', 'post-duplicator' ),
+		'description' => __('String that should be appended to the duplicate post\'s title', 'post-duplicator'),
+		'type' => 'text',
+		'display' => 'inline',
+		'default' => __('Copy', 'post-duplicator')
+	);
+	
 	$settings['slug'] = array(
 		'title' => __( 'Duplicate Slug', 'post-duplicator' ),
 		'description' => __('String that should be appended to the duplicate post\'s slug', 'post-duplicator'),
 		'type' => 'text',
 		'display' => 'inline',
-		'default' => '-copy'
+		'default' => 'copy'
 	);
 	
 	$settings['time_offset'] = array(

@@ -11,8 +11,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 class Widget_KT_Posts extends WP_Widget {
 
     public function __construct() {
-        $widget_ops = array('classname' => 'widget_kt_posts', 'description' => esc_html__( "Show posts of categories.",'mondova') );
-        parent::__construct('kt_posts', esc_html__('KT: Posts', 'mondova'), $widget_ops);
+        $widget_ops = array('classname' => 'widget_kt_posts', 'description' => esc_html__( "Show posts of categories.",'delphinus') );
+        parent::__construct('kt_posts', esc_html__('KT: Posts', 'delphinus'), $widget_ops);
         $this->alt_option_name = 'widget_kt_posts';
     }
 
@@ -101,7 +101,7 @@ class Widget_KT_Posts extends WP_Widget {
 
 
     public function form( $instance ) {
-        $title     = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : esc_html__( 'Recent Posts' , 'mondova');
+        $title     = isset( $instance['title'] ) ? esc_attr( $instance['title'] ) : esc_html__( 'Recent Posts' , 'delphinus');
         $number    = isset( $instance['number'] ) ? absint( $instance['number'] ) : 5;
 
         $order = isset( $instance['order'] ) ? $instance['order'] : 'DESC';
@@ -112,13 +112,13 @@ class Widget_KT_Posts extends WP_Widget {
         $categories = get_terms( 'category', array('hide_empty' => false));
 
         ?>
-        <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'mondova' ); ?></label>
+        <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title:', 'delphinus' ); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
 
-        <p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number of posts to show:','mondova' ); ?></label>
+        <p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php esc_html_e( 'Number of posts to show:','delphinus' ); ?></label>
             <input id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo esc_attr($number); ?>" class="widefat" /></p>
 
-        <div><label for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Categories:','mondova'); ?> </label>
+        <div><label for="<?php echo $this->get_field_id('category'); ?>"><?php esc_html_e('Categories:','delphinus'); ?> </label>
             <select class="widefat categories-chosen" id="<?php echo $this->get_field_id('category'); ?>" name="<?php echo $this->get_field_name('category'); ?>[]" multiple="multiple">
                 <?php foreach($categories as $item){ ?>
                     <option <?php if (in_array($item->term_id, $category)){ echo 'selected="selected"';} ?> value="<?php echo $item->term_id ?>"><?php echo $item->name; ?></option>
@@ -127,22 +127,22 @@ class Widget_KT_Posts extends WP_Widget {
         </div>
 
 
-        <p><label for="<?php echo $this->get_field_id('orderby'); ?>"><?php esc_html_e('Order by:', 'mondova'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('orderby'); ?>"><?php esc_html_e('Order by:', 'delphinus'); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id('orderby'); ?>" name="<?php echo $this->get_field_name('orderby'); ?>">
-                <option <?php selected( $orderby, 'name' ); ?> value="name"><?php esc_html_e('Name','mondova'); ?></option>
-                <option <?php selected( $orderby, 'id' ); ?> value="id"><?php esc_html_e('ID','mondova'); ?></option>
-                <option <?php selected( $orderby, 'date' ); ?> value="date"><?php esc_html_e('Date','mondova'); ?></option>
-                <option <?php selected( $orderby, 'author' ); ?> value="author"><?php esc_html_e('Author','mondova'); ?></option>
-                <option <?php selected( $orderby, 'modified' ); ?> value="modified"><?php esc_html_e('Modified','mondova'); ?></option>
-                <option <?php selected( $orderby, 'rand' ); ?> value="rand"><?php esc_html_e('Rand','mondova'); ?></option>
-                <option <?php selected( $orderby, 'comment_count' ); ?> value="comment_count "><?php esc_html_e('Comment count','mondova'); ?></option>
+                <option <?php selected( $orderby, 'name' ); ?> value="name"><?php esc_html_e('Name','delphinus'); ?></option>
+                <option <?php selected( $orderby, 'id' ); ?> value="id"><?php esc_html_e('ID','delphinus'); ?></option>
+                <option <?php selected( $orderby, 'date' ); ?> value="date"><?php esc_html_e('Date','delphinus'); ?></option>
+                <option <?php selected( $orderby, 'author' ); ?> value="author"><?php esc_html_e('Author','delphinus'); ?></option>
+                <option <?php selected( $orderby, 'modified' ); ?> value="modified"><?php esc_html_e('Modified','delphinus'); ?></option>
+                <option <?php selected( $orderby, 'rand' ); ?> value="rand"><?php esc_html_e('Rand','delphinus'); ?></option>
+                <option <?php selected( $orderby, 'comment_count' ); ?> value="comment_count "><?php esc_html_e('Comment count','delphinus'); ?></option>
             </select>
         </p>
 
-        <p><label for="<?php echo $this->get_field_id('order'); ?>"><?php esc_html_e('Order:','mondova'); ?></label>
+        <p><label for="<?php echo $this->get_field_id('order'); ?>"><?php esc_html_e('Order:','delphinus'); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id('order'); ?>" name="<?php echo $this->get_field_name('order'); ?>">
-                <option <?php selected( $order, 'DESC' ); ?> value="DESC"><?php esc_html_e('Desc','mondova'); ?></option>
-                <option <?php selected( $order, 'ASC' ); ?> value="ASC"><?php esc_html_e('ASC','mondova'); ?></option>
+                <option <?php selected( $order, 'DESC' ); ?> value="DESC"><?php esc_html_e('Desc','delphinus'); ?></option>
+                <option <?php selected( $order, 'ASC' ); ?> value="ASC"><?php esc_html_e('ASC','delphinus'); ?></option>
             </select>
         </p>
 

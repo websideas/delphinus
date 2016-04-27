@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACC,uCAAc;EACb,KAAK,EAAE,KAAK",
+"sources": ["affiliate-info.scss"],
+"names": [],
+"file": "affiliate-info.css"
+}

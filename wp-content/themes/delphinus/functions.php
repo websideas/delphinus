@@ -4,7 +4,7 @@
 if ( !defined('ABSPATH')) exit;
 
 
-define( 'KT_THEME_OPTIONS', 'mondova_option' );
+define( 'KT_THEME_OPTIONS', 'delphinus_option' );
 
 define( 'KT_THEME_DIR', trailingslashit(get_template_directory()));
 define( 'KT_THEME_URL', trailingslashit(get_template_directory_uri()));

@@ -23,11 +23,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <form role="search" method="get" class="woocommerce-product-search searchform" action="<?php echo esc_url( home_url( '/'  ) ); ?>">
-	<label class="screen-reader-text" for="woocommerce-product-search-field"><?php _e( 'Search for:', 'woocommerce' ); ?></label>
+	<label class="screen-reader-text" for="woocommerce-product-search-field"><?php _e( 'Search', 'woocommerce' ); ?></label>
 	<input type="text" class="search-field" placeholder="<?php echo esc_attr_x( 'Search Products&hellip;', 'placeholder', 'woocommerce' ); ?>" value="<?php echo get_search_query(); ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label', 'woocommerce' ); ?>" />
     <button class="submit">
-        <i class="icon_search"></i>
-        <span class="screen-reader-text"><?php echo _x( 'Search', 'submit button', 'mondova' ); ?></span>
+        <i class="fa fa-search"></i>
+        <span><?php echo _x( 'Search', 'submit button', 'delphinus' ); ?></span>
     </button>
 	<input type="hidden" name="post_type" value="product" />
 </form>

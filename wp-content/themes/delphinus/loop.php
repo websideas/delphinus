@@ -12,8 +12,9 @@ $layout = kt_get_archive_layout();
 
 do_action( 'kt_loop_before' );
 
+$readmore_class = (!$layout['readmore'] || $layout['readmore'] == 'none' ) ? ' no-readmore' : '';
 
-echo '<div class="blog-posts blog-posts-'.esc_attr($layout['type']).'">';
+echo '<div class="blog-posts blog-posts-'.esc_attr($layout['type']).' '.esc_attr($readmore_class).'">';
 
 if($layout['type'] == 'grid'|| $layout['type'] == 'masonry'){
     echo '<div class="row multi-columns-row">';

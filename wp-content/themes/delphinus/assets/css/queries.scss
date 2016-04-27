@@ -6,71 +6,173 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [Table of contents]
 
-1. Styles for devices(>=1300px)
-2. Styles for devices(>=1200px)
-3. Styles for devices(<=1199px)
-4. Styles for devices(<=991px )
-5. Styles for devices(>=768px and <= 991px)
-6. Styles for devices(<=767px )
-7. Styles for devices(>=481px and <= 767px)
-8. Styles for devices(<=480px )
+1. Retina logo
+2. Styles for devices(>=1300px)
+3. Styles for devices(>=1200px)
+4. Styles for devices(<=1199px)
+5. Styles for devices(<=991px )
+6. Styles for devices(>=768px and <= 991px)
+7. Styles for devices(<=767px )
+8. Styles for devices(>=481px and <= 767px)
+9. Styles for devices(<=480px )
 */
 
 @import '../sass/utils/mixin';
 @import '../sass/utils/variables';
 
-/* 1. Styles for devices(>1300px) */
-@media (min-width: 1400px) {
-
-
-
+/* 1. Retina logo */
+@media only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+  .header-dark{
+    .branding{
+      &.retina-logo-wrapper{
+        .retina-default-logo{ display: block; }
+        .default-logo{ display: none; }
+      }
+    }
+  }
+  .header-light{
+    .branding{
+      &.retina-light-wrapper{
+        .light-retina-logo{ display: block; }
+        .light-logo{ display: none; }
+      }
+    }
+  }
 }
 
-/* 1. Styles for devices(>1300px) */
+/* 2. Styles for devices(>1300px) */
 @media (min-width: 1300px) {
   .container {
     width: 1200px;
   }
+  .product-detail-thumbarea{
+    margin-right: 45px;
+  }
+
+  #footer-area .footer-area-inner {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
 }
 
-/* 2. Styles for devices(>=1200px) */
+/* 3. Styles for devices(>=1200px) */
 @media (min-width: 1200px) {
 
-
 }
 
 
-/* 3. Styles for devices(<=1199px) */
+/* 4. Styles for devices(<=1199px) */
 @media (max-width: 1199px) {
-
+  #header-content-mobile{
+    display: block;
+  }
+  #header{
+    display: none;
+  }
+  .kt-products.kt-products-masonry{
+    .product{
+      .product-details{
+        display: none;
+      }
+    }
+  }
 
 }
 
-/* 4. Styles for devices(<=991px ) */
+/* 5. Styles for devices(<=991px ) */
 @media (max-width: 991px) {
 
+  .main-sidebar{
+    margin-top: 40px;
+  }
+
+  .woocommerce-breadcrumb,
+  .page-header .text-right {
+    text-align: center;
+  }
+
+  .woocommerce {
+    .woocommerce-countdown{
+      > div{
+        + div{
+          margin-left: 15px;
+        }
+      }
+    }
+    &.kt-products-mini{
+      ul.shop-products{
+        li.product {
+          &.first {
+            clear: none;
+          }
+          &.first-tablet{
+            clear: both;
+          }
+        }
+      }
+    }
+  }
+
+  #popup-wrap{
+    .mfp-close{
+      right: 15px;
+      top: 0;
+    }
+    .newletter-popup-content{
+      padding: 35px 25px;
+    }
+  }
+
+
 }
 
-/* 5. Styles for devices(>=768px and <= 991px) */
+/* 6. Styles for devices(>=768px and <= 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
 
 }
-/* 6. Styles for devices(>=768px ) */
+/* 7. Styles for devices(>=768px ) */
 @media (min-width: 768px) {
 
 }
 
-/* 6. Styles for devices(<=767px ) */
+/* 8. Styles for devices(<=767px ) */
 @media (max-width: 767px) {
+  #footer-area .footer-area-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .woocommerce{
+    :not(.kt-products-mini){
+      ul.shop-products{
+        li.product {
+          &.first {
+            clear: none;
+          }
+          &.first-tablet{
+            clear: both;
+          }
+        }
+      }
+    }
+  }
 
 }
 
-/* 7. Styles for devices(>=481px and <= 767px) */
+/* 10. Styles for devices(<=540px ) */
+@media (max-width: 500px) {
+  .shop-products .product {
+    width: 100% !important;
+  }
+  .blog-post-wrap{
+    width: 100%;
+  }
+}
+
+/* 9. Styles for devices(>=481px and <= 767px) */
 @media (min-width: 481px) and (max-width: 767px) {
-
-}
-
-/* 8. Styles for devices(<=480px ) */
-@media (max-width: 480px) {
 
 }

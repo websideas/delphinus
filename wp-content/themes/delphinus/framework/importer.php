@@ -5,16 +5,16 @@ if ( !defined('ABSPATH')) exit;
 
 
 
-add_filter( 'kt_import_demo', 'kt_import_demo_adroit' );
-function kt_import_demo_adroit( $demos ){
+add_filter( 'kt_import_demo', 'kt_import_demo_delphinus' );
+function kt_import_demo_delphinus( $demos ){
     $demos['demo1'] = array(
         'title' => 'Classic',
-        'previewlink' => 'http://adroit.kitethemes.com/',
+        'previewlink' => 'http://delphinus.kitethemes.com/',
         'xml_count' => 1,
         'status' => sprintf(
             '<span class="%s">%s</span>',
             'demo-main',
-            __('Main', 'adroit')
+            __('Main', 'delphinus')
         )
     );
 
@@ -31,9 +31,9 @@ if ( !function_exists( 'kt_extended_imported' ) ) {
          * Setting Menus
          *************************************************************************/
 
-        $main_menu = get_term_by( 'name', __('Main menu', 'adroit'), 'nav_menu' );
-        $mobile = get_term_by( 'name', __('Main Menu', 'adroit'), 'nav_menu' );
-        $footer = get_term_by( 'name', __('Footer Navigation Menu', 'adroit'), 'nav_menu' );
+        $main_menu = get_term_by( 'name', __('Main menu', 'delphinus'), 'nav_menu' );
+        $mobile = get_term_by( 'name', __('Main Menu', 'delphinus'), 'nav_menu' );
+        $footer = get_term_by( 'name', __('Footer Navigation Menu', 'delphinus'), 'nav_menu' );
 
         // array of demos/homepages to check/select from
         $kt_menus = array(
@@ -89,18 +89,18 @@ if ( !function_exists( 'kt_extended_imported' ) ) {
 
 
 
-function kt_importer_dir_adroit( ) {
+function kt_importer_dir_delphinus( ) {
     return KT_THEME_DATA_DIR.'/';
 }
-add_filter('kt_importer_dir', 'kt_importer_dir_adroit' );
+add_filter('kt_importer_dir', 'kt_importer_dir_delphinus' );
 
-function kt_importer_url_adroit( ) {
+function kt_importer_url_delphinus( ) {
 
     return KT_THEME_DATA.'/';
 }
-add_filter('kt_importer_url', 'kt_importer_url_adroit' );
+add_filter('kt_importer_url', 'kt_importer_url_delphinus' );
 
-function kt_importer_opt_name_adroit(  ) {
+function kt_importer_opt_name_delphinus(  ) {
     return KT_THEME_OPTIONS;
 }
-add_filter('kt_importer_opt_name', 'kt_importer_opt_name_adroit' );
+add_filter('kt_importer_opt_name', 'kt_importer_opt_name_delphinus' );

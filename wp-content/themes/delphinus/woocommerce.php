@@ -19,7 +19,6 @@ get_header(); ?>
 
 <div id="primary" class="content-area <?php echo esc_attr($sidebar_class); ?>">
     <div class="content-area-inner">
-
         <?php if ( is_singular( 'product' ) ) { ?>
             <?php woocommerce_content(); ?>
         <?php }else{ ?>

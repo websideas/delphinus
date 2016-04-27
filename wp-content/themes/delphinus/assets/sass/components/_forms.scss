@@ -7,6 +7,7 @@ input[type=phone],
 input[type=tel],
 input[type=text],
 input[type=number],
+input[type=url],
 textarea {
   border: 2px solid $border-color;
   color: $gray-text;
@@ -37,6 +38,7 @@ textarea {
   height: auto;
 }
 
+
 select {
   @include border-radius(0);
   width: 100%;
@@ -54,6 +56,24 @@ select {
   }
 }
 
+/*
+input[type=email].input-bg,
+input[type=password].input-bg,
+input[type=phone].input-bg,
+input[type=tel].input-bg,
+input[type=text].input-bg,
+input[type=number].input-bg,
+input[type=url].input-bg,
+textarea.input-bg,
+select.input-bg{
+  background: #f6f6f6 none repeat scroll 0 0;
+  border: 1px solid $border-color-light;
+  font-size: 12px;
+  letter-spacing: 0.075em;
+}
+
+
+*/
 
 .form-control {
   @include border-radius(0);
@@ -67,6 +87,7 @@ select {
   display: inline-block;
   position: relative;
   color: $gray-text;
+  vertical-align: middle;
   line-height: 1;
   &:after{
     content: "";
@@ -178,16 +199,31 @@ select {
       }
     }
   }
-  &-gray {
+  &-gray{
     background: $gray-bg;
     color: $gray-darker;
     border-color:$gray-bg;
     &:hover{
-      background: #000000;
-      color: #FFFFFF;
-      border-color: #000000;
+      background: $black;
+      color: $white;
+      border-color: $black;
     }
   }
+
+
+  &-gray-b{
+    background: $gray-bg;
+    color: $black;
+    border: 1px solid $border-color-light;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    &:hover{
+      background: $black;
+      color: $white;
+      border-color: $black;
+    }
+  }
+
   &-light{
     border-color: #FFFFFF;
     background: #FFFFFF;
@@ -237,5 +273,9 @@ select {
       border-color: $primary-color;
     }
   }
+}
+
+.wpcf7-submit{
+  @extend .btn;
 }
 

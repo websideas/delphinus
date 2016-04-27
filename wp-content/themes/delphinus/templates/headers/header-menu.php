@@ -18,6 +18,6 @@ if ( has_nav_menu( 'primary' ) ) {
     printf(
         '<ul id="main-navigation"><li><a href="%s">%s</a></li></ul>',
         admin_url( 'nav-menus.php'),
-        esc_html__("Define your site main menu!", 'mondova')
+        esc_html__("Define your site main menu!", 'delphinus')
     );
 }

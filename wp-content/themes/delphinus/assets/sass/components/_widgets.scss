@@ -18,9 +18,11 @@
     i{
       line-height: 42px;
     }
+    span{
+      display: none;
+    }
   }
 }
-
 
 .widget{
   margin-bottom: 30px;
@@ -39,13 +41,15 @@
   &.widget_recent_entries,
   &.widget_meta,
   &.widget_rss,
-  &.widget_layered_nav{
+  &.widget_layered_nav,
+  &.widget_color_filter{
     ul{
       margin: 0;
       padding: 0;
       list-style: none;
       li{
         padding-bottom: 6px;
+        position: relative;
         a{
           color: $gray-darker;
           &:hover{
@@ -58,8 +62,43 @@
           color: #cacaca;
         }
       }
+
     }
   }
+
+  &.widget_product_categories,
+  &.widget_product_categories,
+  &.widget_pages,
+  &.widget_nav_menu{
+    ul{
+      margin-top: 5px;
+      &.children{
+        padding-left: 25px;
+        position: relative;
+        &:before{
+          background: $border-color-dark;
+          content: "";
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 1px;
+        }
+        > li{
+          &:before{
+            background: $border-color-dark;
+            content: "";
+            height: 1px;
+            left: -25px;
+            position: absolute;
+            top: 15px;
+            width: 12px;
+          }
+        }
+      }
+    }
+  }
+
 
   &.widget_kt_posts{
     ul{
@@ -192,6 +231,21 @@
     }
   }
 
+
+  &.widget_kt_fadein{
+    .fadeinwidget{
+      visibility: hidden;
+      @include opacity(0);
+      @include transition('all 0.4s ease-in-out');
+    }
+    &:hover{
+      .fadeinwidget{
+        visibility: visible;
+        @include opacity(1);
+      }
+    }
+  }
+
 }
 
 .side-bar{
@@ -205,5 +259,11 @@
     .widget-title {
       letter-spacing: 0.075em;
     }
+  }
+}
+
+#footer-top{
+  .widget{
+    margin-bottom: 0;
   }
 }

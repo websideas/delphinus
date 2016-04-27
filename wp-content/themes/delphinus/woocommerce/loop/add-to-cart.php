@@ -25,7 +25,7 @@ global $product;
 $add_to_cart_handler = apply_filters( 'woocommerce_add_to_cart_handler', $product->product_type, $product );
 
 
-echo '<div class="wc-addtocart-wrap" title="'.esc_attr($product->add_to_cart_text()).'" data-toggle="tooltip" data-added="'.esc_attr(esc_html__('Added to cart', 'mondova')).'" data-addbutton="'.esc_attr($product->add_to_cart_text()).'">';
+echo '<div class="wc-addtocart-wrap" title="'.esc_attr($product->add_to_cart_text()).'" data-toggle="tooltip" data-added="'.esc_attr(esc_html__('Added to cart', 'delphinus')).'" data-addbutton="'.esc_attr($product->add_to_cart_text()).'">';
 echo apply_filters( 'woocommerce_loop_add_to_cart_link',
 	sprintf( '<a rel="nofollow" href="%s" data-quantity="%s" data-product_id="%s" data-product_sku="%s" class="%s">%s</a>',
 		esc_url( $product->add_to_cart_url() ),

@@ -133,11 +133,11 @@ class WPBakeryShortCode_Products_Tab extends WPBakeryShortCode_KT_Heading {
                 $text = $term->name;
             }else{
                 if($tab == 'featured'){
-                    $text = esc_html__('Hot Products', 'wingman');
+                    $text = esc_html__('Hot Products', 'delphinus');
                 }elseif($tab == 'new'){
-                    $text = esc_html__('New Arrivals', 'wingman');
+                    $text = esc_html__('New Arrivals', 'delphinus');
                 }elseif($tab == 'bestselling'){
-                    $text = esc_html__('Best Sellers', 'wingman');
+                    $text = esc_html__('Best Sellers', 'delphinus');
                 }
             }
             $class = ($active_section == $i) ? ' class="active"' : '';
@@ -232,28 +232,28 @@ class WPBakeryShortCode_Products_Tab extends WPBakeryShortCode_KT_Heading {
 
 
 vc_map( array(
-    "name" => esc_html__( "KT: Products Tab", 'wingman'),
+    "name" => esc_html__( "KT: Products Tab", 'delphinus'),
     "base" => "products_tab",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
     "params" => array(
 
         // Data setting
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Data settings", 'wingman'),
+            "heading" => esc_html__("Data settings", 'delphinus'),
             "param_name" => "data_settings",
         ),
         array(
             "type" => "dropdown",
-            "heading" => esc_html__("Data source", 'wingman'),
+            "heading" => esc_html__("Data source", 'delphinus'),
             "param_name" => "source",
             "value" => array(
-                esc_html__('Widgets', 'wingman') => 'widgets',
-                esc_html__('Specific Categories', 'wingman') => 'categories',
+                esc_html__('Widgets', 'delphinus') => 'widgets',
+                esc_html__('Specific Categories', 'delphinus') => 'categories',
             ),
             'std' => 'widgets',
             "admin_label" => true,
-            "description" => esc_html__("Select content type for your posts.", 'wingman'),
+            "description" => esc_html__("Select content type for your posts.", 'delphinus'),
         ),
 
         array(
@@ -302,13 +302,13 @@ vc_map( array(
 
         array(
             "type" => "dropdown",
-            "heading" => esc_html__("Products Layout", 'wingman'),
+            "heading" => esc_html__("Products Layout", 'delphinus'),
             "param_name" => "products_layout",
             "value" => array(
-                esc_html__('Grid', 'wingman') => 'grid',
-                esc_html__('Masonry', 'wingman') => 'masonry',
-                esc_html__('Carousel', 'wingman') => 'carousel',
-                esc_html__('Featured box', 'wingman') => 'featured',
+                esc_html__('Grid', 'delphinus') => 'grid',
+                esc_html__('Masonry', 'delphinus') => 'masonry',
+                esc_html__('Carousel', 'delphinus') => 'carousel',
+                esc_html__('Featured box', 'delphinus') => 'featured',
             ),
             'std' => 'grid',
             "admin_label" => true,
@@ -316,7 +316,7 @@ vc_map( array(
 
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'Columns', 'wingman' ),
+            'heading' => esc_html__( 'Columns', 'delphinus' ),
             'param_name' => 'columns',
             'value' => array(
                 esc_html__( '1 column', 'js_composer' ) => '1',
@@ -330,7 +330,7 @@ vc_map( array(
                 'element' => 'products_layout',
                 'value' => array( 'grid', 'masonry' ),
             ),
-            'description' => esc_html__('The columns attribute controls how many columns wide the products should be before wrapping.', 'mondova')
+            'description' => esc_html__('The columns attribute controls how many columns wide the products should be before wrapping.', 'delphinus')
         ),
 
         array(
@@ -347,12 +347,12 @@ vc_map( array(
 
         array(
             "type" => "dropdown",
-            "heading" => esc_html__("Product hover effect", 'wingman'),
+            "heading" => esc_html__("Product hover effect", 'delphinus'),
             "param_name" => "hover_effect",
             "value" => array(
-                esc_html__('Effect 1', 'wingman') => '1',
-                esc_html__('Effect 2', 'wingman') => '2',
-                esc_html__('Effect 3', 'wingman') => '3',
+                esc_html__('Effect 1', 'delphinus') => '1',
+                esc_html__('Effect 2', 'delphinus') => '2',
+                esc_html__('Effect 3', 'delphinus') => '3',
             ),
             'std' => '1',
             "admin_label" => true,
@@ -361,7 +361,7 @@ vc_map( array(
         // Others setting
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Others settings", 'wingman'),
+            "heading" => esc_html__("Others settings", 'delphinus'),
             "param_name" => "others_settings",
         ),
         array(
@@ -374,7 +374,7 @@ vc_map( array(
                 esc_html__( 'Style 3', 'js_composer' ) => '3',
                 esc_html__( 'Style 4', 'js_composer' ) => '4'
             ),
-            'description' => esc_html__( 'Select your style for nav.', 'mondova' )
+            'description' => esc_html__( 'Select your style for nav.', 'delphinus' )
         ),
 
         array(
@@ -385,7 +385,7 @@ vc_map( array(
                 esc_html__( 'None', 'js_composer' ) => '',
                 esc_html__( 'Style 1', 'js_composer' ) => '1',
             ),
-            'description' => esc_html__( 'Select your style for nav.', 'mondova' )
+            'description' => esc_html__( 'Select your style for nav.', 'delphinus' )
         ),
 
 
@@ -403,27 +403,13 @@ vc_map( array(
 
         array(
             "type" => "kt_number",
-            "heading" => esc_html__("Active section", 'wingman'),
+            "heading" => esc_html__("Active section", 'delphinus'),
             "param_name" => "active_section",
             "value" => "1",
-            'description' => esc_html__( "Enter active section number (Note: to have all sections closed on initial load enter non-existing number).", 'mondova')
+            'description' => esc_html__( "Enter active section number (Note: to have all sections closed on initial load enter non-existing number).", 'delphinus')
         ),
 
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
-            'admin_label' => true,
-            'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
-            ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
-        ),
+        vc_map_add_css_animation(),
         array(
             "type" => "textfield",
             "heading" => esc_html__( "Extra class name", "js_composer" ),
@@ -434,10 +420,10 @@ vc_map( array(
         // Carousel Settings
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Columns to Show?", 'wingman'),
+            "heading" => esc_html__("Columns to Show?", 'delphinus'),
             "edit_field_class" => "kt_sub_heading vc_column",
             "param_name" => "items_show",
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'dependency' => array(
                 'element' => 'products_layout',
                 'value' => array( 'carousel' ),
@@ -445,7 +431,7 @@ vc_map( array(
         ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'on Desktop', 'wingman' ),
+            'heading' => esc_html__( 'on Desktop', 'delphinus' ),
             'param_name' => 'product_columns',
             'value' => array(
                 esc_html__( '1 column', 'js_composer' ) => '1',
@@ -456,7 +442,7 @@ vc_map( array(
             ),
             'std' => '4',
             "edit_field_class" => "vc_col-sm-4 vc_column",
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             'dependency' => array(
                 'element' => 'products_layout',
                 'value' => array( 'carousel' ),
@@ -465,7 +451,7 @@ vc_map( array(
 
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'on Tablets Landscape', 'wingman' ),
+            'heading' => esc_html__( 'on Tablets Landscape', 'delphinus' ),
             'param_name' => 'product_columns_desktop',
             'value' => array(
                 esc_html__( '1 column', 'js_composer' ) => '1',
@@ -475,7 +461,7 @@ vc_map( array(
                 esc_html__( '6 columns', 'js_composer' ) => '6',
             ),
             'std' => '3',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             "edit_field_class" => "vc_col-sm-4 vc_column",
             'dependency' => array(
                 'element' => 'products_layout',
@@ -484,7 +470,7 @@ vc_map( array(
         ),
         array(
             'type' => 'dropdown',
-            'heading' => esc_html__( 'on Tablet', 'wingman' ),
+            'heading' => esc_html__( 'on Tablet', 'delphinus' ),
             'param_name' => 'product_columns_tablet',
             'value' => array(
                 esc_html__( '1 column', 'js_composer' ) => '1',
@@ -494,7 +480,7 @@ vc_map( array(
                 esc_html__( '6 columns', 'js_composer' ) => '6',
             ),
             'std' => '2',
-            'group' => esc_html__( 'Carousel', 'wingman' ),
+            'group' => esc_html__( 'Carousel', 'delphinus' ),
             "edit_field_class" => "vc_col-sm-4 vc_column",
             'dependency' => array(
                 'element' => 'products_layout',
@@ -507,9 +493,9 @@ vc_map( array(
         // Heading setting
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Heading settings", 'wingman'),
+            "heading" => esc_html__("Heading settings", 'delphinus'),
             "param_name" => "heading_settings",
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             'type' => 'textarea',
@@ -518,31 +504,31 @@ vc_map( array(
             'admin_label' => true,
             'value' => '',
             'description' => esc_html__( 'Note: If you are using non-latin characters be sure to activate them under Settings/Visual Composer/General Settings.', 'js_composer' ),
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             'type' => 'hidden',
             'heading' => esc_html__( 'URL (Link)', 'js_composer' ),
             'param_name' => 'link',
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             "type" => "textfield",
-            "heading" => esc_html__("Subtitle", 'wingman'),
+            "heading" => esc_html__("Subtitle", 'delphinus'),
             "param_name" => "subtitle",
             "value" => '',
-            "description" => esc_html__("", 'wingman'),
+            "description" => esc_html__("", 'delphinus'),
             'admin_label' => true,
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             "type" => "textfield",
-            "heading" => esc_html__("Backend", 'wingman'),
+            "heading" => esc_html__("Backend", 'delphinus'),
             "param_name" => "backend",
             "value" => '',
-            "description" => esc_html__("", 'wingman'),
+            "description" => esc_html__("", 'delphinus'),
             'admin_label' => true,
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
 
         array(
@@ -555,14 +541,14 @@ vc_map( array(
                 esc_html__( 'Layout 3', 'js_composer' ) => "3",
             ),
             'admin_label' => true,
-            'description' => esc_html__( 'Select your layout.', 'wingman' ),
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'description' => esc_html__( 'Select your layout.', 'delphinus' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Typography heading", 'wingman'),
+            "heading" => esc_html__("Typography heading", 'delphinus'),
             "param_name" => "typography_heading",
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             'type' => 'font_container',
@@ -581,7 +567,7 @@ vc_map( array(
                     'color_description' => esc_html__( 'Select heading color.', 'js_composer' ),
                 ),
             ),
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             'type' => 'checkbox',
@@ -589,7 +575,7 @@ vc_map( array(
             'param_name' => 'use_theme_fonts',
             'value' => array( esc_html__( 'Yes', 'js_composer' ) => 'yes' ),
             'description' => esc_html__( 'Use font family from the theme.', 'js_composer' ),
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
             'std' => 'yes'
         ),
         array(
@@ -602,7 +588,7 @@ vc_map( array(
                     'font_style_description' => esc_html__( 'Select font styling.', 'js_composer' )
                 )
             ),
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
             'dependency' => array(
                 'element' => 'use_theme_fonts',
                 'value_not_equal_to' => 'yes',
@@ -611,9 +597,9 @@ vc_map( array(
 
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Typography Sub title", 'wingman'),
+            "heading" => esc_html__("Typography Sub title", 'delphinus'),
             "param_name" => "typography_subtitle",
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             'type' => 'font_container',
@@ -627,15 +613,15 @@ vc_map( array(
                     'font_size_description' => esc_html__( 'Enter font size.', 'js_composer' ),
                 ),
             ),
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
 
 
         array(
             "type" => "kt_heading",
-            "heading" => esc_html__("Typography Backend", 'wingman'),
+            "heading" => esc_html__("Typography Backend", 'delphinus'),
             "param_name" => "typography_backend",
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
         array(
             'type' => 'font_container',
@@ -649,7 +635,7 @@ vc_map( array(
                     'font_size_description' => esc_html__( 'Enter font size.', 'js_composer' ),
                 ),
             ),
-            'group' => esc_html__( 'Heading', 'wingman' ),
+            'group' => esc_html__( 'Heading', 'delphinus' ),
         ),
 
 

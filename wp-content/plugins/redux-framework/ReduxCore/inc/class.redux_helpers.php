@@ -148,7 +148,7 @@
                     'php'       => $version,
                     'site'      => array(
                         'hash'      => $hash,
-                        'version'   => get_bloginfo( 'version' ),
+                        'version'   => bloginfo( 'version' ),
                         'multisite' => is_multisite(),
                         'users'     => $user_query->get_total(),
                         'lang'      => get_locale(),
@@ -391,7 +391,7 @@
                 // Only is a file-write check
                 $sysinfo['redux_data_writeable'] = self::makeBoolStr( @$f( ReduxFramework::$_upload_dir . 'test-log.log', 'a' ) );
                 $sysinfo['wp_content_url']       = WP_CONTENT_URL;
-                $sysinfo['wp_ver']               = get_bloginfo( 'version' );
+                $sysinfo['wp_ver']               = bloginfo( 'version' );
                 $sysinfo['wp_multisite']         = is_multisite();
                 $sysinfo['permalink_structure']  = get_option( 'permalink_structure' ) ? get_option( 'permalink_structure' ) : 'Default';
                 $sysinfo['front_page_display']   = get_option( 'show_on_front' );
@@ -699,6 +699,17 @@
                 }
 
                 return $ret;
+            }
+
+            public static function get_extension_dir( $dir ) {
+                return trailingslashit( wp_normalize_path( dirname( $dir ) ) );
+            }
+
+            public static function get_extension_url( $dir ) {
+                $ext_dir = Redux_Helpers::get_extension_dir( $dir );
+                $ext_url = str_replace( wp_normalize_path( WP_CONTENT_DIR ), WP_CONTENT_URL, $ext_dir );
+
+                return $ext_url;
             }
         }
     }

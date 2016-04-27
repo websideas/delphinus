@@ -51,6 +51,40 @@ add_filter( 'sanitize_boolean', 'kt_sanitize_boolean', 15 );
 
 
 
+if ( ! function_exists( 'kt_page_loader' ) ) :
+    /**
+     * Add page loader to frontend
+     *
+     */
+    function kt_page_loader(){
+        $use_loader = kt_option( 'use_page_loader', 0 );
+        if( $use_loader ){
+            $svg = '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                         viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                        <path d="M3.7,12h10.6l15.1,54.6c0.4,1.6,1.9,2.7,3.6,2.7h46.4c1.5,0,2.8-0.9,3.4-2.2l16.9-38.8c0.5-1.2,0.4-2.5-0.3-3.5c-0.7-1-1.8-1.7-3.1-1.7H45c-2,0-3.7,1.7-3.7,3.7s1.7,3.7,3.7,3.7h45.6L76.9,62H35.8L20.7,7.3c-0.4-1.6-1.9-2.7-3.6-2.7H3.7C1.7,4.6,0,6.3,0,8.3S1.7,12,3.7,12z"/>
+                        <path d="M29.5,95.4c4.6,0,8.4-3.8,8.4-8.4s-3.8-8.4-8.4-8.4s-8.4,3.8-8.4,8.4C21.1,91.6,24.8,95.4,29.5,95.4z"/>
+                        <path d="M81.9,95.4c0.2,0,0.4,0,0.6,0c2.2-0.2,4.3-1.2,5.7-2.9c1.5-1.7,2.2-3.8,2-6.1c-0.3-4.6-4.3-8.1-8.9-7.8s-8.1,4.4-7.8,8.9C73.9,91.9,77.5,95.4,81.9,95.4z"/>
+                    </svg>';
+            ?>
+            <div class="page-loading-wrapper">
+                <div class="progress-bar-loading">
+                    <div class="back-loading progress-bar-inner">
+                        <?php echo $svg; ?>
+                    </div>
+                    <div class="front-loading progress-bar-inner">
+                        <?php echo $svg; ?>
+                    </div>
+                    <div class="progress-bar-number">0%</div>
+                </div>
+            </div>
+            <?php
+
+        }
+    }
+    add_action( 'kt_body_top', 'kt_page_loader');
+endif;
+
+
 
 /**
  * Add class to next button
@@ -62,6 +96,75 @@ function kt_next_posts_link_attributes( $attr = '' ) {
     return "class='btn btn-default'";
 }
 add_filter( 'next_posts_link_attributes', 'kt_next_posts_link_attributes', 15 );
+
+
+
+function kt_add_search_full(){
+    if(kt_option('header_search', 1)){
+
+        if(kt_is_wc()){
+            $search = get_product_search_form(false);
+        }else{
+            $search = get_search_form(false);
+        }
+
+        printf(
+            '<div id="%1$s" class="%2$s">%3$s</div>',
+            'search-fullwidth',
+            'mfp-hide mfp-with-anim',
+            $search
+        );
+    }
+}
+add_action('kt_body_top', 'kt_add_search_full', 999);
+
+
+
+/**
+ * Add popup
+ *
+ * @since 1.0
+ */
+
+function kt_body_top_add_popup(){
+    $enable_popup = kt_option( 'enable_popup', 0 );
+    $disable_popup_mobile = kt_option( 'disable_popup_mobile' );
+    $content_popup = kt_option( 'content_popup' );
+    $time_show = kt_option( 'time_show', 0 );
+    $image_popup = kt_option( 'popup_image' );
+    $popup_form = kt_option( 'popup_form' );
+
+
+    if( $enable_popup == 1 && !isset($_COOKIE['kt_popup']) ){
+        ?>
+        <div id="popup-wrap" class="mfp-hide mfp-with-anim" data-mobile="<?php echo esc_attr( $disable_popup_mobile ); ?>" data-timeshow="<?php echo esc_attr($time_show); ?>">
+            <div class="container-fluid">
+                <div class="wrapper-newletter-content">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 col-sm-4 newletter-popup-img hidden-xs">
+                            <?php if( $image_popup['url'] ){ ?>
+                                <img src="<?php echo esc_attr($image_popup['url']); ?>" alt="" class="img-responsive">
+                            <?php } ?>
+                        </div>
+                        <div class="col-md-8 col-sm-8 wrapper-newletter-popup">
+                            <div class="newletter-popup-content">
+                                <?php
+                                    echo apply_filters('the_content', $content_popup);
+                                    if($popup_form){
+                                        printf('<div class="newletter-popup-form">%s</div>', apply_filters('the_content', $popup_form));
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php
+    }
+}
+
+add_action( 'kt_body_top', 'kt_body_top_add_popup', 20 );
 
 
 /**
@@ -117,8 +220,8 @@ if(!function_exists('kt_placeholder_callback')) {
 function kt_password_form() {
     global $post;
     $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-    <p>' . __( "To view this protected post, enter the password below:", 'mondova' ) . '</p>
-    <div class="input-group"><input name="post_password" type="password" size="20" maxlength="20" /><span class="input-group-btn"><input type="submit" class="btn btn-dark" name="Submit" value="' . esc_attr__( "Submit", 'mondova' ) . '" /></span></div>
+    <p>' . __( "To view this protected post, enter the password below:", 'delphinus' ) . '</p>
+    <div class="input-group"><input name="post_password" type="password" size="20" maxlength="20" /><span class="input-group-btn"><input type="submit" class="btn btn-dark" name="Submit" value="' . esc_attr__( "Submit", 'delphinus' ) . '" /></span></div>
     </form>
     ';
     return $o;
@@ -141,10 +244,19 @@ function kt_body_classes( $classes ) {
         $classes[] = 'group-blog';
     }
 
-    if( is_page() || is_singular('post')){
+    if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
+        $classes[]	= 'no-wc-breadcrumb';
+    }
 
+    if( is_page() || is_singular('post')){
         $classes[] = 'layout-'.kt_getlayout($post->ID);
         $classes[] = rwmb_meta('_kt_extra_page_class');
+
+        $type = rwmb_meta('_kt_type_page');
+        if($type){
+            $classes[] = 'page-type-'.$type;
+        }
+
     }else{
         $classes[] = 'layout-'.kt_option('layout', 'boxed');
     }
@@ -191,7 +303,7 @@ function kt_page_header( ){
     }elseif(is_search()){
         $show_title = kt_option('search_page_header', 1);
     }elseif(is_404()){
-        $show_title = kt_option('notfound_page_header', 1);
+        $show_title = false;
     }else{
         if(is_page()){
             $post_id = $post->ID;
@@ -212,23 +324,23 @@ function kt_page_header( ){
 
         $title = '<h1 class="page-header-title">'.$title.'</h1>';
         if($subtitle != ''){
-            $subtitle = '<div class="page-header-subtitle">'.$subtitle.'</div>';
+            $title .= '<div class="page-header-subtitle">'.$subtitle.'</div>';
         }
 
-        $style = 'fancy-tabbed';
-        //standard, fancy-tabbed
-
-        if($style == 'fancy-tabbed'){
-            $layout = '<div class="page-header %3$s"><div class="container"><div class="page-header-content">%1$s %2$s</div></div></div>';
-        }else{
-            $layout = '<div class="page-header %4$s"><div class="container"><div class="page-header-content">%1$s %2$s</div></div></div>';
+        $breadcrumb = '';
+        if ( function_exists( 'woocommerce_breadcrumb' ) ) {
+            ob_start();
+            woocommerce_breadcrumb();
+            $breadcrumb .= ob_get_clean();
         }
+
+        $content = sprintf('<div class="row"><div class="col-md-4">%1$s</div><div class="col-md-8 text-right">%2$s</div></div>', $breadcrumb, $title);
+        $layout = '<div class="page-header"><div class="container"><div class="page-header-content">%1$s</div></div></div>';
+
 
         printf(
             $layout,
-            $title,
-            $subtitle,
-            $style.'-heading'
+            $content
         );
     }
 
@@ -247,9 +359,9 @@ function kt_get_page_title( $title = '' ){
     global $post;
 
     if ( is_front_page() && !is_singular('page') ) {
-        $title = esc_html__( 'Blog', 'wingman' );
+        $title = esc_html__( 'Blog', 'delphinus' );
     } elseif ( is_search() ) {
-        $title = esc_html__( 'Search', 'wingman' );
+        $title = esc_html__( 'Search', 'delphinus' );
     } elseif( is_home() ){
         $page_for_posts = get_option('page_for_posts', true);
         if($page_for_posts){
@@ -257,7 +369,7 @@ function kt_get_page_title( $title = '' ){
             $title = apply_filters( 'the_title', $title, $page_for_posts );
         }
     } elseif( is_404() ) {
-        $title = esc_html__( 'Page not found', 'wingman' );
+        $title = esc_html__( 'Page not found', 'delphinus' );
     } elseif ( is_archive() ){
         $title = get_the_archive_title();
         if(kt_is_wc()) {
@@ -292,7 +404,7 @@ function kt_get_page_subtitle(){
     global $post;
     $tagline = '';
     if ( is_front_page() && !is_singular('page') ) {
-        $tagline =  esc_html__('Lastest posts', 'wingman');
+        $tagline =  esc_html__('Lastest posts', 'delphinus');
     }elseif( is_home() ){
         $page_for_posts = get_option('page_for_posts', true);
         $tagline = nl2br(rwmb_meta('_kt_page_header_subtitle', array(), $page_for_posts))  ;
@@ -319,12 +431,7 @@ function kt_get_page_subtitle(){
     return apply_filters( 'kt_subtitle', $tagline );
 }
 
-
-
 add_action('kt_loop_after', 'kt_paging_nav');
-
-
-
 
 
 /**
@@ -334,7 +441,6 @@ add_action('kt_loop_after', 'kt_paging_nav');
  */
 add_action( 'kt_slideshows_position', 'kt_slideshows_position_callback' );
 function kt_slideshows_position_callback(){
-
     if(is_page()){
         kt_show_slideshow();
     }
@@ -354,3 +460,44 @@ function kt_comment_form_after_fields(){
     echo '</div>';
 }
 add_action( 'comment_form_after_fields', 'kt_comment_form_after_fields', 9999 );
+
+
+
+add_filter('wpb_widget_title', 'kt_widget_title', 10, 2);
+function kt_widget_title($output = '', $params = array('')) {
+    if ( '' === $params['title'] ) {
+        return '';
+    }
+    $extraclass = ( isset( $params['extraclass'] ) ) ? ' ' . $params['extraclass'] : '';
+    return '<h4 class="wpb_heading'.$extraclass.'">'.$params['title'].'</h4>';
+}
+
+add_filter('kt_header_class', 'kt_header_add_class', 10, 3);
+function kt_header_add_class($classes, $header_layout, $header_position){
+
+    $header_scheme = '';
+    if(is_page()){
+        $header_scheme = rwmb_meta('_kt_header_scheme', array());
+    }
+
+    if(!$header_scheme){
+        $header_scheme = 'dark';
+    }
+
+    $classes .= ' header-'.$header_scheme;
+
+
+    if($header_position == 'transparent'){
+        $classes .= ' header-transparent';
+    }
+
+
+    return $classes;
+}
+
+
+
+
+
+
+

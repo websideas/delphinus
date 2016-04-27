@@ -219,10 +219,11 @@
   padding: 25px 25px 15px;
   .author-avatar {
     float: left;
+    margin-right: 25px;
     max-width: 70px;
   }
   .author-description {
-    padding-left: 93px;
+    overflow: hidden;
   }
   .author-title {
     font-size: 14px;

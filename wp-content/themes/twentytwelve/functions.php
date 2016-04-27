@@ -74,6 +74,9 @@ function twentytwelve_setup() {
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
+
+	// Indicate widget sidebars can use selective refresh in the Customizer.
+	add_theme_support( 'customize-selective-refresh-widgets' );
 }
 add_action( 'after_setup_theme', 'twentytwelve_setup' );
 
@@ -124,7 +127,7 @@ function twentytwelve_get_font_url() {
 }
 
 /**
- * Enqueue scripts and styles for front-end.
+ * Enqueue scripts and styles for front end.
  *
  * @since Twenty Twelve 1.0
  */
@@ -480,8 +483,45 @@ function twentytwelve_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+
+	if ( isset( $wp_customize->selective_refresh ) ) {
+		$wp_customize->selective_refresh->add_partial( 'blogname', array(
+			'selector' => '.site-title > a',
+			'container_inclusive' => false,
+			'render_callback' => 'twentytwelve_customize_partial_blogname',
+		) );
+		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
+			'selector' => '.site-description',
+			'container_inclusive' => false,
+			'render_callback' => 'twentytwelve_customize_partial_blogdescription',
+		) );
+	}
 }
 add_action( 'customize_register', 'twentytwelve_customize_register' );
+
+/**
+ * Render the site title for the selective refresh partial.
+ *
+ * @since Twenty Twelve 2.0
+ * @see twentytwelve_customize_register()
+ *
+ * @return void
+ */
+function twentytwelve_customize_partial_blogname() {
+	bloginfo( 'name' );
+}
+
+/**
+ * Render the site tagline for the selective refresh partial.
+ *
+ * @since Twenty Twelve 2.0
+ * @see twentytwelve_customize_register()
+ *
+ * @return void
+ */
+function twentytwelve_customize_partial_blogdescription() {
+	bloginfo( 'description' );
+}
 
 /**
  * Enqueue Javascript postMessage handlers for the Customizer.
@@ -494,85 +534,3 @@ function twentytwelve_customize_preview_js() {
 	wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20141120', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
-
-
-
-/*************************
-WEB REVENUE INFINITE SCROLLING
- *************************/
-/*
-Function that will register and enqueue the infinite scolling's script to be used in the theme.
-*/
-function twentytwelve_script_infinite_scrolling(){
-    wp_register_script(
-        'infinite_scrolling',//name of script
-        get_template_directory_uri().'/js/jquery.infinitescroll.min.js',//where the file is
-        array('jquery'),//this script requires a jquery script
-        null,//don't have a script version number
-        true//script will de placed on footer
-    );
-
-    if(!is_singular()){ //only when we have more than 1 post
-        //we'll load this script
-        wp_enqueue_script('infinite_scrolling');
-    }
-}
-
-//Register our custom scripts!
-add_action('wp_enqueue_scripts', 'twentytwelve_script_infinite_scrolling');
-
-/*
-Function that will set infinite scrolling to be displayed in the page.
-*/
-function set_infinite_scrolling(){
-
-    if(!is_singular()){//again, only when we have more than 1 post
-        //add js script below
-        ?>
-        <script type="text/javascript">
-            /*
-            This is the inifinite scrolling setting, you can modify this at your will
-            */
-            var inf_scrolling = {
-                /*
-                img: is the loading image path, add a nice gif loading icon there
-                msgText: the loading message
-                finishedMsg: the finished loading message
-                */
-                loading:{
-                img: "<? echo get_template_directory_uri(); ?>/images/ajax-loader.gif",
-                msgText: "Loading next posts….",
-                finishedMsg: "Posts loaded!!",
-                },
-
-                /*Next item is set nextSelector.
-                NextSelector is the css class of page navigation.
-                In our case is #nav-below .nav-previous a
-                */
-                "nextSelector":"#nav-below .nav-previous a",
-
-                //navSelector is a css id of page navigation
-                "navSelector":"#nav-below",
-
-                //itemSelector is the div where post is displayed
-                "itemSelector":"article",
-
-                //contentSelector is the div where page content (posts) is displayed
-                "contentSelector":"#content"
-            };
-
-            /*
-            Last thing to do is configure contentSelector to infinite scroll,
-            with a function jquery from infinite-scroll.min.js
-            */
-            jQuery(inf_scrolling.contentSelector).infinitescroll(inf_scrolling);
-            </script>
-        <?
-    }
-}
-
-/*
-we need to add this action on page's footer.
-100 is a priority number that correpond a later execution.
-*/
-add_action( 'wp_footer', 'set_infinite_scrolling',100 );

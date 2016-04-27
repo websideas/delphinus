@@ -85,7 +85,7 @@ class WPBakeryShortCode_Categories_Grid extends WPBakeryShortCode {
 
 
             foreach ( $product_categories as $category ) {
-                echo '<div class="col-md-'.$bootstrapColumn.'">';
+                echo '<div class="col-md-'.$bootstrapColumn.' col-sm-'.$bootstrapColumn.'">';
                 wc_get_template( 'content-product_cat_grid.php', array(
                     'category' => $category
                 ) );
@@ -109,9 +109,9 @@ class WPBakeryShortCode_Categories_Grid extends WPBakeryShortCode {
 
 
 vc_map( array(
-    "name" => esc_html__( "KT: Product Categories Grid", 'wingman'),
+    "name" => esc_html__( "KT: Product Categories Grid", 'delphinus'),
     "base" => "categories_grid",
-    "category" => esc_html__('by Kite-Themes', 'wingman' ),
+    "category" => esc_html__('by Kite-Themes', 'delphinus' ),
     "params" => array(
 
         array(
@@ -172,27 +172,13 @@ vc_map( array(
 
         array(
             'type' => 'kt_switch',
-            'heading' => esc_html__( 'Hide empty', 'wingman' ),
+            'heading' => esc_html__( 'Hide empty', 'delphinus' ),
             'param_name' => 'hide_empty',
             'value' => 'true',
-            "description" => esc_html__("Hide category if empty.", 'wingman'),
+            "description" => esc_html__("Hide category if empty.", 'delphinus'),
         ),
 
-        array(
-            'type' => 'dropdown',
-            'heading' => esc_html__( 'CSS Animation', 'js_composer' ),
-            'param_name' => 'css_animation',
-            'admin_label' => true,
-            'value' => array(
-                esc_html__( 'No', 'js_composer' ) => '',
-                esc_html__( 'Top to bottom', 'js_composer' ) => 'top-to-bottom',
-                esc_html__( 'Bottom to top', 'js_composer' ) => 'bottom-to-top',
-                esc_html__( 'Left to right', 'js_composer' ) => 'left-to-right',
-                esc_html__( 'Right to left', 'js_composer' ) => 'right-to-left',
-                esc_html__( 'Appear from center', 'js_composer' ) => "appear"
-            ),
-            'description' => esc_html__( 'Select type of animation if you want this element to be animated when it enters into the browsers viewport. Note: Works only in modern browsers.', 'js_composer' )
-        ),
+        vc_map_add_css_animation(),
         array(
             "type" => "textfield",
             "heading" => esc_html__( "Extra class name", "js_composer" ),

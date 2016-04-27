@@ -30,6 +30,7 @@ $black: #000000;
 
 $gray-bg: #f6f6f6;
 
+
 $gray-text: #999999;
 $gray-darker: #666666;
 
@@ -43,16 +44,24 @@ $extra-color: #6fd9e9;
 
 //// 3. Common space ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+
+
 $topbar-height: 57px;
 $navbar-height: 102px;
 $navbar-height-mobile: 80px;
 $navbar-height-sticky: 60px;
 
 $logo-margin: 36px 0;
+$logo-margin-mobile: 20px 0;
+
 $logo-margin-sticky: 15px 0;
 
-$vspacing: 30px;
 
+
+$logo-height: 20px;
+$logo-mobile-height: 20px;
+
+$vspacing: 30px;
 
 //// 4. Hamburger ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 $hamburger-heighticon: 12px;

@@ -58,6 +58,12 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
     $classes[] = 'last';
 }
 
+$columns_tab = 2;
+if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $columns_tab || 1 === $columns_tab ) {
+    $classes[] = 'first-tablet';
+}
+
+
 if($woocommerce_loop['type'] == 'masonry'){
     $box_size = get_post_meta($product->id, '_kt_box_size', true);
     if($box_size == 'wide' || $box_size == 'landscape'){
@@ -70,8 +76,9 @@ if($woocommerce_loop['type'] == 'masonry'){
 }else{
     $bootstrapColumn = round( 12 / $woocommerce_loop['columns'] );
 }
+$bootstrapColumn_tab = round( 12 / $columns_tab );
 
-$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-12', $bootstrapColumn, 6);
+$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%1$s col-xs-%2$s', $bootstrapColumn, $bootstrapColumn_tab);
 
 ?>
 <li <?php post_class( $classes ); ?>>

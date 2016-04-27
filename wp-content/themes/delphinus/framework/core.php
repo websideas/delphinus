@@ -195,23 +195,40 @@ if ( class_exists( 'Vc_Manager', false ) ) {
     add_action( 'admin_enqueue_scripts', 'js_composer_bridge_admin', 15 );
 
 
-    if ( !function_exists('kt_js_composer_bridge') ) {
-		function kt_js_composer_bridge() {
-			require KT_FW_DIR . 'js_composer/js_composer_parrams.php';
-            require KT_FW_DIR . 'js_composer/js_composer_bridge.php';
-		}
+    function kt_js_composer_bridge() {
+        require KT_FW_DIR . 'js_composer/js_composer_parrams.php';
+        require KT_FW_DIR . 'js_composer/js_composer_bridge.php';
+    }
 
-        if ( function_exists( 'vc_set_shortcodes_templates_dir' ) ) {
-            vc_set_shortcodes_templates_dir( KT_THEME_TEMP . '/vc_templates' );
-        }
-	}
+    if ( function_exists( 'vc_set_shortcodes_templates_dir' ) ) {
+        vc_set_shortcodes_templates_dir( KT_THEME_TEMP . '/vc_templates' );
+    }
     add_action( 'init', 'kt_js_composer_bridge', 20 );
+
+
+    function rd_vc_remove_frontend_links() {
+        vc_disable_frontend(); // this will disable frontend editor
+    }
+    add_action( 'vc_after_init', 'rd_vc_remove_frontend_links' );
+
+
+    function kt_vc_remove_cf7() {
+        if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
+            vc_remove_element( 'contact-form-7' );
+            // Add other elements that should be removed here
+        }
+    }
+
+    // Hook for admin editor.
+    add_action( 'vc_build_admin_page', 'kt_vc_remove_cf7', 20 );
 
     /**
      * Include js_composer update param
      *
      */
     require KT_FW_DIR . 'js_composer/js_composer_update.php';
+
+
 
 }
 

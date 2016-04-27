@@ -312,7 +312,7 @@ function kt_icons_settings_field($settings, $value){
     $output = '<input type="hidden" class="wpb_vc_param_value ' . $param_name . ' ' . $type . ' ' . $class . '" name="' . $param_name . '" value="'.esc_attr($value).'" '.$dependency.' />';
 
 
-    $placeholder = isset($settings['placeholder']) ? $settings['placeholder'] : esc_html__('Search icon ...', 'adroit');
+    $placeholder = isset($settings['placeholder']) ? $settings['placeholder'] : esc_html__('Search icon ...', 'delphinus');
 
 
     $output .= '<div class="param-icon-header clearfix">';
@@ -326,7 +326,7 @@ function kt_icons_settings_field($settings, $value){
     if(is_array($lists)){
         $icons = '';
         $output .= '<p><select name="param-icon-categories" class="param-icon-categories">';
-        $output .= '<option value="">'.esc_html__('From all categories', 'adroit').'</option>';
+        $output .= '<option value="">'.esc_html__('From all categories', 'delphinus').'</option>';
         foreach($lists as $k => $v){
             $text = ucwords(str_replace('_', ' ', $k));
             $output .= '<option value="'.$k.'">'.$text.'</option>';

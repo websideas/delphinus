@@ -27,15 +27,29 @@ $attachment_count = count( $attachment_ids );
 
 if(!$attachment_count) return;
 
+
+$layout = kt_get_product_layout();
+if($layout == 'layout2'){
+    $items = 6;
+}elseif($layout == 'layout3'){
+    $items = 5;
+}else{
+    $items = 3;
+}
+
+
+$items = apply_filters('kt_product_thumbnail_items', $items);
+
+
 ?>
-<div class="product-main-thumbnails" id="sync2" data-items="3">
+<div class="product-main-thumbnails" id="sync2" data-items="<?php echo $items; ?>">
     <?php
     if ( has_post_thumbnail() ) {
         $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
         $image_link    = wp_get_attachment_url( get_post_thumbnail_id() );
         $image         = get_the_post_thumbnail(
             $post->ID,
-            apply_filters( 'single_product_small_thumbnail_size', 'shop_thumbnail' ),
+            apply_filters( 'single_product_small_thumbnail_size', 'shop_catalog' ),
             array('title'	=> get_the_title( get_post_thumbnail_id() ))
         );
 
@@ -63,7 +77,7 @@ if(!$attachment_count) return;
             if ( !$image_link )
                 continue;
 
-            $image = wp_get_attachment_image( $attachment_id, 'shop_thumbnail', array(
+            $image = wp_get_attachment_image( $attachment_id, 'shop_catalog', array(
                 'class' => 'img-responsive'
             ) );
 

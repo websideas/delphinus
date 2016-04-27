@@ -5,18 +5,14 @@
 
 
 
-
-
-
-
-
-
-
     init_wc_grid_list();
     init_wc_currency();
     init_wc_quantily();
     init_wc_carousel();
     init_wc_masonry();
+    init_wc_filter();
+    init_wc_saleCountDown();
+    init_wc_quickview();
 
 
     function init_wc_masonry(){
@@ -39,6 +35,15 @@
     }
 
 
+    function init_wc_filter(){
+        $('.shop-header-filter').on('click',function(e){
+            e.preventDefault();
+            $(this).toggleClass('active');
+            $('#kt-shop-filters').toggleClass('show');
+        });
+    }
+
+
     /* ---------------------------------------------
      Grid list Toggle
      --------------------------------------------- */
@@ -54,8 +59,6 @@
                 security : ajax_frontend.security,
                 layout: $this.data('layout')
             };
-
-            //$.post(ajax_frontend.ajaxurl, data, function(response) { });
 
             $gridlist.find('a').removeClass('active');
             $this.addClass('active');
@@ -103,14 +106,14 @@
             afterAction : syncPosition,
             autoHeight: true,
             responsiveRefreshRate : 200,
-            navigationText: ['<i class="arrow_carrot-left"></i>','<i class="arrow_carrot-right"></i>'],
+            navigationText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
         });
 
         sync2.owlCarousel({
             theme : 'woocommerce-thumbnails',
             items : sync2.data('items'),
             itemsCustom : [[991,sync2.data('items')], [768, sync2.data('items')], [480, sync2.data('items')]],
-            navigation: true,
+            navigation: false,
             navigationText: false,
             pagination:false,
             responsiveRefreshRate : 100,
@@ -164,9 +167,58 @@
                 sync2.trigger("owl.goTo", num-1)
             }
         }
-
-
     }
+
+
+
+
+    /* ---------------------------------------------
+     QickView
+     --------------------------------------------- */
+    function init_wc_quickview(){
+        $('body').on('click', '.product-quick-view', function(e){
+            e.preventDefault();
+            var objProduct = $(this);
+            $('i', objProduct).attr('class', 'fa fa-circle-o-notch fa-spin');
+
+            var data = {
+                action: 'frontend_product_quick_view',
+                product_id: objProduct.data('id')
+            };
+
+            $.post(ajax_frontend.ajaxurl, data, function(response) {
+                $('i', objProduct).attr('class', 'fa fa-search');
+                $.magnificPopup.open({
+                    mainClass : 'mfp-zoom-in',
+                    showCloseBtn: false,
+                    removalDelay: 500,
+                    items: {
+                        src: '<div class="container"><div class="themedev-product-popup woocommerce mfp-with-anim">' + response + '</div></div>',
+                        type: 'inline'
+                    },
+                    callbacks: {
+                        open: function() {
+                            var $popup = $('.themedev-product-popup');
+                            $popup.imagesLoaded(function(){
+                                var images = $("#quickview-images"),
+                                    thumbnails = $("#quickview-thumbnails");
+                                init_wc_product_carousel(images, thumbnails);
+                            });
+                            $('.kt-product-popup form').wc_variation_form();
+                        },
+                        change: function() {
+                            $('.kt-product-popup form').wc_variation_form();
+                        }
+                    }
+                });
+            });
+        });
+        $(document).on('click', '.close-quickview', function (e) {
+            e.preventDefault();
+            $.magnificPopup.close();
+        });
+    }
+
 
 
     /* ---------------------------------------------
@@ -204,25 +256,14 @@
 
 
     $( 'body' )
-        /*.on('click', '.add_to_cart_button', function() {
+        .on('click', '.add_to_cart_button', function() {
             var $this = $(this).addClass('wc-loading');
-            $('i', $this).attr('class', 'fa fa-circle-o-notch fa-spin');
         })
-
         .on('added_to_cart', function(e, data) {
             var $button_product = $('.wc-loading'),
                 $parent = $button_product.parent();
-
-            $('i', $button_product).attr('class', 'fa fa-check');
-
-            $parent.tooltip('hide')
-                .attr('title', $parent.data('added'))
-                .tooltip('fixTitle');
-
-            setTimeout(function() {
-                $parent.tooltip('show');
-            }, 200);
-        })*/
+            $parent.tooltip('hide');
+        })
         .on('click', '.yith-wcwl-add-button', function() {
             var $this = $(this).addClass('wc-wishlist-loading');
             $('i', $this).attr('class', 'fa fa-circle-o-notch fa-spin');
@@ -230,27 +271,14 @@
         .on( 'added_to_wishlist removed_from_wishlist', function() {
             var $button_product = $('.wc-wishlist-loading'),
                 $parent = $button_product.closest('.yith-wcwl-add-to-wishlist');
-
-            $parent.tooltip('hide')
-                .attr('title', $parent.data('added'))
-                .tooltip('fixTitle');
-
-            setTimeout(function() {
-                $parent.tooltip('show');
-            }, 200);
-
-            var data = {
-                action: 'fronted_get_wishlist',
-                security : ajax_frontend.security
-            };
+            var data = {action: 'fronted_get_wishlist'};
             $.post(ajax_frontend.ajaxurl, data, function(response) {
                 $('.shopping-bag-wishlist').html(response.html);
-                $('.shopping-bag-wishlist .cart_list.product_list_widget').mCustomScrollbar();
-
+                //$('.shopping-bag-wishlist .cart_list.product_list_widget').mCustomScrollbar();
             }, 'json');
         })
         .on('wc_fragments_loaded wc_fragments_refreshed added_to_cart added_to_wishlist', function (){
-            $('.shopping-bag .cart_list.product_list_widget').mCustomScrollbar();
+            //$('.shopping-bag .cart_list.product_list_widget').mCustomScrollbar();
         })
         .on( 'click', '.product a.compare:not(.added)', function(e){
             e.preventDefault();
@@ -261,11 +289,6 @@
                 $parent = $button_product.closest('.compare');
             $parent.removeClass('wc-compare-loading');
         });
-
-
-
-
-
 
     /*
 
@@ -292,8 +315,24 @@
     });
     */
 
+    /* ---------------------------------------------
+        Sale Count Down
+    --------------------------------------------- */
+    function init_wc_saleCountDown(){
+        if( typeof ( $.countdown ) !== undefined ){
+            $('.woocommerce-countdown').each(function(){
+                var $this = $(this),
+                    finalDate = $(this).data('time'),
+                    $date = new Date( finalDate );
+                $this.countdown($date, function(event) {
+
+                    $(this).html(event.strftime('<div><span>%D</span>'+ajax_frontend.day_str+'</div><div><span>%H</span>'+ajax_frontend.hour_str+'</div><div><span>%M</span>'+ajax_frontend.min_str+'</div><div><span>%S</span>'+ajax_frontend.sec_str+'</div>'));
+                });
 
 
+            });
+        }
+    }
 
 
 
@@ -329,7 +368,7 @@
             }
 
             if(typeof options.mobile !== "undefined"){
-                options.itemsMobile = [479,options.mobile];
+                options.itemsMobile = [480,options.mobile];
             }
 
             options.navigationText = ['', ''];
@@ -367,10 +406,65 @@
 
 
             objCarousel.imagesLoaded(function() {
-                console.log(options);
                 objCarousel.owlCarousel(options);
             });
         });
+    }
+
+
+
+    init_checkout_coupon();
+    function init_checkout_coupon(){
+
+
+        $( document.body ).on( 'click', 'input[name="apply_coupon"]', function(e){
+            var $form = $( this).closest('.checkout_coupon_wrap');
+
+            if ( $form.is( '.processing' ) ) {
+                return false;
+            }
+
+            $form.addClass( 'processing' ).block({
+                message: null,
+                overlayCSS: {
+                    background: '#fff',
+                    opacity: 0.6
+                }
+            });
+
+            var data = {
+                security:		wc_checkout_params.apply_coupon_nonce,
+                coupon_code:	$form.find( 'input[name="coupon_code"]' ).val()
+            };
+
+            $.ajax({
+                type:		'POST',
+                url:		wc_checkout_params.wc_ajax_url.toString().replace( '%%endpoint%%', 'apply_coupon' ),
+                data:		data,
+                success:	function( code ) {
+                    $( '.woocommerce-error, .woocommerce-message' ).remove();
+                    $form.removeClass( 'processing' ).unblock();
+
+                    if ( code ) {
+                        $( 'form.woocommerce-checkout' ).before( code );
+
+                        $( document.body ).trigger( 'update_checkout', { update_shipping_method: false } );
+                    }
+                },
+                dataType: 'html'
+            });
+
+            return false;
+        } );
+
+
+        $( document.body )
+            .on('update_checkout', function(event, args) {
+
+                console.log('call');
+
+            })
+
     }
 
 

@@ -15,6 +15,12 @@
 #setting-error-tgmpa{
     display: block;
 }
+.colors-table{
+    width: 100%;
+}
+.colors-table td{
+    vertical-align: top;
+}
 /*==================================
 * Spinner
 ===================================*/

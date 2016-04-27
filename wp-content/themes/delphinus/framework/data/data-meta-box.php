@@ -18,10 +18,61 @@ function kt_register_meta_boxes( $meta_boxes )
     $prefix = '_kt_';
     $menus = wp_get_nav_menus();
 
-    $menus_arr = array('' => esc_html__('Default', 'adroit'));
+    $menus_arr = array('' => esc_html__('Default', 'delphinus'));
     foreach ( $menus as $menu ) {
         $menus_arr[$menu->term_id] = esc_html( $menu->name );
     }
+
+    $rev_options = array();
+
+    if ( class_exists( 'RevSlider' ) ) {
+        $revSlider = new RevSlider();
+        $arrSliders = $revSlider->getArrSliders();
+
+        if(!empty($arrSliders)){
+            foreach($arrSliders as $slider){
+                $rev_options[$slider->getParam("alias")] = $slider->getParam("title");
+            }
+        }
+    }
+
+    $ls_options = array();
+    if ( is_plugin_active( 'LayerSlider/layerslider.php' ) ) {
+        global $wpdb;
+        $table_name = $wpdb->prefix . "layerslider";
+        $sliders = $wpdb->get_results( "SELECT * FROM ".$table_name." WHERE flag_hidden = '0' AND flag_deleted = '0' ORDER BY date_c ASC LIMIT 100" );
+        if ( $sliders != null && !empty( $sliders ) ) {
+            foreach ( $sliders as $item ) :
+                $ls_options[$item->id] = $item->name;
+            endforeach;
+        }
+    }
+
+    /**
+     * For Testimonial
+     *
+     */
+
+    $meta_boxes[] = array(
+        'title'  => esc_html__('Testimonial Settings','delphinus'),
+        'pages'  => array( 'kt_testimonial' ),
+        'fields' => array(
+            array(
+                'name' => esc_html__( 'Company Name / Job Title', 'delphinus' ),
+                'id' => $prefix . 'testimonial_company',
+                'desc' => esc_html__( "Please type the text for Company Name / Job Title here.", 'delphinus' ),
+                'type'  => 'text',
+            ),
+            array(
+                'name' => esc_html__( "URL to Author's Website", 'delphinus' ),
+                'id' => $prefix . 'testimonial_link',
+                'desc' => esc_html__( "Please type the text for link here.", 'delphinus' ),
+                'type'  => 'text',
+            )
+        ),
+    );
+
+
 
     $sidebars = array();
 
@@ -32,11 +83,11 @@ function kt_register_meta_boxes( $meta_boxes )
 
     $tabs = array(
         'page_layout' => array(
-            'label' => esc_html__( 'Layout', 'adroit' ),
+            'label' => esc_html__( 'Layout', 'delphinus' ),
             'icon'  => 'fa fa-columns',
         ),
         'page_background' => array(
-            'label' => esc_html__( 'Background', 'adroit' ),
+            'label' => esc_html__( 'Background', 'delphinus' ),
             'icon'  => 'fa fa-picture-o',
         )
 
@@ -48,84 +99,95 @@ function kt_register_meta_boxes( $meta_boxes )
 
         //Page layout
         array(
-            'name' => esc_html__('Page layout', 'adroit'),
+            'name' => esc_html__('Type Page Options', 'delphinus'),
+            'id'   => "{$prefix}type_page",
+            'type' => 'select',
+            'options' => array(
+                'bullet' => esc_html__('Row Bullet', 'delphinus'),
+                //'onepage' => esc_html__('One Page Navigation', 'delphinus'),
+            ),
+            'std'  => '1',
+            'tab'  => 'page_layout',
+            'placeholder' => esc_html__('Default', 'delphinus'),
+            'desc' => esc_html__('Choose type of page display.', 'delphinus'),
+        ),
+        array(
+            'name' => esc_html__('Page layout', 'delphinus'),
             'id' => $prefix . 'layout',
-            'desc' => esc_html__("Please choose this page's layout.", 'adroit'),
+            'desc' => esc_html__("Please choose this page's layout.", 'delphinus'),
             'type' => 'select',
             'options' => array(
-                'default' => esc_html__('Default', 'adroit'),
-                'full' => esc_html__('Full width Layout', 'adroit'),
-                'boxed' => esc_html__('Boxed Layout', 'adroit'),
+                'full' => esc_html__('Full width Layout', 'delphinus'),
+                'boxed' => esc_html__('Boxed Layout', 'delphinus'),
             ),
-            'std' => 'default',
+            'placeholder' => esc_html__('Default', 'delphinus'),
             'tab'  => 'page_layout',
         ),
         array(
-            'name' => esc_html__('Sidebar configuration', 'adroit'),
+            'name' => esc_html__('Sidebar configuration', 'delphinus'),
             'id' => $prefix . 'sidebar',
-            'desc' => esc_html__("Choose the sidebar configuration for the detail page.<br/><b>Note: Cart and checkout, My account page always use no sidebars.</b>", 'adroit'),
+            'desc' => esc_html__("Choose the sidebar configuration for the detail page.<br/><b>Note: Cart and checkout, My account page always use no sidebars.</b>", 'delphinus'),
             'type' => 'select',
             'options' => array(
-                0 => esc_html__('Default', 'adroit'),
-                'full' => esc_html__('No sidebars', 'adroit'),
-                'left' => esc_html__('Left Sidebar', 'adroit'),
-                'right' => esc_html__('Right Sidebar', 'adroit')
+                'full' => esc_html__('No sidebars', 'delphinus'),
+                'left' => esc_html__('Left Sidebar', 'delphinus'),
+                'right' => esc_html__('Right Sidebar', 'delphinus')
             ),
-            'std' => 'default',
+            'placeholder' => esc_html__('Default', 'delphinus'),
             'tab'  => 'page_layout',
         ),
         array(
-            'name' => esc_html__('Left sidebar', 'adroit'),
+            'name' => esc_html__('Left sidebar', 'delphinus'),
             'id' => $prefix . 'left_sidebar',
             'type' => 'select',
             'tab'  => 'page_layout',
             'options' => $sidebars,
-            'desc' => esc_html__("Select your sidebar.", 'adroit'),
+            'desc' => esc_html__("Select your sidebar.", 'delphinus'),
             'visible' => array($prefix . 'sidebar','=', 'left' ),
         ),
         array(
-            'name' => esc_html__('Right sidebar', 'adroit'),
+            'name' => esc_html__('Right sidebar', 'delphinus'),
             'id' => $prefix . 'right_sidebar',
             'type' => 'select',
             'tab'  => 'page_layout',
             'options' => $sidebars,
-            'desc' => esc_html__("Select your sidebar.", 'adroit'),
+            'desc' => esc_html__("Select your sidebar.", 'delphinus'),
             'visible' => array($prefix . 'sidebar','=', 'right' ),
         ),
         array(
-            'name' => esc_html__('Page top spacing', 'adroit'),
+            'name' => esc_html__('Page top spacing', 'delphinus'),
             'id' => $prefix . 'page_top_spacing',
-            'desc' => esc_html__("Enter your page top spacing (Example: 100px).", 'adroit' ),
+            'desc' => esc_html__("Enter your page top spacing (Example: 100px).", 'delphinus' ),
             'type'  => 'text',
             'tab'  => 'page_layout',
         ),
         array(
-            'name' => esc_html__('Page bottom spacing', 'adroit'),
+            'name' => esc_html__('Page bottom spacing', 'delphinus'),
             'id' => $prefix . 'page_bottom_spacing',
-            'desc' => esc_html__("Enter your page bottom spacing (Example: 100px).", 'adroit' ),
+            'desc' => esc_html__("Enter your page bottom spacing (Example: 100px).", 'delphinus' ),
             'type'  => 'text',
             'tab'  => 'page_layout',
         ),
         array(
-            'name' => esc_html__('Extra page class', 'adroit'),
+            'name' => esc_html__('Extra page class', 'delphinus'),
             'id' => $prefix . 'extra_page_class',
-            'desc' => esc_html__('If you wish to add extra classes to the body class of the page (for custom css use), then please add the class(es) here.', 'adroit' ),
+            'desc' => esc_html__('If you wish to add extra classes to the body class of the page (for custom css use), then please add the class(es) here.', 'delphinus' ),
             'type'  => 'text',
             'tab'  => 'page_layout',
         ),
         array(
-            'name' => esc_html__('Background', 'adroit'),
+            'name' => esc_html__('Background', 'delphinus'),
             'id' => $prefix.'background_body',
             'type'  => 'background',
             'tab'  => 'page_background',
-            'desc' => esc_html__('The option that will be used as the OUTER page.', 'adroit' ),
+            'desc' => esc_html__('The option that will be used as the OUTER page.', 'delphinus' ),
         ),
         array(
-            'name' => esc_html__('Inner Background', 'adroit'),
+            'name' => esc_html__('Inner Background', 'delphinus'),
             'id' => $prefix.'background_inner',
             'type'  => 'background',
             'tab'  => 'page_background',
-            'desc' => esc_html__('The option that will be used as the INNER page.', 'adroit' ),
+            'desc' => esc_html__('The option that will be used as the INNER page.', 'delphinus' ),
         )
     );
 
@@ -133,11 +195,11 @@ function kt_register_meta_boxes( $meta_boxes )
 
     $tabs_page = array(
         'header'  => array(
-            'label' => esc_html__( 'Header', 'adroit' ),
+            'label' => esc_html__( 'Header', 'delphinus' ),
             'icon'  => 'fa fa-desktop',
         ),
         'page_header' => array(
-            'label' => esc_html__( 'Page Header', 'adroit' ),
+            'label' => esc_html__( 'Page Header', 'delphinus' ),
             'icon'  => 'fa fa-bars',
         )
     );
@@ -146,30 +208,30 @@ function kt_register_meta_boxes( $meta_boxes )
         // Page Header
         array(
 
-            'name' => esc_html__( 'Page Header', 'adroit' ),
+            'name' => esc_html__( 'Page Header', 'delphinus' ),
             'id' => $prefix . 'page_header',
-            'desc' => esc_html__( "Show Page Header.", 'adroit' ),
+            'desc' => esc_html__( "Show Page Header.", 'delphinus' ),
             'type' => 'select',
             'options' => array(
-                ''          => esc_html__('Default', 'adroit'),
-                'off'	    => esc_html__('Hidden', 'adroit'),
-                'on'		=> esc_html__('Show', 'adroit'),
+                'off'	    => esc_html__('Hidden', 'delphinus'),
+                'on'		=> esc_html__('Show', 'delphinus'),
             ),
             'std'  => '',
+            'placeholder' => esc_html__('Default', 'delphinus'),
             'tab'  => 'page_header',
         ),
         array(
-            'name' => esc_html__( 'Page Header Custom Text', 'adroit' ),
+            'name' => esc_html__( 'Page Header Custom Text', 'delphinus' ),
             'id' => $prefix . 'page_header_custom',
-            'desc' => esc_html__( "Enter cstom Text for page header.", 'adroit' ),
+            'desc' => esc_html__( "Enter cstom Text for page header.", 'delphinus' ),
             'type'  => 'text',
             'tab'  => 'page_header',
             'visible' => array($prefix . 'page_header', '!=', 'off')
         ),
         array(
-            'name' => esc_html__( 'Page header subtitle', 'adroit' ),
+            'name' => esc_html__( 'Page header subtitle', 'delphinus' ),
             'id' => $prefix . 'page_header_subtitle',
-            'desc' => esc_html__( "Enter subtitle for page.", 'adroit' ),
+            'desc' => esc_html__( "Enter subtitle for page.", 'delphinus' ),
             'type'  => 'text',
             'tab'  => 'page_header',
             'visible' => array($prefix . 'page_header', '!=', 'off')
@@ -177,46 +239,98 @@ function kt_register_meta_boxes( $meta_boxes )
 
         // Header
         array(
-            'name'    => esc_html__( 'Header position', 'adroit' ),
+            'name' => esc_html__('Main Navigation Location', 'delphinus'),
+            'id'   => "{$prefix}header_main_menu",
+            'type' => 'select',
+            'options' => $menus_arr,
+            'std'  => '',
+            'tab'  => 'header',
+            'desc' => esc_html__('Choose which menu location to be used in this page. If left blank, Primary Menu will be used.', 'delphinus'),
+        ),
+
+
+        array(
+            'name'    => esc_html__( 'Header layout', 'delphinus' ),
             'type'     => 'select',
-            'id'       => $prefix.'header_position',
-            'desc'     => esc_html__( "Please choose header position", 'adroit' ),
+            'id'       => $prefix.'header_layout',
+            'desc'     => esc_html__( "Please choose header layout", 'delphinus' ),
             'options'  => array(
-                'default' => esc_html__('Default', 'adroit'),
-                'below' => esc_html__('Below Slideshow', 'adroit'),
+                '1' => esc_html__('Layout 1', 'delphinus'),
+                '2' => esc_html__('Layout 2', 'delphinus'),
+                '3' => esc_html__('Layout 3', 'delphinus'),
+                '4' => esc_html__('Layout 4', 'delphinus'),
+                '5' => esc_html__('Layout 5', 'delphinus'),
+                '6' => esc_html__('Layout 6', 'delphinus'),
+                '7' => esc_html__('Layout 7', 'delphinus'),
             ),
+            'placeholder' => esc_html__('Default', 'delphinus'),
             'std'  => 'default',
             'tab'  => 'header',
         ),
+
+
         array(
-            'name' => esc_html__('Select Your Slideshow Type', 'adroit'),
-            'id' => $prefix . 'slideshow_type',
-            'desc' => esc_html__("You can select the slideshow type using this option.", 'adroit'),
+            'name'    => esc_html__( 'Header position', 'delphinus' ),
+            'type'     => 'select',
+            'id'       => $prefix.'header_position',
+            'desc'     => esc_html__( "Please choose header position", 'delphinus' ),
+            'options'  => array(
+                'below' => esc_html__('Below Slideshow', 'delphinus'),
+                'transparent' => esc_html__('Transparent', 'delphinus'),
+            ),
+            'placeholder' => esc_html__('Default', 'delphinus'),
+            'std'  => 'default',
+            'tab'  => 'header',
+        ),
+
+
+
+
+        array(
+            'name' => __('Transparent header Color Scheme', 'delphinus'),
+            'id'   => "{$prefix}header_scheme",
             'type' => 'select',
             'options' => array(
-                '' => esc_html__('Select Option', 'adroit'),
-                'revslider' => esc_html__('Revolution Slider', 'adroit'),
-                'layerslider' => esc_html__('Layer Slider', 'adroit'),
+                'light'		=> __('Light', 'delphinus'),
             ),
+            'placeholder' => esc_html__('Dark', 'delphinus'),
+            'tab'  => 'header',
+            'visible' => array($prefix . 'header_position', '=' , 'transparent' ),
+            'desc'     => esc_html__( "Please choose transparent color scheme", 'delphinus' ),
+        ),
+        array(
+            'name' => esc_html__('Select Your Slideshow Type', 'delphinus'),
+            'id' => $prefix . 'slideshow_type',
+            'desc' => esc_html__("You can select the slideshow type using this option.", 'delphinus'),
+            'type' => 'select',
+            'options' => array(
+                'revslider' => esc_html__('Revolution Slider', 'delphinus'),
+                'layerslider' => esc_html__('Layer Slider', 'delphinus'),
+            ),
+            'placeholder' => esc_html__('Select Option', 'delphinus'),
             'tab'  => 'header',
         ),
         array(
-            'name' => esc_html__('Select Revolution Slider', 'adroit'),
+            'name' => esc_html__('Select Revolution Slider', 'delphinus'),
             'id' => $prefix . 'rev_slider',
             'default' => true,
-            'type' => 'revSlider',
+            'type' => 'select',
             'tab'  => 'header',
-            'desc' => esc_html__('Select the Revolution Slider.', 'adroit'),
-            'visible' => array($prefix . 'slideshow_type', '=', 'revslider')
+            'desc' => esc_html__('Select the Revolution Slider.', 'delphinus'),
+            'visible' => array($prefix . 'slideshow_type', '=', 'revslider'),
+            'options' => $rev_options,
+            'placeholder' => esc_html__('Select Option', 'delphinus'),
         ),
         array(
-            'name' => esc_html__('Select Layer Slider', 'adroit'),
+            'name' => esc_html__('Select Layer Slider', 'delphinus'),
             'id' => $prefix . 'layerslider',
             'default' => true,
-            'type' => 'layerslider',
+            'type' => 'select',
             'tab'  => 'header',
-            'desc' => esc_html__('Select the Layer Slider.', 'adroit'),
-            'visible' => array($prefix . 'slideshow_type', '=', 'layerslider')
+            'desc' => esc_html__('Select the Layer Slider.', 'delphinus'),
+            'visible' => array($prefix . 'slideshow_type', '=', 'layerslider'),
+            'options' => $ls_options,
+            'placeholder' => esc_html__('Select Option', 'delphinus'),
         )
     );
 
@@ -234,9 +348,9 @@ function kt_register_meta_boxes( $meta_boxes )
         'fields' => array(
 
             array(
-                'name' => esc_html__( 'Link Client', 'wingman' ),
+                'name' => esc_html__( 'Link Client', 'delphinus' ),
                 'id' => $prefix . 'link_client',
-                'desc' => esc_html__( "Link Client.", 'wingman' ),
+                'desc' => esc_html__( "Link Client.", 'delphinus' ),
                 'type'  => 'text',
             ),
 
@@ -249,7 +363,7 @@ function kt_register_meta_boxes( $meta_boxes )
      */
     $meta_boxes[] = array(
         'id'        => 'page_meta_boxes',
-        'title'     => esc_html__('Page Options', 'adroit'),
+        'title'     => esc_html__('Page Options', 'delphinus'),
         'pages'     => array( 'page' ),
         'tabs'      => array_merge( $tabs,$tabs_page),
         'fields'    => array_merge( $fields,$fields_page),
@@ -258,11 +372,11 @@ function kt_register_meta_boxes( $meta_boxes )
 
     $tabs_post = array(
         'post_general'  => array(
-            'label' => esc_html__( 'General', 'adroit' ),
+            'label' => esc_html__( 'General', 'delphinus' ),
             'icon'  => 'fa fa-bars',
         ),
         'post_header'  => array(
-            'label' => esc_html__( 'Header', 'adroit' ),
+            'label' => esc_html__( 'Header', 'delphinus' ),
             'icon'  => 'fa fa-desktop',
         )
     );
@@ -271,73 +385,73 @@ function kt_register_meta_boxes( $meta_boxes )
         //General
         array(
             'type' => 'image_radio',
-            'name' => esc_html__('Post layouts', 'adroit'),
-            'desc' => esc_html__('Select the your post layout.', 'adroit'),
+            'name' => esc_html__('Post layouts', 'delphinus'),
+            'desc' => esc_html__('Select the your post layout.', 'delphinus'),
             'id'   => "{$prefix}blog_post_layout",
             'options' => array(
-                ''    => array('url' => KT_FW_IMG . 'single/default.jpg', 'alt' => esc_html__('Default', 'adroit')),
-                1     => array('url' => KT_FW_IMG . 'single/layout-1.jpg', 'alt' => esc_html__('Layout 1', 'adroit')),
-                2     => array('url' => KT_FW_IMG . 'single/layout-2.jpg', 'alt' => esc_html__('Layout 2', 'adroit')),
-                3     => array('url' => KT_FW_IMG . 'single/layout-3.jpg', 'alt' => esc_html__('Layout 3', 'adroit')),
-                4     => array('url' => KT_FW_IMG . 'single/layout-4.jpg', 'alt' => esc_html__('Layout 4', 'adroit')),
-                5     => array('url' => KT_FW_IMG . 'single/layout-5.jpg', 'alt' => esc_html__('Layout 5', 'adroit')),
-                6     => array('url' => KT_FW_IMG . 'single/layout-6.jpg', 'alt' => esc_html__('Layout 6', 'adroit')),
+                ''    => array('url' => KT_FW_IMG . 'single/default.jpg', 'alt' => esc_html__('Default', 'delphinus')),
+                1     => array('url' => KT_FW_IMG . 'single/layout-1.jpg', 'alt' => esc_html__('Layout 1', 'delphinus')),
+                2     => array('url' => KT_FW_IMG . 'single/layout-2.jpg', 'alt' => esc_html__('Layout 2', 'delphinus')),
+                3     => array('url' => KT_FW_IMG . 'single/layout-3.jpg', 'alt' => esc_html__('Layout 3', 'delphinus')),
+                4     => array('url' => KT_FW_IMG . 'single/layout-4.jpg', 'alt' => esc_html__('Layout 4', 'delphinus')),
+                5     => array('url' => KT_FW_IMG . 'single/layout-5.jpg', 'alt' => esc_html__('Layout 5', 'delphinus')),
+                6     => array('url' => KT_FW_IMG . 'single/layout-6.jpg', 'alt' => esc_html__('Layout 6', 'delphinus')),
             ),
             'attributes' => '',
             'std' => '',
             'tab'  => 'post_general',
         ),
         array(
-            'name' => esc_html__('Previous & next buttons', 'adroit'),
+            'name' => esc_html__('Previous & next buttons', 'delphinus'),
             'id'   => "{$prefix}prev_next",
             'type' => 'select',
             'options' => array(
-                ''    => esc_html__('Default', 'adroit'),
-                'off'		=> esc_html__('Hidden', 'adroit'),
-                'on'		=> esc_html__('Show', 'adroit'),
+                ''    => esc_html__('Default', 'delphinus'),
+                'off'		=> esc_html__('Hidden', 'delphinus'),
+                'on'		=> esc_html__('Show', 'delphinus'),
             ),
             'std'  => '',
             'tab'  => 'post_general',
-            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'adroit')
+            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'delphinus')
         ),
         array(
-            'name' => esc_html__('Author info', 'adroit'),
+            'name' => esc_html__('Author info', 'delphinus'),
             'id'   => "{$prefix}author_info",
             'type' => 'select',
             'options' => array(
-                ''    => esc_html__('Default', 'adroit'),
-                'off'		=> esc_html__('Hidden', 'adroit'),
-                'on'		=> esc_html__('Show', 'adroit'),
+                ''    => esc_html__('Default', 'delphinus'),
+                'off'		=> esc_html__('Hidden', 'delphinus'),
+                'on'		=> esc_html__('Show', 'delphinus'),
             ),
             'std'  => '',
             'tab'  => 'post_general',
-            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'adroit')
+            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'delphinus')
         ),
         array(
-            'name' => esc_html__('Social sharing', 'adroit'),
+            'name' => esc_html__('Social sharing', 'delphinus'),
             'id'   => "{$prefix}social_sharing",
             'type' => 'select',
             'options' => array(
-                ''    => esc_html__('Default', 'adroit'),
-                'off'		=> esc_html__('Hidden', 'adroit'),
-                'on'		=> esc_html__('Show', 'adroit'),
+                ''    => esc_html__('Default', 'delphinus'),
+                'off'		=> esc_html__('Hidden', 'delphinus'),
+                'on'		=> esc_html__('Show', 'delphinus'),
             ),
             'std'  => '',
             'tab'  => 'post_general',
-            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'adroit')
+            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'delphinus')
         ),
         array(
-            'name' => esc_html__('Related articles', 'adroit'),
+            'name' => esc_html__('Related articles', 'delphinus'),
             'id'   => "{$prefix}related_acticles",
             'type' => 'select',
             'options' => array(
-                ''      => esc_html__('Default', 'adroit'),
-                'off'    => esc_html__('Hidden', 'adroit'),
-                'on'	=> esc_html__('Show', 'adroit'),
+                ''      => esc_html__('Default', 'delphinus'),
+                'off'    => esc_html__('Hidden', 'delphinus'),
+                'on'	=> esc_html__('Show', 'delphinus'),
             ),
             'std'  => '',
             'tab'  => 'post_general',
-            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'adroit')
+            'desc' => esc_html__('Select "Default" to use settings in Theme Options', 'delphinus')
         ),
 
     );
@@ -365,39 +479,17 @@ function kt_register_meta_boxes( $meta_boxes )
         'fields' => array(
             //General
             array(
-                'name' => esc_html__('Product layout', 'adroit'),
-                'id' => $prefix . 'slideshow_type',
-                'desc' => esc_html__("Choose the layout for the product detail display.", 'adroit'),
+                'name' => esc_html__('Product layout', 'delphinus'),
+                'id' => $prefix . 'deltail_layout',
+                'desc' => esc_html__("Choose the layout for the product detail display.", 'delphinus'),
                 'type' => 'select',
+                'placeholder' => esc_html__('Select your layout', 'delphinus'),
                 'options' => array(
-                    'standard' => esc_html__('Standard', 'adroit'),
-                    'layout2' => esc_html__('Layout 2', 'adroit'),
-                    'layout3' => esc_html__('Layout 3', 'adroit'),
-                )
-            ),
-            array(
-                'id'               => 'image_advanced',
-                'name'             => __( 'Image Advanced', 'your-prefix' ),
-                'type'             => 'image_advanced',
-                // Maximum image uploads
-                'max_file_uploads' => 1,
-            ),
-            array(
-                'name' => __('Disposition', 'delphinus'),
-                'id' => $prefix . 'box_size',
-                'desc' => __('Select disposition for Packery display', 'delphinus'),
-                'type'     => 'select',
-                'options'  => array(
-                    'normal' => __('Normal (1x1)', 'delphinus'),
-                    'landscape' => __('Landscape (2x1)', 'delphinus'),
-                    'portrait' => __('Portrait (1x2)', 'delphinus'),
-                    'wide' => __('Wide (2x2)', 'delphinus'),
-                    'big' => __('Big (3x2)', 'delphinus'),
+                    'layout1' => esc_html__('Layout 1', 'delphinus'),
+                    'layout2' => esc_html__('Layout 2', 'delphinus'),
+                    'layout3' => esc_html__('Layout 3', 'delphinus'),
                 ),
-                'tab'  => 'product_general',
-                'std'  => 'normal'
             ),
-
             array(
                 'name'        => __( 'Short Description in List view', 'your-prefix' ),
                 'id'          => 'textarea',
@@ -405,6 +497,26 @@ function kt_register_meta_boxes( $meta_boxes )
                 'type'        => 'textarea',
                 'placeholder' => __( 'Empty if you want use Product Short Description', 'your-prefix' ),
                 'rows'        => 5,
+            ),
+            array(
+                'id'               => $prefix .'image',
+                'name'             => __( 'Image transparent', 'your-prefix' ),
+                'type'             => 'image_advanced',
+                'max_file_uploads' => 1,
+                'desc' => esc_html__("Select image for carousel featured. (", 'delphinus'),
+            ),
+            array(
+                'name' => __('Disposition', 'delphinus'),
+                'id' => $prefix . 'box_size',
+                'desc' => __('Select disposition for Packery display', 'delphinus'),
+                'type'     => 'select',
+                'options'  => array(
+                    'landscape' => __('Landscape (2x1)', 'delphinus'),
+                    'portrait' => __('Portrait (1x2)', 'delphinus'),
+                    'wide' => __('Wide (2x2)', 'delphinus'),
+                    'big' => __('Big (3x2)', 'delphinus'),
+                ),
+                'std'  => 'normal'
             ),
         ),
     );

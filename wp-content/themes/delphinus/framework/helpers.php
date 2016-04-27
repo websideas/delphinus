@@ -86,17 +86,17 @@ if (!function_exists('kt_get_image_sizes')){
             if( isset($sizes[ $_size ]) ){
                 $option_text[] = '('.$sizes[ $_size ]['width'].' x '.$sizes[ $_size ]['height'].')';
                 if($sizes[ $_size ]['crop']){
-                    $option_text[] = esc_html__('Crop', 'adroit');
+                    $option_text[] = esc_html__('Crop', 'delphinus');
                 }
                 $sizes[ $_size ] = implode(' - ', $option_text);
             }
         }
 
         if($full){
-            $sizes[ 'full' ] = esc_html__('Full', 'adroit');
+            $sizes[ 'full' ] = esc_html__('Full', 'delphinus');
         }
         if($custom){
-            $sizes[ 'custom' ] = esc_html__('Custom size', 'adroit');
+            $sizes[ 'custom' ] = esc_html__('Custom size', 'delphinus');
         }
 
         return $sizes;
@@ -219,7 +219,17 @@ if (!function_exists('kt_get_header_layout')) {
      *
      */
     function kt_get_header_layout(){
-        $layout = (isset($_REQUEST['header_layout'])) ?  isset($_REQUEST['header_layout']) : null;
+
+        $layout = null;
+
+        if(is_page()){
+            $layout = rwmb_meta('_kt_header_layout');
+        }
+
+        if(isset($_REQUEST['header_layout'])){
+            $layout = $_REQUEST['header_layout'];
+        }
+
         if(!$layout){
             $layout = kt_option('header', '1');
         }
@@ -237,9 +247,11 @@ if (!function_exists('kt_get_logo')){
      *
      */
     function kt_get_logo(){
-        $logo = array('default' => '', 'retina' => '');
+        $logo = array('default' => '', 'retina' => '', 'light' => '', 'light_retina' => '');
         $logo_default = kt_option( 'logo' );
         $logo_retina = kt_option( 'logo_retina' );
+        $logo_light = kt_option( 'logo_light' );
+        $logo_light_retina = kt_option( 'logo_light_retina' );
 
         if(is_array($logo_default) && $logo_default['url'] != '' ){
             $logo['default'] = $logo_default['url'];
@@ -249,9 +261,22 @@ if (!function_exists('kt_get_logo')){
             $logo['retina'] = $logo_retina['url'];
         }
 
+        if(is_array($logo_light) && $logo_light['url'] != '' ){
+            $logo['light'] = $logo_light['url'];
+        }
+
+        if(is_array($logo_light_retina ) && $logo_light_retina['url'] != '' ){
+            $logo['light_retina'] = $logo_light_retina['url'];
+        }
+
         if(!$logo['default']){
             $logo['default'] = KT_THEME_IMG.'logo.png';
             $logo['retina'] = KT_THEME_IMG.'logo-2x.png';
+        }
+
+        if(!$logo['light']){
+            $logo['light'] = KT_THEME_IMG.'logo-light.png';
+            $logo['light_retina'] = KT_THEME_IMG.'logo-light-2x.png';
         }
 
         return $logo;
@@ -341,7 +366,8 @@ if (!function_exists('kt_get_archive_layout')) {
      */
     function kt_get_archive_layout()
     {
-        $layout = array('type' => '', 'columns' => '', 'columns_tab' => 2);
+        $layout = array('type' => '', 'columns' => '', 'columns_tab' => 2, 'readmore' => '');
+
         if (isset($_REQUEST['type'])) {
             $layout['type'] = $_REQUEST['type'];
             $layout['pagination'] = 'normal';
@@ -350,14 +376,21 @@ if (!function_exists('kt_get_archive_layout')) {
             }else{
                 $layout['columns'] = kt_option('archive_columns', 2);
             }
+            $layout['readmore'] = kt_option('archive_readmore', 'none');
         } elseif (is_search()) {
             $layout['type'] = kt_option('search_loop_style', 'grid');
             $layout['columns'] = kt_option('search_columns', 3);
             $layout['pagination'] = kt_option('search_pagination', 'normal');
+            $layout['readmore'] = kt_option('search_readmore', 'none');
         } else {
             $layout['type'] = kt_option('archive_loop_style', 'gird');
             $layout['columns'] = kt_option('archive_columns', 2);
             $layout['pagination'] = kt_option('archive_pagination', 'normal');
+            $layout['readmore'] = kt_option('archive_readmore', 'none');
+        }
+
+        if($layout['type'] == 'classic'){
+            $layout['readmore'] = '';
         }
 
         return apply_filters('kt_archive_layout', $layout);
@@ -388,8 +421,21 @@ if (!function_exists('kt_get_page_sidebar')) {
             $sidebar['sidebar'] = $_REQUEST['sidebar'];
         }
 
+        if(kt_is_wc()){
+            if(is_cart() || is_checkout() || is_account_page()){
+                $sidebar['sidebar'] = 'full';
+            }elseif(defined( 'YITH_WCWL' )){
+                $wishlist_page_id = yith_wcwl_object_id( get_option( 'yith_wcwl_wishlist_page_id' ) );
+                if($post_id == $wishlist_page_id){
+                    $sidebar['sidebar'] = 'full';
+                }
+            }
+        }
+
+
+
         if($sidebar['sidebar'] == '' || $sidebar['sidebar'] == 'default' ){
-            $sidebar['sidebar'] = kt_option('page_sidebar');
+            $sidebar['sidebar'] = kt_option('page_sidebar', '');
             if($sidebar['sidebar'] == 'left' ){
                 $sidebar['sidebar_area'] = kt_option('page_sidebar_left', 'primary-widget-area');
             }elseif($sidebar['sidebar'] == 'right'){
@@ -514,6 +560,8 @@ function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-ca
         'mousedrag' => true,
         'autoplayspeed' => 5000,
         'slidespeed' => 200,
+        'carousel_skin' => '',
+
         'desktop' => 4,
         'desktopsmall' => '',
         'tablet' => 2,
@@ -554,6 +602,10 @@ function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-ca
         $extra
     );
 
+    if($carousel_skin){
+        $owl_carousel_class[] = 'carousel-skin-'.$carousel_skin;
+    }
+
     if($gutters){
         $owl_carousel_class[] = 'carousel-gutters';
     }
@@ -581,7 +633,7 @@ function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-ca
         'navigation_pos' => $navigation_position,
         'pagination' => $pagination,
         'pagination_pos' => $pagination_position,
-        "slidespeed" => $slidespeed,
+        "slideSpeed" => $slidespeed,
         'desktop' => $desktop,
         'desktopsmall' => $desktopsmall,
         'tablet' => $tablet,
@@ -654,5 +706,54 @@ if(!function_exists('kt_color2hecxa')){
 
         }
         return $color;
+    }
+}
+
+if (!function_exists('kt_get_single_file')) {
+    /**
+     * Get Single file form meta box.
+     *
+     * @param string $meta . meta id of article.
+     * @param string|array $size Optional. Image size. Defaults to 'screen'.
+     * @param array $post_id Optional. ID of article.
+     * @return array
+     */
+    function kt_get_single_file($meta, $size = 'thumbnail' ,$post_id = null)
+    {
+        global $post;
+        if (!$post_id) $post_id = $post->ID;
+
+        $medias = rwmb_meta($meta, 'type=image&size='.$size, $post_id);
+        if (count($medias)) {
+            foreach ($medias as $media) {
+                return $media;
+            }
+        }
+        return false;
+    }
+}
+
+
+if (!function_exists('kt_post_option')) {
+    /**
+     * Check option for in article
+     *
+     * @param number $post_id Optional. ID of article.
+     * @param string $meta Optional. meta oftion in article
+     * @param string $option Optional. if meta is Global, Check option in theme option.
+     * @param string $default Optional. Default vaule if theme option don't have data
+     * @return boolean
+     */
+    function kt_post_option($post_id = null, $meta = '', $option = '', $default = null, $boolean = true)
+    {
+        global $post;
+        if (!$post_id) $post_id = $post->ID;
+        $meta_v = get_post_meta($post_id, $meta, true);
+
+        if ($meta_v == '' || $meta_v == 0) {
+            $meta_v = kt_option($option, $default);
+        }
+        $ouput = ($boolean) ? apply_filters('kt_sanitize_boolean', $meta_v) : $meta_v;
+        return $ouput;
     }
 }

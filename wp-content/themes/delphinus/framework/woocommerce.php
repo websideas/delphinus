@@ -28,15 +28,61 @@ if ( ! function_exists( 'kt_woocommerce_theme_setup' ) ):
     }
 endif;
 
-/**
- * Add custom style to woocommerce
- *
- */
-function kt_wp_enqueue_scripts(){
-    wp_enqueue_style( 'kt-woocommerce', KT_THEME_CSS . 'woocommerce.css' );
-    wp_enqueue_script( 'kt-woocommerce', KT_THEME_JS . 'woocommerce.js', array( 'jquery', 'jquery-ui-accordion', 'jquery-ui-tabs' ), null, true );
+
+function kt_get_product_layout(){
+    $layout = rwmb_meta('_kt_deltail_layout', array(), get_the_ID());
+    if(!$layout){
+        $layout = kt_option('kt_product_layout','layout1');
+    }
+    return $layout;
 }
-add_action( 'wp_enqueue_scripts', 'kt_wp_enqueue_scripts' );
+
+
+
+add_action('woocommerce_widget_field_colors', 'kt_wc_widget_field_colors', 10, 4);
+function kt_wc_widget_field_colors( $key, $value, $setting, $instance ){
+
+    printf('<label>%s</label>', esc_html__('Select color bellow', 'delphinus'));
+
+    $terms = get_terms( 'pa_color', array( 'hide_empty' => '0' ) );
+    $rand = rand();
+
+    if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
+        $output = sprintf( '<table class="colors-table"><tr><td><b>%s</b></td><td><b>%s</b></td></tr>', esc_html__( 'Term', 'delphinus' ), esc_html__( 'Color', 'delphinus' ) );
+        foreach ( $terms as $term ) {
+            $id = 'woocommerce_widget_field_colors' . $term->term_id;
+            $output .= '<tr>
+							<td><label for="' . esc_attr( $rand ) . '">' . esc_attr( $term->name ) . ' </label></td>
+							<td><input type="text" id="' . esc_attr( $id ) . '" name="' . esc_attr( $setting['name'] ) . '[' . esc_attr( $term->term_id ) . ']" value="' . ( isset( $value[$term->term_id] ) ? esc_attr( $value[$term->term_id] ) : '' ) . '" size="3" class="color-picker" /></td>
+						</tr>';
+        }
+
+        $output .= '</table>';
+    } else {
+        $output = '<span>No product attribute saved with the <strong>"color"</strong> slug yet.</span>';
+    }
+
+    echo $output;
+
+}
+
+
+
+/**
+ * Extend the default WordPress body classes.
+ *
+ * @since 1.0
+ *
+ * @param array $classes A list of existing body class values.
+ * @return array The filtered body class list.
+ */
+function kt_wc_body_classes( $classes ) {
+    if(is_product()){
+        $layout = kt_get_product_layout();
+        $classes[] = 'product-'.$layout;
+    }
+    return $classes;
+}
 
 
 
@@ -71,7 +117,7 @@ add_action( 'after_switch_theme', 'kt_woocommerce_set_option', 1 );
  * @since 1.0
  */
 function kt_woocommerce_get_wishlist( ){
-    if ( kt_is_wc() && defined( 'YITH_WOOCOMPARE' ) ) {
+    if ( kt_is_wc() && defined( 'YITH_WCWL' ) ) {
         kt_cart_wishlist();
     }
 }
@@ -97,11 +143,12 @@ if ( ! function_exists( 'kt_cart_wishlist' ) ) {
         );
         ?>
         <div class="navigation-submenu shopping-bag-content woocommerce widget_shopping_cart">
-            <ul class="cart_list product_list_widget ">
             <?php
-                $args = array( 'is_default' => 1 );
-                $wishlist_items = $yith_wcwl->get_products($args);
-                if( count( $wishlist_items ) > 0 ) {
+            $args = array( 'is_default' => 1 );
+            $wishlist_items = $yith_wcwl->get_products($args);
+
+            if( count( $wishlist_items ) > 0 ) {
+                echo '<ul class="cart_list product_list_widget ">';
                     foreach( $wishlist_items as $item ) {
                         global $product;
                         if( function_exists( 'wc_get_product' ) ) {
@@ -140,23 +187,17 @@ if ( ! function_exists( 'kt_cart_wishlist' ) ) {
                             <?php
                         }
                     }
-
+                    echo '</ul>';
+                    printf(
+                        '<p class="buttons-wishlist"><span><a class="btn btn-default btn-block wc-forward" href="%s">%s</a></span></p>',
+                        esc_url( $yith_wcwl->get_wishlist_url() ),
+                        esc_html__('View Wishlist', 'delphinus')
+                    );
                 }else{
-                    printf('<li class="cart-desc empty">%s</li>', esc_html__('Your wishlist is empty.', 'mondova') );
+                    printf('<p class="cart-desc empty">%s</p>', esc_html__('Your wishlist is empty.', 'delphinus') );
+
                 }
             ?>
-            </ul>
-            <?php if( count( $wishlist_items ) > 0 ) { ?>
-                <p class="buttons-wishlist">
-                    <?php
-                        printf(
-                            '<span><a class="btn btn-default btn-block wc-forward" href="%s">%s</a></span>',
-                            esc_url( $yith_wcwl->get_wishlist_url() ),
-                            esc_html__('View Wishlist', 'mondova')
-                        )
-                    ?>
-                </p>
-            <?php } ?>
         </div>
         <?php
     }
@@ -170,7 +211,7 @@ if ( ! function_exists( 'kt_cart_wishlist' ) ) {
 function kt_woocommerce_get_cart( ){
     if ( kt_is_wc() ) {
         kt_cart_link();
-        if ( !is_cart() ) {
+        if ( !is_cart() && !is_checkout()) {
             ?>
             <div class="navigation-submenu shopping-bag-content woocommerce widget_shopping_cart">
                 <?php the_widget('WC_Widget_Cart', 'title='); ?>
@@ -189,13 +230,16 @@ function kt_woocommerce_get_cart( ){
  * @since  1.0.0
  */
 if ( ! function_exists( 'kt_cart_link' ) ) {
-    function kt_cart_link() {
+    function kt_cart_link( $class = 'cart-contents', $text = null ) {
+        if(!isset($text)){
+            $text = esc_html__('My cart', 'delphinus');
+        }
         printf(
             '<a href="%s" class="%s" title="%s">%s<span class="amount">%s</span></a>',
             esc_url( wc_get_page_permalink( 'cart' ) ),
-            'cart-contents',
+            $class,
             esc_html__( 'View your shopping cart', 'delphinus' ),
-            esc_html__('My cart', 'delphinus'),
+            '<span>'.$text.'</span>',
             WC()->cart->get_cart_contents_count()
         );
     }
@@ -213,6 +257,11 @@ if ( ! function_exists( 'kt_cart_link_fragment' ) ) {
         ob_start();
         kt_cart_link();
         $fragments['a.cart-contents'] = ob_get_clean();
+
+        ob_start();
+        kt_cart_link('cart-mobile', '<i class="kt-icon-Shopping-Cart"></i>');
+        $fragments['a.cart-mobile'] = ob_get_clean();
+
         return $fragments;
     }
 }
@@ -255,9 +304,7 @@ if (!function_exists('kt_get_woo_sidebar')) {
 
         $sidebar = array('sidebar' => '', 'sidebar_area' => '');
 
-        if(is_cart() || is_checkout() || is_account_page()){
-            $sidebar['sidebar'] = '';
-        }elseif(isset($_REQUEST['sidebar'])){
+        if(isset($_REQUEST['sidebar'])){
             $sidebar['sidebar'] = $_REQUEST['sidebar'];
             $sidebar['sidebar_area'] = 'shop-widget-area';
         }elseif(is_shop() || is_product_taxonomy() || is_product_tag()){
@@ -267,26 +314,7 @@ if (!function_exists('kt_get_woo_sidebar')) {
             }elseif($sidebar['sidebar'] == 'right'){
                 $sidebar['sidebar_area'] = kt_option('shop_sidebar_right', 'primary-widget-area');
             }
-        }/*elseif(is_product() || $post_id){
-
-            global $post;
-            if(!$post_id) $post_id = $post->ID;
-            $sidebar['sidebar'] = rwmb_meta('_kt_sidebar', array(), $post_id);
-
-            if($sidebar['sidebar'] == '' || $sidebar['sidebar'] == 'default'){
-                $sidebar['sidebar'] = kt_option('product_sidebar', 'full');
-                if($sidebar['sidebar'] == 'left' ){
-                    $sidebar['sidebar_area'] = kt_option('product_sidebar_left', 'primary-widget-area');
-                }elseif($sidebar['sidebar'] == 'right'){
-                    $sidebar['sidebar_area'] = kt_option('product_sidebar_right', 'primary-widget-area');
-                }
-            }elseif($sidebar['sidebar'] == 'left'){
-                $sidebar['sidebar_area'] = rwmb_meta('_kt_left_sidebar', array(), $post_id);
-            }elseif($sidebar['sidebar'] == 'right'){
-                $sidebar['sidebar_area'] = rwmb_meta('_kt_right_sidebar', array(), $post_id);
-            }
-
-        }*/
+        }
 
         if($sidebar['sidebar'] == 'full'){
             $sidebar['sidebar'] = '';
@@ -306,12 +334,12 @@ function kt_woocommerce_gridlist_toggle(){ ?>
     <?php $gridlist = apply_filters('woocommerce_gridlist_toggle', kt_get_gridlist_toggle()) ?>
     <ul class="gridlist-toggle">
         <li>
-            <a class="grid<?php if($gridlist == 'grid'){ ?> active<?php } ?>" data-toggle="tooltip" href="#" title="<?php _e('Grid view', 'wingman') ?>" data-layout="products-grid" data-remove="products-list">
+            <a class="grid<?php if($gridlist == 'grid'){ ?> active<?php } ?>" data-toggle="tooltip" href="#" title="<?php _e('Grid view', 'delphinus') ?>" data-layout="products-grid" data-remove="products-list">
                 <i class="fa fa-th"></i>
             </a>
         </li>
         <li>
-            <a class="list<?php if($gridlist == 'list'){ ?> active<?php } ?>" data-toggle="tooltip" href="#" title="<?php _e('List view', 'wingman') ?>" data-layout="products-list" data-remove="products-grid">
+            <a class="list<?php if($gridlist == 'list'){ ?> active<?php } ?>" data-toggle="tooltip" href="#" title="<?php _e('List view', 'delphinus') ?>" data-layout="products-list" data-remove="products-grid">
                 <i class="fa fa-bars"></i>
             </a>
         </li>
@@ -373,26 +401,146 @@ if ( !function_exists('kt_product_shop_count') ) {
 
 function kt_woocommerce_catalog_orderby( ){
     return array(
-        'menu_order' => __( 'Default sorting', 'mondova' ),
-        'popularity' => __( 'Popularity', 'mondova' ),
-        'rating'     => __( 'Average rating', 'mondova' ),
-        'date'       => __( 'Newness', 'mondova' ),
-        'price'      => __( 'Price: low to high', 'mondova' ),
-        'price-desc' => __( 'Price: high to low', 'mondova' )
+        'menu_order' => __( 'Default sorting', 'delphinus' ),
+        'popularity' => __( 'Popularity', 'delphinus' ),
+        'rating'     => __( 'Average rating', 'delphinus' ),
+        'date'       => __( 'Newness', 'delphinus' ),
+        'price'      => __( 'Price: low to high', 'delphinus' ),
+        'price-desc' => __( 'Price: high to low', 'delphinus' )
     );
 }
 
-function kt_woocommerce_shop_loop(){
-    ?>
-    <div class="products-tools">
-        <?php
-        woocommerce_result_count();
-        woocommerce_catalog_ordering();
-        kt_woocommerce_gridlist_toggle();
 
-        ?>
-    </div>
-    <?php
+/*
+ *	Create single category list HTML
+ */
+function kt_category_list_item( $category, $current_cat ) {
+
+    $active = ( $current_cat == $category->term_id ) ? 'current-cat ' : '';
+    $output = sprintf('<li class="%s"><a href="%s">%s</a></li>', $active.'cat-item-' . $category->term_id, esc_url( get_term_link( (int) $category->term_id, 'product_cat' ) ), $category->name);
+
+    return $output;
+}
+
+/*
+ *	Output product categories menu
+ */
+function kt_category_menu( ) {
+    global $wp_query;
+
+    $page_id = wc_get_page_id( 'shop' );
+    $current_cat = ( is_product_category( ) ) ? $wp_query->queried_object->term_id : '';
+
+
+    $page_url = get_permalink( $page_id );
+    $hide_sub = true;
+    $all_categories_class = '';
+
+
+    if ( is_product_category() ) {
+        $hide_sub = false;
+
+        $direct_children = get_terms( 'product_cat',
+            array(
+                'fields'       	=> 'ids',
+                'parent'       	=> $current_cat,
+                'hierarchical'	=> true,
+                'hide_empty'   	=> false
+            )
+        );
+
+        $category_has_children = ( empty( $direct_children ) ) ? false : true;
+    } else {
+        if ( ! is_product_tag() && ! isset( $_REQUEST['s'] ) ) {
+            $all_categories_class = ' class="current-cat"';
+        }
+    }
+
+    $output = '<li' . $all_categories_class . '><a href="' . esc_url ( $page_url ) . '">' . esc_html__( 'All', 'delphinus' ) . '</a></li>';
+    $sub_output = '';
+
+    $orderby = kt_option('shop_header_orderby', 'slug');
+    $order = kt_option('shop_header_order', 'ASC');
+
+    $categories = get_categories( $args = array(
+        'type'			=> 'post',
+        'orderby'		=> $orderby,
+        'order'			=> $order,
+        'hide_empty'	=> 0,
+        'hierarchical'	=> 1,
+        'taxonomy'		=> 'product_cat'
+    ) );
+
+    foreach( $categories as $category ) {
+        if ( $category->parent != '0' ) {
+            if ( $hide_sub ) {
+                continue;
+            } else {
+                if (
+                    $category->term_id == $current_cat || // Include current sub-category
+                    $category->parent == $current_cat || // Include current sub-category's children
+                    ! $category_has_children && $category->parent == $wp_query->queried_object->parent // Include categories with the same parent (if current sub-category doesn't have children)
+                ) {
+                    $sub_output .= kt_category_list_item( $category, $current_cat );
+                }
+                continue;
+            }
+        }
+
+        $output .= kt_category_list_item( $category, $current_cat );
+    }
+
+    if ( strlen( $sub_output ) > 0 ) {
+        $sub_output = '<ul class="shop-header-list shop-header-sub">' . $sub_output . '</ul>';
+    }
+
+
+    $shop_header_filters = '';
+
+    $search = kt_option('shop_header_search', 1);
+    if($search){
+        $shop_header_filters .= '<li>'.get_product_search_form(false).'</li>';
+    }
+
+    $filters = kt_option('shop_header_filters', 1);
+    if($filters){
+        $shop_header_filters .= sprintf('<li><a class="shop-header-filter" href="#filter">%s</a></li>', esc_html__('Filter', 'delphinus'));
+    }
+
+    if($shop_header_filters){
+        $shop_header_filters = '<div class="shop-header-right"><ul class="shop-header-list">'.$shop_header_filters.'</ul></div>';
+    }
+
+    echo '<div class="shop-header-left"><ul id="shop-header-categories" class="shop-header-list">'.$output.'</ul>' . $sub_output .'</div>'.$shop_header_filters;
+
+
+
+}
+
+
+
+function kt_woocommerce_shop_loop(){
+    $shop_header_tool_bar = kt_option('shop_header_tool_bar', 1);
+    if($shop_header_tool_bar){
+
+        if($shop_header_tool_bar == 2){
+            echo '<div class="products-shop-header">';
+            kt_category_menu();
+            echo '</div>';
+            $filters = kt_option('shop_header_filters', 1);
+            if($filters){
+                echo '<div id="kt-shop-filters" class="row">';
+                dynamic_sidebar('shop-filter-area');
+                echo '</div>';
+            }
+        }else{
+            echo '<div class="products-tools">';
+            woocommerce_result_count();
+            woocommerce_catalog_ordering();
+            kt_woocommerce_gridlist_toggle();
+            echo '</div>';
+        }
+    }
 }
 
 
@@ -435,17 +583,33 @@ function kt_template_loop_product_thumbnail(){
     }elseif($type == 'slider'){
         $image_size = 'kt_product_slider';
         echo '<ul class="cd-item-wrapper">';
+    }elseif($type == 'countdown'){
+        $image_size = 'kt_wide';
     }
 
-    if ( has_post_thumbnail() ) {
-        $thumbnail = get_the_post_thumbnail( $product->id, $image_size, array('class'=>"first-img product-img"));
-    } elseif ( wc_placeholder_img_src() ) {
-        $thumbnail = wc_placeholder_img( $image_size );
+    $thumbnail = '';
+
+
+    if($woocommerce_loop['type'] == 'transparent') {
+        $thumbnail_product = kt_get_single_file('_kt_image', $image_size, $product->id);
+        if($thumbnail_product){
+            @list( $width, $height ) = getimagesize( $thumbnail_product['url'] );
+            $thumbnail = '<img src="' . $thumbnail_product['url'] . '" alt="' . esc_attr(get_the_title()) . '" width="' . esc_attr( $width ) . '" class="wp-post-image" height="' . esc_attr( $height ) . '" />';
+        }
     }
 
-    if($type == 'slider'){
-        $thumbnail = '<li class="selected">'.$thumbnail.'</li>';
+    if(!$thumbnail){
+        if ( has_post_thumbnail() ) {
+            $thumbnail = get_the_post_thumbnail( $product->id, $image_size, array('class'=>"first-img product-img"));
+        } elseif ( wc_placeholder_img_src() ) {
+            $thumbnail = wc_placeholder_img( $image_size );
+        }
+        if($type == 'slider'){
+            $thumbnail = '<li class="selected">'.$thumbnail.'</li>';
+        }
     }
+
+
 
     echo $thumbnail;
 
@@ -497,15 +661,26 @@ function kt_template_loop_product_link_open() {
 
 
 function kt_template_loop_product_link_close(){
-    global $product, $woocommerce_loop;
+    global $woocommerce_loop;
     if($woocommerce_loop['type'] != 'slider'){
         echo '</a>';
     }
 }
 
+function kt_template_loop_rating(){
+    global $woocommerce_loop;
+    if($woocommerce_loop['type'] == 'transparent' || $woocommerce_loop['type'] == 'mini') {
+        wc_get_template('loop/rating.php');
+    }
+}
+
 
 function kt_woocommerce_show_product_badge(){
-    global $product, $post;
+    global $product, $post, $woocommerce_loop;
+
+    if($woocommerce_loop['type'] == 'transparent' || $woocommerce_loop['type'] == 'mini') {
+        return;
+    }
 
     $time_new = kt_option('time_product_new', 30);
     $now = strtotime( date("Y-m-d H:i:s") );
@@ -514,11 +689,11 @@ function kt_woocommerce_show_product_badge(){
     $badge = '';
 
     if ( ! $product->is_in_stock() ) {
-        $badge = sprintf('<span class="wc-out-of-stock">%s</span>', esc_html__( 'Out of stock', 'mondova' ));
+        $badge = sprintf('<span class="wc-out-of-stock">%s</span>', esc_html__( 'Sold out', 'delphinus' ));
     }elseif ( $product->is_on_sale() ){
-        $badge =  apply_filters( 'woocommerce_sale_flash', '<span class="wc-onsale-badge">' . __( 'Sale!', 'mondova' ) . '</span>', $post, $product );
+        $badge =  apply_filters( 'woocommerce_sale_flash', '<span class="wc-onsale-badge">' . __( 'Sale!', 'delphinus' ) . '</span>', $post, $product );
     }elseif( $num_day < $time_new ) {
-        $badge =  "<span class='wc-new-badge'>".esc_html__( 'New','wingman' )."</span>";
+        $badge =  "<span class='wc-new-badge'>".esc_html__( 'New','delphinus' )."</span>";
     }
 
     if($badge){
@@ -549,13 +724,13 @@ function kt_template_loop_product_actions(){
     if(defined( 'YITH_WOOCOMPARE' )){
         printf(
             '<div data-toggle="tooltip" data-placement="top" title="%s">%s</div>',
-            esc_html__('Compare','wingman'),
+            esc_html__('Compare','delphinus'),
             do_shortcode('[yith_compare_button container="no" type="link"]')
         );
     }
 
     printf(
-        '<div data-toggle="tooltip" data-placement="top" title="'. esc_html__('Quick View','wingman').'"><a href="#" class="product-quick-view" data-id="%s">%s</a></div>',
+        '<div data-toggle="tooltip" data-placement="top" title="'. esc_html__('Quick View','delphinus').'"><a href="#" class="product-quick-view" data-id="%s">%s</a></div>',
         get_the_ID(),
         '<i class="fa fa-search"></i>'
     );
@@ -595,8 +770,8 @@ function kt_template_product_actions(){
 
     if(defined( 'YITH_WOOCOMPARE' )){
         printf(
-            '<div data-toggle="tooltip" data-placement="top" title="%s">%s</div>',
-            esc_html__('Compare','wingman'),
+            '<div data-toggle="tooltip" class="compare-action" data-placement="top" title="%s">%s</div>',
+            esc_html__('Compare','delphinus'),
             do_shortcode('[yith_compare_button container="no" type="link"]')
         );
     }
@@ -626,10 +801,106 @@ function woocommerce_template_single_rating_after(){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+function woocommerce_after_shop_loop_item_sale_sale_price($product = false, $post = false){
+
+    $product_id = 0;
+    if( is_object( $product ) ){
+        $product_id = $product->id;
+    }elseif( is_object( $post) ){
+        $product_id = $post->ID;
+    }else{
+        global $post;
+        $product_id =  $post->ID;
+    }
+
+    if( ! $product_id  ){
+        return;
+    }
+
+    $cache_key = 'time_sale_price_'.$product_id;
+    $cache = wp_cache_get($cache_key);
+    if( $cache ){
+        echo $cache;
+        return;
+    }
+    // Get variations
+    $args = array(
+        'post_type'     => 'product_variation',
+        'post_status'   => array( 'private', 'publish' ),
+        'numberposts'   => -1,
+        'orderby'       => 'menu_order',
+        'order'         => 'asc',
+        'post_parent'   => $product_id
+    );
+    $variations = get_posts( $args );
+    $variation_ids = array();
+    if( $variations ){
+        foreach ( $variations as $variation ) {
+            $variation_ids[]  = $variation->ID;
+        }
+    }
+    $sale_price_dates_to = false;
+
+    if( !empty(  $variation_ids )   ){
+        global $wpdb;
+        $sale_price_dates_to = $wpdb->get_var( "
+            SELECT
+            meta_value
+            FROM $wpdb->postmeta
+            WHERE meta_key = '_sale_price_dates_to' and post_id IN(".join(',',$variation_ids).")
+            ORDER BY meta_value DESC
+            LIMIT 1
+        " );
+
+        if( $sale_price_dates_to !='' ){
+            $sale_price_dates_to = date('Y-m-d', $sale_price_dates_to);
+        }
+    }
+
+    if( !$sale_price_dates_to ){
+        $sale_price_dates_to 	= ( $date = get_post_meta( $product_id, '_sale_price_dates_to', true ) ) ? date_i18n( 'Y-m-d', $date ) : '';
+    }
+
+    if($sale_price_dates_to){
+        $cache = '<div class="woocommerce-countdown" data-time="'.$sale_price_dates_to.'"></div>';
+        wp_cache_add( $cache_key, $cache );
+        echo $cache;
+    }else{
+        wp_cache_delete( $cache_key );
+    }
+}
+
+
+/**
+ * Product Quick View callback AJAX request
+ *
+ */
+
+function kt_frontend_product_quick_view_callback() {
+    global $product, $post;
+    $product_id = intval($_POST["product_id"]);
+    $post = get_post( $product_id );
+    $product = wc_get_product( $product_id );
+    wc_get_template( 'content-single-product-quick-view.php');
+    die();
+}
+
 /**
  * KT WooCommerce hooks
  *
- * @package mondova
+ * @package delphinus
  */
 
 add_action( 'wp_ajax_fronted_get_wishlist', 'kt_fronted_fronted_get_wishlist' );
@@ -642,6 +913,8 @@ if ( defined( 'WC_VERSION' ) && version_compare( WC_VERSION, '2.3', '>=' ) ) {
     add_filter( 'add_to_cart_fragments', 'kt_cart_link_fragment' );
 }
 
+
+add_filter( 'body_class', 'kt_wc_body_classes' );
 add_filter( 'loop_shop_columns', 'kt_woo_shop_columns' );
 add_filter( 'loop_shop_per_page', 'kt_product_shop_count');
 add_filter( 'woocommerce_catalog_orderby', 'kt_woocommerce_catalog_orderby');
@@ -659,12 +932,15 @@ if(defined( 'YITH_WOOCOMPARE' )){
 // Remove wishlist product
 add_filter('yith_wcwl_positions', 'kt_remove_yith_wcwl_positions');
 
+function kt_woocommerce_close_quickview(){
+    echo '<a class="close-quickview" href="#"><i class="fa fa-times"></i></a>';
+}
 
 
 /**
  * KT WooCommerce Products hooks
  *
- * @package mondova
+ * @package delphinus
  */
 
 add_filter('woocommerce_loop_add_to_cart_args', 'kt_loop_add_to_cart_args', 10, 2);
@@ -705,17 +981,21 @@ add_action('woocommerce_shop_loop_item_details', 'woocommerce_template_single_ex
 add_action('woocommerce_shop_loop_item_details', 'woocommerce_template_loop_add_to_cart', 10);
 add_action('woocommerce_shop_loop_item_details', 'kt_template_loop_product_actions', 15);
 
+add_action('woocommerce_after_shop_loop_item_title', 'kt_template_loop_rating', 15);
 
+add_action('woocommerce_after_shop_loop_item_sale', 'woocommerce_template_loop_rating', 5);
+add_action( 'woocommerce_after_shop_loop_item_sale', 'woocommerce_after_shop_loop_item_sale_sale_price', 10, 2);
+
+
+add_action( 'wp_ajax_frontend_product_quick_view', 'kt_frontend_product_quick_view_callback' );
+add_action( 'wp_ajax_nopriv_frontend_product_quick_view', 'kt_frontend_product_quick_view_callback' );
 
 
 /**
  * KT WooCommerce Product detail
  *
- * @package mondova
+ * @package delphinus
  */
-
-
-
 
 
 remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
@@ -731,6 +1011,7 @@ add_filter('woocommerce_product_additional_information_heading', '__return_false
 add_action('woocommerce_product_images', 'kt_woocommerce_show_product_badge', 10);
 
 add_action('woocommerce_single_product_summary', 'woocommerce_breadcrumb', 2);
+add_action('woocommerce_single_product_summary', 'kt_woocommerce_close_quickview', 2);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating_before', 9);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 11);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating_after', 12);
@@ -738,12 +1019,14 @@ add_action('woocommerce_single_product_summary', 'woocommerce_template_single_ra
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 20);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 30);
 
-
-
-
-
 add_action('woocommerce_after_add_to_cart_button', 'kt_template_product_actions');
-
 add_action('woocommerce_share', 'kt_share_box');
 
 
+/**
+ * KT WooCommerce Cart & Checkout
+ *
+ * @package delphinus
+ */
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display', 10 );
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
