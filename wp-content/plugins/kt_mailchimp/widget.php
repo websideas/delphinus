@@ -111,6 +111,7 @@ class Widget_KT_Mailchimp extends WP_Widget {
             <select class="widefat" id="<?php echo $this->get_field_id('layout'); ?>" name="<?php echo $this->get_field_name('layout'); ?>">
                 <option <?php selected( $instance['layout'], '1' ); ?> value="1"><?php _e('Layout 1','kt_mailchimp'); ?></option>
                 <option <?php selected( $instance['layout'], '2' ); ?> value="2"><?php _e('Layout 2','kt_mailchimp'); ?></option>
+                <option <?php selected( $instance['layout'], '3' ); ?> value="3"><?php _e('Layout 3','kt_mailchimp'); ?></option>
             </select>
         </p>
     <?php

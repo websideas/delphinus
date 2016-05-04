@@ -18,7 +18,6 @@
       <script src="<?php echo KT_THEME_JS; ?>html5shiv.min.js"></script>
       <script src="<?php echo KT_THEME_JS; ?>respond.min.js"></script>
     <![endif]-->
-    <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic%7cRoboto+Slab:400,700%7cCrete+Round:400italic' rel='stylesheet' type='text/css'>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class( ); ?>>

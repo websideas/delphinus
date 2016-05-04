@@ -102,8 +102,7 @@ add_filter( 'next_posts_link_attributes', 'kt_next_posts_link_attributes', 15 );
 function kt_add_search_full(){
     if(kt_option('header_search', 1)){
 
-        if(kt_is_wc()){
-            $search = get_product_search_form(false);
+        if(kt_is_wc()){           $search = get_product_search_form(false);
         }else{
             $search = get_search_form(false);
         }
@@ -293,8 +292,14 @@ function kt_page_header( ){
     global $post;
     $show_title = false;
 
-    if ( is_front_page() && is_singular('page')){
+    if ( is_front_page() && !is_singular('page')){
         $show_title = rwmb_meta('_kt_page_header', array(), get_option('page_on_front', true));
+        if(kt_is_wc()) {
+            if (is_shop()) {
+                $page_id = get_option('woocommerce_shop_page_id');
+                $show_title = rwmb_meta('_kt_page_header', array(), $page_id);
+            }
+        }
         if( !$show_title ){
             $show_title = kt_option('show_page_header', 1);
         }
@@ -314,6 +319,13 @@ function kt_page_header( ){
         }else{
             $show_title = kt_option('show_page_header', 1);
         }
+
+        if(kt_is_wc()){
+            if(is_product()){
+                $show_title = false;
+            }
+        }
+
     }
 
 
@@ -360,6 +372,13 @@ function kt_get_page_title( $title = '' ){
 
     if ( is_front_page() && !is_singular('page') ) {
         $title = esc_html__( 'Blog', 'delphinus' );
+        if(kt_is_wc()) {
+            if (is_shop()) {
+                $shop_page_id = get_option('woocommerce_shop_page_id');
+                $custom_text = rwmb_meta('_kt_page_header_custom', array(), $shop_page_id);
+                $title = ($custom_text != '') ? $custom_text : get_the_title($shop_page_id);
+            }
+        }
     } elseif ( is_search() ) {
         $title = esc_html__( 'Search', 'delphinus' );
     } elseif( is_home() ){
@@ -405,6 +424,12 @@ function kt_get_page_subtitle(){
     $tagline = '';
     if ( is_front_page() && !is_singular('page') ) {
         $tagline =  esc_html__('Lastest posts', 'delphinus');
+        if(kt_is_wc()) {
+            if (is_shop()) {
+                $shop_page_id = get_option('woocommerce_shop_page_id');
+                $tagline = rwmb_meta('_kt_page_header_subtitle', array(), $shop_page_id);
+            }
+        }
     }elseif( is_home() ){
         $page_for_posts = get_option('page_for_posts', true);
         $tagline = nl2br(rwmb_meta('_kt_page_header_subtitle', array(), $page_for_posts))  ;
@@ -442,11 +467,35 @@ add_action('kt_loop_after', 'kt_paging_nav');
 add_action( 'kt_slideshows_position', 'kt_slideshows_position_callback' );
 function kt_slideshows_position_callback(){
     if(is_page()){
-        kt_show_slideshow();
+        $page_id = get_the_ID();
+        if(kt_is_wc()) {
+            if (is_shop()) {
+                $page_id = get_option('woocommerce_shop_page_id');
+            }
+        }
+        kt_show_slideshow($page_id);
     }
 }
 
+add_filter( 'get_the_archive_title', 'kt_get_the_archive_title');
+/**
+ * Remove text Category and Archives in get_the_archive_title
+ *
+ * @param $title
+ * @return null|string
+ */
+function kt_get_the_archive_title($title) {
+    if ( is_category() ) {
+        $title = single_cat_title( '', false );
+    } elseif ( is_post_type_archive() ) {
+        $title = post_type_archive_title( '', false );
+    } elseif ( is_tax() ) {
+        $title =  single_term_title( '', false );
+    }
 
+    return $title;
+
+}
 
 
 function kt_comment_form_before_fields(){

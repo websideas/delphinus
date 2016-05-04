@@ -10,10 +10,14 @@
   }
 }
 
+.widget_kt_mailchimp{
+  .kt-mailchimp-wrapper{
+    margin-bottom: 0;
+  }
+}
+
 
 .mailchimp-form {
-
-
 
   .mailchimp-error,
   .mailchimp-success{
@@ -71,14 +75,11 @@
     input[type=text],
     input[type=email]{
       border: none;
-      border-bottom: 1px solid #252525;
+      border-bottom: 2px solid #252525;
       color: #707070;
       font-size: 14px;
       height: 35px;
       padding: 5px 0;
-
-
-
     }
 
     input[type=email]{

@@ -49,7 +49,7 @@ class WPBakeryShortCode_KT_Products extends WPBakeryShortCode {
             'post_type'				=> 'product',
             'post_status'			=> 'publish',
             'ignore_sticky_posts'	=> 1,
-            'posts_per_page' 		=> $atts['per_page'],
+            'posts_per_page' 		=> $per_page,
             'meta_query' 			=> $meta_query,
             'order'                 => $order,
             'orderby'               => $orderby,

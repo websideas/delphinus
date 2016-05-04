@@ -36,7 +36,7 @@ if ( function_exists('register_sidebar')) {
             'name' => esc_html__( 'Shop filter Area', 'delphinus'),
             'id' => 'shop-filter-area',
             'description' => esc_html__( 'The shop filter area', 'delphinus'),
-            'before_widget' => '<div id="%1$s" class="widget col-md-3 %2$s">',
+            'before_widget' => '<div id="%1$s" class="widget col-lg-3 col-md-3 %2$s">',
             'after_widget' => '</div>',
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
@@ -98,8 +98,8 @@ if ( function_exists('register_sidebar')) {
             'description' => esc_html__( 'The footer bottom widget area', 'delphinus'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
-            'before_title' => '<!--',
-            'after_title' => '-->',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
         ) );
 
         register_sidebar( array(
@@ -108,8 +108,17 @@ if ( function_exists('register_sidebar')) {
             'description' => esc_html__( 'The footer bottom widget area', 'delphinus'),
             'before_widget' => '<section id="%1$s" class="widget %2$s">',
             'after_widget' => '</section>',
-            'before_title' => '<!--',
-            'after_title' => '-->',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
+        ) );
+        register_sidebar( array(
+            'name' => esc_html__( 'Footer bottom column 3', 'delphinus'),
+            'id' => 'footer-bottom-3',
+            'description' => esc_html__( 'The footer bottom widget area', 'delphinus'),
+            'before_widget' => '<section id="%1$s" class="widget %2$s">',
+            'after_widget' => '</section>',
+            'before_title' => '<h3 class="widget-title">',
+            'after_title' => '</h3>',
         ) );
 
 
@@ -188,6 +197,8 @@ $kt_widgets = array(
 if(kt_is_wc()){
     $kt_wc_widgets = array(
         'kt_filter_color.php',
+        'kt_filter_price.php',
+        'kt_orderby.php',
     );
     $kt_widgets = array_merge($kt_widgets, $kt_wc_widgets);
 }

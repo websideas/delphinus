@@ -151,7 +151,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_cart_collaterals' ); ?>
     <?php woocommerce_shipping_calculator(); ?>
     <?php if ( wc_coupons_enabled() ) { ?>
-    <div class="wc-coupon-wrap col-md-4">
+    <div class="wc-coupon-wrap col-md-4 col-sm-6 col-xs-12">
         <form method="post" class="wc-cart-box" action="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>">
             <h5 class="wc-cart-box-heading"><?php esc_html_e('Promotional Code', 'delphinus'); ?></h5>
             <div class="coupon wc-cart-box-inner">

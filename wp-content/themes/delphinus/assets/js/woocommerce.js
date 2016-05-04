@@ -97,29 +97,34 @@
 
     function init_wc_product_carousel(sync1, sync2){
 
-        sync1.owlCarousel({
-            singleItem : true,
-            slideSpeed : 1000,
-            items : 1,
-            navigation: true,
-            pagination: false,
-            afterAction : syncPosition,
-            autoHeight: true,
-            responsiveRefreshRate : 200,
-            navigationText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+        sync1.imagesLoaded(function(){
+            sync1.owlCarousel({
+                singleItem : true,
+                slideSpeed : 1000,
+                items : 1,
+                navigation: true,
+                pagination: false,
+                afterAction : syncPosition,
+                autoHeight: true,
+                responsiveRefreshRate : 200,
+                navigationText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+            });
         });
 
-        sync2.owlCarousel({
-            theme : 'woocommerce-thumbnails',
-            items : sync2.data('items'),
-            itemsCustom : [[991,sync2.data('items')], [768, sync2.data('items')], [480, sync2.data('items')]],
-            navigation: false,
-            navigationText: false,
-            pagination:false,
-            responsiveRefreshRate : 100,
-            afterInit : function(el){
-                el.find(".owl-item").eq(0).addClass("synced");
-            }
+
+        sync2.imagesLoaded(function(){
+            sync2.owlCarousel({
+                theme : 'woocommerce-thumbnails',
+                items : sync2.data('items'),
+                itemsCustom : [[991,sync2.data('items')], [768, sync2.data('mobile')], [480, sync2.data('mobile')]],
+                navigation: false,
+                navigationText: false,
+                pagination:false,
+                responsiveRefreshRate : 100,
+                afterInit : function(el){
+                    el.find(".owl-item").eq(0).addClass("synced");
+                }
+            });
         });
 
         sync2.on("click", ".owl-item", function(e){

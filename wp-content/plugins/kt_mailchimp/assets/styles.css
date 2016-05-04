@@ -5,6 +5,9 @@
   .widget-container .kt-mailchimp-wrapper {
     margin-bottom: 0; }
 
+.widget_kt_mailchimp .kt-mailchimp-wrapper {
+  margin-bottom: 0; }
+
 .mailchimp-form .mailchimp-error,
 .mailchimp-form .mailchimp-success {
   display: none;
@@ -43,7 +46,7 @@
 .mailchimp-form.mailchimp-layout-1 input[type=text],
 .mailchimp-form.mailchimp-layout-1 input[type=email] {
   border: none;
-  border-bottom: 1px solid #252525;
+  border-bottom: 2px solid #252525;
   color: #707070;
   font-size: 14px;
   height: 35px;

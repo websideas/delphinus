@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<div class="wc_cart_collaterals_wrap col-md-4">
+<div class="wc_cart_collaterals_wrap col-md-4 col-sm-12 col-xs-12">
     <div class="cart_totals wc-cart-box <?php if ( WC()->customer->has_calculated_shipping() ) echo 'calculated_shipping'; ?>">
 
         <?php do_action( 'woocommerce_before_cart_totals' ); ?>

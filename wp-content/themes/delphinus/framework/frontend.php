@@ -125,19 +125,14 @@ function kt_add_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-    wp_enqueue_script( 'bootstrap', KT_THEME_LIBS . 'bootstrap/js/bootstrap.min.js', array( 'jquery' ), null, true );
-    wp_register_script('google-maps-api','http://maps.googleapis.com/maps/api/js?sensor=false', array( 'jquery' ), null, false);
-    wp_enqueue_script( 'kt-sticky', KT_THEME_JS . 'jquery.kt.sticky.js', array( 'jquery' ), null, true );
-    wp_enqueue_script( 'kt-plugins', KT_THEME_JS . 'plugins.js', array( 'jquery' ), null, true );
-
-    $use_loader = kt_option( 'use_page_loader', 0 );
+	$use_loader = kt_option( 'use_page_loader', 0 );
     if( $use_loader ){
-        wp_enqueue_script( 'kt-pace', KT_THEME_JS . 'pace.min.js', array( 'jquery' ), null, true );
+        wp_enqueue_script( 'kt-pace', KT_THEME_JS . 'pace.min.js', array( 'jquery' ), null );
     }
 
-
-
-    wp_enqueue_script( 'kt-main-script', KT_THEME_JS . 'functions.js', array( 'jquery', 'mediaelement', 'wp-mediaelement', 'google-maps-api' ), null, true );
+    wp_enqueue_script( 'bootstrap', KT_THEME_LIBS . 'bootstrap/js/bootstrap.min.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'kt-plugins', KT_THEME_JS . 'plugins.js', array( 'jquery' ), null, true );
+    wp_enqueue_script( 'kt-main-script', KT_THEME_JS . 'functions.js', array( 'jquery', 'mediaelement', 'wp-mediaelement' ), null, true );
 
     wp_localize_script( 'kt-main-script', 'ajax_frontend', array(
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
@@ -149,9 +144,8 @@ function kt_add_scripts() {
     ));
 
     if(kt_is_wc()){
-        wp_enqueue_script( 'kt-woocommerce', KT_THEME_JS . 'woocommerce.js', array( 'jquery', 'jquery-ui-accordion', 'jquery-ui-tabs' ), null, true );
+        wp_enqueue_script( 'kt-woocommerce', KT_THEME_JS . 'woocommerce.js', array( 'jquery' ), null, true );
     }
-
 
 }
 add_action( 'wp_enqueue_scripts', 'kt_add_scripts' );

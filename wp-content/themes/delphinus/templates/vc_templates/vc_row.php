@@ -55,10 +55,11 @@ $wrapper_attributes = array();
 if ( ! empty( $el_id ) ) {
 	$wrapper_attributes[] = 'id="' . esc_attr( $el_id ) . '"';
 }
+
 if ( ! empty( $full_width ) ) {
 	$wrapper_attributes[] = 'data-vc-full-width="true"';
 	$wrapper_attributes[] = 'data-vc-full-width-init="false"';
-	if ( 'stretch_row_content' === $full_width ) {
+	if ( 'stretch_row' == $full_width ) {
 		$wrapper_attributes[] = 'data-vc-stretch-content="true"';
 
 
@@ -77,9 +78,6 @@ if ( ! empty( $full_width ) ) {
 
 }else{
     if(is_page_template( 'page-templates/full-width.php' )){
-
-
-
         $content = '<div class="container">'.$content.'</div>';
     }
 }

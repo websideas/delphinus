@@ -104,6 +104,11 @@ class KT_MailChimp
         wp_enqueue_style( 'font-awesome', KTM_PLUGIN_URL . 'font-awesome/css/font-awesome.min.css', array());
         wp_enqueue_style( 'kt_mailchimp', KTM_PLUGIN_URL . '/assets/styles.css', array());
         wp_enqueue_script( 'kt_mailchimp-script', KTM_PLUGIN_URL . '/assets/functions.js', array( 'jquery' ), null, true );
+
+        wp_localize_script( 'kt_mailchimp-script', 'ajax_mailchimp', array(
+            'ajaxurl' => admin_url( 'admin-ajax.php' ),
+        ));
+
     }
 
     public  function addMapShortCode()
@@ -307,7 +312,7 @@ class KT_MailChimp
      */
 
     function frontend_mailchimp_callback() {
-        check_ajax_referer( 'ajax_frontend', 'security' );
+        
 
         $output = array( 'error'=> 1, 'msg' => '');
         $error = '';

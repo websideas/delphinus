@@ -13,6 +13,9 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
             'meta_key' => '',
             'order' => 'DESC',
             'source' => '',
+            'categories' => '',
+            'products' => '',
+            'operator' => 'IN',
             'layout' => 'normal',
 
             'autoheight' => true,
@@ -42,9 +45,6 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
             'css' => '',   
         ), $atts );
 
-        if($atts['layout'] == 'transparent'){
-            $atts['source'] = 'featured';
-        }
 
         extract($atts);
 
@@ -57,8 +57,6 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
             'layout' => 'layout-' . $layout ,
         );
 
-
-
         $meta_query = WC()->query->get_meta_query();
 
         if( $source == 'best-sellers' ){
@@ -70,13 +68,12 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
             'post_type'				=> 'product',
             'post_status'			=> 'publish',
             'ignore_sticky_posts'	=> 1,
-            'posts_per_page' 		=> $atts['per_page'],
+            'posts_per_page' 		=> $per_page,
             'meta_query' 			=> $meta_query,
             'order'                 => $order,
             'orderby'               => $orderby,
             'meta_key'              => $meta_key
         );
-
 
         if( $source == 'onsale' ){
             $product_ids_on_sale = wc_get_product_ids_on_sale();
@@ -86,9 +83,24 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
                 'key'   => '_featured',
                 'value' => 'yes'
             );
+        }elseif($source == 'top-rated'){
+            add_filter( 'posts_clauses', array( __CLASS__, 'order_by_rating_post_clauses' ) );
+        }elseif($source == 'categories'){
+            if ( ! empty( $categories ) ) {
+                $args['tax_query'] = array(
+                    array(
+                        'taxonomy' => 'product_cat',
+                        'terms'    => array_map( 'sanitize_title', explode( ',', $categories ) ),
+                        'field'    => 'slug',
+                        'operator' => $operator
+                    )
+                );
+            }
+        }elseif($source == 'products'){
+            if ( ! empty( $atts['products'] ) ) {
+                $args['post__in'] = array_map( 'trim', explode( ',', $atts['products'] ) );
+            }
         }
-
-
 
         $output = $carousel_html ='';
 
@@ -152,7 +164,7 @@ vc_map( array(
                 esc_html__( 'Transparent', 'js_composer' ) => 'transparent',
             ),
             'std' => 'normal',
-            'description' => esc_html__( 'Select your product layout. only featured product available in transparent and choose Image transparent in product detail ', 'delphinus' )
+            'description' => esc_html__( 'Select your product layout.', 'delphinus' )
         ),
         // Others setting
         array(
@@ -169,14 +181,32 @@ vc_map( array(
                 esc_html__( 'Featured Products', 'js_composer' ) => 'featured',
                 esc_html__( 'On-sale Products', 'js_composer' ) => 'onsale',
                 esc_html__( 'Best Sellers', 'js_composer' ) => 'best-sellers',
+                esc_html__( 'Specific Categories', 'js_composer' ) => 'categories',
+                esc_html__( 'Specific Products', 'js_composer' ) => 'products',
             ),
             'std' => 'all',
-            'dependency' => array(
-                'element' => 'layout',
-                'value_not_equal_to' => 'transparent',
-            ),
             'description' => esc_html__( 'Select your source', 'delphinus' )
         ),
+        array(
+            "type" => "kt_taxonomy",
+            'taxonomy' => 'product_cat',
+            'heading' => esc_html__( 'Categories', 'delphinus' ),
+            'param_name' => 'categories',
+            'placeholder' => esc_html__( 'Select your categories', 'delphinus' ),
+            "dependency" => array("element" => "source","value" => array('categories')),
+            'multiple' => true,
+        ),
+        array(
+            "type" => "kt_posts",
+            'args' => array('post_type' => 'product', 'posts_per_page' => -1),
+            'heading' => esc_html__( 'Specific Products', 'js_composer' ),
+            'param_name' => 'products',
+            'size' => '5',
+            'placeholder' => esc_html__( 'Select your posts', 'js_composer' ),
+            "dependency" => array( "element" => "source","value" => array( 'products' ) ),
+            'multiple' => true,
+        ),
+
         array(
             'type' => 'textfield',
             'heading' => esc_html__( 'Per page', 'js_composer' ),

@@ -21,7 +21,7 @@ class WP_Widget_KT_Socials extends WP_Widget {
         $title = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'], $instance, $this->id_base );
         
         $value = isset( $instance['value'] ) ? $instance['value'] : '';
-        $style = isset( $instance['style'] ) ? $instance['style'] : 'accent';
+        $style = isset( $instance['style'] ) ? $instance['style'] : 'dark';
         $size = isset( $instance['size'] ) ? $instance['size'] : 'standard';
         $tooltip = isset( $instance['tooltip'] ) ? $instance['tooltip'] : '';
         $background_style = isset( $instance['background_style'] ) ? $instance['background_style'] : 'empty';
@@ -29,7 +29,7 @@ class WP_Widget_KT_Socials extends WP_Widget {
 
 
         $space_between_item    = isset( $instance['space_between_item'] ) ? absint( $instance['space_between_item'] ) : 3;
-        $custom_color    = isset( $instance['custom_color'] ) ? $instance['custom_color'] : '#82c14f';
+        $custom_color    = isset( $instance['custom_color'] ) ? $instance['custom_color'] : '#999999';
         
 		echo $args['before_widget'];
         
@@ -47,10 +47,10 @@ class WP_Widget_KT_Socials extends WP_Widget {
         $instance['title'] = strip_tags($new_instance['title']);
         
         $instance['value'] = $new_instance['value'];
-        if ( in_array( $new_instance['style'], array( 'accent', 'dark', 'light', 'color', 'custom' ) ) ) {
+        if ( in_array( $new_instance['style'], array( 'dark', 'light', 'color', 'custom' ) ) ) {
             $instance['style'] = $new_instance['style'];
         } else {
-            $instance['style'] = 'accent';
+            $instance['style'] = 'dark';
         }
         if ( in_array( $new_instance['background_style'], array( 'empty', 'rounded', 'boxed', 'rounded-less', 'diamond-square', 'rounded-outline', 'boxed-outline', 'rounded-less-outline', 'diamond-square-outline' ) ) ) {
             $instance['background_style'] = $new_instance['background_style'];
@@ -80,17 +80,17 @@ class WP_Widget_KT_Socials extends WP_Widget {
 
 	public function form( $instance ) {
 		//Defaults
-		$instance = wp_parse_args( (array) $instance, array( 'title' => __('Socials', 'delphinus'), 'target' => '_self', 'value' => '', 'style' => 'accent', 'background_style' => '', 'size' => 'standard', 'tooltip' => '', 'align' => '', 'space_between_item' => 3, 'custom_color' => '#82c14f' ) );
+		$instance = wp_parse_args( (array) $instance, array( 'title' => __('Socials', 'delphinus'), 'target' => '_self', 'value' => '', 'style' => 'dark', 'background_style' => '', 'size' => 'standard', 'tooltip' => '', 'align' => '', 'space_between_item' => 3, 'custom_color' => '#999999' ) );
         $title = strip_tags($instance['title']);
         
         $value = isset( $instance['value'] ) ? $instance['value'] : '';
-        $style = isset( $instance['style'] ) ? $instance['style'] : 'accent';
+        $style = isset( $instance['style'] ) ? $instance['style'] : 'dark';
         $background_style = isset( $instance['background_style'] ) ? $instance['background_style'] : '';
         $size = isset( $instance['size'] ) ? $instance['size'] : 'standard';
         $tooltip = isset( $instance['tooltip'] ) ? $instance['tooltip'] : '';
         $align = isset( $instance['align'] ) ? $instance['align'] : '';
         $space_between_item    = isset( $instance['space_between_item'] ) ? absint( $instance['space_between_item'] ) : 3;
-        $custom_color    = isset( $instance['custom_color'] ) ? $instance['custom_color'] : '#82c14f';
+        $custom_color    = isset( $instance['custom_color'] ) ? $instance['custom_color'] : '#999999';
 	?>
         <p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' , 'delphinus'); ?></label>
             <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr($title); ?>" /></p>
@@ -136,7 +136,6 @@ class WP_Widget_KT_Socials extends WP_Widget {
         
         <p><label for="<?php echo $this->get_field_id('style'); ?>"><?php _e('Style:', 'delphinus'); ?></label>
             <select class="widefat" id="<?php echo $this->get_field_id('style'); ?>" name="<?php echo $this->get_field_name('style'); ?>">
-                <option <?php selected( $style, 'accent' ); ?> value="accent"><?php _e('Accent','delphinus'); ?></option>
                 <option <?php selected( $style, 'dark' ); ?> value="dark"><?php _e('Dark','delphinus'); ?></option>
                 <option <?php selected( $style, 'light' ); ?> value="light"><?php _e('Light','delphinus'); ?></option>
                 <option <?php selected( $style, 'color' ); ?> value="color"><?php _e('Color','delphinus'); ?></option>

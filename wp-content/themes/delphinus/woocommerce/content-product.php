@@ -58,10 +58,8 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
     $classes[] = 'last';
 }
 
+$columns_land = ($woocommerce_loop['columns'] == 4) ? 3: $woocommerce_loop['columns'];
 $columns_tab = 2;
-if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $columns_tab || 1 === $columns_tab ) {
-    $classes[] = 'first-tablet';
-}
 
 
 if($woocommerce_loop['type'] == 'masonry'){
@@ -73,12 +71,16 @@ if($woocommerce_loop['type'] == 'masonry'){
     }else{
         $bootstrapColumn = '3';
     }
+    $bootstrapColumn_land = $bootstrapColumn;
 }else{
     $bootstrapColumn = round( 12 / $woocommerce_loop['columns'] );
+    $bootstrapColumn_land = round( 12 / $columns_land );
 }
+
 $bootstrapColumn_tab = round( 12 / $columns_tab );
 
-$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%1$s col-xs-%2$s', $bootstrapColumn, $bootstrapColumn_tab);
+
+$classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-%3$s', $bootstrapColumn,$bootstrapColumn_land, $bootstrapColumn_tab);
 
 ?>
 <li <?php post_class( $classes ); ?>>

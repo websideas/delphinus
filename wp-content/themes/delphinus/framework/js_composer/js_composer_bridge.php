@@ -115,8 +115,6 @@ $composer_addons = array(
 
 if(kt_is_wc()){
     $composer_wc_addons = array(
-        'products_tab.php',
-        'products_widget_carousel.php',
         'products_carousel.php',
         'product_categories_carousel.php',
         'product_categories_grid.php',

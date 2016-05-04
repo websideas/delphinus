@@ -26,7 +26,7 @@ if ( 'no' === get_option( 'woocommerce_enable_shipping_calc' ) || ! WC()->cart->
 ?>
 
 
-<div class="wc-shipping-calculator-wrap col-md-4">
+<div class="wc-shipping-calculator-wrap col-md-4 col-sm-6 col-xs-12">
     <?php do_action( 'woocommerce_before_shipping_calculator' ); ?>
     <form class="woocommerce-shipping-calculator wc-cart-box" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 

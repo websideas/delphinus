@@ -17,11 +17,10 @@ class WPBakeryShortCode_Googlemap extends WPBakeryShortCode {
         ), $atts ) );
 
         if(!$location){return false;}
-        
-        // Load Google Maps scripts
-    	wp_enqueue_script('google-maps-api');
-    	wp_enqueue_script('gmap3');
-        
+
+        $protocol = is_ssl() ? 'https' : 'http';
+        wp_enqueue_script('google-maps-api',$protocol.'://maps.googleapis.com/maps/api/js?sensor=false&callback=init_google_map', array( ), null, true);
+
         $img_id = preg_replace('/[^\d]/', '', $image);
         $img_thumb = '';
         if( $img_id ){

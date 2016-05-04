@@ -301,7 +301,9 @@ class WC_Widget_Color_Filter extends WC_Widget {
 
                 echo ( $count > 0 || $option_is_set ) ? '<a href="' . esc_url( apply_filters( 'woocommerce_layered_nav_link', $link ) ) . '">' : '<span>';
 
-                echo '<span style="background-color: '.$instance['colors'][$term->term_id].';"></span>';
+                if(isset($instance['colors'][$term->term_id])){
+                    echo '<span style="background-color: '.$instance['colors'][$term->term_id].';"></span>';
+                }
 
                 echo $term->name;
 

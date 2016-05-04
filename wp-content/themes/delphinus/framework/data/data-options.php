@@ -280,12 +280,12 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'options'  => array(
                             1 => array( 'alt' => esc_html__( 'Layout 1', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v1.jpg' ),
                             2 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v2.jpg' ),
-                            3 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v3.jpg' ),
-                            4 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v4.jpg' ),
-                            //5 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v5.jpg' ),
-                            6 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v6.jpg' ),
-                            7 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v7.jpg' ),
-                            8 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v8.jpg' ),
+                            3 => array( 'alt' => esc_html__( 'Layout 3', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v3.jpg' ),
+                            4 => array( 'alt' => esc_html__( 'Layout 4', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v4.jpg' ),
+                            //5 => array( 'alt' => esc_html__( 'Layout 5', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v5.jpg' ),
+                            6 => array( 'alt' => esc_html__( 'Layout 6', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v6.jpg' ),
+                            7 => array( 'alt' => esc_html__( 'Layout 7', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v7.jpg' ),
+                            8 => array( 'alt' => esc_html__( 'Layout 8', 'delphinus' ), 'img' => KT_FW_IMG . 'header/header-v8.jpg' ),
                         ),
                         'default'  => 1
                     ),
@@ -422,18 +422,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'on' => esc_html__('Enabled', 'delphinus'),
                         'off' => esc_html__('Disabled', 'delphinus'),
                     ),
-                    array(
-                        'id' => 'footer_bottom_layout',
-                        'type' => 'image_select',
-                        'compiler' => true,
-                        'title' => esc_html__('Footer bottom layout', 'delphinus'),
-                        'subtitle' => esc_html__('Select your footer bottom layout', 'delphinus'),
-                        'options' => array(
-                            '1' => array('alt' => esc_html__('Layout 1', 'delphinus'), 'img' => KT_FW_IMG . 'footer/footer-bottom-1.png'),
-                            '2' => array('alt' => esc_html__('Layout 2', 'delphinus'), 'img' => KT_FW_IMG . 'footer/footer-bottom-2.png'),
-                        ),
-                        'default' => '1'
-                    ),
 
                     /* Footer copyright */
                     array(
@@ -490,6 +478,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'id'   => 'footer_socials',
                         'type' => 'kt_socials',
                         'title'    => esc_html__( 'Select your socials', 'delphinus' ),
+                        'default' => 'facebook,twitter,instagram,linkedin'
                     ),
                     array(
                         'id' => 'footer_copyright_text',
@@ -717,7 +706,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'type'     => 'select',
                         'title'    => esc_html__( 'Footer socials style', 'delphinus' ),
                         'options'  => array(
-                            'accent' => esc_html__('Accent', 'delphinus' ),
                             'dark'   => esc_html__('Dark', 'delphinus' ),
                             'light'  => esc_html__('Light', 'delphinus' ),
                             'color'  => esc_html__('Color', 'delphinus' ),
@@ -729,7 +717,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'id'       => 'custom_color_social',
                         'type'     => 'color',
                         'title'    => esc_html__( 'Footer socials Color', 'delphinus' ),
-                        'default'  => '#707070',
+                        'default'  => '#999999',
                         'transparent' => false,
                         'required' => array('footer_socials_style','equals', array( 'custom' ) ),
                     ),
@@ -765,7 +753,186 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'id'       => 'footer_socials_space_between_item',
                         'type'     => 'text',
                         'title'    => esc_html__( 'Footer socials space between item', 'delphinus' ),
-                        'default'  => '10'
+                        'default'  => '30'
+                    ),
+                )
+            );
+
+            /**
+             *	Typography
+             **/
+            $this->sections[] = array(
+                'id'			=> 'typography',
+                'title'			=> esc_html__( 'Typography', 'wingman' ),
+                'desc'			=> '',
+                'icon'	=> 'fa fa-camera-retro',
+            );
+
+            /**
+             *	Typography General
+             **/
+            $this->sections[] = array(
+                'id'			=> 'typography_general',
+                'title'			=> esc_html__( 'General', 'wingman' ),
+                'subsection' => true,
+                'fields'		=> array(
+                    array(
+                        'id'       => 'typography_body',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Body Font', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the body font properties.', 'wingman' ),
+                        'text-align' => false,
+                        'letter-spacing'  => true,
+                        'output'      => array(
+                            'body'
+                        ),
+                        'default'  => array(
+                            'font-family'     => 'Karla'
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_pragraph',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Pragraph', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the pragraph font properties.', 'wingman' ),
+                        'output'   => array( 'p' ),
+                        'default'  => array( ),
+                        'color'    => false,
+                        'text-align' => false,
+                    ),
+
+                    array(
+                        'id'       => 'typography_blockquote',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Blockquote', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the blockquote font properties.', 'wingman' ),
+                        'output'   => array( 'blockquote' ),
+                        'default'  => array( ),
+                        'color'    => false,
+                        'text-align' => false,
+                    ),
+                    /*
+                    array(
+                        'id'       => 'typography_button',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Button', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the button font properties.', 'wingman' ),
+                        'output'   => array(
+                            '.button',
+                            '.wpcf7-submit',
+                            '.btn',
+                            '.woocommerce #respond input#submit',
+                            '.woocommerce a.button',
+                            '.woocommerce button.button',
+                            '.woocommerce input.button',
+                            '.woocommerce #respond input#submit.alt',
+                            '.woocommerce a.button.alt',
+                            '.woocommerce button.button.alt',
+                            '.woocommerce input.button.alt',
+                            '.vc_general.vc_btn3',
+                            '.kt-button',
+                            '.readmore-link',
+                            '.readmore-link-white'
+                        ),
+                        'default'  => array( ),
+                        'color'    => false,
+                        'text-align'    => false,
+                        'font-size'    => false,
+                        'text-transform' => true,
+                        'letter-spacing'  => true,
+                        'font-weight' => false
+                    ),
+                    */
+                    array(
+                        'id'       => 'typography_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Heading settings', 'wingman' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'typography_heading1',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading 1', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the heading 1 font properties.', 'wingman' ),
+                        'letter-spacing'  => true,
+                        'text-transform' => true,
+                        'text-align' => false,
+                        'output'      => array( 'h1', '.h1' ),
+                        'default'  => array(
+                            'font-family'     => 'Roboto Slab',
+                            'text-transform'  => 'uppercase',
+                            'font-weight'     => '700'
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_heading2',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading 2', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the heading 2 font properties.', 'wingman' ),
+                        'letter-spacing'  => true,
+                        'output'      => array( 'h2', '.h2' ),
+                        'text-transform' => true,
+                        'text-align' => false,
+                        'default'  => array(
+                            'font-family'     => 'Roboto Slab',
+                            'font-weight'     => '700'
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_heading3',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading 3', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the heading 3 font properties.', 'wingman' ),
+                        'letter-spacing'  => true,
+                        'output'      => array( 'h3', '.h3' ),
+                        'text-transform' => true,
+                        'text-align' => false,
+                        'default'  => array(
+                            'font-family'     => 'Roboto Slab',
+                            'font-weight'     => '700'
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_heading4',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading 4', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the heading 4 font properties.', 'wingman' ),
+                        'letter-spacing'  => true,
+                        'output'      => array( 'h4', '.h4' ),
+                        'text-transform' => true,
+                        'text-align' => false,
+                        'default'  => array(
+                            'font-family'     => 'Roboto Slab',
+                            'font-weight'     => '700'
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_heading5',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading 5', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the heading 5 font properties.', 'wingman' ),
+                        'letter-spacing'  => true,
+                        'output'      => array( 'h5', '.h5' ),
+                        'text-transform' => true,
+                        'text-align' => false,
+                        'default'  => array(
+                            'font-family'     => 'Roboto Slab',
+                            'font-weight'     => '700'
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_heading6',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading 6', 'wingman' ),
+                        'subtitle' => esc_html__( 'Specify the heading 6 font properties.', 'wingman' ),
+                        'letter-spacing'  => true,
+                        'output'      => array( 'h6', '.h6' ),
+                        'text-transform' => true,
+                        'text-align' => false,
+                        'default'  => array(
+                            'font-family'     => 'Roboto Slab',
+                            'font-weight'     => '700'
+                        ),
                     ),
                 )
             );
@@ -850,6 +1017,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         ),
                         'default'  => 3,
                     ),
+                    /*
                     array(
                         'id'       => 'shop_products_effect',
                         'type'     => 'select',
@@ -861,6 +1029,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         ),
                         'default'  => '1'
                     ),
+                    */
                     array(
                         'id'       => 'loop_shop_per_page',
                         'type'     => 'text',
@@ -947,46 +1116,16 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'full_width' => true
                     ),
                     array(
-                        'id' => 'product_page_header',
-                        'type' => 'switch',
-                        'title' => esc_html__('Show Page header', 'delphinus'),
-                        'desc' => esc_html__('Show page header or?.', 'delphinus'),
-                        "default" => 1,
-                        'on' => esc_html__('Enabled', 'delphinus'),
-                        'off' =>esc_html__('Disabled', 'delphinus')
-                    ),
-                    array(
-                        'id'       => 'product_sidebar',
+                        'id'       => 'product_detail_layout',
                         'type'     => 'select',
-                        'title'    => esc_html__( 'Product: Sidebar configuration', 'delphinus' ),
-                        'subtitle'     => esc_html__( "Please choose single product page ", 'delphinus' ),
+                        'title'    => esc_html__( 'Product layout', 'delphinus' ),
+                        'subtitle'     => esc_html__( "Please choose single product layout.", 'delphinus' ),
                         'options'  => array(
-                            'full' => esc_html__('No sidebars', 'delphinus'),
-                            'left' => esc_html__('Left Sidebar', 'delphinus'),
-                            'right' => esc_html__('Right Layout', 'delphinus')
+                            'layout1' => esc_html__('Layout 1', 'delphinus'),
+                            'layout2' => esc_html__('Layout 2', 'delphinus'),
+                            'layout3' => esc_html__('Layout 3', 'delphinus'),
                         ),
-                        'default'  => 'full',
-                        'clear' => false
-                    ),
-                    array(
-                        'id'       => 'product_sidebar_left',
-                        'type' => 'select',
-                        'title'    => esc_html__( 'Product: Sidebar left area', 'delphinus' ),
-                        'subtitle'     => esc_html__( "Please choose left sidebar ", 'delphinus' ),
-                        'data'     => 'sidebars',
-                        'default'  => 'primary-widget-area',
-                        'required' => array('product_sidebar','equals','left'),
-                        'clear' => false
-                    ),
-                    array(
-                        'id'       => 'product_sidebar_right',
-                        'type'     => 'select',
-                        'title'    => esc_html__( 'Product: Sidebar right area', 'delphinus' ),
-                        'subtitle'     => esc_html__( "Please choose left sidebar ", 'delphinus' ),
-                        'data'     => 'sidebars',
-                        'default'  => 'primary-widget-area',
-                        'required' => array('product_sidebar','equals','right'),
-                        'clear' => false
+                        'default'  => 'layout1',
                     ),
 
                     //Slider effect: Lightbox - Zoom
@@ -995,10 +1134,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                     //Social Media Sharing Buttons
                     //Single Product Gallery Type
 
-                    array(
-                        'id'   => 'divide_id',
-                        'type' => 'divide'
-                    ),
                     array(
                         'id'       => 'shop_single_product',
                         'type'     => 'raw',
@@ -1121,7 +1256,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'text-transform' => true,
                         'output'      => array( '.page-header h1.page-header-title' ),
                         'default'  => array(
-                            'font-family'     => 'Josefin Slab',
+                            'font-family'     => 'Roboto Slab',
                             'text-transform' => 'uppercase',
                             'font-weight' => '700'
                         ),

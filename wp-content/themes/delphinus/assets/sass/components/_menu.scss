@@ -452,7 +452,7 @@
       }
     }
   }
-  
+
 }
 
 
@@ -509,6 +509,9 @@
   z-index: 999;
   li{
     position: relative;
+    &.space{
+      display: none;
+    }
   }
 
   > ul{

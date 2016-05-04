@@ -9,17 +9,12 @@ if ( !defined('ABSPATH')) exit;
             <?php
             $logo = kt_get_logo();
             $logo_class = ($logo['retina']) ? 'retina-logo-wrapper' : '';
-            $logo_class .= ($logo['light_retina']) ? ' retina-light-wrapper' : '';
             ?>
             <p class="site-logo <?php echo esc_attr($logo_class); ?>">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
                     <img src="<?php echo esc_url($logo['default']); ?>" class="default-logo" alt="<?php bloginfo( 'name' ); ?>" />
                     <?php  if($logo['retina']){ ?>
                         <img src="<?php echo esc_url($logo['retina']); ?>" class="retina-logo retina-default-logo" alt="<?php bloginfo( 'name' ); ?>" />
-                    <?php } ?>
-                    <img src="<?php echo esc_url($logo['light']); ?>" class="light-logo" alt="<?php bloginfo( 'name' ); ?>" />
-                    <?php  if($logo['light_retina']){ ?>
-                        <img src="<?php echo esc_url($logo['light_retina']); ?>" class="retina-logo light-retina-logo" alt="<?php bloginfo( 'name' ); ?>" />
                     <?php } ?>
                 </a>
             </p><!-- .site-logo -->

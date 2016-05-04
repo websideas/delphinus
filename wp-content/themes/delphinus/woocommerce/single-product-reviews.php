@@ -26,7 +26,7 @@ if ( ! comments_open() ) {
 
 ?>
 <div id="reviews" class="row">
-	<div id="comments" class="col-md-6">
+	<div id="comments" class="col-md-6 col-sm-7">
 		<h3 class="comments-title"><?php
 			if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' && ( $count = $product->get_review_count() ) )
 				printf( _n( '%s review', '%s reviews', $count, 'delphinus' ), $count );
@@ -59,7 +59,7 @@ if ( ! comments_open() ) {
 
 	<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->id ) ) : ?>
 
-		<div id="review_form_wrapper" class="col-md-5 col-md-offset-1">
+		<div id="review_form_wrapper" class="col-md-5 col-md-offset-1 col-sm-5">
 			<div id="review_form">
 				<?php
 					$commenter = wp_get_current_commenter();
@@ -80,7 +80,7 @@ if ( ! comments_open() ) {
 						'logged_in_as'  => '',
 						'comment_field' => '<p class="comment-form-comment"><textarea placeholder="'.__( 'Your Review', 'woocommerce' ).'" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
                         'submit_button' => '',
-                        'class_submit'  => 'btn btn-block btn-dark-border',
+                        'class_submit'  => 'btn btn-block btn-dark-b',
 					);
 
 					if ( $account_page_url = wc_get_page_permalink( 'myaccount' ) ) {

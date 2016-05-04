@@ -59,9 +59,9 @@ if ( $products->have_posts() ) : ?>
                         l216.2-132.4c5.4-2.7,10.8-2.7,13.5,0l205.4,129.7L995,360.5c5.4-2.7,10.8-2.7,13.5,0l210.8,129.7l208.1-129.7
                         c5.4-2.7,10.8-2.7,13.5,0l216.2,135.1l-13.5,21.6l-205.4-129.7l-208.1,129.8C1227.4,517.3,1224.7,520,1222,520L1222,520z"/></svg></span>
                 </div>
-                <h3 class="kt-heading-title"><?php _e( 'You may also like&hellip;', 'woocommerce' ) ?></h3>
+                <h3 class="kt-heading-title"><?php _e( 'You may also like', 'delphinus' ) ?></h3>
             </div>
-            <div class="owl-carousel-kt navigation-top">
+            <div class="owl-carousel-kt navigation-center-outside  navigation-normal">
                 <div class="wc-carousel-wrapper" data-options='<?php echo esc_attr(apply_filters('kt_wc_product_carousel', '{"desktop": "4","desktopsmall": "3","tablet": "2","mobile": "1","navigation": true, "pagination": false}')) ?>'>
                     <?php woocommerce_product_loop_start(); ?>
                     <?php while ( $products->have_posts() ) : $products->the_post(); ?>

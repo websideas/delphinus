@@ -20,15 +20,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
+global $woocommerce_carousel;
+
+// Store loop count we're currently on
+if ( empty( $woocommerce_carousel ) ) {
+    $woocommerce_carousel = 'normal';
+}
+
+
 ?>
 <div class="category-banner">
     <?php
     /**
      * woocommerce_before_subcategory_title hook.
      *
-     * @hooked woocommerce_subcategory_thumbnail - 10
+     * @hooked kt_wc_subcategory_thumbnail - 10
      */
-    do_action( 'woocommerce_before_subcategory_title', $category );
+    do_action( 'kt_wc_subcategory_thumbnail', $category, $woocommerce_carousel );
 
     ?>
     <div class="category-banner-content">
@@ -36,33 +44,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 
         //print_r($category);
 
-        printf('<h3>%s</h3>', $category->name);
+        if($woocommerce_carousel == 'portrait'){
+            printf('<h3><span>%s</span>%s</h3>', esc_html__('shop for', 'delphinus'), $category->name);
+            printf(
+                '<a href="%s" class="category-banner-link"></a>',
+                get_term_link( $category->slug, 'product_cat' )
+            );
+        }else{
+            printf('<h3>%s</h3>', $category->name);
 
 
-        $args = array(
-            'parent' => $category->term_id
-        );
-        $terms = get_terms( 'product_cat', $args );
+            $args = array(
+                'parent' => $category->term_id
+            );
+            $terms = get_terms( 'product_cat', $args );
 
 
-        if(count($terms)){
-            $terms_html = '';
-            foreach($terms as $term){
-                $terms_html .= sprintf(
-                    '<li><a href="%s">%s</a></li>',
-                    get_term_link( $category->slug, 'product_cat' ),
-                    $term->name
-                );
+            if(count($terms)){
+                $terms_html = '';
+                foreach($terms as $term){
+                    $terms_html .= sprintf(
+                        '<li><a href="%s">%s</a></li>',
+                        get_term_link( $category->slug, 'product_cat' ),
+                        $term->name
+                    );
+                }
+                echo '<ul>'.$terms_html.'</ul>';
             }
-            echo '<ul>'.$terms_html.'</ul>';
+
+            printf(
+                '<a href="%s" class="%s">%s</a>',
+                get_term_link( $category->slug, 'product_cat' ),
+                'btn btn-light-b',
+                esc_html__('Shop now', 'delphinus')
+            );
         }
 
-        printf(
-            '<a href="%s" class="%s">%s</a>',
-            get_term_link( $category->slug, 'product_cat' ),
-            'btn btn-light-b',
-            esc_html__('Shop now', 'delphinus')
-        );
+
         ?>
     </div>
 </div>

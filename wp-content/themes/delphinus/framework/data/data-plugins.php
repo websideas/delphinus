@@ -76,11 +76,6 @@ function kt_register_plugins() {
             'required' => false,
         ),
         array(
-            'name' => 'Breadcrumb NavXT',
-            'slug' => 'breadcrumb-navxt',
-            'required' => false,
-        ),
-        array(
             'name' => 'YITH WooCommerce Compare',
             'slug' => 'yith-woocommerce-compare',
             'required' => false,

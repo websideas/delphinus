@@ -112,18 +112,6 @@ function kt_register_meta_boxes( $meta_boxes )
             'desc' => esc_html__('Choose type of page display.', 'delphinus'),
         ),
         array(
-            'name' => esc_html__('Page layout', 'delphinus'),
-            'id' => $prefix . 'layout',
-            'desc' => esc_html__("Please choose this page's layout.", 'delphinus'),
-            'type' => 'select',
-            'options' => array(
-                'full' => esc_html__('Full width Layout', 'delphinus'),
-                'boxed' => esc_html__('Boxed Layout', 'delphinus'),
-            ),
-            'placeholder' => esc_html__('Default', 'delphinus'),
-            'tab'  => 'page_layout',
-        ),
-        array(
             'name' => esc_html__('Sidebar configuration', 'delphinus'),
             'id' => $prefix . 'sidebar',
             'desc' => esc_html__("Choose the sidebar configuration for the detail page.<br/><b>Note: Cart and checkout, My account page always use no sidebars.</b>", 'delphinus'),
@@ -306,6 +294,7 @@ function kt_register_meta_boxes( $meta_boxes )
             'options' => array(
                 'revslider' => esc_html__('Revolution Slider', 'delphinus'),
                 'layerslider' => esc_html__('Layer Slider', 'delphinus'),
+                'custom' => esc_html__('Custom Slider', 'delphinus'),
             ),
             'placeholder' => esc_html__('Select Option', 'delphinus'),
             'tab'  => 'header',
@@ -331,7 +320,16 @@ function kt_register_meta_boxes( $meta_boxes )
             'visible' => array($prefix . 'slideshow_type', '=', 'layerslider'),
             'options' => $ls_options,
             'placeholder' => esc_html__('Select Option', 'delphinus'),
-        )
+        ),
+        array(
+            'name'        => __( 'Custom Slider', 'delphinus' ),
+            'id'          => $prefix.'slideshow_custom',
+            'type'        => 'textarea',
+            'tab'  => 'header',
+            'desc' => esc_html__('Put your shortcode in here.', 'delphinus'),
+            'visible' => array($prefix . 'slideshow_type', '=', 'custom'),
+            'rows'        => 5,
+        ),
     );
 
     /**
@@ -480,10 +478,10 @@ function kt_register_meta_boxes( $meta_boxes )
             //General
             array(
                 'name' => esc_html__('Product layout', 'delphinus'),
-                'id' => $prefix . 'deltail_layout',
+                'id' => $prefix . 'detail_layout',
                 'desc' => esc_html__("Choose the layout for the product detail display.", 'delphinus'),
                 'type' => 'select',
-                'placeholder' => esc_html__('Select your layout', 'delphinus'),
+                'placeholder' => esc_html__('Default', 'delphinus'),
                 'options' => array(
                     'layout1' => esc_html__('Layout 1', 'delphinus'),
                     'layout2' => esc_html__('Layout 2', 'delphinus'),
@@ -491,16 +489,16 @@ function kt_register_meta_boxes( $meta_boxes )
                 ),
             ),
             array(
-                'name'        => __( 'Short Description in List view', 'your-prefix' ),
-                'id'          => 'textarea',
-                'desc'        => __( 'You can optionally write a short description here, which shows in List view (Product Archive).', 'your-prefix' ),
+                'name'        => __( 'Short Description in List view', 'delphinus' ),
+                'id'          => $prefix.'short_description',
+                'desc'        => __( 'You can optionally write a short description here, which shows in List view (Product Archive).', 'delphinus' ),
                 'type'        => 'textarea',
-                'placeholder' => __( 'Empty if you want use Product Short Description', 'your-prefix' ),
+                'placeholder' => __( 'Empty if you want use Product Short Description', 'delphinus' ),
                 'rows'        => 5,
             ),
             array(
                 'id'               => $prefix .'image',
-                'name'             => __( 'Image transparent', 'your-prefix' ),
+                'name'             => __( 'Image transparent', 'delphinus' ),
                 'type'             => 'image_advanced',
                 'max_file_uploads' => 1,
                 'desc' => esc_html__("Select image for carousel featured. (", 'delphinus'),

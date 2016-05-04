@@ -36,54 +36,59 @@ if($layout == 'layout2'){
 }else{
     $items = 3;
 }
+$items_mb = 3;
 
 
-$items = apply_filters('kt_product_thumbnail_items', $items);
+$items = apply_filters('kt_product_thumbnail_items', $items, $layout);
+$items_mb = apply_filters('kt_product_thumbnail_items_mobile', $items_mb, $layout);
+
 
 
 ?>
-<div class="product-main-thumbnails" id="sync2" data-items="<?php echo $items; ?>">
-    <?php
-    if ( has_post_thumbnail() ) {
-        $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
-        $image_link    = wp_get_attachment_url( get_post_thumbnail_id() );
-        $image         = get_the_post_thumbnail(
-            $post->ID,
-            apply_filters( 'single_product_small_thumbnail_size', 'shop_catalog' ),
-            array('title'	=> get_the_title( get_post_thumbnail_id() ))
-        );
-
-        echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '%s', $image ), $post->ID );
-
-    } else {
-
-        echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
-
-    }
-
-
-    // Display Attachment Images as well
-    if( $attachment_count > 0 ) :
-
-        // Loop in attachment
-        foreach ( $attachment_ids as $attachment_id ) {
-
-            // Get attachment image URL
-            $image_link = wp_get_attachment_url( $attachment_id );
-
-            $image_title = esc_attr( get_the_title( $attachment_id ) );
-
-            // If isn't a URL we go to next attachment
-            if ( !$image_link )
-                continue;
-
-            $image = wp_get_attachment_image( $attachment_id, 'shop_catalog', array(
-                'class' => 'img-responsive'
-            ) );
+<div class="product-main-thumbnails-wrap">
+    <div class="product-main-thumbnails" id="sync2" data-items="<?php echo $items; ?>" data-mobile="<?php echo $items_mb; ?>">
+        <?php
+        if ( has_post_thumbnail() ) {
+            $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
+            $image_link    = wp_get_attachment_url( get_post_thumbnail_id() );
+            $image         = get_the_post_thumbnail(
+                $post->ID,
+                apply_filters( 'single_product_small_thumbnail_size', 'shop_catalog' ),
+                array('title'	=> get_the_title( get_post_thumbnail_id() ))
+            );
 
             echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '%s', $image ), $post->ID );
+
+        } else {
+
+            echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );
+
         }
 
-    endif;
-    ?>
+
+        // Display Attachment Images as well
+        if( $attachment_count > 0 ) :
+
+            // Loop in attachment
+            foreach ( $attachment_ids as $attachment_id ) {
+
+                // Get attachment image URL
+                $image_link = wp_get_attachment_url( $attachment_id );
+
+                $image_title = esc_attr( get_the_title( $attachment_id ) );
+
+                // If isn't a URL we go to next attachment
+                if ( !$image_link )
+                    continue;
+
+                $image = wp_get_attachment_image( $attachment_id, 'shop_catalog', array(
+                    'class' => 'img-responsive'
+                ) );
+
+                echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '%s', $image ), $post->ID );
+            }
+
+        endif;
+        ?>
+    </div>
 </div>

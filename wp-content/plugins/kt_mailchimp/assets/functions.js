@@ -12,7 +12,6 @@
 
         var data = {
             action: 'frontend_mailchimp',
-            security : ajax_frontend.security,
             email: $mForm.find('input[name=email]').val(),
             firstname: $mForm.find('input[name=firstname]').val(),
             lastname: $mForm.find('input[name=lastname]').val(),

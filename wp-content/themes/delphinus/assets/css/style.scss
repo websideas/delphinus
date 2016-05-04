@@ -8,6 +8,7 @@
 // Sass tools and helpers used across the project.
 @import '../sass/utils/variables';
 @import '../sass/utils/mixin';
+@import '../sass/utils/multi-columns-row';
 
 // Base
 // Holds what we might call the boilerplate code for the project.
@@ -18,7 +19,6 @@
 // Layout
 // Contains everything that takes part in laying out the theme
 @import '../sass/layout/layout';
-
 
 // Components
 // For smaller, less global components that do not belong in /layout

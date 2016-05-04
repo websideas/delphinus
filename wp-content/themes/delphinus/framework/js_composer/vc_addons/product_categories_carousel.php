@@ -12,6 +12,7 @@ class WPBakeryShortCode_Categories_Carousel extends WPBakeryShortCode {
             'orderby' => 'name',
             'order' => 'ASC',
             'ids' => '',
+            'categories_style' => 'normal',
             'hide_empty' => 'true',
             'parent'     => '',
 
@@ -54,7 +55,8 @@ class WPBakeryShortCode_Categories_Carousel extends WPBakeryShortCode {
             'extra' => $this->getExtraClass( $el_class ),
             'css_animation' => $this->getCSSAnimation( $css_animation ),
             'woocommerce' => 'woocommerce columns-' . $desktop ,
-            'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' )
+            'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
+            'style' => 'style-'.$categories_style
         );
 
 
@@ -104,6 +106,8 @@ class WPBakeryShortCode_Categories_Carousel extends WPBakeryShortCode {
         ob_start();
 
         if ( $product_categories ) {
+            global $woocommerce_carousel;
+            $woocommerce_carousel = $categories_style;
 
             foreach ( $product_categories as $category ) {
                 wc_get_template( 'content-product_cat_carousel.php', array(
@@ -144,6 +148,18 @@ vc_map( array(
             'admin_label' => true,
             'select' => 'id',
             'description' => esc_html__('List of product categories', 'delphinus')
+        ),
+
+        array(
+            'type' => 'dropdown',
+            'heading' => esc_html__( 'Categories style', 'js_composer' ),
+            'param_name' => 'categories_style',
+            'value' => array(
+                esc_html__( 'Normal', 'delphinus' ) => 'normal',
+                esc_html__( 'Portrait', 'delphinus' ) => 'portrait'
+            ),
+            'std' => 'normal',
+            "description" => esc_html__("Select your categories style.", 'delphinus'),
         ),
 
         array(

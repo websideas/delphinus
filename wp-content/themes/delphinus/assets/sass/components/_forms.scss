@@ -56,24 +56,6 @@ select {
   }
 }
 
-/*
-input[type=email].input-bg,
-input[type=password].input-bg,
-input[type=phone].input-bg,
-input[type=tel].input-bg,
-input[type=text].input-bg,
-input[type=number].input-bg,
-input[type=url].input-bg,
-textarea.input-bg,
-select.input-bg{
-  background: #f6f6f6 none repeat scroll 0 0;
-  border: 1px solid $border-color-light;
-  font-size: 12px;
-  letter-spacing: 0.075em;
-}
-
-
-*/
 
 .form-control {
   @include border-radius(0);

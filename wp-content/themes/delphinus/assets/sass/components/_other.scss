@@ -377,3 +377,9 @@
     display: none;
   }
 }
+
+#sideshow-inner{
+  > *{
+    margin-bottom: 0;
+  }
+}

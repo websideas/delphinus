@@ -443,6 +443,12 @@
   content: "#{$key}";
   font-style: normal;
   font-weight: normal;
+  speak:none;
+  font-variant:normal;
+  text-transform:none;
+  -webkit-font-smoothing:antialiased;
+  text-decoration:none;
+
 }
 
 // Clearfix

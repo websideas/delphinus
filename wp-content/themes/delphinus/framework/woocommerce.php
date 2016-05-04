@@ -21,6 +21,7 @@ if ( ! function_exists( 'kt_woocommerce_theme_setup' ) ):
             add_image_size( 'kt_portrait', 200, 570, true);
             add_image_size( 'kt_wide', 570, 430, true);
             add_image_size( 'kt_big', 870, 430, true);
+            add_image_size( 'kt_cate_carousel', 640, 800, true);
 
             add_image_size( 'kt_product_slider', 265, 375, true);
         }
@@ -30,9 +31,9 @@ endif;
 
 
 function kt_get_product_layout(){
-    $layout = rwmb_meta('_kt_deltail_layout', array(), get_the_ID());
+    $layout = rwmb_meta('_kt_detail_layout', array(), get_the_ID());
     if(!$layout){
-        $layout = kt_option('kt_product_layout','layout1');
+        $layout = kt_option('product_detail_layout','layout1');
     }
     return $layout;
 }
@@ -324,6 +325,44 @@ if (!function_exists('kt_get_woo_sidebar')) {
     }
 }
 
+if ( ! function_exists( 'kt_wc_subcategory_thumbnail' ) ) {
+
+    /**
+     * Show subcategory thumbnails.
+     *
+     * @param mixed $category
+     * @subpackage	Loop
+     */
+    function kt_wc_subcategory_thumbnail( $category, $woocommerce_carousel ) {
+
+        if($woocommerce_carousel == 'portrait'){
+            $small_thumbnail_size  	= apply_filters( 'single_product_small_thumbnail_size', 'kt_cate_carousel' );
+        }else{
+            $small_thumbnail_size  	= apply_filters( 'single_product_small_thumbnail_size', 'shop_catalog' );
+
+        }
+
+        $dimensions    			= wc_get_image_size( $small_thumbnail_size );
+
+        $thumbnail_id  			= get_woocommerce_term_meta( $category->term_id, 'thumbnail_id', true  );
+
+        if ( $thumbnail_id ) {
+            $image = wp_get_attachment_image_src( $thumbnail_id, $small_thumbnail_size  );
+            $image = $image[0];
+        } else {
+            $image = wc_placeholder_img_src();
+        }
+
+        if ( $image ) {
+            // Prevent esc_url from breaking spaces in urls for image embeds
+            // Ref: http://core.trac.wordpress.org/ticket/23605
+            $image = str_replace( ' ', '%20', $image );
+
+            echo '<img src="' . esc_url( $image ) . '" alt="' . esc_attr( $category->name ) . '" width="' . esc_attr( $dimensions['width'] ) . '" height="' . esc_attr( $dimensions['height'] ) . '" />';
+        }
+    }
+}
+
 /**
  * Display Gird List toogle
  *
@@ -529,7 +568,7 @@ function kt_woocommerce_shop_loop(){
             echo '</div>';
             $filters = kt_option('shop_header_filters', 1);
             if($filters){
-                echo '<div id="kt-shop-filters" class="row">';
+                echo '<div id="kt-shop-filters" class="row multi-columns-row">';
                 dynamic_sidebar('shop-filter-area');
                 echo '</div>';
             }
@@ -757,7 +796,28 @@ function kt_fronted_fronted_get_wishlist() {
 }
 
 
+function kt_woocommerce_template_single_excerpt(){
 
+    global $post;
+
+    $post_custom_excerpt = get_post_meta($post->ID, '_kt_short_description', true);
+
+    if($post_custom_excerpt){
+        $post_excerpt = $post_custom_excerpt;
+    }else{
+        $post_excerpt = $post->post_excerpt;
+    }
+
+    if ( ! $post_excerpt) {
+        return;
+    }
+
+    ?>
+    <div itemprop="description">
+        <?php echo apply_filters( 'woocommerce_short_description', $post_excerpt ) ?>
+    </div>
+    <?php
+}
 
 
 function kt_template_product_actions(){
@@ -961,7 +1021,7 @@ remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_lo
 remove_action('woocommerce_shop_loop_item_title', 'woocommerce_template_loop_product_title', 10);
 
 
-
+add_action( 'kt_wc_subcategory_thumbnail', 'kt_wc_subcategory_thumbnail', 10, 2);
 
 add_action( 'woocommerce_before_shop_loop', 'kt_woocommerce_shop_loop');
 
@@ -977,7 +1037,7 @@ add_action('woocommerce_before_shop_loop_item', 'kt_woocommerce_show_product_bad
 
 add_action('woocommerce_after_shop_loop_item', 'kt_template_loop_product_link_close');
 
-add_action('woocommerce_shop_loop_item_details', 'woocommerce_template_single_excerpt', 5);
+add_action('woocommerce_shop_loop_item_details', 'kt_woocommerce_template_single_excerpt', 5);
 add_action('woocommerce_shop_loop_item_details', 'woocommerce_template_loop_add_to_cart', 10);
 add_action('woocommerce_shop_loop_item_details', 'kt_template_loop_product_actions', 15);
 

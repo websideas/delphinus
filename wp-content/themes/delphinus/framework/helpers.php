@@ -175,6 +175,9 @@ if (!function_exists('kt_show_slideshow')) {
                     $output .= $layerslider_html;
                 }
             }
+        }elseif($slideshow == 'custom'){
+            $customslider = rwmb_meta('_kt_slideshow_custom', array(), $post_id);
+            $output .= do_shortcode($customslider);
         }
 
         if($output != ''){
