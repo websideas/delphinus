@@ -88,6 +88,13 @@ var RevSliderAdmin = new function(){
 			jQuery('.rs-hide-on-fixed').show();
 		}
 		
+		if(textMode == 'full'){
+			jQuery('.rs-show-on-auto').toggle(100);
+			jQuery('.rs-show-on-auto').show(100);
+		}else{
+			jQuery('.rs-show-on-auto').toggle(100);
+			jQuery('.rs-show-on-auto').hide(100);
+		}
 		if(enableFullScreen){
 			jQuery('.rs-show-on-fullscreen').show();
 			jQuery('.rs-hide-on-fullscreen').hide();

@@ -357,7 +357,8 @@ class RevSliderOutput {
 		}
 		
 		//check if mobile, if yes, then remove certain slides
-		$mobile = (strstr($_SERVER['HTTP_USER_AGENT'],'Android') || strstr($_SERVER['HTTP_USER_AGENT'],'webOS') || strstr($_SERVER['HTTP_USER_AGENT'],'iPhone') ||strstr($_SERVER['HTTP_USER_AGENT'],'iPod') || strstr($_SERVER['HTTP_USER_AGENT'],'iPad') || strstr($_SERVER['HTTP_USER_AGENT'],'Windows Phone') || wp_is_mobile()) ? true : false;
+		$usragent = (isset($_SERVER['HTTP_USER_AGENT'])) ? $_SERVER['HTTP_USER_AGENT'] : '';
+		$mobile = (strstr($usragent,'Android') || strstr($usragent,'webOS') || strstr($usragent,'iPhone') ||strstr($usragent,'iPod') || strstr($usragent,'iPad') || strstr($usragent,'Windows Phone') || wp_is_mobile()) ? true : false;
 		if($mobile && !empty($slides)){
 			foreach($slides as $ss => $sv){
 				$hsom = $sv->getParam('hideslideonmobile', 'off');
@@ -3177,12 +3178,14 @@ class RevSliderOutput {
 								$a_tooltip_event[$num] = (isset($a_tooltip_event[$num])) ? $a_tooltip_event[$num] : '';
 								$a_link_open_in[$num] = (isset($a_link_open_in[$num])) ? $a_link_open_in[$num] : '';
 								$a_image_link[$num] = (isset($a_image_link[$num])) ? $a_image_link[$num] : '';
+								$a_action_delay[$num] = (isset($a_action_delay[$num])) ? $a_action_delay[$num] : '';
 								
 								$a_events[] = array(
 									'event' => $a_tooltip_event[$num],
 									'action' => 'simplelink',
 									'target' => $a_link_open_in[$num],
-									'url' => $a_image_link[$num]
+									'url' => $a_image_link[$num],
+									'delay' => $a_action_delay[$num]
 								);
 							}else{
 								if($html_simple_link == ''){ //adds the link to the layer
@@ -3275,46 +3278,51 @@ class RevSliderOutput {
 						break;
 						case 'pause':
 							$a_tooltip_event[$num] = (isset($a_tooltip_event[$num])) ? $a_tooltip_event[$num] : '';
-							
+							$a_action_delay[$num] = (isset($a_action_delay[$num])) ? $a_action_delay[$num] : '';
 							$a_events[] = array(
 								'event' => $a_tooltip_event[$num],
-								'action' => 'pauseslider'
+								'action' => 'pauseslider',
+								'delay' => $a_action_delay[$num]
 							);
 						break;
 						case 'resume':
 							$a_tooltip_event[$num] = (isset($a_tooltip_event[$num])) ? $a_tooltip_event[$num] : '';
-							
+							$a_action_delay[$num] = (isset($a_action_delay[$num])) ? $a_action_delay[$num] : '';
 							$a_events[] = array(
 								'event' => $a_tooltip_event[$num],
-								'action' => 'playslider'
+								'action' => 'playslider',
+								'delay' => $a_action_delay[$num]
 							);
 						break;
 						case 'toggle_slider':
 							$a_tooltip_event[$num] = (isset($a_tooltip_event[$num])) ? $a_tooltip_event[$num] : '';
-							
+							$a_action_delay[$num] = (isset($a_action_delay[$num])) ? $a_action_delay[$num] : '';
 							$a_events[] = array(
 								'event' => $a_tooltip_event[$num],
-								'action' => 'toggleslider'
+								'action' => 'toggleslider',
+								'delay' => $a_action_delay[$num]
 							);
 						break;
 						case 'callback':
 							$a_tooltip_event[$num] = (isset($a_tooltip_event[$num])) ? $a_tooltip_event[$num] : '';
 							$a_actioncallback[$num] = (isset($a_actioncallback[$num])) ? $a_actioncallback[$num] : '';
-							
+							$a_action_delay[$num] = (isset($a_action_delay[$num])) ? $a_action_delay[$num] : '';
 							$a_events[] = array(
 								'event' => $a_tooltip_event[$num],
 								'action' => 'callback',
-								'callback' => $a_actioncallback[$num]
+								'callback' => $a_actioncallback[$num],
+								'delay' => $a_action_delay[$num]
 							);
 						break;
 						case 'scroll_under': //ok
 							$a_tooltip_event[$num] = (isset($a_tooltip_event[$num])) ? $a_tooltip_event[$num] : '';
 							$a_scrolloffset[$num] = (isset($a_scrolloffset[$num])) ? $a_scrolloffset[$num] : '';
-							
+							$a_action_delay[$num] = (isset($a_action_delay[$num])) ? $a_action_delay[$num] : '';
 							$a_events[] = array(
 								'event' => $a_tooltip_event[$num],
 								'action' => 'scrollbelow',
-								'offset' => RevSliderFunctions::add_missing_val($a_scrolloffset[$num], 'px')
+								'offset' => RevSliderFunctions::add_missing_val($a_scrolloffset[$num], 'px'),
+								'delay' => $a_action_delay[$num]
 							);
 						break;
 						case 'start_in':
@@ -4291,6 +4299,12 @@ class RevSliderOutput {
 				echo '						waitForInit:true,'."\n";
 			}
 			echo '						fallbacks: {'."\n";
+			
+			if($this->slider->getParam('ignore_height_changes', 'off') !== 'off'){
+				echo '							ignoreHeightChanges:"'. esc_attr($this->slider->getParam('ignore_height_changes', 'off')).'",'."\n";
+				echo '							ignoreHeightChangesSize:'. intval(esc_attr($this->slider->getParam('ignore_height_changes_px', '0'))).','."\n";
+			}
+			
 			echo '							simplifyAll:"'. esc_attr($this->slider->getParam('simplify_ie8_ios4', 'off')).'",'."\n";
 			
 			if($slider_type !== 'hero')
@@ -4324,7 +4338,7 @@ class RevSliderOutput {
 
 			$this->rev_inline_js = $js_content;
 
-			add_action('wp_footer', array($this, 'add_inline_js'));
+			add_action('wp_print_footer_scripts', array($this, 'add_inline_js'), 100);
 		}
 		
 		if($markup_export === true){

@@ -2242,10 +2242,16 @@ var UniteLayersRev = new function(){
 		li.find('.action-target-layer').hide();
 		li.find('.action-callback').hide();
 		li.find('.action-toggle_layer').hide();
+		li.find('.action-toggleclass').hide();
+		li.find('.action-delay-wrapper').show();
+		
 		
 		switch (value) {
+			case "none":
+				li.find('.action-delay-wrapper').hide();				
+			break;
 			case "link":
-				li.find('.action-link-wrapper').show();
+				li.find('.action-link-wrapper').show();				
 			break;
 			case "jumpto":
 				li.find('.action-jump-to-slide').show();
@@ -2544,7 +2550,7 @@ var UniteLayersRev = new function(){
 						jQuery('.tp-present-caption-small').parent().addClass("tp-present-wrapper-small");
 						jQuery('.tp-present-caption-small').parent().parent().addClass("tp-present-wrapper-parent-small");
 					},10);
-					return '<div class="tp-present-caption-small"><div class="tp-caption '+this.getAttribute('original-title')+'">example</div></div>';
+					return '<div class="tp-present-caption-small"><div class="example-dark-blinker"></div><div class="tp-caption '+this.getAttribute('original-title')+'">example</div></div>';
 				}
 			});
 		});

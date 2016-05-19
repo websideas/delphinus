@@ -1,4 +1,5 @@
 .kt-mailchimp-wrapper {
+  text-align: center;
   margin-bottom: 30px; }
   .kt-mailchimp-wrapper .mailchimp-before {
     margin-bottom: 30px; }
@@ -8,10 +9,17 @@
 .widget_kt_mailchimp .kt-mailchimp-wrapper {
   margin-bottom: 0; }
 
+.mailchimp-outer-4,
+.mailchimp-outer-7 {
+  color: white; }
+  .mailchimp-outer-4 .kt-mailchimp-heading,
+  .mailchimp-outer-7 .kt-mailchimp-heading {
+    color: white; }
+
 .mailchimp-form .mailchimp-error,
 .mailchimp-form .mailchimp-success {
   display: none;
-  margin-top: 20px;
+  margin-top: 10px;
   clear: both; }
 .mailchimp-form .mailchimp-error {
   color: #a94442; }
@@ -122,5 +130,53 @@
       content: '\f110';
       -webkit-animation: fa-spin 2s infinite linear;
       animation: fa-spin 2s infinite linear; }
+.mailchimp-form .input-group .mailchimp-submit, .mailchimp-form .input-group .mailchimp-submit:hover, .mailchimp-form .input-group .mailchimp-submit:focus,
+.mailchimp-form .input-group .mailchimp-email,
+.mailchimp-form .input-group .mailchimp-email:hover,
+.mailchimp-form .input-group .mailchimp-email:focus {
+  border: none;
+  background: none; }
+.mailchimp-form .input-group .mailchimp-email {
+  padding-left: 0;
+  padding-right: 0; }
+  .mailchimp-form .input-group .mailchimp-email:focus {
+    -webkit-box-shadow: none;
+    -khtml-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+    outline: 0; }
+.mailchimp-form .input-group .mailchimp-submit {
+  padding-right: 0; }
+.mailchimp-form.mailchimp-layout-4 .input-group {
+  border-bottom: 2px solid #FFFFFF; }
+.mailchimp-form.mailchimp-layout-4 .mailchimp-email {
+  font-style: italic;
+  color: #FFFFFF; }
+.mailchimp-form.mailchimp-layout-4 .mailchimp-submit {
+  color: white; }
+.mailchimp-form.mailchimp-layout-5 {
+  text-align: center; }
+  .mailchimp-form.mailchimp-layout-5 .input-group {
+    border-top: 2px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee; }
+  .mailchimp-form.mailchimp-layout-5 .mailchimp-submit {
+    color: black; }
+.mailchimp-form.mailchimp-layout-6 .input-group {
+  border-bottom: 2px solid #eeeeee; }
+.mailchimp-form.mailchimp-layout-6 .mailchimp-email {
+  font-style: italic;
+  color: #999999; }
+.mailchimp-form.mailchimp-layout-6 .mailchimp-submit {
+  color: black; }
+.mailchimp-form.mailchimp-layout-7 .input-group {
+  border: 2px solid #FFFFFF;
+  padding: 0 28px; }
+.mailchimp-form.mailchimp-layout-7 .mailchimp-email {
+  font-style: italic;
+  color: #FFFFFF; }
+.mailchimp-form.mailchimp-layout-7 .mailchimp-submit {
+  color: #FFFFFF; }
 
 /*# sourceMappingURL=styles.css.map */

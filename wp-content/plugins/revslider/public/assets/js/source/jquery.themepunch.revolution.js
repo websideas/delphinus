@@ -1,6 +1,6 @@
 /**************************************************************************
  * jquery.themepunch.revolution.js - jQuery Plugin for Revolution Slider
- * @version: 5.2.5 (13.04.2016)
+ * @version: 5.2.5.1 (28.04.2016)
  * @requires jQuery v1.7 or later (tested on 1.9)
  * @author ThemePunch
 **************************************************************************/
@@ -53,7 +53,10 @@
 					panZoomDisableOnMobile:"off",
 					simplifyAll:"on",
 					nextSlideOnWindowFocus:"off",	
-					disableFocusListener:true						
+					disableFocusListener:true,
+					ignoreHeightChanges:"off",  // off, mobile, always
+					ignoreHeightChangesSize:0
+
 				},
 				
 				parallax : {
@@ -1634,7 +1637,20 @@ var initSlider = function (container,opt) {
 			if (jQuery('body').find(container)!=0) 				
 				contWidthManager(opt);							
 				
-				if (container.outerWidth(true)!=opt.width || container.is(":hidden") || (opt.sliderLayout=="fullscreen" && jQuery(window).height()!=opt.lastwindowheight)) {
+				var hchange = false;
+
+				if (opt.sliderLayout=="fullscreen") {
+					var jwh = jQuery(window).height();
+					if ((opt.fallbacks.ignoreHeightChanges=="mobile" && _ISM) || opt.fallbacks.ignoreHeightChanges=="always") {
+						opt.fallbacks.ignoreHeightChangesSize = opt.fallbacks.ignoreHeightChangesSize == undefined ? 0 : opt.fallbacks.ignoreHeightChangesSize;
+						hchange = (jwh!=opt.lastwindowheight) && (Math.abs(jwh-opt.lastwindowheight) > opt.fallbacks.ignoreHeightChangesSize)							
+					} else {
+						hchange = (jwh!=opt.lastwindowheight) 
+					}
+				}
+				
+	
+				if (container.outerWidth(true)!=opt.width || container.is(":hidden") || (hchange)) {
 						opt.lastwindowheight = jQuery(window).height();
 						containerResized(container,opt);
 				}
@@ -2031,10 +2047,12 @@ var progressImageLoad = function(opt) {
 						var img = new Image();
 						
 						img.onload = function() {											
-						 	imgLoaded(this,opt,"loaded");					
+						 	imgLoaded(this,opt,"loaded");
+						 	queue.error = false;				
 						};
 						img.onerror = function() {
 							imgLoaded(this,opt,"failed");					
+							queue.error = true;
 						};		
 						
 						img.src=queue.src;
@@ -2070,6 +2088,7 @@ var addToLoadQueue = function(src,opt,prio,type,staticlayer) {
 	if (!alreadyexist) {		
 			var loadobj = new Object();			
 			loadobj.src = src;
+			loadobj.starttoload = jQuery.now();
 			loadobj.type = type || "img";
 			loadobj.prio = prio;
 			loadobj.progress = "prepared";
@@ -2163,11 +2182,14 @@ var waitForCurrentImages = function(nextli,opt,callback) {
 
 
 		if (loadobj && loadobj.progress && loadobj.progress.match(/inprogress|inload|prepared/g)) 
-			if (jQuery.now()-element.data('start-to-load')<5000) 
+			if (!loadobj.error && jQuery.now()-element.data('start-to-load')<5000) 
 					waitforload = true;			
 			else {
 				loadobj.progress="failed";
-				console.error(src+"  Could not be loaded !");
+				if (!loadobj.reported_img) {
+					loadobj.reported_img = true;
+					console.warn(src+"  Could not be loaded !");
+				}
 			}
 		
 		// WAIT FOR VIDEO API'S					
@@ -2203,9 +2225,26 @@ var waitForCurrentImages = function(nextli,opt,callback) {
 		});		
 	}
 	
-	jQuery.each(opt.loadqueue,function(i,o) {		
-		if (o.static===true && (o.progress!="loaded" || o.progress==="failed"))
-			waitforload = true;			
+	jQuery.each(opt.loadqueue,function(i,o) {				
+		if (o.static===true && (o.progress!="loaded" || o.progress==="failed")) {
+			if (o.progress=="failed") {
+				if (!o.reported) {
+					o.reported = true;
+					console.warn("Static Image "+o.src+"  Could not be loaded in time. Error Exists:"+o.error);
+				}
+			}
+			else
+			if (!o.error && jQuery.now()-o.starttoload<5000) {
+				waitforload = true;			
+			}
+			else {
+				if (!o.reported) {
+					o.reported = true;
+					console.warn("Static Image "+o.src+"  Could not be loaded within 5s! Error Exists:"+o.error);
+				}
+			}
+			
+		}
 	});
 		
 	if (waitforload) 

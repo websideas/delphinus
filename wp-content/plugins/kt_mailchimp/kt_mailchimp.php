@@ -127,9 +127,9 @@ class KT_MailChimp
         }
 
         vc_map( array(
-            "name" => __( "KT Mailchimp", 'kt_mailchimp'),
+            "name" => __( "KT: Mailchimp", 'kt_mailchimp'),
             "base" => "kt_mailchimp",
-            "category" => __('by Theme', 'kt_mailchimp' ),
+            "category" => esc_html__('by Kite-Themes', 'kt_mailchimp' ),
             "description" => __( "Mailchimp", 'kt_mailchimp'),
             "wrapper_class" => "clearfix",
             "params" => array(
@@ -147,7 +147,11 @@ class KT_MailChimp
                     'value' => array(
                         __( 'Layout 1', 'kt_mailchimp' ) => '1',
                         __( 'Layout 2', 'kt_mailchimp' ) => '2',
-                        __( 'Layout 3', 'kt_mailchimp' ) => '3'
+                        __( 'Layout 3', 'kt_mailchimp' ) => '3',
+                        __( 'Layout 4', 'kt_mailchimp' ) => '4',
+                        __( 'Layout 5', 'kt_mailchimp' ) => '5',
+                        __( 'Layout 6', 'kt_mailchimp' ) => '6',
+                        __( 'Layout 7', 'kt_mailchimp' ) => '7',
                     ),
                     'description' => __( 'Select your layout', 'kt_mailchimp' )
                 ),
@@ -239,6 +243,7 @@ class KT_MailChimp
             $elementClass = array(
                 'base' => 'kt-mailchimp-wrapper ',
                 'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
+                'mailchimp-outer-'.$layout,
                 'extra' => $el_class,
             );
 
@@ -259,8 +264,8 @@ class KT_MailChimp
 
                 $output .= ($text_before) ? '<div class="mailchimp-before">'.$text_before.'</div>' : '';
 
-                $email = '<div class="mailchimp-input-email"><input name="email" class="mailchimp-email" type="text" placeholder="'.__('E-mail address*', 'kt_mailchimp').'"/></div>';
-                $button = '<div class="mailchimp-input-button"><button data-loading="'.esc_attr(__('Loading', 'kt_mailchimp')).'" data-text="'.esc_attr(__('Subscribe', 'kt_mailchimp')).'"  class="btn btn-default mailchimp-submit" type="submit">'.__('Subscribe', 'kt_mailchimp').'</button></div>';
+                $email = '<input name="email" class="mailchimp-email" type="text" placeholder="'.__('Enter your email *', 'kt_mailchimp').'"/>';
+                $button = '<button data-loading="'.esc_attr(__('Loading', 'kt_mailchimp')).'" data-text="'.esc_attr(__('Subscribe', 'kt_mailchimp')).'"  class="btn btn-default mailchimp-submit" type="submit">'.__('Subscribe', 'kt_mailchimp').'</button>';
 
                 if($disable_names != 'yes'){
                     $name .= '<div class="mailchimp-input-fname"><input name="firstname" class="mailchimp-firstname" type="text" placeholder="'.__('First Name', 'kt_mailchimp').'"/></div>';
@@ -268,9 +273,11 @@ class KT_MailChimp
                 }
 
                 if($layout == 2){
-                    $text_mailchimp = '%1$s %2$s %3$s';
+                    $text_mailchimp = '%1$s <div class="mailchimp-input-email">%2$s</div> <div class="mailchimp-input-button">%3$s</div>';
+                }elseif($layout == 1 || $layout == 3){
+                    $text_mailchimp = '%1$s <div class="mailchimp-email-button"><div class="mailchimp-input-email">%2$s</div> <div class="mailchimp-input-button">%3$s</div></div>';
                 }else{
-                    $text_mailchimp = '%1$s <div class="mailchimp-email-button">%2$s %3$s</div>';
+                    $text_mailchimp = '%1$s <div class="input-group">%2$s <div class="input-group-btn">%3$s</div></div>';
                 }
 
 

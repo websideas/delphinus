@@ -68,6 +68,7 @@ function kt_theme_setup() {
     if (function_exists( 'add_image_size' ) ) {
         add_image_size( 'kt_grid', 570, 380, true);
         add_image_size( 'kt_masonry', 570);
+        add_image_size( 'kt_square', 600, 600, true);
         add_image_size( 'kt_list', 700, 570, true);
         add_image_size( 'kt_classic', 1140, 600, true );
         add_image_size( 'kt_small', 170, 170, true );
@@ -100,7 +101,6 @@ endif;
 
 function kt_add_scripts() {
 
-    wp_enqueue_style( 'kt-wp-style', get_stylesheet_uri(), array('mediaelement', 'wp-mediaelement') );
     wp_enqueue_style( 'bootstrap', KT_THEME_LIBS . 'bootstrap/css/bootstrap.css', array());
     wp_enqueue_style( 'font-awesome', KT_THEME_LIBS . 'font-awesome/css/font-awesome.min.css', array());
     wp_enqueue_style( 'kt-delphinus-font', KT_THEME_LIBS . 'delphinus/style.css', array());
@@ -251,7 +251,7 @@ function kt_comments($comment, $args, $depth) {
 
         <li id="comment-<?php comment_ID(); ?>" <?php comment_class( '' ); ?>>
             <div class="comment-body">
-                <?php esc_html_e( 'Pingback:', '_tk' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( esc_html__( 'Edit', '_tk' ), '<span class="edit-link">', '</span>' ); ?>
+                <?php esc_html_e( 'Pingback:', 'delphinus' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( esc_html__( 'Edit', 'delphinus' ), '<span class="edit-link">', '</span>' ); ?>
             </div>
 
 	<?php else : ?>
@@ -440,7 +440,7 @@ if ( ! function_exists( 'kt_paging_nav' ) ) {
                 </div><!-- .nav-links -->
             </nav><!-- .navigation -->
         <?php }elseif($type == 'loadmore'){ ?>
-            <?php $more_link = get_next_posts_link( __( 'Load More', 'mountain' ) ); ?>
+            <?php $more_link = get_next_posts_link( __( 'Load More', 'delphinus' ) ); ?>
             <?php if(!empty($more_link)){ ?>
                 <nav class="navigation pagination-loadmore">
                     <?php echo get_next_posts_link( __( 'Load More', 'delphinus' ) ); ?>
@@ -666,9 +666,9 @@ if( ! function_exists( 'kt_share_box' ) ){
         $image = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'full');
 
         $html = '';
-        $share_arr = kt_option('social_share');
+        $share_arr = kt_option('social_share', array('facebook' => true,'twitter' => true,'google_plus' => true));
 
-        if(count($share_arr)){
+        if($share_arr){
             $i =0;
             foreach($share_arr as $key => $val){
                 if($val){

@@ -386,7 +386,7 @@ if (!function_exists('kt_get_archive_layout')) {
             $layout['pagination'] = kt_option('search_pagination', 'normal');
             $layout['readmore'] = kt_option('search_readmore', 'none');
         } else {
-            $layout['type'] = kt_option('archive_loop_style', 'gird');
+            $layout['type'] = kt_option('archive_loop_style', 'grid');
             $layout['columns'] = kt_option('archive_columns', 2);
             $layout['pagination'] = kt_option('archive_pagination', 'normal');
             $layout['readmore'] = kt_option('archive_readmore', 'none');

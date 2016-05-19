@@ -1780,21 +1780,21 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 				<div id="rs-set-style-on-devices">
 					<span id="rs-set-style-on-devices-button"></span>
 					<div id="rs-set-style-on-devices-dialog">
-						<label style="font-size:14px; color:#fff; margin-bottom:10px"><?php _e("Force Inherit Styles",'revslider')?></label>
+						<label style="font-size:14px; color:#fff; margin-bottom:10px"><?php _e("Force Inherit Styles",'revslider'); ?></label>
 						<div class="rs-set-style-on-device-row">
-							<label style="width: 100px">Color</label>
+							<label style="width: 100px"><?php _e("Color",'revslider'); ?></label>
 							<input type="checkbox" id="on_all_devices_color" name="on_all_devices_color" class="rs-set-device-chk tp-moderncheckbox"  />
 						</div>
 						<div class="rs-set-style-on-device-row">
-							<label style="width: 100px">Font Size</label>
+							<label style="width: 100px"><?php _e("Font Size",'revslider'); ?></label>
 							<input type="checkbox" id="on_all_devices_fontsize" name="on_all_devices_fontsize" class="rs-set-device-chk tp-moderncheckbox"  />
 						</div>
 						<div class="rs-set-style-on-device-row">
-							<label style="width: 100px">Line Height</label>
+							<label style="width: 100px"><?php _e("Line Height",'revslider'); ?></label>
 							<input type="checkbox" id="on_all_devices_lineheight" name="on_all_devices_lineheight" class="rs-set-device-chk tp-moderncheckbox"  />
 						</div>
 						<div class="rs-set-style-on-device-row">
-							<label style="width: 100px">Font Weight</label>
+							<label style="width: 100px"><?php _e("Font Weight",'revslider'); ?></label>
 							<input type="checkbox" id="on_all_devices_fontweight" name="on_all_devices_fontweight" class="rs-set-device-chk tp-moderncheckbox"  />
 						</div>
 					</div>
@@ -2990,10 +2990,7 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 			<span><?php _e("Jump To",'revslider'); ?></span>
 			<span class="rs-layer-toolbar-space"></span>
 			<select name="<# if(data['edit'] == false){ #>no_<# } #>jump_to_slide[]" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>rs-layer-input-field" style="width:150px" data-selectoption="{{ data['jump_to_slide'] }}">
-			</select>
-			<span><?php _e("Delay",'revslider'); ?></span>
-			<span class="rs-layer-toolbar-space"></span>
-			<input type="text" style="width:60px;" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>textbox-caption rs-layer-input-field" name="<# if(data['edit'] == false){ #>no_<# } #>layer_action_delay[]" value="{{ data['action_delay'] }}"> <?php _e('ms', 'revslider'); ?>
+			</select>		
 		</span>
 
 		<!-- SCROLL OFFSET -->
@@ -3015,10 +3012,9 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 			<span class="rs-layer-toolbar-space"></span>
 			<select name="<# if(data['edit'] == false){ #>no_<# } #>layer_target[]" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>rs-layer-input-field" style="width:100px;margin-right:30px;" data-selectoption="{{ data['layer_target'] }}">
 			</select>
-			<span><?php _e("Delay",'revslider'); ?></span>
-			<span class="rs-layer-toolbar-space"></span>
-			<input type="text" style="width:60px;" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>textbox-caption rs-layer-input-field" name="<# if(data['edit'] == false){ #>no_<# } #>layer_action_delay[]" value="{{ data['action_delay'] }}"> <?php _e('ms', 'revslider'); ?>
+			
 		</span>		
+
 
 		<span class="action-toggle_layer" style="display:none;">
 			<span class="rs-layer-toolbar-space"></span>
@@ -3037,7 +3033,7 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 			<input type="text" style="width:100px;" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>textbox-caption rs-layer-input-field"  name="<# if(data['edit'] == false){ #>no_<# } #>layer_toggleclass[]" value="{{ data['toggle_class'] }}">
 		</span>
 		
-		
+		<!-- Trigger States -->
 		<span class="action-triggerstates" style="display: none; white-space:nowrap">
 			<span class="rs-layer-toolbar-space"></span>
 			<span><?php _e("Animation Timing",'revslider'); ?></span>
@@ -3054,6 +3050,12 @@ $slider_addons = apply_filters('revslider_slide_addons', array(), $slide, $slide
 				<option value="reset"><?php _e("Reset Animation and Trigger States every loop",'revslider'); ?></option>
 				<option value="keep"><?php _e("Keep last selected State",'revslider'); ?></option>
 			</select>
+		</span>
+		<span class="action-delay-wrapper" style="display: none; white-space:nowrap">>
+			<span class="rs-layer-toolbar-space"  style="width:30px"></span>
+			<span><?php _e("Delay",'revslider'); ?></span>
+			<span class="rs-layer-toolbar-space"></span>
+			<input type="text" style="width:60px;margin-top:-2px" class="<# if(data['edit'] == false){ #>rs_disabled_field <# } #>textbox-caption rs-layer-input-field" name="<# if(data['edit'] == false){ #>no_<# } #>layer_action_delay[]" value="{{ data['action_delay'] }}"> <?php _e('ms', 'revslider'); ?>
 		</span>
 	</li>
 </script>

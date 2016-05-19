@@ -1,5 +1,5 @@
 /********************************************
- * REVOLUTION 5.2.5 EXTENSION - VIDEO FUNCTIONS
+ * REVOLUTION 5.2.5.1 EXTENSION - VIDEO FUNCTIONS
  * @version: 1.8 (05.04.2016)
  * @requires jquery.themepunch.revolution.js
  * @author ThemePunch
@@ -391,10 +391,10 @@ jQuery.extend(true,_R, {
 			var f = document.createElement("script"),
 				before = document.getElementsByTagName("script")[0],
 				loadit = true;
-			f.src = httpprefix+"://f.vimeocdn.com/js/froogaloop2.min.js"; /* Load Player API*/							
+			f.src = "https://secure-a.vimeocdn.com/js/froogaloop2.min.js"; /* Load Player API*/							
 
 			jQuery('head').find('*').each(function(){
-				if (jQuery(this).attr('src') == httpprefix+"://f.vimeocdn.com/js/froogaloop2.min.js")
+				if (jQuery(this).attr('src') == "https://secure-a.vimeocdn.com/js/froogaloop2.min.js")
 				   loadit = false;
 			});
 			if (loadit)

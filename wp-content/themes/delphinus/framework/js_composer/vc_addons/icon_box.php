@@ -10,6 +10,7 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
         $atts = shortcode_atts( array(
             'title' => __( 'Title', 'js_composer' ),
             'link' => '',
+            'skin' => '',
 
             'use_theme_fonts' => 'true',
             'font_container' => '',
@@ -43,6 +44,10 @@ class WPBakeryShortCode_Icon_Box extends WPBakeryShortCode_VC_Custom_heading {
             'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
             'layout' => 'layout-'.$icon_box_layout
         );
+
+        if($skin){
+            $elementClass['skin'] = 'skin-'.$skin;
+        }
 
         extract( $this->getAttributes( $atts ) );
         unset($font_container_data['values']['text_align']);
@@ -158,6 +163,7 @@ vc_map( array(
             "description" => esc_html__("", 'delphinus'),
             "holder" => "div",
         ),
+
         //Layout settings
         array(
             'type' => 'dropdown',
@@ -168,6 +174,17 @@ vc_map( array(
                 esc_html__( 'Icon on Top of Title - Center', 'delphinus' ) => '2'
             ),
             'description' => esc_html__( 'Select your layout.', 'delphinus' ),
+            "admin_label" => true,
+        ),
+        array(
+            'type' => 'dropdown',
+            'heading' => esc_html__( 'Skin icon box', 'delphinus' ),
+            'param_name' => 'skin',
+            'value' => array(
+                esc_html__( 'Default', 'delphinus' ) => '',
+                esc_html__( 'Light', 'delphinus' ) => 'light'
+            ),
+            'description' => esc_html__( 'Select your skin.', 'delphinus' ),
             "admin_label" => true,
         ),
         vc_map_add_css_animation(),
@@ -213,7 +230,7 @@ vc_map( array(
             'type' => 'dropdown',
             'heading' => esc_html__( 'Icon color', 'js_composer' ),
             'param_name' => 'color',
-            'value' => array_merge( array( esc_html__( 'Default', 'js_composer' ) => 'default' ),  array( esc_html__( 'Accent color', 'delphinus' ) => 'accent' ), getVcShared( 'colors' ), array( esc_html__( 'Custom color', 'js_composer' ) => 'custom' ) ),
+            'value' => array_merge( array( esc_html__( 'Default', 'js_composer' ) => 'default' ), getVcShared( 'colors' ), array( esc_html__( 'Custom color', 'js_composer' ) => 'custom' ) ),
             'description' => esc_html__( 'Select icon color.', 'js_composer' ),
             'param_holder_class' => 'vc_colored-dropdown',
             'group' => esc_html__( 'Icon', 'delphinus' ),

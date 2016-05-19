@@ -72,6 +72,61 @@ function kt_register_meta_boxes( $meta_boxes )
         ),
     );
 
+    /**
+     * For Employees
+     *
+     */
+
+    $meta_boxes[] = array(
+        'title'  => esc_html__('Employees Settings','delphinus'),
+        'pages'  => array( 'kt_employees' ),
+        'fields' => array(
+
+            array(
+                'name' => esc_html__( 'Employee Position', 'delphinus' ),
+                'id' => $prefix . 'employee_position',
+                'desc' => esc_html__( "Please enter team member's Position in the company.", 'delphinus' ),
+                'type'  => 'text',
+            ),
+            array(
+                'name' => esc_html__( "Email Address", 'delphinus' ),
+                'id' => $prefix . 'employee_email',
+                'desc' => esc_html__( "Please enter team member's email address.", 'delphinus' ),
+                'type'  => 'text',
+            ),
+            array(
+                'name' => esc_html__( "Facebook", 'delphinus' ),
+                'id' => $prefix . 'employee_facebook',
+                'desc' => esc_html__( "Please enter full URL of this social network(include http://).", 'delphinus' ),
+                'type'  => 'text',
+            ),
+            array(
+                'name' => esc_html__( "Twitter", 'delphinus' ),
+                'id' => $prefix . 'employee_twitter',
+                'desc' => esc_html__( "Please enter full URL of this social network(include http://).", 'delphinus' ),
+                'type'  => 'text',
+            ),
+            array(
+                'name' => esc_html__( "Google Plus", 'delphinus' ),
+                'id' => $prefix . 'employee_googleplus',
+                'desc' => esc_html__( "Please enter full URL of this social network(include http://).", 'delphinus' ),
+                'type'  => 'text',
+            ),
+            array(
+                'name' => esc_html__( "Linked In", 'delphinus' ),
+                'id' => $prefix . 'employee_linkedin',
+                'desc' => esc_html__( "Please enter full URL of this social network(include http://).", 'delphinus' ),
+                'type'  => 'text',
+            ),
+            array(
+                'name' => esc_html__( "Instagram", 'delphinus' ),
+                'id' => $prefix . 'employee_instagram',
+                'desc' => esc_html__( "Please enter full URL of this social network(include http://).", 'delphinus' ),
+                'type'  => 'text',
+            )
+        ),
+    );
+
 
 
     $sidebars = array();

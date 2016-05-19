@@ -6,6 +6,7 @@ class WPBakeryShortCode_Googlemap extends WPBakeryShortCode {
     protected function content($atts, $content = null) {
         extract( shortcode_atts( array(
             'location' => '',
+            'center' => '',
             'image' => '',
             'zoom' => '17',
             'height' => '300px',
@@ -34,12 +35,13 @@ class WPBakeryShortCode_Googlemap extends WPBakeryShortCode {
             'size' => 'wrapper-googlemap',
         );
         $elementClass = preg_replace( array( '/\s+/', '/^\s|\s$/' ), array( ' ', '' ), implode( ' ', $elementClass ) );
-        $output = '';
-        $output .= '<div class=" '.$elementClass.'">';
-            $output .= '<div class="googlemap" data-style="'.esc_attr($stype).'" data-iconmap="'.esc_attr($img_thumb).'" data-type="'.esc_attr($type).'" data-scrollwheel="'.esc_attr($scrollwheel).'" data-location="'.esc_attr($location).'" data-zoom="'.esc_attr($zoom).'" style="height:'.$height.'"></div>';
-        $output .= '</div>';
+
+        $location = explode("\n", strip_tags(trim($location)));
+        $location = implode("||", $location);
+
+        $output = '<div class="googlemap" data-style="'.esc_attr($stype).'" data-center="'.esc_attr($center).'" data-iconmap="'.esc_attr($img_thumb).'" data-type="'.esc_attr($type).'" data-scrollwheel="'.esc_attr($scrollwheel).'" data-location="'.esc_attr($location).'" data-zoom="'.esc_attr($zoom).'" style="height:'.$height.'"></div>';
         
-        return $output;
+        return '<div class=" '.$elementClass.'">'.$output.'</div>';
     }    
 }
 
@@ -57,7 +59,14 @@ vc_map( array(
           "description" => esc_html__("Enter height of map,units :'px',Leave empty to use '300px'.", 'delphinus')
         ),
         array(
-          "type" => "textfield",
+            "type" => "textfield",
+            "heading" => esc_html__("Center Map", 'delphinus'),
+            "param_name" => "center",
+            "admin_label" => true,
+            "description" => esc_html__("Enter Center Map", 'delphinus')
+        ),
+        array(
+          "type" => "textarea",
           "heading" => esc_html__("Location", 'delphinus'),
           "param_name" => "location",
           "admin_label" => true,
@@ -92,7 +101,8 @@ vc_map( array(
                 esc_html__('Elevation', 'delphinus') => '5',
                 esc_html__('Mostly Grayscale', 'delphinus') => '6',
                 esc_html__('Red Hat Antwerp', 'delphinus') => '7',
-                esc_html__('Shades of Grey', 'delphinus') => '8',
+                esc_html__('SB Greyscale Light', 'delphinus') => '8',
+                esc_html__('Light Gray', 'delphinus') => '9',
             ),
             "admin_label" => true,
             "description" => esc_html__('','delphinus'),

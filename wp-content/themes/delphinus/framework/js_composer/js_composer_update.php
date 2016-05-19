@@ -11,13 +11,21 @@ function kt_add_option_to_vc() {
     $image_styles = WPBMap::getParam( 'vc_single_image', 'style' );
     $image_styles['value'][esc_html__( 'Border box inner 1', 'delphinus' )] = 'border-box-1';
     $image_styles['value'][esc_html__( 'Border box inner 2', 'delphinus' )] = 'border-box-2';
-
     $image_styles['value'][esc_html__( 'Zoom In', 'delphinus' )] = 'zoomin';
     $image_styles['value'][esc_html__( 'Zoom Out', 'delphinus' )] = 'zoomout';
     $image_styles['value'][esc_html__( 'Slide', 'delphinus' )] = 'slide';
     $image_styles['value'][esc_html__( 'Shine', 'delphinus' )] = 'shine';
 
-    vc_update_shortcode_param( 'vc_single_image', $image_styles );
+
+    $accordion_styles = WPBMap::getParam( 'vc_tta_accordion', 'style' );
+    $accordion_styles['value'][esc_html__( 'Flat Shadow', 'delphinus' )] = 'flat shadow';
+    vc_update_shortcode_param( 'vc_tta_accordion', $accordion_styles );
+
+    $tab_styles = WPBMap::getParam( 'vc_tta_tabs', 'style' );
+    $tab_styles['value'][esc_html__( 'Flat Shadow', 'delphinus' )] = 'flat shadow';
+    vc_update_shortcode_param( 'vc_tta_tabs', $tab_styles );
+
+
 
 }
 

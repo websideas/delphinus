@@ -198,11 +198,11 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id' => 'notfound_page_type',
                         'type' => 'select',
-                        'title' => esc_html__('404 Page', 'wingman'),
+                        'title' => esc_html__('404 Page', 'delphinus'),
                         'desc' => '',
                         'options' => array(
-                            'default' => esc_html__( 'Default', 'wingman' ) ,
-                            'home' => esc_html__( 'Redirect Home', 'wingman' ) ,
+                            'default' => esc_html__( 'Default', 'delphinus' ) ,
+                            'home' => esc_html__( 'Redirect Home', 'delphinus' ) ,
                         ),
                         'default' => 'default',
                     ),
@@ -460,7 +460,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             'socials' => esc_html__('Socials', 'delphinus' ),
                             'copyright' => esc_html__('Copyright', 'delphinus' ),
                         ),
-                        'default'  => 'navigation'
+                        'default'  => ''
                     ),
                     array(
                         'id'       => 'footer_copyright_right',
@@ -484,7 +484,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'id' => 'footer_copyright_text',
                         'type' => 'editor',
                         'title' => esc_html__('Footer Copyright Text', 'delphinus'),
-                        'default' => '&copy; 2015 Delphinus'
+                        'default' => '&copy; 2016 Delphinus'
                     ),
                 )
             );
@@ -763,7 +763,7 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'			=> 'typography',
-                'title'			=> esc_html__( 'Typography', 'wingman' ),
+                'title'			=> esc_html__( 'Typography', 'delphinus' ),
                 'desc'			=> '',
                 'icon'	=> 'fa fa-camera-retro',
             );
@@ -773,14 +773,14 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'			=> 'typography_general',
-                'title'			=> esc_html__( 'General', 'wingman' ),
+                'title'			=> esc_html__( 'General', 'delphinus' ),
                 'subsection' => true,
                 'fields'		=> array(
                     array(
                         'id'       => 'typography_body',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Body Font', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the body font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Body Font', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the body font properties.', 'delphinus' ),
                         'text-align' => false,
                         'letter-spacing'  => true,
                         'output'      => array(
@@ -793,8 +793,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_pragraph',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Pragraph', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the pragraph font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Pragraph', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the pragraph font properties.', 'delphinus' ),
                         'output'   => array( 'p' ),
                         'default'  => array( ),
                         'color'    => false,
@@ -804,8 +804,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_blockquote',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Blockquote', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the blockquote font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Blockquote', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the blockquote font properties.', 'delphinus' ),
                         'output'   => array( 'blockquote' ),
                         'default'  => array( ),
                         'color'    => false,
@@ -815,8 +815,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_button',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Button', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the button font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Button', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the button font properties.', 'delphinus' ),
                         'output'   => array(
                             '.button',
                             '.wpcf7-submit',
@@ -846,14 +846,14 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_heading',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Heading settings', 'wingman' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Heading settings', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'       => 'typography_heading1',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading 1', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the heading 1 font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Heading 1', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the heading 1 font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-transform' => true,
                         'text-align' => false,
@@ -867,8 +867,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_heading2',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading 2', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the heading 2 font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Heading 2', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the heading 2 font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'output'      => array( 'h2', '.h2' ),
                         'text-transform' => true,
@@ -881,8 +881,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_heading3',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading 3', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the heading 3 font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Heading 3', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the heading 3 font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'output'      => array( 'h3', '.h3' ),
                         'text-transform' => true,
@@ -895,8 +895,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_heading4',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading 4', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the heading 4 font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Heading 4', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the heading 4 font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'output'      => array( 'h4', '.h4' ),
                         'text-transform' => true,
@@ -909,8 +909,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_heading5',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading 5', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the heading 5 font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Heading 5', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the heading 5 font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'output'      => array( 'h5', '.h5' ),
                         'text-transform' => true,
@@ -923,8 +923,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_heading6',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading 6', 'wingman' ),
-                        'subtitle' => esc_html__( 'Specify the heading 6 font properties.', 'wingman' ),
+                        'title'    => esc_html__( 'Heading 6', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the heading 6 font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'output'      => array( 'h6', '.h6' ),
                         'text-transform' => true,

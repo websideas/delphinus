@@ -4234,6 +4234,21 @@ if (isset($linksEditSlides)) {
 									<a original-title="" href="javascript:void(0)" class="button-image-select-background-img button-primary revblue"><?php _e('Set', 'revslider'); ?></a>
 									<div class="clear"></div>
 								</div>
+								
+								<div class="rs-show-on-auto">
+									<div id="label_ignore_height_changes" class="label" origtitle="<?php _e("Prevents jumping of background image for Android devices for example", 'revslider');?>"><?php _e("Ignore Height Changes", 'revslider');?> </div>
+									<select id="ignore_height_changes" name="ignore_height_changes" class="withlabel">
+										<option value="off" <?php selected(RevSliderFunctions::getVal($arrFieldsParams, "ignore_height_changes", "off"), "off");?>><?php _e("Off", 'revslider');?></option>
+										<option value="mobile" <?php selected(RevSliderFunctions::getVal($arrFieldsParams, "ignore_height_changes", "off"), "mobile");?>><?php _e("On Mobile", 'revslider');?></option>
+										<option value="always" <?php selected(RevSliderFunctions::getVal($arrFieldsParams, "ignore_height_changes", "off"), "always");?>><?php _e("Always", 'revslider');?></option>
+									</select>
+									<div class="clear"></div>
+									
+									<span class="label" id="label_ignore_height_changes_px" origtitle="<?php _e("Ignores the Ignore Height Changes feature under a certain amount of pixels.", 'revslider');?>"><?php _e("Ignore Height Changes Under", 'revslider');?></span>
+									<input type="text" class="text-sidebar withlabel" id="ignore_height_changes_px" name="ignore_height_changes_px" value="<?php echo RevSliderFunctions::getVal($arrFieldsParams, 'ignore_height_changes_px', '0');?>">
+									<span><?php _e("px", 'revslider');?></span>
+									<div class="clear"></div>
+								</div>
 							</div>
 							<div id="problem-troubleshooting" style="display:none;">
 								<div id="label_jquery_noconflict" class="label" origtitle="<?php _e("Turns on / off jquery noconflict mode. Try to enable this option if javascript conflicts exist on the page.", 'revslider');?>"><?php _e("JQuery No Conflict Mode", 'revslider');?> </div>

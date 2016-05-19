@@ -16,8 +16,8 @@ vc_add_params("vc_custom_heading", array(
     )
 ));
 
-vc_remove_element( 'vc_separator' );
-vc_remove_element( 'vc_text_separator' );
+//vc_remove_element( 'vc_separator' );
+//vc_remove_element( 'vc_text_separator' );
 vc_remove_element( 'vc_message' );
 vc_remove_element( 'vc_toggle' );
 vc_remove_element( 'vc_gallery' );
@@ -110,7 +110,9 @@ $composer_addons = array(
     'flip_box.php',
     'googlemap.php',
     'socials.php',
-    'contact-form7.php'
+    'contact-form7.php',
+    'message.php',
+    'employees.php',
 );
 
 if(kt_is_wc()){

@@ -8,7 +8,7 @@ if ( !defined('ABSPATH')) exit;
 add_filter( 'kt_import_demo', 'kt_import_demo_delphinus' );
 function kt_import_demo_delphinus( $demos ){
     $demos['demo1'] = array(
-        'title' => 'Classic',
+        'title' => 'Main',
         'previewlink' => 'http://delphinus.kitethemes.com/',
         'xml_count' => 1,
         'status' => sprintf(
@@ -16,6 +16,54 @@ function kt_import_demo_delphinus( $demos ){
             'demo-main',
             __('Main', 'delphinus')
         )
+    );
+
+    $demos['demo2'] = array(
+        'title' => 'Home',
+        'previewlink' => 'http://delphinus.kitethemes.com/home2',
+        'xml_count' => 1
+    );
+
+    $demos['demo3'] = array(
+        'title' => 'Home3',
+        'previewlink' => 'http://delphinus.kitethemes.com/home3',
+        'xml_count' => 1
+    );
+
+    $demos['demo4'] = array(
+        'title' => 'Home4',
+        'previewlink' => 'http://delphinus.kitethemes.com/home4',
+        'xml_count' => 1
+    );
+
+    $demos['demo5'] = array(
+        'title' => 'Home5',
+        'previewlink' => 'http://delphinus.kitethemes.com/home5',
+        'xml_count' => 1
+    );
+
+    $demos['demo6'] = array(
+        'title' => 'Home6',
+        'previewlink' => 'http://delphinus.kitethemes.com/home6',
+        'xml_count' => 1
+    );
+
+    $demos['demo7'] = array(
+        'title' => 'Home7',
+        'previewlink' => 'http://delphinus.kitethemes.com/home7',
+        'xml_count' => 1
+    );
+
+    $demos['demo8'] = array(
+        'title' => 'Home8',
+        'previewlink' => 'http://delphinus.kitethemes.com/home8',
+        'xml_count' => 1
+    );
+
+    $demos['demo9'] = array(
+        'title' => 'Home9',
+        'previewlink' => 'http://delphinus.kitethemes.com/home9',
+        'xml_count' => 1
     );
 
     return $demos;

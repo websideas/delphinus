@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <?php do_action( 'woocommerce_before_mini_cart' ); ?>
 <?php if ( ! WC()->cart->is_empty() ) { ?>
     <p class="cart-desc">
-        <?php echo sprintf( _n( 'You have <span>%d item</span> in your shopping bag', 'You have <span>%d item(s)</span> in your shopping bag', WC()->cart->get_cart_contents_count(), 'storefront' ), WC()->cart->get_cart_contents_count() );?>
+        <?php echo sprintf( _n( 'You have <span>%d item</span> in your shopping bag', 'You have <span>%d item(s)</span> in your shopping bag', WC()->cart->get_cart_contents_count(), 'delphinus' ), WC()->cart->get_cart_contents_count() );?>
     </p>
 <?php }else{ ?>
     <p class="cart-desc empty"><?php _e( 'No products in the cart.', 'woocommerce' ); ?></p>

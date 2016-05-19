@@ -70,7 +70,6 @@
 
 								if($rev_addon_validated){
 							?>
-
 									<div class="rs-addon-not-activated rs-dash-title-button rs-status-orange" <?php echo $rs_addon_not_activated; ?> data-plugin="<?php echo $addon->slug.'/'.$addon->slug.'.php';?>" data-alternative="<i class='icon-no-problem-found'></i>Activate"><i class="icon-update-refresh"></i>Not Active</div>
 									<div class="rs-addon-activated rs-dash-title-button rs-status-green" <?php echo $rs_addon_activated; ?> data-plugin="<?php echo $addon->slug.'/'.$addon->slug.'.php';?>" data-alternative="<i class='icon-update-refresh'></i>Deactivate"><i class="icon-no-problem-found"></i>Active</div>
 									<div class="rs-addon-not-installed rs-dash-title-button rs-status-red" <?php echo $rs_addon_not_installed; ?> data-alternative="<i class='icon-update-refresh'></i>Install" data-plugin="<?php echo $addon->slug;?>"><i class="icon-not-registered"></i>Not Installed</div>
@@ -132,7 +131,8 @@
 									<?php 
 										}
 									} ?>
-								<?php if(!empty($addon->button) && !empty($rev_addon_code) && $rev_addon_validated && !empty($rev_addon_version) ){ 
+									
+								<?php if(!empty($addon->button) && $rev_addon_validated && !empty($rev_addon_version) ){  // && !empty($rev_addon_code)
 										if($rs_addon_activated=='style="display:block"'){
 								?>		
 											<span <?php echo $rs_addon_activated=='style="display:none"' ? $rs_addon_activated : ''; ?> href="javascript:void(0)" class="rs-dash-button rs-dash-action-button rs-dash-margin-left-10" id="rs-dash-addons-slide-out-trigger_<?php echo $addon->slug; ?>"><?php echo $addon->button; ?></span>				

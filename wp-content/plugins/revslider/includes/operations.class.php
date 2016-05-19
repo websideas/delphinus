@@ -900,7 +900,7 @@ class RevSliderOperations extends RevSliderElementsBase{
 			$c = update_site_option('revslider-static-css', $content);
 		}else{
 			$c = get_option('revslider-static-css', '');
-			$c = update_option('revslider-static-css', $content);
+			$c = RevSliderFunctionsWP::update_option('revslider-static-css', $content, 'off');
 		}
 
 		return $content;
@@ -6705,7 +6705,7 @@ $presets[] = array (
 								'values' => $data['values']
 							);
 		
-		update_option('revslider_presets', $customer_presets);
+		RevSliderFunctionsWP::update_option('revslider_presets', $customer_presets, 'off');
 		
 		return true;
 	}
@@ -6729,7 +6729,7 @@ $presets[] = array (
 			}
 		}
 		
-		update_option('revslider_presets', $customer_presets);
+		RevSliderFunctionsWP::update_option('revslider_presets', $customer_presets, 'off');
 		
 		return true;
 	}
@@ -6753,7 +6753,7 @@ $presets[] = array (
 			}
 		}
 		
-		update_option('revslider_presets', $customer_presets);
+		RevSliderFunctionsWP::update_option('revslider_presets', $customer_presets, 'off');
 		
 		return true;
 	}

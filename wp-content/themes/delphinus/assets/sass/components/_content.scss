@@ -217,6 +217,7 @@
   background: $gray-bg;
   margin-bottom: 85px;
   padding: 25px 25px 15px;
+  @include clearfix();
   .author-avatar {
     float: left;
     margin-right: 25px;

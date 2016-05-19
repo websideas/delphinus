@@ -163,6 +163,7 @@
     margin-left: 0; } }
 /* 10. Styles for devices(<=500px ) */
 @media (max-width: 500px) {
+  .employees-content,
   .blog-post-wrap {
     width: 100%; }
 

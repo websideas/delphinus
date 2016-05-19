@@ -156,7 +156,7 @@ class RevSliderTemplate {
 					$templates = json_decode($response, true);
 					
 					if(is_array($templates)) {
-						update_option('rs-templates-new', $templates);
+						RevSliderFunctionsWP::update_option('rs-templates-new', $templates, false);
 					}
 				}
 			}
@@ -226,8 +226,8 @@ class RevSliderTemplate {
 				}
 			}
 			
-			update_option('rs-templates', $cur);
-			update_option('rs-templates-new', false);
+			RevSliderFunctionsWP::update_option('rs-templates', $cur, false);
+			RevSliderFunctionsWP::update_option('rs-templates-new', false, false);
 			
 			$this->_update_images();
 		}
@@ -250,7 +250,7 @@ class RevSliderTemplate {
 			}
 		}
 		
-		update_option('rs-templates', $cur);
+		RevSliderFunctionsWP::update_option('rs-templates', $cur, false);
 		
 	}
 	
@@ -350,7 +350,7 @@ class RevSliderTemplate {
 			//set value that the server cant be contacted
 		}
 		
-		update_option('rs-templates', $templates); //remove the push_image
+		RevSliderFunctionsWP::update_option('rs-templates', $templates, false); //remove the push_image
 	}
 	
 	
