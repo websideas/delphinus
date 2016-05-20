@@ -657,7 +657,6 @@
                     'color' => '#7e33dd',
                     'alpha' => '.8'
                 ),
-                //'output'   => array( 'body' ),
                 'mode'     => 'background',
                 //'validate' => 'colorrgba',
             ),

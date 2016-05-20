@@ -124,7 +124,7 @@
                             }, {
                                 text: 'Custom List',
                                 onclick: function() {
-                                    editor.insertContent('[kt_custom_list style="48" icon_color="#00c8d7" margin_bottom="30" align="none"]<ul><li>List Item</li><li>list Item</li></ul>[/kt_custom_list]');
+                                    editor.insertContent('[kt_custom_list style="48" icon_color="#00c8d7"]<ul><li>List Item</li><li>list Item</li></ul>[/kt_custom_list]');
                                 }
                             }, {
                                 text: 'Message Box',

@@ -545,6 +545,16 @@ function kt_header_add_class($classes, $header_layout, $header_position){
 }
 
 
+add_filter('kt_header_content_class', 'kt_header_content_class', 10, 2);
+function kt_header_content_class($classes, $header_layout){
+
+    if($header_shadow = kt_option( 'header_shadow', true )){
+        $classes .= ' header-shadow';
+    }
+    return $classes;
+}
+
+
 
 
 

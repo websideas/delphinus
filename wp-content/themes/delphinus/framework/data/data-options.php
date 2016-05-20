@@ -63,7 +63,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                 // Set it you want google fonts to update weekly. A google_api_key value is required.
                 'google_update_weekly' => false,
                 // Must be defined to add google fonts to the typography module
-                'async_typography' => true,
+                'async_typography' => false,
                 // Use a asynchronous font on the front end or font string
                 //'disable_google_fonts_link' => true,                    // Disable this in case you want to create your own google fonts loader
                 'admin_bar' => true,
@@ -163,7 +163,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                 'title'  => esc_html__( 'General', 'delphinus' ),
                 'subsection' => true,
                 'fields' => array(
-                    array(
+                    /*array(
                         'id'       => 'layout',
                         'type'     => 'select',
                         'title'    => esc_html__( 'Site boxed mod(?)', 'delphinus' ),
@@ -174,7 +174,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         ),
                         'default'  => 'full',
                         'clear' => false
-                    ),
+                    ),*/
 
                     array(
                         'id' => 'use_page_loader',
@@ -500,6 +500,202 @@ if ( ! class_exists( 'KT_config' ) ) {
                 'icon'	=> 'fa fa-pencil',
             );
 
+            /**
+             *	Styling Logo
+             **/
+            $this->sections[] = array(
+                'id'			=> 'styling-logo',
+                'title'			=> esc_html__( 'Logo', 'wingman' ),
+                'subsection' => true,
+                'fields'		=> array(
+
+                    array(
+                        'id'             => 'logo_width',
+                        'type'           => 'dimensions',
+                        'units_extended' => 'true',
+                        'title'          => esc_html__( 'Logo width', 'wingman' ),
+                        'height'         => false,
+                        'default'        => array( 'width'  => 170, 'units'   => 'px' ),
+                        'output'   => array( '.branding.branding-default img' ),
+                    ),
+
+                    array(
+                        'id'       => 'logo_margin_spacing',
+                        'type'     => 'spacing',
+                        'mode'     => 'margin',
+                        'output'   => array( '.branding.branding-default' ),
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Logo margin spacing Option', 'wingman' ),
+                        'default'  => array(
+                            'margin-top'    => '36px',
+                            'margin-right'  => '0',
+                            'margin-bottom' => '36px',
+                            'margin-left'   => '0'
+                        )
+                    ),
+
+                    array(
+                        'id'   => 'divide_id',
+                        'type' => 'divide'
+                    ),
+                    array(
+                        'id'             => 'logo_mobile_width',
+                        'type'           => 'dimensions',
+                        'units_extended' => 'true',
+                        'title'          => esc_html__( 'Logo mobile width', 'wingman' ),
+                        'height'         => false,
+                        'default'        => array( 'width'  => 170, 'units'   => 'px' ),
+                        'output'   => array( '.branding.branding-mobile img' ),
+                    ),
+                    array(
+                        'id'       => 'logo_mobile_margin_spacing',
+                        'type'     => 'spacing',
+                        'mode'     => 'margin',
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Logo mobile margin spacing Option', 'wingman' ),
+                        'default'  => array(
+                            'margin-top'    => '20px',
+                            'margin-right'  => '0px',
+                            'margin-bottom' => '20px',
+                            'margin-left'   => '0px'
+                        ),
+                        'output'   => array( '.branding.branding-mobile' ),
+                    ),
+
+                )
+            );
+
+
+            /**
+             *	Styling Header
+             **/
+            $this->sections[] = array(
+				'id'			=> 'styling_header',
+				'title'			=> esc_html__( 'Header', 'wingman' ),
+				'subsection' => true,
+                'fields'		=> array(
+                    array(
+                        'id'       => 'header_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Header background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Header background with image, color, etc.', 'wingman' ),
+                        'default'   => '',
+                        'output'      => array( '.header-content' ),
+                    )
+                )
+            );
+
+            /**
+             *	Styling Header Toolbar
+             **/
+            $this->sections[] = array(
+                'id'			=> 'styling_header_toolbar',
+                'title'			=> esc_html__( 'Header Toolbar', 'wingman' ),
+                'subsection' => true,
+                'fields'		=> array(
+
+
+                    array(
+                        'id'       => 'header_toolbar_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Header Toolbar settings', 'delphinus' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Header Toolbar background', 'wingman' ),
+                        'subtitle' => esc_html__( 'Header Toolbar background with image, color, etc.', 'wingman' ),
+                        'default'   => '',
+                        'output'      => array( '.topbar' ),
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_default_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Header Toolbar Default', 'delphinus' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_default_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.top-navigation > li > a'
+                        ),
+                        'title'    => esc_html__( 'Default: Top Level Color', 'adroit' ),
+                        'default'  => '#999999',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_default_active_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.top-navigation > li:hover > a',
+                            '.top-navigation > li > a:hover',
+                            '.top-navigation > li > a:focus'
+                        ),
+                        'title'    => esc_html__( 'Default: Top Level Hover Color', 'adroit' ),
+                        'default'  => '#000000',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_border_color',
+                        'type'     => 'color',
+                        'title'    => esc_html__( 'Default: Border Color', 'adroit' ),
+                        'default'  => '#ebebeb',
+                        'transparent' => true
+                    ),
+
+                    array(
+                        'id'       => 'header_toolbar_light_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Header Toolbar Light', 'delphinus' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_light_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.header-transparent.header-light .top-navigation > li > a'
+                        ),
+                        'title'    => esc_html__( 'Light: Top Level Color', 'adroit' ),
+                        'default'  => '#FFFFFF',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_light_active_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.header-transparent.header-light .top-navigation > li:hover > a',
+                            '.header-transparent.header-light .top-navigation > li > a:hover',
+                            '.header-transparent.header-light .top-navigation > li > a:focus'
+                        ),
+                        'title'    => esc_html__( 'Light: Top Level Hover Color', 'adroit' ),
+                        'default'  => '#FFFFFF',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'header_toolbar_light_border_color',
+                        'type'     => 'color_rgba',
+                        'title'    => __( 'Light: Border Color', 'delphinus' ),
+                        'subtitle' => __( 'Gives you the RGBA color.', 'delphinus' ),
+                        'default'  => array(
+                            'color' => '#f6f6f6',
+                            'alpha' => '.2'
+                        ),
+                        'mode'     => 'background',
+                    ),
+                    array(
+                        'id'       => 'mega_menu_spacing',
+                        'type'     => 'raw',
+                        'content'  => '<div style="height:150px"></div>',
+                        'full_width' => true
+                    ),
+
+                )
+            );
+
 
             /**
              *	Styling Footer
@@ -682,7 +878,9 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'type'     => 'background',
                         'title'    => esc_html__( 'Footer Background', 'delphinus' ),
                         'subtitle' => esc_html__( 'Footer Background with image, color, etc.', 'delphinus' ),
-                        'default'   => array( ),
+                        'default'   => array(
+                            'background-color' => '#f6f6f6'
+                        ),
                         'output'      => array( '#footer-copyright' ),
                     ),
                     array(
@@ -757,6 +955,418 @@ if ( ! class_exists( 'KT_config' ) ) {
                     ),
                 )
             );
+
+            /**
+             *  Main Navigation
+             **/
+            $this->sections[] = array(
+                'id'            => 'styling_navigation',
+                'title'         => esc_html__( 'Main Navigation', 'adroit' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'styling_navigation_general',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'General', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'             => 'navigation_height',
+                        'type'           => 'dimensions',
+                        'units'          => 'px',
+                        'units_extended' => 'true',
+                        'title'          => esc_html__( 'Main Navigation Height', 'adroit' ),
+                        'subtitle'          => esc_html__( 'Change height of main navigation', 'adroit' ),
+                        'width'         => false,
+                        'default'        => array(
+                            'height'  => '102',
+                            'units'  => 'px'
+                        )
+                    ),
+
+                    array(
+                        'id'       => 'navigation_box_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'MegaMenu & Dropdown Box background', 'adroit' ),
+                        'default'   => array(
+                            'background-color'      => '#FFFFFF',
+                        ),
+                        'output'      => array(
+                            '#nav #main-nav-wc > li ul.sub-menu-dropdown',
+                            '#nav #main-nav-wc > li .navigation-submenu',
+                            '#nav #main-navigation > li ul.sub-menu-dropdown',
+                            '#nav #main-navigation > li .kt-megamenu-wrapper',
+                            '#nav #main-navigation > li .navigation-submenu'
+                        ),
+                        'transparent'           => false,
+                    ),
+                    array(
+                        'id'       => 'styling_navigation_general',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Top Level', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'            => 'navigation_space',
+                        'type'          => 'slider',
+                        'title'         => esc_html__( 'Top Level space', 'adroit' ),
+                        'default'       => 20,
+                        'min'           => 0,
+                        'step'          => 1,
+                        'max'           => 50,
+                        'resolution'    => 1,
+                        'display_value' => 'text',
+                        'subtitle' => esc_html__( 'Margin left between top level.', 'adroit' ),
+                    ),
+                    array(
+                        'id'       => 'navigation_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-nav-wc > li > a',
+                            '#nav #main-navigation > li > a',
+                            '#nav #main-nav-socials > li > a'
+                        ),
+                        'title'    => esc_html__( 'Dark: Top Level Color', 'adroit' ),
+                        'default'  => '#999999',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'navigation_color_hover',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-nav-wc > li.current-menu-item > a',
+                            '#nav #main-nav-wc > li > a:hover',
+                            '#nav #main-nav-wc > li > a:focus',
+                            '#nav #main-navigation > li.current-menu-item > a',
+                            '#nav #main-navigation > li > a:hover',
+                            '#nav #main-navigation > li > a:focus',
+                            '#nav #main-nav-socials > li > a:hover',
+                            '#nav #main-nav-socials > li > a:focus',
+                        ),
+                        'title'    => esc_html__( 'Dark: Top Level hover Color', 'adroit' ),
+                        'default'  => '#000000',
+                        'transparent' => false
+                    ),
+
+
+                    array(
+                        'id'       => 'navigation_color_light',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.header-transparent.header-light #nav #main-nav-wc > li > a',
+                            '.header-transparent.header-light #nav #main-nav-socials > li > a',
+                            '.header-transparent.header-light #nav #main-navigation > li > a',
+                        ),
+                        'title'    => esc_html__( 'Light: Top Level Color', 'adroit' ),
+                        'default'  => '#FFFFFF',
+                        'transparent' => false
+                    ),
+
+                    array(
+                        'id'       => 'navigation_color_hover_light',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.header-transparent.header-light #nav #main-nav-wc > li.current-menu-item > a',
+                            '.header-transparent.header-light #nav #main-nav-wc > li > a:hover',
+                            '.header-transparent.header-light #nav #main-nav-wc > li > a:focus',
+                            '.header-transparent.header-light #nav #main-navigation > li.current-menu-item > a',
+                            '.header-transparent.header-light #nav #main-navigation > li > a:hover',
+                            '.header-transparent.header-light #nav #main-navigation > li > a:focus',
+                        ),
+                        'title'    => esc_html__( 'Light: Top Level hover Color', 'adroit' ),
+                        'default'  => '#FFFFFF',
+                        'transparent' => false
+                    ),
+
+
+                    array(
+                        'id'       => 'styling_navigation_dropdown',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Drop down', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'             => 'navigation_dropdown',
+                        'type'           => 'dimensions',
+                        'units'          => 'px',
+                        'units_extended' => 'true',
+                        'title'          => esc_html__( 'Dropdown width', 'adroit' ),
+                        'subtitle'       => esc_html__( 'Change width of Dropdown', 'adroit' ),
+                        'height'         => false,
+                        'default'        => array( 'width'  => 308, 'units' => 'px' ),
+                        'output'         => array( '#nav #main-navigation > li ul.sub-menu-dropdown' ),
+                    ),
+                    array(
+                        'id'       => 'dropdown_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Dropdown Background Color', 'adroit' ),
+                        'default'  => array(
+                            'background-color'      => '',
+                        ),
+                        'output'   => array(
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li a'
+                        ),
+                        'background-repeat'     => false,
+                        'background-attachment' => false,
+                        'background-position'   => false,
+                        'background-image'      => false,
+                        'background-size'       => false,
+                        'preview'               => false,
+                        'transparent'           => true,
+                    ),
+
+                    array(
+                        'id'       => 'dropdown_background_hover',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Dropdown Background Hover Color', 'adroit' ),
+                        'default'  => array(
+                            'background-color'      => '',
+                        ),
+                        'output'   => array(
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li.current-menu-item > a',
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li > a:hover',
+                        ),
+                        'background-repeat'     => false,
+                        'background-attachment' => false,
+                        'background-position'   => false,
+                        'background-image'      => false,
+                        'background-size'       => false,
+                        'preview'               => false,
+                        'transparent'           => true,
+                    ),
+                    array(
+                        'id'       => 'dropdown_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li a',
+                        ),
+                        'title'    => esc_html__( 'Dropdown Text Color', 'adroit' ),
+                        'default'  => '#999999',
+                        'transparent' => false
+                    ),
+
+                    array(
+                        'id'       => 'dropdown_color_hover',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li.current-menu-item > a',
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li > a:hover',
+                        ),
+                        'title'    => esc_html__( 'Dropdown Text Hover Color', 'adroit' ),
+                        'default'  => '#000000',
+                        'transparent' => false
+                    ),
+
+                    array(
+                        'id'       => 'dropdown_border',
+                        'type'     => 'border',
+                        'title'    => esc_html__( 'DropDown Border', 'adroit' ),
+                        'output'   => array( '#nav #main-navigation > li ul.sub-menu-dropdown li + li' ),
+                        'all'      => false,
+                        'left'     => false,
+                        'right'    => false,
+                        'style'    => false,
+                        'bottom'   => false,
+                        'default'  => array(
+                            'style'      => 'solid',
+                            'top'        => '1',
+                            'color'      => '#ebebeb'
+                        )
+                    ),
+                    array(
+                        'id'       => 'styling_navigation_mega',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Mega', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+
+
+                    array(
+                        'id'       => 'mega_title_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > a',
+                            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > span',
+                            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li .widget-title',
+                        ),
+                        'title'    => esc_html__( 'MegaMenu Title color', 'adroit' ),
+                        'default'  => '#000000',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'mega_title_color_hover',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > a:hover'
+                        ),
+                        'title'    => esc_html__( 'MegaMenu Title Hover Color', 'adroit' ),
+                        'default'  => '#000000',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'mega_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-navigation > li > .kt-megamenu-wrapper > .kt-megamenu-ul > li ul.sub-menu-megamenu a'
+                        ),
+                        'title'    => esc_html__( 'MegaMenu Text color', 'adroit' ),
+                        'default'  => '#999999',
+                        'transparent' => false
+                    ),
+
+                    array(
+                        'id'       => 'mega_color_hover',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '#nav #main-navigation > li > .kt-megamenu-wrapper > .kt-megamenu-ul > li ul.sub-menu-megamenu a:hover',
+                            '#nav #main-navigation > li > .kt-megamenu-wrapper > .kt-megamenu-ul > li ul.sub-menu-megamenu .current-menu-item > a',
+
+                        ),
+                        'title'    => esc_html__( 'MegaMenu Text Hover color', 'adroit' ),
+                        'default'  => '#000000',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'mega_border_color',
+                        'title'    => esc_html__( 'MegaMenu Border color', 'adroit' ),
+                        'type'     => 'color',
+                        'default'  => '#ebebeb`',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'mega_menu_spacing',
+                        'type'     => 'raw',
+                        'content'  => '<div style="height:150px"></div>',
+                        'full_width' => true
+                    ),
+                )
+            );
+
+            /**
+             *  Mobile Navigation
+             **/
+            $this->sections[] = array(
+                'id'            => 'styling_mobile_menu',
+                'title'         => esc_html__( 'Mobile Menu', 'adroit' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'mobile_menu_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Background', 'adroit' ),
+                        'default'   => array(
+                            'background-color'      => '#FFFFFF',
+                        ),
+                        'output'      => array( '#main-nav-mobile'),
+                        'transparent'           => false,
+                    ),
+                    array(
+                        'type' => 'divide',
+                        'id' => 'divide_fake',
+                    ),
+
+                    array(
+                        'id'       => 'mobile_menu_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            'ul.navigation-mobile > li > a'
+                        ),
+                        'title'    => esc_html__( 'Top Level Color', 'adroit' ),
+                        'default'  => '#999999',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'mobile_menu_color_hover',
+                        'type'     => 'color',
+                        'output'   => array(
+                            'ul.navigation-mobile > li:hover > a',
+                            'ul.navigation-mobile > li > a:hover'
+                        ),
+                        'title'    => esc_html__( 'Top Level hover Color', 'adroit' ),
+                        'default'  => '#22dcce',
+                        'transparent' => false
+                    ),
+                    array(
+                        'id'       => 'mobile_menu_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Top Level Background Color', 'adroit' ),
+                        'default'  => array(
+                            'background-color'      => '#FFFFFF',
+                        ),
+                        'output'   => array(
+                            'ul.navigation-mobile > li > a'
+                        ),
+                        'background-repeat'     => false,
+                        'background-attachment' => false,
+                        'background-position'   => false,
+                        'background-image'      => false,
+                        'background-size'       => false,
+                        'preview'               => false,
+                        'transparent'           => false,
+                    ),
+
+                    array(
+                        'id'       => 'mobile_menu_background_hover',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Top Level Hover Color', 'adroit' ),
+                        'default'  => array(
+                            'background-color'      => '#F5F5F5',
+                        ),
+                        'output'   => array(
+                            'ul.navigation-mobile > li:hover > a',
+                            'ul.navigation-mobile > li > a:hover',
+                        ),
+                        'background-repeat'     => false,
+                        'background-attachment' => false,
+                        'background-position'   => false,
+                        'background-image'      => false,
+                        'background-size'       => false,
+                        'preview'               => false,
+                        'transparent'           => false,
+                    ),
+                    array(
+                        'type' => 'divide',
+                        'id' => 'divide_fake',
+                    ),
+                    array(
+                        'id'       => 'mobile_sub_color',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.main-nav-mobile > ul > li ul.sub-menu li a',
+                            '.main-nav-mobile > ul > li ul.sub-menu-megamenu li a',
+                            '.main-nav-mobile > ul > li ul.sub-menu-dropdown li a',
+                            'ul.navigation-mobile > li .kt-megamenu-wrapper > ul.kt-megamenu-ul > li > .sub-menu-megamenu > li > a',
+                        ),
+                        'title'    => esc_html__( 'Text color', 'adroit' ),
+                        'default'  => '#999999',
+                        'transparent' => false
+                    ),
+
+                    array(
+                        'id'       => 'mobile_sub_color_hover',
+                        'type'     => 'color',
+                        'output'   => array(
+                            '.main-nav-mobile > ul > li ul.sub-menu li a:hover',
+                            '.main-nav-mobile > ul > li ul.sub-menu-megamenu li a:hover',
+                            '.main-nav-mobile > ul > li ul.sub-menu-dropdown li a:hover',
+                            'ul.navigation-mobile > li .kt-megamenu-wrapper > ul.kt-megamenu-ul > li > .sub-menu-megamenu > li > a:hover',
+                        ),
+                        'title'    => esc_html__( 'Text Hover color', 'adroit' ),
+                        'default'  => '#22dcce',
+                        'transparent' => false
+                    ),
+
+                    array(
+                        'id'       => 'mobile_menu_spacing',
+                        'type'     => 'raw',
+                        'content'  => '<div style="height:150px"></div>',
+                        'full_width' => true
+                    ),
+                )
+            );
+
 
             /**
              *	Typography
@@ -932,6 +1542,367 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'default'  => array(
                             'font-family'     => 'Roboto Slab',
                             'font-weight'     => '700'
+                        ),
+                    ),
+                )
+            );
+
+            /**
+             *  Typography header
+             **/
+            $this->sections[] = array(
+                'id'            => 'typography_header',
+                'title'         => esc_html__( 'Header', 'adroit' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'typography_header_content',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Header', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the header font properties.', 'adroit' ),
+                        'google'   => true,
+                        'text-align' => false,
+                        'output'      => array( '#header' )
+                    )
+                )
+            );
+            /**
+             *  Typography footer
+             **/
+            $this->sections[] = array(
+                'id'            => 'typography_footer',
+                'title'         => esc_html__( 'Footer', 'adroit' ),
+                'desc'          => '',
+                'subsection'    => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'typography_footer_top_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer top settings', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'typography_footer_top',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Footer top', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the footer top font properties.', 'adroit' ),
+                        'google'   => true,
+                        'text-align'      => false,
+                        'output'      => array( '#footer-top' ),
+                        'default'  => array(
+                            'color'       => '',
+                            'font-size'   => '',
+                            'font-weight' => '',
+                            'line-height' => ''
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_footer_widgets_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer widgets settings', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'typography_footer_widgets',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Footer widgets', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the footer widgets font properties.', 'adroit' ),
+                        'google'   => true,
+                        'text-align'      => false,
+                        'output'      => array( '#footer-area' ),
+                        'default'  => array(
+                            'color'       => '#999999',
+                            'font-size'   => '',
+                            'font-weight' => '',
+                            'line-height' => ''
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_footer_widgets_title',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Footer widgets title', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the footer widgets title font properties.', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-align'      => true,
+                        'text-transform' => true,
+                        'output'      => array( '#footer-area h3.widget-title' ),
+                        'default'  => array( ),
+                    ),
+                    array(
+                        'id'       => 'typography_footer_widgets_link',
+                        'type'     => 'link_color',
+                        'title'    => esc_html__( 'Footer widgets Links Color', 'adroit' ),
+                        'output'      => array( '#footer-area a' ),
+                        'default'  => array(
+                            'regular' => '#666666',
+                            'hover'   => '#000000',
+                            'active'  => '#000000'
+                        )
+                    ),
+
+                    array(
+                        'id'       => 'typography_footer_copyright_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer Bottom settings', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'typography_footer_bottom_link',
+                        'type'     => 'link_color',
+                        'title'    => esc_html__( 'Footer Bottom Links Color', 'adroit' ),
+                        'output'      => array( '#footer-bottom a', '#footer-bottom button' ),
+                        'default'  => array(
+                            'regular' => '#666666',
+                            'hover'   => '#000000',
+                            'active'  => '#000000'
+                        )
+                    ),
+                    array(
+                        'id'       => 'typography_footer_bottom',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Footer Bottom', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the footer font properties.', 'adroit' ),
+                        'text-align'      => false,
+                        'output'      => array( '#footer-bottom' ),
+                        'default'  => array(
+                            'color'       => '#999999',
+                            'font-size'   => '',
+                            'font-weight' => '',
+                            'line-height' => ''
+                        ),
+                    ),
+
+                    array(
+                        'id'       => 'typography_footer_copyright_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer copyright settings', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'typography_footer_copyright_link',
+                        'type'     => 'link_color',
+                        'title'    => esc_html__( 'Footer Copyright Links Color', 'adroit' ),
+                        'output'      => array( '#footer-copyright a' ),
+                        'default'  => array(
+                            'regular' => '#999999',
+                            'hover'   => '#ffffff',
+                            'active'  => '#ffffff'
+                        )
+                    ),
+                    array(
+                        'id'       => 'typography_footer_copyright',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Footer copyright', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the footer font properties.', 'adroit' ),
+                        'text-align'      => false,
+                        'output'      => array( '#footer-copyright' ),
+                        'default'  => array(
+                            'color'       => '',
+                            'font-size'   => '',
+                            'font-weight' => '',
+                            'line-height' => ''
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_footer_copyright_space',
+                        'type'     => 'raw',
+                        'content'  => '<div style="height: 120px;"></div>',
+                        'full_width' => true
+                    ),
+
+                )
+            );
+
+
+
+            /**
+             *  Typography sidebar
+             **/
+            $this->sections[] = array(
+                'id'            => 'typography_sidebar',
+                'title'         => esc_html__( 'Sidebar', 'adroit' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'typography_sidebar',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Sidebar title', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the sidebar title font properties.', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-transform' => true,
+                        'output'      => array(
+                            '.side-bar .widget .widget-title',
+                            '.wpb_widgetised_column .widget .widget-title'
+                        ),
+                        'default'  => array(
+                            'text-transform' => 'uppercase',
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_sidebar_content',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Sidebar text', 'adroit' ),
+                        'subtitle' => esc_html__( 'Specify the sidebar title font properties.', 'adroit' ),
+                        'text-algin' => true,
+                        'output'      => array( '.side-bar', '.wpb_widgetised_column' ),
+                        'default'  => array(
+
+                        ),
+                    ),
+                )
+            );
+
+            /**
+             *  Typography Navigation
+             **/
+
+            $this->sections[] = array(
+                'id'            => 'typography_navigation',
+                'title'         => esc_html__( 'Main Navigation', 'adroit' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'typography-navigation_top',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Top Menu Level', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-align'      => false,
+                        'color'           => false,
+                        'line-height'     => false,
+                        'text-transform' => true,
+                        'output'      => array(
+                            '#nav #main-navigation > li > a',
+                            '#nav #main-nav-wc > li > a'
+                        )
+                    ),
+                    array(
+                        'type' => 'divide',
+                        'id' => 'divide_fake',
+                    ),
+                    array(
+                        'id'       => 'typography_navigation_dropdown',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Dropdown menu', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'typography_navigation_second',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Second Menu Level', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-align'      => false,
+                        'color'           => false,
+                        'line-height'     => false,
+                        'text-transform' => true,
+                        'output'      => array(
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li a'
+                        ),
+                        'default'  => array(
+
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_navigation_mega',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Mega menu', 'adroit' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'typography_navigation_heading',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading title', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-align'      => false,
+                        'color'           => false,
+                        'line-height'     => false,
+                        'text-transform' => true,
+                        'output'      => array(
+                            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > a',
+                            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > span',
+                            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li .widget-title'
+                        ),
+                        'default'  => array( ),
+                    ),
+                    array(
+                        'id'       => 'typography_navigation_mega_link',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Mega menu', 'adroit' ),
+                        'google'   => true,
+                        'text-align'      => false,
+                        'color'           => false,
+                        'text-transform' => true,
+                        'line-height'     => false,
+                        'output'      => array(
+                            '#nav #main-navigation > li > .kt-megamenu-wrapper > .kt-megamenu-ul > li ul.sub-menu-megamenu a'
+                        ),
+                        'default'  => array( ),
+                    )
+
+                )
+            );
+
+            /**
+             *  Typography mobile Navigation
+             **/
+
+            $this->sections[] = array(
+                'id'            => 'typography_mobile_navigation',
+                'title'         => esc_html__( 'Mobile Navigation', 'adroit' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'typography_mobile_navigation_top',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Top Menu Level', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-align'      => false,
+                        'color'           => false,
+                        'line-height'     => false,
+                        'text-transform' => true,
+                        'output'      => array( '.main-nav-mobile > ul > li > a' ),
+                        'default'  => array(
+                            'text-transform' => 'uppercase',
+                        ),
+                    ),
+                    array(
+                        'type' => 'divide',
+                        'id' => 'divide_fake',
+                    ),
+                    array(
+                        'id'       => 'typography_mobile_navigation_second',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Sub Menu Level', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-align'      => false,
+                        'color'           => false,
+                        'line-height'     => false,
+                        'text-transform' => true,
+                        'output'      => array(
+                            '.main-nav-mobile > ul > li ul.sub-menu-dropdown li a',
+                            '.main-nav-mobile > ul > li ul.sub-menu-megamenu li a'
+                        ),
+                    ),
+                    array(
+                        'id'       => 'typography_mobile_navigation_heading',
+                        'type'     => 'typography',
+                        'title'    => esc_html__( 'Heading title', 'adroit' ),
+                        'letter-spacing'  => true,
+                        'text-align'      => false,
+                        'color'           => false,
+                        'line-height'     => false,
+                        'text-transform' => true,
+                        'output'      => array(
+                            '.main-nav-mobile > ul > li div.kt-megamenu-wrapper > ul > li > a',
+                            '.main-nav-mobile > ul > li div.kt-megamenu-wrapper > ul > li > span',
+                            '.main-nav-mobile > ul > li div.kt-megamenu-wrapper > ul > li .widget-title'
+                        ),
+                        'default'  => array(
+                            'text-transform' => 'uppercase',
+                            'font-weight'  => '700'
                         ),
                     ),
                 )

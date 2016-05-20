@@ -160,7 +160,16 @@ add_action( 'wp_enqueue_scripts', 'kt_add_scripts' );
  */
 function kt_setting_script() {
 
-    $css = '';
+    $advanced_css = kt_option('advanced_editor_css');
+    $css = $advanced_css;
+
+    $styling_link = kt_option('styling_link');
+    if($styling_link['hover']){
+        $css .= 'a:hover,a:focus{color: '.$styling_link['hover'].';}';
+    }
+    if($styling_link['active']){
+        $css .= 'a:active{color: '.$styling_link['active'].';}';
+    }
 
     if(is_page() || is_singular()){
 
@@ -177,6 +186,56 @@ function kt_setting_script() {
         }
 
     }
+
+    if($navigation_space = kt_option('navigation_space', 20)){
+        $css .= '#nav #main-navigation > li + li{margin-left: '.$navigation_space.'px;}';
+    }
+
+    if($mega_border_color = kt_option('mega_border_color', '#ebebeb')){
+        $mega_border_arr = array(
+            '#nav #main-navigation > li .kt-megamenu-wrapper.megamenu-layout-table > ul > li > ul > li',
+            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > a',
+            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > span',
+            '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li .widget-title',
+            '#nav #main-navigation > li .kt-megamenu-wrapper.megamenu-layout-table > ul > li'
+        );
+        $css .= implode($mega_border_arr, ',').'{border-color: '.$mega_border_color.';}';
+    }
+
+    if($toolbar_color = kt_option('header_toolbar_border_color', '#ebebeb')){
+        $toolbar_color_arr = array(
+            '.topbar',
+            '.top-navigation > li',
+            '.header-container.header-layout8 .top-navigation > li:first-child',
+            '.header-container:not(.header-layout8) .topbar .topbar-right .top-navigation > li:first-child',
+        );
+        $css .= implode($toolbar_color_arr, ',').'{border-color: '.$toolbar_color.';}';
+    }
+
+    if($toolbar_color_light = kt_option('header_toolbar_light_border_color', array( 'color' => '#f6f6f6', 'alpha' => '.2' ))){
+        $toolbar_color_light_arr = array(
+            '.header-transparent.header-light .topbar',
+            '.header-transparent.header-light .top-navigation > li',
+            '.header-transparent.header-light.header-container.header-layout8 .top-navigation > li:first-child',
+            '.header-transparent.header-light.header-container:not(.header-layout8) .topbar .topbar-right .top-navigation > li:first-child',
+        );
+        $css .= implode($toolbar_color_light_arr, ',').'{border-color: '.kt_hex2rgba($toolbar_color_light['color'], $toolbar_color_light['alpha']).';}';
+    }
+
+
+    if($navigation_height = kt_option('navigation_height', 102)){
+        if(isset($navigation_height['height'])){
+            $navigation_arr = array(
+                '#nav #main-nav-socials > li > a',
+                '#nav #main-nav-wc > li > a',
+                '#nav #main-nav-tool > li > a',
+                '#nav #main-navigation > li > a',
+            );
+            $css .= implode($navigation_arr, ',').'{line-height: '.intval($navigation_height['height']).'px;}';
+        }
+    }
+
+
 
     wp_add_inline_style( 'kt-main', $css );
 }

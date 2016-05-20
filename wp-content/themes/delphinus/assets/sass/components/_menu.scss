@@ -123,8 +123,8 @@
   }
 
   #main-nav-wc,
-  #main-nav-socials,
-  #main-navigation{
+  #main-navigation,
+  #main-nav-socials{
     > li{
       > a{
         text-transform: uppercase;
@@ -135,7 +135,6 @@
         display: block;
         @include transition('color 0.3s ease 0s, background 0.3s ease 0s');
       }
-
       &.current-menu-item > a,
       > a:hover{
         color: $primary-color;
@@ -144,7 +143,12 @@
       > a:hover{
         color: $primary-color;
       }
+    }
+  }
 
+  #main-nav-wc,
+  #main-navigation{
+    > li{
       ul.sub-menu-dropdown,
       .kt-megamenu-wrapper,
       .navigation-submenu{
@@ -154,13 +158,12 @@
         visibility: hidden;
         @include opacity(0);
         @include transform(translate(0, 30px));
-        @include transition('opacity 200ms ease-in-out, transform 200ms ease-in-out, visibility 200ms ease-in-out');
+        @include transition('opacity 100ms ease-in-out, transform 200ms ease-in-out, visibility 200ms ease-in-out');
         text-align: left;
-        width: 308px;
         border-top: 1px solid #f6f6f6;
         background: #FFFFFF;
         @include box-shadow(0, 2px, 3px, rgba(0, 0, 0, 0.12));
-
+        pointer-events: none;
       }
     }
     li{
@@ -177,6 +180,8 @@
           @include opacity(1);
           @include transform(translate(0, 0));
           visibility: visible;
+          z-index: 10;
+          pointer-events: inherit;
         }
       }
       ul.sub-menu-dropdown{
@@ -266,20 +271,26 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        width: 308px;
         li{
-          border-bottom: 1px solid $border-color;
+          + li{
+            border-top: 1px solid $border-color;
+          }
           a{
             padding: 24px;
             display: block;
             color: $gray-text;
             font-size: 16px;
-            &:hover{
-              color: $primary-color;
-            }
+            @include transition();
           }
           ul.sub-menu-dropdown {
             left: 100%;
             top: -1px;
+          }
+
+          &.current-menu-item > a,
+          > a:hover{
+            color: $primary-color;
           }
         }
         &.right-overflow {
@@ -415,12 +426,16 @@
 .header-transparent.header-light{
 
   .topbar,
-  .top-navigation > li{
-    border-color: rgba(#f6f6f6, .2)!important;
+  .top-navigation > li,
+  &.header-container.header-layout8 .top-navigation > li:first-child,
+  &.header-container:not(.header-layout8) .topbar .topbar-right .top-navigation > li:first-child{
+    border-color: rgba(#f6f6f6, .2);
   }
+  /*
   .navbar-container{
     border-bottom: 1px solid rgba(#f6f6f6, .2);
   }
+  */
 
   .shopping-bag-cart a > span.amount{
     border-color: $white;
@@ -746,11 +761,13 @@ body.opened-nav-animate{
   position: fixed;
   top: 50%;
   z-index: 100;
-  @include transform(translateY(-50%));
   right: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
+  @include transform(translateY(-50%));
+
+
 
   li{
     padding: 8px 0;
@@ -764,7 +781,7 @@ body.opened-nav-animate{
         height: 12px;
         display: block;
         @include border-radius(50%);
-        background: $gray-text;
+        background: rgba($black, .4);
         position: absolute;
         @include transform(translate(-50%, -50%) scale(0.6));
         top: 50%;
@@ -785,4 +802,22 @@ body.opened-nav-animate{
       }
     }
   }
+
+  &.light{
+    li{
+      a{
+        span{
+          background: rgba($white, .4);
+        }
+      }
+      &.current a,
+      a:hover,
+      a:focus{
+        span{
+          background: $white;
+        }
+      }
+    }
+  }
+
 }

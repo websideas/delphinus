@@ -1083,11 +1083,118 @@
 }
 
 /*
- * 2.4 Highlights
+ *  Highlights
  */
 .kt_highlight {
   padding: 0 6px;
   background-color: #ed8b5c;
   color: #ffffff;
   @include border-radius(2px);
+}
+
+/*
+ *  List
+ */
+.kt-list{
+  margin-bottom: $vspacing;
+  > ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    > li{
+      line-height: 30px;
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 22px;
+      &:before{
+        height: 30px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 30px;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  &.bg-style{
+    > ul {
+      > li {
+        padding-left: 52px;
+        margin-bottom: 20px;
+        &:before{
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &.list-outline{
+    > ul {
+      > li {
+        &:before {
+          border: 1px solid transparent;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+  &.bg-style-rounded-outline,
+  &.bg-style-rounded{
+    > ul {
+      > li {
+        &:before {
+          @include border-radius(50%);
+        }
+      }
+    }
+  }
+
+
+  &.bg-style-rounded-less-outline,
+  &.bg-style-rounded-less{
+    > ul {
+      > li {
+        &:before {
+          @include border-radius(3px);
+        }
+      }
+    }
+  }
+
+  &.style-numbers{
+    counter-reset: my-badass-counter;
+    > ul{
+      > li{
+        &:before {
+          content: counter(my-badass-counter,decimal);
+          counter-increment: my-badass-counter;
+        }
+      }
+    }
+  }
+
+  &.style-check{
+    > ul{
+      > li{
+        &:before{
+          @include FontIcon('\f00c');
+          font-size: 10px;
+        }
+      }
+    }
+
+  }
+
+  &.style-angle-right{
+    > ul{
+      > li{
+        &:before{
+          @include FontIcon('\f105');
+        }
+      }
+    }
+  }
+
 }

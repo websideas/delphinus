@@ -82,6 +82,9 @@ if ( ! empty( $full_width ) ) {
     }
 }
 
+
+
+
 if ( ! empty( $full_height ) ) {
 	$css_classes[] = ' vc_row-o-full-height';
 	if ( ! empty( $columns_placement ) ) {
@@ -149,6 +152,7 @@ $wrapper_attributes[] = 'class="' . esc_attr( trim( $css_class ) ) . '"';
 
 $wrapper_attributes[] = ( $background_position == '' ) ? '' : 'style="background-position: '.$atts['background_position'].'!important;"';
 
+$wrapper_attributes[] = 'data-bullet-skin="'.$bullet_skin.'"';
 
 $output .= '<div ' . implode( ' ', $wrapper_attributes ) . '>';
 $output .= wpb_js_remove_wpautop( $content );

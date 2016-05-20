@@ -93,9 +93,24 @@ foreach($background_arr as $item) {
             "Center Right" => "center right",
             "Center Left" => "center left",
         ),
-        'description' => esc_html__('Select background position', 'delphinus')
+        'description' => esc_html__('Select background position', 'delphinus'),
+        'group' => esc_html__( 'Extra settings', 'js_composer' ),
     ));
 }
+
+
+vc_add_param('vc_row', array(
+    "type" => "dropdown",
+    "heading" => esc_html__('Row Bullet Skin', 'delphinus'),
+    "param_name" => "bullet_skin",
+    "value" => array(
+        esc_html__('Dark', 'delphinus') => 'dark',
+        esc_html__('Light', 'delphinus') => 'light'
+    ),
+    'std' => 'dark',
+    'description' => esc_html__('Select skin for bullet', 'delphinus'),
+    'group' => esc_html__( 'Extra settings', 'js_composer' ),
+));
 
 
 $composer_addons = array(
@@ -113,6 +128,7 @@ $composer_addons = array(
     'contact-form7.php',
     'message.php',
     'employees.php',
+    'list.php'
 );
 
 if(kt_is_wc()){

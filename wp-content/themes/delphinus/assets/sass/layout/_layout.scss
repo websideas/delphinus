@@ -122,14 +122,14 @@
   &.branding-default{
     margin: $logo-margin;
     img{
-      height: $logo-height;
+      width: $logo-width;
     }
   }
 
   &.branding-mobile{
     margin: $logo-margin-mobile;
     img{
-      height: $logo-mobile-height;
+      width: $logo-mobile-width;
     }
   }
 
@@ -190,7 +190,9 @@
 .header-content{
   position: relative;
   z-index: 10;
-  @include box-shadow(0, 2px, 6px, rgba(0, 0, 0, 0.05));
+  &.header-shadow{
+    @include box-shadow(0, 2px, 6px, rgba(0, 0, 0, 0.05));
+  }
 }
 
 .navbar-container-inner{
@@ -372,23 +374,17 @@
     top: 0;
     left: 0;
     width: 100%;
+    background: none;
   }
-
-
-
-
+  .topbar{
+    background: none;
+  }
 }
 
 
 /* ==============================
    Footer
    ============================== */
-
-#footer-area .row-flex .col-lg-8
-
-#footer-area .row-flex .col-lg-8 .col-inner .footer-area-inner{
-
-}
 
 
 #footer-top{
@@ -432,6 +428,17 @@
     }
     .widget-title{
       color: #FFFFFF;
+    }
+    a{
+      &,
+      &:hover,
+      &:focus{
+        color: #FFFFFF;
+      }
+      &:hover,
+      &:focus{
+        @include opacity(.6);
+      }
     }
 
   }

@@ -28,7 +28,7 @@ class WPBakeryShortCode_Clients_Carousel extends WPBakeryShortCode {
 
             'gutters' => true,
             'navigation' => true,
-            'navigation_always_on' => true,
+            'navigation_always_on' => false,
             'navigation_position' => 'center-outside',
             'navigation_style' => 'normal',
 

@@ -711,6 +711,36 @@ if(!function_exists('kt_color2hecxa')){
         return $color;
     }
 }
+if(!function_exists('kt_hex2rgba')) {
+
+    /**
+     * Convert Hex to RGBA
+     * @param $hex
+     * @param string $alpha
+     * @return string
+     */
+    function kt_hex2rgba($hex, $alpha = ''){
+        $hex = str_replace("#", "", $hex);
+        if (strlen($hex) == 3) {
+            $r = hexdec(substr($hex, 0, 1) . substr($hex, 0, 1));
+            $g = hexdec(substr($hex, 1, 1) . substr($hex, 1, 1));
+            $b = hexdec(substr($hex, 2, 1) . substr($hex, 2, 1));
+        } else {
+            $r = hexdec(substr($hex, 0, 2));
+            $g = hexdec(substr($hex, 2, 2));
+            $b = hexdec(substr($hex, 4, 2));
+        }
+        $rgb = $r . ',' . $g . ',' . $b;
+
+        if ('' == $alpha) {
+            return $rgb;
+        } else {
+            $alpha = floatval($alpha);
+
+            return 'rgba(' . $rgb . ',' . $alpha . ')';
+        }
+    }
+}
 
 if (!function_exists('kt_get_single_file')) {
     /**

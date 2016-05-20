@@ -47,7 +47,7 @@
                     }
                     ?>
 
-                    <header id="header" class="<?php echo apply_filters('theme_header_content_class', 'header-content', $header_layout) ?>">
+                    <header id="header" class="<?php echo apply_filters('kt_header_content_class', 'header-content', $header_layout) ?>">
                         <?php get_template_part( 'templates/headers/header', $header_layout); ?>
                     </header><!-- #header -->
 
