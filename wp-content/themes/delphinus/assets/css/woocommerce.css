@@ -274,11 +274,11 @@
         margin-bottom: 0; }
       .woocommerce ul.cart_list li a,
       .woocommerce ul.product_list_widget li a {
-        color: #3b3e43;
         display: block;
         margin-bottom: 12px;
         line-height: 1; }
-        .woocommerce ul.cart_list li a:hover,
+        .woocommerce ul.cart_list li a, .woocommerce ul.cart_list li a:hover,
+        .woocommerce ul.product_list_widget li a,
         .woocommerce ul.product_list_widget li a:hover {
           color: #000000; }
       .woocommerce ul.cart_list li img,
@@ -1644,16 +1644,21 @@
     padding: 10px 18px; }
   .shopping-bag .woocommerce.shopping-bag-content .mini_cart_item {
     padding: 18px;
-    margin: 0;
-    border-bottom: 1px solid #ebebeb; }
+    margin: 0; }
+    .shopping-bag .woocommerce.shopping-bag-content .mini_cart_item + .mini_cart_item {
+      border-top: 1px solid #ebebeb; }
     .shopping-bag .woocommerce.shopping-bag-content .mini_cart_item a.remove {
       right: 30px;
       top: 18px;
-      color: #000 !important; }
+      color: #000000 !important; }
       .shopping-bag .woocommerce.shopping-bag-content .mini_cart_item a.remove:hover {
         color: red !important; }
+    .shopping-bag .woocommerce.shopping-bag-content .mini_cart_item .quantity,
+    .shopping-bag .woocommerce.shopping-bag-content .mini_cart_item .amount {
+      color: #999999; }
   .shopping-bag .woocommerce.shopping-bag-content .total {
-    padding: 0 60px; }
+    padding: 20px 60px 0;
+    margin-top: 0; }
   .shopping-bag .woocommerce.shopping-bag-content .buttons {
     padding: 10px 65px 30px;
     margin-bottom: 0; }
@@ -2143,5 +2148,83 @@
     width: auto; }
     .themedev-product-popup.woocommerce div.product.wc-single-product-quickview .product-main-thumbnails .owl-item {
       padding: 0 15px; }
+
+.wc-filters-loading {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  position: fixed;
+  margin-top: -60px;
+  margin-left: -60px;
+  top: 50%;
+  left: 50%;
+  z-index: 9999; }
+  .wc-filters-loading:before, .wc-filters-loading:after {
+    border: 5px solid #FFFFFF;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    bottom: 20px;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute; }
+  .wc-filters-loading:before {
+    -webkit-animation: counter_clockwise_rotation 3s linear infinite;
+    -khtml-animation: counter_clockwise_rotation 3s linear infinite;
+    -moz-animation: counter_clockwise_rotation 3s linear infinite;
+    -ms-animation: counter_clockwise_rotation 3s linear infinite;
+    -o-animation: counter_clockwise_rotation 3s linear infinite;
+    animation: counter_clockwise_rotation 3s linear infinite;
+    border-left-color: #000000;
+    border-right-color: #000000;
+    height: 80px;
+    margin-left: -40px;
+    width: 80px; }
+  .wc-filters-loading:after {
+    -webkit-animation: rotation 1s linear infinite;
+    -khtml-animation: rotation 1s linear infinite;
+    -moz-animation: rotation 1s linear infinite;
+    -ms-animation: rotation 1s linear infinite;
+    -o-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+    border-bottom-color: #000000;
+    border-top-color: #000000;
+    bottom: 40px;
+    height: 40px;
+    margin-left: -20px;
+    width: 40px; }
+
+@-webkit-keyframes counter_clockwise_rotation {
+  0% {
+    -webkit-transform: rotate(360deg); }
+  50% {
+    -webkit-transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(0); } }
+@keyframes counter_clockwise_rotation {
+  0% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(0); } }
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  50% {
+    -webkit-transform: rotate(180deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=woocommerce.css.map */

@@ -556,6 +556,24 @@ function kt_header_content_class($classes, $header_layout){
 
 
 
+if(!function_exists('kt_setting_script_footer')){
+    /**
+     * Add advanced js to footer
+     *
+     */
+    function kt_setting_script_footer() {
+        $advanced_js = kt_option('advanced_editor_js');
+
+        if($advanced_js){
+            printf('<script type="text/javascript">%s</script>', $advanced_js);
+        }
+        if($advanced_tracking_code = kt_option('advanced_tracking_code')){
+            echo kt_option('advanced_tracking_code');
+        }
+
+    }
+    add_action('wp_footer', 'kt_setting_script_footer', 100);
+}
 
 
 

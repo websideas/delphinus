@@ -103,7 +103,7 @@ add_action( 'init', 'kt_register_employees_init' );
 function kt_register_employees_init(){
     $labels = array(
         'name' => __( 'Employees', 'delphinus_cp'),
-        'singular_name' => __( 'Testimonial', 'delphinus_cp'),
+        'singular_name' => __( 'Employees', 'delphinus_cp'),
         'add_new' => __( 'Add New', 'delphinus_cp'),
         'all_items' => __( 'All Employees', 'delphinus_cp'),
         'add_new_item' => __( 'Add New Employees', 'delphinus_cp'),

@@ -577,13 +577,63 @@ if ( ! class_exists( 'KT_config' ) ) {
 				'subsection' => true,
                 'fields'		=> array(
                     array(
+                        'id'       => 'header_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Header settings', 'delphinus' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
                         'id'       => 'header_background',
                         'type'     => 'background',
                         'title'    => esc_html__( 'Header background', 'wingman' ),
                         'subtitle' => esc_html__( 'Header background with image, color, etc.', 'wingman' ),
                         'default'   => '',
                         'output'      => array( '.header-content' ),
-                    )
+                    ),
+                    array(
+                        'id'       => 'header_default_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Header Default settings', 'delphinus' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'header_border',
+                        'type'     => 'border',
+                        'title'    => esc_html__( 'Header Border', 'delphinus' ),
+                        'output'   => array( '.header-content' ),
+                        'all'      => false,
+                        'left'     => false,
+                        'right'    => false,
+                        'top'      => false,
+                        'default'  => array( )
+                    ),
+                    array(
+                        'id'       => 'header_light_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Header Light settings', 'delphinus' ).'</div>',
+                        'full_width' => true
+                    ),
+                    array(
+                        'id'       => 'header_light_border',
+                        'type'     => 'border',
+                        'title'    => esc_html__( 'Header Border', 'delphinus' ),
+                        'output'   => array( '.header-light.header-transparent .header-content' ),
+                        'all'      => false,
+                        'left'     => false,
+                        'right'    => false,
+                        'top'      => false,
+                        'default'  => array(
+                            'border-bottom' => '1px',
+                            'border-style' => 'solid',
+                            'border-color' => 'rgba(246, 246, 246, 0.2)'
+                        )
+                    ),
+                    array(
+                        'id'       => 'header_light_spacing',
+                        'type'     => 'raw',
+                        'content'  => '<div style="height:150px"></div>',
+                        'full_width' => true
+                    ),
                 )
             );
 
@@ -595,8 +645,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                 'title'			=> esc_html__( 'Header Toolbar', 'wingman' ),
                 'subsection' => true,
                 'fields'		=> array(
-
-
                     array(
                         'id'       => 'header_toolbar_heading',
                         'type'     => 'raw',
@@ -623,7 +671,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'output'   => array(
                             '.top-navigation > li > a'
                         ),
-                        'title'    => esc_html__( 'Default: Top Level Color', 'adroit' ),
+                        'title'    => esc_html__( 'Default: Top Level Color', 'delphinus' ),
                         'default'  => '#999999',
                         'transparent' => false
                     ),
@@ -635,14 +683,14 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '.top-navigation > li > a:hover',
                             '.top-navigation > li > a:focus'
                         ),
-                        'title'    => esc_html__( 'Default: Top Level Hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Default: Top Level Hover Color', 'delphinus' ),
                         'default'  => '#000000',
                         'transparent' => false
                     ),
                     array(
                         'id'       => 'header_toolbar_border_color',
                         'type'     => 'color',
-                        'title'    => esc_html__( 'Default: Border Color', 'adroit' ),
+                        'title'    => esc_html__( 'Default: Border Color', 'delphinus' ),
                         'default'  => '#ebebeb',
                         'transparent' => true
                     ),
@@ -659,7 +707,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'output'   => array(
                             '.header-transparent.header-light .top-navigation > li > a'
                         ),
-                        'title'    => esc_html__( 'Light: Top Level Color', 'adroit' ),
+                        'title'    => esc_html__( 'Light: Top Level Color', 'delphinus' ),
                         'default'  => '#FFFFFF',
                         'transparent' => false
                     ),
@@ -671,7 +719,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '.header-transparent.header-light .top-navigation > li > a:hover',
                             '.header-transparent.header-light .top-navigation > li > a:focus'
                         ),
-                        'title'    => esc_html__( 'Light: Top Level Hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Light: Top Level Hover Color', 'delphinus' ),
                         'default'  => '#FFFFFF',
                         'transparent' => false
                     ),
@@ -961,14 +1009,14 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'            => 'styling_navigation',
-                'title'         => esc_html__( 'Main Navigation', 'adroit' ),
+                'title'         => esc_html__( 'Main Navigation', 'delphinus' ),
                 'desc'          => '',
                 'subsection' => true,
                 'fields'        => array(
                     array(
                         'id'       => 'styling_navigation_general',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'General', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'General', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
@@ -976,8 +1024,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'type'           => 'dimensions',
                         'units'          => 'px',
                         'units_extended' => 'true',
-                        'title'          => esc_html__( 'Main Navigation Height', 'adroit' ),
-                        'subtitle'          => esc_html__( 'Change height of main navigation', 'adroit' ),
+                        'title'          => esc_html__( 'Main Navigation Height', 'delphinus' ),
+                        'subtitle'          => esc_html__( 'Change height of main navigation', 'delphinus' ),
                         'width'         => false,
                         'default'        => array(
                             'height'  => '102',
@@ -988,7 +1036,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'navigation_box_background',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'MegaMenu & Dropdown Box background', 'adroit' ),
+                        'title'    => esc_html__( 'MegaMenu & Dropdown Box background', 'delphinus' ),
                         'default'   => array(
                             'background-color'      => '#FFFFFF',
                         ),
@@ -997,27 +1045,51 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '#nav #main-nav-wc > li .navigation-submenu',
                             '#nav #main-navigation > li ul.sub-menu-dropdown',
                             '#nav #main-navigation > li .kt-megamenu-wrapper',
-                            '#nav #main-navigation > li .navigation-submenu'
+                            '#nav #main-navigation > li .navigation-submenu',
+                            '.top-navigation > li .navigation-submenu'
                         ),
                         'transparent'           => false,
                     ),
+
+                    array(
+                        'id'       => 'navigation_box_border',
+                        'type'     => 'border',
+                        'title'    => esc_html__( 'MegaMenu & Dropdown Box Border', 'delphinus' ),
+                        'output'   => array(
+                            '#nav #main-nav-wc > li .navigation-submenu',
+                            '#nav #main-navigation > li ul.sub-menu-dropdown',
+                            '#nav #main-navigation > li .kt-megamenu-wrapper',
+                            '.top-navigation > li .navigation-submenu'
+                        ),
+                        'all'      => false,
+                        'left'     => false,
+                        'right'    => false,
+                        'style'    => false,
+                        'bottom'   => false,
+                        'default'  => array(
+                            'border-style'      => 'solid',
+                            'border-top'        => '1',
+                            'border-color'      => '#f6f6f6'
+                        )
+                    ),
+
                     array(
                         'id'       => 'styling_navigation_general',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Top Level', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Top Level', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'            => 'navigation_space',
                         'type'          => 'slider',
-                        'title'         => esc_html__( 'Top Level space', 'adroit' ),
+                        'title'         => esc_html__( 'Top Level space', 'delphinus' ),
                         'default'       => 20,
                         'min'           => 0,
                         'step'          => 1,
                         'max'           => 50,
                         'resolution'    => 1,
                         'display_value' => 'text',
-                        'subtitle' => esc_html__( 'Margin left between top level.', 'adroit' ),
+                        'subtitle' => esc_html__( 'Margin left between top level.', 'delphinus' ),
                     ),
                     array(
                         'id'       => 'navigation_color',
@@ -1027,7 +1099,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '#nav #main-navigation > li > a',
                             '#nav #main-nav-socials > li > a'
                         ),
-                        'title'    => esc_html__( 'Dark: Top Level Color', 'adroit' ),
+                        'title'    => esc_html__( 'Dark: Top Level Color', 'delphinus' ),
                         'default'  => '#999999',
                         'transparent' => false
                     ),
@@ -1044,7 +1116,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '#nav #main-nav-socials > li > a:hover',
                             '#nav #main-nav-socials > li > a:focus',
                         ),
-                        'title'    => esc_html__( 'Dark: Top Level hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Dark: Top Level hover Color', 'delphinus' ),
                         'default'  => '#000000',
                         'transparent' => false
                     ),
@@ -1058,7 +1130,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '.header-transparent.header-light #nav #main-nav-socials > li > a',
                             '.header-transparent.header-light #nav #main-navigation > li > a',
                         ),
-                        'title'    => esc_html__( 'Light: Top Level Color', 'adroit' ),
+                        'title'    => esc_html__( 'Light: Top Level Color', 'delphinus' ),
                         'default'  => '#FFFFFF',
                         'transparent' => false
                     ),
@@ -1074,7 +1146,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '.header-transparent.header-light #nav #main-navigation > li > a:hover',
                             '.header-transparent.header-light #nav #main-navigation > li > a:focus',
                         ),
-                        'title'    => esc_html__( 'Light: Top Level hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Light: Top Level hover Color', 'delphinus' ),
                         'default'  => '#FFFFFF',
                         'transparent' => false
                     ),
@@ -1083,7 +1155,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'styling_navigation_dropdown',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Drop down', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Drop down', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
@@ -1091,8 +1163,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'type'           => 'dimensions',
                         'units'          => 'px',
                         'units_extended' => 'true',
-                        'title'          => esc_html__( 'Dropdown width', 'adroit' ),
-                        'subtitle'       => esc_html__( 'Change width of Dropdown', 'adroit' ),
+                        'title'          => esc_html__( 'Dropdown width', 'delphinus' ),
+                        'subtitle'       => esc_html__( 'Change width of Dropdown', 'delphinus' ),
                         'height'         => false,
                         'default'        => array( 'width'  => 308, 'units' => 'px' ),
                         'output'         => array( '#nav #main-navigation > li ul.sub-menu-dropdown' ),
@@ -1100,12 +1172,13 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'dropdown_background',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'Dropdown Background Color', 'adroit' ),
+                        'title'    => esc_html__( 'Dropdown Background Color', 'delphinus' ),
                         'default'  => array(
                             'background-color'      => '',
                         ),
                         'output'   => array(
-                            '#nav #main-navigation > li ul.sub-menu-dropdown li a'
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li a',
+                            '.top-navigation > li .navigation-submenu > li a'
                         ),
                         'background-repeat'     => false,
                         'background-attachment' => false,
@@ -1119,13 +1192,14 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'dropdown_background_hover',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'Dropdown Background Hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Dropdown Background Hover Color', 'delphinus' ),
                         'default'  => array(
                             'background-color'      => '',
                         ),
                         'output'   => array(
                             '#nav #main-navigation > li ul.sub-menu-dropdown li.current-menu-item > a',
                             '#nav #main-navigation > li ul.sub-menu-dropdown li > a:hover',
+                            '.top-navigation > li .navigation-submenu > li a:hover'
                         ),
                         'background-repeat'     => false,
                         'background-attachment' => false,
@@ -1140,8 +1214,12 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'type'     => 'color',
                         'output'   => array(
                             '#nav #main-navigation > li ul.sub-menu-dropdown li a',
+                            '.navigation-submenu.woocommerce ul.product_list_widget li a',
+                            '.shopping-bag .woocommerce.navigation-submenu .mini_cart_item .quantity',
+                            '.top-navigation > li .navigation-submenu > li a',
+                            '.shopping-bag .woocommerce.navigation-submenu .mini_cart_item .amount',
                         ),
-                        'title'    => esc_html__( 'Dropdown Text Color', 'adroit' ),
+                        'title'    => esc_html__( 'Dropdown Text Color', 'delphinus' ),
                         'default'  => '#999999',
                         'transparent' => false
                     ),
@@ -1152,8 +1230,10 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'output'   => array(
                             '#nav #main-navigation > li ul.sub-menu-dropdown li.current-menu-item > a',
                             '#nav #main-navigation > li ul.sub-menu-dropdown li > a:hover',
+                            '.top-navigation > li .navigation-submenu > li a:hover',
+                            '.shopping-bag .navigation-submenu.woocommerce ul.product_list_widget li a'
                         ),
-                        'title'    => esc_html__( 'Dropdown Text Hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Dropdown Text Hover Color', 'delphinus' ),
                         'default'  => '#000000',
                         'transparent' => false
                     ),
@@ -1161,23 +1241,28 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'dropdown_border',
                         'type'     => 'border',
-                        'title'    => esc_html__( 'DropDown Border', 'adroit' ),
-                        'output'   => array( '#nav #main-navigation > li ul.sub-menu-dropdown li + li' ),
+                        'title'    => esc_html__( 'DropDown Border', 'delphinus' ),
+                        'output'   => array(
+                            '#nav #main-navigation > li ul.sub-menu-dropdown li + li',
+                            '.shopping-bag .woocommerce.shopping-bag-content .mini_cart_item + .mini_cart_item',
+                            '.shopping-bag .woocommerce.shopping-bag-content .total',
+                            '.top-navigation > li .navigation-submenu > li + li'
+                        ),
                         'all'      => false,
                         'left'     => false,
                         'right'    => false,
                         'style'    => false,
                         'bottom'   => false,
                         'default'  => array(
-                            'style'      => 'solid',
-                            'top'        => '1',
-                            'color'      => '#ebebeb'
+                            'border-style'      => 'solid',
+                            'border-top'        => '1',
+                            'border-color'      => '#ebebeb'
                         )
                     ),
                     array(
                         'id'       => 'styling_navigation_mega',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Mega', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Mega', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
 
@@ -1190,7 +1275,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > span',
                             '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li .widget-title',
                         ),
-                        'title'    => esc_html__( 'MegaMenu Title color', 'adroit' ),
+                        'title'    => esc_html__( 'MegaMenu Title color', 'delphinus' ),
                         'default'  => '#000000',
                         'transparent' => false
                     ),
@@ -1200,7 +1285,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'output'   => array(
                             '#nav #main-navigation > li .kt-megamenu-wrapper > ul > li > a:hover'
                         ),
-                        'title'    => esc_html__( 'MegaMenu Title Hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'MegaMenu Title Hover Color', 'delphinus' ),
                         'default'  => '#000000',
                         'transparent' => false
                     ),
@@ -1210,7 +1295,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'output'   => array(
                             '#nav #main-navigation > li > .kt-megamenu-wrapper > .kt-megamenu-ul > li ul.sub-menu-megamenu a'
                         ),
-                        'title'    => esc_html__( 'MegaMenu Text color', 'adroit' ),
+                        'title'    => esc_html__( 'MegaMenu Text color', 'delphinus' ),
                         'default'  => '#999999',
                         'transparent' => false
                     ),
@@ -1223,13 +1308,13 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '#nav #main-navigation > li > .kt-megamenu-wrapper > .kt-megamenu-ul > li ul.sub-menu-megamenu .current-menu-item > a',
 
                         ),
-                        'title'    => esc_html__( 'MegaMenu Text Hover color', 'adroit' ),
+                        'title'    => esc_html__( 'MegaMenu Text Hover color', 'delphinus' ),
                         'default'  => '#000000',
                         'transparent' => false
                     ),
                     array(
                         'id'       => 'mega_border_color',
-                        'title'    => esc_html__( 'MegaMenu Border color', 'adroit' ),
+                        'title'    => esc_html__( 'MegaMenu Border color', 'delphinus' ),
                         'type'     => 'color',
                         'default'  => '#ebebeb`',
                         'transparent' => false
@@ -1248,14 +1333,14 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'            => 'styling_mobile_menu',
-                'title'         => esc_html__( 'Mobile Menu', 'adroit' ),
+                'title'         => esc_html__( 'Mobile Menu', 'delphinus' ),
                 'desc'          => '',
                 'subsection' => true,
                 'fields'        => array(
                     array(
                         'id'       => 'mobile_menu_background',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'Background', 'adroit' ),
+                        'title'    => esc_html__( 'Background', 'delphinus' ),
                         'default'   => array(
                             'background-color'      => '#FFFFFF',
                         ),
@@ -1273,7 +1358,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'output'   => array(
                             'ul.navigation-mobile > li > a'
                         ),
-                        'title'    => esc_html__( 'Top Level Color', 'adroit' ),
+                        'title'    => esc_html__( 'Top Level Color', 'delphinus' ),
                         'default'  => '#999999',
                         'transparent' => false
                     ),
@@ -1284,14 +1369,14 @@ if ( ! class_exists( 'KT_config' ) ) {
                             'ul.navigation-mobile > li:hover > a',
                             'ul.navigation-mobile > li > a:hover'
                         ),
-                        'title'    => esc_html__( 'Top Level hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Top Level hover Color', 'delphinus' ),
                         'default'  => '#22dcce',
                         'transparent' => false
                     ),
                     array(
                         'id'       => 'mobile_menu_background',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'Top Level Background Color', 'adroit' ),
+                        'title'    => esc_html__( 'Top Level Background Color', 'delphinus' ),
                         'default'  => array(
                             'background-color'      => '#FFFFFF',
                         ),
@@ -1310,7 +1395,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'mobile_menu_background_hover',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'Top Level Hover Color', 'adroit' ),
+                        'title'    => esc_html__( 'Top Level Hover Color', 'delphinus' ),
                         'default'  => array(
                             'background-color'      => '#F5F5F5',
                         ),
@@ -1339,7 +1424,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '.main-nav-mobile > ul > li ul.sub-menu-dropdown li a',
                             'ul.navigation-mobile > li .kt-megamenu-wrapper > ul.kt-megamenu-ul > li > .sub-menu-megamenu > li > a',
                         ),
-                        'title'    => esc_html__( 'Text color', 'adroit' ),
+                        'title'    => esc_html__( 'Text color', 'delphinus' ),
                         'default'  => '#999999',
                         'transparent' => false
                     ),
@@ -1353,7 +1438,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             '.main-nav-mobile > ul > li ul.sub-menu-dropdown li a:hover',
                             'ul.navigation-mobile > li .kt-megamenu-wrapper > ul.kt-megamenu-ul > li > .sub-menu-megamenu > li > a:hover',
                         ),
-                        'title'    => esc_html__( 'Text Hover color', 'adroit' ),
+                        'title'    => esc_html__( 'Text Hover color', 'delphinus' ),
                         'default'  => '#22dcce',
                         'transparent' => false
                     ),
@@ -1552,15 +1637,15 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'            => 'typography_header',
-                'title'         => esc_html__( 'Header', 'adroit' ),
+                'title'         => esc_html__( 'Header', 'delphinus' ),
                 'desc'          => '',
                 'subsection' => true,
                 'fields'        => array(
                     array(
                         'id'       => 'typography_header_content',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Header', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the header font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Header', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the header font properties.', 'delphinus' ),
                         'google'   => true,
                         'text-align' => false,
                         'output'      => array( '#header' )
@@ -1572,21 +1657,21 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'            => 'typography_footer',
-                'title'         => esc_html__( 'Footer', 'adroit' ),
+                'title'         => esc_html__( 'Footer', 'delphinus' ),
                 'desc'          => '',
                 'subsection'    => true,
                 'fields'        => array(
                     array(
                         'id'       => 'typography_footer_top_heading',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer top settings', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer top settings', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'       => 'typography_footer_top',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Footer top', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the footer top font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Footer top', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the footer top font properties.', 'delphinus' ),
                         'google'   => true,
                         'text-align'      => false,
                         'output'      => array( '#footer-top' ),
@@ -1600,14 +1685,14 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_footer_widgets_heading',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer widgets settings', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer widgets settings', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'       => 'typography_footer_widgets',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Footer widgets', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the footer widgets font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Footer widgets', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the footer widgets font properties.', 'delphinus' ),
                         'google'   => true,
                         'text-align'      => false,
                         'output'      => array( '#footer-area' ),
@@ -1621,8 +1706,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_footer_widgets_title',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Footer widgets title', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the footer widgets title font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Footer widgets title', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the footer widgets title font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-align'      => true,
                         'text-transform' => true,
@@ -1632,7 +1717,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_footer_widgets_link',
                         'type'     => 'link_color',
-                        'title'    => esc_html__( 'Footer widgets Links Color', 'adroit' ),
+                        'title'    => esc_html__( 'Footer widgets Links Color', 'delphinus' ),
                         'output'      => array( '#footer-area a' ),
                         'default'  => array(
                             'regular' => '#666666',
@@ -1644,13 +1729,13 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_footer_copyright_heading',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer Bottom settings', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer Bottom settings', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'       => 'typography_footer_bottom_link',
                         'type'     => 'link_color',
-                        'title'    => esc_html__( 'Footer Bottom Links Color', 'adroit' ),
+                        'title'    => esc_html__( 'Footer Bottom Links Color', 'delphinus' ),
                         'output'      => array( '#footer-bottom a', '#footer-bottom button' ),
                         'default'  => array(
                             'regular' => '#666666',
@@ -1661,8 +1746,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_footer_bottom',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Footer Bottom', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the footer font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Footer Bottom', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the footer font properties.', 'delphinus' ),
                         'text-align'      => false,
                         'output'      => array( '#footer-bottom' ),
                         'default'  => array(
@@ -1676,13 +1761,13 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_footer_copyright_heading',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer copyright settings', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Typography Footer copyright settings', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'       => 'typography_footer_copyright_link',
                         'type'     => 'link_color',
-                        'title'    => esc_html__( 'Footer Copyright Links Color', 'adroit' ),
+                        'title'    => esc_html__( 'Footer Copyright Links Color', 'delphinus' ),
                         'output'      => array( '#footer-copyright a' ),
                         'default'  => array(
                             'regular' => '#999999',
@@ -1693,8 +1778,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_footer_copyright',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Footer copyright', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the footer font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Footer copyright', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the footer font properties.', 'delphinus' ),
                         'text-align'      => false,
                         'output'      => array( '#footer-copyright' ),
                         'default'  => array(
@@ -1721,15 +1806,15 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'            => 'typography_sidebar',
-                'title'         => esc_html__( 'Sidebar', 'adroit' ),
+                'title'         => esc_html__( 'Sidebar', 'delphinus' ),
                 'desc'          => '',
                 'subsection' => true,
                 'fields'        => array(
                     array(
                         'id'       => 'typography_sidebar',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Sidebar title', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the sidebar title font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Sidebar title', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the sidebar title font properties.', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-transform' => true,
                         'output'      => array(
@@ -1743,8 +1828,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_sidebar_content',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Sidebar text', 'adroit' ),
-                        'subtitle' => esc_html__( 'Specify the sidebar title font properties.', 'adroit' ),
+                        'title'    => esc_html__( 'Sidebar text', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Specify the sidebar title font properties.', 'delphinus' ),
                         'text-algin' => true,
                         'output'      => array( '.side-bar', '.wpb_widgetised_column' ),
                         'default'  => array(
@@ -1760,14 +1845,14 @@ if ( ! class_exists( 'KT_config' ) ) {
 
             $this->sections[] = array(
                 'id'            => 'typography_navigation',
-                'title'         => esc_html__( 'Main Navigation', 'adroit' ),
+                'title'         => esc_html__( 'Main Navigation', 'delphinus' ),
                 'desc'          => '',
                 'subsection' => true,
                 'fields'        => array(
                     array(
                         'id'       => 'typography-navigation_top',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Top Menu Level', 'adroit' ),
+                        'title'    => esc_html__( 'Top Menu Level', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-align'      => false,
                         'color'           => false,
@@ -1785,13 +1870,13 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_navigation_dropdown',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Dropdown menu', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Dropdown menu', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'       => 'typography_navigation_second',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Second Menu Level', 'adroit' ),
+                        'title'    => esc_html__( 'Second Menu Level', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-align'      => false,
                         'color'           => false,
@@ -1807,13 +1892,13 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_navigation_mega',
                         'type'     => 'raw',
-                        'content'  => '<div class="section-heading">'.esc_html__( 'Mega menu', 'adroit' ).'</div>',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Mega menu', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
                     array(
                         'id'       => 'typography_navigation_heading',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading title', 'adroit' ),
+                        'title'    => esc_html__( 'Heading title', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-align'      => false,
                         'color'           => false,
@@ -1829,7 +1914,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_navigation_mega_link',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Mega menu', 'adroit' ),
+                        'title'    => esc_html__( 'Mega menu', 'delphinus' ),
                         'google'   => true,
                         'text-align'      => false,
                         'color'           => false,
@@ -1850,14 +1935,14 @@ if ( ! class_exists( 'KT_config' ) ) {
 
             $this->sections[] = array(
                 'id'            => 'typography_mobile_navigation',
-                'title'         => esc_html__( 'Mobile Navigation', 'adroit' ),
+                'title'         => esc_html__( 'Mobile Navigation', 'delphinus' ),
                 'desc'          => '',
                 'subsection' => true,
                 'fields'        => array(
                     array(
                         'id'       => 'typography_mobile_navigation_top',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Top Menu Level', 'adroit' ),
+                        'title'    => esc_html__( 'Top Menu Level', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-align'      => false,
                         'color'           => false,
@@ -1875,7 +1960,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_mobile_navigation_second',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Sub Menu Level', 'adroit' ),
+                        'title'    => esc_html__( 'Sub Menu Level', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-align'      => false,
                         'color'           => false,
@@ -1889,7 +1974,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'typography_mobile_navigation_heading',
                         'type'     => 'typography',
-                        'title'    => esc_html__( 'Heading title', 'adroit' ),
+                        'title'    => esc_html__( 'Heading title', 'delphinus' ),
                         'letter-spacing'  => true,
                         'text-align'      => false,
                         'color'           => false,
@@ -2478,26 +2563,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'full_width' => true
                     ),
                     array(
-                        'id'       => 'single_layout',
-                        'type'     => 'image_select',
-                        'compiler' => true,
-                        'title'    => esc_html__( 'Single layout', 'delphinus' ),
-                        'subtitle' => esc_html__( 'Please choose header layout', 'delphinus' ),
-                        'options'  => array(
-                            1 => array( 'alt' => esc_html__( 'Layout 1', 'delphinus' ), 'img' => KT_FW_IMG . 'single/layout-1.jpg' ),
-                            2 => array( 'alt' => esc_html__( 'Layout 2', 'delphinus' ), 'img' => KT_FW_IMG . 'single/layout-2.jpg' ),
-                            3 => array( 'alt' => esc_html__( 'Layout 3', 'delphinus' ), 'img' => KT_FW_IMG . 'single/layout-3.jpg' ),
-                            4 => array( 'alt' => esc_html__( 'Layout 4', 'delphinus' ), 'img' => KT_FW_IMG . 'single/layout-4.jpg' ),
-                            5 => array( 'alt' => esc_html__( 'Layout 5', 'delphinus' ), 'img' => KT_FW_IMG . 'single/layout-5.jpg' ),
-                            6 => array( 'alt' => esc_html__( 'Layout 6', 'delphinus' ), 'img' => KT_FW_IMG . 'single/layout-6.jpg' ),
-                        ),
-                        'default'  => 1
-                    ),
-                    array(
-                        'type' => 'divide',
-                        'id' => 'divide_fake',
-                    ),
-                    array(
                         'id'   => 'single_image_size',
                         'type' => 'select',
                         'options' => $image_sizes,
@@ -2777,6 +2842,96 @@ if ( ! class_exists( 'KT_config' ) ) {
                             'mail' => false,
                         )
                     )
+                )
+            );
+
+            /**
+             *  Advanced Custom CSS
+             **/
+            $this->sections[] = array(
+                'id'            => 'advanced_css',
+                'title'         => esc_html__( 'Custom CSS', 'delphinus' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'advanced_editor_css',
+                        'type'     => 'ace_editor',
+                        'title'    => esc_html__( 'CSS Code', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Paste your CSS code here.', 'delphinus' ),
+                        'mode'     => 'css',
+                        'theme'    => 'chrome',
+                        'full_width' => true
+                    ),
+                )
+            );
+
+
+            /**
+             *  Advanced Custom CSS
+             **/
+            $this->sections[] = array(
+                'id'            => 'advanced_js',
+                'title'         => esc_html__( 'Custom JS', 'delphinus' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'advanced_editor_js',
+                        'type'     => 'ace_editor',
+                        'title'    => esc_html__( 'JS Code', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Paste your JS code here.', 'delphinus' ),
+                        'mode'     => 'javascript',
+                        'theme'    => 'chrome',
+                        'default'  => "jQuery(document).ready(function(){\n\n});",
+                        'full_width' => true
+                    ),
+                )
+            );
+
+            /**
+             *  Advanced Tracking Code
+             **/
+            $this->sections[] = array(
+                'id'            => 'advanced_tracking',
+                'title'         => esc_html__( 'Tracking Code', 'delphinus' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'advanced_tracking_code',
+                        'type'     => 'textarea',
+                        'title'    => esc_html__( 'Tracking Code', 'delphinus' ),
+                        'desc'     => esc_html__( 'Paste your Google Analytics (or other) tracking code here. This will be added into the header template of your theme. Please put code inside script tags.', 'delphinus' ),
+                    )
+                )
+            );
+
+            $info_arr = array();
+            $theme = wp_get_theme();
+
+            $info_arr[] = "<li><span>".esc_html__('Theme Name:', 'delphinus')." </span>". $theme->get('Name').'</li>';
+            $info_arr[] = "<li><span>".esc_html__('Theme Version:', 'delphinus')." </span>". $theme->get('Version').'</li>';
+            $info_arr[] = "<li><span>".esc_html__('Theme URI:', 'delphinus')." </span>". $theme->get('ThemeURI').'</li>';
+            $info_arr[] = "<li><span>".esc_html__('Author:', 'delphinus')." </span>". $theme->get('Author').'</li>';
+
+            $system_info = sprintf("<div class='troubleshooting'><ul>%s</ul></div>", implode('', $info_arr));
+
+            /**
+             *  Advanced Troubleshooting
+             **/
+            $this->sections[] = array(
+                'id'            => 'advanced_troubleshooting',
+                'title'         => esc_html__( 'Troubleshooting', 'delphinus' ),
+                'desc'          => '',
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'opt-raw_info_4',
+                        'type'     => 'raw',
+                        'content'  => $system_info,
+                        'full_width' => true
+                    ),
                 )
             );
 

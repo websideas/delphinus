@@ -568,9 +568,9 @@ function kt_woocommerce_shop_loop(){
             echo '</div>';
             $filters = kt_option('shop_header_filters', 1);
             if($filters){
-                echo '<div id="kt-shop-filters" class="row multi-columns-row">';
+                echo '<div id="kt-shop-filters" class="row multi-columns-row"><div id="kt-shop-filters-content">';
                 dynamic_sidebar('shop-filter-area');
-                echo '</div>';
+                echo '</div></div>';
             }
         }else{
             echo '<div class="products-tools">';

@@ -242,12 +242,11 @@
       &:last-child {
         margin-bottom: 0;
       }
-
       a {
-        color: $text;
         display: block;
         margin-bottom: 12px;
         line-height: 1;
+        &,
         &:hover{
           color: $primary-color;
         }
@@ -1878,18 +1877,26 @@
     .mini_cart_item{
       padding: 18px;
       margin: 0;
-      border-bottom: 1px solid $border-color;
+
+      + .mini_cart_item{
+        border-top: 1px solid $border-color;
+      }
       a.remove{
         right: 30px;
         top: 18px;
-        color: #000!important;
+        color: $black!important;
         &:hover{
           color: red !important;
         }
       }
+      .quantity,
+      .amount{
+        color: $gray-text;
+      }
     }
     .total{
-      padding: 0 60px;
+      padding: 20px 60px 0;
+      margin-top: 0;
     }
     .buttons{
       padding: 10px 65px 30px;
@@ -1902,7 +1909,6 @@
     }
   }
 }
-
 
 /*
  * Category banner carousel
@@ -2372,4 +2378,69 @@
     }
 
   }
+}
+
+
+.wc-filters-loading{
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  position: fixed;
+  margin-top: -60px;
+  margin-left: -60px;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+
+  &:before,
+  &:after {
+    border: 5px solid $white;
+    @include border-radius(50%);
+    bottom: 20px;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+  }
+
+  &:before {
+    @include animation('counter_clockwise_rotation 3s linear infinite');
+    border-left-color: $black;
+    border-right-color: $black;
+    height: 80px;
+    margin-left: -40px;
+    width: 80px;
+  }
+  &:after {
+    @include animation('rotation 1s linear infinite');
+    border-bottom-color: $black;
+    border-top-color: $black;
+    bottom: 40px;
+    height: 40px;
+    margin-left: -20px;
+    width: 40px;
+  }
+}
+
+
+@-webkit-keyframes counter_clockwise_rotation {
+  0% 		{ -webkit-transform: rotate(360deg); }
+  50% 	{ -webkit-transform: rotate(180deg); }
+  100% 	{ -webkit-transform: rotate(0); }
+}
+@keyframes counter_clockwise_rotation {
+  0% 		{ transform: rotate(360deg); }
+  50% 	{ transform: rotate(180deg); }
+  100% 	{ transform: rotate(0); }
+}
+
+@-webkit-keyframes rotation {
+  0% 		{ -webkit-transform: rotate(0deg); }
+  50% 	{ -webkit-transform: rotate(180deg); }
+  100% 	{ -webkit-transform: rotate(360deg); }
+}
+@keyframes rotation {
+  0% 		{ transform: rotate(0deg); }
+  50% 	{ transform: rotate(180deg); }
+  100% 	{ transform: rotate(360deg); }
 }

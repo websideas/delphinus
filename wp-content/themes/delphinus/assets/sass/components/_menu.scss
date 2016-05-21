@@ -47,9 +47,8 @@
       visibility: hidden;
 
       > li{
-        border-bottom: 1px solid #f6f6f6;
-        &:last-child{
-          border: none;
+        + li{
+          border-top: 1px solid #f6f6f6;
         }
         a{
           display: block;
@@ -431,11 +430,10 @@
   &.header-container:not(.header-layout8) .topbar .topbar-right .top-navigation > li:first-child{
     border-color: rgba(#f6f6f6, .2);
   }
-  /*
-  .navbar-container{
+
+  .header-content{
     border-bottom: 1px solid rgba(#f6f6f6, .2);
   }
-  */
 
   .shopping-bag-cart a > span.amount{
     border-color: $white;

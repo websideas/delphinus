@@ -13,6 +13,7 @@
     init_wc_filter();
     init_wc_saleCountDown();
     init_wc_quickview();
+    init_checkout_coupon();
 
 
     function init_wc_masonry(){
@@ -330,7 +331,6 @@
                     finalDate = $(this).data('time'),
                     $date = new Date( finalDate );
                 $this.countdown($date, function(event) {
-
                     $(this).html(event.strftime('<div><span>%D</span>'+ajax_frontend.day_str+'</div><div><span>%H</span>'+ajax_frontend.hour_str+'</div><div><span>%M</span>'+ajax_frontend.min_str+'</div><div><span>%S</span>'+ajax_frontend.sec_str+'</div>'));
                 });
 
@@ -418,7 +418,7 @@
 
 
 
-    init_checkout_coupon();
+
     function init_checkout_coupon(){
 
 
@@ -466,12 +466,109 @@
         $( document.body )
             .on('update_checkout', function(event, args) {
 
-                console.log('call');
-
-            })
+            });
 
     }
 
+
+    init_wc_filters();
+
+
+
+
+    function init_wc_filters($pageUrl){
+        $('#kt-shop-filters').on('click', '.widget_kt_orderby a, .widget_kt_price_filter a, .widget_color_filter a, .widget_layered_nav a', function( e ){
+            e.preventDefault();
+            var $this = $(this),
+                $pageUrl = $this.attr('href');
+            init_wc_update_filters($pageUrl);
+        });
+        $('body').on('click', '.wc-pagination-outer a', function( e ){
+            e.preventDefault();
+            var $this = $(this),
+                $pageUrl = $this.attr('href');
+            init_wc_update_filters($pageUrl);
+        });
+
+        $('body').on('click', '#shop-header-categories a', function( e ){
+            e.preventDefault();
+            var $this = $(this),
+                $pageUrl = $this.attr('href'),
+                $cates = $this.closest('.shop-header-list'),
+                $cate_li = $cates.find('li');
+
+            $cate_li.removeClass('current-cat');
+            $this.closest('li').addClass('current-cat');
+
+            init_wc_update_filters($pageUrl);
+        });
+
+    }
+
+    var $ajax_request;
+    function init_wc_update_filters($pageUrl){
+        if($ajax_request && $ajax_request.readystate != 4){
+            $ajax_request.abort();
+            //obj.closest('.categories-products-lists').find('a').removeClass('loading');
+        }
+
+        init_wc_loading(true);
+
+        var $data = { kt_shop: 'full' };
+        $pageUrl = $pageUrl.replace(/\/?(\?|#|$)/, '/$1');
+
+        $ajax_request = $.ajax({
+            url: $pageUrl,
+            data: $data,
+            dataType: 'html',
+            cache: false,
+            method: 'POST',
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                console.log('AJAX error - ' + errorThrown);
+                init_wc_loading(false);
+            },
+            success: function(response) {
+
+                init_wc_loading(false);
+
+                var $response_html = $(response),
+                    $products_change = $('#main > .woocommerce-row', $response_html),
+                    $filters_change = $('#kt-shop-filters-content', $response_html),
+                    $pagination_change = $('#main > .wc-pagination-outer', $response_html),
+                    $wpTitle = $($response_html).filter('title').text(),
+
+                    $products = $('#main > .woocommerce-row'),
+                    $filters = $('#kt-shop-filters-content'),
+                    $pagination = $('#main > .wc-pagination-outer');
+
+                if ($wpTitle.length) {
+                    document.title = $wpTitle;
+                }
+
+                $products.replaceWith($products_change);
+                $filters.replaceWith($filters_change);
+                $pagination.replaceWith($pagination_change);
+
+                window.history.pushState({ktShop: true}, '', $pageUrl);
+
+            }
+        });
+    }
+
+
+
+    function init_wc_loading($show){
+        if(!$('.wc-filters-loading').length){
+            $('body').append('<div class="wc-filters-loading"></div>');
+        }
+
+        var $loading = $('.wc-filters-loading');
+        if($show){
+            $loading.show();
+        }else{
+            $loading.hide();
+        }
+    }
 
 
 
