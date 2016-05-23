@@ -2198,7 +2198,7 @@ body.opened-nav-animate {
 #kt-row-nav {
   position: fixed;
   top: 50%;
-  z-index: 100;
+  z-index: 50;
   right: 30px;
   margin: 0;
   padding: 0;

@@ -5,133 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4040ab74-3ca9-4d42-8b54-12d8330013a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/fonts/bootstrap/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/fonts/bootstrap/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/fonts/bootstrap/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap-sprockets.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/alert.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/button.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/carousel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/collapse.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/tooltip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/javascripts/bootstrap/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/_bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_badges.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_breadcrumbs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_button-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_carousel.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_close.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_code.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_component-animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_dropdowns.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_glyphicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_input-groups.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_jumbotron.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_media.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_modals.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navbar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_navs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_pager.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_popovers.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_print.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_progress-bars.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_responsive-embed.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_responsive-utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_tables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_theme.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_thumbnails.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_tooltip.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_utilities.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/_wells.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_alerts.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_background-variant.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_border-radius.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_buttons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_center-block.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_clearfix.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_forms.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_gradients.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_grid-framework.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_hide-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_image.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_labels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_list-group.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_nav-divider.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_nav-vertical-align.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_opacity.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_pagination.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_panels.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_progress-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_reset-filter.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_reset-text.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_resize.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_size.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_tab-focus.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_table-row.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_text-overflow.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/libs/bootstrap-sass-3.3.6/assets/stylesheets/bootstrap/mixins/_vendor-prefixes.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wp-content/themes/fillters.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus.zip" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/recommend-plugins/delphinus_cp.zip" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/recommend-plugins/delphinus_cp.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/recommend-plugins/kt_mailchimp.zip" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/recommend-plugins/kt_mailchimp.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_js_composer.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_js_composer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_page.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_shortcodes.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_shortcodes.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/clients_carousel.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/clients_carousel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/comments.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/comments.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-product_cat_carousel.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/content-product_cat_carousel.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-meta-box.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-meta-box.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/data/data-options.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/plugins/delphinus_cp/delphinus_cp.php" afterPath="$PROJECT_DIR$/wp-content/plugins/delphinus_cp/delphinus_cp.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/frontend.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/helpers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_bridge.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_bridge.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_update.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_update.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.scss" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/queries.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/single.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/vc_templates/vc_row.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/templates/vc_templates/vc_row.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/wishlist-view.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/wishlist-view.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css.map" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/woocommerce.js" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/woocommerce.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" afterPath="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="html.iws" />
@@ -154,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="delphinus_cp.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/delphinus_cp/delphinus_cp.php">
+      <file leaf-file-name="content-single.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36842105">
-              <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.33333334">
+              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -172,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/divider.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/plugins.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/googlemap.php" />
@@ -191,7 +71,6 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/redux-framework/sample/sample-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/functions.js" />
         <option value="$PROJECT_DIR$/wp-content/plugins/redux-framework/ReduxCore/inc/fields/border/field_border.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/archive-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/pagination.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/loop/no-products-found.php" />
@@ -200,12 +79,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/comments.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_page.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/woocommerce.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/widgets.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/js/woocommerce.js" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/js_composer_bridge.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/utils/_variables.scss" />
@@ -223,6 +100,10 @@
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/framework/js_composer/vc_addons/clients_carousel.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_shortcodes.scss" />
         <option value="$PROJECT_DIR$/wp-content/plugins/delphinus_cp/delphinus_cp.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/wishlist-view.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php" />
       </list>
     </option>
   </component>
@@ -354,7 +235,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plugins" />
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delphinus" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,10 +318,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="plugins" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delphinus_cp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -518,25 +459,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/redux-framework/ReduxCore/inc/fields/border/field_border.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/css/woocommerce.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10526316">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5964912">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -574,14 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.0409555">
           <caret line="60" column="51" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HTML/assets/css/_mixin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24327485">
-          <caret line="376" column="31" selection-start-line="376" selection-start-column="31" selection-end-line="376" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,14 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="56" selection-start-line="0" selection-start-column="56" selection-end-line="0" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_content.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38947368">
@@ -780,14 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.25">
-          <caret line="253" column="22" selection-start-line="253" selection-start-column="22" selection-end-line="253" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -868,14 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8596491">
           <caret line="409" column="4" selection-start-line="409" selection-start-column="4" selection-end-line="409" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33684212">
-          <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -974,6 +868,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36842105">
           <caret line="124" column="37" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/woocommerce/wishlist-view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="56" column="70" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTML/assets/css/_mixin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.55438596">
+          <caret line="416" column="4" selection-start-line="416" selection-start-column="4" selection-end-line="416" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_woocommerce.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375">
+          <caret line="2466" column="3" selection-start-line="2466" selection-start-column="3" selection-end-line="2466" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/layout/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.375">
+          <caret line="382" column="0" selection-start-line="382" selection-start-column="0" selection-end-line="382" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/assets/sass/components/_menu.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.73188406">
+          <caret line="779" column="33" selection-start-line="779" selection-start-column="33" selection-end-line="779" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/delphinus/templates/content-single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
           <folding />
         </state>
       </provider>

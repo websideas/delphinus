@@ -54,7 +54,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
      do_action( 'yith_wcwl_before_wishlist' ); ?>
 
     <!-- WISHLIST TABLE -->
-    <table class="shop_table cart wishlist_table" data-pagination="<?php echo esc_attr( $pagination )?>" data-per-page="<?php echo esc_attr( $per_page )?>" data-page="<?php echo esc_attr( $current_page )?>" data-id="<?php echo ( is_user_logged_in() ) ? esc_attr( $wishlist_meta['ID'] ) : '' ?>" data-token="<?php echo ( ! empty( $wishlist_meta['wishlist_token'] ) && is_user_logged_in() ) ? esc_attr( $wishlist_meta['wishlist_token'] ) : '' ?>">
+    <table class="shop_table shop_table_responsive cart wishlist_table" data-pagination="<?php echo esc_attr( $pagination )?>" data-per-page="<?php echo esc_attr( $per_page )?>" data-page="<?php echo esc_attr( $current_page )?>" data-id="<?php echo ( is_user_logged_in() ) ? esc_attr( $wishlist_meta['ID'] ) : '' ?>" data-token="<?php echo ( ! empty( $wishlist_meta['wishlist_token'] ) && is_user_logged_in() ) ? esc_attr( $wishlist_meta['wishlist_token'] ) : '' ?>">
 
 	    <?php $column_count = 2; ?>
 
@@ -147,19 +147,19 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 
 
 
-                        <td class="product-thumbnail">
+                        <td class="product-thumbnail" data-title="<?php esc_html_e('Product', 'woocommerce'); ?>">
                             <a href="<?php echo esc_url( get_permalink( apply_filters( 'woocommerce_in_cart_product', $item['prod_id'] ) ) ) ?>">
                                 <?php echo $product->get_image() ?>
                             </a>
                         </td>
 
-                        <td class="product-name">
+                        <td class="product-name" data-title="<?php esc_html_e('Product', 'woocommerce'); ?>">
                             <a href="<?php echo esc_url( get_permalink( apply_filters( 'woocommerce_in_cart_product', $item['prod_id'] ) ) ) ?>"><?php echo apply_filters( 'woocommerce_in_cartproduct_obj_title', $product->get_title(), $product ) ?></a>
                             <?php do_action( 'yith_wcwl_table_after_product_name', $item ); ?>
                         </td>
 
                         <?php if( $show_price ) : ?>
-                            <td class="product-price">
+                            <td class="product-price" data-title="<?php esc_html_e('Price', 'woocommerce'); ?>">
                                 <?php
                                 if( is_a( $product, 'WC_Product_Bundle' ) ){
 	                                if( $product->min_price != $product->max_price ){
@@ -180,7 +180,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
                         <?php endif ?>
 
                         <?php if( $show_stock_status ) : ?>
-                            <td class="product-stock-status">
+                            <td class="product-stock-status" data-title="<?php esc_html_e('Status', 'woocommerce'); ?>">
                                 <?php
                                 if( $stock_status == 'out-of-stock' ) {
                                     $stock_status = "Out";
@@ -194,7 +194,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
                         <?php endif ?>
 
 	                    <?php if( $show_last_column ): ?>
-                        <td class="product-add-to-cart">
+                        <td class="product-add-to-cart" data-title="<?php esc_html__(' Add to Cart', 'woocommerce'); ?>">
 	                        <!-- Date added -->
 	                        <?php
 	                        if( $show_dateadded && isset( $item['dateadded'] ) ):

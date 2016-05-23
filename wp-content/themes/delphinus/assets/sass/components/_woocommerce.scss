@@ -1638,8 +1638,20 @@
       border-color: $black;
       display: inline-block!important;
     }
+    tr{
+      td.product-remove{
+        padding: 14px;
+      }
+      td.product-add-to-cart:before{
+        display: none;
+      }
+    }
+    tfoot{
+      td:before{
+        display: none;
+      }
+    }
   }
-
 }
 
 .woocommerce-breadcrumb{
@@ -2485,4 +2497,12 @@
   0% 		{ transform: rotate(0deg); }
   50% 	{ transform: rotate(180deg); }
   100% 	{ transform: rotate(360deg); }
+}
+
+#yith-wcwl-popup-message{
+  @include border-radius(0);
+  border: 2px solid $black;
+  padding: 10px 30px;
+  margin: 0 !important;
+  @include transform(translate(-50%, -50%));
 }
