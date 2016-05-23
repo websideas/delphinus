@@ -255,10 +255,45 @@
       content: "\f006\f006\f006\f006\f006";
       color: #6fd9e9;
       text-indent: 0; }
+  .woocommerce .wc-cart-empty {
+    text-align: center; }
+  .woocommerce form.checkout_coupon,
+  .woocommerce form.login,
+  .woocommerce form.register {
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0; }
+  .woocommerce #customer_login h2 {
+    letter-spacing: 0.2em;
+    font-size: 24px;
+    line-height: 30px; }
   .woocommerce #kt-shop-filters {
     display: none;
     font-size: 14px;
-    margin-bottom: 15px; }
+    margin-top: 30px; }
+    .woocommerce #kt-shop-filters h3.widget-title:before {
+      font-family: "FontAwesome";
+      content: "";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      font-variant: normal;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      -khtml-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      top: 50%;
+      right: 12px;
+      display: none; }
   .woocommerce ul.cart_list,
   .woocommerce ul.product_list_widget {
     margin: 0;
@@ -636,8 +671,15 @@
           font-size: 14px;
           letter-spacing: 0.075em; }
         .woocommerce .products-shop-header .shop-header-list li.current-cat a,
+        .woocommerce .products-shop-header .shop-header-list li a.active,
         .woocommerce .products-shop-header .shop-header-list li a:hover {
           color: #000000; }
+      .woocommerce .products-shop-header .shop-header-list li.wc-header-categories {
+        display: none;
+        padding-left: 0;
+        margin-left: 0; }
+        .woocommerce .products-shop-header .shop-header-list li.wc-header-categories:before {
+          display: none; }
   .woocommerce .product-badge {
     -webkit-transition: all 0.2s ease-in-out 0s;
     -khtml-transition: all 0.2s ease-in-out 0s;
@@ -968,7 +1010,7 @@
     font-size: 14px;
     letter-spacing: 0.075em;
     color: #666;
-    font-family: "Karla", arial, sans-serif;
+    font-family: "Karla", sans-serif;
     text-transform: none;
     margin-bottom: 55px; }
   .woocommerce #reviews #respond p {
@@ -1748,6 +1790,8 @@
     margin-bottom: 0; }
   .products-categories-carousel .owl-item .category-banner {
     width: 100%; }
+  .products-categories-carousel.style-portrait .category-banner a {
+    color: inherit; }
 
 /*
  * KT Products

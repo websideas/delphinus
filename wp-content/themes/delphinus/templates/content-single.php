@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('single-post'); ?> itemscope="" itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php the_ID(); ?>" <?php post_class('single-post-wrap'); ?> itemscope="" itemtype="http://schema.org/BlogPosting">
     <?php kt_post_thumbnail_image('full', 'img-responsive', false, false); ?>
     <div class="single-post-content">
         <header class="entry-header">
@@ -48,7 +48,7 @@
     }
 
     if(kt_post_option(null, '_kt_prev_next', 'single_next_prev', 0)){
-        //kt_post_nav();
+        kt_post_nav();
     }
 
 

@@ -532,25 +532,41 @@ function kt_category_menu( ) {
     if ( strlen( $sub_output ) > 0 ) {
         $sub_output = '<ul class="shop-header-list shop-header-sub">' . $sub_output . '</ul>';
     }
-
-
     $shop_header_filters = '';
+
 
     $search = kt_option('shop_header_search', 1);
     if($search){
-        $shop_header_filters .= '<li>'.get_product_search_form(false).'</li>';
+        $shop_header_filters .= '<li class="wc-header-search">'.get_product_search_form(false).'</li>';
     }
 
+    $shop_header_filters .= sprintf('<li class="wc-header-categories"><a href="#kt-shop-categories">%s</a></li>', esc_html__('Categories', 'delphinus'));
+
+
+
+
     $filters = kt_option('shop_header_filters', 1);
+    $filters_html = '';
     if($filters){
-        $shop_header_filters .= sprintf('<li><a class="shop-header-filter" href="#filter">%s</a></li>', esc_html__('Filter', 'delphinus'));
+        $shop_header_filters .= sprintf('<li class="wc-header-filter"><a href="#kt-shop-filters">%s</a></li>', esc_html__('Filter', 'delphinus'));
+
+        ob_start();
+
+        echo '<div class="clearfix"></div><div id="kt-shop-filters" class="row multi-columns-row"><div id="kt-shop-filters-content">';
+        dynamic_sidebar('shop-filter-area');
+        echo '</div></div>';
+
+        $filters_html = ob_get_clean();
+
     }
+
 
     if($shop_header_filters){
         $shop_header_filters = '<div class="shop-header-right"><ul class="shop-header-list">'.$shop_header_filters.'</ul></div>';
     }
 
-    echo '<div class="shop-header-left"><ul id="shop-header-categories" class="shop-header-list">'.$output.'</ul>' . $sub_output .'</div>'.$shop_header_filters;
+
+    echo $shop_header_filters.'<div class="shop-header-left"><ul id="shop-header-categories" class="shop-header-list">'.$output.'</ul>' . $sub_output .'</div>'.$filters_html;
 
 
 
@@ -566,12 +582,6 @@ function kt_woocommerce_shop_loop(){
             echo '<div class="products-shop-header">';
             kt_category_menu();
             echo '</div>';
-            $filters = kt_option('shop_header_filters', 1);
-            if($filters){
-                echo '<div id="kt-shop-filters" class="row multi-columns-row"><div id="kt-shop-filters-content">';
-                dynamic_sidebar('shop-filter-area');
-                echo '</div></div>';
-            }
         }else{
             echo '<div class="products-tools">';
             woocommerce_result_count();

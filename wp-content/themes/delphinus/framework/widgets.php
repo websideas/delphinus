@@ -36,8 +36,8 @@ if ( function_exists('register_sidebar')) {
             'name' => esc_html__( 'Shop filter Area', 'delphinus'),
             'id' => 'shop-filter-area',
             'description' => esc_html__( 'The shop filter area', 'delphinus'),
-            'before_widget' => '<div id="%1$s" class="widget col-lg-3 col-md-3 %2$s">',
-            'after_widget' => '</div>',
+            'before_widget' => '<div id="%1$s" class="widget col-lg-3 col-md-3 %2$s"><div class="widget-content">',
+            'after_widget' => '</div></div>',
             'before_title' => '<h3 class="widget-title">',
             'after_title' => '</h3>',
         ) );

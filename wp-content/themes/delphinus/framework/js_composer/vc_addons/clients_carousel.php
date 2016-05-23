@@ -14,6 +14,7 @@ class WPBakeryShortCode_Clients_Carousel extends WPBakeryShortCode {
             'meta_key' => '',
             'order' => 'DESC',
             'target_link' => '_self',
+            'image_overlay' => '',
 
             'autoheight' => true,
             'autoplay' => false,
@@ -101,8 +102,12 @@ class WPBakeryShortCode_Clients_Carousel extends WPBakeryShortCode {
             'base' => apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG, 'clients-carousel ', $this->settings['base'], $atts ),
             'extra' => $this->getExtraClass( $el_class ),
             'css_animation' => $this->getCSSAnimation( $css_animation ),
-            'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' )
+            'shortcode_custom' => vc_shortcode_custom_css_class( $css, ' ' ),
         );
+        if($image_overlay){
+            $elementClass['overlay'] = 'overlay-'.$image_overlay;
+        }
+
 
         $elementClass = preg_replace( array( '/\s+/', '/^\s|\s$/' ), array( ' ', '' ), implode( ' ', $elementClass ) );
 
@@ -141,6 +146,17 @@ vc_map( array(
                 esc_html__( 'Top', 'delphinus' ) => '_top',
             ),
             'description' => esc_html__( 'Select target link.', 'delphinus' ),
+        ),
+        array(
+            'type' => 'dropdown',
+            'heading' => esc_html__( 'Image Overlay', 'delphinus' ),
+            'param_name' => 'image_overlay',
+            'value' => array(
+                esc_html__( 'Default', 'delphinus' ) => '',
+                esc_html__( 'Grayscale', 'delphinus' ) => 'grayscale',
+                esc_html__( 'White', 'delphinus' ) => 'white',
+            ),
+            'description' => esc_html__( 'Select image overlay for image.', 'delphinus' ),
         ),
 
         // Data settings

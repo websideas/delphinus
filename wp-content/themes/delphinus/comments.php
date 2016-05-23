@@ -60,7 +60,7 @@ if ( post_password_required() ) {
     $required = ' '.esc_html__('(required)', 'delphinus');
 
     $new_fields = array(
-        'author' => '<p class="comment_field-column comment-form-author">' .
+        'author' => '<div class="comment-form-fields row clearfix"><p class="comment_field-column comment-form-author">' .
             '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '"  placeholder="'.esc_html__('Name', 'delphinus').'"'. $aria_req . $html_req .'/></p>',
         'email'  => '<p class="comment_field-column comment-form-email">' .
             '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" placeholder="'.esc_html__('Email', 'delphinus').'"'. $aria_req . $html_req.'/></p></div>',

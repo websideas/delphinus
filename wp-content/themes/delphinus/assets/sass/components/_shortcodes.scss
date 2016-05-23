@@ -254,6 +254,18 @@
       @include opacity(1);
     }
   }
+  .overlay-white &{
+    img{
+      @include css3-prefix('filter', 'brightness(0) invert(1)');
+      @include opacity(1);
+    }
+  }
+  .overlay-grayscale &{
+    img{
+      @include css3-prefix('filter', 'grayscale(100%)');
+      @include opacity(1);
+    }
+  }
 }
 /*
  * 10.16 KT Wrapper

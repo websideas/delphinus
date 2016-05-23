@@ -1370,7 +1370,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             'ul.navigation-mobile > li > a:hover'
                         ),
                         'title'    => esc_html__( 'Top Level hover Color', 'delphinus' ),
-                        'default'  => '#22dcce',
+                        'default'  => '#000000',
                         'transparent' => false
                     ),
                     array(
@@ -1439,7 +1439,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                             'ul.navigation-mobile > li .kt-megamenu-wrapper > ul.kt-megamenu-ul > li > .sub-menu-megamenu > li > a:hover',
                         ),
                         'title'    => esc_html__( 'Text Hover color', 'delphinus' ),
-                        'default'  => '#22dcce',
+                        'default'  => '#000000',
                         'transparent' => false
                     ),
 

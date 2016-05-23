@@ -390,3 +390,26 @@
     }
   }
 }
+/**
+** Custom VC CTA
+*/
+section.vc_cta3-container{
+  margin: 0;
+}
+
+.vc_general.vc_cta3{
+  margin-bottom: $vspacing;
+  &.vc_cta3-style-transparent{
+    border: none;
+    @include border-radius(0);
+    padding: 0;
+    .vc_cta3_content-container{
+      display: table;
+      width: 100%;
+    }
+    .vc_cta3-content{
+      margin-bottom: 20px;
+    }
+  }
+
+}

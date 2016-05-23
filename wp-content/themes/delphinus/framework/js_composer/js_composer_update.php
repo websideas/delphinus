@@ -26,6 +26,9 @@ function kt_add_option_to_vc() {
     vc_update_shortcode_param( 'vc_tta_tabs', $tab_styles );
 
 
+    $cta_styles = WPBMap::getParam( 'vc_cta', 'style' );
+    $cta_styles['value'][esc_html__( 'Transparent', 'delphinus' )] = 'transparent';
+    vc_update_shortcode_param( 'vc_cta', $cta_styles );
 
 }
 

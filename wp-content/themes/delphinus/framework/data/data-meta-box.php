@@ -241,10 +241,14 @@ function kt_register_meta_boxes( $meta_boxes )
             'label' => esc_html__( 'Header', 'delphinus' ),
             'icon'  => 'fa fa-desktop',
         ),
+        'page_footer'  => array(
+            'label' => esc_html__( 'Footer', 'delphinus' ),
+            'icon'  => 'fa fa-list-alt',
+        ),
         'page_header' => array(
             'label' => esc_html__( 'Page Header', 'delphinus' ),
             'icon'  => 'fa fa-bars',
-        )
+        ),
     );
 
     $fields_page = array(
@@ -291,7 +295,6 @@ function kt_register_meta_boxes( $meta_boxes )
             'desc' => esc_html__('Choose which menu location to be used in this page. If left blank, Primary Menu will be used.', 'delphinus'),
         ),
 
-
         array(
             'name'    => esc_html__( 'Header layout', 'delphinus' ),
             'type'     => 'select',
@@ -325,9 +328,6 @@ function kt_register_meta_boxes( $meta_boxes )
             'std'  => 'default',
             'tab'  => 'header',
         ),
-
-
-
 
         array(
             'name' => __('Transparent header Color Scheme', 'delphinus'),
@@ -385,6 +385,21 @@ function kt_register_meta_boxes( $meta_boxes )
             'visible' => array($prefix . 'slideshow_type', '=', 'custom'),
             'rows'        => 5,
         ),
+        // Footer
+        array(
+
+            'name' => esc_html__( 'Footer Top', 'delphinus' ),
+            'id' => $prefix . 'footer_top',
+            'desc' => esc_html__( "Show Footer Top.", 'delphinus' ),
+            'type' => 'select',
+            'options' => array(
+                'off'	    => esc_html__('Hidden', 'delphinus'),
+                'on'		=> esc_html__('Show', 'delphinus'),
+            ),
+            'std'  => '',
+            'placeholder' => esc_html__('Default', 'delphinus'),
+            'tab'  => 'page_footer',
+        ),
     );
 
     /**
@@ -431,7 +446,8 @@ function kt_register_meta_boxes( $meta_boxes )
         'post_header'  => array(
             'label' => esc_html__( 'Header', 'delphinus' ),
             'icon'  => 'fa fa-desktop',
-        )
+        ),
+
     );
 
     $fields_post = array(

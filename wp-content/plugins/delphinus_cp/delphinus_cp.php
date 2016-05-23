@@ -119,12 +119,12 @@ function kt_register_employees_init(){
     $args = array(
         'labels' => $labels,
         'hierarchical' => true,
-        'public' => true,
+        'public' => false,
         'show_ui' => true,
         'show_in_menu' => true,
-        'show_in_nav_menus' => true,
+        'show_in_nav_menus' => false,
         'supports' 	=> array('title', 'thumbnail', 'page-attributes'),
-        'rewrite' => array('slug' => 'team'),
+        //'rewrite' => array('slug' => 'team'),
         'menu_icon' => 'dashicons-groups'
     );
     register_post_type( 'kt_employees', $args );

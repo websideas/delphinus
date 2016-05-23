@@ -498,20 +498,6 @@ function kt_get_the_archive_title($title) {
 }
 
 
-function kt_comment_form_before_fields(){
-    echo '<div class="comment-form-fields row clearfix">';
-}
-add_action( 'comment_form_before_fields', 'kt_comment_form_before_fields', 1 );
-
-
-
-function kt_comment_form_after_fields(){
-    echo '</div>';
-}
-add_action( 'comment_form_after_fields', 'kt_comment_form_after_fields', 9999 );
-
-
-
 add_filter('wpb_widget_title', 'kt_widget_title', 10, 2);
 function kt_widget_title($output = '', $params = array('')) {
     if ( '' === $params['title'] ) {

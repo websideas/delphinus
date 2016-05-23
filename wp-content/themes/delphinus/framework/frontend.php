@@ -103,7 +103,7 @@ function kt_add_scripts() {
 
     wp_enqueue_style( 'bootstrap', KT_THEME_LIBS . 'bootstrap/css/bootstrap.css', array());
     wp_enqueue_style( 'font-awesome', KT_THEME_LIBS . 'font-awesome/css/font-awesome.min.css', array());
-    wp_enqueue_style( 'kt-delphinus-font', KT_THEME_LIBS . 'delphinus/style.css', array());
+    wp_enqueue_style( 'kt-delphinus-font', KT_THEME_LIBS . 'delphinus/style.min.css', array());
 
     wp_enqueue_style( 'kt-plugins', KT_THEME_CSS . 'plugins.css', array());
 

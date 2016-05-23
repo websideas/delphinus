@@ -64,7 +64,7 @@ if ( ! empty( $full_width ) ) {
 
 
         if(is_page_template( 'page-templates/full-width.php' )){
-            $content = '<div class="container">'.$content.'</div>';
+            $content = '<div class="container"><div class="vc_row_kt">'.$content.'</div></div>';
         }
 
 	} elseif ( 'stretch_row_content_no_spaces' === $full_width ) {
@@ -78,7 +78,7 @@ if ( ! empty( $full_width ) ) {
 
 }else{
     if(is_page_template( 'page-templates/full-width.php' )){
-        $content = '<div class="container">'.$content.'</div>';
+        $content = '<div class="container"><div class="vc_row_kt">'.$content.'</div></div>';
     }
 }
 

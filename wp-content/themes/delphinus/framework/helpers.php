@@ -790,3 +790,34 @@ if (!function_exists('kt_post_option')) {
         return $ouput;
     }
 }
+
+if (!function_exists('kt_footer_top')) {
+
+    /**
+     * Get Footer top show or hidden.
+     */
+    function kt_footer_top(){
+
+        $footer_top = '';
+
+        if(is_page()){
+            $footer_top = rwmb_meta('_kt_footer_top');
+        }
+
+        if($footer_top == 'on'){
+            $footer_top = true;
+        }elseif($footer_top == 'off'){
+            $footer_top = false;
+        }else{
+            $footer_top = kt_option('footer_top', true);
+        }
+
+
+
+
+        if(!is_active_sidebar( 'footer-top' )){
+            $footer_top = false;
+        }
+        return $footer_top;
+    }
+}

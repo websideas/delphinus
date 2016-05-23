@@ -45,14 +45,14 @@ if ( empty( $woocommerce_carousel ) ) {
         //print_r($category);
 
         if($woocommerce_carousel == 'portrait'){
-            printf('<h3><span>%s</span>%s</h3>', esc_html__('shop for', 'delphinus'), $category->name);
             printf(
-                '<a href="%s" class="category-banner-link"></a>',
-                get_term_link( $category->slug, 'product_cat' )
+                '<h3><a href="%s" class="category-banner-link"><span>%s</span>%s</a></h3>',
+                get_term_link( $category->slug, 'product_cat' ),
+                esc_html__('shop for', 'delphinus'),
+                $category->name
             );
         }else{
             printf('<h3>%s</h3>', $category->name);
-
 
             $args = array(
                 'parent' => $category->term_id

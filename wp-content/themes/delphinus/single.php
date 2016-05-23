@@ -5,8 +5,6 @@
  */
 
 $sidebar = kt_get_post_sidebar();
-
-
 $sidebar = array ( 'sidebar' => 'right', 'sidebar_area' => 'primary-widget-area');
 
 $main_column = ($sidebar['sidebar']) ? '9' : '12';
@@ -44,19 +42,18 @@ get_header(); ?>
                     }
                     ?>
                 <?php endwhile; // end of the loop. ?>
-            </div><!-- .site-main -->
+                <?php echo '</div><!-- .site-main -->'; ?>
 
-            <?php if($sidebar['sidebar']){ ?>
-                <?php echo '<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 side-bar main-sidebar">'; ?>
+
+                <?php if($sidebar['sidebar']){ ?>
+                    <?php echo '<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 side-bar main-sidebar">'; ?>
                     <div class="side-bar-inner">
                         <?php dynamic_sidebar($sidebar['sidebar_area']); ?>
                     </div>
-                </div><!-- .sidebar -->
-            <?php } ?>
+                    <?php echo '</div><!-- .sidebar -->'; ?>
+                <?php } ?>
             </div><!-- .row -->
         </div><!-- .container -->
     </div>
 </div><!-- #primary -->
-
-
 <?php get_footer(); ?>

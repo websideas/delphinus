@@ -10,12 +10,11 @@
             </div><!-- #content -->
         </div><!-- #wrapper-content -->
 
-
         <?php if(kt_option('footer', true)){ ?>
             <?php do_action( 'kt_before_footer' ); ?>
             <div id="footer" class="site-footer">
-
-                <?php if(is_active_sidebar( 'footer-top' ) && kt_option('footer_top', true)){ ?>
+                <?php $footer_top = kt_footer_top(); ?>
+                <?php if($footer_top){ ?>
                     <footer id="footer-top">
                         <div class="container">
                             <?php dynamic_sidebar('footer-top') ?>

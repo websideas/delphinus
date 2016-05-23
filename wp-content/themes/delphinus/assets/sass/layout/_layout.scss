@@ -9,13 +9,8 @@
   overflow-x: hidden;
 }
 
-.side-bar-inner{
-  .sidebar-right &{
-    padding-left: 20px;
-  }
-  .sidebar-left &{
-    padding-right: 20px;
-  }
+.vc_row_kt{
+  @include clearfix();
 }
 
 .content-area-inner{
@@ -385,7 +380,6 @@
 /* ==============================
    Footer
    ============================== */
-
 
 #footer-top{
   background: $gray-bg;
