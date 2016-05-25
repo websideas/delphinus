@@ -131,3 +131,19 @@ div.woocs_price_info ul li{
     display: none;
 }
 
+ul.woocs_price_info_list li span{
+    font-weight: bold;
+}
+
+.woocs_cart_item_price{
+    font-size: 11px;
+    font-style: italic;
+}
+
+#shipping_method .woocs_cart_item_price{
+    display: inline-block;
+    clear: both;
+    text-indent: 0;
+    margin-left: 5px;
+}
+

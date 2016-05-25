@@ -22,13 +22,13 @@ if ( !defined('ABSPATH')) exit;
         </div>
         <div class="topbar-right col-sm-4">
             <?php if(kt_is_wc()){ ?>
-                <div class="top-navigation">
+                <ul class="top-navigation">
                     <?php
                     get_template_part( 'templates/headers/header',  'myaccount');
                     get_template_part( 'templates/headers/header',  'wishlist');
                     get_template_part( 'templates/headers/header',  'cart');
                     ?>
-                </div>
+                </ul>
             <?php } ?>
         </div>
     </div>

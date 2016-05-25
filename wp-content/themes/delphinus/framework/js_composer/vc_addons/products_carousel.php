@@ -119,7 +119,7 @@ class WPBakeryShortCode_Products_Carousel extends WPBakeryShortCode {
             if($layout == 'transparent'){
                 $woocommerce_loop['type'] = 'transparent';
             }else{
-                $woocommerce_loop['type'] = 'classic';
+                $woocommerce_loop['type'] = 'normal';
             }
 
             woocommerce_product_loop_start();

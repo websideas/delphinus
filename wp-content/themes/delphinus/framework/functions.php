@@ -439,8 +439,10 @@ function kt_get_page_subtitle(){
         $tagline = get_the_archive_description( );
         if(kt_is_wc()){
             if(is_shop()){
-                $shop_page_id = get_option( 'woocommerce_shop_page_id' );
-                $tagline = rwmb_meta('_kt_page_header_subtitle', array(), $shop_page_id);
+                if(!is_search()){
+                    $shop_page_id = get_option( 'woocommerce_shop_page_id' );
+                    $tagline = rwmb_meta('_kt_page_header_subtitle', array(), $shop_page_id);
+                }
             }
             if( is_product_category() || is_product_tag() ){
                 $tagline = '';

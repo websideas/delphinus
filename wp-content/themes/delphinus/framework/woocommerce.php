@@ -821,12 +821,8 @@ function kt_woocommerce_template_single_excerpt(){
     if ( ! $post_excerpt) {
         return;
     }
-
-    ?>
-    <div itemprop="description">
-        <?php echo apply_filters( 'woocommerce_short_description', $post_excerpt ) ?>
-    </div>
-    <?php
+    echo apply_filters( 'woocommerce_short_description', $post_excerpt );
+    
 }
 
 

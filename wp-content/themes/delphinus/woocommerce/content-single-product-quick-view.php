@@ -27,6 +27,9 @@ global $post, $product, $woocommerce;
     $layout = kt_get_product_layout();
     $classes = array('product', 'wc-single-product-quickview', 'product-'.$layout);
 
+    $items = apply_filters('kt_product_thumbnail_items-quickview', 3, $layout);
+    $items_mb = apply_filters('kt_product_thumbnail_items_mobile-quickview', 3, $layout);
+
 ?>
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class($classes); ?>>
 
@@ -81,7 +84,7 @@ global $post, $product, $woocommerce;
 
                 </div>
                 <div class="product-main-thumbnails-wrap">
-                    <div class="product-main-thumbnails" id="quickview-thumbnails" data-items="3">
+                    <div class="product-main-thumbnails" id="quickview-thumbnails" data-items="<?php echo $items ?>" data-mobile="<?php echo $items ?>">
                         <?php
                         if ( has_post_thumbnail() ) {
                             $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;

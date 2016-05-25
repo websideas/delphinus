@@ -71,9 +71,9 @@ if ( ! comments_open() ) {
 						'comment_notes_after'  => '',
                         'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title comments-title">',
 						'fields'               => array(
-							'author' => '<p class="comment-form-author col-sm-12">' .
+							'author' => '<p class="comment-form-author">' .
 							            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" placeholder="'.__( 'Name', 'woocommerce' ).' *'.'" aria-required="true" /></p>',
-							'email'  => '<p class="comment-form-email col-sm-12">' .
+							'email'  => '<p class="comment-form-email">' .
 							            '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '"  placeholder="'.__( 'Email', 'woocommerce' ).' *'.'"  size="30" aria-required="true" /></p>',
 						),
 						'label_submit'  => __( 'Submit', 'woocommerce' ),

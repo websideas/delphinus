@@ -16,7 +16,6 @@ if ( !defined('ABSPATH')) exit;
                                 get_template_part( 'templates/headers/header',  'menu');
                                 get_template_part( 'templates/headers/header',  'social');
                             ?>
-                            </ul>
                         </div>
                     </div>
                     <ul id="main-nav-tool">

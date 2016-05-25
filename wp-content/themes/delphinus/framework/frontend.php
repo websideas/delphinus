@@ -796,13 +796,13 @@ if ( ! function_exists( 'kt_post_nav' ) ) {
 
         if ( ! $next && ! $previous ) return;
 
-        echo '<div class="post-navigation-wrap"><div class="container">';
+        echo '<div class="post-navigation-wrap">';
 		$args = array(
 			'next_text' => '<span class="meta-image"></span><span class="meta-nav">'.esc_html__('Previous Post', 'delphinus').'</span><span class="meta-title">%title</span>',
 			'prev_text' => '<span class="meta-image"></span><span class="meta-nav">'.esc_html__('Next Post', 'delphinus').'</span><span class="meta-title">%title</span>',
         );
 		the_post_navigation( $args );
-        echo '</div></div>';
+        echo '</div>';
 	}
 }
 
@@ -856,7 +856,15 @@ if ( ! function_exists( 'kt_related_article' ) ) :
 
                 <?php
 
-                $layout = kt_get_archive_layout();
+                $layout = array(
+                    'type' => 'grid',
+                    'columns' => '3',
+                    'columns_tab' => '2',
+                    'pagination' => 'none',
+                    'readmore' => 'none'
+                );
+
+
                 $readmore_class = (!$layout['readmore'] || $layout['readmore'] == 'none' ) ? ' no-readmore' : '';
 
                 echo '<div class="blog-posts blog-posts-'.esc_attr($layout['type']).' '.esc_attr($readmore_class).'">';

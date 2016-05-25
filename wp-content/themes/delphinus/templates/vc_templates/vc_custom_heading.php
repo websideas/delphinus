@@ -27,15 +27,19 @@ extract( $atts );
 
 extract( $this->getStyles( $el_class, $css, $google_fonts_data, $font_container_data, $atts ) );
 
-$settings = get_option( 'wpb_js_google_fonts_subsets' );
-if ( is_array( $settings ) && ! empty( $settings ) ) {
-	$subsets = '&subset=' . implode( ',', $settings );
-} else {
-	$subsets = '';
-}
 
-if ( isset( $google_fonts_data['values']['font_family'] ) ) {
-	wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
+if($use_theme_fonts != 'yes'){
+
+    $settings = get_option( 'wpb_js_google_fonts_subsets' );
+    if ( is_array( $settings ) && ! empty( $settings ) ) {
+        $subsets = '&subset=' . implode( ',', $settings );
+    } else {
+        $subsets = '';
+    }
+
+    if ( isset( $google_fonts_data['values']['font_family'] ) ) {
+        wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
+    }
 }
 
 if($letter_spacing){

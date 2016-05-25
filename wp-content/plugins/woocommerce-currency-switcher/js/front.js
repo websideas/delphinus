@@ -1,4 +1,5 @@
 var wocs_loading_first_time = true;//simply flag var
+var sumbit_currency_changing = true;//juts a flag variable for drop-down redraws when prices redraws by AJAX
 jQuery(function () {
 
     jQuery.fn.life = function (types, data, fn) {
@@ -82,11 +83,11 @@ jQuery(function () {
 
 
 
-    if (woocs_drop_down_view == 'wselect') {
+    if (woocs_drop_down_view == 'wselect' && woocs_is_mobile != 1) {
         try {
             //https://github.com/websanova/wSelect#wselectjs
             jQuery('select.woocommerce-currency-switcher').wSelect({
-                size:7
+                size: 7
             });
         } catch (e) {
             console.log(e);
@@ -95,17 +96,19 @@ jQuery(function () {
 
     //for flags view instead of drop-down
     jQuery('.woocs_flag_view_item').click(function () {
-        if (jQuery(this).hasClass('woocs_flag_view_item_current')) {
-            return false;
-        }
-        //***
+        if (sumbit_currency_changing) {
+            if (jQuery(this).hasClass('woocs_flag_view_item_current')) {
+                return false;
+            }
+            //***
 
-        if (Object.keys(woocs_array_of_get).length == 0) {
-            window.location = window.location.href + '?currency=' + jQuery(this).data('currency');
-        } else {
+            if (Object.keys(woocs_array_of_get).length == 0) {
+                window.location = window.location.href + '?currency=' + jQuery(this).data('currency');
+            } else {
 
-            woocs_redirect(jQuery(this).data('currency'));
+                woocs_redirect(jQuery(this).data('currency'));
 
+            }
         }
 
         return false;
@@ -160,6 +163,7 @@ jQuery(function () {
     //if we using js price update while the site is cached
     if (typeof woocs_shop_is_cached !== 'undefined') {
         if (woocs_shop_is_cached) {
+            sumbit_currency_changing = false;
             if (typeof woocs_array_of_get.currency === 'undefined') {
 
                 if (jQuery('body').hasClass('single')) {
@@ -177,12 +181,49 @@ jQuery(function () {
                     products_ids: products_ids
                 };
                 jQuery.post(woocs_ajaxurl, data, function (data) {
+
                     data = jQuery.parseJSON(data);
                     jQuery.each(jQuery('.woocs_price_code'), function (index, item) {
-                        jQuery(item).parent().html(data[jQuery(item).data('product-id')]);
+                        jQuery(item).parent().html(data.ids[jQuery(item).data('product-id')]);
                     });
+                    //***
+                    jQuery('.woocommerce-currency-switcher').val(data.current_currency);
+                    //***
+                    if (woocs_drop_down_view == 'chosen' || woocs_drop_down_view == 'chosen_dark') {
+                        try {
+                            if (jQuery("select.woocommerce-currency-switcher").length) {
+                                jQuery("select.woocommerce-currency-switcher").chosen({
+                                    disable_search_threshold: 10
+                                });
+                                jQuery('select.woocommerce-currency-switcher').trigger("chosen:updated");
+                            }
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    }
+                    //***
+                    if (woocs_drop_down_view == 'ddslick') {
+                        try {
+                            jQuery('select.woocommerce-currency-switcher').ddslick('select', {index: data.current_currency, disableTrigger: true});
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    }
+                    //***
+                    if (woocs_drop_down_view == 'wselect' && woocs_is_mobile != 1) {
+                        //https://github.com/websanova/wSelect
+                        try {
+                            jQuery('select.woocommerce-currency-switcher').val(data.current_currency).change();
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    }
+                    //***
+                    sumbit_currency_changing = true;
                 });
 
+            } else {
+                sumbit_currency_changing = true;
             }
         }
     }
@@ -192,7 +233,15 @@ jQuery(function () {
 
 
 function woocs_redirect(currency) {
+    if (!sumbit_currency_changing) {
+        return;
+    }
+
+    //***
     var l = window.location.href;
+
+    //for #id navigation     l = l.replace(/(#.+$)/gi, '');
+
     l = l.split('?');
     l = l[0];
     var string_of_get = '?';

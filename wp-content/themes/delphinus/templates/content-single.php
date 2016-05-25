@@ -38,19 +38,21 @@
 
 <?php
 
-    if(kt_post_option(null, '_kt_related_acticles', 'single_related', 1)){
-        kt_related_article(null, kt_option('single_related_type', 'categories'));
-    }
 
-    if(kt_post_option(null, '_kt_author_info', 'single_author', 1)){
-        // Author bio.
-        get_template_part( 'templates/author-bio' );
-    }
+    /*
 
     if(kt_post_option(null, '_kt_prev_next', 'single_next_prev', 0)){
         kt_post_nav();
     }
 
+    */
+    if(kt_post_option(null, '_kt_author_info', 'single_author', 1)){
+        // Author bio.
+        get_template_part( 'templates/author-bio' );
+    }
 
+    if(kt_post_option(null, '_kt_related_acticles', 'single_related', 0)){
+        kt_related_article(null, kt_option('single_related_type', 'categories'));
+    }
 
 ?>

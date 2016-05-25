@@ -505,7 +505,7 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'			=> 'styling-logo',
-                'title'			=> esc_html__( 'Logo', 'wingman' ),
+                'title'			=> esc_html__( 'Logo', 'delphinus' ),
                 'subsection' => true,
                 'fields'		=> array(
 
@@ -513,7 +513,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'id'             => 'logo_width',
                         'type'           => 'dimensions',
                         'units_extended' => 'true',
-                        'title'          => esc_html__( 'Logo width', 'wingman' ),
+                        'title'          => esc_html__( 'Logo width', 'delphinus' ),
                         'height'         => false,
                         'default'        => array( 'width'  => 170, 'units'   => 'px' ),
                         'output'   => array( '.branding.branding-default img' ),
@@ -526,7 +526,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'output'   => array( '.branding.branding-default' ),
                         'units'          => array( 'px' ),
                         'units_extended' => 'true',
-                        'title'    => esc_html__( 'Logo margin spacing Option', 'wingman' ),
+                        'title'    => esc_html__( 'Logo margin spacing Option', 'delphinus' ),
                         'default'  => array(
                             'margin-top'    => '36px',
                             'margin-right'  => '0',
@@ -543,7 +543,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'id'             => 'logo_mobile_width',
                         'type'           => 'dimensions',
                         'units_extended' => 'true',
-                        'title'          => esc_html__( 'Logo mobile width', 'wingman' ),
+                        'title'          => esc_html__( 'Logo mobile width', 'delphinus' ),
                         'height'         => false,
                         'default'        => array( 'width'  => 170, 'units'   => 'px' ),
                         'output'   => array( '.branding.branding-mobile img' ),
@@ -554,7 +554,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'mode'     => 'margin',
                         'units'          => array( 'px' ),
                         'units_extended' => 'true',
-                        'title'    => esc_html__( 'Logo mobile margin spacing Option', 'wingman' ),
+                        'title'    => esc_html__( 'Logo mobile margin spacing Option', 'delphinus' ),
                         'default'  => array(
                             'margin-top'    => '20px',
                             'margin-right'  => '0px',
@@ -573,7 +573,7 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
 				'id'			=> 'styling_header',
-				'title'			=> esc_html__( 'Header', 'wingman' ),
+				'title'			=> esc_html__( 'Header', 'delphinus' ),
 				'subsection' => true,
                 'fields'		=> array(
                     array(
@@ -585,8 +585,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'header_background',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'Header background', 'wingman' ),
-                        'subtitle' => esc_html__( 'Header background with image, color, etc.', 'wingman' ),
+                        'title'    => esc_html__( 'Header background', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Header background with image, color, etc.', 'delphinus' ),
                         'default'   => '',
                         'output'      => array( '.header-content' ),
                     ),
@@ -642,7 +642,7 @@ if ( ! class_exists( 'KT_config' ) ) {
              **/
             $this->sections[] = array(
                 'id'			=> 'styling_header_toolbar',
-                'title'			=> esc_html__( 'Header Toolbar', 'wingman' ),
+                'title'			=> esc_html__( 'Header Toolbar', 'delphinus' ),
                 'subsection' => true,
                 'fields'		=> array(
                     array(
@@ -654,8 +654,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                     array(
                         'id'       => 'header_toolbar_background',
                         'type'     => 'background',
-                        'title'    => esc_html__( 'Header Toolbar background', 'wingman' ),
-                        'subtitle' => esc_html__( 'Header Toolbar background with image, color, etc.', 'wingman' ),
+                        'title'    => esc_html__( 'Header Toolbar background', 'delphinus' ),
+                        'subtitle' => esc_html__( 'Header Toolbar background with image, color, etc.', 'delphinus' ),
                         'default'   => '',
                         'output'      => array( '.topbar' ),
                     ),
@@ -2163,6 +2163,16 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'off' => esc_html__('Disabled', 'delphinus'),
                         'required' => array('shop_header_tool_bar','equals','2'),
                     ),
+                    array(
+                        'id' => 'shop_header_ajax',
+                        'type' => 'switch',
+                        'title' => esc_html__('Ajax for fillter', 'delphinus'),
+                        'desc' => esc_html__('Enable ajax when use filter.', 'delphinus'),
+                        "default" => 1,
+                        'on' =>  esc_html__('Enabled', 'delphinus'),
+                        'off' => esc_html__('Disabled', 'delphinus'),
+                        'required' => array('shop_header_tool_bar','equals','2'),
+                    ),
 
                     // For Single Products
                     array(
@@ -2583,6 +2593,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'on' => esc_html__('Enabled', 'delphinus'),
                         'off' =>esc_html__('Disabled', 'delphinus')
                     ),
+                    /*
                     array(
                         'id' => 'single_next_prev',
                         'type' => 'switch',
@@ -2592,6 +2603,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'on' => esc_html__('Enabled', 'delphinus'),
                         'off' =>esc_html__('Disabled', 'delphinus')
                     ),
+                    */
                     array(
                         'id' => 'single_author',
                         'type' => 'switch',

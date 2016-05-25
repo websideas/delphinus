@@ -3,8 +3,8 @@ Contributors: RealMag777
 Donate link: http://codecanyon.net/item/woocommerce-currency-switcher/8085217?ref=realmag777
 Tags: woocommerce currency switcher, currencies, currencies switcher, currency switcher, woocommerce switcher, currency converter, currency, shortcode, switcher, woocommerce
 Requires at least: 3.8.0
-Tested up to: 4.4.2
-Stable tag: 1.1.5.4
+Tested up to: 4.5.2
+Stable tag: 1.1.6
 
 WooCommerce Currency Switcher – is the plugin that allows you to switch to different currencies and get their rates converted in the real time!
 
@@ -24,7 +24,7 @@ Read more here: http://currency-switcher.com/
 * 3 Widgets: currencies switcher, currency converter, currencies rates
 * 5 kinds of selectors with flags + flag mode
 * 2 more additional AJAXED shortcodes: [woocs_rates exclude="" precision=2] & [woocs_converter exclude="" precision=2]
-* Currency can be changed automatically according to visitor's IP using woo WC_Geolocation PHP class (premium version)
+* Currency can be changed automatically according to visitor's IP using woo WC_Geolocation PHP class
 * 4 currencies aggregators
 * The customer allowed to pay in the selected currency
 * WooCommerce native PayPal gate ready!
@@ -44,7 +44,7 @@ Look more here please: http://codecanyon.net/item/woocommerce-currency-switcher/
 
 https://www.youtube.com/watch?v=wUoM9EHjnYs
 
-DO YOU SEARCHING PRODUCT FILTER FOR WOOCOMMERCE? LOOK IT HERE PLEASE: https://wordpress.org/plugins/woocommerce-products-filter/
+DO YOU NEED SEARCHING PRODUCTS FILTER FOR WOOCOMMERCE? LOOK IT HERE PLEASE: https://wordpress.org/plugins/woocommerce-products-filter/
 
 == Installation ==
 * Download to your plugin directory or simply install via Wordpress admin interface.
@@ -70,6 +70,13 @@ R: http://currency-switcher.com/category/faq/
 3. GeoLocation rules in the back panel
 
 == Changelog ==
+
+= 1.1.6 =
+* Heap of small bugs fixed
+* New hook woocs_price_html_tail
+* Approx. value on cart and chekout page in the currency of customer (in multiple mode only+geoip enabled)
+* New hook woocs_get_approximate_amount_text
+* Previous version of the plugin is here: http://currency-switcher.com/wp-content/uploads/2016/05/woocommerce-currency-switcher-1154.zip
 
 = 1.1.5.4 =
 * Improvements for security functionality
@@ -150,7 +157,7 @@ Plugin release. Operate all the basic functions.
 
 == License ==
 
-This plugin is copyright pluginus.net &copy; 2012-2015 with [GNU General Public License][] by realmag777.
+This plugin is copyright pluginus.net &copy; 2012-2016 with [GNU General Public License][] by realmag777.
 
 This program is free software; you can redistribute it and/or modify it under
 the terms of the [GNU General Public License][] as published by the Free
@@ -164,5 +171,5 @@ WARRANTY. See the GNU General Public License for more details.
 
 
 == Upgrade Notice ==
-Look here for full functionality plugin and updates: http://codecanyon.net/item/woocommerce-currency-switcher/8085217?ref=realmag777
+Look here for ADVANCED version of the plugin: http://codecanyon.net/item/woocommerce-currency-switcher/8085217?ref=realmag777
 

@@ -1,4 +1,5 @@
 <?php if (!defined('ABSPATH')) die('No direct access allowed'); ?>
+<div class="woocs-admin-preloader"></div>
 <div class="subsubsub_section">
     <br class="clear" />
 
@@ -155,20 +156,38 @@
         ),
         array(
             'name' => __('Rate auto update', 'woocommerce-currency-switcher'),
-            'desc' => __('Currencies rate auto update by wp cron. Use it for your own risk! Premium only!', 'woocommerce-currency-switcher'),
+            'desc' => __('Currencies rate auto update by wp cron. Use it for your own risk!', 'woocommerce-currency-switcher'),
             'id' => 'woocs_currencies_rate_auto_update',
             'type' => 'select',
             'class' => 'chosen_select',
             'css' => 'min-width:300px;',
             'options' => array(
-                'no' => __('no auto update - premium only', 'woocommerce-currency-switcher')
+                'no' => __('no auto update', 'woocommerce-currency-switcher'),
+                'hourly' => __('hourly', 'woocommerce-currency-switcher'),
+                'twicedaily' => __('twicedaily', 'woocommerce-currency-switcher'),
+                'daily' => __('daily', 'woocommerce-currency-switcher'),
+                'week' => __('weekly', 'woocommerce-currency-switcher'),
+                'month' => __('monthly', 'woocommerce-currency-switcher')
             ),
             'desc_tip' => true
         ),
         array(
             'name' => __('Hide switcher on checkout page', 'woocommerce-currency-switcher'),
-            'desc' => __('Hide switcher on checkout page for any of your reason. Better restrike for users change currency on checkout page in multiple mode. Premium only', 'woocommerce-currency-switcher'),
+            'desc' => __('Hide switcher on checkout page for any of your reason. Better restrike for users change currency on checkout page in multiple mode.', 'woocommerce-currency-switcher'),
             'id' => 'woocs_restrike_on_checkout_page',
+            'type' => 'select',
+            'class' => 'chosen_select',
+            'css' => 'min-width:300px;',
+            'options' => array(
+                0 => __('No', 'woocommerce-currency-switcher'),
+                1 => __('Yes', 'woocommerce-currency-switcher'),
+            ),
+            'desc_tip' => true
+        ),
+        array(
+            'name' => __('Show approx. amount', 'woocommerce-currency-switcher'),
+            'desc' => __('THIS IS AN EXPERIMENTAL FEATURE! Show approximate amount on the checkout and the cart page with currency of user defined by IP in the GeoIp options tab. ATTENTION: "Use GeoLocation" should be enabled and its options should be set there!', 'woocommerce-currency-switcher'),
+            'id' => 'woocs_show_approximate_amount',
             'type' => 'select',
             'class' => 'chosen_select',
             'css' => 'min-width:300px;',
@@ -193,7 +212,7 @@
         ),
         array(
             'name' => __('Custom money signs', 'woocommerce-currency-switcher'),
-            'desc' => __('Add your money symbols in your shop. Example: $USD,AAA,AUD$,DDD - separated by commas.', 'woocommerce-currency-switcher'),
+            'desc' => __('Add your money symbols in your shop. Example: $USD,AAA,AUD$,DDD - separated by commas', 'woocommerce-currency-switcher'),
             'id' => 'woocs_customer_signs',
             'type' => 'textarea',
             'std' => '', // WooCommerce < 2.0
@@ -202,8 +221,8 @@
             'desc_tip' => true
         ),
         array(
-            'name' => __('Custom price format on shop page', 'woocommerce-currency-switcher'),
-            'desc' => __('Set your format how to display price on shop page. Use keys: __CODE__,__PRICE__. Leave it empty to use default format. Example: __PRICE__ (__CODE__)', 'woocommerce-currency-switcher'),
+            'name' => __('Custom price format', 'woocommerce-currency-switcher'),
+            'desc' => __('Set your format how to display price on front. Use keys: __CODE__,__PRICE__. Leave it empty to use default format. Example: __PRICE__ (__CODE__)', 'woocommerce-currency-switcher'),
             'id' => 'woocs_customer_price_format',
             'type' => 'text',
             'std' => '', // WooCommerce < 2.0
@@ -250,33 +269,22 @@
 
 
             <div id="tabs-1">
-
-                <div style="display: none;">
-                    <div id="woocs_item_tpl"><?php
-                        $empty = array(
-                            'name' => '',
-                            'rate' => 0,
-                            'symbol' => '',
-                            'position' => '',
-                            'is_etalon' => 0,
-                            'description' => '',
-                            'hide_cents' => 0
-                        );
-                        woocs_print_currency($this, $empty);
-                        ?>
-                    </div>
-                </div>
-
                 <strong style="color: red;">In the free version of the plugin you can operate with 2 ANY currencies only. <a href="http://codecanyon.net/item/woocommerce-currency-switcher/8085217?ref=realmag777" target="_blank">Premium version of the plugin</a></strong><br />
 
 
                 <ul id="woocs_list">
                     <?php
+                    $counter = 0;
                     if (!empty($currencies) AND is_array($currencies))
                     {
                         foreach ($currencies as $key => $currency)
                         {
+                            if ($counter >= 2)
+                            {
+                                break;
+                            }
                             woocs_print_currency($this, $currency);
+                            $counter++;
                         }
                     }
                     ?>
@@ -322,7 +330,7 @@
                                                 <select name="woocs_geo_rules[<?php echo $currency['name'] ?>][]" multiple="" size="1" style="max-width: 100%;" class="chosen_select">
                                                     <option value="0"></option>
                                                     <?php foreach ($c->get_countries() as $key => $value): ?>
-                                                        <option <?php echo(@in_array($key, $rules) ? 'selected=""' : '') ?> value="<?php echo $key ?>"><?php echo $value ?></option>
+                                                        <option <?php echo(in_array($key, $rules) ? 'selected=""' : '') ?> value="<?php echo $key ?>"><?php echo $value ?></option>
                                                     <?php endforeach; ?>
                                                 </select>
                                             </td>
@@ -379,9 +387,6 @@
     <b style="color:red;"><?php _e('Hint'); ?>:</b>&nbsp;<?php _e('To update all currencies rates by one click - press radio button of the default currency and then press "Save changes" button!', 'woocommerce-currency-switcher'); ?><br />
 
 
-
-
-
     <hr />
 
     <i>In the free version of the plugin you can operate with 2 ANY currencies only. If you want more currencies and features you are need make upgrade to the premium version of the plugin</i><br />
@@ -400,18 +405,9 @@
     </table>
 
 
-
     <div class="info_popup" style="display: none;"></div>
 
 </div>
-
-
-<style type="text/css">
-    label[for=woocs_currencies_rate_auto_update]
-    {
-        color:red;
-    }
-</style>
 
 <script type="text/javascript">
     jQuery(function () {
@@ -507,6 +503,9 @@
             return false;
         });
 
+        //loader
+        jQuery(".woocs-admin-preloader").fadeOut("slow");
+
     });
 
 
@@ -594,6 +593,7 @@ function woocs_print_currency($_this, $currency)
         ?>
         <input type="hidden" value="<?php echo $flag ?>" class="woocs_flag_input" name="woocs_flag[]" />
         <a href="#" class="woocs_flag help_tip" data-tip="<?php _e("Click to select the flag", 'woocommerce-currency-switcher'); ?>"><img src="<?php echo $flag ?>" style="vertical-align: middle; width: 37px;" alt="<?php _e("Flag", 'woocommerce-currency-switcher'); ?>" /></a>
+        &nbsp;<a href="#" class="button woocs_del_currency help_tip" data-tip="<?php _e("remove", 'woocommerce-currency-switcher'); ?>" style="vertical-align: middle;">X</a>
         &nbsp;<a href="#" class="help_tip" data-tip="<?php _e("drag and drope", 'woocommerce-currency-switcher'); ?>"><img style="width: 22px; vertical-align: middle;" src="<?php echo WOOCS_LINK ?>img/move.png" alt="<?php _e("move", 'woocommerce-currency-switcher'); ?>" /></a>
     </li>
     <?php

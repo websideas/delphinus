@@ -112,7 +112,7 @@ $classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-%3$s', $bootstr
             do_action( 'woocommerce_after_shop_loop_item' );
 
 
-            if($woocommerce_loop['type'] == 'classic'){
+            if($woocommerce_loop['type'] == 'classic' || $woocommerce_loop['type'] == 'normal'){
                 do_action( 'woocommerce_shop_loop_item_content' );
             }
 

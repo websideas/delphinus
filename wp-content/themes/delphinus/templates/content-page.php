@@ -5,11 +5,11 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header hide">
-        <div class="entry-title" itemprop="name"><?php the_title(); ?></div>
+        <div class="entry-title"><?php the_title(); ?></div>
     </header><!-- .entry-header -->
-    <div id="page-entry-content" class="entry-content" itemprop="articleBody">
+    <div id="page-entry-content" class="entry-content">
         <?php
         the_content();
         wp_link_pages( array(
@@ -36,4 +36,4 @@
     */
     ?>
 
-</article><!-- #post-## -->
+</div><!-- #post-## -->

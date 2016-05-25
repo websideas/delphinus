@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?> itemscope="" itemtype="http://schema.org/BlogPosting">
+<article id="post-<?php the_ID(); ?>" <?php post_class('blog-post'); ?> itemscope itemtype="http://schema.org/BlogPosting">
     <div class="blog-post-content">
         <?php kt_post_thumbnail_image('kt_classic'); ?>
         <div class="blog-post-inner">
