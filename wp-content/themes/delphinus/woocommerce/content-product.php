@@ -83,7 +83,7 @@ $bootstrapColumn_tab = round( 12 / $columns_tab );
 $classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-%3$s', $bootstrapColumn,$bootstrapColumn_land, $bootstrapColumn_tab);
 
 ?>
-<li <?php post_class( $classes ); ?>>
+<li <?php post_class( $classes ); ?> data-columns="<?php echo $woocommerce_loop['columns']; ?>">
     <div class="product-inner">
         <div class="product-content">
             <?php
@@ -145,5 +145,4 @@ $classes[] = sprintf('col-lg-%1$s col-md-%1$s col-sm-%2$s col-xs-%3$s', $bootstr
             ?>
         </div>
     </div>
-
 </li>

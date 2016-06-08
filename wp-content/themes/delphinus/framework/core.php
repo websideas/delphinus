@@ -13,10 +13,6 @@ define( 'KT_FW_EXT_URL', trailingslashit( KT_FW_URL . 'extensions' ) );
 
 define( 'KT_FW_PLUGINS_DIR', trailingslashit( KT_FW_DIR . 'plugins' ) );
 
-define( 'KT_FW_EXT_CUSTOM_DIR', trailingslashit( KT_FW_DIR . 'extensions-custom' ) );
-define( 'KT_FW_EXT_CUSTOM_URL', trailingslashit( KT_FW_URL . 'extensions-custom' ) );
-
-
 define( 'KT_FW_WIDGETS', trailingslashit( KT_FW_DIR . 'widgets' ) );
 
 define( 'KT_FW_ASSETS', trailingslashit( KT_FW_URL . 'assets' ) );
@@ -147,13 +143,6 @@ if (is_admin() ) {
      *
      */
     require KT_FW_EXT_DIR . 'nav/nav.php';
-
-
-	/**
-	 * Add importer
-	 *
-	 */
-	require KT_FW_DIR . 'importer.php';
 
 
     /**

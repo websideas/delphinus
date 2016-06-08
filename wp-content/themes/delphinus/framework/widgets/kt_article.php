@@ -58,11 +58,17 @@ class Widget_KT_Posts extends WP_Widget {
             <ul class="kt-posts-widget">
                 <?php while ( $r->have_posts() ) : $r->the_post(); ?>
                     <li>
-                        <?php kt_post_thumbnail_image( 'kt_small', 'img-responsive' ); ?>
+                        <?php kt_post_thumbnail_image( 'kt_widgets', 'img-responsive' ); ?>
                         <div class="content">
                             <a class="title-link" href="<?php the_permalink(); ?>"><?php get_the_title() ? the_title() : the_ID(); ?></a>
                             <div class="post-meta">
-                                <span class="post-date">November 18, 2015</span>
+                                <?php
+                                    printf(
+                                        '<span class="post-date">%s</span>',
+                                        get_the_date('F j, Y')
+                                    );
+
+                                ?>
                             </div>
                         </div>
                     </li>
@@ -135,7 +141,7 @@ class Widget_KT_Posts extends WP_Widget {
                 <option <?php selected( $orderby, 'author' ); ?> value="author"><?php esc_html_e('Author','delphinus'); ?></option>
                 <option <?php selected( $orderby, 'modified' ); ?> value="modified"><?php esc_html_e('Modified','delphinus'); ?></option>
                 <option <?php selected( $orderby, 'rand' ); ?> value="rand"><?php esc_html_e('Rand','delphinus'); ?></option>
-                <option <?php selected( $orderby, 'comment_count' ); ?> value="comment_count "><?php esc_html_e('Comment count','delphinus'); ?></option>
+                <option <?php selected( $orderby, 'comment_count' ); ?> value="comment_count"><?php esc_html_e('Comment count','delphinus'); ?></option>
             </select>
         </p>
 

@@ -2,7 +2,7 @@ body {
   min-width: 320px;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 body,
@@ -10,12 +10,11 @@ button,
 input,
 textarea {
   font-family: $font-stack;
-  line-height: 30px;
+  line-height: 28px;
   color: $text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 h1,
 h2,
@@ -55,35 +54,33 @@ a {
 
 
 blockquote {
-  background: $gray-bg;
-  padding: 90px 45px 35px;
-  margin-bottom: 30px;
+  padding: 20px 0 0 50px;
+  margin-bottom: $vspacing;
   border: none;
   position: relative;
   font-size: 14px;
+  font-style: italic;
+  font-family: $extra-font;
   color: $gray-text;
 
   &:before{
-    background: $primary-color;
-    color: #ffffff;
-    content: "“";
-    font-size: 36px;
-    height: 32px;
-    left: 45px;
-    line-height: 55px;
-    padding-left: 2px;
+    color: $extra-color;
+    content: "\201C";
+    font-size: 72px;
+    left: 0;
     position: absolute;
-    top: 35px;
-    width: 28px;
+    top: 0;
     text-align: left;
+    line-height: 72px;
+    font-style: normal;
   }
 
   .blockquote-reverse {
-    padding: 90px 45px 35px;
+    padding: 20px 50px 0 0 ;
     &:before {
       left: auto;
-      right: 45px;
-      content: "”";
+      right: 0;
+      content: "\201D";
     }
   }
 

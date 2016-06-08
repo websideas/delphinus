@@ -2,9 +2,6 @@
     "use strict"; // Start of use strict
 
 
-
-
-
     init_wc_grid_list();
     init_wc_currency();
     init_wc_quantily();
@@ -108,7 +105,7 @@
 
     function init_wc_currency(){
         if(typeof woocs_drop_down_view !== "undefined") {
-            $('.currency-switcher-content a').on('click', function(e){
+            $('.currency-switcher-content a, .menu-item-currency ul a').on('click', function(e){
                 e.preventDefault();
                 woocs_redirect($(this).data('currency'));
             });
@@ -143,7 +140,7 @@
                 afterAction : syncPosition,
                 autoHeight: true,
                 responsiveRefreshRate : 200,
-                navigationText: ['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>'],
+                navigationText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
             });
         });
 
@@ -366,7 +363,7 @@
                     finalDate = $(this).data('time'),
                     $date = new Date( finalDate );
                 $this.countdown($date, function(event) {
-                    $(this).html(event.strftime('<div><span>%D</span>'+ajax_frontend.day_str+'</div><div><span>%H</span>'+ajax_frontend.hour_str+'</div><div><span>%M</span>'+ajax_frontend.min_str+'</div><div><span>%S</span>'+ajax_frontend.sec_str+'</div>'));
+                    $(this).html(event.strftime('<div><span>%D</span>'+kt_woocommerce.day_str+'</div><div><span>%H</span>'+kt_woocommerce.hour_str+'</div><div><span>%M</span>'+kt_woocommerce.min_str+'</div><div><span>%S</span>'+kt_woocommerce.sec_str+'</div>'));
                 });
 
 
@@ -449,6 +446,35 @@
                 objCarousel.owlCarousel(options);
             });
         });
+
+
+        var $slick_categories = $('#shop-header-categories')
+            .on('setPosition', function(slick){
+                if($slick_categories){
+                    var $width_w = $slick_categories.width(),
+                        $slides = $slick_categories.find('.slick-slide'),
+                        $slides_w = 2;
+
+                    $slides.each(function(i){
+                        $slides_w += $(this).outerWidth(true);
+                    });
+                    if($slides_w > $width_w){
+                        $slick_categories.removeClass('no-buttons');
+                    }else{
+                        $slick_categories.addClass('no-buttons');
+                        $slick_categories.slick('slickGoTo', 0);
+                    }
+                }
+            })
+            .slick({
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                variableWidth: true,
+                prevArrow: '<div class="slick-prev"></div>',
+                nextArrow: '<div class="slick-next"></div>'
+            });
     }
 
 
@@ -511,7 +537,11 @@
 
 
 
-    function init_wc_filters($pageUrl){
+    function init_wc_filters( ){
+
+        var $ajax_filter = parseInt( kt_woocommerce.ajax_filter );
+        if(!$ajax_filter) return;
+
         $('#kt-shop-filters').on('click', '.widget_kt_orderby a, .widget_kt_price_filter a, .widget_color_filter a, .widget_layered_nav a', function( e ){
             e.preventDefault();
             var $this = $(this),
@@ -542,15 +572,26 @@
 
     var $ajax_request;
     function init_wc_update_filters($pageUrl){
+
         if($ajax_request && $ajax_request.readystate != 4){
             $ajax_request.abort();
-            //obj.closest('.categories-products-lists').find('a').removeClass('loading');
         }
 
         init_wc_loading(true);
 
-        var $data = { kt_shop: 'full' };
         $pageUrl = $pageUrl.replace(/\/?(\?|#|$)/, '/$1');
+
+        var $products = $('#main > .woocommerce-row'),
+            $filters = $('#kt-shop-filters-content'),
+            $pagination = $('#main > .wc-pagination-outer'),
+            $columns = $products.find('li:first').data('columns');
+
+
+        var $data = {
+            kt_shop: 'full',
+            cols: $columns
+        };
+
 
         $ajax_request = $.ajax({
             url: $pageUrl,
@@ -570,11 +611,7 @@
                     $products_change = $('#main > .woocommerce-row', $response_html),
                     $filters_change = $('#kt-shop-filters-content', $response_html),
                     $pagination_change = $('#main > .wc-pagination-outer', $response_html),
-                    $wpTitle = $($response_html).filter('title').text(),
-
-                    $products = $('#main > .woocommerce-row'),
-                    $filters = $('#kt-shop-filters-content'),
-                    $pagination = $('#main > .wc-pagination-outer');
+                    $wpTitle = $($response_html).filter('title').text();
 
                 if ($wpTitle.length) {
                     document.title = $wpTitle;
@@ -584,7 +621,9 @@
                 $filters.replaceWith($filters_change);
                 $pagination.replaceWith($pagination_change);
 
-                window.history.pushState({ktShop: true}, '', $pageUrl);
+                if ( history.pushState ) {
+                    history.pushState({}, '', $pageUrl);
+                }
 
             }
         });

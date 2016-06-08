@@ -77,8 +77,12 @@ if( ! class_exists( 'KT_MEGAMENU' ) ) {
     			}
     
     			$value = $_REQUEST['menu-item-megamenu-'.$key][$menu_item_db_id];
-                
-    			update_post_meta( $menu_item_db_id, '_menu_item_megamenu_'.$key, $value );
+                if($value != ''){
+                    update_post_meta( $menu_item_db_id, '_menu_item_megamenu_'.$key, $value );    
+                }else{
+                    delete_post_meta( $menu_item_db_id, '_menu_item_megamenu_'.$key);
+                }
+    			
     		}
             
     	}

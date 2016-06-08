@@ -3,12 +3,34 @@
   margin: 0;
   padding: 85px 0;
   background: $gray-bg;
-  h1.page-header-title{
+  .page-header-title{
     margin: 0;
     font-size: 18px;
     letter-spacing: 0.2em;
   }
-  .breadcrumb{
+  .woocommerce-breadcrumb{
     margin: 0;
+    a{
+      color: inherit;
+    }
+  }
+  &.page-header-centered{
+    &.ph-align-center{
+      text-align: center;
+    }
+    &.ph-align-eft{
+      text-align: left;
+    }
+    &.ph-align-right{
+      text-align: right;
+    }
+    .woocommerce-breadcrumb{
+      margin-top: 10px;
+    }
+  }
+  .page-header-right{
+    text-align: right;
   }
 }
+
+

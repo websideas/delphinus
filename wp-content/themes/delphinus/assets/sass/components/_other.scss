@@ -230,10 +230,10 @@
         text-align: center;
         margin: 0;
         &.owl-prev{
-          left: -105px;
+          left: -70px;
         }
         &.owl-next{
-          right: -105px;
+          right: -70px;
         }
       }
     }
@@ -343,15 +343,18 @@
       padding-left: 15px;
     }
   }
-
-
-
-
+  .owl-item{
+    .blog-post-wrap{
+      width: 100%;
+      padding: 0;
+    }
+  }
 }
 
 
-.persephone.tparrows{
-  background: #fff;
+body .persephone.tparrows{
+  background: rgba($white, .8);
+
   border: none;
   @include box-shadow(0, 2px, 6px, rgba($white, .05));
   height: 50px;

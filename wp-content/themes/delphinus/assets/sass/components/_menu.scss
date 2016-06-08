@@ -15,11 +15,11 @@
     > a{
       text-transform: uppercase;
       color: $gray-text;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.075em;
       font-weight: bold;
       font-size: 14px;
       line-height: $topbar-height;
-      padding: 0 35px;
+      padding: 0 15px;
       display: inline-block;
 
     }
@@ -117,6 +117,7 @@
       position: relative;
       > a{
         line-height: $navbar-height;
+
       }
     }
   }
@@ -129,8 +130,9 @@
         text-transform: uppercase;
         padding: 0 10px;
         color: $gray-text;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.075em;
         font-weight: bold;
+        font-size: 14px;
         display: block;
         @include transition('color 0.3s ease 0s, background 0.3s ease 0s');
       }
@@ -185,6 +187,7 @@
       }
       ul.sub-menu-dropdown{
         li {
+          position: relative;
           > ul.sub-menu-dropdown {
             &.right-overflow{
               right: 100%;
@@ -199,11 +202,12 @@
   #main-nav-socials{
     float: right;
     > li{
-      + li{
-        margin-left: 25px;
+      &:last-child{
+        > a{
+          padding-right: 0;
+        }
       }
       > a{
-        font-size: 14px;
         @include transition('color 0.3s ease 0s, background 0.3s ease 0s');
       }
     }
@@ -229,12 +233,12 @@
   #main-nav-wc{
     float: right;
     > li{
-      margin: 0 26px;
       .navigation-submenu{
         right: 0;
         left: auto;
       }
       + li{
+        margin-left: 10px;
         &:before{
           content: '';
           height: 12px;
@@ -242,11 +246,8 @@
           display: block;
           background: $border-color;
           @include translate(y);
-          left: -26px;
+          left: -6px;
         }
-      }
-      &:first-child{
-        margin-left: 0;
       }
     }
   }
@@ -260,10 +261,6 @@
       }
       &.kt-megamenu-item{
         position: static;
-      }
-      ul.sub-menu-dropdown,
-      .kt-megamenu-wrapper{
-
       }
 
       ul.sub-menu-dropdown{
@@ -279,7 +276,7 @@
             padding: 24px;
             display: block;
             color: $gray-text;
-            font-size: 16px;
+            font-size: 14px;
             @include transition();
           }
           ul.sub-menu-dropdown {
@@ -314,11 +311,12 @@
             > a,
             > span{
               color: $primary-color;
-              font-size: 18px;
+              font-size: 14px;
               display: block;
               margin-bottom: 16px;
-              padding: 24px 0 5px;
+              padding: 22px 0 5px;
               border-bottom: 1px solid $border-color;
+
             }
             > ul{
               list-style: none;
@@ -330,7 +328,7 @@
                   padding: 8px 0;
                   display: block;
                   color: $gray-text;
-                  font-size: 16px;
+                  font-size: 14px;
                   &:hover{
                     color: #000000;
                   }

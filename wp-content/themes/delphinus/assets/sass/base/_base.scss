@@ -11,10 +11,6 @@
   background: $primary-color;
 }
 
-body{
-  overflow-x: hidden;
-}
-
 iframe {
   border: none;
 }
@@ -42,7 +38,7 @@ img:not([draggable]), embed, object, video {
 }
 
 p {
-  margin-bottom: $vspacing;
+  margin-bottom: 25px;
 }
 
 .row {
@@ -126,16 +122,6 @@ p {
   overflow: hidden;
   position: absolute !important;
   width: 1px;
-}
-
-.preview-image{
-  position: absolute;
-  top: 0;
-  @include translate(x);
-  @include opacity();
-  max-width: none!important;
-  pointer-events:none;
-  z-index: 999;
 }
 
 .text-normal{

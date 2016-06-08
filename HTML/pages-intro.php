@@ -71,6 +71,44 @@ include_once('templates/headers/header3.php');
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        <div class="demo-item demo-item-left">
+                            <a href="http://kitethemes.com/delphinus/html/homepage7.php">
+                                <span style="background-image:url(assets/images/Home_07.jpg);" class="img-wrap move-long"></span>
+                            </a>
+                            <h2><a href="http://kitethemes.com/delphinus/html/homepage7.php">Home version 5</a></h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="demo-item demo-item-right">
+                            <a href="http://kitethemes.com/delphinus/html/homepage8.php">
+                                <span style="background-image:url(assets/images/Home_08.jpg);" class="img-wrap move-long"></span>
+                            </a>
+                            <h2><a href="http://kitethemes.com/delphinus/html/homepage8.php">Home version 6</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 ">
+                        <div class="demo-item demo-item-left">
+                            <a href="http://kitethemes.com/delphinus/html/homepage9.php">
+                                <span style="background-image:url(assets/images/Home_09.jpg);" class="img-wrap move-long"></span>
+                            </a>
+                            <h2><a href="http://kitethemes.com/delphinus/html/homepage9.php">Home version 5</a></h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="demo-item demo-item-right">
+                            <a href="#">
+                                <span style="background-image:url(assets/images/Home_01.jpg);" class="img-wrap move-long"></span>
+                            </a>
+                            <h2><a href="#">Coming Soon</a></h2>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div><!-- #main -->

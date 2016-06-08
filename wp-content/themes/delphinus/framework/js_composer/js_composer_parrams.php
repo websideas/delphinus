@@ -58,7 +58,7 @@ function kt_radio_settings_field($settings, $value) {
     if(!count($settings['value'])) return;
     foreach( $settings['value'] as $k => $v ) {
         $checked = ($value == $v) ? ' checked="checked"' : '';
-        $radios[] = "<label><input type='radio' name='{$param_name}_radio_{$uniqid}' class='kt_radio_select_input' value='{$v}' {$checked} /> {$k}</label>";
+        $radios[] = "<label><input type='radio' name='{$param_name}_radio_{$uniqid}' class='kt_radio_select_input' value='{$v}' {$checked} /> {$k}</label>\n";
     }
     $output .= '<input type="hidden" class="wpb_vc_param_value ' . $param_name . ' ' . $type . ' ' . $class . '" name="' . $param_name . '" value="'.esc_attr($value).'" '.$dependency.' />';
     
@@ -273,6 +273,65 @@ WpbakeryShortcodeParams::addField('kt_socials', 'kt_socials_settings_field', KT_
 
 
 
+function kt_responsive_settings_field($settings, $value){
+
+    $dependency = '';
+    $param_name = isset($settings['param_name']) ? $settings['param_name'] : '';
+    $type = isset($settings['type']) ? $settings['type'] : '';
+    $class = isset($settings['class']) ? $settings['class'] : '';
+    $unit = isset($settings['unit']) ? $settings['unit'] : '';
+    $queries = isset($settings['settings']) ? $settings['settings'] : array('desktop'=> '', 'tablet' => '', 'mobile' => '');
+
+    $output = '';
+    $arr_val = array();
+
+    if($value){
+        $arrs = ($value) ? explode(';', $value) : array();
+        foreach($arrs as $arr){
+            if($arr){
+                $item_arr = explode(':', $arr);
+                $arr_val[$item_arr[0]] = intval($item_arr[1]);
+            }
+        }
+    }
+
+    foreach($queries as $key => $val) {
+        $val_new = isset($arr_val[$key]) ? $arr_val[$key] : '';
+
+        if($val_new == ''){
+            $val_new = $val;
+        }
+
+        if($key == 'desktop'){
+            $output .= kt_responsive_field_render('<span class="dashicons dashicons-desktop" title="Desktop"></span>', 'desktop', $val_new);
+        }elseif($key == 'tablet'){
+            $output .= kt_responsive_field_render('<span class="dashicons dashicons-tablet" title="Tablet"></span>', 'tablet', $val_new);
+        }elseif($key == 'mobile'){
+            $output .= kt_responsive_field_render('<span class="dashicons dashicons-smartphone" title="Mobile"></span>', 'mobile', $val_new);
+        }
+    }
+
+    $output .= '<span class="kt-responsive-unit">'.$unit.'</span>';
+    $output .= '<input type="hidden" class="wpb_vc_param_value kt-responsive-value ' . $param_name . ' ' . $type . ' ' . $class . '" name="' . $param_name . '" value="'.esc_attr($value).'" '.$dependency.' />';
+
+    return $output;
+}
+WpbakeryShortcodeParams::addField('kt_responsive', 'kt_responsive_settings_field',  KT_FW_JS.'kt_responsive.js');
+
+
+function kt_responsive_field_render($addon_before, $name, $value ){
+
+    $output = sprintf(
+        '<div class="kt-input-group"><div class="input-group-addon">%s</div> <input type="number" class="form-control" name="%s" value="%s"></div>',
+        $addon_before,
+        $name,
+        $value
+    );
+    return $output;
+
+}
+
+
 /**
  * Image sizes.
  *
@@ -296,10 +355,6 @@ function kt_image_sizes_settings_field($settings, $value){
     return $output;
 }
 WpbakeryShortcodeParams::addField('kt_image_sizes', 'kt_image_sizes_settings_field');
-
-
-
-
 
 
 
@@ -346,3 +401,4 @@ function kt_icons_settings_field($settings, $value){
     return $output;
 }
 WpbakeryShortcodeParams::addField('kt_icons', 'kt_icons_settings_field',  KT_FW_JS.'kt_icons.js');
+

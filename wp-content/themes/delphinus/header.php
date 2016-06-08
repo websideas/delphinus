@@ -9,15 +9,11 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="<?php echo KT_THEME_JS; ?>html5shiv.min.js"></script>
-      <script src="<?php echo KT_THEME_JS; ?>respond.min.js"></script>
-    <![endif]-->
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <!-- W3TC-include-css -->
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class( ); ?>>
@@ -36,12 +32,9 @@
                 <div class="header-container header-layout<?php echo esc_attr($header_layout); ?> <?php echo esc_attr(apply_filters('kt_header_class', '', $header_layout, $header_position)); ?>">
 
                     <?php
-                        get_template_part( 'templates/headers/header',  'mobile');
-                        get_template_part( 'templates/headers/header',  'mobilenav');
-                    ?>
+                    get_template_part( 'templates/headers/header',  'mobile');
+                    get_template_part( 'templates/headers/header',  'mobilenav');
 
-
-                    <?php
                     if($header_position == 'below'){
                         do_action( 'kt_slideshows_position' );
                     }

@@ -46,7 +46,23 @@ only screen and (min-resolution: 144dpi) {
     }
   }
 }
-
+@media (min-width: 1700px) {
+  .header-layout4,
+  .header-layout6{
+    .branding-default{
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      margin-right: 0!important;
+    }
+    #nav{
+      #main-nav-tool{
+        display: block;
+      }
+    }
+  }
+}
 /* 2. Styles for devices(>1300px) */
 @media (min-width: 1300px) {
   .container {
@@ -80,13 +96,20 @@ only screen and (min-resolution: 144dpi) {
     }
   }
 
+  .top-navigation{
+    > li{
+      > a{
+        padding: 0 35px;
+      }
+    }
+  }
+
 }
 
 /* 3. Styles for devices(>=1200px) */
 @media (min-width: 1200px) {
 
 }
-
 
 /* 4. Styles for devices(<=1199px) */
 @media (max-width: 1199px) {
@@ -147,6 +170,13 @@ only screen and (min-resolution: 144dpi) {
         }
       }
     }
+    .products-shop-header{
+      .shop-header-right{
+        .searchform input[type="text"]{
+          width: 200px;
+        }
+      }
+    }
   }
 
 }
@@ -159,7 +189,8 @@ only screen and (min-resolution: 144dpi) {
   }
 
   .page-header .woocommerce-breadcrumb,
-  .page-header .text-right {
+  .page-header.page-header-centered.ph-align-right,
+  .page-header.page-header-centered.ph-align-left{
     text-align: center;
   }
 
@@ -196,14 +227,23 @@ only screen and (min-resolution: 144dpi) {
         }
       }
     }
+
+
+
     .products-shop-header{
       .shop-header-left,
       .shop-header-right{
         float: none;
+        display: block;
       }
       #shop-header-categories{
-        margin-top: 30px;
         display: none;
+        margin-right: 0;
+        margin-top: 30px;
+        max-width: 100%;
+      }
+      .shop-header-left{
+        max-width: 100%;
       }
       .shop-header-list{
         li.wc-header-categories{
@@ -213,11 +253,7 @@ only screen and (min-resolution: 144dpi) {
           float:right;
         }
       }
-      .shop-header-right{
-        .searchform input[type="text"]{
-          width: 230px;
-        }
-      }
+
       .filter-hide{
         display: none;
       }
@@ -258,7 +294,6 @@ only screen and (min-resolution: 144dpi) {
         }
       }
     }
-
   }
 
   .product-layout1{
@@ -367,29 +402,76 @@ only screen and (min-resolution: 144dpi) {
     }
   }
 
+  .kt-heading-title{
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .banner {
+    .banner-content{
+      .banner-title{
+        font-size: 18px;
+      }
+    }
+  }
+
+  .flip-box{
+    .flip-box-before{
+      font-size: 20px;
+      padding: 32px 30px;
+    }
+  }
+
+  .category-banner{
+    .category-banner-content h3{
+      font-size: 20px;
+    }
+  }
+
+  h1, .h1{
+    font-size: 30px;
+  }
+  h2, .h2{
+    font-size: 28px;
+  }
+  h3, .h3{
+    font-size: 22px;
+  }
+  h4, .h4 {
+    font-size: 16px;
+  }
+
   .single-post-wrap{
     .share-it{
       .social_icons {
-        margin: 0 -11px;
         li{
-          float: left;
-          padding: 0 11px;
-          width: 33.33%;
-          margin: 0;
+          margin-right: 10px;
           a{
-            width: 100%;
-            text-align: center;
-            padding-left: 0;
-            padding-right: 0;
-            span{
-              display: none;
-            }
-            i{
-              display: block;
+            .count{
+              margin-left: 15px;
             }
           }
         }
       }
+    }
+  }
+
+  .author-info{
+    .author-avatar {
+      float: none;
+      margin-right: 0;
+      max-width: 100%;
+      text-align: center;
+    }
+    .author-socials{
+      margin-top: 15px;
+      position: static;
+      @include transform('translateY(0)');
+    }
+    .author-description{
+      margin-bottom: 15px;
+      margin-top: 15px;
+      text-align: center;
     }
   }
 
@@ -452,11 +534,9 @@ only screen and (min-resolution: 144dpi) {
 
     #content{
       div.product{
-
         table.shop_attributes th{
           width: auto;
         }
-
         .woocommerce-tabs{
           ul.tabs{
             padding: 0;
@@ -491,14 +571,24 @@ only screen and (min-resolution: 144dpi) {
 
 /* 9. Styles for devices(<=600px) */
 @media (max-width: 600px) {
-  body.opened-nav-animate {
-    &.admin-bar {
-      #wpadminbar {
-        margin-top: -46px;
+  .post-navigation{
+    .nav-links{
+      > div{
+        width: 100%;
+        + div:before{
+          left: 0;
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          height: 0;
+          border-left: none;
+        }
       }
     }
   }
+
 }
+
 /* 10. Styles for devices(<=500px ) */
 @media (max-width: 500px) {
 
@@ -545,9 +635,21 @@ only screen and (min-resolution: 144dpi) {
     }
   }
 
-
 }
+
 /* 11. Styles for devices(<=480px ) */
 @media (max-width: 480px) {
 
+}
+
+@media screen and (max-height: 800px) {
+  .shopping-bag .woocommerce.shopping-bag-content .product_list_widget {
+    max-height: 410px;
+  }
+}
+
+@media screen and (max-height: 760px) {
+  .shopping-bag .woocommerce.shopping-bag-content .product_list_widget {
+    max-height: 272px;
+  }
 }

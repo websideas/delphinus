@@ -57,7 +57,7 @@ if ( !class_exists( 'ReduxFramework_extension_kt_socials' ) ) {
 
         // Forces the use of the embeded field path vs what the core typically would use
         public function overload_field_path( $field ) {
-            return dirname( __FILE__ ) . '/' . $this->field_name . '/field_' . $this->field_name . '.php';
+            return KT_FW_EXT_DIR . 'ReduxCoreExt/' .$this->field_name.'/'. $this->field_name . '/field_' . $this->field_name . '.php';
         }
         
     }

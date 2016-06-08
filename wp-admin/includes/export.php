@@ -71,6 +71,14 @@ function export_wp( $args = array() ) {
 		$where = $wpdb->prepare( "{$wpdb->posts}.post_type = %s", $args['content'] );
 	} else {
 		$post_types = get_post_types( array( 'can_export' => true ) );
+
+        unset($post_types['shop_order']);
+        unset($post_types['shop_order_refund']);
+        unset($post_types['shop_coupon']);
+        unset($post_types['shop_webhook']);
+        unset($post_types['nav_menu_item']);
+        unset($post_types['attachment']);
+
 		$esses = array_fill( 0, count($post_types), '%s' );
 		$where = $wpdb->prepare( "{$wpdb->posts}.post_type IN (" . implode( ',', $esses ) . ')', $post_types );
 	}
@@ -402,7 +410,10 @@ function export_wp( $args = array() ) {
 	?>
 
 <?php if ( $post_ids ) {
-	/**
+
+    $post_type = '';
+
+    /**
 	 * @global WP_Query $wp_query
 	 */
 	global $wp_query;
@@ -419,6 +430,14 @@ function export_wp( $args = array() ) {
 	foreach ( $posts as $post ) {
 		setup_postdata( $post );
 		$is_sticky = is_sticky( $post->ID ) ? 1 : 0;
+
+        if($post_type == ''){
+            $post_type = $post->post_type;
+        }elseif($post_type != $post->post_type){
+            echo "\t<!-- Kitethemes - END Post type: ".$post_type." -->\n";
+            $post_type = $post->post_type;
+        }
+
 ?>
 	<item>
 		<title><?php
@@ -532,6 +551,7 @@ function export_wp( $args = array() ) {
 <?php	endforeach; ?>
 	</item>
 <?php
+
 	}
 	}
 } ?>

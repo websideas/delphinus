@@ -113,7 +113,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                 // Global shut-off for dynamic CSS output by the framework. Will also disable google fonts output
                 'output_tag' => true,
                 // Allows dynamic CSS to be generated for customizer and google fonts, but stops the dynamic CSS from going to the head
-                // 'footer_credit'     => '',                   // Disable the footer credit of Redux. Please leave if you can help it.
+                'footer_credit'     => esc_html__('If you like Delphinus please leave us a &#9734;&#9734;&#9734;&#9734;&#9734; rating. A huge thank you from KiteThemes in advance!', 'delphinus'),
 
                 // FUTURE -> Not in use yet, but reserved or partially implemented. Use at your own risk.
                 'database' => '',
@@ -310,8 +310,16 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'on'        => esc_html__( 'Enabled', 'delphinus' ),
                         'off'       => esc_html__( 'Disabled', 'delphinus' ),
                     ),
-
-
+                    array(
+                        'id'       => 'header_search_type',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Header search type', 'delphinus' ),
+                        'options'  => array(
+                            'all' => esc_html__('All', 'delphinus'),
+                            'product' => esc_html__('Only Products', 'delphinus' )
+                        ),
+                        'default'  => 'all'
+                    ),
                     array(
                         'id'   => 'header_socials',
                         'type' => 'kt_socials',
@@ -746,6 +754,123 @@ if ( ! class_exists( 'KT_config' ) ) {
 
 
             /**
+             *  Styling Sticky
+             **/
+            $this->sections[] = array(
+                'id'            => 'styling_sticky',
+                'title'         => esc_html__( 'Sticky', 'delphinus' ),
+                'subsection' => true,
+                'fields'        => array(
+                    array(
+                        'id'       => 'fixed_header',
+                        'type'     => 'button_set',
+                        'title'    => esc_html__( 'Sticky header', 'delphinus' ),
+                        'options'  => array(
+                            '1' => esc_html__('Disabled', 'delphinus'),
+                            '2' => esc_html__('Fixed Sticky', 'delphinus'),
+                            '3' => esc_html__('Slide Down', 'delphinus'),
+                        ),
+                        'default'  => '3',
+                        'desc' => esc_html__('Choose your sticky effect.', 'delphinus')
+                    ),
+                    array(
+                        'id'             => 'logo_sticky_width',
+                        'type'           => 'dimensions',
+                        'units'          => 'px',
+                        'title'          => esc_html__( 'Logo width', 'delphinus' ),
+                        'height'         => false,
+                        'default'        => array( 'width'  => 170, 'units'   => 'px' ),
+                        'output'   => array( '.is-sticky .apply-sticky .branding-default img' ),
+                    ),
+
+                    array(
+                        'id'       => 'logo_sticky_margin_spacing',
+                        'type'     => 'spacing',
+                        'mode'     => 'margin',
+                        'units'          => array( 'px' ),
+                        'units_extended' => 'true',
+                        'title'    => esc_html__( 'Logo sticky margin spacing Option', 'delphinus' ),
+                        'default'  => array(
+                            'margin-top'    => '15px',
+                            'margin-bottom' => '15px',
+                            'margin-left'   => '0',
+                            'margin-right'   => '0'
+                        ),
+                        'output'   => array( '.is-sticky .apply-sticky .branding-default'),
+                    ),
+
+                    array(
+                        'id'             => 'navigation_height_fixed',
+                        'type'           => 'dimensions',
+                        'units'          => 'px',
+                        'title'          => esc_html__( 'Main Navigation Sticky Height', 'delphinus' ),
+                        'desc'          => esc_html__( 'Change height of main navigation sticky', 'delphinus' ),
+                        'width'         => false,
+                        'default'        => array(
+                            'height'  => '60',
+                            'units'  => 'px'
+                        )
+                    ),
+
+                    array(
+                        'id'            => 'header_sticky_opacity',
+                        'type'          => 'slider',
+                        'title'         => esc_html__( 'Sticky Background opacity', 'delphinus' ),
+                        'default'       => .8,
+                        'min'           => 0,
+                        'step'          => .1,
+                        'max'           => 1,
+                        'resolution'    => 0.1,
+                        'display_value' => 'text'
+                    ),
+
+                    array(
+                        'id'       => 'header_sticky_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Header sticky background', 'delphinus' ),
+                        'desc' => esc_html__( 'Header sticky with image, color, etc.', 'delphinus' ),
+                        'background-repeat'     => false,
+                        'background-attachment' => false,
+                        'background-position'   => false,
+                        'background-image'      => false,
+                        'background-size'       => false,
+                        'preview'               => false,
+                        'transparent'           => false,
+                        'default'   => array(
+                            'background-color'      => '#ffffff',
+                        ),
+                        'output'      => array( '.header-sticky-background' ),
+                    ),
+
+
+                    array(
+                        'id'       => 'header_sticky_light_background',
+                        'type'     => 'background',
+                        'title'    => esc_html__( 'Header transparent sticky background', 'delphinus' ),
+                        'desc' => esc_html__( 'Header transparent sticky with image, color, etc.', 'delphinus' ),
+                        'background-repeat'     => false,
+                        'background-attachment' => false,
+                        'background-position'   => false,
+                        'background-image'      => false,
+                        'background-size'       => false,
+                        'preview'               => false,
+                        'transparent'           => false,
+                        'default'   => array(
+                            'background-color'      => '#000000',
+                        ),
+                        'output'      => array( '.header-transparent.header-light .header-sticky-background' ),
+                    ),
+                    array(
+                        'id'       => 'header_sticky_spacing',
+                        'type'     => 'raw',
+                        'content'  => '<div style="height:150px"></div>',
+                        'full_width' => true
+                    ),
+
+                )
+            );
+
+            /**
              *	Styling Footer
              **/
             $this->sections[] = array(
@@ -850,12 +975,12 @@ if ( ! class_exists( 'KT_config' ) ) {
                     ),
 
                     array(
-                        'id'       => 'footer_widgets_background',
+                        'id'       => 'footer_box_widgets_background',
                         'type'     => 'background',
                         'title'    => esc_html__( 'Footer Box widgets Background', 'delphinus' ),
                         'subtitle' => esc_html__( 'Footer Box widgets Background with image, color, etc.', 'delphinus' ),
                         'default'   => array( ),
-                        'output'      => array( '.footer-area-right' ),
+                        'output'      => array( '#footer-area .footer-area-right' ),
                     ),
 
 
@@ -1478,9 +1603,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'subtitle' => esc_html__( 'Specify the body font properties.', 'delphinus' ),
                         'text-align' => false,
                         'letter-spacing'  => true,
-                        'output'      => array(
-                            'body'
-                        ),
+                        'output'      => array( 'body', 'button', 'input', 'textarea' ),
                         'default'  => array(
                             'font-family'     => 'Karla'
                         ),
@@ -1502,9 +1625,12 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'title'    => esc_html__( 'Blockquote', 'delphinus' ),
                         'subtitle' => esc_html__( 'Specify the blockquote font properties.', 'delphinus' ),
                         'output'   => array( 'blockquote' ),
-                        'default'  => array( ),
                         'color'    => false,
                         'text-align' => false,
+                        'default'  => array(
+                            'font-family'     => 'Crete Round',
+                            'font-style'      => '400italic'
+                        ),
                     ),
                     /*
                     array(
@@ -2008,7 +2134,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'content'  => '<div class="section-heading">'.esc_html__( 'Shop Products settings', 'delphinus' ).'</div>',
                         'full_width' => true
                     ),
-
                     array(
                         'id' => 'shop_page_header',
                         'type' => 'switch',
@@ -2244,8 +2369,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                         ),
                         'default'  => 'centered'
                     ),
-                    /*
-
                     array(
                         'id'       => 'title_align',
                         'type'     => 'select',
@@ -2257,34 +2380,31 @@ if ( ! class_exists( 'KT_config' ) ) {
                             'right' => esc_html__('Right', 'delphinus')
                         ),
                         'default'  => 'center',
-                        'clear' => false,
-                        'desc' => esc_html__('Align don\'t support for layout Sides', 'delphinus')
+                        'desc' => esc_html__("Align Center don't support for layout Sides", 'delphinus')
                     ),
+
                     array(
-                        'id'       => 'title_separator',
+                        'id'       => 'title_breadcrumbs',
                         'type'     => 'switch',
-                        'title'    => esc_html__( 'Separator bettwen title and subtitle', 'delphinus' ),
+                        'title'    => esc_html__( 'Show breadcrumbs', 'delphinus' ),
                         'default'  => true,
                         'on'		=> esc_html__( 'Enabled', 'delphinus' ),
                         'off'		=> esc_html__( 'Disabled', 'delphinus' ),
                     ),
-
-
                     array(
-                        'id'       => 'title_separator_color',
-                        'type'     => 'background',
-                        'title'    => esc_html__( 'Separator Color', 'delphinus' ),
-                        'default'  => '',
-                        'transparent' => false,
-                        'background-repeat'     => false,
-                        'background-attachment' => false,
-                        'background-position'   => false,
-                        'background-image'      => false,
-                        'background-size'       => false,
-                        'preview'               => false,
-                        'output'   => array( '.page-header .page-header-separator' ),
+                        'id'       => 'title_breadcrumbs_mobile',
+                        'type'     => 'switch',
+                        'title'    => esc_html__( 'Breadcrumbs on Mobile Devices', 'delphinus' ),
+                        'default'  => false,
+                        'on'		=> esc_html__( 'Enabled', 'delphinus' ),
+                        'off'		=> esc_html__( 'Disabled', 'delphinus' ),
                     ),
-
+                    array(
+                        'id'       => 'title_style_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Page header style settings', 'delphinus' ).'</div>',
+                        'full_width' => true
+                    ),
 
                     array(
                         'id'       => 'title_padding',
@@ -2307,10 +2427,11 @@ if ( ! class_exists( 'KT_config' ) ) {
                     ),
 
                     array(
-                        'type' => 'divide',
-                        'id' => 'divide_fake',
+                        'id'       => 'title_typography_heading',
+                        'type'     => 'raw',
+                        'content'  => '<div class="section-heading">'.esc_html__( 'Page header typography settings', 'delphinus' ).'</div>',
+                        'full_width' => true
                     ),
-
                     array(
                         'id'       => 'title_typography',
                         'type'     => 'typography',
@@ -2320,12 +2441,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'line-height'     => false,
                         'letter-spacing'  => true,
                         'text-transform' => true,
-                        'output'      => array( '.page-header h1.page-header-title' ),
-                        'default'  => array(
-                            'font-family'     => 'Roboto Slab',
-                            'text-transform' => 'uppercase',
-                            'font-weight' => '700'
-                        ),
+                        'output'      => array( '.page-header .page-header-title' ),
                     ),
                     array(
                         'id'       => 'title_typography_subtitle',
@@ -2344,9 +2460,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'google'   => true,
                         'text-align'      => false,
                         'line-height'     => false,
-                        'output'      => array( '.page-header .breadcrumbs', '.page-header .breadcrumbs a' )
+                        'output'      => array( '.page-header .woocommerce-breadcrumb' )
                     ),
-                    */
                 )
             );
 
@@ -2556,7 +2671,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                 )
             );
 
-
             /**
              *  Single post settings
              **/
@@ -2571,6 +2685,46 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'type'     => 'raw',
                         'content'  => '<div class="section-heading">'.esc_html__( 'Single post general', 'delphinus' ).'</div>',
                         'full_width' => true
+                    ),
+                    array(
+                        'id' => 'single_page_header',
+                        'type' => 'text',
+                        'title' => esc_html__('Custom Page header', 'delphinus'),
+                        'subtitle' => esc_html__("Empty if you want use post title", 'delphinus'),
+                        'default' => esc_html__('Welcome to our blog', 'delphinus')
+                    ),
+                    array(
+                        'id'       => 'single_sidebar',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Sidebar configuration', 'delphinus' ),
+                        'subtitle'     => esc_html__( "Please choose sidebar for single post", 'delphinus' ),
+                        'options'  => array(
+                            '' => esc_html__('No sidebars', 'delphinus'),
+                            'left' => esc_html__('Left Sidebar', 'delphinus'),
+                            'right' => esc_html__('Right Layout', 'delphinus')
+                        ),
+                        'default'  => 'right',
+                        'clear' => false
+                    ),
+                    array(
+                        'id'       => 'single_sidebar_left',
+                        'type' => 'select',
+                        'title'    => esc_html__( 'Single post: Sidebar left area', 'delphinus' ),
+                        'subtitle'     => esc_html__( "Please choose left sidebar ", 'delphinus' ),
+                        'data'     => 'sidebars',
+                        'default'  => 'primary-widget-area',
+                        'required' => array('single_sidebar','equals','left'),
+                        'clear' => false
+                    ),
+                    array(
+                        'id'       => 'single_sidebar_right',
+                        'type'     => 'select',
+                        'title'    => esc_html__( 'Single post: Sidebar right area', 'delphinus' ),
+                        'subtitle'     => esc_html__( "Please choose left sidebar ", 'delphinus' ),
+                        'data'     => 'sidebars',
+                        'default'  => 'primary-widget-area',
+                        'required' => array('single_sidebar','equals','right'),
+                        'clear' => false
                     ),
                     array(
                         'id'   => 'single_image_size',
@@ -2593,7 +2747,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'on' => esc_html__('Enabled', 'delphinus'),
                         'off' =>esc_html__('Disabled', 'delphinus')
                     ),
-                    /*
                     array(
                         'id' => 'single_next_prev',
                         'type' => 'switch',
@@ -2603,7 +2756,6 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'on' => esc_html__('Enabled', 'delphinus'),
                         'off' =>esc_html__('Disabled', 'delphinus')
                     ),
-                    */
                     array(
                         'id' => 'single_author',
                         'type' => 'switch',
@@ -2784,10 +2936,7 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'url'      => true,
                         'compiler' => true,
                         'title'    => esc_html__( 'Popup Image', 'delphinus' ),
-                        'default'  => array(
-                            'url' => KT_THEME_IMG.'popup_image.jpg'
-                        ),
-                        'required'      => array('enable_popup','equals', 1)
+                        'required' => array('enable_popup','equals', 1)
                     ),
                     array(
                         'id'       => 'content_popup',
@@ -2804,11 +2953,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'desc'     => __( 'You can use shortcode or Embed code in here.', 'delphinus' ),
                         'validate' => 'html', //see http://codex.wordpress.org/Function_Reference/wp_kses_post
                     ),
-
-
                 )
             );
-
 
             /**
              *  Advanced
@@ -2847,8 +2993,8 @@ if ( ! class_exists( 'KT_config' ) ) {
                         'default'  => array(
                             'facebook' => true,
                             'twitter' => true,
-                            'google_plus' => true,
-                            'pinterest' => false,
+                            'google_plus' => false,
+                            'pinterest' => true,
                             'linkedin' => false,
                             'tumblr' => false,
                             'mail' => false,

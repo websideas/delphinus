@@ -14,6 +14,7 @@
  * @package 	WooCommerce/Templates
  * @version     2.0.0
  */
+
 ?>
 <div class="row woocommerce-row">
     <ul class="<?php echo apply_filters('kt_product_loop_start', 'shop-products' ); ?> multi-columns-row">

@@ -12,6 +12,10 @@ class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
             'link' => '',
             'button_text' => '',
             'divider' => 'true',
+            'font_size' => '',
+            'line_height' => '',
+            'letter_spacing' => '',
+
             'align' => 'center',
             'font_container' => '',
             'use_theme_fonts' => 'yes',
@@ -44,6 +48,13 @@ class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
             wp_enqueue_style( 'vc_google_fonts_' . vc_build_safe_css_class( $google_fonts_data['values']['font_family'] ), '//fonts.googleapis.com/css?family=' . $google_fonts_data['values']['font_family'] . $subsets );
         }
 
+        if($letter_spacing){
+            if ( empty( $styles ) ) {
+                $styles = array();
+            }
+            $styles[] = 'letter-spacing: '.$letter_spacing.'px';
+        }
+
         if ( ! empty( $styles ) ) {
             $style = 'style="' . esc_attr( implode( ';', $styles ) ) . '"';
         } else {
@@ -72,6 +83,16 @@ class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
             }
         }
 
+        $custom_css = '';
+        $rand = 'kt_heading_'.rand();
+
+        if($font_size){
+            $custom_css .= kt_responsive_render( '#'.$rand.' .kt-heading-title', 'font-size',  $font_size);
+        }
+
+        if($line_height){
+            $custom_css .= kt_responsive_render( '#'.$rand.' .kt-heading-title', 'line-height',  $line_height);
+        }
 
         $title = sprintf('<%1$s class="kt-heading-title" %2$s>%3$s</%1$s>', $font_container_data['values']['tag'], $style, $title );
 
@@ -94,10 +115,14 @@ class WPBakeryShortCode_KT_Heading extends WPBakeryShortCode_VC_Custom_heading {
             </div>';
         }
 
-        $output .= $title.$content;
+        if($custom_css){
+            $custom_css = '<div class="kt_custom_css" data-css="'.esc_attr($custom_css).'"></div>';
+        }
+
+        $output .= $title.$content.$custom_css;
 
         $elementClass = preg_replace( array( '/\s+/', '/^\s|\s$/' ), array( ' ', '' ), implode( ' ', $elementClass ) );
-        return '<div class="'.esc_attr( $elementClass ).'">'.$output.'</div>';
+        return '<div id="'.$rand.'"  class="'.esc_attr( $elementClass ).'">'.$output.'</div>';
 
     }
 
@@ -178,6 +203,31 @@ vc_map( array(
             'group' => esc_html__( 'Typography', 'delphinus' ),
         ),
         array(
+            'type' => 'kt_responsive',
+            'param_name' => 'font_size',
+            'heading' => esc_html__( 'Font size', 'delphinus' ),
+            'group' => esc_html__( 'Typography', 'delphinus' ),
+            'unit' =>  esc_html__( 'px', 'delphinus' ),
+            'description' => esc_html__( 'Use font size for the title.', 'delphinus' ),
+        ),
+
+        array(
+            'type' => 'kt_responsive',
+            'param_name' => 'line_height',
+            'heading' => esc_html__( 'Line Height', 'delphinus' ),
+            'group' => esc_html__( 'Typography', 'delphinus' ),
+            'unit' =>  esc_html__( 'px', 'delphinus' ),
+            'description' => esc_html__( 'Use line height for the title.', 'delphinus' ),
+        ),
+        array(
+            "type" => "kt_number",
+            "heading" => __("Letter spacing", 'delphinus'),
+            "param_name" => "letter_spacing",
+            "min" => 0,
+            "suffix" => "px",
+            'group' => __( 'Typography', 'delphinus' )
+        ),
+        array(
             'type' => 'font_container',
             'param_name' => 'font_container',
             'value' => '',
@@ -185,8 +235,8 @@ vc_map( array(
                 'fields' => array(
                     'tag' => 'h3',
                     'color',
-                    'font_size',
-                    'line_height',
+                    //'font_size',
+                    //'line_height',
                     'tag_description' => esc_html__( 'Select element tag.', 'js_composer' ),
                     'text_align_description' => esc_html__( 'Select text alignment.', 'js_composer' ),
                     'font_size_description' => esc_html__( 'Enter font size.', 'js_composer' ),

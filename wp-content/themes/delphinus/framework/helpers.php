@@ -250,36 +250,44 @@ if (!function_exists('kt_get_logo')){
      *
      */
     function kt_get_logo(){
-        $logo = array('default' => '', 'retina' => '', 'light' => '', 'light_retina' => '');
-        $logo_default = kt_option( 'logo' );
-        $logo_retina = kt_option( 'logo_retina' );
-        $logo_light = kt_option( 'logo_light' );
-        $logo_light_retina = kt_option( 'logo_light_retina' );
+        $cacheKey = 'kt_logo';
+        $logo 	= wp_cache_get( $cacheKey );
 
-        if(is_array($logo_default) && $logo_default['url'] != '' ){
-            $logo['default'] = $logo_default['url'];
-        }
+        if( false === $logo){
+            $logo = array('default' => '', 'retina' => '', 'light' => '', 'light_retina' => '');
+            $logo_default = kt_option( 'logo' );
+            $logo_retina = kt_option( 'logo_retina' );
+            $logo_light = kt_option( 'logo_light' );
+            $logo_light_retina = kt_option( 'logo_light_retina' );
 
-        if(is_array($logo_retina ) && $logo_retina['url'] != '' ){
-            $logo['retina'] = $logo_retina['url'];
-        }
+            if(is_array($logo_default) && $logo_default['url'] != '' ){
+                $logo['default'] = $logo_default['url'];
+            }
 
-        if(is_array($logo_light) && $logo_light['url'] != '' ){
-            $logo['light'] = $logo_light['url'];
-        }
+            if(is_array($logo_retina ) && $logo_retina['url'] != '' ){
+                $logo['retina'] = $logo_retina['url'];
+            }
 
-        if(is_array($logo_light_retina ) && $logo_light_retina['url'] != '' ){
-            $logo['light_retina'] = $logo_light_retina['url'];
-        }
+            if(is_array($logo_light) && $logo_light['url'] != '' ){
+                $logo['light'] = $logo_light['url'];
+            }
 
-        if(!$logo['default']){
-            $logo['default'] = KT_THEME_IMG.'logo.png';
-            $logo['retina'] = KT_THEME_IMG.'logo-2x.png';
-        }
+            if(is_array($logo_light_retina ) && $logo_light_retina['url'] != '' ){
+                $logo['light_retina'] = $logo_light_retina['url'];
+            }
 
-        if(!$logo['light']){
-            $logo['light'] = KT_THEME_IMG.'logo-light.png';
-            $logo['light_retina'] = KT_THEME_IMG.'logo-light-2x.png';
+            if(!$logo['default']){
+                $logo['default'] = KT_THEME_IMG.'logo.png';
+                $logo['retina'] = KT_THEME_IMG.'logo-2x.png';
+            }
+
+            if(!$logo['light']){
+                $logo['light'] = KT_THEME_IMG.'logo-light.png';
+                $logo['light_retina'] = KT_THEME_IMG.'logo-light-2x.png';
+            }
+
+            wp_cache_add( $cacheKey, $logo );
+
         }
 
         return $logo;
@@ -401,6 +409,32 @@ if (!function_exists('kt_get_archive_layout')) {
 }
 
 
+if (!function_exists('kt_get_thumbnail_attachment')){
+    /**
+     * Get link attach from thumbnail_id.
+     *
+     * @param number $thumbnail_id ID of thumbnail.
+     * @param string|array $size Optional. Image size. Defaults to 'post-thumbnail'
+     * @return array
+     */
+
+    function kt_get_thumbnail_attachment($thumbnail_id ,$size = 'post-thumbnail'){
+        if(!$thumbnail_id) return false;
+
+        $attachment = get_post( $thumbnail_id );
+        if(!$attachment) return false;
+
+        $image = wp_get_attachment_image_src($thumbnail_id, $size);
+        return array(
+            'alt' => get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ),
+            'caption' => $attachment->post_excerpt,
+            'description' => $attachment->post_content,
+            'src' => $attachment->guid,
+            'url' => $image[0],
+            'title' => $attachment->post_title
+        );
+    }
+}
 
 
 if (!function_exists('kt_get_page_sidebar')) {
@@ -498,6 +532,23 @@ if (!function_exists('kt_get_post_sidebar')) {
 }
 
 
+if( !function_exists('kt_get_mainmenu')){
+    function kt_get_mainmenu( ){
+        $primary = array( 'menu' => 'primary', 'custom' => 0 );
+        if(is_page()){
+            if($primary_page = rwmb_meta('_kt_header_main_menu')){
+
+                $nav_menu = ! empty( $primary_page ) ? wp_get_nav_menu_object( $primary_page ) : false;
+
+                $primary = array(
+                    'menu' => $nav_menu ,
+                    'custom' => 1
+                );
+            }
+        }
+        return $primary;
+    }
+}
 
 
 if (!function_exists('kt_custom_wpml')){
@@ -506,14 +557,13 @@ if (!function_exists('kt_custom_wpml')){
      *
      */
 
-    function kt_custom_wpml($before = '', $after = '', $icon = ''){
+    function kt_custom_wpml($before = '', $after = '', $ul = 'list-lang navigation-submenu', $active = ''){
 
         if(kt_is_wpml()){
 
             $output = $language_html = '';
 
-
-            $languages = icl_get_languages();
+            $languages = apply_filters( 'wpml_active_languages', null, null );
 
             if(!empty($languages)) {
                 foreach ($languages as $l) {
@@ -532,127 +582,129 @@ if (!function_exists('kt_custom_wpml')){
                 }
 
                 if ($language_html != '') {
-                    $language_html = '<a href="#">'.$currency_lang.'</a><ul class="list-lang navigation-submenu">' . $language_html . '</ul>';
+                    $language_html = '<a href="#">'.$active.$currency_lang.'</a><ul class="'.$ul.'">' . $language_html . '</ul>';
                 }
 
                 $output .= $language_html;
             }
 
-            echo $before.$output.$after;
+            return $before.$output.$after;
 
         }
+        return false;
 
     }
 }
 
+if (!function_exists('kt_render_carousel')) {
+    /**
+     * Render Carousel
+     *
+     * @param $data array, All option for carousel
+     * @param $class string, Default class for carousel
+     *
+     * @return mixed
+     */
 
-/**
- * Render Carousel
- *
- * @param $data array, All option for carousel
- * @param $class string, Default class for carousel
- *
- * @return void
- */
+    function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-carousel')
+    {
+        $data = shortcode_atts(array(
+            'gutters' => true,
+            'autoheight' => true,
+            'autoplay' => false,
+            'mousedrag' => true,
+            'autoplayspeed' => 5000,
+            'slidespeed' => 200,
+            'carousel_skin' => '',
 
-function kt_render_carousel($data, $extra = '', $class = 'owl-carousel kt-owl-carousel'){
-    $data = shortcode_atts( array(
-        'gutters' => true,
-        'autoheight' => true,
-        'autoplay' => false,
-        'mousedrag' => true,
-        'autoplayspeed' => 5000,
-        'slidespeed' => 200,
-        'carousel_skin' => '',
+            'desktop' => 4,
+            'desktopsmall' => '',
+            'tablet' => 2,
+            'mobile' => 1,
 
-        'desktop' => 4,
-        'desktopsmall' => '',
-        'tablet' => 2,
-        'mobile' => 1,
+            'navigation' => true,
+            'navigation_always_on' => false,
+            'navigation_position' => 'center-outside',
+            'navigation_style' => 'normal',
 
-        'navigation' => true,
-        'navigation_always_on' => false,
-        'navigation_position' => 'center-outside',
-        'navigation_style' => 'normal',
+            'pagination' => false,
+            'pagination_position' => 'center-bottom',
+            'pagination_style' => 'dot-stroke',
 
-        'pagination' => false,
-        'pagination_position' => 'center-bottom',
-        'pagination_style' => 'dot-stroke',
+            'callback' => ''
 
-        'callback' => ''
+        ), $data);
 
-    ), $data );
-
-    if(!$data['desktopsmall']){
-        $data['desktopsmall'] = $data['desktop'];
-    }
-
-    extract( $data );
-
-
-    $autoheight = apply_filters('sanitize_boolean', $autoheight);
-    $autoplay = apply_filters('sanitize_boolean', $autoplay);
-    $mousedrag = apply_filters('sanitize_boolean', $mousedrag);
-    $navigation = apply_filters('sanitize_boolean', $navigation);
-    $navigation_always_on = apply_filters('sanitize_boolean', $navigation_always_on);
-    $pagination = apply_filters('sanitize_boolean', $pagination);
-
-    $output = '';
-
-    $owl_carousel_class = array(
-        'owl-carousel-kt',
-        'navigation-'.$navigation_position,
-        $extra
-    );
-
-    if($carousel_skin){
-        $owl_carousel_class[] = 'carousel-skin-'.$carousel_skin;
-    }
-
-    if($gutters){
-        $owl_carousel_class[] = 'carousel-gutters';
-    }
-
-    if($navigation){
-        if($navigation_always_on){
-            $owl_carousel_class[] = 'visiable-navigation';
+        if (!$data['desktopsmall']) {
+            $data['desktopsmall'] = $data['desktop'];
         }
-        $owl_carousel_class[] = 'navigation-'.$navigation_style;
+
+        extract($data);
+
+
+        $autoheight = apply_filters('sanitize_boolean', $autoheight);
+        $autoplay = apply_filters('sanitize_boolean', $autoplay);
+        $mousedrag = apply_filters('sanitize_boolean', $mousedrag);
+        $navigation = apply_filters('sanitize_boolean', $navigation);
+        $navigation_always_on = apply_filters('sanitize_boolean', $navigation_always_on);
+        $pagination = apply_filters('sanitize_boolean', $pagination);
+
+        $output = '';
+
+        $owl_carousel_class = array(
+            'owl-carousel-kt',
+            'navigation-' . $navigation_position,
+            $extra
+        );
+
+        if ($carousel_skin) {
+            $owl_carousel_class[] = 'carousel-skin-' . $carousel_skin;
+        }
+
+        if ($gutters) {
+            $owl_carousel_class[] = 'carousel-gutters';
+        }
+
+        if ($navigation) {
+            if ($navigation_always_on) {
+                $owl_carousel_class[] = 'visiable-navigation';
+            }
+            $owl_carousel_class[] = 'navigation-' . $navigation_style;
+        }
+
+        if ($pagination) {
+            $owl_carousel_class[] = 'pagination-' . $pagination_position;
+            $owl_carousel_class[] = 'pagination-' . $pagination_style;
+        }
+
+
+        $autoplay = ($autoplay) ? $autoplayspeed : $autoplay;
+
+        $data_carousel = array(
+            'mouseDrag' => $mousedrag,
+            "autoHeight" => $autoheight,
+            "autoPlay" => $autoplay,
+            "navigation" => $navigation,
+            'navigation_pos' => $navigation_position,
+            'pagination' => $pagination,
+            'pagination_pos' => $pagination_position,
+            "slideSpeed" => $slidespeed,
+            'desktop' => $desktop,
+            'desktopsmall' => $desktopsmall,
+            'tablet' => $tablet,
+            'mobile' => $mobile,
+            'callback' => $callback
+
+        );
+
+
+        $output .= '<div class="' . esc_attr(implode(' ', $owl_carousel_class)) . '">';
+        $output .= '<div class=" ' . $class . '" ' . render_data_carousel($data_carousel) . '>%carousel_html%</div>';
+        $output .= '</div>';
+
+        return $output;
     }
-
-    if($pagination){
-        $owl_carousel_class[] = 'pagination-'.$pagination_position;
-        $owl_carousel_class[] = 'pagination-'.$pagination_style;
-    }
-
-
-    $autoplay = ($autoplay) ? $autoplayspeed : $autoplay;
-
-    $data_carousel = array(
-        'mouseDrag' => $mousedrag,
-        "autoHeight" => $autoheight,
-        "autoPlay" => $autoplay,
-        "navigation" => $navigation,
-        'navigation_pos' => $navigation_position,
-        'pagination' => $pagination,
-        'pagination_pos' => $pagination_position,
-        "slideSpeed" => $slidespeed,
-        'desktop' => $desktop,
-        'desktopsmall' => $desktopsmall,
-        'tablet' => $tablet,
-        'mobile' => $mobile,
-        'callback' => $callback
-
-    );
-
-
-    $output .= '<div class="'.esc_attr(implode(' ', $owl_carousel_class)).'">';
-    $output .= '<div class=" '.$class.'" '.render_data_carousel($data_carousel).'>%carousel_html%</div>';
-    $output .= '</div>';
-
-    return $output;
 }
-
 
 if (!function_exists('render_data_carousel')) {
 
@@ -820,4 +872,136 @@ if (!function_exists('kt_footer_top')) {
         }
         return $footer_top;
     }
+}
+
+
+if (!function_exists('kt_footer_widgets')) {
+
+    /**
+     * Get Footer top show or hidden.
+     */
+    function kt_footer_widgets(){
+
+        $footer_widgets = '';
+
+        if(is_page()){
+            $footer_widgets = rwmb_meta('_kt_footer_widgets');
+        }
+
+        if($footer_widgets == 'on'){
+            $footer_widgets = true;
+        }elseif($footer_widgets == 'off'){
+            $footer_widgets = false;
+        }else{
+            $footer_widgets = kt_option('footer_widgets', true);
+        }
+
+        $layouts = explode('-', kt_option('footer_widgets_layout', '4-4-4'));
+
+        $sidebar_widgets = false;
+        foreach($layouts as $i => $layout){
+            if(is_active_sidebar('footer-column-'.($i+1))){
+                $sidebar_widgets = true;
+                break;
+            }
+        }
+
+        if(!$sidebar_widgets){
+            $footer_widgets = false;
+        };
+
+        return $footer_widgets;
+    }
+}
+
+
+if (!function_exists('kt_render_custom_css')) {
+    /**
+     * Render custom css
+     *
+     * @param $meta
+     * @param $selector
+     * @param null $post_id
+     */
+
+    function kt_render_custom_css($meta , $selector, $post_id = null)
+    {
+
+        $ouput = '';
+        if(!$post_id){
+            global $post;
+            $post_id = $post->ID;
+        }
+
+        $page_bg = rwmb_meta($meta, array(), $post_id);
+        if(is_array($page_bg)){
+            $page_arr = array();
+
+            $page_color = $page_bg['color'];
+            if( $page_color != '' && $page_color != '#'){
+                $page_arr[] = 'background-color: '.$page_color;
+            }
+            if($page_url = $page_bg['url']){
+                $page_arr[] = 'background-image: url('.$page_url.')';
+            }
+            if($page_repeat = $page_bg['repeat']){
+                $page_arr[] = 'background-repeat: '.$page_repeat;
+            }
+            if($page_size = $page_bg['size']){
+                $page_arr[] = 'background-size: '.$page_size;
+            }
+            if($page_attachment = $page_bg['attachment']){
+                $page_arr[] = 'background-attachment: '.$page_attachment;
+            }
+            if($page_position = $page_bg['position']){
+                $page_arr[] = 'background-position: '.$page_position;
+            }
+            if(count($page_arr)){
+                $ouput = $selector.'{'.implode(';', $page_arr).'}';
+            }
+        }
+        return $ouput;
+    }
+}
+
+
+
+function kt_responsive_render($element, $type, $css){
+
+    $output = '';
+
+    $arr = explode(';', $css);
+    if(count($arr)){
+        foreach($arr as $item){
+            if($item){
+                $arr_i = explode(':', $item);
+                if(count($arr_i) == 2 && $arr_i[1]){
+                    $output .= kt_breakpoint_css($element, $type, $arr_i[1], $arr_i[0]);
+                }
+            }
+        }
+    }
+    return $output;
+}
+
+
+function kt_breakpoint_css($element, $key, $style, $type = 'desktop'){
+
+    $media = '';
+    if($type == 'desktop'){
+        $media = '@media (min-width: 992px) {%s}';
+    }elseif($type == 'tablet'){
+        $media = '@media (min-width: 768px) and (max-width: 991px) {%s}';
+    }elseif($type == 'mobile'){
+        $media = '@media (max-width: 767px) {%s}';
+    }
+
+    $css = sprintf('%s{%s: %s;}', $element, $key, $style);
+    $ouput = '';
+
+    if($media && $css){
+        $ouput = sprintf($media, $css);
+    }
+
+    return $ouput;
 }

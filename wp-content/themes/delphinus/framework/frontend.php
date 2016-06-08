@@ -43,7 +43,7 @@ function kt_theme_setup() {
     /**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array('gallery', 'quote', 'video', 'audio') );
+	//add_theme_support( 'post-formats', array('gallery', 'quote', 'video', 'audio') );
 
     /*
     * Let WordPress manage the document title.
@@ -71,7 +71,8 @@ function kt_theme_setup() {
         add_image_size( 'kt_square', 600, 600, true);
         add_image_size( 'kt_list', 700, 570, true);
         add_image_size( 'kt_classic', 1140, 600, true );
-        add_image_size( 'kt_small', 170, 170, true );
+        add_image_size( 'kt_small', 150, 150, true );
+        add_image_size( 'kt_widgets', 100, 75, true );
     }
     
     load_theme_textdomain( 'delphinus', KT_THEME_DIR . '/languages' );
@@ -81,7 +82,6 @@ function kt_theme_setup() {
 	 */
 	register_nav_menus(array(
         'primary' => esc_html__('Main Navigation Menu', 'delphinus'),
-        'mobile' => esc_html__('(Mobile Devices) Main Navigation Menu', 'delphinus'),
         'footer'	  => esc_html__( 'Footer Navigation Menu', 'delphinus' ),
         'vertical'	  => esc_html__( 'Vertical Navigation Menu', 'delphinus' ),
     ));
@@ -101,6 +101,12 @@ endif;
 
 function kt_add_scripts() {
 
+    wp_enqueue_script( 'html5shiv', KT_THEME_JS.'html5shiv.min.js' );
+    wp_script_add_data( 'html5shiv', 'conditional', 'lt IE 9' );
+
+    wp_enqueue_script( 'respond', KT_THEME_JS . 'respond.min.js' );
+    wp_script_add_data( 'respond', 'conditional', 'lt IE 9' );
+
     wp_enqueue_style( 'bootstrap', KT_THEME_LIBS . 'bootstrap/css/bootstrap.css', array());
     wp_enqueue_style( 'font-awesome', KT_THEME_LIBS . 'font-awesome/css/font-awesome.min.css', array());
     wp_enqueue_style( 'kt-delphinus-font', KT_THEME_LIBS . 'delphinus/style.min.css', array());
@@ -111,7 +117,6 @@ function kt_add_scripts() {
     if(kt_is_wc()){
         wp_enqueue_style( 'kt-woocommerce', KT_THEME_CSS . 'woocommerce.css' );
     }
-
 
 	// Load our main stylesheet.
     wp_enqueue_style( 'kt-main', KT_THEME_CSS . 'style.css');
@@ -137,14 +142,30 @@ function kt_add_scripts() {
     wp_localize_script( 'kt-main-script', 'ajax_frontend', array(
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
         'security' => wp_create_nonce( 'ajax_frontend' ),
-        'day_str' => esc_html__('Days', 'delphinus'),
-        'hour_str' => esc_html__('Hours', 'delphinus'),
-        'min_str' => esc_html__('Min', 'delphinus'),
-        'sec_str' => esc_html__('Secs', 'delphinus'),
     ));
 
     if(kt_is_wc()){
+
+
+        $ajax_filter = 0;
+
+        $shop_header = kt_option('shop_header_tool_bar', 1);
+        if($shop_header == 2){
+            if($shop_header_ajax = kt_option('shop_header_ajax', 1)){
+                $ajax_filter = 1;
+            }
+        }
+
+        $woo_attr = array(
+            'day_str' => esc_html__('Days', 'delphinus'),
+            'hour_str' => esc_html__('Hours', 'delphinus'),
+            'min_str' => esc_html__('Min', 'delphinus'),
+            'sec_str' => esc_html__('Secs', 'delphinus'),
+            'ajax_filter' => $ajax_filter
+        );
+
         wp_enqueue_script( 'kt-woocommerce', KT_THEME_JS . 'woocommerce.js', array( 'jquery' ), null, true );
+        wp_localize_script( 'kt-woocommerce', 'kt_woocommerce', $woo_attr);
     }
 
 }
@@ -171,10 +192,22 @@ function kt_setting_script() {
         $css .= 'a:active{color: '.$styling_link['active'].';}';
     }
 
-    if(is_page() || is_singular()){
+    $is_shop = false;
+    if(is_archive()){
+        if(kt_is_wc()){
+            if(is_shop()){
+                $is_shop = true;
+            }
+        }
+    }
+
+    if(is_page() || is_singular() || $is_shop){
 
         global $post;
         $post_id = $post->ID;
+        if($is_shop){
+            $post_id = get_option( 'woocommerce_shop_page_id' );
+        }
 
         $pageh_spacing = rwmb_meta('_kt_page_top_spacing', array(), $post_id);
         if($pageh_spacing != ''){
@@ -184,6 +217,33 @@ function kt_setting_script() {
         if($pageh_spacing != ''){
             $css .= '.content-area-inner{padding-bottom:'.$pageh_spacing.';}';
         }
+
+        $pageh_top = rwmb_meta('_kt_page_header_top', array(), $post_id);
+        if($pageh_top != ''){
+            $css .=  'div.page-header{padding-top: '.$pageh_top.';}';
+        }
+
+        $pageh_bottom = rwmb_meta('_kt_page_header_bottom', array(), $post_id);
+        if($pageh_bottom != ''){
+            $css .=  'div.page-header{padding-bottom: '.$pageh_bottom.';}';
+        }
+
+        $pageh_title_color = rwmb_meta('_kt_page_header_title_color', array(), $post_id);
+        if($pageh_title_color != ''){
+            $css .= 'div.page-header .page-header-title{color:'.$pageh_title_color.';}';
+        }
+
+        $pageh_subtitle_color = rwmb_meta('_kt_page_header_subtitle_color', array(), $post_id);
+        if($pageh_subtitle_color != ''){
+            $css .= 'div.page-header .page-header-subtitle{color:'.$pageh_subtitle_color.';}';
+        }
+
+        $pageh_breadcrumbs_color = rwmb_meta('_kt_page_header_breadcrumbs_color', array(), $post_id);
+        if($pageh_breadcrumbs_color != ''){
+            $css .= 'div.page-header .woocommerce-breadcrumb{color:'.$pageh_breadcrumbs_color.';}';
+        }
+
+        $css .= kt_render_custom_css('_kt_page_header_background', 'div.page-header', $post_id);
 
     }
 
@@ -222,7 +282,6 @@ function kt_setting_script() {
         $css .= implode($toolbar_color_light_arr, ',').'{border-color: '.kt_hex2rgba($toolbar_color_light['color'], $toolbar_color_light['alpha']).';}';
     }
 
-
     if($navigation_height = kt_option('navigation_height', 102)){
         if(isset($navigation_height['height'])){
             $navigation_arr = array(
@@ -236,6 +295,22 @@ function kt_setting_script() {
     }
 
 
+    if($navigation_height_fixed = kt_option('navigation_height_fixed', 102)){
+        if(isset($navigation_height_fixed['height'])){
+            $navigation_fixed_arr = array(
+                '.is-sticky .apply-sticky #nav #main-nav-socials > li > a',
+                '.is-sticky .apply-sticky #nav #main-nav-wc > li > a',
+                '.is-sticky .apply-sticky #nav #main-nav-tool > li > a',
+                '.is-sticky .apply-sticky #nav #main-navigation > li > a',
+            );
+            $css .= implode($navigation_fixed_arr, ',').'{line-height: '.intval($navigation_height_fixed['height']).'px;}';
+        }
+    }
+
+    $header_sticky_opacity = kt_option('header_sticky_opacity', 0.8);
+    $css .= '.header-sticky-background{opacity:'.$header_sticky_opacity.';}';
+
+    $css .= '@media (max-width: 600px){body.opened-nav-animate.admin-bar #wpadminbar{margin-top:-46px}}';
 
     wp_add_inline_style( 'kt-main', $css );
 }
@@ -255,46 +330,47 @@ if ( ! function_exists( 'kt_excerpt_more' ) ) :
     add_filter( 'excerpt_more', 'kt_excerpt_more' );
 endif;
 
-/**
- * Control the number of  excerpt length
- * @return string
- *
- *
- */
 
-function kt_excerpt_length( ) {
-    if(is_search()){
-        $excerpt_length = kt_option('search_excerpt_length', 35);
-    }else{
-        $excerpt_length = kt_option('archive_excerpt_length', 40);
-    }
-    return $excerpt_length;
-}
-add_filter( 'excerpt_length', 'kt_excerpt_length');
+if ( ! function_exists( 'kt_excerpt_length' ) ) :
+    /**
+     * Control the number of  excerpt length
+     * @return string
+     *
+     *
+     */
 
-
-/**
- *
- *
- * Control the number of posts per page
- */
-function kt_posts_per_page( $query ) {
-    if ( $query->is_main_query() && !is_admin()) {
-        if(isset($_REQUEST['per_page'])){
-            $posts_per_page = $_REQUEST['per_page'];
-        }elseif(is_search()){
-            $posts_per_page = kt_option('search_posts_per_page', 9);
-        }elseif($query->is_category() || $query->is_home() || $query->is_tag() || $query->is_posts_page()){
-            $posts_per_page = kt_option('archive_posts_per_page', 14);
+    function kt_excerpt_length( ) {
+        if(is_search()){
+            $excerpt_length = kt_option('search_excerpt_length', 35);
+        }else{
+            $excerpt_length = kt_option('archive_excerpt_length', 40);
         }
+        return $excerpt_length;
+    }
+    add_filter( 'excerpt_length', 'kt_excerpt_length');
+endif;
 
-        if(isset($posts_per_page)){
-            set_query_var('posts_per_page', $posts_per_page);
+if ( ! function_exists( 'kt_posts_per_page' ) ) :
+    /**
+     * Control the number of posts per page
+     */
+    function kt_posts_per_page( $query ) {
+        if ( $query->is_main_query() && !is_admin()) {
+            if(isset($_REQUEST['per_page'])){
+                $posts_per_page = $_REQUEST['per_page'];
+            }elseif(is_search()){
+                $posts_per_page = kt_option('search_posts_per_page', 9);
+            }elseif($query->is_category() || $query->is_home() || $query->is_tag() || $query->is_posts_page()){
+                $posts_per_page = kt_option('archive_posts_per_page', 14);
+            }
+
+            if(isset($posts_per_page)){
+                set_query_var('posts_per_page', $posts_per_page);
+            }
         }
     }
-}
-add_action( 'pre_get_posts', 'kt_posts_per_page' );
-
+    add_action( 'pre_get_posts', 'kt_posts_per_page' );
+endif;
 /**
  *
  * Custom call back function for default post type
@@ -389,7 +465,7 @@ if ( ! function_exists( 'kt_post_thumbnail_image' ) ) {
      * element when on single views.
      *
      */
-    function kt_post_thumbnail_image($size = 'post-thumbnail', $class_img = '', $link = true, $placeholder = true, $echo = true) {
+    function kt_post_thumbnail_image($size = 'post-thumbnail', $class_img = '', $link = true, $placeholder = false, $echo = true) {
         if ( is_attachment()) {
             return;
         }
@@ -466,9 +542,6 @@ if ( ! function_exists( 'kt_posted_on' ) ) {
 }
 
 
-
-
-
 if ( ! function_exists( 'kt_paging_nav' ) ) {
     /**
      * Display navigation to next/previous set of posts when applicable.
@@ -530,8 +603,6 @@ if ( ! function_exists( 'kt_entry_meta' ) ) {
 			        kt_post_meta_comments();
 			    }
 			}
-
-
 			?>
             </div>
         <?php
@@ -552,14 +623,13 @@ if ( ! function_exists( 'kt_post_meta' ) ) {
 
 			<?php
 			kt_post_meta_categories();
-			kt_post_meta_author();
+			//kt_post_meta_author();
 			kt_post_meta_date();
 			kt_post_meta_comments();
+			kt_entry_share_social();
+
 			?>
-
 			<?php endif; // End if 'post' == get_post_type() ?>
-
-
 		</div>
 		<?php
 	}
@@ -570,7 +640,15 @@ if ( ! function_exists( 'kt_post_meta' ) ) {
 if ( ! function_exists( 'kt_post_meta_comments' ) ) {
     function kt_post_meta_comments(){
     if ( ! post_password_required() && ( comments_open() || '0' != get_comments_number() ) ) : ?>
-            <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'delphinus' ), __( '1 Comment', 'delphinus' ), __( '% Comments', 'delphinus' ) ); ?></span>
+            <span class="comments-link">
+                <?php
+                    comments_popup_link(
+                        wp_kses( __( '0 <span>Comments</span>', 'delphinus' ), array( 'span' => array()) ),
+                        wp_kses(__( '1 <span>Comment</span>', 'delphinus' ), array( 'span' => array()) ),
+                        wp_kses(__( '% <span>Comments</span>', 'delphinus' ), array( 'span' => array()) )
+                    );
+                ?>
+            </span>
         <?php endif;
     }
 }
@@ -600,10 +678,11 @@ if ( ! function_exists( 'kt_post_meta_tags' ) ) :
     function kt_post_meta_tags($separator = ', ', $before = '', $after = '') {
         $tags_list = get_the_tag_list( '', $separator, '' );
         if ( $tags_list ) {
-            printf( '%2$s <span class="tags-links">%1$s</span>%3$s',
+            printf( '%2$s <span class="tags-links"><span>%4$s</span>%1$s</span>%3$s',
                 $tags_list,
                 $before,
-                $after
+                $after,
+                esc_html__('Tags from the story: ', 'delphinus')
             );
         }
     }
@@ -648,7 +727,7 @@ if ( ! function_exists( 'kt_post_meta_date' ) ) {
 
 		printf(
 			'<span class="posted-on"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark"><span class="screen-reader-text">%1$s</span>%2$s</a></span>',
-			_x( 'Posted on %s', 'post date', 'delphinus' ),
+			esc_html__( 'Posted on', 'delphinus' ),
 			$time_string
 		);
 
@@ -686,7 +765,130 @@ if ( ! function_exists( 'kt_entry_date' ) ) {
 }
 
 
+if ( ! function_exists( 'kt_entry_share_social' ) ) {
+    function kt_entry_share_social() {
+        $total = kt_entry_share_total();
+        printf(
+            '<span class="post-share">%1$s <span class="text">%2$s</span></span>',
+            $total,
+            esc_html__('shares', 'delphinus')
+        );
+    }
+}
 
+if ( ! function_exists( 'kt_entry_share_total' ) ) {
+    function kt_entry_share_total() {
+
+            $post_id = get_the_ID();
+
+            $cache_key = 'social_count_'.$post_id;
+            $cache = get_transient($cache_key);
+
+            if( !$cache ){
+                $arr = array('facebook', 'twitter', 'google', 'linkedin', 'pinterest', 'stumbleupon', 'delicious', 'reddit', 'buffer', 'vk');
+                $total = 0;
+                foreach( $arr as $social){
+                    $total += kt_entry_share_count($social);
+                }
+
+                $cache = array('count' => intval($total));
+                set_transient( $cache_key, $cache, 2 * HOUR_IN_SECONDS );
+            }
+
+            return $cache['count'];
+        }
+}
+
+if(!function_exists('kt_entry_share_count')){
+    /**
+     * Get count share for post
+     * @param $service
+     * @return int
+     */
+    function kt_entry_share_count( $service ) {
+
+        $shareLinks = array(
+            "facebook"    => "https://api.facebook.com/method/links.getStats?format=json&urls=",
+            "twitter"     => "http://public.newsharecounts.com/count.json?url=",
+            "google"      => "https://plusone.google.com/_/+1/fastbutton?url=",
+            "linkedin"    => "https://www.linkedin.com/countserv/count/share?format=json&url=",
+            "pinterest"   => "http://api.pinterest.com/v1/urls/count.json?url=",
+            "stumbleupon" => "http://www.stumbleupon.com/services/1.01/badge.getinfo?url=",
+            "delicious"   => "http://feeds.delicious.com/v2/json/urlinfo/data?url=",
+            "reddit"      => "http://www.reddit.com/api/info.json?&url=",
+            "buffer"      => "https://api.bufferapp.com/1/links/shares.json?url=",
+            "vk"          => "https://vk.com/share.php?act=count&index=1&url="
+        );
+
+        $post_id = get_the_ID();
+        $cache_key = $service.'_count_'.$post_id;
+        $cache = get_transient($cache_key);
+
+        if( !$cache ){
+            $link = 'http://crestaproject.com/downloads/cresta-social-share-counter/';get_the_permalink($post_id);
+
+            $response = wp_remote_get( $shareLinks[$service].$link );
+            if( is_array($response) ) {
+                $data = $response['body'];
+                switch($service) {
+                    case "facebook":
+                        $data = json_decode($data);
+                        $count = (is_array($data) ? $data[0]->total_count : $data->total_count);
+                        break;
+                    case "google":
+                        preg_match( '/window\.__SSR = {c: (\d+(?:\.\d+)+)/', $data, $matches);
+                        if(isset($matches[0]) && isset($matches[1])) {
+                            $bits = explode('.',$matches[1]);
+                            $count = (int)( empty($bits[0]) ?: $bits[0]) . ( empty($bits[1]) ?: $bits[1] );
+                        }
+                        break;
+                    case "pinterest":
+                        $data = substr( $data, 13, -1);
+                    case "linkedin":
+                    case "twitter":
+                        $data = json_decode($data);
+                        $count = $data->count;
+                        break;
+                    case "stumbleupon":
+                        $data = json_decode($data);
+                        $count = $data->result->views;
+                        break;
+                    case "delicious":
+                        $data = json_decode($data);
+                        $count = $data[0]->total_posts;
+                        break;
+                    case "reddit":
+                        $data = json_decode($data);
+                        $ups = $downs = 0;
+                        foreach($data->data->children as $child) {
+                            $ups+= (int) $child->data->ups;
+                            $downs+= (int) $child->data->downs;
+                        }
+                        $count = $ups - $downs;
+                        break;
+                    case "buffer":
+                        $data = json_decode($data);
+                        $count = $data->shares;
+                        break;
+                    case "vk":
+                        $data = preg_match('/^VK.Share.count\(\d+,\s+(\d+)\);$/i', $data, $matches);
+                        $count = $matches[1];
+                        break;
+                    default:
+                        $count = 0;
+                }
+                $cache = array('count' => $count );
+            }else{
+                $cache = array('count' => 0 );
+            }
+
+            $hour = apply_filters('kt_caches_time_share', 4);
+            set_transient( $cache_key, $cache, $hour * HOUR_IN_SECONDS );
+        }
+
+        return intval($cache['count']);
+    }
+}
 
 if ( ! function_exists( 'kt_entry_excerpt' ) ) :
 	/**
@@ -715,7 +917,7 @@ endif;
  * Share Box [share_box]
  * --------------------------------------------------------------------------- */
 if( ! function_exists( 'kt_share_box' ) ){
-    function kt_share_box($post_id = null, $style = "", $class = 'share-it'){
+    function kt_share_box($post_id = null, $style = "", $class = 'share-it', $count = false){
         global $post;
         if(!$post_id) $post_id = $post->ID;
 
@@ -725,47 +927,61 @@ if( ! function_exists( 'kt_share_box' ) ){
         $image = wp_get_attachment_image_src(get_post_thumbnail_id($post_id), 'full');
 
         $html = '';
-        $share_arr = kt_option('social_share', array('facebook' => true,'twitter' => true,'google_plus' => true));
+        $share_arr = kt_option('social_share', array('facebook' => true, 'twitter' => true, 'pinterest' => true));
 
         if($share_arr){
             $i =0;
             foreach($share_arr as $key => $val){
                 if($val){
-                    $active = ($i == 0) ? 'active' : '';
+                    $active = ($i == 0) ? ' active' : '';
                     if($key == 'facebook'){
                         // Facebook
-                        $html .= '<li class="'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://www.facebook.com/sharer.php?s=100&amp;p[title]=' . $title . '&amp;p[url]=' . $link.'\', \'sharer\', \'toolbar=0,status=0,width=620,height=280\');popUp.focus();return false;">';
-                        $html .= '<i class="fa fa-facebook"></i><span>'.esc_html__('Facebook', 'delphinus').'</span>';
+                        $html .= '<li class="facebook'.$active.' "><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://www.facebook.com/sharer.php?s=100&amp;p[title]=' . $title . '&amp;p[url]=' . $link.'\', \'sharer\', \'toolbar=0,status=0,width=620,height=280\');popUp.focus();return false;">';
+                        $text = ($count) ? esc_html__('Share', 'delphinus') : esc_html__('Facebook', 'delphinus');
+                        $html .= '<i class="fa fa-facebook"></i><span class="text">'.$text.'</span>';
+                        if($count){
+                            $html .= '<span class="count">'.kt_entry_share_count('facebook').'</span></li>';
+                        }
                         $html .= '</a></li>';
                     }elseif($key == 'twitter'){
                         // Twitter
-                        $html .= '<li class="'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://twitter.com/home?status=' . $link . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false;">';
-                        $html .= '<i class="fa fa-twitter"></i><span>'.esc_html__('Twitter', 'delphinus').'</span>';
+                        $html .= '<li class="twitter'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://twitter.com/home?status=' . $link . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false;">';
+                        $text = ($count) ? esc_html__('tweet', 'delphinus') : esc_html__('Twitter', 'delphinus');
+                        $html .= '<i class="fa fa-twitter"></i><span class="text">'.$text.'</span>';
+                        if($count){
+                            $html .= '<span class="count">'.kt_entry_share_count('twitter').'</span></li>';
+                        }
                         $html .= '</a></li>';
                     }elseif($key == 'google_plus'){
                         // Google plus
-                        $html .= '<li class="'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'https://plus.google.com/share?url=' . $link . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
-                        $html .= '<i class="fa fa-google-plus"></i><span>'.esc_html__('Google+', 'delphinus').'</span>';
+                        $html .= '<li class="google_plus'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'https://plus.google.com/share?url=' . $link . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
+                        $html .= '<i class="fa fa-google-plus"></i><span class="text">'.esc_html__('Google+', 'delphinus').'</span>';
+                        $html .= '<span class="count">'.kt_entry_share_count('google').'</span></li>';
                         $html .= "</a></li>";
                     }elseif($key == 'pinterest'){
                         // Pinterest
-                        $html .= '<li class="'.$active.'"><a class="share_link" href="#" onclick="popUp=window.open(\'http://pinterest.com/pin/create/button/?url=' . $link . '&amp;description=' . $title . '&amp;media=' . urlencode($image[0]) . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
-                        $html .= '<i class="fa fa-pinterest"></i><span>'.esc_html__('Pinterest', 'delphinus').'</span>';
+                        $html .= '<li class="pinterest'.$active.'"><a class="share_link" href="#" onclick="popUp=window.open(\'http://pinterest.com/pin/create/button/?url=' . $link . '&amp;description=' . $title . '&amp;media=' . urlencode($image[0]) . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
+                        $text = ($count) ? esc_html__('Pin it', 'delphinus') : esc_html__('Pinterest', 'delphinus');
+                        $html .= '<i class="fa fa-pinterest"></i><span class="text">'.$text.'</span>';
+                        if($count){
+                            $html .= '<span class="count">'.kt_entry_share_count('pinterest').'</span></li>';
+                        }
                         $html .= "</a></li>";
                     }elseif($key == 'linkedin'){
                         // linkedin
-                        $html .= '<li class="'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://linkedin.com/shareArticle?mini=true&amp;url=' . $link . '&amp;title=' . $title. '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
-                        $html .= '<i class="fa fa-linkedin"></i><span>'.esc_html__('LinkedIn', 'delphinus').'</span>';
+                        $html .= '<li class="linkedin'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://linkedin.com/shareArticle?mini=true&amp;url=' . $link . '&amp;title=' . $title. '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
+                        $html .= '<i class="fa fa-linkedin"></i><span class="text">'.esc_html__('LinkedIn', 'delphinus').'</span>';
+                        $html .= '<span class="count">'.kt_entry_share_count('linkedin').'</span></li>';
                         $html .= "</a></li>";
                     }elseif($key == 'tumblr'){
                         // Tumblr
-                        $html .= '<li class="'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://www.tumblr.com/share/link?url=' . $link . '&amp;name=' . $title . '&amp;description=' . $excerpt . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
-                        $html .= '<i class="fa fa-tumblr"></i><span>'.esc_html__('Tumblr', 'delphinus').'</span>';
+                        $html .= '<li class="tumblr'.$active.'"><a class="'.$style.'" href="#" onclick="popUp=window.open(\'http://www.tumblr.com/share/link?url=' . $link . '&amp;name=' . $title . '&amp;description=' . $excerpt . '\', \'popupwindow\', \'scrollbars=yes,width=800,height=400\');popUp.focus();return false">';
+                        $html .= '<i class="fa fa-tumblr"></i><span class="text">'.esc_html__('Tumblr', 'delphinus').'</span>';
                         $html .= "</a></li>";
                     }elseif($key == 'email'){
                         // Email
-                        $html .= '<li class="'.$active.'"><a class="'.$style.'" href="mailto:?subject='.$title.'&amp;body='.$link.'">';
-                        $html .= '<i class="fa fa-envelope-o"></i><span>'.esc_html__('Mail', 'delphinus').'</span>';
+                        $html .= '<li class="email'.$active.'"><a class="'.$style.'" href="mailto:?subject='.$title.'&amp;body='.$link.'">';
+                        $html .= '<i class="fa fa-envelope-o"></i><span class="text">'.esc_html__('Mail', 'delphinus').'</span>';
                         $html .= "</a></li>";
                     }
                     $i++;
@@ -796,13 +1012,18 @@ if ( ! function_exists( 'kt_post_nav' ) ) {
 
         if ( ! $next && ! $previous ) return;
 
-        echo '<div class="post-navigation-wrap">';
+        $class = ' onlyone';
+        if($next && $previous){
+            $class = '';
+        }
+
 		$args = array(
-			'next_text' => '<span class="meta-image"></span><span class="meta-nav">'.esc_html__('Previous Post', 'delphinus').'</span><span class="meta-title">%title</span>',
-			'prev_text' => '<span class="meta-image"></span><span class="meta-nav">'.esc_html__('Next Post', 'delphinus').'</span><span class="meta-title">%title</span>',
+			'next_text' => '<span class="meta-nav">'.esc_html__('Previous Post', 'delphinus').'</span><span class="meta-title">%title</span>',
+			'prev_text' => '<span class="meta-nav">'.esc_html__('Next Post', 'delphinus').'</span><span class="meta-title">%title</span>',
         );
+        echo '<div class="post-navigation-outer '.$class.'">';
 		the_post_navigation( $args );
-        echo '</div>';
+		echo '</div>';
 	}
 }
 
@@ -816,7 +1037,7 @@ if ( ! function_exists( 'kt_related_article' ) ) :
         global $post;
         if(!$post_id) $post_id = $post->ID;
 
-        $posts_per_page = kt_option('blog_related_sidebar', 3);
+        $posts_per_page = kt_option('blog_related_sidebar', 5);
         $excerpt_length = 15;
 
         $args = array(
@@ -853,37 +1074,35 @@ if ( ! function_exists( 'kt_related_article' ) ) :
         if($query->have_posts()){ ?>
             <div id="related-article">
                 <h3 class="post-single-heading"><?php esc_html_e('Related Article', 'delphinus'); ?></h3>
-
+                <div class="blog-posts blog-posts-carousel no-readmore">
                 <?php
 
-                $layout = array(
-                    'type' => 'grid',
-                    'columns' => '3',
-                    'columns_tab' => '2',
-                    'pagination' => 'none',
-                    'readmore' => 'none'
-                );
+                    ob_start();
+                    $carousel_html ='';
 
+                    while ( $query->have_posts() ) : $query->the_post();
 
-                $readmore_class = (!$layout['readmore'] || $layout['readmore'] == 'none' ) ? ' no-readmore' : '';
+                        echo '<div class="blog-post-wrap col-lg-6 col-md-6 col-sm-6">';
+                        get_template_part( 'templates/blog/grid/content-relate', get_post_format());
+                        echo '</div>';
 
-                echo '<div class="blog-posts blog-posts-'.esc_attr($layout['type']).' '.esc_attr($readmore_class).'">';
-                echo '<div class="row multi-columns-row">';
-                $article_columns = 12/$layout['columns'];
-                $article_columns_tab = 12/$layout['columns_tab'];
+                    endwhile;
 
-                while ( $query->have_posts() ) : $query->the_post();
+                    $carousel_html .= ob_get_clean();
+                    if($carousel_html){
+                        $atts = array(
+                            'desktop' => 2,
+                            'navigation_position' => 'heading',
+                            'navigation_always_on' => true
+                        );
+                        $carousel_ouput = kt_render_carousel(apply_filters( 'kt_render_args', $atts), '', 'kt-owl-carousel');
 
-                    printf('<div class="blog-post-wrap col-lg-%1$s col-md-%1$s col-sm-%2$s" >', $article_columns, $article_columns_tab);
-                    get_template_part( 'templates/blog/grid/content-relate', get_post_format());
-                    echo '</div>';
+                        echo str_replace('%carousel_html%', $carousel_html, $carousel_ouput);
 
-                endwhile;
-
-                echo "</div>";
-                echo "</div>";
+                    }
 
                 ?>
+                </div>
             </div><!-- #related-article -->
         <?php
         }
@@ -891,3 +1110,5 @@ if ( ! function_exists( 'kt_related_article' ) ) :
         wp_reset_postdata();
     }
 endif;
+
+

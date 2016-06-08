@@ -60,19 +60,19 @@ if ( post_password_required() ) {
     $required = ' '.esc_html__('(required)', 'delphinus');
 
     $new_fields = array(
-        'author' => '<div class="comment-form-fields row clearfix"><p class="comment_field-column comment-form-author">' .
+        'author' => '<div class="comment-form-fields row clearfix"><p class="comment_field-column col-md-6 comment-form-author">' .
             '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '"  placeholder="'.esc_html__('Name', 'delphinus').'"'. $aria_req . $html_req .'/></p>',
-        'email'  => '<p class="comment_field-column comment-form-email">' .
+        'email'  => '<p class="comment_field-column col-md-6 comment-form-email">' .
             '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" placeholder="'.esc_html__('Email', 'delphinus').'"'. $aria_req . $html_req.'/></p></div>',
         'url'    => '<p class="comment-form-url">' .
             '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" placeholder="'.esc_html__('Website', 'delphinus').'" /></p>',
     );
 
     $comments_args = array(
-        'label_submit'      => esc_html__( 'send','delphinus' ),
+        'label_submit'      => esc_html__( 'Post Comment','delphinus' ),
         'fields' => apply_filters( 'comment_form_default_fields', $new_fields ),
         'comment_field' => '<p><textarea id="comment" name="comment" placeholder="'.esc_html__('Your Comment', 'delphinus').'"  aria-required="true" rows="6"></textarea></p>',
-        'class_submit'      => 'btn btn-default btn-lg',
+        'class_submit'      => 'btn btn-dark-b btn-block btn-lg',
         'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title post-single-heading">',
     );
 

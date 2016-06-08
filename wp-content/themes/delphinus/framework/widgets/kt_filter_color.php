@@ -305,7 +305,7 @@ class WC_Widget_Color_Filter extends WC_Widget {
                     echo '<span style="background-color: '.$instance['colors'][$term->term_id].';"></span>';
                 }
 
-                echo $term->name;
+                echo esc_html( $term->name );
 
                 echo ( $count > 0 || $option_is_set ) ? '</a>' : '</span>';
 

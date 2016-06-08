@@ -25,7 +25,7 @@ function kt_register_plugins() {
         array(
             'name'          => 'Delphinus Custom Post', // The plugin name
             'slug'          => 'delphinus_cp', // The plugin slug (typically the folder name)
-            'source'            => KT_THEME_DIR.'recommend-plugins/delphinus_cp.zip', // The plugin source
+            'source'            => 'http://kitethemes.com/plugins/delphinus_cp.zip', // The plugin source
             'required'          => true, // If false, the plugin is only 'recommended' instead of required
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
@@ -34,7 +34,7 @@ function kt_register_plugins() {
         array(
             'name'          => 'KT Mailchimp', // The plugin name
             'slug'          => 'kt_mailchimp', // The plugin slug (typically the folder name)
-            'source'            => KT_THEME_DIR.'recommend-plugins/kt_mailchimp.zip', // The plugin source
+            'source'            => 'http://kitethemes.com/plugins/kt_mailchimp.zip', // The plugin source
             'required'          => false, // If false, the plugin is only 'recommended' instead of required
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
@@ -43,17 +43,25 @@ function kt_register_plugins() {
         array(
             'name'          => 'WPBakery Visual Composer', // The plugin name
             'slug'          => 'js_composer', // The plugin slug (typically the folder name)
-            'source'            => KT_THEME_DIR.'recommend-plugins/js_composer.zip', // The plugin source
+            'source'            => 'http://kitethemes.com/plugins/js_composer.zip', // The plugin source
             'required'          => true, // If false, the plugin is only 'recommended' instead of required
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
             'external_url'      => '', // If set, overrides default API URL and points to an external URL
         ),
-
         array(
-            'name'          => 'KT Importer', // The plugin name
-            'slug'          => 'kt_importer', // The plugin slug (typically the folder name)
-            'source'            => KT_THEME_DIR.'recommend-plugins/kt_importer.zip', // The plugin source
+            'name'          => 'Delphinus Importer', // The plugin name
+            'slug'          => 'delphinus-importer', // The plugin slug (typically the folder name)
+            'source'            => 'http://kitethemes.com/plugins/delphinus_importer.zip', // The plugin source
+            'required'          => true, // If false, the plugin is only 'recommended' instead of required
+            'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+            'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+            'external_url'      => '', // If set, overrides default API URL and points to an external URL
+        ),
+        array(
+            'name'          => 'Revolution Slider', // The plugin name
+            'slug'          => 'revslider', // The plugin slug (typically the folder name)
+            'source'            => 'http://kitethemes.com/plugins/revslider.zip', // The plugin source
             'required'          => true, // If false, the plugin is only 'recommended' instead of required
             'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
             'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
@@ -103,15 +111,17 @@ function kt_register_plugins() {
      * Some of the strings are added into a sprintf, so see the comments at the
      * end of each line for what each argument will be.
      */
-    $config = array(
-        'domain'        => $theme_text_domain, // Text domain - likely want to be the same as your theme.
-        'default_path'      => '', // Default absolute path to pre-packaged plugins
-        'parent_slug'           => 'themes.php',
 
-        'capability'            => 'manage_options',
-        'menu'          => 'install-required-plugins', // Menu slug
-        'has_notices'       => true, // Show admin notices or not
-        'is_automatic'      => true, // Automatically activate plugins after installation or not
+
+    $config = array(
+        'id'           => 'delphinus',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+        'default_path' => '',                      // Default absolute path to bundled plugins.
+        'menu'         => 'install-required-plugins', // Menu slug.
+        'has_notices'  => true,                    // Show admin notices or not.
+        'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
+        'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
+        'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+        'parent_slug'  => 'themes.php',
     );
     tgmpa( $plugins, $config );
 }

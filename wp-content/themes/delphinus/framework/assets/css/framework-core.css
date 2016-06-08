@@ -563,11 +563,13 @@ div#post-body .rwmb-text{
     margin: 0 10px 15px;
     padding: 2px 2px 2px 0;
     text-align: center;
+    max-width: 100%;
 }
 .rwmb-image_radio-wrapper label img{
     display: block;
     border: 4px solid #d9d9d9;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 .rwmb-image_radio-wrapper input{
     display: none;

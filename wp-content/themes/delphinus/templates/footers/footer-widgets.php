@@ -5,16 +5,6 @@ if ( !defined('ABSPATH')) exit;
 
 $layouts = explode('-', kt_option('footer_widgets_layout', '4-4-4'));
 
-$sidebar_widgets = false;
-foreach($layouts as $i => $layout){
-    if(is_active_sidebar('footer-column-'.($i+1))){
-        $sidebar_widgets = true;
-        break;
-    }
-}
-
-if(!$sidebar_widgets) return;
-
 ?>
 <footer id="footer-area">
     <div class="container">

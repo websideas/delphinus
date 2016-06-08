@@ -48,6 +48,7 @@
   position: relative;
 
   &-divider{
+    margin-bottom: 24px;
     span{
       width: 60px;
       display: inline-block;
@@ -59,13 +60,14 @@
 
   &-title{
     line-height: 30px;
-    margin: 24px 0 10px;
+    margin: 0;
     letter-spacing: 0.2em;
   }
 
   &-content{
     font-size: 12px;
     letter-spacing: 0.3em;
+    margin-top: 10px;
     a{
       color: $gray-text;
       &:hover{
@@ -1052,6 +1054,13 @@
 
 }
 
+/*========= Blog posts ===========*/
+.blog-posts-wrapper{
+  margin-bottom: $vspacing;
+  .blog-posts{
+    margin: 0;
+  }
+}
 
 
 /*========= Dropcap ===========*/

@@ -141,7 +141,7 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 				</dt>
 			</dl>
 
-			<div class="menu-item-settings" id="menu-item-settings-<?php echo $item_id; ?>">
+			<div class="menu-item-settings wp-clearfix" id="menu-item-settings-<?php echo $item_id; ?>">
 				<?php if( 'custom' == $item->type ) : ?>
 					<p class="field-url description description-wide">
 						<label for="edit-menu-item-url-<?php echo $item_id; ?>">
@@ -189,46 +189,46 @@ class Walker_Nav_Menu_Edit_Custom extends Walker_Nav_Menu {
 				</p>
                 
                 <?php do_action( 'walker_nav_menu_custom_fields', $item_id, $item, $depth, $args ); ?>
-                
-				<p class="field-move hide-if-no-js description description-wide">
-					<label>
-						<span><?php esc_html_e( 'Move','delphinus' ); ?></span>
-						<a href="#" class="menus-move-up"><?php esc_html_e( 'Up one','delphinus' ); ?></a>
-						<a href="#" class="menus-move-down"><?php esc_html_e( 'Down one','delphinus' ); ?></a>
-						<a href="#" class="menus-move-left"></a>
-						<a href="#" class="menus-move-right"></a>
-						<a href="#" class="menus-move-top"><?php esc_html_e( 'To the top','delphinus' ); ?></a>
-					</label>
-				</p>
 
-				<div class="menu-item-actions description-wide submitbox">
-					<?php if( 'custom' != $item->type && $original_title !== false ) : ?>
-						<p class="link-to-original">
-							<?php printf( __('Original: %s','delphinus'), '<a href="' . esc_attr( $item->url ) . '">' . esc_html( $original_title ) . '</a>' ); ?>
-						</p>
-					<?php endif; ?>
-					<a class="item-delete submitdelete deletion" id="delete-<?php echo $item_id; ?>" href="<?php
-					echo wp_nonce_url(
-						add_query_arg(
-							array(
-								'action' => 'delete-menu-item',
-								'menu-item' => $item_id,
-							),
-							admin_url( 'nav-menus.php' )
-						),
-						'delete-menu_item_' . $item_id
-					); ?>"><?php esc_html_e( 'Remove','delphinus' ); ?></a> <span class="meta-sep hide-if-no-js"> | </span> <a class="item-cancel submitcancel hide-if-no-js" id="cancel-<?php echo $item_id; ?>" href="<?php echo esc_url( add_query_arg( array( 'edit-menu-item' => $item_id, 'cancel' => time() ), admin_url( 'nav-menus.php' ) ) );
-						?>#menu-item-settings-<?php echo $item_id; ?>"><?php esc_html_e('Cancel','delphinus'); ?></a>
-				</div>
+                <p class="field-move hide-if-no-js description description-wide">
+                    <label>
+                        <span><?php esc_html_e( 'Move', 'delphinus' ); ?></span>
+                        <a href="#" class="menus-move menus-move-up" data-dir="up"><?php esc_html_e( 'Up one', 'delphinus' ); ?></a>
+                        <a href="#" class="menus-move menus-move-down" data-dir="down"><?php esc_html_e( 'Down one', 'delphinus' ); ?></a>
+                        <a href="#" class="menus-move menus-move-left" data-dir="left"></a>
+                        <a href="#" class="menus-move menus-move-right" data-dir="right"></a>
+                        <a href="#" class="menus-move menus-move-top" data-dir="top"><?php esc_html_e( 'To the top', 'delphinus' ); ?></a>
+                    </label>
+                </p>
 
-				<input class="menu-item-data-db-id" type="hidden" name="menu-item-db-id[<?php echo $item_id; ?>]" value="<?php echo $item_id; ?>" />
-				<input class="menu-item-data-object-id" type="hidden" name="menu-item-object-id[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->object_id ); ?>" />
-				<input class="menu-item-data-object" type="hidden" name="menu-item-object[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->object ); ?>" />
-				<input class="menu-item-data-parent-id" type="hidden" name="menu-item-parent-id[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->menu_item_parent ); ?>" />
-				<input class="menu-item-data-position" type="hidden" name="menu-item-position[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->menu_order ); ?>" />
-				<input class="menu-item-data-type" type="hidden" name="menu-item-type[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->type ); ?>" />
+                <div class="menu-item-actions description-wide submitbox">
+                    <?php if ( 'custom' != $item->type && $original_title !== false ) : ?>
+                        <p class="link-to-original">
+                            <?php printf( esc_html__('Original: %s', 'delphinus'), '<a href="' . esc_attr( $item->url ) . '">' . esc_html( $original_title ) . '</a>' ); ?>
+                        </p>
+                    <?php endif; ?>
+                    <a class="item-delete submitdelete deletion" id="delete-<?php echo $item_id; ?>" href="<?php
+                    echo wp_nonce_url(
+                        add_query_arg(
+                            array(
+                                'action' => 'delete-menu-item',
+                                'menu-item' => $item_id,
+                            ),
+                            admin_url( 'nav-menus.php' )
+                        ),
+                        'delete-menu_item_' . $item_id
+                    ); ?>"><?php esc_html_e( 'Remove', 'delphinus' ); ?></a> <span class="meta-sep hide-if-no-js"> | </span> <a class="item-cancel submitcancel hide-if-no-js" id="cancel-<?php echo $item_id; ?>" href="<?php echo esc_url( add_query_arg( array( 'edit-menu-item' => $item_id, 'cancel' => time() ), admin_url( 'nav-menus.php' ) ) );
+                    ?>#menu-item-settings-<?php echo $item_id; ?>"><?php esc_html_e('Cancel', 'delphinus'); ?></a>
+                </div>
+
+                <input class="menu-item-data-db-id" type="hidden" name="menu-item-db-id[<?php echo $item_id; ?>]" value="<?php echo $item_id; ?>" />
+                <input class="menu-item-data-object-id" type="hidden" name="menu-item-object-id[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->object_id ); ?>" />
+                <input class="menu-item-data-object" type="hidden" name="menu-item-object[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->object ); ?>" />
+                <input class="menu-item-data-parent-id" type="hidden" name="menu-item-parent-id[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->menu_item_parent ); ?>" />
+                <input class="menu-item-data-position" type="hidden" name="menu-item-position[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->menu_order ); ?>" />
+                <input class="menu-item-data-type" type="hidden" name="menu-item-type[<?php echo $item_id; ?>]" value="<?php echo esc_attr( $item->type ); ?>" />
 			</div><!-- .menu-item-settings-->
-			<ul class="menu-item-transport"></ul>
+            <ul class="menu-item-transport"></ul>
 		<?php
 		$output .= ob_get_clean();
 	}

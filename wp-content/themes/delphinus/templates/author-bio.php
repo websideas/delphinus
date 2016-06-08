@@ -3,27 +3,37 @@
  * The template for displaying Author bios
  *
  */
+
+$description = get_the_author_meta('description');
+if(!$description) return;
+
 ?>
 
-<h4 class="post-single-heading"><?php esc_html_e('About the Author', 'delphinus'); ?></h4>
 <div class="author-info">
     <div class="author-avatar">
         <?php
-        $author_bio_avatar_size = apply_filters( 'kt_author_bio_avatar_size', 250 );
+        $author_bio_avatar_size = apply_filters( 'kt_author_bio_avatar_size', 170 );
         echo get_avatar( get_the_author_meta( 'user_email' ), $author_bio_avatar_size );
         ?>
     </div><!-- .author-avatar -->
 
     <div class="author-description">
-        <?php $author_id = get_the_author_meta( 'ID' ); ?>
+        <?php
+            $author_id = get_the_author_meta( 'ID' );
+            $user_info = get_userdata($author_id);
+        ?>
+        <?php printf('<div class="author-writtenby">%s</div>', esc_html__('Written By', 'delphinus')); ?>
+
         <h5 class="author-title">
             <a class="author-link" href="<?php echo esc_url( get_author_posts_url( $author_id ) ); ?>" rel="author" title="<?php echo esc_attr(sprintf( esc_html__( 'View all posts by %s', 'delphinus' ), get_the_author() ) ); ?>">
                 <?php echo get_the_author(); ?>
             </a>
         </h5>
+        <?php  printf('<div class="author-agency">%s</div>', implode(', ', $user_info->roles));  ?>
 
         <?php
         $googleplus = get_the_author_meta('googleplus');
+        $linkedin = get_the_author_meta('linkedin');
         $url = get_the_author_meta('url');
         $twitter = get_the_author_meta('twitter');
         $facebook = get_the_author_meta('facebook');
@@ -32,7 +42,7 @@
         $tumblr = get_the_author_meta('tumblr');
         ?>
         <?php if($facebook || $twitter || $pinterest || $googleplus || $instagram || $tumblr || $url){ ?>
-            <p class="author-social">
+            <p class="author-socials">
                 <?php if($facebook){ ?>
                     <a href="<?php echo esc_url($facebook); ?>" target="_blank"><i class="fa fa-facebook"></i></a>
                 <?php } ?>
@@ -48,6 +58,9 @@
                 <?php if($instagram){ ?>
                     <a href="http://instagram.com/<?php echo esc_attr($instagram); ?>" target="_blank"><i class="fa fa-instagram"></i></a>
                 <?php } ?>
+                <?php if($linkedin){ ?>
+                    <a href="<?php echo esc_url($linkedin); ?>" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <?php } ?>
                 <?php if($tumblr){ ?>
                     <a href="http://<?php echo esc_attr($tumblr); ?>.tumblr.com/" target="_blank"><i class="fa fa-tumblr"></i></a>
                 <?php } ?>
@@ -56,11 +69,6 @@
                 <?php } ?>
             </p>
         <?php } ?>
-
-        <?php
-        if($description = get_the_author_meta('description')){
-            printf('<div class="author-bio">%s</div>', $description);
-        }
-        ?>
     </div><!-- .author-description -->
+    <?php printf('<div class="author-bio">%s</div>', $description); ?>
 </div><!-- .author-info -->

@@ -20,6 +20,8 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
+ //Added by WP-Cache Manager
+define( 'WPCACHEHOME', '/Applications/MAMP/htdocs/delphinus/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'delphinus');
 
 /** MySQL database username */
@@ -39,6 +41,7 @@ define('DB_COLLATE', '');
 
 define('AUTOSAVE_INTERVAL', 300 ); // seconds
 define('WP_POST_REVISIONS', false );
+
 
 
 /**#@+

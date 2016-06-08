@@ -34,7 +34,9 @@ function kt_add_custom_fields( $item_id, $item, $depth, $args ) { ?>
                         <label for="menu-item-columns-<?php echo $item_id; ?>">
                             <?php _e( 'Mega Menu number of columns', 'delphinus'); ?><br />
                             <select id="menu-item-columns-<?php echo $item_id; ?>" name="menu-item-megamenu-columns[<?php echo $item_id; ?>]" class="widefat edit-menu-item-columns">
-                                <?php for($i=4; $i>1; $i--){ ?>
+                                <?php $colums_count = 4; ?>
+                                <option value=""><?php echo $colums_count ?></option>
+                                <?php for($i=$colums_count-1; $i>1; $i--){ ?>
                                     <option <?php selected($item->columns, $i); ?> value="<?php echo $i ?>"><?php echo $i; ?></option>    
                                 <?php } ?>
                             </select>
@@ -44,7 +46,7 @@ function kt_add_custom_fields( $item_id, $item, $depth, $args ) { ?>
                         <label for="menu-item-layout-<?php echo $item_id; ?>">
                             <?php _e( 'Mega Menu layout', 'delphinus'); ?><br />
                             <select id="menu-item-layout-<?php echo $item_id; ?>" name="menu-item-megamenu-layout[<?php echo $item_id; ?>]" class="widefat edit-menu-item-layout">
-                                <option <?php selected($item->layout, 'default'); ?> value="default"><?php _e('Default', 'delphinus'); ?></option>
+                                <option <?php selected($item->layout, ''); ?> value=""><?php _e('Default', 'delphinus'); ?></option>
                                 <option <?php selected($item->layout, 'table'); ?> value="table"><?php _e('Table + Border', 'delphinus'); ?></option>
                             </select>
                         </label>
@@ -53,7 +55,7 @@ function kt_add_custom_fields( $item_id, $item, $depth, $args ) { ?>
                         <label for="menu-item-width-<?php echo $item_id; ?>">
                             <?php _e( 'Mega Menu width', 'delphinus'); ?><br />
                             <select id="menu-item-width-<?php echo $item_id; ?>" name="menu-item-megamenu-width[<?php echo $item_id; ?>]" class="widefat edit-menu-item-width">
-                                <option <?php selected($item->width, 'full'); ?> value="full"><?php _e('Full Width', 'delphinus'); ?></option>
+                                <option <?php selected($item->width); ?> value=""><?php _e('Full Width', 'delphinus'); ?></option>
                                 <option <?php selected($item->width, 'half'); ?> value="half"><?php _e('1/2', 'delphinus'); ?></option>
                                 <option <?php selected($item->width, 'three'); ?> value="three"><?php _e('3/4', 'delphinus'); ?></option>
                                 <option <?php selected($item->width, 'four'); ?> value="four"><?php _e('4/5', 'delphinus'); ?></option>
@@ -65,8 +67,8 @@ function kt_add_custom_fields( $item_id, $item, $depth, $args ) { ?>
                         <label>
                             <?php _e( 'Mega menu position', 'delphinus'); ?><br />
                             <select id="menu-item-position-<?php echo $item_id; ?>" name="menu-item-megamenu-position[<?php echo $item_id; ?>]" class="widefat edit-menu-item-position">
-                                <option <?php selected($item->position, 'center'); ?> value="center">Center</option>
-                                <option <?php selected($item->position, 'left-menubar'); ?> value=""><?php _e( 'Left edge of menu bar', 'delphinus'); ?></option>
+                                <option <?php selected($item->position, ''); ?> value="">Center</option>
+                                <option <?php selected($item->position, 'left-menubar'); ?> value="left-menubar"><?php _e( 'Left edge of menu bar', 'delphinus'); ?></option>
                                 <option <?php selected($item->position, 'right-menubar'); ?> value="right-menubar"><?php _e( 'Right edge of menu bar', 'delphinus'); ?></option>
                                 <option <?php selected($item->position, 'left-parent'); ?> value="left-parent"><?php _e( 'Left Edge of Parent item', 'delphinus'); ?></option>
                                 <option <?php selected($item->position, 'right-parent'); ?> value="right-parent"><?php _e( 'Right Edge of Parent item', 'delphinus'); ?></option>
@@ -126,7 +128,7 @@ function kt_add_custom_fields( $item_id, $item, $depth, $args ) { ?>
                             <?php _e('Mega Menu Widget Area', 'delphinus'); ?><br />
                             <?php $sidebars = kt_sidebars();?>
                             <select id="menu-item-widget-<?php echo $item_id; ?>" name="menu-item-megamenu-widget[<?php echo $item_id; ?>]" class="widefat edit-menu-item-widget">
-                                <option value="0"><?php _e( 'Select Widget Area', 'delphinus'); ?></option>
+                                <option value=""><?php _e( 'Select Widget Area', 'delphinus'); ?></option>
                                 <?php foreach($sidebars as $k=>$v){ ?>
                                     <option <?php selected($item->widget, $k); ?> value="<?php echo $k; ?>"><?php echo $v ?></option>
                                 <?php } ?>

@@ -1,12 +1,12 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('single-post-wrap'); ?> itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="entry-header">
+        <?php
+        the_title( sprintf( '<h1 class="entry-title" itemprop="name headline">', esc_url( get_permalink() ) ), '</h1>' );
+        kt_post_meta();
+        ?>
+    </header><!-- .entry-header -->
     <?php kt_post_thumbnail_image('full', 'img-responsive', false, false); ?>
     <div class="single-post-content">
-        <header class="entry-header">
-            <?php
-                the_title( sprintf( '<div class="entry-title hide" itemprop="name headline">', esc_url( get_permalink() ) ), '</div>' );
-                kt_post_meta();
-            ?>
-        </header><!-- .entry-header -->
         <div class="entry-content clearfix" itemprop="articleBody">
             <?php the_content(); ?>
             <?php
@@ -25,12 +25,11 @@
     </div>
     <footer class="entry-footer">
         <?php
-        kt_post_meta_tags('');
+        kt_post_meta_tags( );
 
         if(kt_post_option(null, '_kt_social_sharing', 'single_share_box', 1)) {
-            kt_share_box(null, 'square');
+            kt_share_box(null, 'square', 'share-it', true);
         }
-
         ?>
     </footer><!-- .entry-footer -->
 
@@ -39,17 +38,15 @@
 <?php
 
 
-    /*
+    if(kt_post_option(null, '_kt_author_info', 'single_author', 1)){
+        // Author bio.
+        get_template_part( 'templates/author-bio' );
+    }
 
     if(kt_post_option(null, '_kt_prev_next', 'single_next_prev', 0)){
         kt_post_nav();
     }
 
-    */
-    if(kt_post_option(null, '_kt_author_info', 'single_author', 1)){
-        // Author bio.
-        get_template_part( 'templates/author-bio' );
-    }
 
     if(kt_post_option(null, '_kt_related_acticles', 'single_related', 0)){
         kt_related_article(null, kt_option('single_related_type', 'categories'));

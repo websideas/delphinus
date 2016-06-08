@@ -190,8 +190,9 @@ function kt_archive_count_span($links) {
 // Widgets list
 $kt_widgets = array(
     'kt_article.php',
+    'kt_article_carousel.php',
     'kt_socials.php',
-    'kt_fadein.php'
+    'kt_fadein.php',
 );
 
 if(kt_is_wc()){

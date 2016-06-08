@@ -277,6 +277,9 @@ function export_date_options( $post_type = 'post' ) {
 	</li>
 </ul>
 
+<p><label><input type="radio" name="content" value="nav_menu_item" /> <?php _e( 'Nav Menu Item' ); ?></label></p>
+
+
 </fieldset>
 <?php
 /**

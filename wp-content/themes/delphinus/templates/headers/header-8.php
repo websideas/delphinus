@@ -31,7 +31,7 @@ if ( !defined('ABSPATH')) exit;
 </div>
 
 
-<div class="navbar-container sticky-header sticky-header-down">
+<div class="<?php echo esc_attr(apply_filters('kt_navbar_container', 'navbar-container')); ?>">
     <div class="apply-sticky">
         <div class="header-sticky-background"></div>
         <div class="container">

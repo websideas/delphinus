@@ -5,7 +5,6 @@
  */
 
 $sidebar = kt_get_post_sidebar();
-$sidebar = array ( 'sidebar' => 'right', 'sidebar_area' => 'primary-widget-area');
 
 $main_column = ($sidebar['sidebar']) ? '9' : '12';
 $sidebar_class = ($sidebar['sidebar']) ? 'sidebar-'.$sidebar['sidebar'] : 'no-sidebar';
@@ -35,11 +34,9 @@ get_header(); ?>
                     do_action( 'kt_page_after' ); ?>
 
                     <?php
-                    if( kt_option( 'show_page_comment', 1 ) ){
                         if ( comments_open() || get_comments_number() ) :
                             comments_template();
                         endif;
-                    }
                     ?>
                 <?php endwhile; // end of the loop. ?>
                 <?php echo '</div><!-- .site-main -->'; ?>

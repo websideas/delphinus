@@ -4,10 +4,6 @@
 if ( !defined('ABSPATH')) exit;
 
 
-
-if ( ! is_active_sidebar( 'footer-column-1' ) && ! is_active_sidebar( 'footer-column-2' ) && ! is_active_sidebar( 'footer-column-3' ) && ! is_active_sidebar( 'footer-column-4' ))
-    return;
-
 ?>
 <footer id="footer-area">
     <div class="row no-gutters row-flex">

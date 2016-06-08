@@ -13,8 +13,7 @@
         <?php if(kt_option('footer', true)){ ?>
             <?php do_action( 'kt_before_footer' ); ?>
             <div id="footer" class="site-footer">
-                <?php $footer_top = kt_footer_top(); ?>
-                <?php if($footer_top){ ?>
+                <?php if($footer_top = kt_footer_top()){ ?>
                     <footer id="footer-top">
                         <div class="container">
                             <?php dynamic_sidebar('footer-top') ?>
@@ -23,8 +22,7 @@
                 <?php } ?>
 
                 <?php
-
-                if(kt_option('footer_widgets', true)){
+                if($footer_widgets = kt_footer_widgets()){
                     $widgets_layout = kt_option('footer_widgets_layout', 'featured');
                     $layout = ($widgets_layout == 'featured') ? 'widgets-featured' : 'widgets';
                     get_template_part( 'templates/footers/footer', $layout);
@@ -54,5 +52,7 @@
 
 
 <?php wp_footer(); ?>
+<!-- W3TC-include-js-head -->
+
 </body>
 </html>
